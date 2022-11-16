@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ecosia_firstrun_page_text"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:fontFamily="@font/inter"
+    android:letterSpacing="0.03"
+    android:textColor="@color/ecosia_text_primary"
+    android:textSize="16sp"
+    app:layout_constraintEnd_toEndOf="@+id/ecosia_firstrun_page_headline"
+    app:layout_constraintStart_toStartOf="@+id/ecosia_firstrun_page_headline"
+    app:layout_constraintTop_toBottomOf="@+id/ecosia_firstrun_page_headline" />

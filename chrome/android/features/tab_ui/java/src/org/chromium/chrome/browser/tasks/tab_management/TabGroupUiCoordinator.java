@@ -274,7 +274,6 @@ public class TabGroupUiCoordinator implements TabGroupUiMediator.ResetHandler, T
 
     private void recordTabGroupCount() {
         if (mTabModelSelector == null) return;
-
         TabModelFilterProvider provider = mTabModelSelector.getTabModelFilterProvider();
         TabGroupModelFilter normalFilter = (TabGroupModelFilter) provider.getTabModelFilter(false);
         TabGroupModelFilter incognitoFilter =

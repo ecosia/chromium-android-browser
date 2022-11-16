@@ -24,14 +24,7 @@
         app:iconSpaceReserved="false"
         android:summary="@string/fragment_adblock_settings_enabled_summary" />
 
-    <!-- Filter lists -->
-    <androidx.preference.Preference
-        android:fragment="org.chromium.components.adblock.settings.AdblockFilterListsFragment"
-        android:key="fragment_adblock_settings_filter_lists_key"
-        android:title="@string/fragment_adblock_settings_filter_lists_title"
-        app:iconSpaceReserved="false"
-        android:summary="@string/fragment_adblock_settings_filter_lists_summary" />
-
+    <!-- Ecosia: Re-arrange the preference options -->
     <!-- Acceptable Ads: enabled/disabled -->
     <org.chromium.components.browser_ui.settings.ChromeSwitchPreference
         android:key="fragment_adblock_settings_aa_enabled_key"
@@ -39,12 +32,14 @@
         app:iconSpaceReserved="false"
         android:summary="@string/fragment_adblock_settings_aa_enabled_summary" />
 
+    <!-- Ecosia: Disabling allowlist and language filter-->
     <!-- Allowed domains -->
     <androidx.preference.Preference
         android:fragment="org.chromium.components.adblock.settings.AdblockAllowedDomainsFragment"
         android:key="fragment_adblock_settings_allowed_domains_key"
         android:title="@string/fragment_adblock_settings_allowed_domains_title"
         app:iconSpaceReserved="false"
+        app:isPreferenceVisible="false"
         android:summary="@string/fragment_adblock_settings_allowed_domains_summary" />
 
     <androidx.preference.Preference

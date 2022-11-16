@@ -118,4 +118,7 @@ found in the LICENSE file.
     <color name="drag_shadow_outline_color">@color/baseline_neutral_variant_90_alpha_20</color>
     <color name="gm3_baseline_surface_container">@color/gm3_baseline_surface_container_light</color>
     <color name="gm3_baseline_surface">@color/gm3_baseline_surface_light</color>
+    <color name="button_secondary_default">#61008009</color> <!-- ecosia_button_secondary_default -->
+    <color name="button2_text_primary">#FFFFFF</color> <!-- ecosia_text_primary -->
+    <color name="button_primary_default">#008009</color> <!-- ecosia_button_primary_default -->
 </resources>

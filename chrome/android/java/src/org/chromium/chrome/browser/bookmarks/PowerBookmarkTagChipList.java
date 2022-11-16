@@ -40,6 +40,12 @@ public class PowerBookmarkTagChipList extends FrameLayout {
         public void bookmarkModelChanged() {
             populateChipsForCurrentFolder();
         }
+
+        // Ecosia: Bookmark Import / Export
+        @Override
+        public void bookmarkModelNeedsReloadAfterBookmarksImport() {
+            // only required after successful bookmark import
+        }
     };
 
     /**

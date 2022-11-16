@@ -32,6 +32,7 @@ import android.widget.EditText;
 
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TestRule;
@@ -1107,6 +1108,7 @@ public class TabGridDialogMediatorUnitTest {
         // Animation source view should be set to null so that dialog will setup basic animation.
         assertThat(mModel.get(TabGridPanelProperties.ANIMATION_SOURCE_VIEW), equalTo(null));
     }
+
 
     @Test
     public void testDialogToolbarMenu_SelectionModeV2() {

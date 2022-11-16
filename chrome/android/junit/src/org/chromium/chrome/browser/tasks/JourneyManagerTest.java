@@ -15,6 +15,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
@@ -117,6 +118,7 @@ public final class JourneyManagerTest {
         doReturn(NO_TIME_MS).when(mEngagementTimeUtil).tabClobberThresholdMillis();
     }
 
+    @Ignore("Ecosia : disabled journey feature")
     @Test
     public void onTabShown_previousEngagementExists_contentNotYetPainted() {
         // Set did paint flag.
@@ -131,6 +133,7 @@ public final class JourneyManagerTest {
         assertEquals(-1, mSharedPreferences.getLong(String.valueOf(mTab.getId()), -1));
     }
 
+    @Ignore("Ecosia : disabled journey feature")
     @Test
     public void onTabHidden_shouldSaveLastEngagement() {
         // Set did paint flag.
@@ -147,6 +150,7 @@ public final class JourneyManagerTest {
                 mSharedPreferences.getLong(String.valueOf(mTab.getId()), -1));
     }
 
+    @Ignore("Ecosia : disabled journey feature")
     @Test
     public void onClosingStateChanged_previousEngagementExists_tabClosureNotCommitted() {
         // Set did paint flag.
@@ -163,6 +167,7 @@ public final class JourneyManagerTest {
         assertTrue(mSharedPreferences.contains(String.valueOf(mTab.getId())));
     }
 
+    @Ignore("Ecosia : disabled journey feature")
     @Test
     public void onClosingStateChanged_previousEngagementExists_tabClosureCommitted() {
         // Set did paint flag.
@@ -182,6 +187,7 @@ public final class JourneyManagerTest {
         assertFalse(mSharedPreferences.contains(String.valueOf(mTab.getId())));
     }
 
+    @Ignore("Ecosia : disabled journey feature")
     @Test
     public void onOverviewModeStartedShowing_storesLastEngagement() {
         // Set did paint flag.
@@ -199,6 +205,7 @@ public final class JourneyManagerTest {
                 mSharedPreferences.getLong(String.valueOf(mTab.getId()), -1));
     }
 
+    @Ignore("Ecosia : disabled journey feature")
     @Test
     public void destroy_unregistersLifecycleObserver() {
         mJourneyManager.onDestroy();

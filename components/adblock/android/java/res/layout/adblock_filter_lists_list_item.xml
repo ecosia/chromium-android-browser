@@ -13,24 +13,28 @@
   along with eyeo Chromium SDK.  If not, see <http://www.gnu.org/licenses/>.
 -->
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<!-- Ecosia : Maintaining the checkbox style to right as per the app -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="?android:attr/selectableItemBackground"
-    android:gravity="center_vertical"
     android:orientation="horizontal"
     android:focusable="true"
     android:padding="6dp">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/adblock_custom_filter_margin"
+        android:textAppearance="@style/TextAppearance.TextLarge.Primary" />
 
     <CheckBox
         android:id="@+id/checkbox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="21dp"
-        android:clickable="false" />
-        <TextView
-            android:id="@+id/name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="@style/TextAppearance.TextLarge.Primary" />
-</LinearLayout>
+        android:layout_marginEnd="@dimen/adblock_custom_filter_margin"
+        style="@style/CheckBoxPreference"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

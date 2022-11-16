@@ -10,6 +10,7 @@ import static org.mockito.Mockito.doReturn;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TestRule;
@@ -344,6 +345,7 @@ public class PseudoTabUnitTest {
         Assert.assertEquals(TAB1_ID, related.get(0).getId());
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @EnableFeatures({ChromeFeatureList.INSTANT_START})
     public void getRelatedTabs_noProvider_group() {

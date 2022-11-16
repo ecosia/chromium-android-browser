@@ -242,18 +242,21 @@ public class PasswordSettings extends ChromeBaseSettingsFragment
             filterPasswords(null);
             return true;
         }
+        /* Ecosia : Removing Help & Feedback setting
         if (id == R.id.menu_id_targeted_help) {
             getHelpAndFeedbackLauncher().show(
                     getActivity(), getString(R.string.help_context_passwords), null);
             return true;
         }
+        */
         return super.onOptionsItemSelected(item);
     }
 
     private void filterPasswords(String query) {
         mSearchQuery = query;
+        /* Ecosia: remove help and feedback
         mHelpItem.setShowAsAction(mSearchQuery == null ? MenuItem.SHOW_AS_ACTION_IF_ROOM
-                                                       : MenuItem.SHOW_AS_ACTION_NEVER);
+                                                       : MenuItem.SHOW_AS_ACTION_NEVER);*/
         rebuildPasswordLists();
     }
 
@@ -302,10 +305,10 @@ public class PasswordSettings extends ChromeBaseSettingsFragment
         if (shouldShowAutoSigninOption()) {
             createAutoSignInCheckbox();
         }
+		/* Ecosia: remove password check option
         if (mPasswordCheck != null) {
             createCheckPasswords();
         }
-
         if (mTrustedVaultBannerState == TrustedVaultBannerState.OPTED_IN) {
             createTrustedVaultBanner(R.string.android_trusted_vault_banner_sub_label_opted_in,
                     this::openTrustedVaultInfoPage);
@@ -313,6 +316,7 @@ public class PasswordSettings extends ChromeBaseSettingsFragment
             createTrustedVaultBanner(R.string.android_trusted_vault_banner_sub_label_offer_opt_in,
                     this::openTrustedVaultOptInDialog);
         }
+		*/
         PasswordManagerHandlerProvider.getInstance()
                 .getPasswordManagerHandler()
                 .updatePasswordLists();

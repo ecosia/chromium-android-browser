@@ -113,6 +113,7 @@ public class SyncPromoController {
      * @param accessPoint The access point for which the impression limit is being checked.
      */
     public static boolean canShowSyncPromo(@AccessPoint int accessPoint) {
+        /* Ecosia: disable sync promo MOB-1875
         switch (accessPoint) {
             case SigninAccessPoint.BOOKMARK_MANAGER:
                 return canShowBookmarkPromo();
@@ -127,6 +128,8 @@ public class SyncPromoController {
                 assert false : "Unexpected value for access point: " + accessPoint;
                 return false;
         }
+        */
+        return false;
     }
 
     private static long getNTPSyncPromoResetAfterMillis() {

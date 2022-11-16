@@ -20,6 +20,7 @@ import androidx.test.core.app.ApplicationProvider;
 import androidx.test.ext.junit.rules.ActivityScenarioRule;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -48,6 +49,7 @@ import java.lang.ref.WeakReference;
 /**
  * Robolectric unit tests for {@link NotificationPermissionController}.
  */
+@Ignore("Ecosia : Notification prompts are disabled")
 @RunWith(BaseRobolectricTestRunner.class)
 @Config(sdk = VERSION_CODES.TIRAMISU, manifest = Config.NONE)
 public class NotificationPermissionControllerTest {
@@ -385,7 +387,7 @@ public class NotificationPermissionControllerTest {
                     notificationPermissionController.shouldRequestPermission());
         });
     }
-
+    
     @Test
     public void testNotificationPrompt_showOSPromptAndAccept() {
         mActivityScenarios.getScenario().onActivity(activity -> {

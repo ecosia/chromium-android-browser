@@ -10,6 +10,7 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewStub;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -58,6 +59,19 @@ public final class PromoDialogLayout extends BoundedLinearLayout {
 
     /** View containing text explaining the promo. */
     private TextView mSubheaderView;
+    /*Ecosia : Custom views for promos */
+    private TextView mSubheaderView2;
+
+    private TextView mSubheaderTitle;
+
+    private TextView mSubheaderTitle2;
+
+    private ImageView mSubheaderImgCheck;
+
+    private ImageView mSubheader2ImgCheck;
+
+    private LinearLayout mSubheaderLayout;
+    /*Ecosia <--> */
 
     /** Paramters used to build the promo. */
     private DialogParams mParams;
@@ -73,8 +87,14 @@ public final class PromoDialogLayout extends BoundedLinearLayout {
         mScrollableContent = (LinearLayout) findViewById(R.id.scrollable_promo_content);
         mIllustrationView = (ImageView) findViewById(R.id.illustration);
         mHeaderView = (TextView) findViewById(R.id.header);
-        mSubheaderView = (TextView) findViewById(R.id.subheader);
-
+        //Ecosia : Custom views added for promos
+        mSubheaderView = (TextView) findViewById(R.id.subheader_desc);
+        mSubheaderView2 = (TextView) findViewById(R.id.subheader2_desc);
+        mSubheaderTitle = (TextView) findViewById(R.id.subheader);
+        mSubheaderTitle2 = (TextView) findViewById(R.id.subheader2);
+        mSubheaderImgCheck = (ImageView) findViewById(R.id.subheader_check);
+        mSubheader2ImgCheck = (ImageView) findViewById(R.id.subheader2_check);
+        mSubheaderLayout = (LinearLayout) findViewById(R.id.subheader_layout);
         super.onFinishInflate();
     }
 
@@ -105,8 +125,29 @@ public final class PromoDialogLayout extends BoundedLinearLayout {
             mHeaderView.setText(mParams.headerStringResource);
         }
 
+        //Ecosia : text alignment
+
+        if(params.subheaderTitle != null) {
+            mSubheaderTitle.setText(params.subheaderTitle);
+            mSubheaderTitle.setVisibility(VISIBLE);
+        } else {
+            mSubheaderTitle.setVisibility(GONE);
+        }
+
+        if(params.subheader2Title != null) {
+            mSubheaderTitle2.setText(params.subheader2Title);
+            mSubheaderTitle2.setVisibility(VISIBLE);
+        } else {
+            mSubheaderTitle2.setVisibility(GONE);
+        }
+
         // Set up the subheader text.
         if (mParams.subheaderCharSequence != null) {
+            // Ecosia : Custom content
+            if(mParams.subheaderCharSequence2 == null) { //Ecosia : Set match parent width if only one subheader is found
+                mSubheaderLayout.setLayoutParams(new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
+                mHeaderView.setTextAlignment(TEXT_ALIGNMENT_CENTER);
+            }
             mSubheaderView.setText(mParams.subheaderCharSequence);
             if (mParams.subheaderIsLink) {
                 mSubheaderView.setMovementMethod(LinkMovementMethod.getInstance());
@@ -115,6 +156,18 @@ public final class PromoDialogLayout extends BoundedLinearLayout {
             ((ViewGroup) mSubheaderView.getParent()).removeView(mSubheaderView);
         } else {
             mSubheaderView.setText(mParams.subheaderStringResource);
+        }
+
+        // Ecosia : Set up the subheader2 text.
+        if (mParams.subheaderCharSequence2 != null) {
+            mSubheaderView2.setText(mParams.subheaderCharSequence2);
+            if (mParams.subheaderIsLink) {
+                mSubheaderView2.setMovementMethod(LinkMovementMethod.getInstance());
+            }
+        } else if (mParams.subheaderStringResource == 0) {
+            ((ViewGroup) mSubheaderView2.getParent()).removeView(mSubheaderView2);
+        } else {
+            mSubheaderView2.setText(mParams.subheaderStringResource2);
         }
 
         // Create the footer.
@@ -131,15 +184,46 @@ public final class PromoDialogLayout extends BoundedLinearLayout {
         String primaryString = mParams.primaryButtonCharSequence != null
                 ? mParams.primaryButtonCharSequence.toString()
                 : getResources().getString(mParams.primaryButtonStringResource);
-        buttonBar.addView(
-                DualControlLayout.createButtonForLayout(getContext(), true, primaryString, null));
+
+        /* |-> Ecosia : Adding custom layout style and theme for buttons */
+        buttonBar.setAlignment(DualControlLayout.DualControlLayoutAlignment.APART);
+        final Button buttonForLayout;
+        if (params.primaryButtonBackgroundDrawableResource > 0) {
+            buttonForLayout = DualControlLayout.createButtonForLayout(getContext(), true, primaryString, null,
+                    params.primaryButtonBackgroundDrawableResource, params.themePrimaryBtn);
+        } else {
+            buttonForLayout = DualControlLayout.createButtonForLayout(getContext(), true, primaryString, null);
+        }
+
+        buttonBar.addView(buttonForLayout);
 
         if (mParams.secondaryButtonStringResource != 0) {
             String secondaryString =
                     getResources().getString(mParams.secondaryButtonStringResource);
-            buttonBar.addView(DualControlLayout.createButtonForLayout(
-                    getContext(), false, secondaryString, null));
+            if(mParams.themeSecondaryBtn > 0) {
+                buttonBar.addView(DualControlLayout.createButtonForLayout(
+                        getContext(), false, secondaryString, null, 0, mParams.themeSecondaryBtn));
+            } else {
+                buttonBar.addView(DualControlLayout.createButtonForLayout(
+                        getContext(), false, secondaryString, null));
+            }
+
         }
+
+        if(params.isPrimaryCheckShown) {
+            mSubheaderImgCheck.setImageResource(params.primaryDescIcon);
+            mSubheaderImgCheck.setVisibility(VISIBLE);
+        } else {
+            mSubheaderImgCheck.setVisibility(GONE);
+        }
+        if(params.isSecondaryCheckShown) {
+            mSubheader2ImgCheck.setImageResource(params.secondaryDescIcon);
+            mSubheader2ImgCheck.setVisibility(VISIBLE);
+        } else {
+            mSubheader2ImgCheck.setVisibility(GONE);
+        }
+
+        /* Ecosia ->| */
     }
 
     /**

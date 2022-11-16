@@ -1,6 +1,23 @@
-// Copyright 2013 The Chromium Authors
-// Use of this source code is governed by a BSD-style license that can be
-// found in the LICENSE file.
+/*
+ * Copyright 2013 The Chromium Authors
+ * Copyright (C) 2023 Ecosia Android App source (for GPL 3.0)
+ *
+ * Licensed under the GNU General Public License, Version 3.0 and BSD-style license (found in LICENSE file);
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * License: GPL-3.0-only - https://spdx.org/licenses/GPL-3.0-only.html
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 #include "chrome/utility/importer/bookmark_html_reader.h"
 
@@ -17,7 +34,9 @@
 #include "base/strings/utf_string_conversions.h"
 #include "base/time/time.h"
 #include "chrome/common/importer/imported_bookmark_entry.h"
+#if !BUILDFLAG(IS_ANDROID) // Ecosia: Bookmark Import / Export
 #include "chrome/utility/importer/favicon_reencode.h"
+#endif // Ecosia: Bookmark Import / Export
 #include "components/search_engines/search_terms_data.h"
 #include "components/search_engines/template_url.h"
 #include "net/base/data_url.h"
@@ -55,6 +74,8 @@ bool GetAttribute(const std::string& attribute_list,
   return true;
 }
 
+// Ecosia: Bookmark Import / Export BEGIN
+#if !BUILDFLAG(IS_ANDROID) 
 // Given the URL of a page and a favicon data URL, adds an appropriate record
 // to the given favicon usage vector.
 void DataURLToFaviconUsage(const GURL& link_url,
@@ -85,6 +106,8 @@ void DataURLToFaviconUsage(const GURL& link_url,
 
   favicons->push_back(usage);
 }
+#endif
+// Ecosia: Bookmark Import / Export END
 
 }  // namespace
 
@@ -105,15 +128,32 @@ static std::string stripDt(const std::string& lineDt) {
 }
 
 void ImportBookmarksFile(
-    base::RepeatingCallback<bool(void)> cancellation_callback,
-    base::RepeatingCallback<bool(const GURL&)> valid_url_callback,
+    const base::RepeatingCallback<bool(void)> cancellation_callback, // Ecosia: Bookmark Import / Export
+    const base::RepeatingCallback<bool(const GURL&)> valid_url_callback, // Ecosia: Bookmark Import / Export
     const base::FilePath& file_path,
     std::vector<ImportedBookmarkEntry>* bookmarks,
     std::vector<importer::SearchEngineInfo>* search_engines,
     favicon_base::FaviconUsageDataList* favicons) {
   std::string content;
-  base::ReadFileToString(file_path, &content);
-  std::vector<std::string> lines = base::SplitString(
+
+  // Ecosia: Bookmark Import / Export BEGIN
+  if (!base::ReadFileToString(file_path, &content)) {
+     LOG(ERROR) << "Could not directly read bookmarks import file";
+     return;
+  }
+
+  ImportBookmarksFile(cancellation_callback, valid_url_callback, content, bookmarks, search_engines, favicons);
+}
+
+void ImportBookmarksFile(
+    base::RepeatingCallback<bool(void)> cancellation_callback,
+    base::RepeatingCallback<bool(const GURL&)> valid_url_callback,
+    const std::string& content,
+    std::vector<ImportedBookmarkEntry>* bookmarks,
+    std::vector<importer::SearchEngineInfo>* search_engines,
+    favicon_base::FaviconUsageDataList* favicons) {
+      std::vector<std::string> lines = base::SplitString(
+      // Ecosia: Bookmark Import / Export END
       content, "\n", base::TRIM_WHITESPACE, base::SPLIT_WANT_ALL);
 
   std::u16string last_folder;
@@ -219,8 +259,10 @@ void ImportBookmarksFile(
 
       // Save the favicon. DataURLToFaviconUsage will handle the case where
       // there is no favicon.
+#if !BUILDFLAG(IS_ANDROID) // Ecosia: Bookmark Import / Export
       if (favicons)
         DataURLToFaviconUsage(url, favicon, favicons);
+#endif // Ecosia: Bookmark Import / Export
 
       continue;
     }

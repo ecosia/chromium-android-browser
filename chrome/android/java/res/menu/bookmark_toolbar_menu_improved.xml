@@ -38,6 +38,29 @@ found in the LICENSE file.
                 </group>
             </menu>
         </item>
+        <!-- Ecosia: Bookmark Import / Export -->
+        <item
+            android:id="@+id/bookmarks_actions"
+            android:icon="@drawable/ic_ecosia_more"
+            android:title="@string/bookmarks_import_export_menu"
+            android:visible="true"
+            app:showAsAction="ifRoom"
+            app:iconTint="@color/default_icon_color_secondary_tint_list" >
+            <menu>
+                <item
+                    android:id="@+id/import_menu_id"
+                    android:title="@string/bookmarks_import_button"
+                    android:visible="true"
+                    app:showAsAction="ifRoom"
+                    app:iconTint="@color/default_icon_color_tint_list" />
+                <item
+                    android:id="@+id/export_menu_id"
+                    android:title="@string/bookmarks_export_button"
+                    android:visible="true"
+                    app:showAsAction="ifRoom"
+                    app:iconTint="@color/default_icon_color_tint_list" />
+            </menu>
+        </item>
         <item
             android:id="@+id/edit_menu_id"
             android:icon="@drawable/material_ic_edit_24dp"

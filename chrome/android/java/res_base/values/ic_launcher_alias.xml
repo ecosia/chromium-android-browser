@@ -5,6 +5,7 @@ Use of this source code is governed by a BSD-style license that can be
 found in the LICENSE file.
 -->
 
+<!-- Ecosia: branding -->
 <resources>
-    <drawable name="ic_launcher">@mipmap/app_icon</drawable>
+    <drawable name="ic_launcher">@mipmap/ecosia_app_icon</drawable>
 </resources>

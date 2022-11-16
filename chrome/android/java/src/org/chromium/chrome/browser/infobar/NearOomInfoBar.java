@@ -20,7 +20,7 @@ import org.chromium.components.infobars.InfoBarCompactLayout;
 public class NearOomInfoBar extends InfoBar {
     @VisibleForTesting
     public NearOomInfoBar() {
-        super(R.drawable.infobar_chrome, R.color.infobar_icon_drawable_color, null, null);
+        super(R.drawable.ic_ecosia, R.color.infobar_icon_drawable_color, null, null);  // Ecosia: branding
     }
 
     @Override

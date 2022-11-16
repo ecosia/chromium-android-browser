@@ -17,8 +17,8 @@ public class SecurityStatusIcon {
      */
     @DrawableRes
     public static int getSecurityIconResource(@ConnectionSecurityLevel int securityLevel,
-            boolean isSmallDevice, boolean skipIconForNeutralState,
-            boolean useUpdatedConnectionSecurityIndicators) {
+                                              boolean isSmallDevice, boolean skipIconForNeutralState,
+                                              boolean useUpdatedConnectionSecurityIndicators) {
         switch (securityLevel) {
             case ConnectionSecurityLevel.NONE:
                 if (isSmallDevice && skipIconForNeutralState) return 0;

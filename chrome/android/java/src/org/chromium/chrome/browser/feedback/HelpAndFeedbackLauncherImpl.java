@@ -66,11 +66,13 @@ public class HelpAndFeedbackLauncherImpl implements HelpAndFeedbackLauncher {
      */
     @Override
     public void show(final Activity activity, final String helpContext, @Nullable String url) {
+        /* Ecosia : Removing Help & Feedback call display
         RecordUserAction.record("MobileHelpAndFeedback");
-        new ChromeFeedbackCollector(activity, null /* categoryTag */, null /* description */,
+        new ChromeFeedbackCollector(activity, null /* categoryTag *//*, null /* description *//*,
                 new ScreenshotTask(activity),
                 new ChromeFeedbackCollector.InitParams(mProfile, url, helpContext),
                 collector -> mDelegate.show(activity, helpContext, collector), mProfile);
+        */
     }
 
     /**
@@ -160,6 +162,7 @@ public class HelpAndFeedbackLauncherImpl implements HelpAndFeedbackLauncher {
     }
 
     protected static void launchFallbackSupportUri(Context context) {
+        /* Ecosia : Remove Help & Feedback option
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(FALLBACK_SUPPORT_URL));
         // Let Chrome know that this intent is from Chrome, so that it does not close the app when
         // the user presses 'back' button.
@@ -167,5 +170,6 @@ public class HelpAndFeedbackLauncherImpl implements HelpAndFeedbackLauncher {
         intent.putExtra(Browser.EXTRA_CREATE_NEW_TAB, true);
         intent.setPackage(context.getPackageName());
         context.startActivity(intent);
+        */
     }
 }

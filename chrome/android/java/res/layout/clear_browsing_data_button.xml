@@ -6,6 +6,7 @@ found in the LICENSE file.
 -->
 
 <org.chromium.ui.widget.ButtonCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/clear_button"
     style="@style/FilledButton.Flat"
     android:layout_width="wrap_content"
@@ -13,4 +14,6 @@ found in the LICENSE file.
     android:layout_gravity="end"
     android:layout_margin="@dimen/clear_browsing_data_button_margin"
     android:focusable="true"
+    android:textColor="@color/ecosia_button2_text_primary"
+    app:buttonColor="@color/ecosia_button_primary_default"
     android:text="@string/clear_data_delete" />

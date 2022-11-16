@@ -9,17 +9,37 @@ android_library("java") {
     "java/src/org/chromium/chrome/browser/ui/default_browser_promo/DefaultBrowserPromoDeps.java",
     "java/src/org/chromium/chrome/browser/ui/default_browser_promo/DefaultBrowserPromoManager.java",
     "java/src/org/chromium/chrome/browser/ui/default_browser_promo/DefaultBrowserPromoUtils.java",
+
+    # Ecosia
+    "java/src/org/chromium/chrome/browser/ui/default_browser_promo/EcosiaDefaultBrowserPromoDialog.java",
   ]
   deps = [
+    ":java_resources",
     "//base:base_java",
     "//chrome/browser/android/lifecycle:java",
     "//chrome/browser/flags:java",
     "//chrome/browser/preferences:java",
     "//chrome/browser/profiles/android:java",
+    "//components/browser_ui/widget/android:java",
     "//third_party/androidx:androidx_annotation_annotation_java",
     "//ui/android:ui_full_java",
   ]
   resources_package = "org.chromium.chrome.browser.ui.default_browser_promo"
+}
+
+android_resources("java_resources") {
+  sources = [
+    "java/res/drawable/default_browser_promo_bg.xml",
+    "java/res/drawable/ic_illustration_aroundlogo.xml",
+    "java/res/drawable/promo_dialog_background.xml",
+  ]
+
+  deps = [
+    "//chrome/browser/ui/android/strings:ui_strings_grd",
+    "//components/browser_ui/widget/android:java_resources",
+    "//ui/android:ui_java_resources",
+    "//ui/android:ecosia_ui_java_resources",
+  ]
 }
 
 robolectric_library("junit") {

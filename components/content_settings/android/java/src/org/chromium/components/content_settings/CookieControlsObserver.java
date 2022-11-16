@@ -24,6 +24,9 @@ public interface CookieControlsObserver {
      */
     default void onCookiesCountChanged(int allowedCookies, int blockedCookies) {}
 
+    // Ecosia: cookies
+    default void onCookiesChanged(String cookie) {}
+
     /* The following three methods are used when the UserBypassUI flag is enabled. */
 
     /**

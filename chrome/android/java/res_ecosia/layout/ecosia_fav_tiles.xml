@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="@dimen/tile_width"
+    android:layout_height="@dimen/tile_height"
+    android:paddingHorizontal="@dimen/layout_padding"
+    android:paddingVertical="@dimen/layout_padding"
+    android:id="@+id/sites_rel_layout">
+
+    <RelativeLayout
+        android:layout_width="@dimen/tile_view_icon_size"
+        android:layout_height="@dimen/tile_view_icon_size"
+        android:id="@+id/layout_tile"
+        android:layout_marginLeft="@dimen/tile_margin_left"
+        android:background="@drawable/tile_background"
+        android:paddingHorizontal="@dimen/layout_padding"
+        android:paddingVertical="@dimen/layout_padding">
+
+        <View
+            android:layout_width="@dimen/tile_view_icon_size"
+            android:layout_height="@dimen/tile_view_icon_size"
+            android:id="@+id/tile_view_border"/>
+
+        <ImageView
+            android:layout_width="@dimen/tile_view_icon_size_modern"
+            android:layout_height="@dimen/tile_view_icon_size_modern"
+            android:layout_alignLeft="@+id/tile_view_border"
+            android:layout_alignTop="@+id/tile_view_border"
+            android:layout_marginLeft="@dimen/tile_img_margin"
+            android:layout_marginTop="@dimen/tile_img_margin"
+            android:id="@+id/site_img"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/site_text"
+        style="@style/FavoriteTilesText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_tile"
+        android:layout_marginTop="@dimen/tile_text_margin"
+        android:layout_marginRight="5dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:textSize="@dimen/tile_font_size"
+        android:maxLines="2" />
+
+</RelativeLayout>

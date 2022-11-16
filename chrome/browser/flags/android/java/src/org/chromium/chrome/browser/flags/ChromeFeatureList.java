@@ -1,6 +1,23 @@
-// Copyright 2015 The Chromium Authors
-// Use of this source code is governed by a BSD-style license that can be
-// found in the LICENSE file.
+/*
+ * Copyright 2015 The Chromium Authors
+ * Copyright (C) 2023 Ecosia Android App source (for GPL 3.0)
+ *
+ * Licensed under the GNU General Public License, Version 3.0 and BSD-style license (found in LICENSE file);
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * License: GPL-3.0-only - https://spdx.org/licenses/GPL-3.0-only.html
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 package org.chromium.chrome.browser.flags;
 
@@ -33,6 +50,32 @@ public abstract class ChromeFeatureList {
      * |kFeaturesExposedToJava| in chrome/browser/flags/android/chrome_feature_list.cc
      */
     public static boolean isEnabled(String featureName) {
+        /* --- Ecosia: flag customization area start --- */
+
+        // Ecosia: Disable Tracked products in Bookmarks, privacy experiment page
+        if (featureName.equals(ChromeFeatureList.SHOPPING_LIST) || featureName.equals(ChromeFeatureList.PRIVACY_SANDBOX_SETTINGS_4)
+                || (featureName.equals(ChromeFeatureList.HISTORY_JOURNEYS))) {
+            return false;
+        }
+        // Ecosia: disable search resumption module
+        if (featureName.equals(ChromeFeatureList.SEARCH_RESUMPTION_MODULE_ANDROID)) {
+            return false;
+        }
+        // Ecosia: disable query tiles
+        if (featureName.equals(ChromeFeatureList.QUERY_TILES)) {
+            return false;
+        }
+        // Ecosia: disable web feed
+        if (featureName.equals(ChromeFeatureList.WEB_FEED)) {
+            return false;
+        }
+        // Ecosia: disable scrollable most visited tiles
+        if (featureName.equals(ChromeFeatureList.SHOW_SCROLLABLE_MVT_ON_NTP_ANDROID)) {
+            return false;
+        }
+
+        /* --- Ecosia: flag customization area end --- */
+
         return ChromeFeatureMap.isEnabled(featureName);
     }
 
@@ -165,6 +208,7 @@ public abstract class ChromeFeatureList {
             "BackGestureRefactorActivityAndroid";
     public static final String BASELINE_GM3_SURFACE_COLORS = "BaselineGM3SurfaceColors";
     public static final String BLOCK_INTENTS_WHILE_LOCKED = "BlockIntentsWhileLocked";
+    public static final String BOOKMARKS_EXPORT_USESAF = "BookmarksExportUseSaf"; // Ecosia: Bookmark Import / Export
     public static final String BOOKMARKS_REFRESH = "BookmarksRefresh";
     public static final String CACHE_ACTIVITY_TASKID = "CacheActivityTaskID";
     public static final String CAPTIVE_PORTAL_CERTIFICATE_LIST = "CaptivePortalCertificateList";

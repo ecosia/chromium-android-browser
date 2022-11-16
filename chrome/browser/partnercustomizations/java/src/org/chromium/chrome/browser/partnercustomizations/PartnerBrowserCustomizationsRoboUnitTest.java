@@ -17,6 +17,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
+import org.junit.Ignore; //Ecosia
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
@@ -71,6 +72,7 @@ public class PartnerBrowserCustomizationsRoboUnitTest {
         PartnerCustomizationsUma.resetStaticsForTesting();
     }
 
+    @Ignore("Ecosia : Disabled Partner NTPs")
     @Test
     public void initializeAsyncOneAtATime() {
         PartnerBrowserCustomizations.getInstance().initializeAsync(

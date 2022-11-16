@@ -1,0 +1,15 @@
+settings:
+  language_mapping:
+    en: en-US
+    fr: fr-FR
+    it: it-IT
+    nl: nl-NL
+    de: de-DE
+    es: es-ES
+
+filters:
+  - filter_type: file
+    source_language: en
+    source_file: fastlane/metadata/android/en-US/changelogs/default.txt
+    file_format: TXT
+    translation_files_expression: 'fastlane/metadata/android/<lang>/changelogs/default.txt'

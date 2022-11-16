@@ -79,6 +79,28 @@ public abstract class PromoDialog extends AlwaysDismissedDialog
 
         /** Optional: Resource ID of the String to show on the secondary/cancel button. */
         public int secondaryButtonStringResource;
+
+        public int primaryButtonBackgroundDrawableResource;
+
+        public int subheaderStringResource2;
+
+        public CharSequence subheaderCharSequence2;
+
+        public CharSequence subheaderTitle;
+
+        public CharSequence subheader2Title;
+
+        public boolean isPrimaryCheckShown;
+
+        public int primaryDescIcon;
+
+        public boolean isSecondaryCheckShown;
+
+        public int secondaryDescIcon;
+
+        public int themePrimaryBtn;
+
+        public int themeSecondaryBtn;
     }
 
     private static final int[] CLICKABLE_BUTTON_IDS = {R.id.button_primary, R.id.button_secondary};
@@ -96,6 +118,16 @@ public abstract class PromoDialog extends AlwaysDismissedDialog
 
         mDialogLayout = (PromoDialogLayout) mScrimView.findViewById(R.id.promo_dialog_layout);
     }
+
+    /* |-> Ecosia */
+
+    protected void setDialogHeightToWrapContent() {
+        final LayoutParams layoutParams = mDialogLayout.getLayoutParams();
+        layoutParams.height = LayoutParams.WRAP_CONTENT;
+        mDialogLayout.setLayoutParams(layoutParams);
+    }
+
+    /* <-| Ecosia */
 
     /**
      * Force the promo dialog to have a fully opaque background hiding any underlying content.

@@ -277,10 +277,11 @@ public class EditorDialogView
                 } else {
                     handleDelete();
                 }
-            } else if (item.getItemId() == R.id.help_menu_id) {
+            }/* else if (item.getItemId() == R.id.help_menu_id) { //Removing help menu id
                 mHelpLauncher.show(
                         mActivity, mActivity.getString(R.string.help_context_autofill), null);
             }
+            */
             return true;
         });
 

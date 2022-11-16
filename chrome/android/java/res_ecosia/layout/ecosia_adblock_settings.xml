@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+  <com.google.android.material.appbar.AppBarLayout
+      android:id="@+id/app_bar_layout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:fitsSystemWindows="true"
+      app:liftOnScroll="true">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"/>
+  </com.google.android.material.appbar.AppBarLayout>
+
+  <fragment
+      android:id="@+id/adblock_settings_fragment"
+      android:name="org.chromium.components.adblock.settings.AdblockSettingsFragment"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+</LinearLayout>

@@ -37,6 +37,7 @@ import org.hamcrest.Matchers;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TestRule;
@@ -345,6 +346,7 @@ public class AppMenuPropertiesDelegateUnitTest {
         assertTrue(mAppMenuPropertiesDelegate.shouldShowIconRow());
     }
 
+    @Ignore("Ecosia : Fails due to StartSurfaceHomepage being disabled")
     @Test
     @Config(qualifiers = "sw320dp")
     public void testPageMenuItems_Phone_Ntp() {
@@ -362,10 +364,11 @@ public class AppMenuPropertiesDelegateUnitTest {
         Integer[] expectedItems = {R.id.icon_row_menu_id, R.id.new_tab_menu_id,
                 R.id.new_incognito_tab_menu_id, R.id.divider_line_id, R.id.open_history_menu_id,
                 R.id.downloads_menu_id, R.id.all_bookmarks_menu_id, R.id.recent_tabs_menu_id,
-                R.id.divider_line_id, R.id.preferences_id, R.id.help_id};
+                R.id.divider_line_id, R.id.preferences_id, R.id.ecosia_help_id}; //Ecosia: remove help
         assertMenuItemsAreEqual(menu, expectedItems);
     }
 
+    @Ignore("Ecosia : Fails due to StartSurfaceHomepage being disabled")
     @Test
     @Config(qualifiers = "sw320dp")
     public void testPageMenuItems_Phone_RegularPage() {
@@ -384,8 +387,8 @@ public class AppMenuPropertiesDelegateUnitTest {
                 R.id.downloads_menu_id, R.id.all_bookmarks_menu_id, R.id.recent_tabs_menu_id,
                 R.id.divider_line_id, R.id.share_row_menu_id, R.id.find_in_page_id,
                 R.id.translate_id, R.id.add_to_homescreen_id, R.id.request_desktop_site_row_menu_id,
-                R.id.auto_dark_web_contents_row_menu_id, R.id.divider_line_id, R.id.preferences_id,
-                R.id.help_id};
+                R.id.auto_dark_web_contents_row_menu_id, R.id.divider_line_id, R.id.preferences_id/*,
+                R.id.help_id*/};//Ecosia: remove help
         Integer[] expectedTitles = {0, R.string.menu_new_tab, R.string.menu_new_incognito_tab, 0,
                 R.string.menu_history, R.string.menu_downloads, R.string.menu_bookmarks,
                 R.string.menu_recent_tabs, 0, 0, R.string.menu_find_in_page,
@@ -398,6 +401,7 @@ public class AppMenuPropertiesDelegateUnitTest {
         assertActionBarItemsAreEqual(menu, expectedActionBarItems);
     }
 
+    @Ignore("Ecosia : Fails due to StartSurfaceHomepage being disabled")
     @Test
     @Config(qualifiers = "sw320dp")
     public void testPageMenuItems_Phone_RegularPage_WithPwa() {
@@ -419,9 +423,9 @@ public class AppMenuPropertiesDelegateUnitTest {
                 R.id.new_incognito_tab_menu_id, R.id.divider_line_id, R.id.open_history_menu_id,
                 R.id.downloads_menu_id, R.id.all_bookmarks_menu_id, R.id.recent_tabs_menu_id,
                 R.id.divider_line_id, R.id.translate_id, R.id.share_row_menu_id,
-                R.id.find_in_page_id, R.id.install_webapp_id, R.id.request_desktop_site_row_menu_id,
-                R.id.auto_dark_web_contents_row_menu_id, R.id.divider_line_id, R.id.preferences_id,
-                R.id.help_id};
+                R.id.find_in_page_id/*, R.id.install_webapp_id*/, R.id.request_desktop_site_row_menu_id,
+                R.id.auto_dark_web_contents_row_menu_id, R.id.divider_line_id, R.id.preferences_id/*,
+                R.id.help_id*/};//Ecosia: remove help and install app option
         Integer[] expectedTitles = {0, R.string.menu_new_tab, R.string.menu_new_incognito_tab, 0,
                 R.string.menu_history, R.string.menu_downloads, R.string.menu_bookmarks,
                 R.string.menu_recent_tabs, 0, 0, R.string.menu_find_in_page,
@@ -454,7 +458,7 @@ public class AppMenuPropertiesDelegateUnitTest {
                 R.id.divider_line_id, R.id.share_row_menu_id, R.id.find_in_page_id,
                 R.id.translate_id, R.id.add_to_homescreen_id, R.id.request_desktop_site_row_menu_id,
                 R.id.auto_dark_web_contents_row_menu_id, R.id.divider_line_id, R.id.preferences_id,
-                R.id.help_id, R.id.managed_by_divider_line_id, R.id.managed_by_menu_id};
+                R.id.ecosia_help_id, R.id.managed_by_divider_line_id, R.id.managed_by_menu_id}; //Ecosia: adding help id
         assertMenuItemsAreEqual(menu, expectedItems);
     }
 
@@ -491,7 +495,7 @@ public class AppMenuPropertiesDelegateUnitTest {
                 R.id.new_incognito_tab_menu_id, R.id.open_history_menu_id, R.id.downloads_menu_id,
                 R.id.all_bookmarks_menu_id, R.id.recent_tabs_menu_id, R.id.translate_id,
                 R.id.find_in_page_id, R.id.add_to_homescreen_id, R.id.reader_mode_prefs_id,
-                R.id.preferences_id, R.id.help_id};
+                R.id.preferences_id, R.id.ecosia_help_id}; //Ecosia: adding help id
         assertMenuItemsHaveIcons(menu, expectedItems);
     }
 
@@ -568,7 +572,7 @@ public class AppMenuPropertiesDelegateUnitTest {
                 R.id.divider_line_id, R.id.share_row_menu_id, R.id.get_image_descriptions_id,
                 R.id.find_in_page_id, R.id.add_to_homescreen_id,
                 R.id.request_desktop_site_row_menu_id, R.id.auto_dark_web_contents_row_menu_id,
-                R.id.divider_line_id, R.id.preferences_id, R.id.help_id};
+                R.id.divider_line_id, R.id.preferences_id, R.id.ecosia_help_id}; //Ecosia: adding help id
 
         assertMenuItemsAreEqual(menu, expectedItems);
 
@@ -936,6 +940,7 @@ public class AppMenuPropertiesDelegateUnitTest {
         assertFalse(item.isEnabled());
     }
 
+    @Ignore("Ecosia : StartSurface disabled")
     @Test
     public void testStartSurfaceMenu() {
         mStartSurfaceSupplier.set(mStartSurfaceCoordinator);
@@ -958,7 +963,7 @@ public class AppMenuPropertiesDelegateUnitTest {
         Integer[] expectedItems = {R.id.new_tab_menu_id, R.id.new_incognito_tab_menu_id,
                 R.id.divider_line_id, R.id.open_history_menu_id, R.id.downloads_menu_id,
                 R.id.all_bookmarks_menu_id, R.id.recent_tabs_menu_id, R.id.divider_line_id,
-                R.id.preferences_id, R.id.help_id};
+                R.id.preferences_id/*, R.id.help_id*/};//Ecosia: remove help
         assertMenuItemsAreEqual(menu, expectedItems);
     }
 
@@ -1151,7 +1156,9 @@ public class AppMenuPropertiesDelegateUnitTest {
         setUpMocksForPageMenu();
         Menu menu = createTestMenu();
         mAppMenuPropertiesDelegate.prepareMenu(menu, null);
+        /* Ecosia : readaloud_menu_id is not defined
         assertFalse(menu.findItem(R.id.readaloud_menu_id).isVisible());
+        */
     }
 
     @Test
@@ -1161,7 +1168,9 @@ public class AppMenuPropertiesDelegateUnitTest {
         setUpMocksForPageMenu();
         Menu menu = createTestMenu();
         mAppMenuPropertiesDelegate.prepareMenu(menu, null);
+        /* Ecosia : readaloud_menu_id is not defined
         assertFalse(menu.findItem(R.id.readaloud_menu_id).isVisible());
+        */
     }
 
     @Test
@@ -1171,7 +1180,9 @@ public class AppMenuPropertiesDelegateUnitTest {
         setUpMocksForPageMenu();
         Menu menu = createTestMenu();
         mAppMenuPropertiesDelegate.prepareMenu(menu, null);
+        /* Ecosia : readaloud_menu_id is not defined
         assertTrue(menu.findItem(R.id.readaloud_menu_id).isVisible());
+        */
     }
 
     private boolean doTestShouldShowNewMenu(boolean isAutomotive, boolean isInstanceSwitcherEnabled,

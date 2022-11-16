@@ -92,6 +92,12 @@ public class BookmarkAddEditFolderActivity
             if (!node.getId().equals(mFolderId)) return;
             finish();
         }
+
+        // Ecosia: Bookmark Import / Export
+        @Override
+        public void bookmarkModelNeedsReloadAfterBookmarksImport() {
+            // only required after successful bookmark import
+        }
     };
 
     /**

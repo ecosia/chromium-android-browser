@@ -22,6 +22,8 @@ import org.chromium.chrome.browser.toolbar.TabCountProvider.TabCountObserver;
 import org.chromium.chrome.browser.ui.theme.BrandedColorScheme;
 import org.chromium.ui.widget.ChromeImageView;
 
+import org.chromium.chrome.browser.toolbar.R;
+
 /**
  * TabLayout shown in the Horizontal Tab Switcher.
  */
@@ -50,7 +52,7 @@ public class IncognitoToggleTabLayout extends TabLayout implements TabCountObser
         mTabIconDarkColor = AppCompatResources.getColorStateList(
                 getContext(), R.color.default_icon_color_tint_list);
         mTabIconSelectedDarkColor = AppCompatResources.getColorStateList(
-                getContext(), R.color.default_icon_color_accent1_tint_list);
+                getContext(), R.color.ecosia_tabs_group_counter_selected); //Ecosia : Tabswitcher mode tab strip color
         mTabIconLightColor =
                 AppCompatResources.getColorStateList(getContext(), R.color.white_alpha_70);
         mIncognitoSelectedColor = AppCompatResources.getColorStateList(
@@ -63,7 +65,7 @@ public class IncognitoToggleTabLayout extends TabLayout implements TabCountObser
         mStandardButtonIcon.setContentDescription(
                 getResources().getString(R.string.accessibility_tab_switcher_standard_stack));
         mIncognitoButtonIcon = new ChromeImageView(getContext());
-        mIncognitoButtonIcon.setImageResource(R.drawable.incognito_small);
+        mIncognitoButtonIcon.setImageResource(R.drawable.incognito_icon); //Ecosia: branding incognito icon
         mIncognitoButtonIcon.setContentDescription(
                 getResources().getString(R.string.accessibility_tab_switcher_incognito_stack));
 
@@ -140,8 +142,22 @@ public class IncognitoToggleTabLayout extends TabLayout implements TabCountObser
                         : mTabIconSelectedDarkColor.getDefaultColor());
 
         // Update the Tab Switcher (Standard button) tab
+
+        /* Ecosia: MOB-1344 (https://ecosia.atlassian.net/browse/MOB-1344)
         mTabSwitcherDrawable.setTint(
                 isIncognitoSelected ? mTabIconLightColor : mTabIconSelectedDarkColor);
+
+         */
+
+        final Context context = getContext();
+        // Ecosia: This might be slightly confusing but, incognito selected == normal not selected == white
+        final ColorStateList ecosiaThemeColor = isIncognitoSelected ?
+                ColorStateList.valueOf(context.getColor(R.color.ecosia_tabs_group_incognito)) :
+                ColorStateList.valueOf(context.getColor(R.color.ecosia_tabs_group_counter_selected));
+        mTabSwitcherDrawable.setTint(ecosiaThemeColor);
+
+        // Ecosia End
+
         ImageViewCompat.setImageTintList(mStandardButtonIcon,
                 isIncognitoSelected ? mTabIconLightColor : mTabIconSelectedDarkColor);
 

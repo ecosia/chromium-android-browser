@@ -1110,7 +1110,9 @@ public class AppBannerManagerTest {
         TestThreadUtils.runOnUiThreadBlocking(() -> {
             AppMenuCoordinator coordinator = mTabbedActivityTestRule.getAppMenuCoordinator();
             AppMenuTestSupport.showAppMenu(coordinator, null, false);
+            /* Ecosia : Disable install app
             AppMenuTestSupport.callOnItemClick(coordinator, R.id.install_webapp_id);
+            */
         });
         mOnEventCallback.waitForCallback(callCount, 1);
 
@@ -1148,7 +1150,9 @@ public class AppBannerManagerTest {
         TestThreadUtils.runOnUiThreadBlocking(() -> {
             AppMenuCoordinator coordinator = mTabbedActivityTestRule.getAppMenuCoordinator();
             AppMenuTestSupport.showAppMenu(coordinator, null, false);
+            /* Ecosia : Disable install app
             AppMenuTestSupport.callOnItemClick(coordinator, R.id.install_webapp_id);
+            */
         });
         mOnEventCallback.waitForCallback(callCount, 1);
 

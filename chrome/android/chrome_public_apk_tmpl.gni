@@ -26,12 +26,21 @@ declare_args() {
   # WebView providers which declare one of a handful of package names. See
   # https://chromium.googlesource.com/chromium/src/+/HEAD/android_webview/docs/build-instructions.md#Changing-package-name
   # for details.
-  chrome_public_manifest_package = "org.chromium.chrome"
-  if (use_stable_package_name_for_trichrome) {
-    chrome_public_manifest_package += ".stable"
-  } else if (android_channel != "default") {
-    chrome_public_manifest_package += "." + android_channel
-  }
+  
+  # Ecosia - hardwire package name
+  chrome_public_manifest_package = "com.ecosia.android"
+  
+  #if (use_stable_package_name_for_trichrome) {
+  #  chrome_public_manifest_package += ".stable"
+  #} else if (android_channel != "default") {
+  #  chrome_public_manifest_package += "." + android_channel
+  #}
+   
+  # Ecosia specific options
+  appcenter_secret = ""
+  cloudflare_client_id = ""
+  cloudflare_client_secret = ""
+  facebook_app_id = ""
 }
 
 chrome_public_test_manifest_package = "org.chromium.chrome.tests"
@@ -43,6 +52,10 @@ default_chrome_public_jinja_variables = [
   "enable_openxr=$enable_openxr",
   "enable_arcore=$enable_arcore",
   "zygote_preload_class=org.chromium.content_public.app.ZygotePreload",
+  "appcenter_secret=$appcenter_secret",
+  "cloudflare_client_id=$cloudflare_client_id",
+  "cloudflare_client_secret=$cloudflare_client_secret",
+  "facebook_app_id=$facebook_app_id",
 ]
 
 monochrome_android_manifest_jinja_variables =

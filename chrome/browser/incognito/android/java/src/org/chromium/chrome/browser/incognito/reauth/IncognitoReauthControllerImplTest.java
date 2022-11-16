@@ -20,6 +20,7 @@ import androidx.test.filters.SmallTest;
 
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -191,6 +192,7 @@ public class IncognitoReauthControllerImplTest {
      * This tests that we do show a re-auth when Incognito tabs already exists after Chrome comes
      * to foreground.
      */
+    @Ignore("Ecosia :Disable Incognito Reauthentication")
     @Test
     @MediumTest
     public void testIncognitoTabsCreated_BeforeForeground_ShowsReauth() {
@@ -232,6 +234,7 @@ public class IncognitoReauthControllerImplTest {
                 mIncognitoReauthController.isReauthPageShowing());
     }
 
+    @Ignore("Ecosia :Disable Incognito Reauthentication")
     @Test
     @MediumTest
     public void testWhenTabModelChangesToRegularFromIncognito_HidesReauth() {
@@ -257,6 +260,7 @@ public class IncognitoReauthControllerImplTest {
                 mIncognitoReauthController.isReauthPageShowing());
     }
 
+    @Ignore("Ecosia :Disable Incognito Reauthentication")
     @Test
     @MediumTest
     public void testIncognitoTabsRestore_ShowsReauth() {
@@ -286,6 +290,7 @@ public class IncognitoReauthControllerImplTest {
                 mIncognitoReauthController.isReauthPageShowing());
     }
 
+    @Ignore("Ecosia :Disable Incognito Reauthentication")
     @Test
     @MediumTest
     public void testNewIncognitoSession_AfterClosingIncognitoTabs_DoesNotShowReauth() {
@@ -345,6 +350,7 @@ public class IncognitoReauthControllerImplTest {
         verifyNoMoreInteractions(mIncognitoReauthCallbackMock);
     }
 
+    @Ignore("Ecosia : Disable Incognito Reauthentication")
     @Test
     @SmallTest
     public void testLayoutStateChange_HidesOrShowsReauthScreen() {

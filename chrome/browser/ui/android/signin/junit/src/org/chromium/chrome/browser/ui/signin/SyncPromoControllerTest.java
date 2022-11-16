@@ -12,6 +12,7 @@ import android.text.format.DateUtils;
 
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -87,6 +88,7 @@ public class SyncPromoControllerTest {
                 ChromePreferenceKeys.SIGNIN_PROMO_NTP_LAST_SHOWN_TIME, 0L);
     }
 
+    @Ignore   // Ecosia: custom NTP MOB-1894
     @Test
     public void shouldShowSyncPromoForNTPWhenNoAccountOnDevice() {
         Assert.assertTrue(
@@ -113,6 +115,7 @@ public class SyncPromoControllerTest {
                 SyncPromoController.canShowSyncPromo(SigninAccessPoint.NTP_CONTENT_SUGGESTIONS));
     }
 
+    @Ignore   // Ecosia: custom NTP MOB-1894
     @Test
     public void shouldShowSyncPromoForNTPWhenSecondaryAccountCannotOfferSyncPromos() {
         mAccountManagerTestRule.addAccount("test1@gmail.com",
@@ -124,6 +127,7 @@ public class SyncPromoControllerTest {
                 SyncPromoController.canShowSyncPromo(SigninAccessPoint.NTP_CONTENT_SUGGESTIONS));
     }
 
+    @Ignore   // Ecosia: custom NTP MOB-1894
     @Test
     public void shouldShowNTPSyncPromoWhenCountLimitIsNotExceeded() {
         StartSurfaceConfiguration.SIGNIN_PROMO_NTP_COUNT_LIMIT.setForTesting(
@@ -148,6 +152,7 @@ public class SyncPromoControllerTest {
                 SyncPromoController.canShowSyncPromo(SigninAccessPoint.NTP_CONTENT_SUGGESTIONS));
     }
 
+    @Ignore   // Ecosia: custom NTP MOB-1894
     @Test
     public void shouldShowNTPSyncPromoWithoutTimeSinceFirstShownLimit() {
         final long firstShownTime =
@@ -161,6 +166,7 @@ public class SyncPromoControllerTest {
                 SyncPromoController.canShowSyncPromo(SigninAccessPoint.NTP_CONTENT_SUGGESTIONS));
     }
 
+    @Ignore   // Ecosia: custom NTP MOB-1894
     @Test
     public void shouldShowNTPSyncPromoWhenTimeSinceFirstShownLimitIsNotExceeded() {
         final long firstShownTime = System.currentTimeMillis();
@@ -237,6 +243,7 @@ public class SyncPromoControllerTest {
                                 SigninAccessPoint.NTP_CONTENT_SUGGESTIONS)));
     }
 
+    @Ignore   // Ecosia: custom NTP MOB-1894
     @Test
     public void shouldResetLimitsWhenResetTimeLimitIsExceeded() {
         final long firstShownTime =
@@ -262,6 +269,7 @@ public class SyncPromoControllerTest {
                                 SigninAccessPoint.NTP_CONTENT_SUGGESTIONS)));
     }
 
+    @Ignore   // Ecosia: custom NTP MOB-1894
     @Test
     public void shouldShowSyncPromoForNTPWhenNotDismissed() {
         mSharedPreferencesManager.writeBoolean(

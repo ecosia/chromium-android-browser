@@ -78,6 +78,9 @@ class CookieControlsController
   void AddObserver(CookieControlsObserver* obs);
   void RemoveObserver(CookieControlsObserver* obs);
 
+  // Ecosia: returns allowed Cookies
+  net::CookieList GetAllowedCookies();
+
  private:
   struct Status {
     CookieControlsStatus status;

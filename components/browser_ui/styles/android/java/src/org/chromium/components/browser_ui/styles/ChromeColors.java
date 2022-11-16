@@ -6,6 +6,7 @@ package org.chromium.components.browser_ui.styles;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
+import android.content.res.Configuration;
 
 import androidx.annotation.ColorInt;
 import androidx.annotation.ColorRes;
@@ -31,8 +32,22 @@ public class ChromeColors {
      * @return The default theme color.
      */
     public static @ColorInt int getDefaultThemeColor(Context context, boolean isIncognito) {
-        return isIncognito ? context.getColor(R.color.toolbar_background_primary_dark)
-                           : MaterialColors.getColor(context, R.attr.colorSurface, TAG);
+        final int defaultThemeColor;
+        if (isIncognito) {
+            defaultThemeColor = context.getColor(R.color.toolbar_background_primary_dark);
+        } else {
+            if (inNightMode(context)) {
+                defaultThemeColor = context.getColor(R.color.ecosia_toolbar_color_dark);
+            } else {
+                defaultThemeColor = context.getColor(R.color.ecosia_toolbar_color_light);
+            }
+        }
+        return defaultThemeColor;
+    }
+
+    private static boolean inNightMode(Context context) {
+        int uiMode = context.getResources().getConfiguration().uiMode;
+        return (uiMode & Configuration.UI_MODE_NIGHT_MASK) == Configuration.UI_MODE_NIGHT_YES;
     }
 
     /**

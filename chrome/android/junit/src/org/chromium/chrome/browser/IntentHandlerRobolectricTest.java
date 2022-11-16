@@ -22,6 +22,7 @@ import androidx.test.filters.SmallTest;
 
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -301,6 +302,7 @@ public class IntentHandlerRobolectricTest {
                 "Intent with null data should be valid", IntentHandler.intentHasValidUrl(mIntent));
     }
 
+    @Ignore("Ecosia : Disabled Partner NTPs")
     @Test
     @SmallTest
     @UiThreadTest

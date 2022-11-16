@@ -31,6 +31,7 @@ import androidx.test.filters.SmallTest;
 
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TestRule;
@@ -339,6 +340,7 @@ public class ReturnToChromeUtilUnitTest {
                 ChromePreferenceKeys.START_RETURN_TIME_SEGMENTATION_RESULT_MS);
     }
 
+    @Ignore("Ecosia : Disable Start surface BEHAVIOURAL_TARGETING flag")
     @Test
     @SmallTest
     public void testShouldShowStartSurfaceAsTheHomePageUseVisibleTime() {
@@ -407,6 +409,7 @@ public class ReturnToChromeUtilUnitTest {
                 mContext, intent, mTabModelSelector, mInactivityTracker, false /* isTablet */));
     }
 
+    @Ignore("Ecosia : StartSurface is disabled")
     @Test
     @SmallTest
     public void testShouldShowStartSurfaceAtStartupWithDefaultChromeHomepage() {
@@ -446,6 +449,7 @@ public class ReturnToChromeUtilUnitTest {
                 ChromePreferenceKeys.TABBED_ACTIVITY_LAST_BACKGROUNDED_TIME_MS_PREF);
     }
 
+    @Ignore("Ecosia : Disable Start surface BEHAVIOURAL_TARGETING flag")
     @Test
     @SmallTest
     public void testShouldShowStartSurfaceWithCustomizedHomePage() {
@@ -515,6 +519,7 @@ public class ReturnToChromeUtilUnitTest {
         Assert.assertFalse(ReturnToChromeUtil.isStartSurfaceEnabled(mContext));
     }
 
+    @Ignore("Ecosia : Disable Start surface BEHAVIOURAL_TARGETING flag")
     @Test
     @SmallTest
     @DisableFeatures({ChromeFeatureList.NEW_TAB_SEARCH_ENGINE_URL_ANDROID})
@@ -539,6 +544,7 @@ public class ReturnToChromeUtilUnitTest {
         SharedPreferencesManager.getInstance().removeKey(ChromePreferenceKeys.IS_DSE_GOOGLE);
     }
 
+    @Ignore("Ecosia : Home page is Ecosia ")
     @Test
     @SmallTest
     public void testShouldNotShowStartSurfaceOnStartWhenHomepagePolicyManagerIsNotInitialized() {
@@ -579,6 +585,7 @@ public class ReturnToChromeUtilUnitTest {
                         "Startup.Android.IsHomepagePolicyManagerInitialized"));
     }
 
+    @Ignore("Ecosia : Disable start surface")
     @Test
     @SmallTest
     @EnableFeatures(ChromeFeatureList.START_SURFACE_ON_TABLET)
@@ -632,6 +639,7 @@ public class ReturnToChromeUtilUnitTest {
                 true, intent, mSaveInstanceState, mTabModelSelector, mInactivityTracker));
     }
 
+    @Ignore("Ecosia : Disable start surface")
     @Test
     @SmallTest
     @EnableFeatures(ChromeFeatureList.START_SURFACE_ON_TABLET)
@@ -699,6 +707,7 @@ public class ReturnToChromeUtilUnitTest {
         histogram.assertExpected();
     }
 
+    @Ignore("Ecosia : Disable start surface")
     @Test
     @SmallTest
     @EnableFeatures(ChromeFeatureList.START_SURFACE_ON_TABLET)

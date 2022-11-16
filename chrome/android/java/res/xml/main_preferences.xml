@@ -128,6 +128,7 @@ Use of this source code is governed by the GPLv3 that can be found in the compon
         android:fragment="org.chromium.chrome.browser.tracing.settings.DeveloperSettings"
         android:key="developer"
         android:order="23"
+        app:isPreferenceVisible="false"
         android:title="Developer options"/>
     <Preference
         android:fragment="org.chromium.chrome.browser.about_settings.AboutChromeSettings"

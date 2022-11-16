@@ -35,6 +35,12 @@ class BookmarkFolderPickerMediator {
                 mFinishRunnable.run();
             }
         }
+
+        // Ecosia: Bookmark Import / Export
+        @Override
+        public void bookmarkModelNeedsReloadAfterBookmarksImport() {
+
+        }
     };
 
     private BookmarkUiPrefs.Observer mBookmarkUiPrefsObserver = new BookmarkUiPrefs.Observer() {

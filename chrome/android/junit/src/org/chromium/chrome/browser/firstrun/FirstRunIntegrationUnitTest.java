@@ -17,6 +17,7 @@ import androidx.browser.customtabs.CustomTabsIntent;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -165,6 +166,7 @@ public final class FirstRunIntegrationUnitTest {
         return activity;
     }
 
+    @Ignore("Ecosia : Test case executed in EcosiaFirstRunIntegrationUnitTest")
     @Test
     public void testGenericViewIntentGoesToFirstRun() {
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://test.com"));
@@ -175,6 +177,7 @@ public final class FirstRunIntegrationUnitTest {
         Assert.assertTrue(launcherActivity.isFinishing());
     }
 
+    @Ignore("Ecosia : Test case executed in EcosiaFirstRunIntegrationUnitTest")
     @Test
     public void testRedirectCustomTabActivityToFirstRun() {
         CustomTabsIntent customTabIntent = new CustomTabsIntent.Builder().build();
@@ -189,6 +192,7 @@ public final class FirstRunIntegrationUnitTest {
         Assert.assertTrue(launcherActivity.isFinishing());
     }
 
+    @Ignore("Ecosia : Test case executed in EcosiaFirstRunIntegrationUnitTest")
     @Test
     public void testRedirectChromeTabbedActivityToFirstRun() {
         Intent intent = new Intent();
@@ -198,6 +202,7 @@ public final class FirstRunIntegrationUnitTest {
         Assert.assertTrue(tabbedActivity.isFinishing());
     }
 
+    @Ignore("Ecosia : Test case executed in EcosiaFirstRunIntegrationUnitTest")
     @Test
     public void testRedirectSearchActivityToFirstRun() {
         Intent intent = new Intent();
@@ -213,6 +218,7 @@ public final class FirstRunIntegrationUnitTest {
      * to WebappActivity) displays the splash screen this is necessary for correct behaviour when
      * the user taps the app icon and the WebAPK is still running.
      */
+    @Ignore("Ecosia : Test case not applicable")
     @Test
     public void testFreRelaunchesWebApkNotWebApkActivity() {
         String webApkPackageName = "org.chromium.webapk.name";
@@ -242,6 +248,7 @@ public final class FirstRunIntegrationUnitTest {
      * Test that if a WebAPK only requires the lightweight FRE and a user has gone through the
      * lightweight FRE that the WebAPK launches and no FRE is shown to the user.
      */
+    @Ignore("Ecosia : Test case not applicable")
     @Test
     public void testUserAcceptedLightweightFreLaunch() {
         FirstRunStatus.setLightweightFirstRunFlowComplete(true);
@@ -270,6 +277,7 @@ public final class FirstRunIntegrationUnitTest {
     /**
      * Test that the lightweight first run experience is used for unbound WebAPKs.
      */
+    @Ignore("Ecosia : Test case not applicable")
     @Test
     public void testLightweightFre() {
         String webApkPackageName = "unbound.webapk";
@@ -296,6 +304,7 @@ public final class FirstRunIntegrationUnitTest {
      * - Has a WebAPK package extra which meets the lightweight first run activity requirements
      * - Refers to an invalid WebAPK
      */
+    @Ignore("Ecosia : Test case not applicable")
     @Test
     public void testFullFreIfWebApkInvalid() {
         String webApkPackageName = "unbound.webapk";

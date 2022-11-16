@@ -35,7 +35,7 @@ import org.chromium.components.browser_ui.notifications.NotificationManagerProxy
                                     R.string.vr_preparing_vr_notification_title))
                             .setContentText(context.getResources().getString(
                                     R.string.vr_preparing_vr_notification_body))
-                            .setSmallIcon(R.drawable.ic_chrome)
+                            .setSmallIcon(R.drawable.ic_ecosia)
                             // Need to set category and max priority. Otherwise, notification
                             // won't show up.
                             .setCategory(Notification.CATEGORY_MESSAGE)

@@ -533,11 +533,14 @@ public final class ReturnToChromeUtil {
         // When creating initial tab, i.e. cold start without restored tabs, we should only show
         // StartSurface as the HomePage if Single Pane is enabled, HomePage is not customized, not
         // on tablet, accessibility is not enabled or the tab group continuation feature is enabled.
+        /*Ecosia - MOB-2354 Launching homepage on cold start
         return (!DseNewTabUrlManager.isNewTabSearchEngineUrlAndroidEnabled()
                        || DseNewTabUrlManager.isDefaultSearchEngineGoogle())
                 && StartSurfaceConfiguration.isStartSurfaceFlagEnabled()
                 && !shouldHideStartSurfaceWithAccessibilityOn(context)
                 && !DeviceFormFactor.isNonMultiDisplayContextOnTablet(context);
+         */
+        return false;
     }
 
     /**
@@ -614,7 +617,10 @@ public final class ReturnToChromeUtil {
             if (!initialized && !sSkipInitializationCheckForTesting) {
                 return false;
             } else {
+                /* Ecosia : Disable check for Home page launch after onboarding
                 return useChromeHomepage();
+               */
+                return false;
             }
         }
 

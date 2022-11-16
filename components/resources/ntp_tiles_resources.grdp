@@ -34,9 +34,10 @@
       </then>
       <else>
         <!-- Fall back to a local resource so popular sites can be tested properly. -->
-        <include name="IDR_DEFAULT_POPULAR_SITES_JSON" file="../ntp_tiles/resources/default_popular_sites.json" type="BINDATA" compress="gzip" />
-        <include name="IDR_DEFAULT_POPULAR_SITES_WITH_POPULAR_APPS_JSON" file="../ntp_tiles/resources/default_popular_sites_with_popular_apps.json" type="BINDATA" compress="gzip" />
-        <include name="IDR_DEFAULT_POPULAR_SITES_WITHOUT_POPULAR_APPS_JSON" file="../ntp_tiles/resources/default_popular_sites_without_popular_apps.json" type="BINDATA" compress="gzip" />
+        <!-- Ecosia: use custom default popular sites for the first launch -->
+        <include name="IDR_DEFAULT_POPULAR_SITES_JSON" file="../ntp_tiles/resources/ecosia_default_popular_sites.json" type="BINDATA" compress="gzip" />
+        <include name="IDR_DEFAULT_POPULAR_SITES_WITH_POPULAR_APPS_JSON" file="../ntp_tiles/resources/ecosia_default_popular_sites.json" type="BINDATA" compress="gzip" />
+        <include name="IDR_DEFAULT_POPULAR_SITES_WITHOUT_POPULAR_APPS_JSON" file="../ntp_tiles/resources/ecosia_default_popular_sites.json" type="BINDATA" compress="gzip" />
       </else>
     </if>
   </if>

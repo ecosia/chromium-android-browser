@@ -34,6 +34,7 @@ import androidx.test.filters.SmallTest;
 
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TestRule;
@@ -745,6 +746,7 @@ public class TabSwitcherMediatorUnitTest {
         assertThat(mMediator.openTabGridDialog(mTab1), equalTo(null));
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     public void openDialogButton_TabGroup_NotEmpty() {
         // Set up a tab group.
@@ -759,6 +761,7 @@ public class TabSwitcherMediatorUnitTest {
         verify(mTabGridDialogController).resetWithListOfTabs(eq(tabs));
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     public void openDialogButton_TabGroup_Empty() {
         // Assume that due to tab model change, current group becomes empty in current model.
@@ -884,6 +887,7 @@ public class TabSwitcherMediatorUnitTest {
                 mModel.get(TabListContainerProperties.SHADOW_TOP_OFFSET));
     }
 
+    @Ignore("Ecosia : Disabled Start surface")
     @Test
     @EnableFeatures(ChromeFeatureList.START_SURFACE_ANDROID)
     // When Start surface refactoring is enabled, the top control properties are no longer handled

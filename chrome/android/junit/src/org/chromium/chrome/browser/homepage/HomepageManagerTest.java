@@ -9,6 +9,7 @@ import static org.mockito.Mockito.doReturn;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -104,6 +105,7 @@ public class HomepageManagerTest {
         Assert.assertFalse("NTP should be considered the NTP.", HomepageManager.isHomepageNonNtp());
     }
 
+    @Ignore("Ecosia : Disable chrome homepage test")
     @Test
     public void testGetDefaultHomepageGurlPreferenceKeysMigration() {
         Mockito.doNothing()

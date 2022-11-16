@@ -101,7 +101,13 @@ public class CookieControlsBridge {
         mObserver.onCookiesCountChanged(allowedCookies, blockedCookies);
     }
 
+    // Ecosia: cookies
     @CalledByNative
+    private void onCookiesChanged(String cookie) {
+        mObserver.onCookiesChanged(cookie);
+	}
+    
+	@CalledByNative
     private void onStatusChanged(@CookieControlsStatus int status,
             @CookieControlsEnforcement int enforcement, long expiration) {
         mObserver.onStatusChanged(status, enforcement, expiration);

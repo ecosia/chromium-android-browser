@@ -18,6 +18,7 @@ import androidx.test.core.app.ApplicationProvider;
 
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TestRule;
@@ -68,6 +69,7 @@ public class WebApkInstallNotificationTest {
                 (NotificationManager) mContext.getSystemService(Context.NOTIFICATION_SERVICE));
     }
 
+    @Ignore("Ecosia : Disabling test checking for chrome icon in browser")
     @Test
     public void testInProgressNotification() {
         TestThreadUtils.runOnUiThreadBlocking(() -> {
@@ -96,6 +98,7 @@ public class WebApkInstallNotificationTest {
         Assert.assertTrue(expectedSmallIcon.sameAs(smallIcon));
     }
 
+    @Ignore("Ecosia : Disabling test checking for chrome icon in browser")
     @Test
     public void testCompleteNotification() {
         WebApkInstallService.showInstalledNotification(
@@ -122,6 +125,7 @@ public class WebApkInstallNotificationTest {
         Assert.assertNotNull(notification.contentIntent);
     }
 
+    @Ignore("Ecosia : Disabled web apk install")
     @Test
     @EnableFeatures({ChromeFeatureList.WEB_APK_INSTALL_FAILURE_NOTIFICATION,
             ChromeFeatureList.WEB_APK_INSTALL_RETRY})
@@ -161,6 +165,7 @@ public class WebApkInstallNotificationTest {
         Assert.assertNotNull(actions[0].actionIntent);
     }
 
+    @Ignore("Ecosia : Disabled web apk install")
     @Test
     @EnableFeatures({ChromeFeatureList.WEB_APK_INSTALL_FAILURE_NOTIFICATION,
             ChromeFeatureList.WEB_APK_INSTALL_RETRY})

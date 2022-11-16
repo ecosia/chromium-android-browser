@@ -57,7 +57,7 @@ import org.chromium.ui.modelutil.PropertyModel;
  */
 public class StatusMediator
         implements PermissionDialogController.Observer, TemplateUrlServiceObserver,
-                   MerchantTrustSignalsCoordinator.OmniboxIconController, CookieControlsObserver {
+        MerchantTrustSignalsCoordinator.OmniboxIconController, CookieControlsObserver {
     private static final int PERMISSION_ICON_DEFAULT_DISPLAY_TIMEOUT_MS = 8500;
     public static final String PERMISSION_ICON_TIMEOUT_MS_PARAM = "PermissionIconTimeoutMs";
 
@@ -131,15 +131,15 @@ public class StatusMediator
      *         such as when called from a search activity.
      */
     public StatusMediator(PropertyModel model, Resources resources, Context context,
-            UrlBarEditingTextStateProvider urlBarEditingTextStateProvider, boolean isTablet,
-            LocationBarDataProvider locationBarDataProvider,
-            PermissionDialogController permissionDialogController,
-            SearchEngineLogoUtils searchEngineLogoUtils,
-            OneshotSupplier<TemplateUrlService> templateUrlServiceSupplier,
-            Supplier<Profile> profileSupplier, PageInfoIPHController pageInfoIPHController,
-            WindowAndroid windowAndroid,
-            @Nullable Supplier<MerchantTrustSignalsCoordinator>
-                    merchantTrustSignalsCoordinatorSupplier) {
+                          UrlBarEditingTextStateProvider urlBarEditingTextStateProvider, boolean isTablet,
+                          LocationBarDataProvider locationBarDataProvider,
+                          PermissionDialogController permissionDialogController,
+                          SearchEngineLogoUtils searchEngineLogoUtils,
+                          OneshotSupplier<TemplateUrlService> templateUrlServiceSupplier,
+                          Supplier<Profile> profileSupplier, PageInfoIPHController pageInfoIPHController,
+                          WindowAndroid windowAndroid,
+                          @Nullable Supplier<MerchantTrustSignalsCoordinator>
+                                  merchantTrustSignalsCoordinatorSupplier) {
         mModel = model;
         mLocationBarDataProvider = locationBarDataProvider;
         mSearchEngineLogoUtils = searchEngineLogoUtils;
@@ -213,7 +213,7 @@ public class StatusMediator
      * Update the displayed page's security level and whether it's a paint preview or offline page.
      */
     void updateVerboseStatus(@ConnectionSecurityLevel int securityLevel, boolean pageIsOffline,
-            boolean pageIsPaintPreview) {
+                             boolean pageIsPaintPreview) {
         boolean didUpdate = false;
         if (mPageSecurityLevel != securityLevel) {
             mPageSecurityLevel = securityLevel;
@@ -500,13 +500,15 @@ public class StatusMediator
         if (mUrlHasFocus) {
             if (mShowStatusIconWhenUrlFocused) {
                 icon = mUrlBarTextIsSearch ? R.drawable.ic_suggestion_magnifier
-                                           : R.drawable.ic_globe_24dp;
+                        : R.drawable.ic_globe_24dp;
                 tint = mNavigationIconTintRes;
             }
         } else if (mSecurityIconRes != 0) {
             mIsSecurityViewShown = true;
             icon = mSecurityIconRes;
-            tint = mSecurityIconTintRes;
+            /* Ecosia: set brand color for security icon MOB-2401
+            tint = mSecurityIconTintRes;*/
+            tint = R.color.ecosia_brand_primary;
             toast = R.string.menu_page_info;
         }
 
@@ -631,7 +633,7 @@ public class StatusMediator
     // PermissionDialogController.Observer interface
     @Override
     public void onDialogResult(WindowAndroid window, @ContentSettingsType int[] permissions,
-            @ContentSettingValues int result) {
+                               @ContentSettingValues int result) {
         if (window != mWindowAndroid) {
             return;
         }
@@ -671,7 +673,7 @@ public class StatusMediator
         boolean isIncognito = mLocationBarDataProvider.isIncognito();
         Drawable eyeCrossedIcon = SettingsUtils.getTintedIcon(mContext, R.drawable.ic_eye_crossed,
                 isIncognito ? R.color.default_icon_color_blue_light
-                            : R.color.default_icon_color_accent1_tint_list);
+                        : R.color.default_icon_color_accent1_tint_list);
 
         PermissionIconResource permissionIconResource =
                 new PermissionIconResource(eyeCrossedIcon, isIncognito, COOKIE_CONTROLS_ICON);
@@ -707,7 +709,7 @@ public class StatusMediator
     // MerchantTrustSignalsCoordinator.OmniboxIconController interface
     @Override
     public void showStoreIcon(WindowAndroid window, String url, Drawable drawable,
-            @StringRes int stringId, boolean canShowIph) {
+                              @StringRes int stringId, boolean canShowIph) {
         if ((window != mWindowAndroid)
                 || (!url.equals(mLocationBarDataProvider.getCurrentGurl().getSpec()))
                 || (mLocationBarDataProvider.isIncognito())) {

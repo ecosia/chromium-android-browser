@@ -96,6 +96,7 @@ import org.chromium.ui.modelutil.MVCListAdapter;
 import org.chromium.ui.modelutil.MVCListAdapter.ModelList;
 import org.chromium.ui.modelutil.PropertyModel;
 import org.chromium.url.GURL;
+import org.ecosia.referrals.Referrals;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -353,7 +354,8 @@ public class AppMenuPropertiesDelegateImpl implements AppMenuPropertiesDelegate 
             if (!item.isVisible()) continue;
 
             PropertyModel propertyModel = AppMenuUtil.menuItemToPropertyModel(item);
-            propertyModel.set(AppMenuItemProperties.ICON_COLOR_RES, getMenuItemIconColorRes(item));
+            /* Ecosia: Don't tint menu items
+            propertyModel.set(AppMenuItemProperties.ICON_COLOR_RES, getMenuItemIconColorRes(item)); */
             propertyModel.set(AppMenuItemProperties.SUPPORT_ENTER_ANIMATION, true);
             propertyModel.set(AppMenuItemProperties.MENU_ICON_AT_START, isMenuIconAtStart());
             if (item.hasSubMenu()) {
@@ -522,13 +524,14 @@ public class AppMenuPropertiesDelegateImpl implements AppMenuPropertiesDelegate 
         } else {
             menu.findItem(R.id.get_image_descriptions_id).setVisible(false);
         }
-
+        /*Ecosia : Disable Zoom option
         // Conditionally add the Zoom menu item, but not on the native NTP or on Start surface.
         menu.findItem(R.id.page_zoom_id)
                 .setVisible(isCurrentTabNotNull
                         && shouldShowWebContentsDependentMenuItem(currentTab)
                         && PageZoomCoordinator.shouldShowMenuItem());
-
+        */
+        menu.findItem(R.id.page_zoom_id).setVisible(false);
         // Disable find in page on the native NTP or on Start surface.
         menu.findItem(R.id.find_in_page_id)
                 .setVisible(
@@ -661,6 +664,15 @@ public class AppMenuPropertiesDelegateImpl implements AppMenuPropertiesDelegate 
                 // to be true.
                 hasItemBetweenDividers = true;
             }
+
+            // Ecosia: Referrals
+            if (!Referrals.getInstance(mContext).isReferralsFeatureEnabled()) {
+                MenuItem inviteFriendsMenuItem = menu.findItem(R.id.ecosia_referrals_invite_friends_id);
+                if (inviteFriendsMenuItem != null) {
+                    inviteFriendsMenuItem.setVisible(false);
+                    inviteFriendsMenuItem.setEnabled(false);
+                }
+            }
         }
     }
 
@@ -761,6 +773,9 @@ public class AppMenuPropertiesDelegateImpl implements AppMenuPropertiesDelegate 
      * @return Whether the "New window" menu item should be displayed.
      */
     protected boolean shouldShowNewWindow() {
+        // Ecosia: MOB-2162 disable multi window support
+        return false;
+        /*
         // Hide the menu on automotive devices.
         if (BuildInfo.getInstance().isAutomotive) return false;
 
@@ -781,6 +796,7 @@ public class AppMenuPropertiesDelegateImpl implements AppMenuPropertiesDelegate 
                     || mMultiWindowModeStateDispatcher.isInMultiWindowMode()
                     || mMultiWindowModeStateDispatcher.isInMultiDisplayMode();
         }
+        */
     }
 
     private boolean shouldShowManageAllWindows() {
@@ -859,19 +875,21 @@ public class AppMenuPropertiesDelegateImpl implements AppMenuPropertiesDelegate 
         mAddAppTitleShown = AppMenuVerbiage.APP_MENU_OPTION_UNKNOWN;
 
         MenuItem addTohomescreenItem = menu.findItem(R.id.add_to_homescreen_id);
+        addTohomescreenItem.setVisible(false);
+        /* Ecosia : Disabling Install App option
         MenuItem installWebAppItem = menu.findItem(R.id.install_webapp_id);
         MenuItem openWebApkItem = menu.findItem(R.id.open_webapk_id);
 
-        addTohomescreenItem.setVisible(false);
         installWebAppItem.setVisible(false);
         openWebApkItem.setVisible(false);
+        */
 
         if (currentTab != null && shouldShowHomeScreenMenuItem) {
             long addToHomeScreenStart = SystemClock.elapsedRealtime();
             ResolveInfo resolveInfo = queryWebApkResolveInfo(mContext, currentTab);
             RecordHistogram.recordTimesHistogram("Android.PrepareMenu.OpenWebApkVisibilityCheck",
                     SystemClock.elapsedRealtime() - addToHomeScreenStart);
-
+            /*Ecosia : Disable web apk install option
             boolean openWebApkItemVisible =
                     resolveInfo != null && resolveInfo.activityInfo.packageName != null;
 
@@ -880,6 +898,7 @@ public class AppMenuPropertiesDelegateImpl implements AppMenuPropertiesDelegate 
                 openWebApkItem.setTitle(mContext.getString(R.string.menu_open_webapk, appName));
                 openWebApkItem.setVisible(true);
             } else {
+            */
                 AppBannerManager.InstallStringPair installStrings =
                         getAddToHomeScreenTitle(currentTab);
 
@@ -887,12 +906,14 @@ public class AppMenuPropertiesDelegateImpl implements AppMenuPropertiesDelegate 
                     addTohomescreenItem.setTitle(installStrings.titleTextId);
                     addTohomescreenItem.setVisible(true);
                     mAddAppTitleShown = AppMenuVerbiage.APP_MENU_OPTION_ADD_TO_HOMESCREEN;
-                } else if (installStrings.titleTextId == AppBannerManager.PWA_PAIR.titleTextId) {
+                }/* Ecosia : Disabling Install App option
+                else if (installStrings.titleTextId == AppBannerManager.PWA_PAIR.titleTextId) {
                     installWebAppItem.setTitle(installStrings.titleTextId);
                     installWebAppItem.setVisible(true);
                     mAddAppTitleShown = AppMenuVerbiage.APP_MENU_OPTION_INSTALL;
                 }
             }
+            */
         }
     }
 
@@ -941,7 +962,9 @@ public class AppMenuPropertiesDelegateImpl implements AppMenuPropertiesDelegate 
             visible = readAloudController != null && currentTab != null
                     && readAloudController.isReadable(currentTab);
         }
+        /* Ecosia : readaloud_menu_id is not defined
         menu.findItem(R.id.readaloud_menu_id).setVisible(visible);
+        */
     }
 
     @Override
@@ -1041,12 +1064,14 @@ public class AppMenuPropertiesDelegateImpl implements AppMenuPropertiesDelegate 
         }
 
         if (currentTab != null && shouldCheckBookmarkStar(currentTab)) {
-            bookmarkMenuItemShortcut.setIcon(R.drawable.btn_star_filled);
-            bookmarkMenuItemShortcut.setChecked(true);
+            bookmarkMenuItemShortcut.setIcon(R.drawable.ic_ecosia_bookmarked);
+            // Ecosia: Do not tint the bookmark icon in blue
+            //bookmarkMenuItemShortcut.setChecked(true);
             bookmarkMenuItemShortcut.setTitleCondensed(mContext.getString(R.string.edit_bookmark));
         } else {
-            bookmarkMenuItemShortcut.setIcon(R.drawable.btn_star);
-            bookmarkMenuItemShortcut.setChecked(false);
+            bookmarkMenuItemShortcut.setIcon(R.drawable.ic_ecosia_bookmark);
+            // Ecosia: Since we don't check we also don't need to uncheck I guess
+            //bookmarkMenuItemShortcut.setChecked(false);
             bookmarkMenuItemShortcut.setTitleCondensed(mContext.getString(R.string.menu_bookmark));
         }
     }

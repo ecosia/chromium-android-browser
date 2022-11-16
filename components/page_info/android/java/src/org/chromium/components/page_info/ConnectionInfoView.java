@@ -130,11 +130,16 @@ public class ConnectionInfoView implements OnClickListener {
                 i, AppCompatResources.getColorStateList(mContext, iconColorId));
 
         TextView d = section.findViewById(R.id.connection_info_description);
-        d.setText(description);
+        d.setText(replaceChromiumWithEcosia(description)); // Ecosia (https://ecosia.atlassian.net/browse/MOB-1295)
         if (TextUtils.isEmpty(description)) d.setVisibility(View.GONE);
 
         mContainer.addView(section);
         return section;
+    }
+
+    // Ecosia (https://ecosia.atlassian.net/browse/MOB-1295)
+    private String replaceChromiumWithEcosia(final String in) {
+        return in.replace("Chromium", "Ecosia");
     }
 
     private void setCertificateViewer(String label) {
@@ -165,6 +170,7 @@ public class ConnectionInfoView implements OnClickListener {
 
     @CalledByNative
     private void addMoreInfoLink(String linkText) {
+        /* Ecosia: Remove More Info Link (https://ecosia.atlassian.net/browse/MOB-1295)
         mMoreInfoLink = new AppCompatTextView(mContext);
         mLinkUrl = HELP_URL;
         mMoreInfoLink.setText(linkText);
@@ -172,7 +178,8 @@ public class ConnectionInfoView implements OnClickListener {
                 mMoreInfoLink, R.style.TextAppearance_TextSmall_Link);
         mMoreInfoLink.setPadding(0, mPaddingVertical, 0, 0);
         mMoreInfoLink.setOnClickListener(this);
-        mDescriptionLayout.addView(mMoreInfoLink);
+        mDescriptionLayout.addView(mMoreInfoLink); 
+		*/
     }
 
     /** Displays the ConnectionInfoView. */

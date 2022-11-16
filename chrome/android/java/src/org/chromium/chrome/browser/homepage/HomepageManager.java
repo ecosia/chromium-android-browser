@@ -152,7 +152,7 @@ public class HomepageManager implements HomepagePolicyManager.HomepagePolicyStat
 
         GURL homepageGurl = getInstance().getHomepageGurlIgnoringEnabledState();
         if (homepageGurl.isEmpty()) {
-            homepageGurl = ChromeUrlConstants.nativeNtpGurl();
+            homepageGurl =  new GURL(UrlConstants.NTP_URL); //Ecosia : Returning Ecosia NTP url
         }
 
         // We have to use Profile.getLastUsedRegularProfile() to get the last used regular Profile
@@ -168,6 +168,7 @@ public class HomepageManager implements HomepagePolicyManager.HomepagePolicyStat
      *         tab page if the homepage button is force enabled via flag.
      */
     public static GURL getDefaultHomepageGurl() {
+        /* Ecosia: use ecosia NTP
         if (PartnerBrowserCustomizations.getInstance().isHomepageProviderAvailableAndEnabled()) {
             return PartnerBrowserCustomizations.getInstance().getHomePageUrl();
         }
@@ -191,8 +192,13 @@ public class HomepageManager implements HomepagePolicyManager.HomepagePolicyStat
                 return homepagePartnerDefaultGurl;
             }
         }
+        if (!homepagePartnerDefaultUri.equals("")) return homepagePartnerDefaultUri;
 
         return ChromeUrlConstants.nativeNtpGurl();
+		*/
+        
+		// Ecosia: ensure that the native url is always returned
+        return new GURL(UrlConstants.NTP_URL);
     }
 
     /**

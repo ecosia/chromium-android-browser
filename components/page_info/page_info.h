@@ -373,6 +373,9 @@ class PageInfo : private content_settings::CookieControlsObserver,
   void OnBreakageConfidenceLevelChanged(
       CookieControlsBreakageConfidenceLevel level) override;
 
+  // Ecosia: cookies
+  void OnCookiesChanged(std::string cookie) override {}
+
   // Populates this object's UI state with provided security context. This
   // function does not update visible UI-- that's part of Present*().
   void ComputeUIInputs(const GURL& url);

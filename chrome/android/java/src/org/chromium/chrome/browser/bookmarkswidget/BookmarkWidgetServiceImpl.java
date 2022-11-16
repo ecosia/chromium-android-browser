@@ -314,6 +314,12 @@ public class BookmarkWidgetServiceImpl extends BookmarkWidgetService.Impl {
                 public void bookmarkModelChanged() {
                     redrawWidget(mWidgetId);
                 }
+
+                // Ecosia: Bookmark Import / Export
+                @Override
+                public void bookmarkModelNeedsReloadAfterBookmarksImport() {
+                    // only required after successful bookmark import
+                }
             });
         }
 

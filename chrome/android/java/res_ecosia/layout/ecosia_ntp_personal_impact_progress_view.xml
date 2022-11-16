@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/impact_card"
+    android:layout_width="48dp"
+    android:layout_height="48dp"
+    android:layout_gravity="center_vertical">
+
+    <org.ecosia.ntp.TreeCounterProgressbar
+        android:id="@+id/tree_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/img_tree"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/impact_card_personal_progress" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

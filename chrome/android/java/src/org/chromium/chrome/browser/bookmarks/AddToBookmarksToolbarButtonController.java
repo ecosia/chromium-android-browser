@@ -68,6 +68,12 @@ public class AddToBookmarksToolbarButtonController
         public void bookmarkModelChanged() {
             refreshBookmarkIcon();
         }
+
+        // Ecosia: Bookmark Import / Export
+        @Override
+        public void bookmarkModelNeedsReloadAfterBookmarksImport() {
+
+        }
     };
 
     /**

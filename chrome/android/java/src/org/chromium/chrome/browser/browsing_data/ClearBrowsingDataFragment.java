@@ -819,20 +819,24 @@ public abstract class ClearBrowsingDataFragment extends PreferenceFragmentCompat
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         menu.clear();
+        /* Ecosia : Disable help action
         MenuItem help =
                 menu.add(Menu.NONE, R.id.menu_id_targeted_help, Menu.NONE, R.string.menu_help);
         help.setIcon(TraceEventVectorDrawableCompat.create(
                 getResources(), R.drawable.ic_help_and_feedback, getActivity().getTheme()));
         help.setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM);
+        */
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        /* Ecosia : Disable help action
         if (item.getItemId() == R.id.menu_id_targeted_help) {
             mHelpAndFeedbackLauncher.show(
                     getActivity(), getString(R.string.help_context_clear_browsing_data), null);
             return true;
         }
+        */
         return super.onOptionsItemSelected(item);
     }
 

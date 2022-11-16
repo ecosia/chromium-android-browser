@@ -17,6 +17,7 @@ import android.view.ViewGroup;
 
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.ArgumentMatchers;
@@ -120,6 +121,7 @@ public class ChromeActivityUnitTest {
         snackbarManager.dismissSnackbars(null);
     }
 
+    @Ignore("Ecosia : Read aloud menu is not defined")
     @Test
     public void testReadAloudAppMenuItemClicked() {
         TestChromeActivity chromeActivity = Mockito.spy(new TestChromeActivity());
@@ -130,9 +132,10 @@ public class ChromeActivityUnitTest {
         mReadAloudControllerSupplier.set(mReadAloudController);
         when(mRootUiCoordinatorMock.getReadAloudControllerSupplier())
                 .thenReturn(mReadAloudControllerSupplier);
-
+        /* Ecosia : readaloud_menu_id is not defined
         assertTrue(
-                chromeActivity.onMenuOrKeyboardAction(R.id.readaloud_menu_id, /*fromMenu=*/true));
+                chromeActivity.onMenuOrKeyboardAction(R.id.readaloud_menu_id, /*fromMenu=*//*true));
+        */
         verify(mReadAloudController, times(1)).playTab(eq(mActivityTab));
     }
 }

@@ -129,9 +129,9 @@ public class LocationBarLayout extends FrameLayout {
      */
     @CallSuper
     public void initialize(@NonNull AutocompleteCoordinator autocompleteCoordinator,
-            @NonNull UrlBarCoordinator urlCoordinator, @NonNull StatusCoordinator statusCoordinator,
-            @NonNull LocationBarDataProvider locationBarDataProvider,
-            @NonNull SearchEngineLogoUtils searchEngineLogoUtils) {
+                           @NonNull UrlBarCoordinator urlCoordinator, @NonNull StatusCoordinator statusCoordinator,
+                           @NonNull LocationBarDataProvider locationBarDataProvider,
+                           @NonNull SearchEngineLogoUtils searchEngineLogoUtils) {
         mAutocompleteCoordinator = autocompleteCoordinator;
         mUrlCoordinator = urlCoordinator;
         mStatusCoordinator = statusCoordinator;
@@ -199,10 +199,10 @@ public class LocationBarLayout extends FrameLayout {
                     (ViewGroup.MarginLayoutParams) mUrlActionContainer.getLayoutParams();
             urlContainerMarginEnd +=
                     MarginLayoutParamsCompat.getMarginStart(urlActionContainerLayoutParams)
-                    + MarginLayoutParamsCompat.getMarginEnd(urlActionContainerLayoutParams);
+                            + MarginLayoutParamsCompat.getMarginEnd(urlActionContainerLayoutParams);
         }
         urlContainerMarginEnd += mStatusCoordinator.isSearchEngineStatusIconVisible()
-                        && mStatusCoordinator.shouldDisplaySearchEngineIcon()
+                && mStatusCoordinator.shouldDisplaySearchEngineIcon()
                 ? getEndPaddingPixelSizeOnFocusDelta()
                 : 0;
         // Account for the URL action container end padding on tablets.
@@ -349,8 +349,8 @@ public class LocationBarLayout extends FrameLayout {
                 OmniboxFeatures.shouldShowModernizeVisualUpdate(getContext());
         int focusedPaddingDimen =
                 modernizeVisualUpdate && OmniboxFeatures.shouldShowSmallBottomMargin()
-                ? R.dimen.location_bar_icon_end_padding_focused_smaller
-                : R.dimen.location_bar_icon_end_padding_focused;
+                        ? R.dimen.location_bar_icon_end_padding_focused_smaller
+                        : R.dimen.location_bar_icon_end_padding_focused;
         if (modernizeVisualUpdate && mLocationBarDataProvider.isIncognito()) {
             focusedPaddingDimen = R.dimen.location_bar_icon_end_padding_focused_incognito;
         }
@@ -422,8 +422,8 @@ public class LocationBarLayout extends FrameLayout {
                 if (scrollingOnNtp) {
                     translationX -= (1.0f - percent)
                             * (mStatusCoordinator.getStatusIconWidth()
-                                    - getResources().getDimensionPixelSize(
-                                            R.dimen.location_bar_status_icon_holding_space_size));
+                            - getResources().getDimensionPixelSize(
+                            R.dimen.location_bar_status_icon_holding_space_size));
                 }
             } else {
                 // No compensation is needed at 0% because the margin is reset to normal.

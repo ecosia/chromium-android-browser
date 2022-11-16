@@ -5,8 +5,9 @@ Use of this source code is governed by a BSD-style license that can be
 found in the LICENSE file.
 -->
 
+<!-- Ecosia: icon branding -->
 <adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android" >
-    <background android:drawable="@android:color/white"/>
-    <foreground android:drawable="@mipmap/layered_app_icon"/>
-    <monochrome android:drawable="@drawable/themed_app_icon"/>
+    <background android:drawable="@color/ecosia_brand_primary_light"/>
+    <foreground android:drawable="@mipmap/ecosia_app_icon_foreground"/>
+    <monochrome android:drawable="@drawable/ecosia_themed_app_icon"/>
 </adaptive-icon>

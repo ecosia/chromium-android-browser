@@ -10,27 +10,39 @@ package org.chromium.chrome.browser.ui.searchactivityutils;
 public class SearchActivityConstants {
     /** Intent Action indicating that the Intent should initiate Text search. */
     public static final String ACTION_START_TEXT_SEARCH =
-            "org.chromium.chrome.browser.ui.searchactivityutils.ACTION_START_TEXT_SEARCH";
+            // Ecosia: change constant for intents (MOB-2180)
+            //"org.chromium.chrome.browser.ui.searchactivityutils.ACTION_START_TEXT_SEARCH";
+            "org.ecosia.searchwidget.ACTION_START_TEXT_SEARCH";
 
     /** Intent Action indicating that the Intent should initiate Search-Engine aided Text search. */
     public static final String ACTION_START_EXTENDED_TEXT_SEARCH =
-            "org.chromium.chrome.browser.ui.searchactivityutils.ACTION_START_EXTENDED_TEXT_SEARCH";
+            // Ecosia: change constant for intents (MOB-2180)
+            //"org.chromium.chrome.browser.ui.searchactivityutils.ACTION_START_EXTENDED_TEXT_SEARCH";
+            "org.ecosia.searchwidget.ACTION_START_EXTENDED_TEXT_SEARCH";
 
     /** Intent Action indicating that the Intent should initiate Voice search. */
     public static final String ACTION_START_VOICE_SEARCH =
-            "org.chromium.chrome.browser.ui.searchactivityutils.ACTION_START_VOICE_SEARCH";
+            // Ecosia: change constant for intents (MOB-2180)
+            //"org.chromium.chrome.browser.ui.searchactivityutils.ACTION_START_VOICE_SEARCH";
+            "org.ecosia.searchwidget.ACTION_START_VOICE_SEARCH";
 
     /**
      * Intent Action indicating that the Intent should initiate Search-Engine aided Voice search.
      */
     public static final String ACTION_START_EXTENDED_VOICE_SEARCH =
-            "org.chromium.chrome.browser.ui.searchactivityutils.ACTION_START_EXTENDED_VOICE_SEARCH";
+            // Ecosia: change constant for intents (MOB-2180)
+            //"org.chromium.chrome.browser.ui.searchactivityutils.ACTION_START_EXTENDED_VOICE_SEARCH";
+            "org.ecosia.searchwidget.ACTION_START_EXTENDED_VOICE_SEARCH";
 
     /** Intent Action indicating that the Intent should initiate Lens assisted search. */
     public static final String ACTION_START_LENS_SEARCH =
-            "org.chromium.chrome.browser.ui.searchactivityutils.ACTION_START_LENS_SEARCH";
+            // Ecosia: change constant for intents (MOB-2180)
+            //"org.chromium.chrome.browser.ui.searchactivityutils.ACTION_START_LENS_SEARCH";
+            "org.ecosia.searchwidget.ACTION_START_LENS_SEARCH";
 
     /** Extra value indicating that SearchActivity was launched from QuickActionSearchWidget. */
     public static final String EXTRA_BOOLEAN_FROM_QUICK_ACTION_SEARCH_WIDGET =
-            "org.chromium.chrome.browser.ui.searchactivityutils.FROM_QUICK_ACTION_SEARCH_WIDGET";
+            // Ecosia: change constant for intents (MOB-2180)
+            //"org.chromium.chrome.browser.ui.searchactivityutils.FROM_QUICK_ACTION_SEARCH_WIDGET";
+            "org.ecosia.searchwidget.FROM_QUICK_ACTION_SEARCH_WIDGET";
 }

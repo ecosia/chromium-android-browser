@@ -1,6 +1,23 @@
-// Copyright 2015 The Chromium Authors
-// Use of this source code is governed by a BSD-style license that can be
-// found in the LICENSE file.
+/*
+ * Copyright 2015 The Chromium Authors
+ * Copyright (C) 2023 Ecosia Android App source (for GPL 3.0)
+ *
+ * Licensed under the GNU General Public License, Version 3.0 and BSD-style license (found in LICENSE file);
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * License: GPL-3.0-only - https://spdx.org/licenses/GPL-3.0-only.html
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 package org.chromium.chrome.browser.native_page;
 
@@ -71,17 +88,17 @@ public class NativePageFactory {
     private NativePageBuilder mNativePageBuilder;
 
     public NativePageFactory(@NonNull Activity activity,
-            @NonNull BottomSheetController sheetController,
-            @NonNull BrowserControlsManager browserControlsManager,
-            @NonNull Supplier<Tab> currentTabSupplier,
-            @NonNull Supplier<SnackbarManager> snackbarManagerSupplier,
-            @NonNull ActivityLifecycleDispatcher lifecycleDispatcher,
-            @NonNull TabModelSelector tabModelSelector,
-            @NonNull Supplier<ShareDelegate> shareDelegateSupplier,
-            @NonNull WindowAndroid windowAndroid, @NonNull JankTracker jankTracker,
-            @NonNull Supplier<Toolbar> toolbarSupplier,
-            @Nullable HomeSurfaceTracker homeSurfaceTracker,
-            @Nullable ObservableSupplier<TabContentManager> tabContentManagerSupplier) {
+                             @NonNull BottomSheetController sheetController,
+                             @NonNull BrowserControlsManager browserControlsManager,
+                             @NonNull Supplier<Tab> currentTabSupplier,
+                             @NonNull Supplier<SnackbarManager> snackbarManagerSupplier,
+                             @NonNull ActivityLifecycleDispatcher lifecycleDispatcher,
+                             @NonNull TabModelSelector tabModelSelector,
+                             @NonNull Supplier<ShareDelegate> shareDelegateSupplier,
+                             @NonNull WindowAndroid windowAndroid, @NonNull JankTracker jankTracker,
+                             @NonNull Supplier<Toolbar> toolbarSupplier,
+                             @Nullable HomeSurfaceTracker homeSurfaceTracker,
+                             @Nullable ObservableSupplier<TabContentManager> tabContentManagerSupplier) {
         mActivity = activity;
         mBottomSheetController = sheetController;
         mBrowserControlsManager = browserControlsManager;
@@ -134,14 +151,14 @@ public class NativePageFactory {
         private final ObservableSupplier<TabContentManager> mTabContentManagerSupplier;
 
         public NativePageBuilder(Activity activity, Supplier<NewTabPageUma> uma,
-                BottomSheetController sheetController,
-                BrowserControlsManager browserControlsManager, Supplier<Tab> currentTabSupplier,
-                Supplier<SnackbarManager> snackbarManagerSupplier,
-                ActivityLifecycleDispatcher lifecycleDispatcher, TabModelSelector tabModelSelector,
-                Supplier<ShareDelegate> shareDelegateSupplier, WindowAndroid windowAndroid,
-                JankTracker jankTracker, Supplier<Toolbar> toolbarSupplier,
-                HomeSurfaceTracker homeSurfaceTracker,
-                ObservableSupplier<TabContentManager> tabContentManagerSupplier) {
+                                 BottomSheetController sheetController,
+                                 BrowserControlsManager browserControlsManager, Supplier<Tab> currentTabSupplier,
+                                 Supplier<SnackbarManager> snackbarManagerSupplier,
+                                 ActivityLifecycleDispatcher lifecycleDispatcher, TabModelSelector tabModelSelector,
+                                 Supplier<ShareDelegate> shareDelegateSupplier, WindowAndroid windowAndroid,
+                                 JankTracker jankTracker, Supplier<Toolbar> toolbarSupplier,
+                                 HomeSurfaceTracker homeSurfaceTracker,
+                                 ObservableSupplier<TabContentManager> tabContentManagerSupplier) {
             mActivity = activity;
             mUma = uma;
             mBottomSheetController = sheetController;
@@ -175,14 +192,14 @@ public class NativePageFactory {
         protected NativePage buildBookmarksPage(Tab tab) {
             return new BookmarkPage(mActivity.getComponentName(), mSnackbarManagerSupplier.get(),
                     mTabModelSelector.isIncognitoSelected(),
-                    new TabShim(tab, mBrowserControlsManager, mTabModelSelector));
+                    new TabShim(tab, mBrowserControlsManager, mTabModelSelector), mActivity);   // Ecosia: Bookmarks required change
         }
 
         protected NativePage buildDownloadsPage(Tab tab) {
             // For preloaded tabs, the tab model might not be initialized yet. Use tab to figure
             // out if it is a regular profile.
             Profile profile = tab.isIncognito() ? mTabModelSelector.getCurrentModel().getProfile()
-                                                : Profile.getLastUsedRegularProfile();
+                    : Profile.getLastUsedRegularProfile();
             return new DownloadPage(mActivity, mSnackbarManagerSupplier.get(),
                     mWindowAndroid.getModalDialogManager(), profile.getOTRProfileID(),
                     new TabShim(tab, mBrowserControlsManager, mTabModelSelector));
@@ -200,7 +217,7 @@ public class NativePageFactory {
                     Profile.fromWebContents(tab.getWebContents()), mActivity,
                     ()
                             -> HistoryManagerUtils.showHistoryManager(
-                                    mActivity, tab, mTabModelSelector.isIncognitoSelected()));
+                            mActivity, tab, mTabModelSelector.isIncognitoSelected()));
             return new RecentTabsPage(mActivity, recentTabsManager,
                     new TabShim(tab, mBrowserControlsManager, mTabModelSelector),
                     mBrowserControlsManager);
@@ -274,7 +291,7 @@ public class NativePageFactory {
         private final TabModelSelector mTabModelSelector;
 
         public TabShim(Tab tab, BrowserControlsStateProvider browserControlsStateProvider,
-                TabModelSelector tabModelSelector) {
+                       TabModelSelector tabModelSelector) {
             mTab = tab;
             mBrowserControlsStateProvider = browserControlsStateProvider;
             mTabModelSelector = tabModelSelector;

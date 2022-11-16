@@ -165,7 +165,7 @@ public class ProcessInitializationHandler {
      */
     public final void initializePreNative() {
         try (TraceEvent e =
-                        TraceEvent.scoped("ProcessInitializationHandler.initializePreNative()")) {
+                     TraceEvent.scoped("ProcessInitializationHandler.initializePreNative()")) {
             ThreadUtils.checkUiThread();
             if (mInitializedPreNative) return;
             handlePreNativeInitialization();
@@ -232,9 +232,9 @@ public class ProcessInitializationHandler {
 
         ContactsPicker.setContactsPickerDelegate(
                 (WindowAndroid windowAndroid, ContactsPickerListener listener,
-                        boolean allowMultiple, boolean includeNames, boolean includeEmails,
-                        boolean includeTel, boolean includeAddresses, boolean includeIcons,
-                        String formattedOrigin) -> {
+                 boolean allowMultiple, boolean includeNames, boolean includeEmails,
+                 boolean includeTel, boolean includeAddresses, boolean includeIcons,
+                 String formattedOrigin) -> {
                     ContactsPickerDialog dialog = new ContactsPickerDialog(windowAndroid,
                             new ChromePickerAdapter(windowAndroid.getContext().get()), listener,
                             allowMultiple, includeNames, includeEmails, includeTel,

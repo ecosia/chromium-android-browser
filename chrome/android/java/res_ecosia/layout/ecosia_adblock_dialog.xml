@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/adblock_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:elevation="4dp">
+
+    <org.ecosia.adblock.AdblockSwitchTranslucentOverlay
+        android:id="@+id/adblock_dialog_blocker_switch_overlay"
+        android:background="?android:attr/selectableItemBackground"
+        android:padding="16dp"
+        android:clickable="true"
+        android:minHeight="@dimen/ecosia_default_tappable_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/adblock_dialog_blocker_switch"
+            style="@style/AdblockPopupWindowText"
+            android:theme="@style/AdblockSwitch"
+            android:text="@string/fragment_adblock_title_adblock_plus"
+            android:textSize="14sp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </org.ecosia.adblock.AdblockSwitchTranslucentOverlay>
+
+    <TextView
+        android:id="@+id/adblock_dialog_settings_button"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/ecosia_default_tappable_area"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:text="@string/dialog_title_adblock_settings"
+        style="@style/AdBlockDialog"
+        android:textSize="14sp" />
+
+</LinearLayout>

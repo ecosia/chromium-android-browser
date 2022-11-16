@@ -28,6 +28,7 @@ import androidx.test.filters.SmallTest;
 
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -145,6 +146,7 @@ public class IncognitoReauthPromoMessageServiceUnitTest {
                 mSharedPreferenceManager.readBoolean(INCOGNITO_REAUTH_PROMO_CARD_ENABLED, true));
     }
 
+    @Ignore("Ecosia :Disable Incognito Reauthentication")
     @Test
     @SmallTest
     public void testDismissMessageWhenGTSEnabled_RecordsCorrectImpressionMetric() {
@@ -206,6 +208,7 @@ public class IncognitoReauthPromoMessageServiceUnitTest {
                 mSharedPreferenceManager.readBoolean(INCOGNITO_REAUTH_PROMO_CARD_ENABLED, false));
     }
 
+    @Ignore("Ecosia :Disable Incognito Reauthentication")
     @Test
     @SmallTest
     public void testPreparePromoMessage_Succeeds() {
@@ -220,6 +223,7 @@ public class IncognitoReauthPromoMessageServiceUnitTest {
                 mIncognitoReauthPromoMessageService.preparePromoMessage());
     }
 
+    @Ignore("Ecosia :Disable Incognito Reauthentication")
     @Test
     @SmallTest
     public void testAddObserver_Succeeds_AndNotifiesObserverOfMessagePrepared() {
@@ -273,6 +277,7 @@ public class IncognitoReauthPromoMessageServiceUnitTest {
         assertTrue(mSharedPreferenceManager.readBoolean(INCOGNITO_REAUTH_PROMO_CARD_ENABLED, true));
     }
 
+    @Ignore("Ecosia :Disable Incognito Reauthentication")
     @Test
     @SmallTest
     public void testPreparePromoMessage_Fails_AfterMaxShowCountReached_TabToGTSEnabled() {
@@ -304,6 +309,7 @@ public class IncognitoReauthPromoMessageServiceUnitTest {
                 mIncognitoReauthPromoMessageService.preparePromoMessage());
     }
 
+    @Ignore("Ecosia :Disable Incognito Reauthentication")
     @Test
     @SmallTest
     public void testPreparePromoMessage_Fails_AfterMaxShowCountReached_TabToGTSDisabled() {
@@ -354,6 +360,7 @@ public class IncognitoReauthPromoMessageServiceUnitTest {
                 mSharedPreferenceManager.readBoolean(INCOGNITO_REAUTH_PROMO_CARD_ENABLED, true));
     }
 
+    @Ignore("Ecosia :Disable Incognito Reauthentication")
     @Test
     @SmallTest
     public void
@@ -405,6 +412,7 @@ public class IncognitoReauthPromoMessageServiceUnitTest {
                 mSharedPreferenceManager.readBoolean(INCOGNITO_REAUTH_PROMO_CARD_ENABLED, true));
     }
 
+    @Ignore("Ecosia :Disable Incognito Reauthentication")
     @Test
     @SmallTest
     public void testReviewActionProvider_Dismisses_IfReauthIsEnabled() {
@@ -428,6 +436,7 @@ public class IncognitoReauthPromoMessageServiceUnitTest {
                 mSharedPreferenceManager.readBoolean(INCOGNITO_REAUTH_PROMO_CARD_ENABLED, true));
     }
 
+    @Ignore("Ecosia :Disable Incognito Reauthentication")
     @Test
     @SmallTest
     public void
@@ -452,6 +461,7 @@ public class IncognitoReauthPromoMessageServiceUnitTest {
         assertTrue(mSharedPreferenceManager.readBoolean(INCOGNITO_REAUTH_PROMO_CARD_ENABLED, true));
     }
 
+    @Ignore("Ecosia :Disable Incognito Reauthentication")
     @Test
     @SmallTest
     public void testResumeAction_DismissesPromo_IfReauthIsEnabled() {

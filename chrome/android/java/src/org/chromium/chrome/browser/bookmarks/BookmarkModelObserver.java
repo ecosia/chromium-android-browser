@@ -109,4 +109,7 @@ public abstract class BookmarkModelObserver {
      *  - Falling back from other methods that are not overridden in this class.
      */
     public abstract void bookmarkModelChanged();
+
+    // Ecosia: Bookmark Import / Export
+    public abstract void bookmarkModelNeedsReloadAfterBookmarksImport();
 }

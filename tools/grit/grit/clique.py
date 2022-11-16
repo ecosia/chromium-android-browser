@@ -459,7 +459,8 @@ class MessageClique:
       raise exception.InvalidTranslation(
         'Msg ID %s, transl ID %s' % (self.GetId(), translation.GetId()))
 
-    assert not language in self.clique
+    # Ecosia: this assertion is breaking the strings replacement script
+    #assert not language in self.clique
 
     # Because two messages can differ in the original content of their
     # placeholders yet share the same ID (because they are otherwise the

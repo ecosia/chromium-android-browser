@@ -9,6 +9,7 @@ import static org.chromium.components.content_settings.PrefNames.IN_CONTEXT_COOK
 import android.view.View;
 import android.view.ViewGroup;
 
+import org.chromium.base.Log;
 import org.chromium.base.metrics.RecordHistogram;
 import org.chromium.components.browser_ui.site_settings.SingleWebsiteSettings;
 import org.chromium.components.browser_ui.site_settings.SiteDataCleaner;
@@ -189,6 +190,12 @@ public class PageInfoCookiesController
         if (mSubPage != null) {
             mSubPage.setCookiesCount(allowedCookies, blockedCookies);
         }
+    }
+
+    // Ecosia: cookies
+    @Override
+    public void onCookiesChanged(String cookie) {
+        Log.e("Cookies changed", "Cookies changed: " + cookie);
     }
 
     @Override

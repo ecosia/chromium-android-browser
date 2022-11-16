@@ -145,7 +145,7 @@ public class TabSwitcherActionMenuCoordinator {
                         R.string.menu_new_tab, R.id.new_tab_menu_id, R.drawable.new_tab_icon);
             case MenuItemType.NEW_INCOGNITO_TAB:
                 return buildMenuListItem(R.string.menu_new_incognito_tab,
-                        R.id.new_incognito_tab_menu_id, R.drawable.incognito_simple,
+                        R.id.new_incognito_tab_menu_id, R.drawable.ic_ecosia_new_incognitotab,  // Ecosia: rebranding
                         IncognitoUtils.isIncognitoModeEnabled());
             case MenuItemType.DIVIDER:
             default:

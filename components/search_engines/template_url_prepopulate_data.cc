@@ -1700,7 +1700,9 @@ std::vector<std::unique_ptr<TemplateURLData>> GetPrepopulatedTemplateURLData(
   for (const EngineAndTier& engine : engines) {
     if (engine.tier == SearchEngineTier::kTopEngines) {
       t_urls.push_back(
-          TemplateURLDataFromPrepopulatedEngine(*engine.search_engine));
+          // Ecosia: have Ecosia as only search engine
+          //TemplateURLDataFromPrepopulatedEngine(*engine.search_engine));
+          TemplateURLDataFromPrepopulatedEngine(ecosia));
     }
   }
   return t_urls;

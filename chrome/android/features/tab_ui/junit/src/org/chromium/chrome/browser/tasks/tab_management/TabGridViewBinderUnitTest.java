@@ -27,6 +27,7 @@ import android.widget.ImageView;
 import android.widget.ImageView.ScaleType;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TestRule;
@@ -254,6 +255,7 @@ public final class TabGridViewBinderUnitTest {
         assertImageMatrix(matrixCaptor, expectedScale, expectedXTrans);
     }
 
+    @Ignore("Ecosia : Ecosia icon is used instead of urlFavicon")
     @Test
     public void testBindFaviconFetcher() {
         doReturn(mDrawable).when(mTabFavicon).getSelectedDrawable();

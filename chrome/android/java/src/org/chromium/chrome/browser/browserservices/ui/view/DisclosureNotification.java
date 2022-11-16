@@ -119,10 +119,10 @@ public class DisclosureNotification
 
         // We don't have an icon to display.
         int icon = 0;
-
+        // Ecosia : Adding logo
         return NotificationWrapperBuilderFactory
                 .createNotificationWrapperBuilder(channelId, metadata)
-                .setSmallIcon(R.drawable.ic_chrome)
+                .setSmallIcon(R.drawable.ic_ecosia)
                 .setContentTitle(title)
                 .setContentText(text)
                 .setContentIntent(intent)

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="ecosia_onboarding_margin_large">32dp</dimen>
+    <dimen name="ecosia_onboarding_margin_medium">24dp</dimen>
+    <dimen name="ecosia_onboarding_margin_small">16dp</dimen>
+    <dimen name="ecosia_onboarding_button_vertical_padding">30dp</dimen>
+    <dimen name="ecosia_onboarding_button_bottom_padding">35dp</dimen>
+    <dimen name="ecosia_onboarding_text_margin_horizontal">54dp</dimen>
+    <dimen name="ecosia_onboarding_title_margin_horizontal">32dp</dimen>
+
+    <dimen name="ecosia_tree_counter_headline_size">26sp</dimen>
+    <dimen name="ecosia_tree_counter_description_size">14sp</dimen>
+
+    <dimen name="ecosia_ntp_tablet_max_width">600dp</dimen>
+
+    <dimen name="ecosia_default_tappable_area">48dp</dimen>
+
+    <!-- Ecosia widget -->
+    <dimen name="widget_padding">16dp</dimen>
+    <dimen name="widget_height">48dp</dimen>
+    <dimen name="widget_ecosia_logo_size">24dp</dimen>
+    <dimen name="widget_search_icon_size">25dp</dimen>
+    <dimen name="widget_min_width">250dp</dimen>
+    <dimen name="widget_min_height">40dp</dimen>
+    <dimen name="widget_min_resize_width">250dp</dimen>
+
+    <dimen name="search_view_corner_radius">1000dp</dimen> <!-- Fully rounded edges -->
+    <dimen name="search_view_padding_horizontal">10dp</dimen>
+    <dimen name="search_view_padding_vertical">0dp</dimen>
+    <dimen name="search_view_text_size">16sp</dimen>
+
+    <!-- Ecosia New Tab Tiles -->
+    <dimen name="tile_margin_left">11dp</dimen>
+    <dimen name="tile_img_margin">13dp</dimen>
+    <dimen name="tile_text_margin">5dp</dimen>
+    <dimen name="tile_text_margin_left">8dp</dimen>
+    <dimen name="tile_font_size">13sp</dimen>
+    <dimen name="tile_width">85dp</dimen>
+    <dimen name="tile_height">92dp</dimen>
+    <dimen name="tile_outer_margin">12dp</dimen>
+
+    <!-- Ecosia New Tab Page -->
+    <dimen name="frame_height">400dp</dimen>
+    <dimen name="frame_marginBottom">32dp</dimen>
+    <dimen name="ecosia_logo_height">64dp</dimen>
+    <dimen name="ecosia_logo_width">132dp</dimen>
+    <dimen name="tree_counter_marginTop">14dp</dimen>
+    <dimen name="tree_counter_marginLeft">9dp</dimen>
+    <dimen name="tree_text_marginTop">5dp</dimen>
+    <dimen name="recycler_marginTop">24dp</dimen>
+    <dimen name="layout_padding">0dp</dimen>
+    <dimen name="recycler_right_padding">10dp</dimen>
+    <dimen name="loading_margin">16dp</dimen>
+    <dimen name="progressbar_height">4dp</dimen>
+    <dimen name="divider_news_padding">16dp</dimen>
+    <dimen name="your_impact_tooltip_bottom_margin">9dp</dimen>
+    <dimen name="card_separator_height">1dp</dimen>
+
+    <dimen name="adblock_custom_filter_margin">12dp</dimen>
+    <dimen name="adblock_popup_right_margin">5dp</dimen>
+    <dimen name="default_promo_img">86dp</dimen>
+    <dimen name="default_promo_width">328dp</dimen>
+    <dimen name="default_promo_height">504dp</dimen>
+    <dimen name="default_promo_img_height">230dp</dimen>
+    <dimen name="promo_dialog_margin">14dp</dimen>
+    <dimen name="promo_dialog_margin_bottom">16dp</dimen>
+    <dimen name="promo_header_text_size">28sp</dimen>
+    <dimen name="promo_normal_text_size">14sp</dimen>
+    <dimen name="promo_dialog_margin_top">24dp</dimen>
+    <dimen name="your_impact_layout_width">328dp</dimen>
+    <dimen name="your_impact_layout_width_tablet">710dp</dimen>
+</resources>

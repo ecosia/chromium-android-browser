@@ -145,7 +145,7 @@ public abstract class BaseSuggestionViewProcessor implements SuggestionProcessor
         } else {
             iconString = OmniboxResourceProvider.getString(mContext,
                     R.string.accessibility_omnibox_btn_refine, suggestion.getFillIntoEdit());
-            icon = R.drawable.btn_suggestion_refine;
+            icon = R.drawable.ic_ecosia_suggestion_refine; //Ecosia :Rebranding icon
             action = () -> mSuggestionHost.onRefineSuggestion(suggestion);
         }
         setActionButtons(model,

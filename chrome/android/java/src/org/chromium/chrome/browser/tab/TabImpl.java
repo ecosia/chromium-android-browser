@@ -72,6 +72,11 @@ import org.chromium.ui.base.PageTransition;
 import org.chromium.ui.base.ViewAndroidDelegate;
 import org.chromium.ui.base.WindowAndroid;
 import org.chromium.url.GURL;
+import org.ecosia.cookies.EcosiaCookieObserver;
+import org.ecosia.incentives.SearchIncentivesManager;
+import org.ecosia.tab.TabImplEcosiaExtension;
+import org.ecosia.tracking.TrackingManager;
+import org.ecosia.utils.UrlHelpers;
 
 import java.nio.ByteBuffer;
 
@@ -522,6 +527,14 @@ public class TabImpl implements Tab {
     public int loadUrl(LoadUrlParams params) {
         try {
             TraceEvent.begin("Tab.loadUrl");
+            // Ecosia: add sp param and custom headers
+            String url = params.getUrl();
+            if (UrlHelpers.isEcosiaSerp(url)) {
+                Context context = getContentView().getContext();
+                params.setUrl(TrackingManager.getInstance(context).ecosify(url, isIncognito()));
+                params.setExtraHeaders(SearchIncentivesManager.getInstance(context).getLanguageRegionHeader());
+            }
+
             // TODO(tedchoc): When showing the android NTP, delay the call to
             // TabImplJni.get().loadUrl until the android view has entirely rendered.
             if (!mIsNativePageCommitPending) {
@@ -1097,6 +1110,10 @@ public class TabImpl implements Tab {
 
         for (TabObserver observer : mObservers) observer.onPageLoadFinished(this, url);
         mIsBeingRestored = false;
+
+        // Ecosia: cookies
+        EcosiaCookieObserver.getInstance().observeWebContents(getWebContents());
+        TabImplEcosiaExtension.invokeTrackingOnEcosiaDomain(url);
     }
 
     /**

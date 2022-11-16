@@ -435,6 +435,7 @@ public class TabGridDialogTest {
         }
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @MediumTest
     public void testSelectionEditorShowHide() throws ExecutionException {
@@ -476,6 +477,7 @@ public class TabGridDialogTest {
         verifyTabSwitcherCardCount(cta, 1);
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @MediumTest
     // clang-format off
@@ -856,6 +858,7 @@ public class TabGridDialogTest {
         verifyTabSwitcherCardCount(cta, 0);
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @MediumTest
     // clang-format off
@@ -921,6 +924,7 @@ public class TabGridDialogTest {
         checkPosition(cta, true, true);
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @MediumTest
     public void testTabGroupNaming() throws ExecutionException {
@@ -958,6 +962,7 @@ public class TabGridDialogTest {
         }
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @MediumTest
     public void testTabGroupNaming_KeyboardVisibility() throws ExecutionException {
@@ -1266,6 +1271,7 @@ public class TabGridDialogTest {
         verifyBackgroundViewAccessibilityImportance(cta, false);
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @MediumTest
     @DisabledTest(message = "TODO(crbug.com/1128345): Fix flakiness.")

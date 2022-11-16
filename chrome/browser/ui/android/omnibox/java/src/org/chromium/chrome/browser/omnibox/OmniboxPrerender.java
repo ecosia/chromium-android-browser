@@ -62,8 +62,14 @@ public class OmniboxPrerender {
      */
     public void prerenderMaybe(String url, String currentUrl, long nativeAutocompleteResult,
             Profile profile, Tab tab) {
+        /* Ecosia:
+            Currently this crashes, but since our behaviour in previous versions
+            was anyways to open the app directly it's fine to do nothing for now.
+
         OmniboxPrerenderJni.get().prerenderMaybe(mNativeOmniboxPrerender, OmniboxPrerender.this,
                 url, currentUrl, nativeAutocompleteResult, profile, tab);
+
+         */
     }
 
     @NativeMethods

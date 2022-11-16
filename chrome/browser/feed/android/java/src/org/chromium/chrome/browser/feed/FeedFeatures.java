@@ -36,9 +36,12 @@ public final class FeedFeatures {
      * change.
      */
     public static boolean isFeedEnabled() {
+        /* Ecosia: disable feed MOB-1894
         return FeedServiceBridge.isEnabled()
                 && (!ChromeFeatureList.sNewTabSearchEngineUrlAndroid.isEnabled()
                         || getPrefService().getBoolean(Pref.ENABLE_SNIPPETS_BY_DSE));
+        */
+        return false;
     }
 
     /**

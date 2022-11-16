@@ -17,6 +17,7 @@ import androidx.test.filters.SmallTest;
 
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -192,6 +193,7 @@ public class StartSurfaceCoordinatorUnitTest {
      * Test whether the clicking action on MV tiles in {@link StartSurface} is been recorded in
      * histogram correctly.
      */
+    @Ignore("Ecosia: Start surface disabled on start")
     @Test
     @SmallTest
     public void testRecordHistogramMostVisitedItemClick_StartSurface() {

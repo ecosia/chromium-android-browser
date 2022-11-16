@@ -2426,8 +2426,10 @@ public class CustomTabActivityTest {
         // TODO(b/292134067): Update when Read Aloud supports Custom Tabs.
         mCustomTabActivityTestRule.startCustomTabActivityWithIntent(createMinimalCustomTabIntent());
         openAppMenuAndAssertMenuShown();
+        /* Ecosia : readaloud_menu_id is not found
         Assert.assertNull(
                 mCustomTabActivityTestRule.getActivity().findViewById(R.id.readaloud_menu_id));
+        */
     }
 
     @Test

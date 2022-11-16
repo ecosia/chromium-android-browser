@@ -52,6 +52,16 @@ public final class DualControlLayout extends ViewGroup {
         int END = 1;
         int APART = 2;
     }
+    public static boolean isThemeSet;
+
+    /* |-> Ecosia */
+
+    public static Button createButtonForLayout(
+            Context context, boolean isPrimary, String text, OnClickListener listener) { //Ecosia : Adding Theme
+        return createButtonForLayout(context, isPrimary, text, listener, 0, 0);
+    }
+
+    /* Ecosia ->| */
 
     /**
      * Creates a standardized Button that can be used for DualControlLayouts showing buttons.
@@ -59,19 +69,36 @@ public final class DualControlLayout extends ViewGroup {
      * @param isPrimary Whether or not the button is meant to act as a "Confirm" button.
      * @param text      Text to display on the button.
      * @param listener  Listener to alert when the button has been clicked.
+     * @param primaryButtonBackgroundDrawable Ecosia: Background drawable resource for primary button
      * @return Button that can be used in the view.
      */
     public static Button createButtonForLayout(
-            Context context, boolean isPrimary, String text, OnClickListener listener) {
+            Context context, boolean isPrimary, String text, OnClickListener listener,
+            int primaryButtonBackgroundDrawable, int primaryTheme) { //Ecosia : Adding Theme
         if (isPrimary) {
-            ButtonCompat primaryButton =
-                    new ButtonCompat(context, R.style.FilledButtonThemeOverlay_Flat);
+
+            /* Ecosia : Setting user based style or default for primary button */
+            ButtonCompat primaryButton ;
+            int style = primaryTheme > 0 ? primaryTheme : R.style.FilledButtonThemeOverlay_Flat ;
+            isThemeSet = primaryTheme > 0 ? true : false;
+            primaryButton = new ButtonCompat(context, style);
             primaryButton.setId(R.id.button_primary);
             primaryButton.setOnClickListener(listener);
             primaryButton.setText(text);
+
+            /* |-> Ecosia */
+
+            if (primaryButtonBackgroundDrawable > 0) {
+                primaryButton.setBackgroundResource(primaryButtonBackgroundDrawable);
+            }
+
+            /* Ecosia ->| */
+
             return primaryButton;
         } else {
-            Button secondaryButton = new ButtonCompat(context, R.style.TextButtonThemeOverlay);
+            /* Ecosia : Setting user based style or default for secondary button */
+            int style = primaryTheme > 0 ? primaryTheme :R.style.TextButtonThemeOverlay ;
+                    Button secondaryButton = new ButtonCompat(context, style);
             secondaryButton.setId(R.id.button_secondary);
             secondaryButton.setOnClickListener(listener);
             secondaryButton.setText(text);
@@ -162,6 +189,10 @@ public final class DualControlLayout extends ViewGroup {
         int layoutWidth = mPrimaryView.getMeasuredWidth();
         int layoutHeight = mPrimaryView.getMeasuredHeight();
 
+        if(mSecondaryView == null) { // Ecosia : stack version for one button scenario
+            mPrimaryView.setMinimumWidth(maxWidth);
+        }
+
         if (mSecondaryView != null) {
             // Measure the secondary View, allowing it to be as wide as the layout.
             measureChild(mSecondaryView, unspecifiedSpec, unspecifiedSpec);
@@ -169,8 +200,8 @@ public final class DualControlLayout extends ViewGroup {
             if (mPrimaryView.getMeasuredWidth() > 0 && mSecondaryView.getMeasuredWidth() > 0) {
                 combinedWidth += mHorizontalMarginBetweenViews;
             }
-
-            if (combinedWidth > maxWidth) {
+            //Ecosia : Stack version of buttons required hence theme is checked 
+            if ((combinedWidth > maxWidth) || ((combinedWidth < maxWidth) && (isThemeSet))) {
                 // Stack the Views on top of each other.
                 mIsStacked = true;
 

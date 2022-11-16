@@ -59,6 +59,7 @@ class CookieControlsBridge : public OldCookieControlsObserver,
                        int allowed_cookies,
                        int blocked_cookies) override;
   void OnCookiesCountChanged(int allowed_cookies, int blocked_cookies) override;
+  void OnCookiesChanged(std::string cookies) override;  // Ecosia: cookies
   void OnStatefulBounceCountChanged(int bounce_count) override;
 
   // CookieControlsObserver:
@@ -87,6 +88,9 @@ class CookieControlsBridge : public OldCookieControlsObserver,
       old_observation_{this};
   base::ScopedObservation<CookieControlsController, CookieControlsObserver>
       observation_{this};
+  // Ecosia: Cookies
+  void CheckIfEcosiaCookiesChanged();
+
 };
 
 }  // namespace content_settings

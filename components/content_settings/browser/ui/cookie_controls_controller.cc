@@ -364,6 +364,19 @@ int CookieControlsController::GetAllowedCookieCount() const {
     return 0;
   }
 }
+
+// Ecosia: cookies
+net::CookieList CookieControlsController::GetAllowedCookies() {
+  auto* pscs =
+      content_settings::PageSpecificContentSettings::GetForPage(
+          GetWebContents()->GetPrimaryPage());
+  if (pscs) {
+    return pscs->allowed_local_shared_objects().cookies() -> GetCookieList();
+  } else {
+    return std::vector<net::CanonicalCookie>();
+  }
+}
+
 int CookieControlsController::GetBlockedCookieCount() const {
   auto* pscs = content_settings::PageSpecificContentSettings::GetForPage(
       GetWebContents()->GetPrimaryPage());

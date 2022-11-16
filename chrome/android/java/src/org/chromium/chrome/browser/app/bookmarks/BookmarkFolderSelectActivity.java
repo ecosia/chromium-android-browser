@@ -85,6 +85,12 @@ public class BookmarkFolderSelectActivity
                 updateFolderList();
             }
         }
+
+        // Ecosia: Bookmark Import / Export
+        @Override
+        public void bookmarkModelNeedsReloadAfterBookmarksImport() {
+            updateFolderList();
+        }
     };
 
     /**

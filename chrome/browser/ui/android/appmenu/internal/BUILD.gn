@@ -47,6 +47,10 @@ android_resources("java_resources") {
     "java/res/layout/title_button_menu_item.xml",
     "java/res/values-night/dimens.xml",
     "java/res/values/dimens.xml",
+
+    # Ecosia Colors
+    "java/res_ecosia/values/ecosia_colors.xml",
+    "java/res_ecosia/values-night/ecosia_colors.xml",
   ]
 
   # Include resource dependencies needed by :java so that resources may

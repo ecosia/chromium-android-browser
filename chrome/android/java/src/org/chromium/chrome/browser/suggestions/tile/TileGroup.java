@@ -286,6 +286,15 @@ public class TileGroup implements MostVisitedSites.Observer {
         if (!mHasReceivedData || !mUiDelegate.isVisible() || expectedChangeCompleted) loadTiles();
     }
 
+    // Ecosia : Setting Removal and Insertion URL to remove the blacklisted url from the list and refresh the screen
+    public void setPendingRemovalUrl(GURL url) {
+        mPendingRemovalUrl = url;
+    }
+
+    public void setPendingInsertionUrl(GURL url) {
+        mPendingInsertionUrl = url;
+    }
+
     @Override
     public void onIconMadeAvailable(GURL siteUrl) {
         for (Tile tile : findTilesForUrl(siteUrl)) {

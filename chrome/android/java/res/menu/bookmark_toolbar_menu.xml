@@ -5,28 +5,52 @@ Use of this source code is governed by a BSD-style license that can be
 found in the LICENSE file.
 -->
 
+<!-- Ecosia: icon branding -->
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto" >
 
     <group android:id="@+id/normal_menu_group" >
         <item
             android:id="@+id/edit_menu_id"
-            android:icon="@drawable/ic_edit_24dp"
-            android:title="@string/edit_folder"
+            android:icon="@drawable/ecosia_bookmark_edit"
+            android:title="@null"
             android:visible="false"
             app:showAsAction="ifRoom"
             app:iconTint="@color/default_icon_color_secondary_tint_list" />
         <item
             android:id="@+id/search_menu_id"
-            android:icon="@drawable/ic_search"
+            android:icon="@drawable/ecosia_bookmark_search"
             android:title="@string/search"
             android:visible="false"
             app:showAsAction="ifRoom"
             app:iconTint="@color/default_icon_color_secondary_tint_list" />
+        <!-- Ecosia: Bookmark Import / Export -->
+        <item
+            android:id="@+id/bookmarks_actions"
+            android:icon="@drawable/ic_ecosia_more"
+            android:title="@string/bookmarks_import_export_menu"
+            android:visible="true"
+            app:showAsAction="ifRoom"
+            app:iconTint="@color/default_icon_color_secondary_tint_list" >
+            <menu>
+                <item
+                    android:id="@+id/import_menu_id"
+                    android:title="@string/bookmarks_import_button"
+                    android:visible="true"
+                    app:showAsAction="ifRoom"
+                    app:iconTint="@color/default_icon_color_tint_list" />
+                <item
+                    android:id="@+id/export_menu_id"
+                    android:title="@string/bookmarks_export_button"
+                    android:visible="true"
+                    app:showAsAction="ifRoom"
+                    app:iconTint="@color/default_icon_color_tint_list" />
+            </menu>
+        </item>
         <item
             android:id="@+id/close_menu_id"
-            android:icon="@drawable/btn_close"
-            android:title="@string/bookmark_toolbar_close"
+            android:icon="@drawable/ecosia_icon_close"
+            android:title="@null"
             app:showAsAction="ifRoom"
             app:iconTint="@color/default_icon_color_secondary_tint_list" />
     </group>
@@ -35,20 +59,20 @@ found in the LICENSE file.
         android:visible="false" >
         <item
             android:id="@+id/selection_mode_edit_menu_id"
-            android:icon="@drawable/bookmark_edit_active"
-            android:title="@string/edit_bookmark"
+            android:icon="@drawable/ecosia_bookmark_edit"
+            android:title="@null"
             app:showAsAction="ifRoom"
             app:iconTint="@color/default_icon_color_secondary_tint_list" />
         <item
             android:id="@+id/selection_mode_move_menu_id"
-            android:icon="@drawable/bookmark_move_active"
-            android:title="@string/bookmark_toolbar_move"
+            android:icon="@drawable/ecosia_bookmark_move"
+            android:title="@null"
             app:showAsAction="ifRoom"
             app:iconTint="@color/default_icon_color_secondary_tint_list" />
         <item
             android:id="@+id/selection_mode_delete_menu_id"
-            android:icon="@drawable/ic_delete_white_24dp"
-            android:title="@string/bookmark_toolbar_delete"
+            android:icon="@drawable/ecosia_bookmark_delete"
+            android:title="@null"
             app:showAsAction="ifRoom"
             app:iconTint="@color/default_icon_color_secondary_tint_list" />
         <item

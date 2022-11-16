@@ -1,0 +1,22 @@
+[
+    {
+        "large_icon_url": "https://www.wikipedia.org/static/apple-touch/wikipedia.png",
+        "title": "Wikipedia",
+        "url": "https://www.wikipedia.org"
+    },
+    {
+        "favicon_url": "https://www.instagram.com/static/images/ico/favicon-192.png/68d99ba29cc8.png",
+        "title": "Instagram",
+        "url": "https://www.instagram.com"
+    },
+    {
+        "large_icon_url": "https://www.youtube.com/s/desktop/1fa3f652/img/favicon_144x144.png",
+        "title": "YouTube",
+        "url": "https://www.youtube.com"
+    },
+    {
+        "large_icon_url": "https://abs.twimg.com/responsive-web/client-web/icon-ios.b1fc7279.png",
+        "title": "Twitter",
+        "url": "https://twitter.com"
+    }
+]

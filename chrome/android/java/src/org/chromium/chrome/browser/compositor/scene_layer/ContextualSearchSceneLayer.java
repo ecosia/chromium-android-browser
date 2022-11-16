@@ -148,7 +148,7 @@ public class ContextualSearchSceneLayer extends SceneOverlayLayer {
         ContextualSearchSceneLayerJni.get().updateContextualSearchLayer(mNativePtr,
                 ContextualSearchSceneLayer.this, panelShadowResourceId, searchBarBackgroundColor,
                 searchContextViewId, searchTermViewId, searchCaptionViewId,
-                R.drawable.modern_toolbar_shadow, R.drawable.ic_logo_googleg_24dp,
+                R.drawable.modern_toolbar_shadow, R.drawable.ic_ecosia, // Ecosia: Branding
                 quickActionIconResId, dragHandlebarId, openNewTabIconId, closeIconResourceId,
                 R.drawable.progress_bar_background, progressBarBackgroundColor,
                 R.drawable.progress_bar_foreground, progressBarColor, searchPromoViewId, mDpToPx,

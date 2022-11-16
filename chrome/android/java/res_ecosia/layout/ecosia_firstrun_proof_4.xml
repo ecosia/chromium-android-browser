@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ecosia_firstrun_fragment_bg"
+        android:src="@drawable/onboarding_proof_4_bg"
+        android:scaleType="centerCrop"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <include layout="@layout/ecosia_firstrun_proof_4_cards" />
+
+    <View
+        android:id="@+id/ecosia_firstrun_fragment_gradient"
+        android:background="@drawable/onboarding_gradient"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/ecosia_firstrun_pager_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:src="@drawable/onboarding_pager_inactive"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:src="@drawable/onboarding_pager_inactive"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:src="@drawable/onboarding_pager_inactive"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:src="@drawable/onboarding_pager_active"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <!-- This view is the same for night/dark mode -->
+    <TextView
+        android:id="@+id/ecosia_firstrun_continue_button"
+        android:background="@drawable/onboarding_continue_button"
+        android:gravity="center"
+        android:text="@string/onboarding_continue"
+        android:textColor="@color/ecosia_text_primary_light"
+        android:textSize="14sp"
+        android:letterSpacing="0.01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

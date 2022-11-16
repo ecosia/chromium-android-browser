@@ -100,6 +100,8 @@ public class ClipboardSuggestionProcessor extends BaseSuggestionViewProcessor {
      */
     private void updateSuggestionIcon(@NonNull AutocompleteMatch suggestion,
             @NonNull PropertyModel model, boolean showContent) {
+        boolean isUrlSuggestion = suggestion.getType() == OmniboxSuggestionType.CLIPBOARD_URL;
+
         if (!showContent) {
             setOmniboxDrawableState(model, getFallbackIcon(suggestion));
             return;
