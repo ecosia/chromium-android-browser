@@ -1,6 +1,23 @@
-// Copyright 2015 The Chromium Authors
-// Use of this source code is governed by a BSD-style license that can be
-// found in the LICENSE file.
+/*
+ * Copyright 2015 The Chromium Authors
+ * Copyright (C) 2023 Ecosia Android App source (for GPL 3.0)
+ *
+ * Licensed under the GNU General Public License, Version 3.0 and BSD-style license (found in LICENSE file);
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * License: GPL-3.0-only - https://spdx.org/licenses/GPL-3.0-only.html
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 package org.chromium.chrome.browser.native_page;
 
@@ -14,6 +31,7 @@ import androidx.annotation.VisibleForTesting;
 import org.chromium.base.jank_tracker.JankTracker;
 import org.chromium.base.supplier.DestroyableObservableSupplier;
 import org.chromium.base.supplier.Supplier;
+import org.chromium.chrome.browser.app.ChromeActivity;
 import org.chromium.chrome.browser.app.download.home.DownloadPage;
 import org.chromium.chrome.browser.bookmarks.BookmarkPage;
 import org.chromium.chrome.browser.browser_controls.BrowserControlsMarginSupplier;
@@ -24,12 +42,10 @@ import org.chromium.chrome.browser.history.HistoryPage;
 import org.chromium.chrome.browser.lifecycle.ActivityLifecycleDispatcher;
 import org.chromium.chrome.browser.management.ManagementPage;
 import org.chromium.chrome.browser.ntp.IncognitoNewTabPage;
-import org.chromium.chrome.browser.ntp.NewTabPage;
 import org.chromium.chrome.browser.ntp.NewTabPageUma;
 import org.chromium.chrome.browser.ntp.RecentTabsManager;
 import org.chromium.chrome.browser.ntp.RecentTabsPage;
 import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.settings.SettingsLauncherImpl;
 import org.chromium.chrome.browser.share.ShareDelegate;
 import org.chromium.chrome.browser.share.crow.CrowButtonDelegate;
 import org.chromium.chrome.browser.tab.Tab;
@@ -42,10 +58,10 @@ import org.chromium.chrome.browser.ui.native_page.NativePage;
 import org.chromium.chrome.browser.ui.native_page.NativePage.NativePageType;
 import org.chromium.chrome.browser.ui.native_page.NativePageHost;
 import org.chromium.components.browser_ui.bottomsheet.BottomSheetController;
+import org.chromium.components.embedder_support.util.UrlConstants;
 import org.chromium.content_public.browser.LoadUrlParams;
-import org.chromium.ui.base.DeviceFormFactor;
 import org.chromium.ui.base.WindowAndroid;
-import org.chromium.ui.util.ColorUtils;
+import org.ecosia.ntp.EcosiaNewTabPage;
 
 import java.util.function.BooleanSupplier;
 /**
@@ -163,18 +179,15 @@ public class NativePageFactory {
                     new TabShim(tab, mBrowserControlsManager, mTabModelSelector);
             if (tab.isIncognito()) return new IncognitoNewTabPage(mActivity, nativePageHost);
 
-            return new NewTabPage(mActivity, mBrowserControlsManager, mCurrentTabSupplier,
-                    mSnackbarManagerSupplier.get(), mLifecycleDispatcher, mTabModelSelector,
-                    DeviceFormFactor.isWindowOnTablet(mWindowAndroid), mUma.get(),
-                    ColorUtils.inNightMode(mActivity), nativePageHost, tab, url,
-                    mBottomSheetController, mShareDelegateSupplier, mWindowAndroid, mJankTracker,
-                    mToolbarSupplier, new SettingsLauncherImpl(), mCrowButtonDelegate);
+            // Ecosia NTP entry point
+            return new EcosiaNewTabPage((ChromeActivity) mActivity, nativePageHost, UrlConstants.NTP_URL, UrlConstants.NTP_HOST,
+                    mTabModelSelector, tab);
         }
 
         protected NativePage buildBookmarksPage(Tab tab) {
             return new BookmarkPage(mActivity.getComponentName(), mSnackbarManagerSupplier.get(),
                     mTabModelSelector.isIncognitoSelected(),
-                    new TabShim(tab, mBrowserControlsManager, mTabModelSelector));
+                    new TabShim(tab, mBrowserControlsManager, mTabModelSelector), mActivity);
         }
 
         protected NativePage buildDownloadsPage(Tab tab) {

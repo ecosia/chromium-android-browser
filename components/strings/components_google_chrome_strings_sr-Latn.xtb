@@ -1,41 +1,41 @@
-<?xml version="1.0" ?>
+<?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE translationbundle>
 <translationbundle lang="sr-Latn">
-<translation id="1016765312371154165">Chrome se nije ispravno zatvorio.</translation>
+<translation id="1864711229671391928">Ecosia se nije ispravno zatvorio.</translation>
 <translation id="130631256467250065">Promene će stupiti na snagu kada sledeći put ponovo pokrenete uređaj.</translation>
-<translation id="1635457557763038537">Promene će stupiti na snagu kada sledeći put ponovo pokrenete Chrome.</translation>
-<translation id="2447485272386224171">Chrome omogućavaju <ph name="BEGIN_LINK_CHROMIUM" />Chromium<ph name="END_LINK_CHROMIUM" /> projekat otvorenog koda i drugi <ph name="BEGIN_LINK_OSS" />softver otvorenog koda<ph name="END_LINK_OSS" />.</translation>
-<translation id="2588322182880276190">Chrome logotip</translation>
-<translation id="3444832043240812445">Ova stranica prikazuje informacije o nedavnim otkazivanjima samo ukoliko <ph name="BEGIN_LINK" />omogućite izveštavanje o otkazivanjima<ph name="END_LINK" />.</translation>
-<translation id="3875312571075912821">Dozvolite Chrome-u da pristupa mreži u zaštitnom zidu ili antivirusnim
+<translation id="1722634673917783018">Promene će stupiti na snagu kada sledeći put ponovo pokrenete Ecosia.</translation>
+<translation id="7347361780317841252">Ecosia omogućavaju <ph name="BEGIN_LINK_CHROMIUM"/>Ecosia<ph name="END_LINK_CHROMIUM"/> projekat otvorenog koda i drugi <ph name="BEGIN_LINK_OSS"/>softver otvorenog koda<ph name="END_LINK_OSS"/>.</translation>
+<translation id="5104341700462991189">Ecosia logotip</translation>
+<translation id="3444832043240812445">Ova stranica prikazuje informacije o nedavnim otkazivanjima samo ukoliko <ph name="BEGIN_LINK"/>omogućite izveštavanje o otkazivanjima<ph name="END_LINK"/>.</translation>
+<translation id="583128902627777075">Dozvolite Ecosia-u da pristupa mreži u zaštitnom zidu ili antivirusnim
           podešavanjima.</translation>
-<translation id="5005121315113832363">Chrome blokira ovu stranicu</translation>
-<translation id="6011049234605203654">Idite u
-          Chrome meni &gt;
-          <ph name="SETTINGS_TITLE" />
+<translation id="5177147493498374715">Ecosia blokira ovu stranicu</translation>
+<translation id="3913860536599484838">Idite u
+          Ecosia meni &gt;
+          <ph name="SETTINGS_TITLE"/>
           &gt;
-          <ph name="ADVANCED_TITLE" />
+          <ph name="ADVANCED_TITLE"/>
           &gt;
-          <ph name="PROXIES_TITLE" />
+          <ph name="PROXIES_TITLE"/>
           i proverite da li je konfiguracija podešena na „no proxy“ (bez proksija) ili „direct“ (direktno).</translation>
-<translation id="6341737370356890233">Otvorite
-          Chrome meni &gt;
-          <ph name="SETTINGS_TITLE" />
+<translation id="8143058600367874039">Otvorite
+          Ecosia meni &gt;
+          <ph name="SETTINGS_TITLE"/>
           &gt;
-          <ph name="ADVANCED_TITLE" />
-          i opozovite izbor opcije „<ph name="NO_PREFETCH_DESCRIPTION" />“.
+          <ph name="ADVANCED_TITLE"/>
+          i opozovite izbor opcije „<ph name="NO_PREFETCH_DESCRIPTION"/>“.
           Ako vam to ne reši problem, preporučujemo da ponovo izaberete
           ovu opciju radi boljih performansi.</translation>
-<translation id="6855094794438142393">Idite u
-          Chrome meni &gt;
-          <ph name="SETTINGS_TITLE" />
+<translation id="6276216569125239216">Idite u
+          Ecosia meni &gt;
+          <ph name="SETTINGS_TITLE"/>
           &gt;
-          <ph name="ADVANCED_TITLE" />
+          <ph name="ADVANCED_TITLE"/>
           &gt;
-          <ph name="PROXIES_TITLE" />
+          <ph name="PROXIES_TITLE"/>
           &gt;
           LAN Settings (Podešavanja lokalne mreže)
           i opozovite izbor opcije „Use a proxy server for your LAN“ (Koristi proksi server za lokalnu mrežu).</translation>
-<translation id="7230956101631259640">Pregledate bezbednu Chrome stranicu</translation>
+<translation id="2441066927880955410">Pregledate bezbednu Ecosia stranicu</translation>
 <translation id="8187289872471304532">Idite na Applications (Aplikacije) &gt; System Preferences (Podešavanja sistema) &gt; Network (Mreža) &gt; Advanced (Više opcija) &gt; Proxies (Proksiji) i opozovite izbor svih proksija koji su izabrani.</translation>
 </translationbundle>

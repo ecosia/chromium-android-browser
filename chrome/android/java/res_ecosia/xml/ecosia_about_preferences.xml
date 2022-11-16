@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Preference
+        android:key="rate_app"
+        android:title="@string/prefs_rate_app"
+        android:summary="@string/prefs_rate_app_summary" />
+    <Preference
+        android:key="feedback"
+        android:title="@string/prefs_feedback"
+        android:summary="@string/prefs_feedback_summary" />
+    <Preference
+        android:key="application_version"
+        android:title="@string/application_version_title" />
+    <org.chromium.chrome.browser.about_settings.HyperlinkPreference
+        android:key="privacy_notice"
+        android:title="@string/prefs_privacy_policy_title"
+        android:summary="@string/prefs_privacy_policy_summary"
+        app:url="@string/prefs_privacy_policy_url" />
+    <Preference
+        android:fragment="org.ecosia.preferences.EcosiaLegalInformationPreferences"
+        android:key="legal_information"
+        android:title="@string/legal_information_title"
+        android:summary="@string/prefs_legal_information_summary"/>
+    <Preference
+        android:key="os_version"
+        android:title="@string/os_version_title" />
+</PreferenceScreen>

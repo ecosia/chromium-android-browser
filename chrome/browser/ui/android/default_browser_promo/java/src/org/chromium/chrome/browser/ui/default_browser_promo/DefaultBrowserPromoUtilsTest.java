@@ -15,6 +15,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.junit.Ignore;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.robolectric.RuntimeEnvironment;
@@ -64,7 +65,7 @@ public class DefaultBrowserPromoUtilsTest {
     public void testGetCurrentDefaultStateForChromeDefault() {
         Assert.assertEquals(
                 "Should be chrome default when resolve info matches current package name.",
-                DefaultBrowserPromoUtils.DefaultBrowserState.CHROME_DEFAULT,
+                DefaultBrowserPromoUtils.DefaultBrowserState.ECOSIA_DEFAULT,
                 DefaultBrowserPromoDeps.getInstance().getCurrentDefaultBrowserState(
                         createResolveInfo(
                                 ContextUtils.getApplicationContext().getPackageName(), 1)));
@@ -140,6 +141,7 @@ public class DefaultBrowserPromoUtilsTest {
     }
 
     // --- P below ---
+    @Ignore("Ecosia : Promo will be shown for all users")
     @Test
     public void testNoPromo_P() {
         setDepsMockWithDefaultValues();
@@ -190,13 +192,25 @@ public class DefaultBrowserPromoUtilsTest {
     @Test
     public void testNoPromo_lessThanMinSessionCount() {
         setDepsMockWithDefaultValues();
-        when(mDeps.getSessionCount()).thenReturn(1);
+        when(mDeps.getSessionCount()).thenReturn(2); //Ecosia : default promo is shown for new users on installation
         when(mDeps.getMinSessionCount()).thenReturn(3);
         Assert.assertFalse(
                 "Should not promo when session count has not reached the required amount.",
                 DefaultBrowserPromoUtils.shouldShowPromo(mDeps, null, false));
     }
 
+    //Ecosia : default promo is shown for new users on installation
+    @Test
+    public void testshowPromoonOneSessionCount() {
+        setDepsMockWithDefaultValues();
+        when(mDeps.getSessionCount()).thenReturn(1);
+        when(mDeps.getMinSessionCount()).thenReturn(3);
+        Assert.assertTrue(
+                "Should not promo when session count has not reached the required amount.",
+                DefaultBrowserPromoUtils.shouldShowPromo(mDeps, null, true));
+    }
+
+    @Ignore("Ecosia : Disable test checking default promo popup for other browsers")
     @Test
     public void testNoPromo_isOtherChromeDefault() {
         setDepsMockWithDefaultValues();

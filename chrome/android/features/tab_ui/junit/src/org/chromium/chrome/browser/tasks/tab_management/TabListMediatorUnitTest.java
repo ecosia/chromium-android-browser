@@ -69,6 +69,7 @@ import com.google.protobuf.ByteString;
 
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TestRule;
@@ -479,6 +480,7 @@ public class TabListMediatorUnitTest {
         assertThat(mModel.get(0).model.get(TabProperties.TITLE), equalTo(NEW_TITLE));
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @Features.EnableFeatures(TAB_GROUPS_CONTINUATION_ANDROID)
     public void updatesTitle_WithStoredTitle_TabGroup() {
@@ -687,6 +689,7 @@ public class TabListMediatorUnitTest {
         verify(mTabModel).moveTab(eq(TAB1_ID), eq(2));
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     public void sendsMoveTabSignalCorrectlyWithGroup() {
         setUpForTabGroupOperation(TabListMediatorType.TAB_SWITCHER, TabListMode.GRID);
@@ -710,6 +713,7 @@ public class TabListMediatorUnitTest {
         verify(mTabModel).moveTab(eq(TAB1_ID), eq(2));
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     public void sendsMergeTabSignalCorrectly() {
         setUpForTabGroupOperation(TabListMediatorType.TAB_SWITCHER, TabListMode.GRID);
@@ -1285,6 +1289,7 @@ public class TabListMediatorUnitTest {
         assertThat(mModel.get(1).model.get(TabProperties.IS_SELECTED), equalTo(false));
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     public void tabMoveOutOfGroup_GTS_LastTab() {
         setUpForTabGroupOperation(TabListMediatorType.TAB_SWITCHER, TabListMode.GRID);
@@ -1304,6 +1309,7 @@ public class TabListMediatorUnitTest {
         assertThat(mModel.get(0).model.get(TabProperties.TITLE), equalTo(TAB1_TITLE));
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     public void tabMoveOutOfGroup_GTS_TabAdditionWithSameId() {
         setUpForTabGroupOperation(TabListMediatorType.TAB_SWITCHER, TabListMode.GRID);
@@ -2208,6 +2214,7 @@ public class TabListMediatorUnitTest {
         assertThat(mMediator.indexOfTab(TAB2_ID), equalTo(1));
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     public void groupAndUngroupSelectedTabsInMRUOrder() {
         StartSurfaceConfiguration.SHOW_TABS_IN_MRU_ORDER.setForTesting(true);
@@ -2400,6 +2407,7 @@ public class TabListMediatorUnitTest {
         StartSurfaceConfiguration.SHOW_TABS_IN_MRU_ORDER.setForTesting(false);
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @Features.EnableFeatures({TAB_GROUPS_CONTINUATION_ANDROID})
     public void getLatestTitle_NotGTS() {
@@ -2422,6 +2430,7 @@ public class TabListMediatorUnitTest {
         assertThat(mMediator.getLatestTitleForTab(PseudoTab.fromTab(mTab1)), equalTo(TAB1_TITLE));
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @Features.EnableFeatures({TAB_GROUPS_CONTINUATION_ANDROID})
     public void getLatestTitle_SingleTab_GTS() {
@@ -2444,6 +2453,7 @@ public class TabListMediatorUnitTest {
         assertThat(mMediator.getLatestTitleForTab(PseudoTab.fromTab(mTab1)), equalTo(TAB1_TITLE));
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @Features.EnableFeatures({TAB_GROUPS_CONTINUATION_ANDROID})
     public void getLatestTitle_Stored_GTS() {
@@ -2466,6 +2476,7 @@ public class TabListMediatorUnitTest {
                 equalTo(CUSTOMIZED_DIALOG_TITLE1));
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @Features.EnableFeatures({TAB_GROUPS_CONTINUATION_ANDROID})
     public void updateTabGroupTitle_GTS() {
@@ -2489,6 +2500,7 @@ public class TabListMediatorUnitTest {
                 equalTo(targetString));
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @Features.EnableFeatures({TAB_GROUPS_CONTINUATION_ANDROID})
     public void tabGroupTitleEditor_storeTitle() {
@@ -2505,6 +2517,7 @@ public class TabListMediatorUnitTest {
                         String.valueOf(CriticalPersistedTabData.from(mTab1).getRootId()), null));
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @Features.EnableFeatures({TAB_GROUPS_CONTINUATION_ANDROID})
     public void tabGroupTitleEditor_deleteTitle() {
@@ -2615,6 +2628,7 @@ public class TabListMediatorUnitTest {
         assertEquals("", mModel.get(POSITION2).model.get(TabProperties.URL_DOMAIN));
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @Features.EnableFeatures({TAB_GROUPS_CONTINUATION_ANDROID})
     public void testUrlUpdated_forSingleTab_GTS() {
@@ -2632,6 +2646,7 @@ public class TabListMediatorUnitTest {
         assertEquals(mTab2Domain, mModel.get(POSITION2).model.get(TabProperties.URL_DOMAIN));
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @Features.EnableFeatures({TAB_GROUPS_CONTINUATION_ANDROID})
     public void testUrlUpdated_forGroup_GTS() {
@@ -2664,6 +2679,7 @@ public class TabListMediatorUnitTest {
                 mModel.get(POSITION1).model.get(TabProperties.URL_DOMAIN));
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @Features.EnableFeatures({TAB_GROUPS_CONTINUATION_ANDROID})
     public void testUrlUpdated_forGroup_Dialog() {
@@ -2696,6 +2712,7 @@ public class TabListMediatorUnitTest {
         assertEquals(mNewDomain, mModel.get(POSITION2).model.get(TabProperties.URL_DOMAIN));
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @Features.EnableFeatures({TAB_GROUPS_CONTINUATION_ANDROID})
     public void testUrlUpdated_forUnGroup() {
@@ -2719,6 +2736,7 @@ public class TabListMediatorUnitTest {
         assertEquals(mTab2Domain, mModel.get(POSITION2).model.get(TabProperties.URL_DOMAIN));
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @Features.EnableFeatures({TAB_GROUPS_CONTINUATION_ANDROID})
     public void testOnInitializeAccessibilityNodeInfo() {
@@ -2745,6 +2763,7 @@ public class TabListMediatorUnitTest {
         accessibilityNodeInfoInOrder.verify(accessibilityNodeInfo).addAction(eq(action3));
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @Features.EnableFeatures({TAB_GROUPS_CONTINUATION_ANDROID})
     public void testPerformAccessibilityAction() {
@@ -2772,6 +2791,7 @@ public class TabListMediatorUnitTest {
         assertThat(mModel.get(0).model.get(TabProperties.TAB_ID), equalTo(TAB2_ID));
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @Features.EnableFeatures({TAB_GROUPS_CONTINUATION_ANDROID})
     public void testPerformAccessibilityAction_defaultAccessibilityAction() {
@@ -2794,6 +2814,7 @@ public class TabListMediatorUnitTest {
                 .getPositionsOfReorderAction(mItemView1, action);
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @Features.EnableFeatures({TAB_GROUPS_CONTINUATION_ANDROID})
     public void testPerformAccessibilityAction_InvalidIndex() {
@@ -2879,6 +2900,7 @@ public class TabListMediatorUnitTest {
     }
 
     // TODO(crbug.com/1177036): the assertThat in fetch callback is never reached.
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     public void testPriceTrackingProperty() {
         setPriceTrackingEnabledForTesting(true);
@@ -2944,6 +2966,7 @@ public class TabListMediatorUnitTest {
         doReturn(true).when(mTab2).isIncognito();
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     public void testGetPriceWelcomeMessageInsertionIndex() {
         initWithThreeTabs();
@@ -3131,6 +3154,7 @@ public class TabListMediatorUnitTest {
         verify(mPriceWelcomeMessageController, times(0)).showPriceWelcomeMessage(mPriceTabData);
     }
 
+    @Ignore("Ecosia : Tab groups are disabled")
     @Test
     @Features.EnableFeatures({TAB_GROUPS_CONTINUATION_ANDROID})
     public void testUpdateFaviconForGroup() {
@@ -3165,6 +3189,7 @@ public class TabListMediatorUnitTest {
         assertThat(mModel.get(1).model.get(TabProperties.FAVICON), equalTo(mFavicon));
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @Features.EnableFeatures({TAB_GROUPS_CONTINUATION_ANDROID})
     public void testUpdateFaviconForGroup_StaleIndex_SelectAnotherTabWithinGroup() {
@@ -3192,6 +3217,7 @@ public class TabListMediatorUnitTest {
         assertNull(mModel.get(1).model.get(TabProperties.FAVICON));
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @Features.EnableFeatures({TAB_GROUPS_CONTINUATION_ANDROID})
     public void testUpdateFaviconForGroup_StaleIndex_CloseTab() {
@@ -3219,6 +3245,7 @@ public class TabListMediatorUnitTest {
         assertEquals(mFavicon, mModel.get(0).model.get(TabProperties.FAVICON));
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @Features.EnableFeatures({TAB_GROUPS_CONTINUATION_ANDROID})
     public void testUpdateFaviconForGroup_StaleIndex_Reset() {
@@ -3250,6 +3277,7 @@ public class TabListMediatorUnitTest {
         TabListMediator.getDomain(tab);
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @Features.EnableFeatures({TAB_GROUPS_CONTINUATION_ANDROID})
     public void testTabDescriptionStringSetup() {
@@ -3288,6 +3316,7 @@ public class TabListMediatorUnitTest {
                 equalTo(targetString));
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @Features.EnableFeatures({TAB_GROUPS_CONTINUATION_ANDROID})
     public void testCloseButtonDescriptionStringSetup_TabSwitcher() {

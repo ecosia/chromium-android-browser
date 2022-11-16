@@ -78,6 +78,22 @@ public class RecentTabsManager implements SyncService.SyncStateChangedListener, 
     private final SyncPromoController mSyncPromoController;
     private final SyncService mSyncService;
 
+    // Ecosia: Visible for testing
+    public static RecentTabsManager createTestInstance() {
+        return new RecentTabsManager();
+    }
+
+    // Ecosia: Test constructor
+    private RecentTabsManager() {
+        mProfile = null;
+        mActiveTab = null;
+        mTabModelSelector = null;
+        mShowHistoryManager = null;
+        mProfileDataCache = null;
+        mSyncPromoController = null;
+        mSyncService = null;
+    }
+
     /**
      * Maps Session IDs to whether that entry was restored split by entry type. These are used to
      * record historgrams on {@link #destroy()} to measure restore ratio. Cached Session IDs are
@@ -417,6 +433,10 @@ public class RecentTabsManager implements SyncService.SyncStateChangedListener, 
     }
 
     private @SyncPromoState int calculatePromoState() {
+        return SyncPromoState.NO_PROMO;
+        /*
+        * Ecosia MOB-1247: Remove Sync Promo from recent tabs
+        *
         if (!mSignInManager.getIdentityManager().hasPrimaryAccount(ConsentLevel.SYNC)) {
             if (!mSignInManager.isSyncOptInAllowed()) {
                 return SyncPromoState.NO_PROMO;
@@ -431,6 +451,7 @@ public class RecentTabsManager implements SyncService.SyncStateChangedListener, 
             return SyncPromoState.NO_PROMO;
         }
         return SyncPromoState.PROMO_FOR_SYNC_TURNED_OFF_STATE;
+        */
     }
 
     private void updatePromoState() {

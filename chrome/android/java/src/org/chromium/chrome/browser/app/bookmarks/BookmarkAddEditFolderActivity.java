@@ -77,6 +77,12 @@ public class BookmarkAddEditFolderActivity
             }
         }
 
+        // Ecosia: Bookmark Import / Export
+        @Override
+        public void bookmarkModelNeedsReloadAfterBookmarksImport() {
+            // only required after import of bookmarks
+        }
+
         @Override
         public void bookmarkNodeMoved(
                 BookmarkItem oldParent, int oldIndex, BookmarkItem newParent, int newIndex) {

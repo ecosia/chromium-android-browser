@@ -21,6 +21,7 @@ import androidx.test.filters.SmallTest;
 
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.ArgumentCaptor;
@@ -139,6 +140,7 @@ public class IncognitoRestoreAppLaunchDrawBlockerUnitTest {
                 "Shouldn't block draw.", mIncognitoRestoreAppLaunchDrawBlocker.shouldBlockDraw());
     }
 
+    @Ignore("Ecosia :Disable Incognito Reauthentication")
     @Test
     @SmallTest
     public void testShouldNotBlockDraw_WhenNoRestoreStateSwitchIsPresent() {
@@ -153,6 +155,7 @@ public class IncognitoRestoreAppLaunchDrawBlockerUnitTest {
         verify(mCommandLineMock, times(1)).hasSwitch(ChromeSwitches.NO_RESTORE_STATE);
     }
 
+    @Ignore("Ecosia :Disable Incognito Reauthentication")
     @Test
     @SmallTest
     public void testShouldNotBlockDraw_WhenNoCipherDataIsFound() {
@@ -169,6 +172,7 @@ public class IncognitoRestoreAppLaunchDrawBlockerUnitTest {
         verify(mCipherFactoryMock, times(1)).restoreFromBundle(mSavedInstanceStateMock);
     }
 
+    @Ignore("Ecosia :Disable Incognito Reauthentication")
     @Test
     @SmallTest
     public void testShouldNotBlockDraw_WhenReauthIsNotPending() {
@@ -190,6 +194,7 @@ public class IncognitoRestoreAppLaunchDrawBlockerUnitTest {
                 .getBoolean(IncognitoReauthControllerImpl.KEY_IS_INCOGNITO_REAUTH_PENDING, false);
     }
 
+    @Ignore("Ecosia :Disable Incognito Reauthentication")
     @Test
     @SmallTest
     public void testShouldNotBlockDraw_WhenIntentingToRegularTab_AndLastTabModelWasNotIncognito() {
@@ -221,6 +226,7 @@ public class IncognitoRestoreAppLaunchDrawBlockerUnitTest {
                 .getBooleanExtra(IntentHandler.EXTRA_INVOKED_FROM_LAUNCH_NEW_INCOGNITO_TAB, false);
     }
 
+    @Ignore("Ecosia :Disable Incognito Reauthentication")
     @Test
     @SmallTest
     public void testShouldNotBlockDraw_WhenBothTabStateIsInitialized_And_NativeIsInitialized() {
@@ -261,6 +267,7 @@ public class IncognitoRestoreAppLaunchDrawBlockerUnitTest {
         verify(mUnblockDrawRunnableMock, times(1)).run();
     }
 
+    @Ignore("Ecosia :Disable Incognito Reauthentication")
     @Test
     @SmallTest
     public void testShouldBlockDraw_WhenTabStateIsNotInitialized_And_NativeIsInitialized() {
@@ -296,6 +303,7 @@ public class IncognitoRestoreAppLaunchDrawBlockerUnitTest {
         verify(mTabModelSelectorMock, times(2)).isTabStateInitialized();
     }
 
+    @Ignore("Ecosia :Disable Incognito Reauthentication")
     @Test
     @SmallTest
     public void testShouldBlockDraw_WhenTabStateIsInitialized_And_WhenNativeIsNotInitialized() {

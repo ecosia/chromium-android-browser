@@ -15,6 +15,7 @@ import android.graphics.drawable.BitmapDrawable;
 import androidx.annotation.DrawableRes;
 import androidx.test.filters.SmallTest;
 
+import org.junit.Ignore;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Rule;
@@ -312,6 +313,7 @@ public class BasicSuggestionProcessorUnitTest {
         Assert.assertNull(mModel.get(BaseSuggestionViewProperties.ACTIONS));
     }
 
+    @Ignore // Ecosia: ignore this test as we change icon
     @Test
     @SmallTest
     public void refineIconShownForRefineSuggestions() {

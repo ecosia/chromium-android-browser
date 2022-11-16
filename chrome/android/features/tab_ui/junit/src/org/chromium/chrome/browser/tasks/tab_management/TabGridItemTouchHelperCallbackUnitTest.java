@@ -30,6 +30,7 @@ import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.RecyclerView;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TestRule;
@@ -65,6 +66,7 @@ import java.util.List;
  * Tests for {@link TabGridItemTouchHelperCallback}.
  */
 @SuppressWarnings("ResultOfMethodCallIgnored")
+@Ignore("Ecosia : Disabled Tab group feature")
 @RunWith(BaseRobolectricTestRunner.class)
 @Config(manifest = Config.NONE,
         instrumentedPackages =

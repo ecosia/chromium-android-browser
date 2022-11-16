@@ -23,10 +23,12 @@ found in the LICENSE file.
             android:paddingBottom="@dimen/list_item_default_margin"
             android:paddingStart="@dimen/list_item_default_margin"
             android:paddingEnd="@dimen/list_item_default_margin"
+            android:drawableStart="@drawable/clear_history"
+            android:drawablePadding="10dp"
             android:gravity="center_vertical|start"
             android:text="@string/open_clear_browsing_data_dialog_button"
             app:verticalInset="0dp"
-            style="@style/TextButton" />
+            style="@style/EcosiaBrowsingBtn" />
 
         <View style="@style/HorizontalDivider" />
 

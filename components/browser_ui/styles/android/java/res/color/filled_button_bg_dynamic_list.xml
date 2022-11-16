@@ -2,5 +2,5 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:alpha="@dimen/filled_button_bg_disabled_alpha" android:color="?attr/colorOnSurface"
         android:state_enabled="false" />
-    <item android:color="?attr/colorPrimary"/>
+    <item android:color="@color/ecosia_brand_primary"/> <!--Ecosia : background color modified -->
 </selector>

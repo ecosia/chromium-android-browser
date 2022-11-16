@@ -23,7 +23,7 @@ found in the LICENSE file.
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:scaleType="center"
-        app:srcCompat="@drawable/ic_incognito_cct_24dp"
+        app:srcCompat="@drawable/ic_ecosia_new_incognitotab"
         android:visibility="gone"
         android:contentDescription="@string/accessibility_incognito_badge"/>
     <FrameLayout

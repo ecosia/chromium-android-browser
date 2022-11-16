@@ -325,18 +325,21 @@ public class TabGroupUiMediatorUnitTest {
 
     /*********************** Tab group related tests *************************/
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @Features.EnableFeatures(ChromeFeatureList.TAB_GROUPS_ANDROID)
     public void verifyInitialization_NoTab_TabGroup() {
         initAndAssertProperties(null);
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @Features.EnableFeatures(ChromeFeatureList.TAB_GROUPS_ANDROID)
     public void verifyInitialization_SingleTab() {
         initAndAssertProperties(mTab1);
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @Features.EnableFeatures(ChromeFeatureList.TAB_GROUPS_ANDROID)
     public void verifyInitialization_TabGroup() {
@@ -344,6 +347,7 @@ public class TabGroupUiMediatorUnitTest {
         initAndAssertProperties(mTab2);
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @Features.EnableFeatures(ChromeFeatureList.TAB_GROUPS_ANDROID)
     public void onClickLeftButton_TabGroup() {
@@ -358,6 +362,7 @@ public class TabGroupUiMediatorUnitTest {
         verify(mResetHandler).resetGridWithListOfTabs(mTabGroup2);
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @Features.EnableFeatures(ChromeFeatureList.TAB_GROUPS_ANDROID)
     public void onClickRightButton_TabGroup() {
@@ -374,6 +379,7 @@ public class TabGroupUiMediatorUnitTest {
                         isA(LoadUrlParams.class), eq(TabLaunchType.FROM_TAB_GROUP_UI), eq(mTab1));
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @Features.EnableFeatures(ChromeFeatureList.TAB_GROUPS_ANDROID)
     public void tabSelection_NotSameGroup_GroupToSingleTab() {
@@ -387,6 +393,7 @@ public class TabGroupUiMediatorUnitTest {
         verifyResetStrip(false, null);
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @Features.EnableFeatures(ChromeFeatureList.TAB_GROUPS_ANDROID)
     public void tabSelection_NotSameGroup_GroupToGroup() {
@@ -405,6 +412,7 @@ public class TabGroupUiMediatorUnitTest {
         verifyResetStrip(true, tabs);
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @Features.EnableFeatures(ChromeFeatureList.TAB_GROUPS_ANDROID)
     public void tabSelection_NotSameGroup_SingleTabToGroup() {
@@ -422,6 +430,7 @@ public class TabGroupUiMediatorUnitTest {
         verifyResetStrip(true, tabGroup);
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @Features.EnableFeatures(ChromeFeatureList.TAB_GROUPS_ANDROID)
     public void tabSelection_NotSameGroup_SingleTabToSingleTab() {
@@ -440,6 +449,7 @@ public class TabGroupUiMediatorUnitTest {
         verifyResetStrip(false, null);
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @Features.EnableFeatures(ChromeFeatureList.TAB_GROUPS_ANDROID)
     public void tabSelection_SameGroup_TabGroup() {
@@ -453,6 +463,7 @@ public class TabGroupUiMediatorUnitTest {
         verifyNeverReset();
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @Features.EnableFeatures(ChromeFeatureList.TAB_GROUPS_ANDROID)
     public void tabSelection_ScrollToSelectedIndex() {
@@ -474,6 +485,7 @@ public class TabGroupUiMediatorUnitTest {
         assertThat(mModel.get(TabGroupUiProperties.INITIAL_SCROLL_INDEX), equalTo(1));
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @Features.EnableFeatures(ChromeFeatureList.TAB_GROUPS_ANDROID)
     public void tabClosure_NotLastTabInGroup() {
@@ -488,6 +500,7 @@ public class TabGroupUiMediatorUnitTest {
         verifyNeverReset();
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @Features.EnableFeatures(ChromeFeatureList.TAB_GROUPS_ANDROID)
     public void tabClosure_LastTabInGroup_GroupUiNotVisible() {
@@ -523,6 +536,7 @@ public class TabGroupUiMediatorUnitTest {
         verifyResetStrip(false, null);
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @Features.EnableFeatures(ChromeFeatureList.TAB_GROUPS_ANDROID)
     public void tabAddition_SingleTab() {
@@ -541,6 +555,7 @@ public class TabGroupUiMediatorUnitTest {
         verifyNeverReset();
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @Features.EnableFeatures(ChromeFeatureList.TAB_GROUPS_ANDROID)
     public void tabAddition_SingleTab_Refresh_WithAutoGroupCreation() {
@@ -559,6 +574,7 @@ public class TabGroupUiMediatorUnitTest {
         verifyResetStrip(true, tabs);
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @Features.EnableFeatures(ChromeFeatureList.TAB_GROUPS_ANDROID)
     public void tabAddition_SingleTab_Refresh_WithoutAutoGroupCreation() {
@@ -601,6 +617,7 @@ public class TabGroupUiMediatorUnitTest {
         verifyNeverReset();
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @Features.EnableFeatures(ChromeFeatureList.TAB_GROUPS_ANDROID)
     public void tabAddition_TabGroup_ScrollToTheLast() {
@@ -620,6 +637,7 @@ public class TabGroupUiMediatorUnitTest {
         assertThat(mModel.get(TabGroupUiProperties.INITIAL_SCROLL_INDEX), equalTo(2));
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @Features.EnableFeatures(ChromeFeatureList.TAB_GROUPS_ANDROID)
     public void restoreCompleted_TabModelNoTab() {
@@ -633,6 +651,7 @@ public class TabGroupUiMediatorUnitTest {
                 .setBottomControlsVisible(anyBoolean());
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @Features.EnableFeatures(ChromeFeatureList.TAB_GROUPS_ANDROID)
     public void restoreCompleted_UiNotVisible() {
@@ -646,6 +665,7 @@ public class TabGroupUiMediatorUnitTest {
         mVisibilityControllerInOrder.verify(mVisibilityController).setBottomControlsVisible(false);
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @Features.EnableFeatures(ChromeFeatureList.TAB_GROUPS_ANDROID)
     public void restoreCompleted_UiVisible() {
@@ -659,6 +679,7 @@ public class TabGroupUiMediatorUnitTest {
         mVisibilityControllerInOrder.verify(mVisibilityController).setBottomControlsVisible(true);
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @Features.EnableFeatures(ChromeFeatureList.TAB_GROUPS_ANDROID)
     public void restoreCompleted_OverviewModeVisible() {
@@ -675,6 +696,7 @@ public class TabGroupUiMediatorUnitTest {
                 .setBottomControlsVisible(anyBoolean());
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @Features.EnableFeatures(ChromeFeatureList.TAB_GROUPS_ANDROID)
     public void tabClosureUndone_UiVisible_NotShowingOverviewMode() {
@@ -696,6 +718,7 @@ public class TabGroupUiMediatorUnitTest {
                 .setBottomControlsVisible(anyBoolean());
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @Features.EnableFeatures(ChromeFeatureList.TAB_GROUPS_ANDROID)
     public void tabClosureUndone_UiNotVisible_NotShowingOverviewMode_TabNotInGroup() {
@@ -749,6 +772,7 @@ public class TabGroupUiMediatorUnitTest {
                 .setBottomControlsVisible(eq(true));
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @Features.EnableFeatures(ChromeFeatureList.TAB_GROUPS_ANDROID)
     public void tabClosureUndone_UiNotVisible_ShowingOverviewMode() {
@@ -771,6 +795,7 @@ public class TabGroupUiMediatorUnitTest {
                 .setBottomControlsVisible(eq(false));
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @Features.EnableFeatures(ChromeFeatureList.TAB_GROUPS_ANDROID)
     public void overViewStartedShowing() {
@@ -781,6 +806,7 @@ public class TabGroupUiMediatorUnitTest {
         verifyResetStrip(false, null);
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @Features.EnableFeatures(ChromeFeatureList.TAB_GROUPS_ANDROID)
     public void overViewFinishedHiding_NoCurrentTab() {
@@ -791,6 +817,7 @@ public class TabGroupUiMediatorUnitTest {
         verifyNeverReset();
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @Features.EnableFeatures(ChromeFeatureList.TAB_GROUPS_ANDROID)
     public void overViewFinishedHiding_CurrentTabSingle() {
@@ -801,6 +828,7 @@ public class TabGroupUiMediatorUnitTest {
         verifyResetStrip(false, null);
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @Features.EnableFeatures(ChromeFeatureList.TAB_GROUPS_ANDROID)
     public void overViewFinishedHiding_CurrentTabInGroup() {
@@ -811,6 +839,7 @@ public class TabGroupUiMediatorUnitTest {
         verifyResetStrip(true, mTabGroup2);
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @Features.EnableFeatures(ChromeFeatureList.TAB_GROUPS_ANDROID)
     public void destroy_TabGroup() {
@@ -828,6 +857,7 @@ public class TabGroupUiMediatorUnitTest {
                 .removeTabGroupObserver(mTabGroupModelFilterObserverArgumentCaptor.capture());
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @Features.EnableFeatures(ChromeFeatureList.TAB_GROUPS_ANDROID)
     public void uiNotVisibleAfterDragCurrentTabOutOfGroup() {
@@ -840,6 +870,7 @@ public class TabGroupUiMediatorUnitTest {
         verifyResetStrip(false, null);
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @Features.EnableFeatures(ChromeFeatureList.TAB_GROUPS_ANDROID)
     public void backButtonPress_ShouldHandle() {
@@ -850,6 +881,7 @@ public class TabGroupUiMediatorUnitTest {
         verify(mTabGridDialogController).handleBackPressed();
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @Features.EnableFeatures(ChromeFeatureList.TAB_GROUPS_ANDROID)
     public void backButtonPress_ShouldNotHandle() {
@@ -860,6 +892,7 @@ public class TabGroupUiMediatorUnitTest {
         verify(mTabGridDialogController).handleBackPressed();
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @Features.EnableFeatures(ChromeFeatureList.TAB_GROUPS_ANDROID)
     public void switchTabModel_UiVisible_TabGroup() {
@@ -875,6 +908,7 @@ public class TabGroupUiMediatorUnitTest {
         verifyResetStrip(true, mTabGroup2);
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @Features.EnableFeatures(ChromeFeatureList.TAB_GROUPS_ANDROID)
     public void switchTabModel_UiNotVisible_TabGroup() {

@@ -132,6 +132,8 @@ import org.chromium.ui.base.ActivityWindowAndroid;
 import org.chromium.ui.base.DeviceFormFactor;
 import org.chromium.ui.base.IntentRequestTracker;
 import org.chromium.ui.modaldialog.ModalDialogManager;
+import org.ecosia.defaultbrowser.WhatsNewPopup;
+import org.ecosia.incentives.SearchIncentivesManager;
 
 import java.util.function.BooleanSupplier;
 import java.util.function.Function;
@@ -685,7 +687,7 @@ public class TabbedRootUiCoordinator extends RootUiCoordinator {
                     mTabModelSelectorSupplier.get().isIncognitoSelected(),
                     getBottomSheetController());
         }
-
+        /* Ecosia : Disable permission request as this disables the default browser pop up on launch
         if (!didTriggerPromo) {
             RationaleDelegate rationaleUIDelegate;
 
@@ -704,14 +706,17 @@ public class TabbedRootUiCoordinator extends RootUiCoordinator {
                     mWindowAndroid, mNotificationPermissionController);
 
             didTriggerPromo = mNotificationPermissionController.requestPermissionIfNeeded(
-                    false /* contextual */);
-        }
+                    false /* contextual *//*);
+        } */
+
 
         if (!didTriggerPromo) {
             didTriggerPromo = FeatureNotificationUtils.willShowIPH(FeatureType.DEFAULT_BROWSER);
+            // Ecosia: check restricted google market (MOB-1858)
+            boolean isRestricted = SearchIncentivesManager.getInstance(mActivity).isRestricted();
             FeatureNotificationUtils.registerIPHCallback(FeatureType.DEFAULT_BROWSER, () -> {
                 DefaultBrowserPromoUtils.prepareLaunchPromoIfNeeded(
-                        mActivity, mWindowAndroid, true /* ignoreMaxCount */);
+                        mActivity, mWindowAndroid, true /* ignoreMaxCount */, isRestricted);
             });
         }
 
@@ -955,9 +960,17 @@ public class TabbedRootUiCoordinator extends RootUiCoordinator {
                     && preferenceManager.readBoolean(
                             ChromePreferenceKeys.PROMOS_SKIPPED_ON_FIRST_START, false)) {
                 isShowingPromo = maybeShowPromo();
+
+                //Ecosia : What's new popup for existing users (shown once)
+                if (WhatsNewPopup.launchWhatsNewPopup(mActivity)) {
+                    return true;
+                }
             } else {
                 preferenceManager.writeBoolean(
                         ChromePreferenceKeys.PROMOS_SKIPPED_ON_FIRST_START, true);
+                //Ecosia : Showing for new users on first launch, disable WhatsNewPopup on install
+                maybeShowPromo();
+                WhatsNewPopup.setPrefWhatsNewPopup(mActivity);
             }
             return isShowingPromo;
         }
@@ -965,18 +978,25 @@ public class TabbedRootUiCoordinator extends RootUiCoordinator {
 
     private boolean maybeShowPromo() {
         // Only one promo can be shown in one run to avoid nagging users too much.
+        /* Ecosia: disable sign in and data reduction promo
         if (FullScreenSyncPromoUtil.launchPromoIfNeeded(mActivity,
                     SyncConsentActivityLauncherImpl.get(), VersionInfo.getProductMajorVersion())) {
             return true;
         }
+       	*/
+        // Ecosia: check restricted google market (MOB-1858)
+        boolean isRestricted = SearchIncentivesManager.getInstance(mActivity).isRestricted();
         if (DefaultBrowserPromoUtils.prepareLaunchPromoIfNeeded(
-                    mActivity, mWindowAndroid, false /* ignoreMaxCount */)) {
+                    mActivity, mWindowAndroid, false /* ignoreMaxCount */, isRestricted)) {
             return true;
         }
+        /* Ecosia: remove language promo
         if (AppLanguagePromoDialog.maybeShowPrompt(mActivity, mModalDialogManagerSupplier,
                     () -> ApplicationLifetime.terminate(true))) {
             return true;
         }
+        */
+
         return LanguageAskPrompt.maybeShowLanguageAskPrompt(mActivity, mModalDialogManagerSupplier);
     }
 

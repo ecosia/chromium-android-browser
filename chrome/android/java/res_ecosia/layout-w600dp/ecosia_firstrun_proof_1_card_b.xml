@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ecosia_firstrun_proof_1_card_b"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:rotation="5"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/ecosia_firstrun_proof_1_card_a"
+    app:layout_constraintVertical_chainStyle="packed">
+
+    <ImageView
+        android:id="@+id/ecosia_firstrun_proof_1_card_b_image"
+        android:layout_width="338dp"
+        android:layout_height="174dp"
+        android:scaleType="fitXY"
+        android:layout_marginStart="48dp"
+        android:src="@drawable/onboarding_proof_1_card_b"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ecosia_firstrun_proof_1_card_b_image_gm"
+        android:layout_width="338dp"
+        android:layout_height="174dp"
+        android:scaleType="fitXY"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/onboarding_proof_1_card_b_gm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/ecosia_firstrun_proof_1_card_b_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="42dp"
+        android:fontWeight="400"
+        android:letterSpacing="-0.01"
+        android:text="@string/onboarding_page_1_card_b_title"
+        android:textColor="@color/ecosia_onboarding_card_text_secondary"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@+id/ecosia_firstrun_proof_1_card_b_image"
+        app:layout_constraintTop_toTopOf="@+id/ecosia_firstrun_proof_1_card_b_image" />
+
+    <TextView
+        android:id="@+id/ecosia_firstrun_proof_1_card_b_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="5dp"
+        android:fontWeight="600"
+        android:letterSpacing="-0.02"
+        android:text="@string/onboarding_page_1_card_b_text"
+        android:textColor="@color/ecosia_onboarding_card_text_primary"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="@+id/ecosia_firstrun_proof_1_card_b_title"
+        app:layout_constraintTop_toBottomOf="@+id/ecosia_firstrun_proof_1_card_b_title" />
+
+    <TextView
+        android:id="@+id/ecosia_firstrun_proof_1_card_b_tree_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="51dp"
+        android:fontWeight="700"
+        android:letterSpacing="-0.02"
+        android:text="10"
+        android:textColor="@color/ecosia_onboarding_card_text_primary"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="@+id/ecosia_firstrun_proof_1_card_b_image"
+        app:layout_constraintTop_toTopOf="@+id/ecosia_firstrun_proof_1_card_b_image" />
+
+</android.support.constraint.ConstraintLayout>

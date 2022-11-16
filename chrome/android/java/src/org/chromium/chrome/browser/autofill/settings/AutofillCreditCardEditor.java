@@ -104,13 +104,14 @@ abstract class AutofillCreditCardEditor extends AutofillEditorBase {
             getActivity().finish();
             return true;
         }
+        /* Ecosia : Remove help
         if (item.getItemId() == R.id.help_menu_id) {
             HelpAndFeedbackLauncherImpl.getInstance().show(getActivity(),
                     getActivity().getString(R.string.help_context_autofill),
                     Profile.getLastUsedRegularProfile(), null);
             return true;
         }
-
+        */
         return super.onOptionsItemSelected(item);
     }
 }

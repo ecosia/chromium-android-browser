@@ -86,6 +86,7 @@ import org.chromium.ui.UiUtils;
 import org.chromium.ui.base.DeviceFormFactor;
 import org.chromium.ui.modaldialog.ModalDialogManager;
 import org.chromium.ui.modaldialog.ModalDialogManager.ModalDialogType;
+import org.ecosia.tracking.TrackingManager;
 
 /**
  * The Chrome settings activity.
@@ -281,6 +282,10 @@ public class SettingsActivity extends ChromeBaseAppCompatActivity
     public boolean onPreferenceStartFragment(
             PreferenceFragmentCompat caller, Preference preference) {
         startFragment(preference.getFragment(), preference.getExtras());
+        // Ecosia : Tracking event for Adblock settings from Menu option
+        if(preference.getTitle().equals(getApplicationContext().getResources().getString(R.string.adblock_settings_title))) {
+            TrackingManager.getInstance(getApplicationContext()).displayAdblockMenuEvent();
+        }
         return true;
     }
 
@@ -364,11 +369,13 @@ public class SettingsActivity extends ChromeBaseAppCompatActivity
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
+        /* Ecosia : Removing Help & Feedback setting
         // By default, every screen in Settings shows a "Help & feedback" menu item.
         MenuItem help = menu.add(
                 Menu.NONE, R.id.menu_id_general_help, Menu.CATEGORY_SECONDARY, R.string.menu_help);
         help.setIcon(VectorDrawableCompat.create(
                 getResources(), R.drawable.ic_help_and_feedback, getTheme()));
+        */
         return super.onCreateOptionsMenu(menu);
     }
 
@@ -391,12 +398,15 @@ public class SettingsActivity extends ChromeBaseAppCompatActivity
         if (item.getItemId() == android.R.id.home) {
             finish();
             return true;
+		}
+		/* Ecosia: Removing Help & Feedback setting
         } else if (item.getItemId() == R.id.menu_id_general_help) {
-            HelpAndFeedbackLauncherImpl.getInstance().show(this,
+			HelpAndFeedbackLauncherImpl.getInstance().show(this,
                     getString(R.string.help_context_settings), Profile.getLastUsedRegularProfile(),
                     null);
             return true;
         }
+		*/
         return super.onOptionsItemSelected(item);
     }
 

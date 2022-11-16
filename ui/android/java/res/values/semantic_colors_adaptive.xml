@@ -119,4 +119,7 @@ found in the LICENSE file.
     <color name="rating_star_yellow">@color/rating_star_yellow_dark</color>
     <color name="price_drop_annotation_bg_color">@color/price_drop_annotation_bg_color_light</color>
     <color name="price_drop_annotation_text_green">@color/price_drop_annotation_text_green_light</color>
+    <color name="button_secondary_default">#61008009</color> <!-- ecosia_button_secondary_default -->
+    <color name="button2_text_primary">#FFFFFF</color> <!-- ecosia_text_primary -->
+    <color name="button_primary_default">#008009</color> <!-- ecosia_button_primary_default -->
 </resources>

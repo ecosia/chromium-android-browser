@@ -113,12 +113,12 @@ public class EditUrlSuggestionProcessor extends BaseSuggestionViewProcessor {
                         .forDrawableRes(getContext(), R.drawable.ic_globe_24dp)
                         .setAllowTint(true)
                         .build());
-
+        //Ecosia : Rebranding icons share, clipboard and edit
         setCustomActions(model,
                 Arrays.asList(new Action(mContext,
                                       SuggestionDrawableState.Builder
                                               .forDrawableRes(
-                                                      getContext(), R.drawable.ic_share_white_24dp)
+                                                      getContext(), R.drawable.ic_ecosia_share_link)
                                               .setLarge(true)
                                               .setAllowTint(true)
                                               .build(),
@@ -126,7 +126,7 @@ public class EditUrlSuggestionProcessor extends BaseSuggestionViewProcessor {
                         new Action(mContext,
                                 SuggestionDrawableState.Builder
                                         .forDrawableRes(
-                                                getContext(), R.drawable.ic_content_copy_black)
+                                                getContext(), R.drawable.ic_ecosia_clipboard)
                                         .setLarge(true)
                                         .setAllowTint(true)
                                         .build(),
@@ -135,7 +135,7 @@ public class EditUrlSuggestionProcessor extends BaseSuggestionViewProcessor {
                         new Action(mContext,
                                 SuggestionDrawableState.Builder
                                         .forDrawableRes(
-                                                getContext(), R.drawable.bookmark_edit_active)
+                                                getContext(), R.drawable.ic_ecosia_edit)
                                         .setLarge(true)
                                         .setAllowTint(true)
                                         .build(),

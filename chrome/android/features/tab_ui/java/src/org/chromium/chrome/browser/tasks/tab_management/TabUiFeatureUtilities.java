@@ -221,7 +221,7 @@ public class TabUiFeatureUtilities {
      * @param context The activity context.
      */
     public static boolean isTabGroupsAndroidEnabled(Context context) {
-        // Disable tab group for tablet.
+   		// Disable tab group for tablet.
         if (DeviceFormFactor.isNonMultiDisplayContextOnTablet(context)) {
             return isTabletTabGroupsEnabled(context);
         }

@@ -1,43 +1,43 @@
-<?xml version="1.0" ?>
+<?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE translationbundle>
 <translationbundle lang="sv">
 <translation id="130631256467250065">Dina ändringar börjar gälla nästa gång du startar om enheten.</translation>
-<translation id="275588974610408078">Felrapportering är inte tillgängligt i Chromium.</translation>
-<translation id="3064346599913645280">Du visar en säker Chromium-sida</translation>
-<translation id="358997566136285270">Chromium-logotyp</translation>
-<translation id="4365115785552740256">Chromium finns tack vare projektet <ph name="BEGIN_LINK_CHROMIUM" />Chromium<ph name="END_LINK_CHROMIUM" /> med öppen källkod och <ph name="BEGIN_LINK_OSS" />andra program med öppen källkod<ph name="END_LINK_OSS" />.</translation>
-<translation id="4559775032954821361">Öppna
-          Chromium-menyn &gt;
-          <ph name="SETTINGS_TITLE" />
+<translation id="2955914891289756427">Felrapportering är inte tillgängligt i Ecosia.</translation>
+<translation id="2441066927880955410">Du visar en säker Ecosia-sida</translation>
+<translation id="5104341700462991189">Ecosia-logotyp</translation>
+<translation id="7347361780317841252">Ecosia finns tack vare projektet <ph name="BEGIN_LINK_CHROMIUM"/>Ecosia<ph name="END_LINK_CHROMIUM"/> med öppen källkod och <ph name="BEGIN_LINK_OSS"/>andra program med öppen källkod<ph name="END_LINK_OSS"/>.</translation>
+<translation id="8920794075861916959">Öppna
+          Ecosia-menyn &gt;
+          <ph name="SETTINGS_TITLE"/>
           &gt;
-          <ph name="ADVANCED_TITLE" />
+          <ph name="ADVANCED_TITLE"/>
           &gt;
-          <ph name="PROXIES_TITLE" />
+          <ph name="PROXIES_TITLE"/>
           &gt;
           LAN-inställningar
           och avmarkera kryssrutan Använd en proxyserver för nätverket.</translation>
-<translation id="4622039161600275920">Den här sidan har blockerats av Chromium</translation>
-<translation id="48558539577516920">Tillåt att Chromium får åtkomst till nätverket i inställningarna för brandväggen eller
+<translation id="5177147493498374715">Den här sidan har blockerats av Ecosia</translation>
+<translation id="583128902627777075">Tillåt att Ecosia får åtkomst till nätverket i inställningarna för brandväggen eller
         antivirusprogrammet.</translation>
-<translation id="580822234363523061">Öppna
-          Chromium-menyn &gt;
-          <ph name="SETTINGS_TITLE" />
+<translation id="3913860536599484838">Öppna
+          Ecosia-menyn &gt;
+          <ph name="SETTINGS_TITLE"/>
           &gt;
-          <ph name="ADVANCED_TITLE" />
+          <ph name="ADVANCED_TITLE"/>
           &gt;
-          <ph name="PROXIES_TITLE" />
+          <ph name="PROXIES_TITLE"/>
           och kontrollera att "ingen proxy" eller "direkt" har angetts i konfigurationen</translation>
-<translation id="6613594504749178791">Ändringarna tillämpas nästa gång du startar om Chromium.</translation>
-<translation id="7861509383340276692">Öppna
-        Chromium-menyn &gt;
-        <ph name="SETTINGS_TITLE" />
+<translation id="1722634673917783018">Ändringarna tillämpas nästa gång du startar om Ecosia.</translation>
+<translation id="8143058600367874039">Öppna
+        Ecosia-menyn &gt;
+        <ph name="SETTINGS_TITLE"/>
         &gt;
-        <ph name="ADVANCED_TITLE" />
-        och avmarkera <ph name="NO_PREFETCH_DESCRIPTION" />.
+        <ph name="ADVANCED_TITLE"/>
+        och avmarkera <ph name="NO_PREFETCH_DESCRIPTION"/>.
         Om det inte hjälper rekommenderar vi att du markerar det
         här alternativet igen så att funktionaliteten förbättras.</translation>
 <translation id="8187289872471304532">Öppna
           Program &gt; Systeminställningar &gt; Nätverk &gt; Avancerat &gt; Proxyservrar
           och avmarkera alla proxyservrar.</translation>
-<translation id="8684913864886094367">Chromium stängdes inte ordentligt.</translation>
+<translation id="1864711229671391928">Ecosia stängdes inte ordentligt.</translation>
 </translationbundle>

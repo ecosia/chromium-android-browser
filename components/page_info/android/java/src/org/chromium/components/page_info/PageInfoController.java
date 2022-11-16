@@ -495,6 +495,14 @@ public class PageInfoController implements PageInfoMainController, ModalDialogPr
     public static void show(final Activity activity, WebContents webContents,
             final String contentPublisher, @OpenedFromSource int source,
             PageInfoControllerDelegate delegate, PageInfoHighlight pageInfoHighlight) {
+
+        // Ecosia: don't show the dialog for chrome-native pages
+        String url = delegate.isShowingOfflinePage()
+                ? delegate.getOfflinePageUrl()
+                : DomDistillerUrlUtils.getOriginalUrlFromDistillerUrl(webContents.getVisibleUrl())
+                .getSpec();
+        if (url != null && url.startsWith("chrome-native")) return;
+
         // Don't show the dialog if this tab doesn't have an activity. See https://crbug.com/1267383
         if (activity == null) return;
         // If the activity's decor view is not attached to window, we don't show the dialog because

@@ -875,6 +875,12 @@ public class ToolbarManager implements UrlFocusChangeListener, ThemeColorObserve
             public void bookmarkModelChanged() {
                 updateBookmarkButtonStatus();
             }
+
+            // Ecosia: Bookmark Import / Export
+            @Override
+            public void bookmarkModelNeedsReloadAfterBookmarksImport() {
+                // only required after successful bookmark import
+            }
         };
 
         mBrowserControlsObserver = new BrowserControlsStateProvider.Observer() {

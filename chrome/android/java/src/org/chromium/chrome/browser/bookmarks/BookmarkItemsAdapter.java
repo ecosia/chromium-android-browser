@@ -115,6 +115,12 @@ public class BookmarkItemsAdapter extends DragReorderableListAdapter<BookmarkLis
                 }
             }
         }
+
+        // Ecosia: Bookmark Import / Export
+        @Override
+        public void bookmarkModelNeedsReloadAfterBookmarksImport() {
+            onFolderStateSet(mCurrentFolder);
+        }
     };
 
     BookmarkItemsAdapter(Context context, SnackbarManager snackbarManager) {
@@ -365,6 +371,11 @@ public class BookmarkItemsAdapter extends DragReorderableListAdapter<BookmarkLis
         mDelegate = null;
         mPromoHeaderManager.destroy();
         mSyncService.removeSyncStateChangedListener(this);
+    }
+
+    // Ecosia: Bookmark Import / Export
+    public void reloadData() {
+        onFolderStateSet(mCurrentFolder);
     }
 
     @Override

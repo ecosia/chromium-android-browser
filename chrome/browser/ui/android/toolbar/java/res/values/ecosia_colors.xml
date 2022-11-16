@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="ecosia_tabs_group_counter_selected">#008009</color>
+    <color name="ecosia_tabs_group_counter_unselected">#333333</color>
+    <color name="ecosia_tabs_group_incognito">#FFFFFF</color>
+</resources>

@@ -148,8 +148,10 @@ public final class AdblockController extends FilteringConfiguration {
 
     @UiThread
     public boolean areMoreOptionsEnabled() {
+        return false;
+        /* Ecosia: Disable custom filter setting
         return UserPrefs.get(Profile.getLastUsedRegularProfile())
-                .getBoolean(Pref.ADBLOCK_MORE_OPTIONS_ENABLED);
+                .getBoolean(Pref.ADBLOCK_MORE_OPTIONS_ENABLED); */
     }
 
     @UiThread

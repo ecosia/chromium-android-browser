@@ -61,7 +61,8 @@ found in the LICENSE file.
         android:persistent="false" />
     <!-- A hyperlink to explain more about Protected Media content settings. -->
     <org.chromium.components.browser_ui.settings.LearnMorePreference
-        android:key="protected_content_learn_more" />
+        android:key="protected_content_learn_more"
+        app:isPreferenceVisible="false"/> <!-- Ecosia : Remove Learn more setting -->
 
     <!-- Collapsible headers for sorting preferences. -->
     <org.chromium.components.browser_ui.settings.ExpandablePreferenceGroup

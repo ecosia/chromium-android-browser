@@ -143,6 +143,9 @@ bool UsePassthroughCommandDecoder() {
           build_info->android_build_fp(),
           kPassthroughCommandDecoderBlockListByAndroidBuildFP.Get()))
     return false;
+  // Ecosia: fix for the green screen video issue on Android 9 devices (MOB-1911)
+  if (build_info->sdk_int() <= base::android::SDK_VERSION_P)
+    return false;
 #endif  // BUILDFLAG(IS_ANDROID)
 
   return true;

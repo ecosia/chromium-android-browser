@@ -456,6 +456,18 @@ if (is_android) {
       "android/java/res/drawable-xxxhdpi/omnibox_info.png",
       "android/java/res/drawable-xxxhdpi/omnibox_not_secure_warning.png",
       "android/java/res/values/colors.xml",
+
+      # Ecosia
+        "android/java/res/drawable-mdpi/ic_ecosia_secure_connection.png",
+        "android/java/res/drawable-hdpi/ic_ecosia_secure_connection.png",
+        "android/java/res/drawable-xhdpi/ic_ecosia_secure_connection.png",
+        "android/java/res/drawable-xxhdpi/ic_ecosia_secure_connection.png",
+        "android/java/res/drawable-xxxhdpi/ic_ecosia_secure_connection.png",
+        "android/java/res/drawable-night-mdpi/ic_ecosia_secure_connection.png",
+        "android/java/res/drawable-night-hdpi/ic_ecosia_secure_connection.png",
+        "android/java/res/drawable-night-xhdpi/ic_ecosia_secure_connection.png",
+        "android/java/res/drawable-night-xxhdpi/ic_ecosia_secure_connection.png",
+        "android/java/res/drawable-night-xxxhdpi/ic_ecosia_secure_connection.png",
     ]
     deps = [
       "//components/browser_ui/strings/android:browser_ui_strings_grd",

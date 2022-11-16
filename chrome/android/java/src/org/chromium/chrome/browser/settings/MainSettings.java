@@ -7,7 +7,13 @@ package org.chromium.chrome.browser.settings;
 import static org.chromium.chrome.browser.password_manager.PasswordManagerHelper.hasChosenToSyncPasswords;
 import static org.chromium.chrome.browser.password_manager.PasswordManagerHelper.usesUnifiedPasswordManagerBranding;
 import static org.chromium.chrome.browser.password_manager.PasswordManagerHelper.usesUnifiedPasswordManagerUI;
+import static org.chromium.chrome.browser.ui.default_browser_promo.EcosiaDefaultBrowserPromoDialog.DEFAULT_BROWSER_ACCEPT;
+import static org.chromium.chrome.browser.ui.default_browser_promo.EcosiaDefaultBrowserPromoDialog.DEFAULT_BROWSER_ACTION;
+import static org.chromium.chrome.browser.ui.default_browser_promo.EcosiaDefaultBrowserPromoDialog.DEFAULT_BROWSER_DATA;
+import static org.chromium.chrome.browser.ui.default_browser_promo.EcosiaDefaultBrowserPromoDialog.DEFAULT_BROWSER_DISMISS;
 
+import android.app.Activity;
+import android.app.role.RoleManager;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -20,6 +26,8 @@ import android.text.style.RelativeSizeSpan;
 import android.text.style.SuperscriptSpan;
 import android.view.View;
 
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 import androidx.preference.Preference;
@@ -61,9 +69,11 @@ import org.chromium.components.signin.base.CoreAccountInfo;
 import org.chromium.components.signin.identitymanager.ConsentLevel;
 import org.chromium.components.signin.metrics.SigninAccessPoint;
 import org.chromium.components.user_prefs.UserPrefs;
+import org.chromium.components.version_info.VersionInfo;
 import org.chromium.ui.modaldialog.ModalDialogManager;
 import org.chromium.ui.text.SpanApplier;
 import org.chromium.ui.text.SpanApplier.SpanInfo;
+import org.ecosia.utils.SettingsHelpers;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -90,6 +100,7 @@ public class MainSettings extends PreferenceFragmentCompat
     public static final String PREF_NOTIFICATIONS = "notifications";
     public static final String PREF_DOWNLOADS = "downloads";
     public static final String PREF_DEVELOPER = "developer";
+    public static final String PREF_DEFAULT_BROWSER = "default_browser"; // Ecosia: default browser
 
     // Used for elevating the privacy section behind the flag (see crbug.com/1099233).
     public static final int PRIVACY_ORDER_DEFAULT = 18;
@@ -97,10 +108,12 @@ public class MainSettings extends PreferenceFragmentCompat
 
     private final ManagedPreferenceDelegate mManagedPreferenceDelegate;
     private final Map<String, Preference> mAllPreferences = new HashMap<>();
-    private SignInPreference mSignInPreference;
+    // private SignInPreference mSignInPreference; // Ecosia: deactive sync
     private ChromeBasePreference mManageSync;
     private @Nullable PasswordCheck mPasswordCheck;
     private ObservableSupplier<ModalDialogManager> mModalDialogManagerSupplier;
+
+    private ActivityResultLauncher<Intent> mActivityResultLauncher; // Ecosia: default browser selection preference
 
     public MainSettings() {
         setHasOptionsMenu(true);
@@ -117,6 +130,33 @@ public class MainSettings extends PreferenceFragmentCompat
         super.onCreate(savedInstanceState);
         getActivity().setTitle(R.string.settings);
         mPasswordCheck = PasswordCheckFactory.getOrCreate(new SettingsLauncherImpl());
+
+        /*
+            Ecosia: default browser selection preference
+            MOB-1761: registerDefaultBrowserActivity() crashes the app on local/dev builds
+         */
+        if (VersionInfo.isOfficialBuild()) {
+            registerDefaultBrowserActivity();
+        }
+    }
+
+    // Ecosia: default browser selection preference
+    private void registerDefaultBrowserActivity() {
+        mActivityResultLauncher =  registerForActivityResult(
+                new ActivityResultContracts.StartActivityForResult(), result -> {
+                    if (result.getResultCode() == Activity.RESULT_OK) {
+                        sendTrackingBroadcast(DEFAULT_BROWSER_ACCEPT);
+                    } else {
+                        sendTrackingBroadcast(DEFAULT_BROWSER_DISMISS);
+                    }
+                });
+    }
+
+    // Ecosia: default browser selection preference
+    private void sendTrackingBroadcast(String event) {
+        Intent intent = new Intent(DEFAULT_BROWSER_ACTION);
+        intent.putExtra(DEFAULT_BROWSER_DATA, event);
+        ContextUtils.getApplicationContext().sendBroadcast(intent);
     }
 
     @Override
@@ -130,15 +170,18 @@ public class MainSettings extends PreferenceFragmentCompat
     @Override
     public void onDestroy() {
         super.onDestroy();
+        /* Ecosia: deactivate sync
         // The component should only be destroyed when the activity has been closed by the user
         // (e.g. by pressing on the back button) and not when the activity is temporarily destroyed
         // by the system.
         if (getActivity().isFinishing() && mPasswordCheck != null) PasswordCheckFactory.destroy();
+        */
     }
 
     @Override
     public void onStart() {
         super.onStart();
+        /* Ecosia: deactivate sync
         SigninManager signinManager = IdentityServicesProvider.get().getSigninManager(
                 Profile.getLastUsedRegularProfile());
         if (signinManager.isSigninSupported()) {
@@ -148,11 +191,13 @@ public class MainSettings extends PreferenceFragmentCompat
         if (syncService != null) {
             syncService.addSyncStateChangedListener(this);
         }
+        */
     }
 
     @Override
     public void onStop() {
         super.onStop();
+        /* Ecosia: deactivate sync
         SigninManager signinManager = IdentityServicesProvider.get().getSigninManager(
                 Profile.getLastUsedRegularProfile());
         if (signinManager.isSigninSupported()) {
@@ -162,6 +207,7 @@ public class MainSettings extends PreferenceFragmentCompat
         if (syncService != null) {
             syncService.removeSyncStateChangedListener(this);
         }
+        */
     }
 
     @Override
@@ -171,8 +217,8 @@ public class MainSettings extends PreferenceFragmentCompat
     }
 
     private void createPreferences() {
-        SettingsUtils.addPreferencesFromResource(this, R.xml.main_preferences);
-
+        // Ecosia: mSyncPromoPreference preferences
+        SettingsUtils.addPreferencesFromResource(this, R.xml.ecosia_main_preferences);
         cachePreferences();
 
         updatePasswordsPreference();
@@ -180,9 +226,10 @@ public class MainSettings extends PreferenceFragmentCompat
         if (usesUnifiedPasswordManagerUI()) {
             setManagedPreferenceDelegateForPreference(PREF_PASSWORDS);
         }
-
+		/* Ecosia: remove search preferences
         setManagedPreferenceDelegateForPreference(PREF_SEARCH_ENGINE);
-
+		*/
+	
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             // If we are on Android O+ the Notifications preference should lead to the Android
             // Settings notifications page.
@@ -215,7 +262,9 @@ public class MainSettings extends PreferenceFragmentCompat
         new AdaptiveToolbarStatePredictor(null).recomputeUiState(uiState -> {
             // We don't show the toolbar shortcut settings page if disabled from finch.
             if (uiState.canShowUi) return;
+            /* Ecosia : Removing A/B experiment for toolbar shortcut which caused crash in settings
             getPreferenceScreen().removePreference(findPreference(PREF_TOOLBAR_SHORTCUT));
+            */
         });
     }
 
@@ -229,7 +278,8 @@ public class MainSettings extends PreferenceFragmentCompat
             Preference preference = getPreferenceScreen().getPreference(index);
             mAllPreferences.put(preference.getKey(), preference);
         }
-        mSignInPreference = (SignInPreference) mAllPreferences.get(PREF_SIGN_IN);
+        // Ecosia: deactivate sync
+        // mSignInPreference = (SignInPreference) mAllPreferences.get(PREF_SIGN_IN);
         mManageSync = (ChromeBasePreference) findPreference(PREF_MANAGE_SYNC);
     }
 
@@ -239,6 +289,7 @@ public class MainSettings extends PreferenceFragmentCompat
     }
 
     private void updatePreferences() {
+        /* Ecosia : Signin is removed from settings
         if (IdentityServicesProvider.get()
                         .getSigninManager(Profile.getLastUsedRegularProfile())
                         .isSigninSupported()) {
@@ -246,13 +297,15 @@ public class MainSettings extends PreferenceFragmentCompat
         } else {
             removePreferenceIfPresent(PREF_SIGN_IN);
         }
-
+        */
         updateManageSyncPreference();
         updateSearchEnginePreference();
         updatePasswordsPreference();
 
+		/* Ecosia: deactivate Homepage setting
         Preference homepagePref = addPreferenceIfAbsent(PREF_HOMEPAGE);
         setOnOffSummary(homepagePref, HomepageManager.isHomepageEnabled());
+		*/
 
         if (NightModeUtils.isNightModeSupported()) {
             addPreferenceIfAbsent(PREF_UI_THEME)
@@ -268,6 +321,35 @@ public class MainSettings extends PreferenceFragmentCompat
         } else {
             removePreferenceIfPresent(PREF_DEVELOPER);
         }
+
+        // Ecosia: default browser selection preference
+        updateDefaultBrowserPreference();
+    }
+
+    // Ecosia: default browser selection preference
+    private void updateDefaultBrowserPreference() {
+        Preference defaultBrowserPreference = findPreference(PREF_DEFAULT_BROWSER);
+        Context context = ContextUtils.getApplicationContext();
+        if (defaultBrowserPreference != null) {
+            if (SettingsHelpers.isEcosiaDefaultBrowser(context)) {
+                defaultBrowserPreference.setVisible(false);
+            } else {
+                defaultBrowserPreference.setVisible(true);
+                defaultBrowserPreference.setOnPreferenceClickListener(preference -> {
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+                        RoleManager roleManager = (RoleManager) context.getSystemService(Context.ROLE_SERVICE);
+                        Intent intent = roleManager.createRequestRoleIntent(RoleManager.ROLE_BROWSER);
+                        mActivityResultLauncher.launch(intent);
+                    } else {
+                        Intent intent = new Intent();
+                        intent.setAction(Intent.ACTION_MAIN);
+                        intent.addCategory(Intent.CATEGORY_APP_BROWSER);
+                        startActivity(intent);
+                    }
+                    return true;
+                });
+            }
+        }
     }
 
     private Preference addPreferenceIfAbsent(String key) {
@@ -282,6 +364,7 @@ public class MainSettings extends PreferenceFragmentCompat
     }
 
     private void updateManageSyncPreference() {
+        /* Ecosia remove sync
         String primaryAccountName = CoreAccountInfo.getEmailFrom(
                 IdentityServicesProvider.get()
                         .getIdentityManager(Profile.getLastUsedRegularProfile())
@@ -314,9 +397,11 @@ public class MainSettings extends PreferenceFragmentCompat
             }
             return true;
         });
+        */
     }
 
     private void updateSearchEnginePreference() {
+        /* Ecosia: disabled 
         if (!TemplateUrlServiceFactory.get().isLoaded()) {
             ChromeBasePreference searchEnginePref =
                     (ChromeBasePreference) findPreference(PREF_SEARCH_ENGINE);
@@ -332,6 +417,7 @@ public class MainSettings extends PreferenceFragmentCompat
         Preference searchEnginePreference = findPreference(PREF_SEARCH_ENGINE);
         searchEnginePreference.setEnabled(true);
         searchEnginePreference.setSummary(defaultSearchEngineName);
+        */
     }
 
     private void updatePasswordsPreference() {
@@ -388,9 +474,7 @@ public class MainSettings extends PreferenceFragmentCompat
     // SigninManager.SignInStateObserver implementation.
     @Override
     public void onSignedIn() {
-        // After signing in or out of a managed account, preferences may change or become enabled
-        // or disabled.
-        new Handler().post(() -> updatePreferences());
+       // Ecosia: disabled
     }
 
     @Override
@@ -420,6 +504,7 @@ public class MainSettings extends PreferenceFragmentCompat
         return new ChromeManagedPreferenceDelegate() {
             @Override
             public boolean isPreferenceControlledByPolicy(Preference preference) {
+				/* Ecosia: remove search settings
                 if (PREF_SEARCH_ENGINE.equals(preference.getKey())) {
                     return TemplateUrlServiceFactory.get().isDefaultSearchManaged();
                 }
@@ -427,11 +512,13 @@ public class MainSettings extends PreferenceFragmentCompat
                     return UserPrefs.get(Profile.getLastUsedRegularProfile())
                             .isManagedPreference(Pref.CREDENTIALS_ENABLE_SERVICE);
                 }
+				*/
                 return false;
             }
 
             @Override
             public boolean isPreferenceClickDisabledByPolicy(Preference preference) {
+				/* Ecosia: remove search preferences
                 if (PREF_SEARCH_ENGINE.equals(preference.getKey())) {
                     return TemplateUrlServiceFactory.get().isDefaultSearchManaged();
                 }
@@ -440,6 +527,8 @@ public class MainSettings extends PreferenceFragmentCompat
                 }
                 return isPreferenceControlledByPolicy(preference)
                         || isPreferenceControlledByCustodian(preference);
+				*/
+				return false;
             }
         };
     }

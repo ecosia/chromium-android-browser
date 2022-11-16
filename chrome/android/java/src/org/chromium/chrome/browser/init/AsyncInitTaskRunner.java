@@ -96,6 +96,8 @@ public abstract class AsyncInitTaskRunner {
      */
     public void startBackgroundTasks(boolean allocateChildConnection, boolean fetchVariationSeed) {
         ThreadUtils.assertOnUiThread();
+        /* Ecosia: disable experiments and variations fetch. It is causing an issue since 12/09/22
+        blocking the url bar after opening a new tab. It seems to be caused by a broken experiment
         if (fetchVariationSeed && shouldFetchVariationsSeedDuringFirstRun()) {
             ++mNumPendingSuccesses;
 
@@ -112,6 +114,7 @@ public abstract class AsyncInitTaskRunner {
                 }
             });
         }
+        */
 
         // Remember to allocate child connection once library loading completes. We do it after
         // the loading to reduce stress on the OS caused by running library loading in parallel

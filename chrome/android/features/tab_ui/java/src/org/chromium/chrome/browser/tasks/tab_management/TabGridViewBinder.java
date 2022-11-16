@@ -6,9 +6,11 @@ package org.chromium.chrome.browser.tasks.tab_management;
 
 import static org.chromium.chrome.browser.tasks.tab_management.TabListModel.CardProperties.CARD_ALPHA;
 
+import android.content.Context;
 import android.content.res.ColorStateList;
 import android.graphics.Bitmap;
 import android.graphics.Matrix;
+import android.graphics.drawable.Drawable;
 import android.util.Size;
 import android.view.View;
 import android.view.ViewGroup;
@@ -395,11 +397,27 @@ class TabGridViewBinder {
         }
 
         boolean isSelected = model.get(TabProperties.IS_SELECTED);
+        boolean isIncognito = model.get(TabProperties.IS_INCOGNITO);
+        /* Ecosia MOB-1344 (https://ecosia.atlassian.net/browse/MOB-1344)
         faviconView.setImageDrawable(
                 isSelected ? favicon.getSelectedDrawable() : favicon.getDefaultDrawable());
+         */
+        setEcosiaFavicon(faviconView, isSelected, isIncognito);
+
         int padding =
                 (int) TabUiThemeProvider.getTabCardTopFaviconPadding(faviconView.getContext());
         faviconView.setPadding(padding, padding, padding, padding);
+    }
+
+    private static void setEcosiaFavicon(final ImageView faviconView, final boolean isSelected, final boolean isIncognito) {
+        final Context context = faviconView.getContext();
+        final Drawable ecosiaFavicon;
+        if (isSelected || isIncognito) {
+            ecosiaFavicon = context.getDrawable(R.drawable.ic_ecosia_tab_favicon_selected);
+        } else {
+            ecosiaFavicon = context.getDrawable(R.drawable.ic_ecosia_tab_favicon_unselected);
+        }
+        faviconView.setImageDrawable(ecosiaFavicon);
     }
 
     private static void updateColor(
@@ -433,9 +451,21 @@ class TabGridViewBinder {
     private static void updateColorForActionButton(
             ViewLookupCachingFrameLayout rootView, boolean isIncognito, boolean isSelected) {
         ImageView actionButton = (ImageView) rootView.fastFindViewById(R.id.action_button);
+
+        /*
+         * Ecosia: MOB-1344
+         * @param isSelected We can ignore this param because the color state list is aware of such things
+         */
+        final TabUiThemeProviderEcosiaExtension ecosiaExtension = TabUiThemeProviderEcosiaExtensionImplementation.getInstance(actionButton.getContext());
+        final ColorStateList actionButtonTintList = ecosiaExtension.getActionButtonTintList(isIncognito);
+        ImageViewCompat.setImageTintList(actionButton, actionButtonTintList);
+
+        /* Commented out for MOB-1344
         ImageViewCompat.setImageTintList(actionButton,
                 TabUiThemeProvider.getActionButtonTintList(
                         actionButton.getContext(), isIncognito, isSelected));
+
+         */
     }
 
     private static void updateColorForSelectionToggleButton(

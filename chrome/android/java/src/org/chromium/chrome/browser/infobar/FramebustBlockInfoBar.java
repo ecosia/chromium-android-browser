@@ -33,7 +33,7 @@ public class FramebustBlockInfoBar extends InfoBar {
 
     @VisibleForTesting
     public FramebustBlockInfoBar(String blockedUrl) {
-        super(R.drawable.infobar_chrome, R.color.infobar_icon_drawable_color, null, null);
+        super(R.drawable.ic_ecosia, R.color.infobar_icon_drawable_color, null, null);  // Ecosia: branding
         mBlockedUrl = blockedUrl;
     }
 

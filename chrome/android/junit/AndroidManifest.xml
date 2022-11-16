@@ -9,7 +9,7 @@ found in the LICENSE file.
      androidx.test.core.app.ActivityScenario to work.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.chromium.chrome">
+    package="com.ecosia.android">
 
   <application android:theme="@style/Theme.AppCompat.Light">
     <activity android:name="androidx.fragment.app.FragmentActivity" />

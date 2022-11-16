@@ -368,6 +368,7 @@ public class HistoryAdapter extends DateDividedAdapter implements BrowsingHistor
                 context.getResources().getString(R.string.android_history_other_forms_of_history),
                 new SpanApplier.SpanInfo("<link>", "</link>", link));
         privacyDisclaimerTextView.setText(disclaimerText);
+        privacyDisclaimerTextView.setVisibility(View.GONE); // Ecosia : Disable string with google.com information
         return privacyDisclaimerContainer;
     }
 

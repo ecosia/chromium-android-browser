@@ -34,6 +34,10 @@ android_resources("java_resources") {
   sources = [
     "java/res/values/colors.xml",
     "java/res/values/values.xml",
+
+    #Ecosia
+    "java/res_ecosia/values/ecosia_colors.xml",
+    "java/res_ecosia/values-night/ecosia_colors.xml",
   ]
   deps = [
     "//components/browser_ui/styles/android:java_resources",

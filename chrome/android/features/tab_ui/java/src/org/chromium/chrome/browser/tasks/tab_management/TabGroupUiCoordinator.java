@@ -277,6 +277,10 @@ public class TabGroupUiCoordinator implements TabGroupUiMediator.ResetHandler, T
 
     private void recordTabGroupCount() {
         if (mTabModelSelector == null) return;
+        // Ecosia: Disabled Tab groups
+        if (!TabUiFeatureUtilities.isTabGroupsAndroidEnabled(mContext)) {
+            return;
+        }
         TabModelFilterProvider provider = mTabModelSelector.getTabModelFilterProvider();
 
         if (TabUiFeatureUtilities.isLaunchPolishEnabled()) {
@@ -319,6 +323,11 @@ public class TabGroupUiCoordinator implements TabGroupUiMediator.ResetHandler, T
     }
 
     private void recordSessionCount() {
+        // Ecosia: Disabled Tab groups
+        if (!TabUiFeatureUtilities.isTabGroupsAndroidEnabled(mContext)) {
+            return;
+        }
+
         if (TabUiFeatureUtilities.isLaunchPolishEnabled()) {
             TabModelFilter normalTabModelFilter =
                     mTabModelSelector.getTabModelFilterProvider().getTabModelFilter(false);

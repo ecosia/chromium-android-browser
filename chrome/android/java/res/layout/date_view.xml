@@ -6,4 +6,4 @@ found in the LICENSE file.
 -->
 
 <TextView xmlns:android="http://schemas.android.com/apk/res/android"
-    style="@style/DateView" />
+    style="@style/EcosiaDateView" /> <!-- Ecosia : Changing title font style -->

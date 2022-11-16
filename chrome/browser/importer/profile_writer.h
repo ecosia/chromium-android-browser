@@ -1,6 +1,23 @@
-// Copyright 2012 The Chromium Authors
-// Use of this source code is governed by a BSD-style license that can be
-// found in the LICENSE file.
+/*
+ * Copyright 2012 The Chromium Authors
+ * Copyright (C) 2023 Ecosia Android App source (for GPL 3.0)
+ *
+ * Licensed under the GNU General Public License, Version 3.0 and BSD-style license (found in LICENSE file);
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at 
+ * License: GPL-3.0-only - https://spdx.org/licenses/GPL-3.0-only.html
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 #ifndef CHROME_BROWSER_IMPORTER_PROFILE_WRITER_H_
 #define CHROME_BROWSER_IMPORTER_PROFILE_WRITER_H_
@@ -11,6 +28,7 @@
 #include "base/memory/raw_ptr.h"
 #include "base/memory/ref_counted.h"
 #include "build/build_config.h"
+#include "components/bookmarks/browser/bookmark_model.h" // Ecosia: Bookmark Import / Export
 #include "components/favicon_base/favicon_usage_data.h"
 #include "components/history/core/browser/history_types.h"
 #include "components/search_engines/template_url_service.h"
@@ -70,6 +88,12 @@ class ProfileWriter : public base::RefCountedThreadSafe<ProfileWriter> {
   // we will instead create a subfolder named 'Imported from IE (1)'.
   virtual void AddBookmarks(const std::vector<ImportedBookmarkEntry>& bookmarks,
                             const std::u16string& top_level_folder_name);
+  
+  // Ecosia: Bookmark Import / Export
+  virtual void AddBookmarksWithModel(
+      bookmarks::BookmarkModel* model,
+      const std::vector<ImportedBookmarkEntry>& bookmarks,
+      const std::u16string& top_level_folder_name);
 
   virtual void AddFavicons(const favicon_base::FaviconUsageDataList& favicons);
 

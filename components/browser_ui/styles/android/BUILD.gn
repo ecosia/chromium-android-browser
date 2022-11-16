@@ -230,6 +230,8 @@ android_resources("java_resources") {
     "java/res/values/styles.xml",
     "java/res/values/themes.xml",
     "java/res/values/values.xml",
+    "java/res_ecosia/values/ecosia_colors.xml",
+    "java/res_ecosia/values-night/ecosia_colors.xml",
   ]
 
   if (enable_arcore) {

@@ -6,6 +6,7 @@ import("//build/config/android/rules.gni")
 import("//build/config/locales.gni")
 import("//testing/test.gni")
 import("//tools/grit/grit_rule.gni")
+import("//chrome/android/ecosia/ecosia_java_resources.gni")
 
 assert(is_android)
 
@@ -205,6 +206,11 @@ android_resources("ui_java_resources") {
   ]
 
   deps = [ ":ui_strings_grd" ]
+}
+
+android_resources("ecosia_ui_java_resources") {
+  sources = ecosia_java_resources
+  deps = [ ]
 }
 
 java_group("ui_java") {

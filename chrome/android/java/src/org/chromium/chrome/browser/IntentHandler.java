@@ -33,6 +33,7 @@ import org.chromium.base.ContextUtils;
 import org.chromium.base.FileUtils;
 import org.chromium.base.IntentUtils;
 import org.chromium.base.Log;
+import org.chromium.base.ThreadUtils;
 import org.chromium.base.annotations.JNINamespace;
 import org.chromium.base.annotations.NativeMethods;
 import org.chromium.base.metrics.RecordHistogram;
@@ -77,6 +78,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutionException;
 
 /**
  * Handles all browser-related Intents.
@@ -1247,9 +1250,35 @@ public class IntentHandler {
         if (url == null) url = getUrlForCustomTab(intent);
         if (url == null) url = getUrlForWebapp(intent);
         if (url == null) url = intent.getDataString();
+        if (url == null) url = getWebSearchUrl(intent); // Ecosia: handle web search intent (MOB-2136)
         if (url == null) return null;
         url = url.trim();
         return TextUtils.isEmpty(url) ? null : url;
+    }
+
+    // Ecosia: handle web search intent (MOB-2136)
+    protected static String getWebSearchUrl(Intent intent) {
+        final String action = intent.getAction();
+        if (!Intent.ACTION_WEB_SEARCH.equals(action)) {
+            return null;
+        }
+
+        String query = IntentUtils.safeGetStringExtra(intent, SearchManager.QUERY);
+        if (query == null || TextUtils.isEmpty(query)) {
+            return null;
+        }
+
+        try {
+            return ThreadUtils.runOnUiThreadBlocking(new Callable<String>() {
+                @Override
+                public String call() {
+                    return TemplateUrlServiceFactory.get().getUrlForSearchQuery(query);
+                }
+            });
+        } catch (ExecutionException e) {
+            Log.e(TAG, "Could not retrieve search query: " + e);
+        }
+        return null;
     }
 
     private static String getUrlForCustomTab(Intent intent) {

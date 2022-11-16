@@ -8,7 +8,7 @@ found in the LICENSE file.
     <macro name="default_bg_color">?attr/colorSurface</macro>
     <macro name="default_bg_color_elev_0">?attr/colorSurface</macro>
 
-    <macro name="default_control_color_active">?attr/colorPrimary</macro>
+    <macro name="default_control_color_active">@color/ecosia_brand_primary</macro>    <!-- Ecosia: workaround for ?attr/colorPrimary not changing the blue color of the settings widgets -->
     <macro name="default_control_color_normal">?attr/colorOnSurfaceVariant</macro>
 
     <macro name="default_icon_color">?attr/colorOnSurface</macro>
@@ -18,7 +18,7 @@ found in the LICENSE file.
     <macro name="default_icon_color_secondary">?attr/colorOnSurfaceVariant</macro>
 
     <macro name="default_text_color">?attr/colorOnSurface</macro>
-    <macro name="default_text_color_accent1">?attr/colorPrimary</macro>
+    <macro name="default_text_color_accent1">@color/ecosia_brand_primary</macro>    <!-- Ecosia: workaround for ?attr/colorPrimary not changing the blue color of the default browser text -->
     <macro name="default_text_color_on_accent1">?attr/colorOnPrimary</macro>
     <macro name="default_text_color_on_accent2_container">?attr/colorOnSecondaryContainer</macro>
     <macro name="default_text_color_secondary" tools:ignore="UnusedResources">?attr/colorOnSurfaceVariant</macro>

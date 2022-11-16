@@ -100,10 +100,10 @@ public class ClipboardSuggestionProcessor extends BaseSuggestionViewProcessor {
         boolean isUrlSuggestion = suggestion.getType() == OmniboxSuggestionType.CLIPBOARD_URL;
         @DrawableRes
         final int icon =
-                isUrlSuggestion ? R.drawable.ic_globe_24dp : R.drawable.ic_suggestion_magnifier;
+                isUrlSuggestion ? R.drawable.ic_globe_24dp : R.drawable.ic_ecosia_suggestion_magnifier; // Ecosia: search icon
         setSuggestionDrawableState(model,
                 SuggestionDrawableState.Builder.forDrawableRes(getContext(), icon)
-                        .setAllowTint(true)
+                        .setAllowTint(false) // Ecosia: search icon
                         .build());
 
         if (!showContent) {

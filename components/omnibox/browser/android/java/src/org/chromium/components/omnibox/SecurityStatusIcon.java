@@ -21,14 +21,19 @@ public class SecurityStatusIcon {
         switch (securityLevel) {
             case ConnectionSecurityLevel.NONE:
                 if (isSmallDevice && skipIconForNeutralState) return 0;
-                return R.drawable.omnibox_info;
+                // Ecosia: fix info button bug on tablets (MOB-1874)
+                // return R.drawable.omnibox_info;
+                return 0;
             case ConnectionSecurityLevel.WARNING:
             case ConnectionSecurityLevel.DANGEROUS:
                 return R.drawable.omnibox_not_secure_warning;
             case ConnectionSecurityLevel.SECURE_WITH_POLICY_INSTALLED_CERT:
             case ConnectionSecurityLevel.SECURE:
+                /* Ecosia https://ecosia.atlassian.net/browse/MOB-1571
                 return useUpdatedConnectionSecurityIndicators ? R.drawable.omnibox_https_valid_arrow
                                                               : R.drawable.omnibox_https_valid;
+                 */
+                return R.drawable.ic_ecosia_secure_connection;
             default:
                 assert false;
         }

@@ -31,6 +31,7 @@ found in the LICENSE file.
 
     </PreferenceCategory>
 
+    <!-- Ecosia: disable the translation settings section
     <PreferenceCategory
         android:key="translation_settings_section"
         android:order="3"
@@ -72,6 +73,6 @@ found in the LICENSE file.
 
         </PreferenceCategory>
 
-    </PreferenceCategory>
+    </PreferenceCategory> -->
 
 </PreferenceScreen>

@@ -73,6 +73,12 @@ public class CookieControlsBridge {
         mObserver.onCookiesCountChanged(allowedCookies, blockedCookies);
     }
 
+    // Ecosia: cookies
+    @CalledByNative
+    private void onCookiesChanged(String cookie) {
+        mObserver.onCookiesChanged(cookie);
+    }
+
     @NativeMethods
     interface Natives {
         long init(CookieControlsBridge caller, WebContents webContents,

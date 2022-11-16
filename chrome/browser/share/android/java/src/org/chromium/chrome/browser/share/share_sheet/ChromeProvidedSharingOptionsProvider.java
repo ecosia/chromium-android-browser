@@ -298,6 +298,7 @@ public class ChromeProvidedSharingOptionsProvider {
         mOrderedFirstPartyOptions.add(createCopyTextFirstPartyOption());
         Optional<Integer> sendTabToSelfDisplayReason =
                 SendTabToSelfAndroidBridge.getEntryPointDisplayReason(mProfile, mUrl);
+        /* Ecosia: disable share to device because it requires sync and disable QR Code because it has the dinosaur easter egg image
         if (sendTabToSelfDisplayReason.isPresent()
                 || !ChromeFeatureList.isEnabled(ChromeFeatureList.SEND_TAB_TO_SELF_SIGNIN_PROMO)) {
             mOrderedFirstPartyOptions.add(createSendTabToSelfFirstPartyOption());
@@ -305,6 +306,7 @@ public class ChromeProvidedSharingOptionsProvider {
         if (!mIsIncognito) {
             mOrderedFirstPartyOptions.add(createQrCodeFirstPartyOption());
         }
+		*/
         if (mTabProvider.hasValue() && UserPrefs.get(mProfile).getBoolean(Pref.PRINTING_ENABLED)) {
             mOrderedFirstPartyOptions.add(createPrintingFirstPartyOption());
         }

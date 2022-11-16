@@ -1,0 +1,13 @@
+# Copyright 2016 The Chromium Authors. All rights reserved.
+# Use of this source code is governed by a BSD-style license that can be
+# found in the LICENSE file.
+
+import("//build/config/android/rules.gni")
+
+android_aar_prebuilt("snowplow_java") {
+  deps = [
+    "//third_party/okhttp:okhttp_java",
+    "//third_party/android_deps:android_arch_lifecycle_extensions_java",
+  ]
+  aar_path = "snowplow-android-tracker-1.7.1.aar"
+}

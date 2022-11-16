@@ -1,43 +1,43 @@
-<?xml version="1.0" ?>
+<?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE translationbundle>
 <translationbundle lang="en-GB">
 <translation id="130631256467250065">Your changes will take effect the next time that you restart your device.</translation>
-<translation id="275588974610408078">Crash reporting is not available in Chromium.</translation>
-<translation id="3064346599913645280">You're viewing a secure Chromium page</translation>
-<translation id="358997566136285270">Chromium logo</translation>
-<translation id="4365115785552740256">Chromium is made possible by the <ph name="BEGIN_LINK_CHROMIUM" />Chromium<ph name="END_LINK_CHROMIUM" /> open source project and other <ph name="BEGIN_LINK_OSS" />open source software<ph name="END_LINK_OSS" />.</translation>
-<translation id="4559775032954821361">Go to
-          the Chromium menu &gt;
-          <ph name="SETTINGS_TITLE" />
+<translation id="2955914891289756427">Crash reporting is not available in Ecosia.</translation>
+<translation id="2441066927880955410">You're viewing a secure Ecosia page</translation>
+<translation id="5104341700462991189">Ecosia logo</translation>
+<translation id="7347361780317841252">Ecosia is made possible by the <ph name="BEGIN_LINK_CHROMIUM"/>Ecosia<ph name="END_LINK_CHROMIUM"/> open source project and other <ph name="BEGIN_LINK_OSS"/>open source software<ph name="END_LINK_OSS"/>.</translation>
+<translation id="8920794075861916959">Go to
+          the Ecosia menu &gt;
+          <ph name="SETTINGS_TITLE"/>
           &gt;
-          <ph name="ADVANCED_TITLE" />
+          <ph name="ADVANCED_TITLE"/>
           &gt;
-          <ph name="PROXIES_TITLE" />
+          <ph name="PROXIES_TITLE"/>
           &gt;
           LAN Settings
           and deselect the "Use a proxy server for your LAN" checkbox.</translation>
-<translation id="4622039161600275920">This page has been blocked by Chromium</translation>
-<translation id="48558539577516920">Allow Chromium to access the network in your firewall or antivirus
+<translation id="5177147493498374715">This page has been blocked by Ecosia</translation>
+<translation id="583128902627777075">Allow Ecosia to access the network in your firewall or antivirus
           settings.</translation>
-<translation id="580822234363523061">Go to
-          the Chromium menu &gt;
-          <ph name="SETTINGS_TITLE" />
+<translation id="3913860536599484838">Go to
+          the Ecosia menu &gt;
+          <ph name="SETTINGS_TITLE"/>
           &gt;
-          <ph name="ADVANCED_TITLE" />
+          <ph name="ADVANCED_TITLE"/>
           &gt;
-          <ph name="PROXIES_TITLE" />
+          <ph name="PROXIES_TITLE"/>
           and make sure your configuration is set to "no proxy" or "direct."</translation>
-<translation id="6613594504749178791">Your changes will take effect the next time you relaunch Chromium.</translation>
-<translation id="7861509383340276692">Go to
-          the Chromium menu &gt;
-          <ph name="SETTINGS_TITLE" />
+<translation id="1722634673917783018">Your changes will take effect the next time you relaunch Ecosia.</translation>
+<translation id="8143058600367874039">Go to
+          the Ecosia menu &gt;
+          <ph name="SETTINGS_TITLE"/>
           &gt;
-          <ph name="ADVANCED_TITLE" />
-          and deselect "<ph name="NO_PREFETCH_DESCRIPTION" />".
+          <ph name="ADVANCED_TITLE"/>
+          and deselect "<ph name="NO_PREFETCH_DESCRIPTION"/>".
           If this does not resolve the issue, we recommend selecting this option
           again for improved performance.</translation>
 <translation id="8187289872471304532">Go to
           Applications &gt; System Preferences &gt; Network &gt; Advanced &gt; Proxies
           and deselect any proxies that have been selected.</translation>
-<translation id="8684913864886094367">Chromium didn't shut down correctly.</translation>
+<translation id="1864711229671391928">Ecosia didn't shut down correctly.</translation>
 </translationbundle>

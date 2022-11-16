@@ -50,6 +50,12 @@ dependencies {
     compile "android.arch.lifecycle:common:${archComponentsVersion}"
     compile "android.arch.lifecycle:common-java8:${archComponentsVersion}"
     compile "android.arch.lifecycle:viewmodel:${archComponentsVersion}"
+    
+    // Ecosia: needed by snowplow
+    compile "android.arch.lifecycle:extensions:${archComponentsVersion}"
+    
+    // Ecosia: Add Install referrer to attribute installs
+    compile 'com.android.installreferrer:installreferrer:2.1'
 
     // Play services libraries
     // See https://developers.google.com/android/guides/releases for updates
@@ -197,7 +203,8 @@ dependencies {
     // TODO(1404995): Remove after robolectric is update to 4.9.2 as nothing
     // else depends on this, so we want it removed when robolectric doesn't
     //need it anymore.
-    testCompile "org.conscrypt:conscrypt-openjdk-uber:2.5.2"
+    testCompile "org.conscrypt:conscrypt-openjdk-uber:2.5.2"   
+
 }
 
 task setUpRepository(type: BuildConfigGenerator) {

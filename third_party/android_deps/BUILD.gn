@@ -702,6 +702,22 @@ if (!limit_android_deps) {
   }
 
   # This is generated, do not edit. Update BuildConfigGenerator.groovy instead.
+  android_aar_prebuilt("android_arch_lifecycle_extensions_java") {
+    aar_path = "libs/android_arch_lifecycle_extensions/extensions-1.1.1.aar"
+    info_path = "libs/android_arch_lifecycle_extensions/android_arch_lifecycle_extensions.info"
+    deps = [
+      ":android_arch_core_common_java",
+      ":android_arch_core_runtime_java",
+      ":android_arch_lifecycle_common_java",
+      ":android_arch_lifecycle_livedata_java",
+      ":android_arch_lifecycle_runtime_java",
+      ":android_arch_lifecycle_viewmodel_java",
+      ":com_android_support_support_fragment_java",
+    ]
+    ignore_manifest = true
+  }
+
+  # This is generated, do not edit. Update BuildConfigGenerator.groovy instead.
   android_aar_prebuilt("android_arch_lifecycle_runtime_java") {
     aar_path = "libs/android_arch_lifecycle_runtime/runtime-1.1.1.aar"
     info_path = "libs/android_arch_lifecycle_runtime/android_arch_lifecycle_runtime.info"
@@ -717,6 +733,12 @@ if (!limit_android_deps) {
     aar_path = "libs/android_arch_lifecycle_viewmodel/viewmodel-1.1.1.aar"
     info_path = "libs/android_arch_lifecycle_viewmodel/android_arch_lifecycle_viewmodel.info"
     deps = [ ":com_android_support_support_annotations_java" ]
+  }
+
+  # This is generated, do not edit. Update BuildConfigGenerator.groovy instead.
+  android_aar_prebuilt("com_android_installreferrer_installreferrer_java") {
+    aar_path = "libs/com_android_installreferrer_installreferrer/installreferrer-2.1.aar"
+    info_path = "libs/com_android_installreferrer_installreferrer/com_android_installreferrer_installreferrer.info"
   }
 
   # This is generated, do not edit. Update BuildConfigGenerator.groovy instead.

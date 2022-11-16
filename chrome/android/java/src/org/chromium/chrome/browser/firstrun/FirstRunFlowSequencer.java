@@ -85,10 +85,13 @@ public abstract class FirstRunFlowSequencer  {
         /** @return true if the Search Engine promo page should be shown. */
         @VisibleForTesting
         public boolean shouldShowSearchEnginePage() {
+            /* Ecosia disabled
             @SearchEnginePromoType
             int searchPromoType = LocaleManager.getInstance().getSearchEnginePromoShowType();
             return searchPromoType == SearchEnginePromoType.SHOW_NEW
                     || searchPromoType == SearchEnginePromoType.SHOW_EXISTING;
+            */
+            return false;
         }
 
         /** @return true if Sync is allowed for the current user. */
@@ -161,7 +164,7 @@ public abstract class FirstRunFlowSequencer  {
     protected boolean shouldShowSearchEnginePage() {
         return mDelegate.shouldShowSearchEnginePage();
     }
-
+    
     private boolean shouldShowSyncConsentPage() {
         return mDelegate.shouldShowSyncConsentPage(mActivity, mGoogleAccounts, mIsChild);
     }
@@ -272,6 +275,9 @@ public abstract class FirstRunFlowSequencer  {
      */
     public static boolean launch(Context caller, Intent fromIntent, boolean requiresBroadcast,
             boolean preferLightweightFre) {
+        // Ecosia: never launch chromium first run
+        return false;
+		/*
         // Check if the user needs to go through First Run at all.
         if (!checkIfFirstRunIsNecessary(preferLightweightFre, fromIntent)) return false;
 
@@ -308,6 +314,7 @@ public abstract class FirstRunFlowSequencer  {
             IntentUtils.safeStartActivity(caller, newIntent);
         }
         return true;
+	    */
     }
 
     /** Defines an alternative delegate for testing. Must be reset on {@code tearDown}. */

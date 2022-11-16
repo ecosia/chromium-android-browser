@@ -197,7 +197,7 @@ public class TracingNotificationManager {
         return NotificationWrapperBuilderFactory
                 .createNotificationWrapperBuilder(ChromeChannelDefinitions.ChannelId.BROWSER)
                 .setVisibility(Notification.VISIBILITY_PUBLIC)
-                .setSmallIcon(R.drawable.ic_chrome)
+                .setSmallIcon(R.drawable.ic_ecosia)
                 .setShowWhen(false)
                 .setLocalOnly(true);
     }

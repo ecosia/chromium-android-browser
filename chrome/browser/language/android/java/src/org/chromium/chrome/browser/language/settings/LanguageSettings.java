@@ -101,6 +101,7 @@ public class LanguageSettings extends PreferenceFragmentCompat
                 (ContentLanguagesPreference) findPreference(PREFERRED_LANGUAGES_KEY);
         mLanguageListPref.registerActivityLauncher(this);
 
+        /* Ecosia: remove translation section for basic preferences
         ChromeSwitchPreference translateSwitch =
                 (ChromeSwitchPreference) findPreference(TRANSLATE_SWITCH_KEY);
         boolean isTranslateEnabled = getPrefService().getBoolean(Pref.OFFER_TRANSLATE_ENABLED);
@@ -120,7 +121,7 @@ public class LanguageSettings extends PreferenceFragmentCompat
             }
         });
         translateSwitch.setManagedPreferenceDelegate((ChromeManagedPreferenceDelegate) preference
-                -> getPrefService().isManagedPreference(Pref.OFFER_TRANSLATE_ENABLED));
+                -> getPrefService().isManagedPreference(Pref.OFFER_TRANSLATE_ENABLED));*/
     }
 
     /**
@@ -141,7 +142,8 @@ public class LanguageSettings extends PreferenceFragmentCompat
                 (ContentLanguagesPreference) findPreference(CONTENT_LANGUAGES_KEY);
         mLanguageListPref.registerActivityLauncher(this);
 
-        setupTranslateSection(mLanguageListPref);
+        // Ecosia: remove translation section for detailed preferences
+        //setupTranslateSection(mLanguageListPref);
     }
 
     /**

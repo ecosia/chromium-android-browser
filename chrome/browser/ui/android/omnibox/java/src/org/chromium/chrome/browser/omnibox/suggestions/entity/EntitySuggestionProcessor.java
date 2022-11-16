@@ -143,8 +143,8 @@ public class EntitySuggestionProcessor extends BaseSuggestionViewProcessor {
         super.populateModel(suggestion, model, position);
         setSuggestionDrawableState(model,
                 SuggestionDrawableState.Builder
-                        .forDrawableRes(getContext(), R.drawable.ic_suggestion_magnifier)
-                        .setAllowTint(true)
+                        .forDrawableRes(getContext(), R.drawable.ic_ecosia_suggestion_magnifier) // Ecosia: search icon
+                        .setAllowTint(false) // Ecosia: search icon
                         .build());
 
         if (SysUtils.amountOfPhysicalMemoryKB() >= LOW_MEMORY_THRESHOLD_KB

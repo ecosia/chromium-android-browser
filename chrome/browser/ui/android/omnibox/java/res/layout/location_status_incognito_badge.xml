@@ -15,4 +15,4 @@ found in the LICENSE file.
     android:paddingStart="@dimen/incognito_badge_lateral_padding"
     android:paddingEnd="@dimen/incognito_badge_lateral_padding"
     android:contentDescription="@string/accessibility_incognito_badge"
-    app:srcCompat="@drawable/location_bar_incognito_badge" />
+    app:srcCompat="@drawable/incognito_icon" /> <!-- Ecosia: changed incognito badge -->

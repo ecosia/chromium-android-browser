@@ -1083,7 +1083,7 @@ public class CustomTabToolbar extends ToolbarLayout implements View.OnLongClickL
             ColorStateList colorStateList = AppCompatResources.getColorStateList(
                     getContext(), mLocationBarDataProvider.getSecurityIconColorStateList());
             ImageViewCompat.setImageTintList(mSecurityButton, colorStateList);
-            mAnimDelegate.updateSecurityButton(R.drawable.chromelogo16, mAnimateIconTransition);
+            mAnimDelegate.updateSecurityButton(R.drawable.ic_ecosia, mAnimateIconTransition); // Ecosia : logo
 
             mUrlCoordinator.setUrlBarData(UrlBarData.forNonUrlText(getContext().getString(
                                                   R.string.twa_running_in_chrome)),

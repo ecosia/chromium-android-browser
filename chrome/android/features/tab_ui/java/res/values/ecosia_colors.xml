@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="ecosia_tabs_group_selected">#008009</color>
+    <color name="ecosia_tabs_group_selected_checkmark">#008009</color>
+    <color name="ecosia_tabs_group_unselected">#0C0C0D</color>
+    <color name="ecosia_tabs_selected">#008009</color>
+    <color name="ecosia_tabs_unselected">#FFFFFF</color>
+    <color name="ecosia_tabs_content_selected">#FFFFFF</color>
+    <color name="ecosia_tabs_content_unselected">#333333</color>
+    <color name="ecosia_tabs_close">#333333</color>
+    <color name="ecosia_tabs_close_selected">#FFFFFF</color>
+
+    <color name="ecosia_tabs_group_selected_dark">#5DD25E</color>
+    <color name="ecosia_tabs_group_selected_checkmark_dark">#5DD25E</color>
+    <color name="ecosia_tabs_group_unselected_dark">#FFFFFF</color>
+    <color name="ecosia_tabs_selected_dark">#5DD25E</color>
+    <color name="ecosia_tabs_unselected_dark">#252525</color>
+    <color name="ecosia_tabs_content_selected_dark">#333333</color>
+    <color name="ecosia_tabs_content_unselected_dark">#FFFFFF</color>
+    <color name="ecosia_tabs_close_dark">#FFFFFF</color>
+    <color name="ecosia_tabs_close_selected_dark">#333333</color>
+</resources>

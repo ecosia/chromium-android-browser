@@ -21,6 +21,7 @@ import android.widget.PopupMenu;
 import org.hamcrest.Matchers;
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TestRule;
@@ -230,6 +231,7 @@ public class TabbedAppMenuPropertiesDelegateUnitTest {
         ShoppingServiceFactory.setShoppingServiceForTesting(mShoppingService);
     }
 
+    @Ignore("Ecosia : Disabled Help option")
     @Test
     @Config(qualifiers = "sw320dp")
     public void testPageMenuItems_Phone_RegularPage_enterprise_user() {
@@ -244,7 +246,7 @@ public class TabbedAppMenuPropertiesDelegateUnitTest {
                 R.id.divider_line_id, R.id.translate_id, R.id.share_row_menu_id,
                 R.id.find_in_page_id, R.id.add_to_homescreen_id,
                 R.id.request_desktop_site_row_menu_id, R.id.auto_dark_web_contents_row_menu_id,
-                R.id.divider_line_id, R.id.preferences_id, R.id.help_id,
+                R.id.divider_line_id, R.id.preferences_id, /*R.id.help_id,*/ //Ecosia remove help
                 R.id.managed_by_divider_line_id, R.id.managed_by_menu_id};
         assertMenuItemsAreEqual(menu, expectedItems);
     }

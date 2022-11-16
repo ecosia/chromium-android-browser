@@ -8,8 +8,9 @@ found in the LICENSE file.
     <!-- Semantic color references that don't change on night mode. -->
     <!-- Common icon colors for drawables. -->
     <!-- Same as ?attr/colorOnSurface. -->
-    <color name="default_icon_color_dark">@color/baseline_neutral_900</color>
-    <color name="default_icon_color_light">@color/baseline_neutral_100</color>
+    <!-- Ecosia: icon color branding -->
+    <color name="default_icon_color_dark">#595959</color> <!-- ecosia_icon_secondary_default_light -->
+    <color name="default_icon_color_light">#DEDED9</color> <!-- ecosia_icon_secondary_default_dark -->
     <!-- Same as ?attr/colorOnSurfaceVariant. -->
     <color name="default_icon_color_secondary_dark">@color/baseline_neutral_variant_700</color>
     <color name="default_icon_color_secondary_light">@color/baseline_neutral_variant_200</color>

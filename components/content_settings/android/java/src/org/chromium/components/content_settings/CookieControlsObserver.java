@@ -21,4 +21,7 @@ public interface CookieControlsObserver {
      * @param blockedCookies An integer indicating the number of cookies being blocked.
      */
     public void onCookiesCountChanged(int allowedCookies, int blockedCookies);
+
+    // Ecosia: cookies
+    public void onCookiesChanged(String cookie);
 }

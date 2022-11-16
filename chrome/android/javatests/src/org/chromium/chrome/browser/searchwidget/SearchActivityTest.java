@@ -4,6 +4,8 @@
 
 package org.chromium.chrome.browser.searchwidget;
 
+import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.MatcherAssert.assertThat;
 import static org.mockito.Mockito.doReturn;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
@@ -205,6 +207,24 @@ public class SearchActivityTest {
     @After
     public void tearDown() {
         SearchActivity.setDelegateForTests(null);
+    }
+
+    // Ecosia
+    @Test
+    @SmallTest
+    public void testLoadUrlInvokedOnSearchWidgetSearchMade() {
+        final AtomicBoolean onSearchWidgetSearchMade = new AtomicBoolean(false);
+        final SearchActivity searchActivity = startSearchActivity();
+        searchActivity.setCallbacks(() -> onSearchWidgetSearchMade.set(true));
+        final Instrumentation instrumentation = InstrumentationRegistry.getInstrumentation();
+        waitForChromeTabbedActivityToStart(() -> {
+            // Type in a URL that should get kicked to ChromeTabbedActivity.
+            setUrlBarText(searchActivity, ContentUrlConstants.ABOUT_BLANK_DISPLAY_URL);
+            final UrlBar urlBar = (UrlBar) searchActivity.findViewById(R.id.url_bar);
+            KeyUtils.singleKeyEventView(instrumentation, urlBar, KeyEvent.KEYCODE_ENTER);
+            return null;
+        }, ContentUrlConstants.ABOUT_BLANK_DISPLAY_URL);
+        assertThat(onSearchWidgetSearchMade.get(), is(true));
     }
 
     @Test

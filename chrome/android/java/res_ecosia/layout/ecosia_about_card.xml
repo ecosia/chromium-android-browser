@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/ecosia_your_impact_card_bg">
+
+            <RelativeLayout
+                android:id="@+id/parent_card"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:background="@drawable/ecosia_onhover_about_cards"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/thumbnail_about_ecosia"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:paddingTop="8dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/text_about_ecosia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/thumbnail_about_ecosia"
+                    android:textColor="@color/ecosia_text_title_primary"
+                    android:fontFamily="@font/inter"
+                    android:paddingRight="8dp"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/btn_about_ecosia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/ecosia_expand_arrow"
+                    android:gravity="center_vertical" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/expanding_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/parent_card"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/ecosia_about_card_help_bkg"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/about_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="12dp"
+                    android:fontFamily="@font/inter"
+                    android:lineSpacingExtra="1.4sp"
+                    android:textColor="@color/ecosia_text_brand"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:id="@+id/btnmore"
+                    android:layout_width="115dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/ecosia_learn_more_outline"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/text_learn_more"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/inter"
+                        android:gravity="center"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:singleLine="true"
+                        android:text="@string/ecosia_learn"
+                        android:textColor="@color/ecosia_text_title_primary_light"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_about_card"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_below="@+id/parent_card"
+                android:background="@color/ecosia_disabled"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

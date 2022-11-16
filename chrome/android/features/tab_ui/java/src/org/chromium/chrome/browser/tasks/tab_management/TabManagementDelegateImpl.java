@@ -139,7 +139,7 @@ public class TabManagementDelegateImpl implements TabManagementDelegate {
     @Override
     public TabGroupModelFilter createTabGroupModelFilter(TabModel tabModel) {
         return new TabGroupModelFilter(
-                tabModel, TabUiFeatureUtilities.ENABLE_TAB_GROUP_AUTO_CREATION.getValue());
+                tabModel, /* Ecosia: MOB-1907: TabUiFeatureUtilities.ENABLE_TAB_GROUP_AUTO_CREATION.getValue() */ true);
     }
 
     @Override

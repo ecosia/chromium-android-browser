@@ -1,6 +1,24 @@
-// Copyright 2013 The Chromium Authors
-// Use of this source code is governed by a BSD-style license that can be
-// found in the LICENSE file.
+/*
+ * Copyright 2013 The Chromium Authors
+ * Copyright (C) 2023 Ecosia Android App source (for GPL 3.0)
+ *
+ * Licensed under the GNU General Public License, Version 3.0 and BSD-style license (found in LICENSE file);
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at 
+ * License: GPL-3.0-only - https://spdx.org/licenses/GPL-3.0-only.html
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+ 
 
 #ifndef CHROME_BROWSER_BOOKMARKS_ANDROID_BOOKMARK_BRIDGE_H_
 #define CHROME_BROWSER_BOOKMARKS_ANDROID_BOOKMARK_BRIDGE_H_
@@ -19,6 +37,7 @@
 #include "base/strings/utf_string_conversions.h"
 #include "base/supports_user_data.h"
 #include "chrome/browser/android/bookmarks/partner_bookmarks_shim.h"
+#include "chrome/browser/bookmarks/bookmark_html_writer.h" // Ecosia: Bookmark Import / Export
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/profiles/profile_observer.h"
 #include "chrome/browser/reading_list/android/reading_list_manager.h"
@@ -26,6 +45,8 @@
 #include "components/bookmarks/common/android/bookmark_id.h"
 #include "components/prefs/pref_change_registrar.h"
 #include "url/android/gurl_android.h"
+#include "components/search_engines/template_url.h" // Ecosia: Bookmark Import / Export
+#include "ui/shell_dialogs/select_file_dialog.h" // Ecosia: Bookmark Import / Export
 
 namespace bookmarks {
 class BookmarkModel;
@@ -44,7 +65,8 @@ class BookmarkBridge : public bookmarks::BaseBookmarkModelObserver,
                        public PartnerBookmarksShim::Observer,
                        public ReadingListManager::Observer,
                        public ProfileObserver,
-                       public base::SupportsUserData::Data {
+                       public base::SupportsUserData::Data, // Ecosia: Bookmark Import / Export
+                       public ui::SelectFileDialog::Listener { // Ecosia: Bookmark Import / Export
  public:
   BookmarkBridge(Profile* profile,
                  bookmarks::BookmarkModel* model,
@@ -66,6 +88,13 @@ class BookmarkBridge : public bookmarks::BaseBookmarkModelObserver,
 
   bool IsDoingExtensiveChanges(JNIEnv* env,
                                const base::android::JavaParamRef<jobject>& obj);
+
+  // Ecosia: Bookmark Import / Export
+  // SelectFileDialog::Listener implementation.
+  void FileSelected(const base::FilePath& path,
+                    int index,
+                    void* params) override;
+  void FileSelectionCanceled(void* params) override;
 
   jboolean IsEditBookmarksEnabled(JNIEnv* env);
 
@@ -163,6 +192,15 @@ class BookmarkBridge : public bookmarks::BaseBookmarkModelObserver,
                              const base::android::JavaParamRef<jobject>& obj,
                              jlong id,
                              jint type);
+  // Ecosia: Bookmark Import / Export
+  void ImportBookmarks(JNIEnv* env,
+                        const base::android::JavaParamRef<jobject>& obj,
+                        const base::android::JavaParamRef<jobject>& java_window);
+  // Ecosia: Bookmark Import / Export
+  void ExportBookmarks(JNIEnv* env,
+                        const base::android::JavaParamRef<jobject>& obj,
+                        const base::android::JavaParamRef<jobject>& java_window,
+                        const base::android::JavaParamRef<jstring>& j_export_path);
 
   void SetBookmarkTitle(JNIEnv* env,
                         const base::android::JavaParamRef<jobject>& obj,
@@ -356,12 +394,17 @@ class BookmarkBridge : public bookmarks::BaseBookmarkModelObserver,
   void DestroyJavaObject();
 
   raw_ptr<Profile> profile_;
+  base::FilePath export_path_; // Ecosia: Bookmark Import / Export
+  BookmarksExportObserver* observer_; // weak // Ecosia: Bookmark Import / Export
+  raw_ptr<ui::WindowAndroid>
+      window_;  // weak // Ecosia: Bookmark Import / Export
   base::android::ScopedJavaGlobalRef<jobject> java_bookmark_model_;
   raw_ptr<bookmarks::BookmarkModel> bookmark_model_;                     // weak
   raw_ptr<bookmarks::ManagedBookmarkService> managed_bookmark_service_;  // weak
   std::unique_ptr<bookmarks::ScopedGroupBookmarkActions>
       grouped_bookmark_actions_;
   PrefChangeRegistrar pref_change_registrar_;
+  scoped_refptr<ui::SelectFileDialog> select_file_dialog_; // Ecosia: Bookmark Import / Export
 
   // Information about the Partner bookmarks (must check for IsLoaded()).
   // This is owned by profile.
@@ -372,6 +415,11 @@ class BookmarkBridge : public bookmarks::BaseBookmarkModelObserver,
 
   // Observes the profile destruction and creation.
   base::ScopedObservation<Profile, ProfileObserver> profile_observation_{this};
+
+  // Ecosia: Bookmark Import / Export
+  const std::string FileSelectedImpl(const base::FilePath& path);
+  void FileSelectedImplOnUIThread(const base::FilePath& path,
+                                  const std::string& contents);
 
   // Weak pointers for creating callbacks that won't call into a destroyed
   // object.

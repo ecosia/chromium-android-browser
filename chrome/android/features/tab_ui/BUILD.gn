@@ -83,6 +83,24 @@ android_resources("java_resources") {
     "java/res/values/drawables.xml",
     "java/res/values/ids.xml",
     "java/res/values/styles.xml",
+
+    # Ecosia
+    "java/res/values/ecosia_colors.xml",
+    "java/res/values-night/ecosia_colors.xml",
+    "java/res/drawable/ic_ecosia_tab_favicon_bright.png",
+    "java/res/drawable/ic_ecosia_tab_favicon_dark.png",
+    "java/res/drawable-hdpi/ic_ecosia_tab_favicon_bright.png",
+    "java/res/drawable-hdpi/ic_ecosia_tab_favicon_dark.png",
+    "java/res/drawable-xhdpi/ic_ecosia_tab_favicon_bright.png",
+    "java/res/drawable-xhdpi/ic_ecosia_tab_favicon_dark.png",
+    "java/res/drawable-xxhdpi/ic_ecosia_tab_favicon_bright.png",
+    "java/res/drawable-xxhdpi/ic_ecosia_tab_favicon_dark.png",
+    "java/res/drawable-xxxhdpi/ic_ecosia_tab_favicon_bright.png",
+    "java/res/drawable-xxxhdpi/ic_ecosia_tab_favicon_dark.png",
+    "java/res/drawable/ic_ecosia_tab_favicon_selected.xml",
+    "java/res/drawable/ic_ecosia_tab_favicon_unselected.xml",
+    "java/res/drawable-night/ic_ecosia_tab_favicon_selected.xml",
+    "java/res/drawable-night/ic_ecosia_tab_favicon_unselected.xml",
   ]
   deps = [
     ":java_strings_grd",

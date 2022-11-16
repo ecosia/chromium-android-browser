@@ -113,7 +113,7 @@ public class DefaultBrowserPromoDeps {
         if (info == null || info.match == 0) return DefaultBrowserState.NO_DEFAULT; // no default
         if (TextUtils.equals(ContextUtils.getApplicationContext().getPackageName(),
                     info.activityInfo.packageName)) {
-            return DefaultBrowserState.CHROME_DEFAULT; // Already default
+            return DefaultBrowserState.ECOSIA_DEFAULT; // Already default
         }
         return DefaultBrowserState.OTHER_DEFAULT;
     }

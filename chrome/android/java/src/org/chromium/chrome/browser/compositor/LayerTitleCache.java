@@ -23,6 +23,7 @@ import org.chromium.chrome.browser.tasks.tab_management.TabManagementFieldTrial;
 import org.chromium.chrome.browser.ui.favicon.FaviconHelper;
 import org.chromium.chrome.browser.ui.favicon.FaviconHelper.DefaultFaviconHelper;
 import org.chromium.chrome.browser.ui.favicon.FaviconHelper.FaviconImageCallback;
+import org.chromium.components.embedder_support.util.UrlConstants;
 import org.chromium.ui.base.LocalizationUtils;
 import org.chromium.ui.resources.ResourceManager;
 import org.chromium.ui.resources.dynamics.BitmapDynamicResource;
@@ -196,6 +197,10 @@ public class LayerTitleCache {
                 if (TextUtils.isEmpty(title)) {
                     title = "";
                 }
+            }
+            // Ecosia: Hide cryptic chrome new-tab-url and show text for "new tab" instead
+            if (UrlConstants.NTP_URL.startsWith(title) || UrlConstants.NTP_NON_NATIVE_URL.startsWith(title)) {
+                title = mContext.getString(R.string.accessibility_toolbar_btn_new_tab);
             }
         }
         return title;

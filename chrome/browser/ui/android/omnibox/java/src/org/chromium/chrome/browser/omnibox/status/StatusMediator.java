@@ -480,14 +480,14 @@ public class StatusMediator implements PermissionDialogController.Observer,
         mIsSecurityViewShown = false;
         if (mUrlHasFocus) {
             if (mShowStatusIconWhenUrlFocused) {
-                icon = mUrlBarTextIsSearch ? R.drawable.ic_suggestion_magnifier
+                icon = mUrlBarTextIsSearch ? R.drawable.ic_ecosia_suggestion_magnifier  // Ecosia: search icon
                                            : R.drawable.ic_globe_24dp;
                 tint = mNavigationIconTintRes;
             }
         } else if (mSecurityIconRes != 0) {
             mIsSecurityViewShown = true;
             icon = mSecurityIconRes;
-            tint = mSecurityIconTintRes;
+            // tint = mSecurityIconTintRes; Ecosia: MOB-1571: Don't color icon via code
             toast = R.string.menu_page_info;
         }
 

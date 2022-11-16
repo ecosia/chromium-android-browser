@@ -342,6 +342,8 @@ class PageInfo : private content_settings::CookieControlsView {
                        int blocked_cookies) override;
   void OnCookiesCountChanged(int allowed_cookies, int blocked_cookies) override;
 
+  void OnCookiesChanged(std::string cookie) override {}
+
   // Populates this object's UI state with provided security context. This
   // function does not update visible UI-- that's part of Present*().
   void ComputeUIInputs(const GURL& url);

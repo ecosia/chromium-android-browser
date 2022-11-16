@@ -10,8 +10,9 @@
 namespace history {
 namespace {
 constexpr auto kOrganicRepeatableQueriesDefaultValue =
-    BUILDFLAG(IS_ANDROID) ? base::FEATURE_ENABLED_BY_DEFAULT
-                          : base::FEATURE_DISABLED_BY_DEFAULT;
+    base::FEATURE_DISABLED_BY_DEFAULT; // Ecosia: disable showing search queries in most visited tiles
+    /*BUILDFLAG(IS_ANDROID) ? base::FEATURE_ENABLED_BY_DEFAULT
+                          : base::FEATURE_DISABLED_BY_DEFAULT;*/
 
 // Specifies the scaling behavior, i.e. whether the relevance scales of the
 // top sites and repeatable queries should be first aligned.

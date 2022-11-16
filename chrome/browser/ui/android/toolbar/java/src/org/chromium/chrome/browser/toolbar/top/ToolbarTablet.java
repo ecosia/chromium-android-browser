@@ -81,7 +81,8 @@ public class ToolbarTablet
 
     private static final int HOME_BUTTON_POSITION_FOR_TAB_STRIP_REDESIGN = 3;
 
-    private HomeButton mHomeButton;
+    // Ecosia: make visible for subclass
+    protected HomeButton mHomeButton;
     private ImageButton mBackButton;
     private ImageButton mForwardButton;
     private ImageButton mReloadButton;
@@ -468,8 +469,9 @@ public class ToolbarTablet
         updateNtp();
     }
 
+    // Ecosia: make visible for subclass
     @Override
-    void updateButtonVisibility() {
+    protected void updateButtonVisibility() {
         mLocationBar.updateButtonVisibility();
     }
 
@@ -506,14 +508,13 @@ public class ToolbarTablet
     @Override
     void updateBookmarkButton(boolean isBookmarked, boolean editingAllowed) {
         if (isBookmarked) {
-            mBookmarkButton.setImageResource(R.drawable.btn_star_filled);
-            final @ColorRes int tint = isIncognito() ? R.color.default_icon_color_blue_light
-                                                     : R.color.default_icon_color_accent1_tint_list;
+            mBookmarkButton.setImageResource(R.drawable.ic_ecosia_bookmarked);  // Ecosia: bookmark button branding
+            final @ColorRes int tint = R.color.ecosia_icon_primary_active;
             ImageViewCompat.setImageTintList(
                     mBookmarkButton, AppCompatResources.getColorStateList(getContext(), tint));
             mBookmarkButton.setContentDescription(getContext().getString(R.string.edit_bookmark));
         } else {
-            mBookmarkButton.setImageResource(R.drawable.btn_star);
+            mBookmarkButton.setImageResource(R.drawable.ic_ecosia_bookmark_add);    // Ecosia: bookmark button branding
             ImageViewCompat.setImageTintList(mBookmarkButton, getTint());
             mBookmarkButton.setContentDescription(
                     getContext().getString(R.string.accessibility_menu_bookmark));

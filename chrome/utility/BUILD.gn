@@ -89,8 +89,6 @@ static_library("utility") {
 
   if (!is_android) {
     sources += [
-      "importer/bookmark_html_reader.cc",
-      "importer/bookmark_html_reader.h",
       "importer/bookmarks_file_importer.cc",
       "importer/bookmarks_file_importer.h",
       "importer/external_process_importer_bridge.cc",
@@ -218,6 +216,12 @@ static_library("utility") {
       "//chromeos/components/quick_answers/public/mojom",
     ]
   }
+
+  # Ecosia: Bookmark Import / Export
+  sources += [
+    "importer/bookmark_html_reader.cc",
+    "importer/bookmark_html_reader.h",
+  ]
 
   # NSS decryptor is not needed on ChromeOS.
   if (!is_chromeos && use_nss_certs) {

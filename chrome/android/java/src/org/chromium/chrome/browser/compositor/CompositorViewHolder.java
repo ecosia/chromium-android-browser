@@ -1512,8 +1512,11 @@ public class CompositorViewHolder extends FrameLayout
             // TODO(crbug.com/1216949): Look into enforcing the z-order of the views.
             addView(mView, 1);
 
-            setFocusable(false);
-            setFocusableInTouchMode(false);
+                // Ecosia: fix for the back to home auto focusing issue on versions older than 9
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
+                    setFocusable(false);
+                }
+                setFocusableInTouchMode(false);
 
             // Claim focus for the new view unless the user is currently using the URL bar.
             if (mUrlBar == null || !mUrlBar.hasFocus()) mView.requestFocus();

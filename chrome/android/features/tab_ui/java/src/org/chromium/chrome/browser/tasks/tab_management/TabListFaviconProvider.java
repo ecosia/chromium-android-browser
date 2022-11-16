@@ -219,6 +219,7 @@ public class TabListFaviconProvider {
 
     private Profile mProfile;
     private FaviconHelper mFaviconHelper;
+    private boolean mIsEcosiaIcon; // Ecosia : Rebrand the tab group image with original color
 
     /**
      * Construct the provider that provides favicons for tab list.
@@ -246,6 +247,8 @@ public class TabListFaviconProvider {
         mIncognitoSelectedIconColor =
                 TabUiThemeProvider.getChromeOwnedFaviconTintColor(context, true, true);
 
+        mIsEcosiaIcon = false; //Ecosia : setting initial value false for other logos
+
         if (sRoundedGlobeFavicon == null) {
             // TODO(crbug.com/1066709): From Android Developer Documentation, we should avoid
             //  resizing vector drawable.
@@ -256,12 +259,13 @@ public class TabListFaviconProvider {
                     createChromeOwnedResourceTabFavicon(globeBitmap, mDefaultIconColor,
                             mSelectedIconColor, false, StaticTabFaviconType.ROUNDED_GLOBE);
         }
-        if (sRoundedChromeFavicon == null) {
+        if (sRoundedChromeFavicon == null) { //Ecosia : Retaining original bitmap color and rebranding ecosia icon
+            mIsEcosiaIcon = true;
             Bitmap chromeBitmap =
-                    BitmapFactory.decodeResource(mContext.getResources(), R.drawable.chromelogo16);
+                    BitmapFactory.decodeResource(mContext.getResources(), R.drawable.ic_ecosia);
             sRoundedChromeFavicon =
                     createChromeOwnedResourceTabFavicon(chromeBitmap, mDefaultIconColor,
-                            mSelectedIconColor, false, StaticTabFaviconType.ROUNDED_CHROME);
+                            mSelectedIconColor, true, StaticTabFaviconType.ROUNDED_CHROME); // Ecosia : Retaining original color of logo in bitmap 
         }
         if (sRoundedComposedDefaultFavicon == null) {
             Bitmap composedBitmap = getResizedBitmapFromDrawable(
@@ -279,16 +283,17 @@ public class TabListFaviconProvider {
                     mIncognitoIconColor, mIncognitoSelectedIconColor, false,
                     StaticTabFaviconType.ROUNDED_GLOBE_INCOGNITO);
         }
-        if (sRoundedChromeFaviconIncognito == null) {
+        if (sRoundedChromeFaviconIncognito == null) { //Ecosia : Retaining original bitmap color and rebranding ecosia icon
+            mIsEcosiaIcon = true;
             Bitmap chromeBitmap =
-                    BitmapFactory.decodeResource(mContext.getResources(), R.drawable.chromelogo16);
+                    BitmapFactory.decodeResource(mContext.getResources(), R.drawable.ic_ecosia);
             sRoundedChromeFaviconIncognito = createChromeOwnedResourceTabFavicon(chromeBitmap,
-                    mIncognitoIconColor, mIncognitoSelectedIconColor, false,
-                    StaticTabFaviconType.ROUNDED_CHROME_INCOGNITO);
+                    mIncognitoIconColor, mIncognitoSelectedIconColor, true,
+                    StaticTabFaviconType.ROUNDED_CHROME_INCOGNITO); // Ecosia : Retaining original color of logo in bitmap
         }
-        if (sRoundedComposedDefaultFaviconIncognito == null) {
+        if (sRoundedComposedDefaultFaviconIncognito == null) { //Ecosia : Retaining original bitmap color and rebranding ecosia icon
             Bitmap composedBitmap = getResizedBitmapFromDrawable(
-                    AppCompatResources.getDrawable(context, R.drawable.ic_group_icon_16dp),
+                    AppCompatResources.getDrawable(context, R.drawable.ic_ecosia),
                     mDefaultFaviconSize);
             sRoundedComposedDefaultFaviconIncognito = createChromeOwnedResourceTabFavicon(
                     composedBitmap, mIncognitoIconColor, mIncognitoSelectedIconColor, false,
@@ -304,9 +309,10 @@ public class TabListFaviconProvider {
                             getResizedBitmapFromDrawable(globeDrawable, mStripFaviconSize), true),
                     StaticTabFaviconType.ROUNDED_GLOBE_FOR_STRIP);
         }
-        if (sRoundedChromeFaviconForStrip == null) {
+        if (sRoundedChromeFaviconForStrip == null) { //Ecosia : Retaining original bitmap color and rebranding ecosia icon
+            mIsEcosiaIcon = true;
             Drawable chromeDrawable =
-                    AppCompatResources.getDrawable(context, R.drawable.chromelogo16);
+                    AppCompatResources.getDrawable(context, R.drawable.ic_ecosia);
             sRoundedChromeFaviconForStrip = new ResourceTabFavicon(
                     processBitmap(
                             getResizedBitmapFromDrawable(chromeDrawable, mStripFaviconSize), true),
@@ -460,10 +466,22 @@ public class TabListFaviconProvider {
 
     private TabFavicon createChromeOwnedUrlTabFavicon(Bitmap bitmap, @ColorInt int colorDefault,
             @ColorInt int colorSelected, boolean useBitmapColorInDefault, GURL gurl) {
-        Drawable defaultDrawable =
-                processBitmapMaybeColor(bitmap, !useBitmapColorInDefault, colorDefault);
-        Drawable selectedDrawable = processBitmapMaybeColor(bitmap, true, colorSelected);
-        return new UrlTabFavicon(defaultDrawable, selectedDrawable, true, gurl);
+        // Ecosia : This condition retains the behavior of other icons 
+        if(!mIsEcosiaIcon) {
+            Drawable defaultDrawable =
+                    processBitmapMaybeColor(bitmap, !useBitmapColorInDefault, colorDefault);
+            Drawable selectedDrawable = processBitmapMaybeColor(bitmap, true, colorSelected);
+            return new UrlTabFavicon(defaultDrawable, selectedDrawable, true, gurl);
+        }
+        //Ecosia : Fav icon image processing for logo and background
+        Drawable defaultDrawable = processBitmap(bitmap, false);
+        if (!useBitmapColorInDefault) {
+            defaultDrawable.setColorFilter(
+                    new PorterDuffColorFilter(colorDefault, PorterDuff.Mode.SRC_IN));
+        }
+        Drawable selectedDrawable = processBitmap(bitmap, false);
+        return new UrlTabFavicon(defaultDrawable, selectedDrawable, false, gurl);
+
     }
 
     private TabFavicon createChromeOwnedResourceTabFavicon(Bitmap bitmap,
@@ -471,8 +489,9 @@ public class TabListFaviconProvider {
             boolean useBitmapColorInDefault, @StaticTabFaviconType int type) {
         Drawable defaultDrawable =
                 processBitmapMaybeColor(bitmap, !useBitmapColorInDefault, colorDefault);
-        Drawable selectedDrawable = processBitmapMaybeColor(bitmap, true, colorSelected);
-        return new ResourceTabFavicon(defaultDrawable, selectedDrawable, true, type);
+        //Ecosia : Removing recolor of the fav icon logo
+        Drawable selectedDrawable = processBitmapMaybeColor(bitmap, false, colorSelected);
+        return new ResourceTabFavicon(defaultDrawable, selectedDrawable, false, type);
     }
 
     private Drawable processBitmapMaybeColor(
@@ -491,7 +510,9 @@ public class TabListFaviconProvider {
      * TODO(https://crbug.com/1234953): Avoid creating color filter every time.
      */
     private TabFavicon colorFaviconWithTheme(TabFavicon favicon) {
-        assert favicon.isRecolorAllowed();
+        //Ecosia : Retaining original bitmap color
+        if( !favicon.isRecolorAllowed())
+            return favicon;
 
         int colorDefault =
                 TabUiThemeProvider.getChromeOwnedFaviconTintColor(mContext, false, false);

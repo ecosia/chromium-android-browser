@@ -260,12 +260,14 @@ public class AllSiteSettings extends SiteSettingsPreferenceFragment
             if (queryHasChanged) getInfoForOrigins();
         });
 
+        /* Ecosia : Remove Help & Feedback option
         if (getSiteSettingsDelegate().isHelpAndFeedbackEnabled()) {
             MenuItem help = menu.add(
                     Menu.NONE, R.id.menu_id_site_settings_help, Menu.NONE, R.string.menu_help);
             help.setIcon(VectorDrawableCompat.create(
                     getResources(), R.drawable.ic_help_and_feedback, getContext().getTheme()));
         }
+        */
     }
 
     @Override

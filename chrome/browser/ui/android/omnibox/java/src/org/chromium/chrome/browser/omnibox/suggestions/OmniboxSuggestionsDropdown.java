@@ -7,9 +7,12 @@ package org.chromium.chrome.browser.omnibox.suggestions;
 import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.Color;
+import android.graphics.Insets;
 import android.graphics.Rect;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
+import android.util.DisplayMetrics;
+import android.util.TypedValue;
 import android.view.InputDevice;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
@@ -46,6 +49,7 @@ import java.lang.annotation.RetentionPolicy;
 /** A widget for showing a list of omnibox suggestions. */
 public class OmniboxSuggestionsDropdown extends RecyclerView {
     private static final long DEFERRED_INITIAL_SHRINKING_LAYOUT_FROM_IME_DURATION_MS = 300;
+    private static final int ECOSIA_TABLET_SEARCH_SUGGESTION_MARGIN_DP = 22;
     /**
      * Used to defer the accessibility announcement for list content.
      * This makes core difference when the list is first shown up, when the interaction with the
@@ -89,6 +93,7 @@ public class OmniboxSuggestionsDropdown extends RecyclerView {
     private int mInitialResizeState = InitialResizeState.WAITING_FOR_FIRST_MEASURE;
     private int mWidthMeasureSpec;
     private int mHeightMeasureSpec;
+    private int mEcosiaHorizontalOffset;
 
     /**
      * Interface that will receive notifications when the user is interacting with an item on the
@@ -623,10 +628,13 @@ public class OmniboxSuggestionsDropdown extends RecyclerView {
                     currentInsets = mAnchorView.getRootWindowInsets();
                     result = !currentInsets.equals(mWindowInsets);
                     mWindowInsets = currentInsets;
+                    final Insets insetsIgnoringVisibility = mWindowInsets.getInsetsIgnoringVisibility(0);
+                    mEcosiaHorizontalOffset = insetsIgnoringVisibility.left;
                 } else {
                     mEmbedder.getWindowDelegate().getWindowVisibleDisplayFrame(mTempRect);
                     result = !mTempRect.equals(mWindowRect);
                     mWindowRect.set(mTempRect);
+                    mEcosiaHorizontalOffset = mTempRect.left;
                 }
                 return result;
             }
@@ -657,9 +665,30 @@ public class OmniboxSuggestionsDropdown extends RecyclerView {
         if (mAlignmentView == null) return;
 
         ViewUtils.getRelativeLayoutPosition(mAnchorView, mAlignmentView, mTempPosition);
+        
+        /*
+         * Ecosia: Adjust Side Padding (MOB-1552: https://ecosia.atlassian.net/browse/MOB-1552)
+         *
         setPadding(mTempPosition[0], getPaddingTop(),
                 mAnchorView.getWidth() - mAlignmentView.getWidth() - mTempPosition[0],
                 getPaddingBottom());
+         */
+        ecosiaAdjustSidePadding();
+    }
+
+    private void ecosiaAdjustSidePadding() {
+        final Resources resources = mAnchorView.getResources();
+        final boolean tabletScreenSize = resources.getBoolean(R.bool.tabletScreenSize);
+        if (tabletScreenSize) {
+            final DisplayMetrics displayMetrics = resources.getDisplayMetrics();
+            final int horizontalPadding = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, ECOSIA_TABLET_SEARCH_SUGGESTION_MARGIN_DP, displayMetrics);
+            final int paddingMinusInset = horizontalPadding - mEcosiaHorizontalOffset;
+            setPadding(paddingMinusInset, getPaddingTop(), paddingMinusInset, getPaddingBottom());
+        } else {
+            setPadding(mTempPosition[0], getPaddingTop(),
+                    mAnchorView.getWidth() - mAlignmentView.getWidth() - mTempPosition[0],
+                    getPaddingBottom());
+        }
     }
 
     @VisibleForTesting

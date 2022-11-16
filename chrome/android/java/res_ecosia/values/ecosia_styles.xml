@@ -1,0 +1,88 @@
+<resources>
+
+  <style name="NewTabPageSectionTitle" parent="Theme.AppCompat.DayNight">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">36dp</item>
+    <item name="android:background">@color/ecosia_main_background</item>
+    <item name="android:gravity">bottom</item>
+    <item name="android:paddingBottom">6dp</item>
+    <item name="android:fontFamily">@font/inter</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:textColor">@color/ecosia_text_primary</item>
+  </style>
+
+  <style name="FavoriteTilesText" parent="Theme.AppCompat.DayNight">
+    <item name="android:textColor">@color/ecosia_text_primary</item>
+  </style>
+
+  <style name="AdblockPopupWindowText" parent="Theme.AppCompat.DayNight">
+    <item name="android:textColor">@color/ecosia_abp_popup_text</item>
+  </style>
+  
+  <style name="AdblockSwitch" parent="Theme.AppCompat.DayNight"/>
+
+  <style name="AdBlockDialog" parent="AdblockPopupWindowText"/>
+
+  <style name="EcosiaSettings" parent="Theme.Chromium.Settings">
+    <item name="toolbarStyle">@style/EcosiaSettingsToolbarStyle</item>
+    <item name="android:listDivider">@null</item>
+    <item name="android:textColor">@color/ecosia_text_primary</item>
+    <item name="android:textSize">14sp</item>
+    <item name="android:statusBarColor">@color/ecosia_background_status_bar</item>
+  </style>
+
+  <style name="EcosiaSettingsToolbarStyle" parent="SettingsToolbarStyle">
+    <item name="titleTextAppearance">@style/TextAppearance.Headline.Primary</item>
+    <item name="titleTextColor">@color/ecosia_text_primary</item>
+    <item name="android:background">@drawable/settings_toolbar_background</item>
+  </style>
+
+  <style name="EcosiaButtonStyle" parent="FilledButtonThemeOverlay.Flat">
+    <item name="android:titleTextAppearance">@style/TextAppearance.TextMedium</item>
+    <item name="android:fontFamily">@font/inter</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+
+  <style name="EcosiaBrowsingBtn" parent="TextButton">
+    <item name="buttonTextColor">@color/ecosia_warning</item>
+    <item name="android:fontFamily">@font/inter</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:textSize">14sp</item>
+  </style>
+
+  <style name="EcosiaDateView">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_marginTop">12dp</item>
+    <item name="android:layout_marginBottom">10dp</item>
+    <item name="android:layout_marginStart">@dimen/list_item_default_margin</item>
+    <item name="android:layout_marginEnd">@dimen/list_item_default_margin</item>
+    <item name="android:textSize">14sp</item>
+    <item name="android:fontFamily">@font/inter</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:textColor">@color/ecosia_onboarding_card_text_secondary</item>
+  </style>
+
+  <style name="EcosiaPreferenceItemMono">
+    <item name="android:tint">@color/ecosia_icon_secondary_default</item>
+  </style>
+
+  <style name="EcosiaPreferenceItemColor">
+    <item name="android:tint">@color/ecosia_brand_primary</item>
+  </style>
+
+  <style name="EcosiaMoreButton">
+    <item name="android:background">@drawable/ecosia_more_outline</item>
+  </style>
+
+  <style name="EcosiaAccessibilityTextPreference">
+    <item name="android:textColor">@color/ecosia_text_primary</item>
+  </style>
+
+  <style name="EcosiaDialogBtnStyle" parent="TextButtonThemeOverlay">
+    <item name="android:titleTextAppearance">@style/TextAppearance.Button.Text.Blue</item>
+    <item name="android:fontFamily">@font/inter</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+
+</resources>

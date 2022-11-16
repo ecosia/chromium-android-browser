@@ -120,9 +120,9 @@ public class LocationBarLayout extends FrameLayout {
      */
     @CallSuper
     public void initialize(@NonNull AutocompleteCoordinator autocompleteCoordinator,
-            @NonNull UrlBarCoordinator urlCoordinator, @NonNull StatusCoordinator statusCoordinator,
-            @NonNull LocationBarDataProvider locationBarDataProvider,
-            @NonNull SearchEngineLogoUtils searchEngineLogoUtils) {
+                           @NonNull UrlBarCoordinator urlCoordinator, @NonNull StatusCoordinator statusCoordinator,
+                           @NonNull LocationBarDataProvider locationBarDataProvider,
+                           @NonNull SearchEngineLogoUtils searchEngineLogoUtils) {
         mAutocompleteCoordinator = autocompleteCoordinator;
         mUrlCoordinator = urlCoordinator;
         mStatusCoordinator = statusCoordinator;
@@ -189,10 +189,10 @@ public class LocationBarLayout extends FrameLayout {
                     (ViewGroup.MarginLayoutParams) mUrlActionContainer.getLayoutParams();
             urlContainerMarginEnd +=
                     MarginLayoutParamsCompat.getMarginStart(urlActionContainerLayoutParams)
-                    + MarginLayoutParamsCompat.getMarginEnd(urlActionContainerLayoutParams);
+                            + MarginLayoutParamsCompat.getMarginEnd(urlActionContainerLayoutParams);
         }
         urlContainerMarginEnd += mStatusCoordinator.isSearchEngineStatusIconVisible()
-                        && mStatusCoordinator.shouldDisplaySearchEngineIcon()
+                && mStatusCoordinator.shouldDisplaySearchEngineIcon()
                 ? getEndPaddingPixelSizeOnFocusDelta()
                 : 0;
         // Account for the URL action container end padding on tablets.
@@ -335,7 +335,7 @@ public class LocationBarLayout extends FrameLayout {
         // Set the left space expansion width.
         ViewGroup.LayoutParams leftSpacingParams = mStatusViewLeftSpace.getLayoutParams();
         leftSpacingParams.width = (int) (getResources().getDimensionPixelSize(
-                                                 R.dimen.location_bar_status_view_left_space_width)
+                R.dimen.location_bar_status_view_left_space_width)
                 * percent);
         mStatusViewLeftSpace.setLayoutParams(leftSpacingParams);
     }

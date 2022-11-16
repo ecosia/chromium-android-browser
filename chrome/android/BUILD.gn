@@ -46,15 +46,17 @@ import("channel.gni")
 import("java_sources.gni")
 import("static_initializers.gni")
 import("trichrome.gni")
+import("//chrome/android/ecosia/ecosia_java_sources.gni")
+import("//chrome/android/ecosia/ecosia_junit_test_java_sources.gni")
 
 if (android_64bit_target_cpu && skip_secondary_abi_for_cq) {
   assert(current_toolchain != android_secondary_abi_toolchain)
 }
 
 if (current_toolchain == default_toolchain) {
-  _default_package = "org.chromium.chrome"
+  _default_package = "com.ecosia.android"
   if (use_stable_package_name_for_trichrome) {
-    _default_package += ".stable"
+    #Ecosia: _default_package += ".stable"
   } else if (android_channel != "default") {
     # android-binary-size trybot may checks if an internal Chrome variant's
     # AndroidManifest is as expected by ensuring the differences between its
@@ -62,7 +64,7 @@ if (current_toolchain == default_toolchain) {
     # are as expected. Upstream targets having a "org.chromium.chrome" package
     # name will cause the comparison to output many unnecessary differences.
     # See https://source.chromium.org/chromium/chromium/src/+/main:chrome/android/java/README.md
-    _default_package += "." + android_channel
+    # Ecosia: _default_package += "." + android_channel
   }
 
   declare_args() {
@@ -304,6 +306,7 @@ if (current_toolchain == default_toolchain) {
       "//third_party/android_deps:material_design_java",
       "//third_party/androidx:androidx_gridlayout_gridlayout_java",
       "//third_party/androidx:androidx_preference_preference_java",
+      "//ui/android:ecosia_ui_java_resources",
     ]
   }
 
@@ -670,6 +673,7 @@ if (current_toolchain == default_toolchain) {
       "//third_party/android_deps:dagger_java",
       "//third_party/android_deps:guava_android_java",
       "//third_party/android_deps:javax_inject_javax_inject_java",
+      "//third_party/android_deps:com_android_installreferrer_installreferrer_java",
       "//third_party/android_deps:material_design_java",
       "//third_party/android_deps:protobuf_lite_runtime_java",
       "//third_party/android_media:android_media_java",
@@ -701,6 +705,11 @@ if (current_toolchain == default_toolchain) {
       "//url:gurl_java",
       "//url:origin_java",
       "//url/mojom:url_mojom_gurl_java",
+      "//third_party/snowplow:snowplow_java", 
+      "//third_party/appcenter:appcenter_java",
+      "//third_party/appcenter_crashes:appcenter_crashes_java",
+      "//third_party/android_constraintlayout:constraintlayout_java",
+      "//third_party/android_constraintlayout:constraintlayout_solver_java",
     ]
 
     deps += feed_deps
@@ -748,6 +757,9 @@ if (current_toolchain == default_toolchain) {
       ]
     }
 
+    # Ecosia: From ecosia/ecosia_java_sources.gni
+    sources += ecosia_java_sources
+    
     if (enable_cardboard) {
       deps += [ "//third_party/cardboard:cardboard_java" ]
     }
@@ -1484,6 +1496,42 @@ if (current_toolchain == default_toolchain) {
 
     data = [ "//chrome/test/data/android/" ]
   }
+
+robolectric_binary("ecosia_junit_tests") {
+  # Needed by androidx.test.core.app.ActivityScenario
+  android_manifest = "//chrome/android/junit/AndroidManifest.xml"
+
+  # This target OOMs with the default 1G (also OOMS with 2G).
+  max_heap_size = "4G"
+
+  data_deps = [ "//testing/buildbot/filters:chrome_junit_tests_filters" ]
+
+  package_name = chrome_public_manifest_package
+
+  # From /ecosia/ecosia_junit_test_java_sources.gni.
+  sources = ecosia_junit_test_java_sources
+
+  # Should not have any deps native targets since junit tests are java-only.
+  assert_no_deps = [
+    "//content",
+    "//mojo/public/mojom/base",
+  ]
+
+  shared_libraries = [ "//url:libgurl_robolectric($robolectric_toolchain)" ]
+
+  deps = [
+      "$google_play_services_package:google_play_services_base_java",
+      "$google_play_services_package:google_play_services_basement_java",
+      "$google_play_services_package:google_play_services_cast_framework_java",
+      "$google_play_services_package:google_play_services_cast_java",
+      "$google_play_services_package:google_play_services_gcm_java",
+  ]
+
+  # From ecosia/ecosia_junit_test_java_sources.gni
+  deps += ecosia_junit_test_deps
+
+  package_name = chrome_public_manifest_package
+}
 
   android_library("chrome_test_java") {
     testonly = true

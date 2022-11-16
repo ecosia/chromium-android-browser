@@ -31,6 +31,7 @@ import android.widget.EditText;
 
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TestRule;
@@ -88,6 +89,7 @@ import java.util.List;
 @Features.EnableFeatures({ChromeFeatureList.TAB_GROUPS_ANDROID})
 @Features.DisableFeatures({ChromeFeatureList.TAB_GROUPS_CONTINUATION_ANDROID,
                            ChromeFeatureList.TAB_SELECTION_EDITOR_V2})
+@Ignore("Ecosia : TODO - Disable tests for Tab group")
 public class TabGridDialogMediatorUnitTest {
     // clang-format on
 
@@ -1160,6 +1162,7 @@ public class TabGridDialogMediatorUnitTest {
         // Animation source view should be set to null so that dialog will setup basic animation.
         assertThat(mModel.get(TabGridPanelProperties.ANIMATION_SOURCE_VIEW), equalTo(null));
     }
+
 
     @Test
     @Features.EnableFeatures(ChromeFeatureList.TAB_GROUPS_CONTINUATION_ANDROID)

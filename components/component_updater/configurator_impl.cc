@@ -38,8 +38,8 @@ ConfiguratorImpl::ConfiguratorImpl(
     : background_downloads_enabled_(config_policy.BackgroundDownloadsEnabled()),
       deltas_enabled_(config_policy.DeltaUpdatesEnabled()),
       fast_update_(config_policy.FastUpdate()),
-      pings_enabled_(config_policy.PingsEnabled()),
-      require_encryption_(require_encryption),
+      pings_enabled_(false),    // Ecosia: removed component updater according to ungoogled Chromium patch
+      //require_encryption_(require_encryption),    // Ecosia: removed component updater according to ungoogled Chromium patch
       url_source_override_(config_policy.UrlSourceOverride()),
       initial_delay_(config_policy.InitialDelay()) {
   if (config_policy.TestRequest()) {
@@ -74,8 +74,10 @@ std::vector<GURL> ConfiguratorImpl::UpdateUrl() const {
 
   std::vector<GURL> urls{GURL(kUpdaterJSONDefaultUrl),
                          GURL(kUpdaterJSONFallbackUrl)};
+  /* Ecosia: removed component updater according to ungoogled Chromium patch
   if (require_encryption_)
     update_client::RemoveUnsecureUrls(&urls);
+  */
 
   return urls;
 }

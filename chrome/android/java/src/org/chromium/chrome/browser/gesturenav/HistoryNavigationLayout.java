@@ -19,7 +19,7 @@ import org.chromium.chrome.browser.gesturenav.NavigationBubble.CloseTarget;
 /**
  * FrameLayout that supports side-wise slide gesture for history navigation.
  */
-class HistoryNavigationLayout extends FrameLayout implements ViewGroup.OnHierarchyChangeListener {
+public class HistoryNavigationLayout extends FrameLayout implements ViewGroup.OnHierarchyChangeListener {
     // {@link NavigationGlow} object for rendered pages.
     private final NavigationGlow mCompositorGlowEffect;
 

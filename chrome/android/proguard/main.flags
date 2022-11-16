@@ -41,3 +41,10 @@
 -keep,allowobfuscation public class ** extends org.chromium.chrome.browser.base.SplitCompat*$Impl {
   public <init>();
 }
+
+# Ecosia requires preference fragments to be public
+-keep public class org.ecosia.preferences.EcosiaAboutPreferences {}
+-keep public class org.ecosia.preferences.EcosiaLegalInformationPreferences {}
+
+# Ecosia: don't warn on OKIO
+-dontwarn okio.**

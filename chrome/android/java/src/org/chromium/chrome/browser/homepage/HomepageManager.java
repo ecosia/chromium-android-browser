@@ -147,6 +147,7 @@ public class HomepageManager implements HomepagePolicyManager.HomepagePolicyStat
      *         if the homepage button is force enabled via flag.
      */
     public static String getDefaultHomepageUri() {
+        /* Ecosia: use ecosia NTP
         if (PartnerBrowserCustomizations.getInstance().isHomepageProviderAvailableAndEnabled()) {
             return PartnerBrowserCustomizations.getInstance().getHomePageUrl().getSpec();
         }
@@ -165,6 +166,10 @@ public class HomepageManager implements HomepagePolicyManager.HomepagePolicyStat
         if (!homepagePartnerDefaultUri.equals("")) return homepagePartnerDefaultUri;
 
         return UrlConstants.NTP_NON_NATIVE_URL;
+		*/
+        
+		// Ecosia: ensure that the native url is always returned
+        return UrlConstants.NTP_URL;
     }
 
     /**

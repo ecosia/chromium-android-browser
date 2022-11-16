@@ -129,6 +129,19 @@ int CookieControlsController::GetAllowedCookieCount() {
     return 0;
   }
 }
+
+// Ecosia: cookies
+net::CookieList CookieControlsController::GetAllowedCookies() {
+  auto* pscs =
+      content_settings::PageSpecificContentSettings::GetForPage(
+          tab_observer_->web_contents()->GetPrimaryPage());
+  if (pscs) {
+    return pscs->allowed_local_shared_objects().cookies() -> GetCookieList();
+  } else {
+    return std::vector<net::CanonicalCookie>();
+  }
+}
+
 int CookieControlsController::GetBlockedCookieCount() {
   auto* pscs = content_settings::PageSpecificContentSettings::GetForPage(
       tab_observer_->web_contents()->GetPrimaryPage());

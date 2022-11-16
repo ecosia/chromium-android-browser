@@ -43,4 +43,7 @@ found in the LICENSE file.
 
     <!-- Revamped Incognito NTP -->
     <integer name="descriptions_weight">1</integer>
+    
+	<!-- Ecosia: This value gets overridden in res/values-sw600dp -->
+    <bool name="device_screen_size_is_tablet_like">false</bool>
 </resources>

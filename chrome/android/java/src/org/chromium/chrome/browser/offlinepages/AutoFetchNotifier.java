@@ -167,7 +167,7 @@ public class AutoFetchNotifier {
                         .setContentTitle(title)
                         .setGroup(COMPLETE_NOTIFICATION_TAG)
                         .setPriorityBeforeO(NotificationCompat.PRIORITY_LOW)
-                        .setSmallIcon(R.drawable.ic_chrome)
+                        .setSmallIcon(R.drawable.ic_ecosia)
                         .addAction(0 /* icon */, context.getString(R.string.cancel),
                                 PendingIntentProvider.getBroadcast(context, 0 /* requestCode */,
                                         cancelButtonIntent, 0 /* flags */),
@@ -325,7 +325,7 @@ public class AutoFetchNotifier {
                                 R.string.offline_pages_auto_fetch_ready_notification_text))
                         .setGroup(COMPLETE_NOTIFICATION_TAG)
                         .setPriorityBeforeO(NotificationCompat.PRIORITY_LOW)
-                        .setSmallIcon(R.drawable.ic_chrome)
+                        .setSmallIcon(R.drawable.ic_ecosia)
                         .setDeleteIntent(PendingIntentProvider.getBroadcast(
                                 context, 0 /* requestCode */, deleteIntent, 0 /* flags */));
 

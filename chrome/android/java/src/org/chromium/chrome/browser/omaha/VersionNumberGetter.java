@@ -31,7 +31,7 @@ public class VersionNumberGetter {
     }
 
     @VisibleForTesting
-    static VersionNumberGetter getInstance() {
+    public static VersionNumberGetter getInstance() {
         assert !ThreadUtils.runningOnUiThread();
         return sInstanceForTests == null ? LazyHolder.INSTANCE : sInstanceForTests;
     }

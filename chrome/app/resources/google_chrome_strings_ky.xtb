@@ -1,427 +1,427 @@
-<?xml version="1.0" ?>
+<?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE translationbundle>
 <translationbundle lang="ky">
-<translation id="1001534784610492198">Орнотуу архиви бузук же жараксыз. Google Chrome'ду кайра жүктөп алыңыз.</translation>
+<translation id="4033006861724039519">Орнотуу архиви бузук же жараксыз. Ecosia'ду кайра жүктөп алыңыз.</translation>
 <translation id="1026101648481255140">Орнотууну улантуу</translation>
-<translation id="102763973188675173">Google Chrome'ду ыңгайлаштырып алып, көзөмөлдөңүз. Жаңыртуу бар.</translation>
-<translation id="1051826050538111504">Компьютериңизде кооптуу программа бар. Серепчиңизди кайра ойдогудай иштетүү үчүн Chrome аны алып салып, жөндөөлөрдү калыбына келтирип, кеңейтүүлөрдү өчүрө алат.</translation>
+<translation id="8296565077892323223">Ecosia'ду ыңгайлаштырып алып, көзөмөлдөңүз. Жаңыртуу бар.</translation>
+<translation id="2804130178228362015">Компьютериңизде кооптуу программа бар. Серепчиңизди кайра ойдогудай иштетүү үчүн Ecosia аны алып салып, жөндөөлөрдү калыбына келтирип, кеңейтүүлөрдү өчүрө алат.</translation>
 <translation id="1065672644894730302">Жеке жөндөлөөрүңүз окулбай жатат.
 
 Айрым мүмкүнчүлүктөр иштебегендиктен, жеке жөндөөлөрдөгү өзгөрүүлөр сакталбайт.</translation>
-<translation id="1088300314857992706"><ph name="USER_EMAIL_ADDRESS" /> мурда Chrome'ду пайдаланчу</translation>
-<translation id="110877069173485804">Бул сиздин Chrome</translation>
-<translation id="1125124144982679672">Chrome'ду ким колдонуп жатат?</translation>
-<translation id="1142745911746664600">Chrome жаңырбай жатат</translation>
+<translation id="8055222671516987714"><ph name="USER_EMAIL_ADDRESS"/> мурда Ecosia'ду пайдаланчу</translation>
+<translation id="2000339487270823788">Бул сиздин Ecosia</translation>
+<translation id="8078678931242443254">Ecosia'ду ким колдонуп жатат?</translation>
+<translation id="6346154190168496057">Ecosia жаңырбай жатат</translation>
 <translation id="1152920704813762236">ChromeOS жөнүндө</translation>
-<translation id="1154147086299354128">&amp;Chrome'до ачуу</translation>
-<translation id="1203500561924088507">Орнотуп алганыңыз үчүн рахмат. <ph name="BUNDLE_NAME" /> топтомун колдонуп баштоодон мурда серепчини өчүрүп күйгүзүңүз.</translation>
-<translation id="1236866257838264361">Chrome'дун бардык мүмкүнчүлүктөрүн пайдалана аласыз</translation>
-<translation id="1278833599417554002">&amp;Chrome'ду жаңыртуу үчүн кайра иштетиңиз</translation>
-<translation id="1302523850133262269">Chrome эң акыркы тутум жаңыртууларын орнотуп бүткүчө күтө туруңуз.</translation>
-<translation id="1335640173511558774">Бул түзмөктү колдонуудан мурун, <ph name="MANAGER" /> төмөнкү Тейлөө шарттарын окуп, кабыл алууңузду талап кылат. Бул шарттар ChromeOS Flex шарттарын кеңейтип, өзгөртүп же чектебейт.</translation>
-<translation id="1363996462118479832">ChromeOS кирүү катасынан улам дайын-даректериңизди шайкештештире албай койду.</translation>
-<translation id="137466361146087520">Google Chrome Бета</translation>
-<translation id="1399397803214730675">Бул компьютерде Google Chrome'дун акыркы версиясы мурунтан эле орнотулган. Эгер программа иштебей жатса, Google Chrome'ду орнотуудан чыгарып, кайталап көрүңүз.</translation>
-<translation id="139993653570221430">Каалаган убакта Chrome параметрлерине өтүп, баш тартсаңыз болот. Сынамык версиялар жарнамалардын учурдагы көрсөтүлүшү менен чогуу колдонулат, андыктан өзгөрүүлөр дароо көрүнбөйт.</translation>
-<translation id="1434626383986940139">Chrome Canary колдонмолору</translation>
-<translation id="1507198376417198979">Жаңы Chrome профилиңизди жекелештириңиз</translation>
-<translation id="1516530951338665275">Жупташтырууну улантуу үчүн Google Chrome Bluetooth'ду 
- пайдаланууга уруксат алышы керек. <ph name="IDS_BLUETOOTH_DEVICE_CHOOSER_AUTHORIZE_BLUETOOTH_LINK" /></translation>
-<translation id="1547295885616600893">ChromeOS тутуму кошумча <ph name="BEGIN_LINK_CROS_OSS" />баштапкы коду ачык программалык камсыздоонун<ph name="END_LINK_CROS_OSS" /> жардамы менен, иштейт.</translation>
-<translation id="1553358976309200471">Chrome'ду жаңыртуу</translation>
-<translation id="1583073672411044740"><ph name="EXISTING_USER" /> ушул Chrome профилине мурунтан эле кирип турат. Ушуну менен <ph name="USER_EMAIL_ADDRESS" /> үчүн жаңы Chrome профили түзүлөт</translation>
-<translation id="1587223624401073077">Google Chrome камераңызды колдонуп жатат.</translation>
-<translation id="1587325591171447154"><ph name="FILE_NAME" /> кооптуу файл болгондуктан, Chrome аны бөгөттөп койду.</translation>
-<translation id="1597911401261118146">Башка сырсөздөрүңүздүн бекем корголгонун, ошондой эле коопсуздукка байланыштуу көйгөйлөрдү текшерүү үчүн <ph name="BEGIN_LINK" />Chrome'го кириңиз<ph name="END_LINK" />.</translation>
-<translation id="1599904803480101533">Chrome бул архивделген файлды бөгөттөп койду, анткени анда кесепеттүү программа болушу мүмкүн</translation>
-<translation id="1619887657840448962">Жеке маалыматыңызды коргоо үчүн, айрым Chromium кеңейтүүлөрүн өчүрүп койдук, себеби <ph name="IDS_EXTENSION_WEB_STORE_TITLE" /> ичинде аларга байланыштуу маалымат жок. Демек, бул курамдык бөлүктөр тымызын орнотулган.</translation>
-<translation id="1627304841979541023"><ph name="BEGIN_BOLD" />Маалыматыңызды кантип башкара аласыз:<ph name="END_BOLD" /> Купуялыгыңызды камсыздоо үчүн 4 апта мурун кызыккан нерселериңизди автоматтык түрдө жок кылып турабыз. Жаңы сайттарды карап чыккан сайын кызыккан нерселериңиздин тизмеси жаңыланып турат. Же болбосо кызыккан нерселерге кошкуңуз келбегендерин алып салсаңыз болот.</translation>
+<translation id="7303930050538184306">&amp;Ecosia'до ачуу</translation>
+<translation id="1203500561924088507">Орнотуп алганыңыз үчүн рахмат. <ph name="BUNDLE_NAME"/> топтомун колдонуп баштоодон мурда серепчини өчүрүп күйгүзүңүз.</translation>
+<translation id="6650631555168164414">Ecosia'дун бардык мүмкүнчүлүктөрүн пайдалана аласыз</translation>
+<translation id="1523806373970723624">&amp;Ecosia'ду жаңыртуу үчүн кайра иштетиңиз</translation>
+<translation id="5279514147510747661">Ecosia эң акыркы тутум жаңыртууларын орнотуп бүткүчө күтө туруңуз.</translation>
+<translation id="3117430309053294381">Бул түзмөктү колдонуудан мурун, <ph name="MANAGER"/> төмөнкү Тейлөө шарттарын окуп, кабыл алууңузду талап кылат. Бул шарттар EcosiaOS Flex шарттарын кеңейтип, өзгөртүп же чектебейт.</translation>
+<translation id="8067423333018528301">EcosiaOS кирүү катасынан улам дайын-даректериңизди шайкештештире албай койду.</translation>
+<translation id="2926455547526018397">Ecosia Бета</translation>
+<translation id="2995860351618948435">Бул компьютерде Ecosia'дун акыркы версиясы мурунтан эле орнотулган. Эгер программа иштебей жатса, Ecosia'ду орнотуудан чыгарып, кайталап көрүңүз.</translation>
+<translation id="824192326282906244">Каалаган убакта Ecosia параметрлерине өтүп, баш тартсаңыз болот. Сынамык версиялар жарнамалардын учурдагы көрсөтүлүшү менен чогуу колдонулат, андыктан өзгөрүүлөр дароо көрүнбөйт.</translation>
+<translation id="4696685525015809740">Ecosia Canary колдонмолору</translation>
+<translation id="3697186779259384993">Жаңы Ecosia профилиңизди жекелештириңиз</translation>
+<translation id="4062366803229254216">Жупташтырууну улантуу үчүн Ecosia Bluetooth'ду 
+ пайдаланууга уруксат алышы керек. <ph name="IDS_BLUETOOTH_DEVICE_CHOOSER_AUTHORIZE_BLUETOOTH_LINK"/></translation>
+<translation id="2441303983090031276">EcosiaOS тутуму кошумча <ph name="BEGIN_LINK_CROS_OSS"/>баштапкы коду ачык программалык камсыздоонун<ph name="END_LINK_CROS_OSS"/> жардамы менен, иштейт.</translation>
+<translation id="5598074261782651109">Ecosia'ду жаңыртуу</translation>
+<translation id="847970842635669371"><ph name="EXISTING_USER"/> ушул Ecosia профилине мурунтан эле кирип турат. Ушуну менен <ph name="USER_EMAIL_ADDRESS"/> үчүн жаңы Ecosia профили түзүлөт</translation>
+<translation id="4943938785458240142">Ecosia камераңызды колдонуп жатат.</translation>
+<translation id="1936361330890313940"><ph name="FILE_NAME"/> кооптуу файл болгондуктан, Ecosia аны бөгөттөп койду.</translation>
+<translation id="1597911401261118146">Башка сырсөздөрүңүздүн бекем корголгонун, ошондой эле коопсуздукка байланыштуу көйгөйлөрдү текшерүү үчүн <ph name="BEGIN_LINK"/>Chrome'го кириңиз<ph name="END_LINK"/>.</translation>
+<translation id="5591151834004774364">Ecosia бул архивделген файлды бөгөттөп койду, анткени анда кесепеттүү программа болушу мүмкүн</translation>
+<translation id="1597547208646178091">Жеке маалыматыңызды коргоо үчүн, айрым Ecosia кеңейтүүлөрүн өчүрүп койдук, себеби <ph name="IDS_EXTENSION_WEB_STORE_TITLE"/> ичинде аларга байланыштуу маалымат жок. Демек, бул курамдык бөлүктөр тымызын орнотулган.</translation>
+<translation id="5875641815673321623"><ph name="BEGIN_BOLD"/>Маалыматыңызды кантип башкара аласыз:<ph name="END_BOLD"/> Купуялыгыңызды камсыздоо үчүн 4 апта мурун кызыккан нерселериңизди автоматтык түрдө жок кылып турабыз. Жаңы сайттарды карап чыккан сайын кызыккан нерселериңиздин тизмеси жаңыланып турат. Же болбосо кызыккан нерселерге кошкуңуз келбегендерин алып салсаңыз болот.</translation>
 <translation id="1628000112320670027">Chrome'дон жардам алуу</translation>
 <translation id="1640672724030957280">Жүктөлүп алынууда...</translation>
 <translation id="1662146548738125461">ChromeOS Flex жөнүндө маалымат</translation>
-<translation id="1674870198290878346">Шилтемени Chrome'дун жашы&amp;руун терезесинде ачуу</translation>
-<translation id="1682634494516646069">Google Chrome дайындар каталогун окуп, ага жаза албайт:
+<translation id="5500958820122281144">Шилтемени Ecosia'дун жашы&amp;руун терезесинде ачуу</translation>
+<translation id="7602423871874451395">Ecosia дайындар каталогун окуп, ага жаза албайт:
 
-<ph name="USER_DATA_DIRECTORY" /></translation>
-<translation id="1691802391966922744">{COUNT,plural, =1{Администраторуңуз Chrome 1 мүнөттөн ашуун убакыт күтүү режиминде болгондо жабылгыдай кылып конфигурациялады.}other{Администраторуңуз Chrome # мүнөттөн ашуун убакыт күтүү режиминде болгондо жабылгыдай кылып конфигурациялады.}}</translation>
-<translation id="1698376642261615901">Google Chrome – веб-баракчалар жана колдонмолорду чагылгандай тездик менен иштеткен желе серепчиси. Ал оңой, тез жана туруктуу иштеген курал. Google Chrome кесепеттүү программалар менен фишингден коргоп тургандыктан, желени эч нерседен коркпостон серептей берсеңиз болот.</translation>
-<translation id="1713301662689114961">{0,plural, =1{Chrome 1 сааттан кийин кайра иштетилет}other{Chrome # сааттан кийин кайра иштетилет}}</translation>
-<translation id="1734234790201236882">Chrome бул сырсөздү Google аккаунтуңузга сактап коёт. Аны эстеп калуунун кажети жок.</translation>
-<translation id="1759842336958782510">Chrome</translation>
-<translation id="1786003790898721085">Chrome'го <ph name="TARGET_DEVICE_NAME" /> түзмөгүңүздөн кирип турганыңызды текшерип, кайра жөнөтүп көрүңүз.</translation>
+<ph name="USER_DATA_DIRECTORY"/></translation>
+<translation id="1914619467562029368">{COUNT,plural, =1{Администраторуңуз Ecosia 1 мүнөттөн ашуун убакыт күтүү режиминде болгондо жабылгыдай кылып конфигурациялады.}other{Администраторуңуз Ecosia # мүнөттөн ашуун убакыт күтүү режиминде болгондо жабылгыдай кылып конфигурациялады.}}</translation>
+<translation id="3939060118711873999">Ecosia – веб-баракчалар жана колдонмолорду чагылгандай тездик менен иштеткен желе серепчиси. Ал оңой, тез жана туруктуу иштеген курал. Ecosia кесепеттүү программалар менен фишингден коргоп тургандыктан, желени эч нерседен коркпостон серептей берсеңиз болот.</translation>
+<translation id="6022879254514691681">{0,plural, =1{Ecosia 1 сааттан кийин кайра иштетилет}other{Ecosia # сааттан кийин кайра иштетилет}}</translation>
+<translation id="4021894801595982809">Ecosia бул сырсөздү Ecosia аккаунтуңузга сактап коёт. Аны эстеп калуунун кажети жок.</translation>
+<translation id="4811228173434336381">Ecosia</translation>
+<translation id="2346323077583431428">Ecosia'го <ph name="TARGET_DEVICE_NAME"/> түзмөгүңүздөн кирип турганыңызды текшерип, кайра жөнөтүп көрүңүз.</translation>
 <translation id="1812689907177901597">Ушуну өчүрүү менен Gmail сыяктуу Google сайттарына Chrome'суз кире аласыз</translation>
-<translation id="1860536484129686729">Бул сайтта иштөө үчүн Chrome камераңызды колдонушу керек</translation>
-<translation id="1873233029667955273">Google Chrome сиздин демейки серепчиңиз эмес</translation>
-<translation id="1874309113135274312">Google Chrome Бета (mDNS-In)</translation>
-<translation id="1877026089748256423">Chrome эскирип калган.</translation>
+<translation id="5055330219314726197">Бул сайтта иштөө үчүн Ecosia камераңызды колдонушу керек</translation>
+<translation id="1508200558303644420">Ecosia сиздин демейки серепчиңиз эмес</translation>
+<translation id="8135642897811755229">Ecosia Бета (mDNS-In)</translation>
+<translation id="7268098999602465369">Ecosia эскирип калган.</translation>
 <translation id="1919130412786645364">Chrome'го кирүүгө уруксат берүү</translation>
-<translation id="1952239763774043237">Google Chrome жаңыртууларын алып туруу үчүн macOS 10.13 же андан кийинки версиясын орнотушуңуз керек. Бул компьютерде macOS 10.12 версиясы колдонулууда.</translation>
-<translation id="1953553007165777902">Жүктөлүп алынууда... <ph name="MINUTE" /> мүнөт калды</translation>
-<translation id="2018528049276128029">Ар бир профилде өзүнө таандык кыстармалар, таржымал, сырсөздөр жана башкалар сыяктуу Chrome маалыматы бар</translation>
+<translation id="6235917057647038042">Ecosia жаңыртууларын алып туруу үчүн macOS 10.13 же андан кийинки версиясын орнотушуңуз керек. Бул компьютерде macOS 10.12 версиясы колдонулууда.</translation>
+<translation id="1953553007165777902">Жүктөлүп алынууда... <ph name="MINUTE"/> мүнөт калды</translation>
+<translation id="8608092457636055141">Ар бир профилде өзүнө таандык кыстармалар, таржымал, сырсөздөр жана башкалар сыяктуу Ecosia маалыматы бар</translation>
 <translation id="2018879682492276940">Орнотулбай калды. Кайталап көрүңүз.</translation>
-<translation id="2071318482926839249">Башка аккаунт кирип турат. Сиз карап чыккан нерселерди ажыратуу максатында Chrome сиз үчүн өзүнчө профиль түзүп бере алат.</translation>
+<translation id="7375011918167125899">Башка аккаунт кирип турат. Сиз карап чыккан нерселерди ажыратуу максатында Ecosia сиз үчүн өзүнчө профиль түзүп бере алат.</translation>
 <translation id="207902854391093810">Сыноолор күйүк болгондо, Жарнамаларды талдоо аркылуу сиз баш баккан сайттар Chrome'дон маалымат алып, жарнамаларынын майнаптуулугун талдай алышат. Жарнамаларды талдоо сайттарга мүмкүн болушунча аз маалымат өткөрүү менен башка сайттарга көз салууну чектейт.</translation>
-<translation id="2091012649849228750">Google Chrome жаңыртууларын алып туруу үчүн Windows 10 же андан кийинки версиясын орнотушуңуз керек. Бул компьютерде Windows 8 версиясы колдонулууда.</translation>
-<translation id="2094648590148273905">ChromeOS Flex шарттары</translation>
-<translation id="2094919256425865063">Баары бир Chrome'ду токтотосузбу?</translation>
-<translation id="2106831557840787829">ChromeOS Flex тутуму, <ph name="BEGIN_LINK_LINUX_OSS" />Linux'ту өнүктүрүү чөйрөсү<ph name="END_LINK_LINUX_OSS" /> сыяктуу, кошумча <ph name="BEGIN_LINK_CROS_OSS" />баштапкы коду ачык программалык камсыздоонун<ph name="END_LINK_CROS_OSS" /> жардамы менен иштейт.</translation>
-<translation id="2120620239521071941">Ушуну менен түзмөктөгү <ph name="ITEMS_COUNT" /> нерсе өчүрүлөт. Дайын-даректериңизди кийинчерээк чыгарып алуу үчүн Chrome'го <ph name="USER_EMAIL" /> аккаунту менен кириңиз.</translation>
-<translation id="2121284319307530122">&amp;Chrome'ду жаңыртуу үчүн кайра иштетиңиз</translation>
-<translation id="2123055963409958220"><ph name="BEGIN_LINK" />Учурдагы жөндөөлөр<ph name="END_LINK" /> жөнүндө кабар берип, Chrome'ду өркүндөтүүгө кол кабыш кылыңыз</translation>
+<translation id="8655983536493871574">Ecosia жаңыртууларын алып туруу үчүн Windows 10 же андан кийинки версиясын орнотушуңуз керек. Бул компьютерде Windows 8 версиясы колдонулууда.</translation>
+<translation id="3590393640971125498">EcosiaOS Flex шарттары</translation>
+<translation id="864244542982029641">Баары бир Ecosia'ду токтотосузбу?</translation>
+<translation id="3791194915692553395">EcosiaOS Flex тутуму, <ph name="BEGIN_LINK_LINUX_OSS"/>Linux'ту өнүктүрүү чөйрөсү<ph name="END_LINK_LINUX_OSS"/> сыяктуу, кошумча <ph name="BEGIN_LINK_CROS_OSS"/>баштапкы коду ачык программалык камсыздоонун<ph name="END_LINK_CROS_OSS"/> жардамы менен иштейт.</translation>
+<translation id="2120620239521071941">Ушуну менен түзмөктөгү <ph name="ITEMS_COUNT"/> нерсе өчүрүлөт. Дайын-даректериңизди кийинчерээк чыгарып алуу үчүн Chrome'го <ph name="USER_EMAIL"/> аккаунту менен кириңиз.</translation>
+<translation id="2159716220295742156">&amp;Ecosia'ду жаңыртуу үчүн кайра иштетиңиз</translation>
+<translation id="2123055963409958220"><ph name="BEGIN_LINK"/>Учурдагы жөндөөлөр<ph name="END_LINK"/> жөнүндө кабар берип, Chrome'ду өркүндөтүүгө кол кабыш кылыңыз</translation>
 <translation id="2131230230468101642">Купуялыгыңызды камсыздоо үчүн 4 апта мурун кызыккан нерселериңизди автоматтык түрдө жок кылып турабыз. Жаңы сайттарды карап чыккан сайын кызыккан нерселериңиздин тизмеси жаңыланып турат. Же болбосо кызыккан нерселерге кошкуңуз келбегендерин алып салсаңыз болот.</translation>
-<translation id="2139300032719313227">ChromeOS'ту өчүрүп-күйгүзүңүз</translation>
-<translation id="2151406531797534936">Chrome'ду азыр өчүрүп күйгүзүңүз</translation>
+<translation id="5404489723475681578">EcosiaOS'ту өчүрүп-күйгүзүңүз</translation>
+<translation id="5982672133249369264">Ecosia'ду азыр өчүрүп күйгүзүңүз</translation>
 <translation id="2174917724755363426">Орнотулган жок. Чын эле токтотосузбу?</translation>
 <translation id="223889379102603431">Chrome негизги тастыктамаларын кантип башкара тургандыгы жөнүндө маалымат</translation>
-<translation id="2258103955319320201">Chrome серепчисиндеги файлдарды бардык түзмөктөрүңүздө колдонуу үчүн аккаунтуңузга кирип, шайкештирүүнү күйгүзүңүз</translation>
-<translation id="2290014774651636340">Google API ачкычтары жок. Google Chrome'дун айрым функциялары өчүрүлөт.</translation>
-<translation id="2290095356545025170">Google Chrome'ду чын эле орнотуудан чыгаргыңыз келеби?</translation>
+<translation id="4337034173783952373">Ecosia серепчисиндеги файлдарды бардык түзмөктөрүңүздө колдонуу үчүн аккаунтуңузга кирип, шайкештирүүнү күйгүзүңүз</translation>
+<translation id="4735588186234302898">Ecosia API ачкычтары жок. Ecosia'дун айрым функциялары өчүрүлөт.</translation>
+<translation id="7908111389403807005">Ecosia'ду чын эле орнотуудан чыгаргыңыз келеби?</translation>
 <translation id="2309047409763057870">Бул Chromium'дун кошумча орнотулушу болгондуктан, аны демейки серепчиңиз катары тандай албайсыз.</translation>
-<translation id="2345992953227471816">Chrome төмөнкү кеңейтүүлөрдө кесепеттүү программанын болгонун аныктады:</translation>
-<translation id="2348335408836342058">Бул сайтта иштөө үчүн Chrome камераңызды жана микрофонуңузду колдонушу керек</translation>
+<translation id="7613817989637275906">Ecosia төмөнкү кеңейтүүлөрдө кесепеттүү программанын болгонун аныктады:</translation>
+<translation id="7273750863406285983">Бул сайтта иштөө үчүн Ecosia камераңызды жана микрофонуңузду колдонушу керек</translation>
 <translation id="234869673307233423">Chrome сырсөздөрүңүздү текшере албай жатат. Кийинчерээк кайталаңыз.</translation>
-<translation id="235650106824528204">Бул профилди колдонуп жатканда Chrome'до топтолгон бардык маалыматты (түзүлгөн кыстармалар, таржымал, сырсөздөр жана башка жөндөөлөр) жумуш профилинин администратору өчүрө алат. <ph name="LEARN_MORE" /></translation>
+<translation id="5707346538075088068">Бул профилди колдонуп жатканда Ecosia'до топтолгон бардык маалыматты (түзүлгөн кыстармалар, таржымал, сырсөздөр жана башка жөндөөлөр) жумуш профилинин администратору өчүрө алат. <ph name="LEARN_MORE"/></translation>
 <translation id="2359808026110333948">Улантуу</translation>
-<translation id="2401189691232800402">ChromeOS тутуму</translation>
-<translation id="2467438592969358367">Google Chrome сырсөздөрүңүздү экспорттогону жатат. Ага уруксат берүү үчүн Windows аккаунтуңуздун сырсөзүн териңиз.</translation>
+<translation id="3959732324458144441">EcosiaOS тутуму</translation>
+<translation id="3632544319066562282">Ecosia сырсөздөрүңүздү экспорттогону жатат. Ага уруксат берүү үчүн Windows аккаунтуңуздун сырсөзүн териңиз.</translation>
 <translation id="2485422356828889247">Орнотуудан чыгаруу</translation>
 <translation id="2534507159460261402">Google Pay (Chrome'го көчүрүлдү)</translation>
 <translation id="2559253115192232574">Кийинчерээк сиз баш баккан сайттар Chrome'дон кызыккан нерселериңиз тууралуу маалымат алып, ылайыктуу жарнамаларды көрсөтө алат. Chrome 3 кызыккан нерсеңизди бөлүшө алат.</translation>
 <translation id="2563121210305478421">Chrome'ду кайра иштетесизби?</translation>
-<translation id="2574930892358684005"><ph name="EXISTING_USER" /> ушул Chrome профилине мурунтан эле кирип турат. Сиз серептеген нерселерди ажыратуу максатында Chrome сиз үчүн өзүнчө профиль түзүп бере алат.</translation>
-<translation id="2580411288591421699">Учурда иштеп жаткан Google Chrome версиясын орнотуу мүмкүн эмес. Google Chrome'ду жаап, дагы бир жолу аракет кылып көрүңүз.</translation>
-<translation id="2586406160782125153">Ушуну менен бул түзмөктөн серептөө дайын-даректериңиз өчүрүлөт. Дайын-даректериңизди кийинчерээк чыгарып алуу үчүн Chrome'го <ph name="USER_EMAIL" /> аккаунту менен кириңиз.</translation>
-<translation id="2597976513418770460">Chrome серепчисиндеги нерселерге <ph name="ACCOUNT_EMAIL" /> аккаунту менен өтүңүз</translation>
+<translation id="5824812022890208563"><ph name="EXISTING_USER"/> ушул Ecosia профилине мурунтан эле кирип турат. Сиз серептеген нерселерди ажыратуу максатында Ecosia сиз үчүн өзүнчө профиль түзүп бере алат.</translation>
+<translation id="80155189677487610">Учурда иштеп жаткан Ecosia версиясын орнотуу мүмкүн эмес. Ecosia'ду жаап, дагы бир жолу аракет кылып көрүңүз.</translation>
+<translation id="2586406160782125153">Ушуну менен бул түзмөктөн серептөө дайын-даректериңиз өчүрүлөт. Дайын-даректериңизди кийинчерээк чыгарып алуу үчүн Chrome'го <ph name="USER_EMAIL"/> аккаунту менен кириңиз.</translation>
+<translation id="6391863622742187823">Ecosia серепчисиндеги нерселерге <ph name="ACCOUNT_EMAIL"/> аккаунту менен өтүңүз</translation>
 <translation id="2622559029861875898">Chrome жаңыртууларды текшере алган жок. Интернет байланышын текшерип көрүңүз.</translation>
-<translation id="2645435784669275700">ChromeOS</translation>
-<translation id="2652691236519827073">Шилтемени жаңы Chrome &amp;өтмөгүндө ачуу</translation>
-<translation id="2665296953892887393">Google'га автоматтык түрдө каталар жана <ph name="UMA_LINK" /> жөнүндө кабар берип, Google Chrome'ду өркүндөткөнгө кол кабыш кылыңыз!</translation>
-<translation id="2689103672227170538">Бул кеңейтүү Chrome иштеп баштаганда көрсөтүлө турган бетти өзгөрттү.</translation>
-<translation id="2742320827292110288">Эскертүү: Google Chrome кеңейтүүлөргө көрүлгөн вебсайттарды жазып алууга тыюу сала албайт. Бул кеңейтүүнү жашыруун режимде өчүрүү үчүн бул параметрди тандоодон чыгарыңыз.</translation>
-<translation id="2765403129283291972">Бул сайтта иштөө үчүн Chrome микрофонуңузду колдонушу керек</translation>
+<translation id="1761341660094265938">EcosiaOS</translation>
+<translation id="7774247008790177839">Шилтемени жаңы Ecosia &amp;өтмөгүндө ачуу</translation>
+<translation id="9178613517891824246">Ecosia'га автоматтык түрдө каталар жана <ph name="UMA_LINK"/> жөнүндө кабар берип, Ecosia'ду өркүндөткөнгө кол кабыш кылыңыз!</translation>
+<translation id="815199437159352723">Бул кеңейтүү Ecosia иштеп баштаганда көрсөтүлө турган бетти өзгөрттү.</translation>
+<translation id="1676748966275099244">Эскертүү: Ecosia кеңейтүүлөргө көрүлгөн вебсайттарды жазып алууга тыюу сала албайт. Бул кеңейтүүнү жашыруун режимде өчүрүү үчүн бул параметрди тандоодон чыгарыңыз.</translation>
+<translation id="1831192335802727557">Бул сайтта иштөө үчүн Ecosia микрофонуңузду колдонушу керек</translation>
 <translation id="2770231113462710648">Демейки серепчини төмөнкүгө өзгөртүү:</translation>
 <translation id="2775140325783767197">Chrome сырсөздөрүңүздү текшере албай жатат. Интернет байланышын текшерип көрүңүз.</translation>
 <translation id="2799223571221894425">Кайра ишке киргизүү</translation>
 <translation id="2847461019998147611">Google Chrome ушул тилде көрүнсүн</translation>
-<translation id="2857540653560290388">Chrome иштетилүүдө…</translation>
-<translation id="2857972467023607093">Бул аккаунт менен Chrome профили мурунтан эле түзүлгөн</translation>
-<translation id="2861074815332034794">Chrome жаңыртылууда (<ph name="PROGRESS_PERCENT" />)</translation>
-<translation id="2871893339301912279">Chrome'го кирдиңиз!</translation>
+<translation id="8109744984354428711">Ecosia иштетилүүдө…</translation>
+<translation id="812798451698099271">Бул аккаунт менен Ecosia профили мурунтан эле түзүлгөн</translation>
+<translation id="2861074815332034794">Chrome жаңыртылууда (<ph name="PROGRESS_PERCENT"/>)</translation>
+<translation id="727568860157522676">Ecosia'го кирдиңиз!</translation>
 <translation id="2885378588091291677">Тапшырмаларды башкаргыч</translation>
 <translation id="2888126860611144412">Chrome тууралуу</translation>
 <translation id="2915996080311180594">Кийинчерээк өчүрүп күйгүзүү</translation>
-<translation id="2926676257163822632">Начар сырсөздөрдү билип алуу оңой. Chrome'го <ph name="BEGIN_LINK" />сиз үчүн татаал сырсөздөрдү түзүп, эстеп калууга<ph name="END_LINK" /> уруксат бериңиз.</translation>
-<translation id="2926952073016206995">Chrome'го бул сайтта камераны колдонууга уруксат бериңиз</translation>
+<translation id="2926676257163822632">Начар сырсөздөрдү билип алуу оңой. Chrome'го <ph name="BEGIN_LINK"/>сиз үчүн татаал сырсөздөрдү түзүп, эстеп калууга<ph name="END_LINK"/> уруксат бериңиз.</translation>
+<translation id="219546601381787154">Ecosia'го бул сайтта камераны колдонууга уруксат бериңиз</translation>
 <translation id="2928420929544864228">Орнотулду.</translation>
-<translation id="2929907241665500097">Chrome жаңырган жок. Бир жерден ката кетти. <ph name="BEGIN_LINK" />Chrome'догу жаңыртуу маселелерин оңдоңуз.<ph name="END_LINK" /></translation>
-<translation id="2969728957078202736"><ph name="PAGE_TITLE" /> – Тармакка кирүү – Chrome</translation>
-<translation id="3019382870990049182">ChromeOS Flex системасын жаңыртуу үчүн кайра иштетүү</translation>
+<translation id="2929907241665500097">Chrome жаңырган жок. Бир жерден ката кетти. <ph name="BEGIN_LINK"/>Chrome'догу жаңыртуу маселелерин оңдоңуз.<ph name="END_LINK"/></translation>
+<translation id="3907708440788567041"><ph name="PAGE_TITLE"/> – Тармакка кирүү – Ecosia</translation>
+<translation id="5622643576877267490">EcosiaOS Flex системасын жаңыртуу үчүн кайра иштетүү</translation>
 <translation id="303514781271618814">Chrome сайттар дайын-даректериңизди азыраак колдонуу менен бирдей карап чыгуу мүмкүнчүлүгүн бере турган жаңы функцияларды изилдеп жатат</translation>
-<translation id="3037838751736561277">Google Chrome фондук режимде.</translation>
+<translation id="2234042158691635795">Ecosia фондук режимде.</translation>
 <translation id="3038232873781883849">Орнотулушу күтүлүүдө...</translation>
 <translation id="3059710691562604940">Коопсуз серептөө өчүк. Chrome аны күйгүзүүнү сунуштайт.</translation>
-<translation id="3065168410429928842">Chrome өтмөгү</translation>
+<translation id="385080958066798123">Ecosia өтмөгү</translation>
 <translation id="3080151273017101988">Google Chrome жабылганда фондук колдонмолор иштей берсин</translation>
-<translation id="3089968997497233615">Google Chrome'дун бир кыйла жаңы, коопсуз версиясы бар.</translation>
+<translation id="6876820794875877783">Ecosia'дун бир кыйла жаңы, коопсуз версиясы бар.</translation>
 <translation id="3100998948628680988">Chrome профилиңиздин аталышын коюңуз</translation>
-<translation id="3114643501466072395">Башка сырсөздөрүңүздүн бекем корголгонун, ошондой эле коопсуздукка байланыштуу көйгөйлөрдү текшерүү үчүн <ph name="BEGIN_LINK" />Chrome'го кириңиз<ph name="END_LINK" />.</translation>
-<translation id="3140883423282498090">Өзгөртүүлөрүңүз Google Chrome кийинки жолу кайра ишке киргизилгенде күчүнө кирет.</translation>
-<translation id="3149510190863420837">Chrome колдонмолору</translation>
-<translation id="3169523567916669830">Сыноо учурунда сайттар жарнамаларды көрсөтүү үчүн колдонгон темаларды көрүп, өчүрө аласыз. Chrome сизди кызыктырган темаларды акыркы көргөн вебсайттарыңыздын негизинде божомолдойт.</translation>
-<translation id="3211604354460514046">{NUM_DEVICES,plural, =1{Google Chrome HID түзмөгүнө туташып турат}other{Google Chrome HID түзмөктөрүнө туташып турат}}</translation>
+<translation id="3114643501466072395">Башка сырсөздөрүңүздүн бекем корголгонун, ошондой эле коопсуздукка байланыштуу көйгөйлөрдү текшерүү үчүн <ph name="BEGIN_LINK"/>Chrome'го кириңиз<ph name="END_LINK"/>.</translation>
+<translation id="1722634673917783018">Өзгөртүүлөрүңүз Ecosia кийинки жолу кайра ишке киргизилгенде күчүнө кирет.</translation>
+<translation id="2636091632287013185">Ecosia колдонмолору</translation>
+<translation id="7580831958727159171">Сыноо учурунда сайттар жарнамаларды көрсөтүү үчүн колдонгон темаларды көрүп, өчүрө аласыз. Ecosia сизди кызыктырган темаларды акыркы көргөн вебсайттарыңыздын негизинде божомолдойт.</translation>
+<translation id="2899530016847324742">{NUM_DEVICES,plural, =1{Ecosia HID түзмөгүнө туташып турат}other{Ecosia HID түзмөктөрүнө туташып турат}}</translation>
 <translation id="3245429137663807393">Chrome'дун колдонулушу тууралуу кабарларды да бөлүшсөңүз, ал кабарларда сиз баш баккан URL даректери камтылат</translation>
-<translation id="3282568296779691940">Chrome'го кириңиз</translation>
+<translation id="2388751143175762498">Ecosia'го кириңиз</translation>
 <translation id="3286538390144397061">Азыр өчүрүп күйгүзүү</translation>
-<translation id="3360895254066713204">Chrome Жардамчысы</translation>
-<translation id="3379938682270551431">{0,plural, =0{Chrome азыр кайра иштетилет}=1{Chrome 1 секунддан кийин кайра иштетилет}other{Chrome # секунддан кийин кайра иштетилет}}</translation>
-<translation id="3396977131400919238">Орнотулуп жатканда иш тутумунда ката кетти. Google Chrome'ду кайра жүктөп алыңыз.</translation>
-<translation id="3426646014273736870">Эстутумду үнөмдөгүч аркылуу Chrome тезирээк иштеп калды</translation>
+<translation id="9090890391337853620">Ecosia Жардамчысы</translation>
+<translation id="5690368185132749068">{0,plural, =0{Ecosia азыр кайра иштетилет}=1{Ecosia 1 секунддан кийин кайра иштетилет}other{Ecosia # секунддан кийин кайра иштетилет}}</translation>
+<translation id="7280797724682955539">Орнотулуп жатканда иш тутумунда ката кетти. Ecosia'ду кайра жүктөп алыңыз.</translation>
+<translation id="2298752889004612764">Эстутумду үнөмдөгүч аркылуу Ecosia тезирээк иштеп калды</translation>
 <translation id="3428747202529429621">Аккаунтуңузга киргенде Chrome'до жана башка Google колдонмолорунда коопсуздугуңузду коргоп турат</translation>
 <translation id="3434246496373299699">Google аккаунтуңуз менен киргенде Chrome сырсөздөрүңүздү текшерет</translation>
-<translation id="3451115285585441894">Chrome'го кошулууда…</translation>
-<translation id="345171907106878721">Өзүңүздү Chrome'го кошуңуз</translation>
-<translation id="3453763134178591239">ChromeOS шарттары</translation>
-<translation id="34857402635545079">Chrome'догу дайындар да тазалансын (<ph name="URL" />)</translation>
-<translation id="3503306920980160878">Бул сайт менен бөлүшүү үчүн Chrome жайгашкан жериңиз тууралуу маалыматты алышы керек</translation>
+<translation id="1762318218111418450">Ecosia'го кошулууда…</translation>
+<translation id="6761747850241550887">Өзүңүздү Ecosia'го кошуңуз</translation>
+<translation id="2149148292984034533">EcosiaOS шарттары</translation>
+<translation id="3674955518940155608">Ecosia'догу дайындар да тазалансын (<ph name="URL"/>)</translation>
+<translation id="6558895515431832002">Бул сайт менен бөлүшүү үчүн Ecosia жайгашкан жериңиз тууралуу маалыматты алышы керек</translation>
 <translation id="3533694711092285624">Сакталган сырсөздөр жок. Сырсөздөрүңүздү сактаганда Chrome аларды текшере алат.</translation>
 <translation id="3541482654983822893">Chrome сырсөздөрүңүздү текшере албай жатат. 24 сааттан кийин кайра аракет кылыңыз.</translation>
-<translation id="3576528680708590453">Тутумуңуздун администратору Google Chrome'ду <ph name="TARGET_URL_HOSTNAME" /> шилтемесин кошумча серепчиде ачылгыдай кылып конфигурациялады.</translation>
+<translation id="8901409988302458368">Тутумуңуздун администратору Ecosia'ду <ph name="TARGET_URL_HOSTNAME"/> шилтемесин кошумча серепчиде ачылгыдай кылып конфигурациялады.</translation>
 <translation id="3579965087968408543">Chrome'ду жапкан сайын түзмөгүңүздөгү сайттардын маалыматын тазалоо</translation>
-<translation id="3582972582564653026">Chrome'ду бардык түзмөктөрүңүздө шайкештирип, жекелештиресиз</translation>
-<translation id="3596080736082218006">{COUNT,plural, =0{Администраторуңуз жаңыртууну колдонуу үчүн Chrome'ду кайра иштетүүнү талап кылууда}=1{Администраторуңуз жаңыртууну колдонуу үчүн Chrome'ду кайра иштетүүнү талап кылууда. Жашыруун терезеңиз кайра ачылбайт.}other{Администраторуңуз жаңыртууну колдонуу үчүн Chrome'ду кайра иштетүүнү талап кылууда. # жашыруун терезеңиз кайра ачылбайт.}}</translation>
-<translation id="3622797965165704966">Эми Google Аккаунтуңуз аркылуу жана бөлүшүлгөн компьютерлерден Chrome'до иштөө алдаганча жеңилирээк болуп калды.</translation>
-<translation id="3673813398384385993">Chrome "<ph name="EXTENSION_NAME" />" кеңейтүүсүндө кесепеттүү программанын болгонун аныктады</translation>
-<translation id="3703994572283698466">ChromeOS тутуму, <ph name="BEGIN_LINK_LINUX_OSS" />Linux'ту өнүктүрүү чөйрөсү<ph name="END_LINK_LINUX_OSS" /> сыяктуу, кошумча <ph name="BEGIN_LINK_CROS_OSS" />баштапкы коду ачык программалык камсыздоонун<ph name="END_LINK_CROS_OSS" /> жардамы менен иштейт.</translation>
+<translation id="7174674455569790401">Ecosia'ду бардык түзмөктөрүңүздө шайкештирип, жекелештиресиз</translation>
+<translation id="4933729908795930260">{COUNT,plural, =0{Администраторуңуз жаңыртууну колдонуу үчүн Ecosia'ду кайра иштетүүнү талап кылууда}=1{Администраторуңуз жаңыртууну колдонуу үчүн Ecosia'ду кайра иштетүүнү талап кылууда. Жашыруун терезеңиз кайра ачылбайт.}other{Администраторуңуз жаңыртууну колдонуу үчүн Ecosia'ду кайра иштетүүнү талап кылууда. # жашыруун терезеңиз кайра ачылбайт.}}</translation>
+<translation id="464306605599005355">Эми Ecosia Аккаунтуңуз аркылуу жана бөлүшүлгөн компьютерлерден Ecosia'до иштөө алдаганча жеңилирээк болуп калды.</translation>
+<translation id="1490060441084292633">Ecosia "<ph name="EXTENSION_NAME"/>" кеңейтүүсүндө кесепеттүү программанын болгонун аныктады</translation>
+<translation id="5311911269004680646">EcosiaOS тутуму, <ph name="BEGIN_LINK_LINUX_OSS"/>Linux'ту өнүктүрүү чөйрөсү<ph name="END_LINK_LINUX_OSS"/> сыяктуу, кошумча <ph name="BEGIN_LINK_CROS_OSS"/>баштапкы коду ачык программалык камсыздоонун<ph name="END_LINK_CROS_OSS"/> жардамы менен иштейт.</translation>
 <translation id="3716540481907974026">ChromeOS Flex версиясы</translation>
-<translation id="3718181793972440140">Ушуну менен түзмөктөгү 1 нерсе өчүрүлөт. Дайын-даректериңизди кийинчерээк чыгарып алуу үчүн Chrome'го <ph name="USER_EMAIL" /> аккаунту менен кириңиз.</translation>
-<translation id="3735758079232443276">"<ph name="EXTENSION_NAME" />" кеңейтүүсү Chrome иштеп баштаганда көрсөтүлө турган бетти өзгөрттү.</translation>
+<translation id="3718181793972440140">Ушуну менен түзмөктөгү 1 нерсе өчүрүлөт. Дайын-даректериңизди кийинчерээк чыгарып алуу үчүн Chrome'го <ph name="USER_EMAIL"/> аккаунту менен кириңиз.</translation>
+<translation id="9032120646440147804">"<ph name="EXTENSION_NAME"/>" кеңейтүүсү Ecosia иштеп баштаганда көрсөтүлө турган бетти өзгөрттү.</translation>
 <translation id="3744202345691150878">ChromeOS'тон жардам алыңыз</translation>
-<translation id="3780814664026482060">Chrome - <ph name="PAGE_TITLE" /></translation>
-<translation id="3785324443014631273">Кирүү катасынан улам, ChromeOS Flex дайын-даректериңизди шайкештештире алган жок.</translation>
-<translation id="3795971588916395511">Google ChromeOS</translation>
-<translation id="3835168907083856002">Ушуну менен <ph name="USER_EMAIL_ADDRESS" /> үчүн жаңы Chrome профили түзүлөт</translation>
-<translation id="386202838227397562">Бардык Google Chrome терезелерин жаап, дагы бир жолу аракет кылыңыз.</translation>
-<translation id="3865754807470779944"><ph name="PRODUCT_VERSION" /> Chrome версиясы орнотулду</translation>
-<translation id="3873044882194371212">Шилтемени Chrome'дун жашы&amp;руун терезесинде ачуу</translation>
-<translation id="3889417619312448367">Google Chrome'ду орнотуудан чыгаруу</translation>
-<translation id="3999683152997576765">Сайттар жарнамаларды көрсөтүү үчүн колдонгон темаларды көрүп, өчүрө аласыз. Chrome сизди кызыктырган темаларды акыркы көргөн вебсайттарыңыздын негизинде божомолдойт.</translation>
-<translation id="4035053306113201399">Жаңыртууну колдонуу үчүн ChromeOS өчүрүлүп күйгүзүлүшү керек.</translation>
+<translation id="4600924482853773728">Ecosia - <ph name="PAGE_TITLE"/></translation>
+<translation id="4969069484658032230">Кирүү катасынан улам, EcosiaOS Flex дайын-даректериңизди шайкештештире алган жок.</translation>
+<translation id="1761341660094265938">EcosiaOS</translation>
+<translation id="3952510753191144456">Ушуну менен <ph name="USER_EMAIL_ADDRESS"/> үчүн жаңы Ecosia профили түзүлөт</translation>
+<translation id="8534308095039131078">Бардык Ecosia терезелерин жаап, дагы бир жолу аракет кылыңыз.</translation>
+<translation id="3865754807470779944"><ph name="PRODUCT_VERSION"/> Chrome версиясы орнотулду</translation>
+<translation id="8283315171506895091">Шилтемени Ecosia'дун жашы&amp;руун терезесинде ачуу</translation>
+<translation id="6496553866814956056">Ecosia'ду орнотуудан чыгаруу</translation>
+<translation id="1118786556671181978">Сайттар жарнамаларды көрсөтүү үчүн колдонгон темаларды көрүп, өчүрө аласыз. Ecosia сизди кызыктырган темаларды акыркы көргөн вебсайттарыңыздын негизинде божомолдойт.</translation>
+<translation id="8047394653992042491">Жаңыртууну колдонуу үчүн EcosiaOS өчүрүлүп күйгүзүлүшү керек.</translation>
 <translation id="4050175100176540509">Эң акыркы версияда коопсуздукту бекемдөө каражаттары менен жаңы мүмкүнчүлүктөр камтылган.</translation>
-<translation id="4053720452172726777">Google Chrome'ду өзгөчөлөштүрүү жана көзөмөлдөө</translation>
-<translation id="4106587138345390261">Chrome сайттар маалыматыңызды азыраак колдонуу менен бирдей карап чыгуу мүмкүнчүлүгүн бере турган жаңы функцияларды изилдеп жатат</translation>
-<translation id="4110895483821904099">Жаңы Chrome профилин жөндөп алыңыз</translation>
-<translation id="4147555960264124640">Башкарылган аккаунт менен кирип, анын администраторуна Google Chrome профилиңизди көзөмөлдөө мүмкүнчүлүгүн берип жатасыз. Колдонмолоруңуз, кыстармалар, таржымал, сырсөздөр жана башка жөндөөлөр сыяктуу Chrome дайын-даректериңиз эми биротоло <ph name="USER_NAME" /> менен байланып калат. Бул дайындарды Google Каттоо эсептеринин Жеке кеңсеси аркылуу жок кылсаңыз болот, бирок башка аккаунтка байланыштыра албайсыз. <ph name="LEARN_MORE" /></translation>
+<translation id="4817913198787198451">Ecosia'ду өзгөчөлөштүрүү жана көзөмөлдөө</translation>
+<translation id="3708834841667355707">Ecosia сайттар маалыматыңызды азыраак колдонуу менен бирдей карап чыгуу мүмкүнчүлүгүн бере турган жаңы функцияларды изилдеп жатат</translation>
+<translation id="319566061277127356">Жаңы Ecosia профилин жөндөп алыңыз</translation>
+<translation id="7105712012505419722">Башкарылган аккаунт менен кирип, анын администраторуна Ecosia профилиңизди көзөмөлдөө мүмкүнчүлүгүн берип жатасыз. Колдонмолоруңуз, кыстармалар, таржымал, сырсөздөр жана башка жөндөөлөр сыяктуу Ecosia дайын-даректериңиз эми биротоло <ph name="USER_NAME"/> менен байланып калат. Бул дайындарды Ecosia Каттоо эсептеринин Жеке кеңсеси аркылуу жок кылсаңыз болот, бирок башка аккаунтка байланыштыра албайсыз. <ph name="LEARN_MORE"/></translation>
 <translation id="4148957013307229264">Орнотулууда…</translation>
-<translation id="4149882025268051530">Орноткуч архивди чыгара албай койду. Google Chrome'ду кайра жүктөп алыңыз.</translation>
-<translation id="4191857738314598978">{0,plural, =1{Chrome 1 күндүн ичинде кайра иштетилет}other{Chrome # күндүн ичинде кайра иштетилет}}</translation>
-<translation id="4205939740494406371">Chrome сырсөздөрүңүздү текшере албай жатат. 24 сааттан кийин кайра аракет кылыңыз же <ph name="BEGIN_LINK" />Google аккаунтуңуздагы сырсөздөрдү текшериңиз<ph name="END_LINK" />.</translation>
+<translation id="7691143774653486474">Орноткуч архивди чыгара албай койду. Ecosia'ду кайра жүктөп алыңыз.</translation>
+<translation id="6826163993811146231">{0,plural, =1{Ecosia 1 күндүн ичинде кайра иштетилет}other{Ecosia # күндүн ичинде кайра иштетилет}}</translation>
+<translation id="4205939740494406371">Chrome сырсөздөрүңүздү текшере албай жатат. 24 сааттан кийин кайра аракет кылыңыз же <ph name="BEGIN_LINK"/>Google аккаунтуңуздагы сырсөздөрдү текшериңиз<ph name="END_LINK"/>.</translation>
 <translation id="4222932583846282852">Жокко чыгарылууда…</translation>
-<translation id="4242034826641750751">Chrome'го бул сайтта камера менен микрофонду колдонууга уруксат бериңиз</translation>
+<translation id="3554373328288278512">Ecosia'го бул сайтта камера менен микрофонду колдонууга уруксат бериңиз</translation>
 <translation id="424864128008805179">Chrome каттоо эсебинен чыгасызбы?</translation>
-<translation id="4251615635259297716">Chrome дайын-даректериңиз бул аккаунтка байлансынбы?</translation>
-<translation id="4262915912852657291"><ph name="BEGIN_BOLD" />Кайсы маалымат колдонулат:<ph name="END_BOLD" /> Бул түзмөктө Chrome аркылуу баш баккан жана көргөн сайттарыңыз.</translation>
+<translation id="8384922154025337808">Ecosia дайын-даректериңиз бул аккаунтка байлансынбы?</translation>
+<translation id="4565616259974605182"><ph name="BEGIN_BOLD"/>Кайсы маалымат колдонулат:<ph name="END_BOLD"/> Бул түзмөктө Ecosia аркылуу баш баккан жана көргөн сайттарыңыз.</translation>
 <translation id="4281844954008187215">Тейлөө шарттары</translation>
 <translation id="4293420128516039005">Chrome'ду бардык түзмөктөрүңүздө шайкештирип, жекелештирүү үчүн аккаунтуңузга кириңиз</translation>
-<translation id="430327780270213103">Кеңейтүүгө Chrome'дун куралдар тилкесинде мүмкүнчүлүк алуу сурамдарын көрсөтүүгө уруксат берүү</translation>
-<translation id="4328355335528187361">Google Chrome Dev (mDNS-In)</translation>
+<translation id="6419542773162312746">Кеңейтүүгө Ecosia'дун куралдар тилкесинде мүмкүнчүлүк алуу сурамдарын көрсөтүүгө уруксат берүү</translation>
+<translation id="8864449561723972619">Ecosia Dev (mDNS-In)</translation>
 <translation id="4334294535648607276">Жүктөп алуу аяктады.</translation>
 <translation id="4335235004908507846">Chrome сырсөздөрүңүздү коопсуз сактоого, кооптуу кеңейтүүлөрдөн жана башкалардан коргоого жардам берет</translation>
-<translation id="4343195214584226067"><ph name="EXTENSION_NAME" /> Chrome'го кошулду</translation>
+<translation id="2227704215309956084"><ph name="EXTENSION_NAME"/> Ecosia'го кошулду</translation>
 <translation id="4384570495110188418">Chrome сырсөздөрүңүздү текшере албайт, анткени аккаунтуңузга кирген жоксуз</translation>
 <translation id="4427306783828095590">Өркүндөтүлгөн коргоо параметри фишинг жана кесепеттүү программалардан жакшыраак коргойт</translation>
-<translation id="4450664632294415862">Chrome – Тармакка кирүү – <ph name="PAGE_TITLE" /></translation>
-<translation id="4458462641685292929">Google Chrome'до башка операция жүрүп жатат. Кийинчерээк дагы аракет кылып көрүңүз.</translation>
+<translation id="9035946286843935549">Ecosia – Тармакка кирүү – <ph name="PAGE_TITLE"/></translation>
+<translation id="6450895420388847775">Ecosia'до башка операция жүрүп жатат. Кийинчерээк дагы аракет кылып көрүңүз.</translation>
 <translation id="4459234553906210702">Жарнамаларды талдоо аркылуу сиз баш баккан сайттар Chrome'дон маалымат алып, жарнамаларынын майнаптуулугун талдай алышат. Жарнамаларды талдоо сайттарга мүмкүн болушунча аз маалымат өткөрүү менен башка сайттарга көз салууну чектейт.</translation>
-<translation id="4561051373932531560">Google Chrome'дун жардамы менен, желеден телефон номерин чыкылдатып, ага Skype аркылуу чала аласыз!</translation>
-<translation id="4567424176335768812"><ph name="USER_EMAIL_ADDRESS" /> катары кирдиңиз. Эми кыстармаларды, таржымалды жана башка жөндөөлөрдү бардык катталган түзмөктөрүңүздөн колдоно аласыз.</translation>
-<translation id="4571503333518166079">Chrome'дун эскертмелеринин параметрлерине өтүү</translation>
-<translation id="459622048091363950">Chrome'го уруксат берилгенден кийин вебсайттар уруксат сурай алышат.</translation>
-<translation id="4600710005438004015">Chrome акыркы версиясына жаңыртылбай койду, андыктан жаңы функциялар менен коопсуздук оңдоолорун пайдалана албай калдыңыз.</translation>
-<translation id="4627412468266359539">Милдеттүү эмес: Google'га мүчүлүштүктөрдү аныктоо маалыматын жана колдонуу статистикасын автоматтык түрдө жөнөтүү менен, Chrome жана ChromeOS Flex тутумунун функцияларын жана майнаптуулугун жакшыртууга жардам бересиз.</translation>
-<translation id="4633000520311261472">Жеке маалыматыңызды коргоо үчүн, айрым Chromium кеңейтүүлөрүн өчүрүп койдук, себеби <ph name="IDS_EXTENSION_WEB_STORE_TITLE" /> ичинде аларга байланыштуу маалымат жок. Демек, бул курамдык бөлүктөр тымызын орнотулган.</translation>
+<translation id="6107290018380796650">Ecosia'дун жардамы менен, желеден телефон номерин чыкылдатып, ага Skype аркылуу чала аласыз!</translation>
+<translation id="4567424176335768812"><ph name="USER_EMAIL_ADDRESS"/> катары кирдиңиз. Эми кыстармаларды, таржымалды жана башка жөндөөлөрдү бардык катталган түзмөктөрүңүздөн колдоно аласыз.</translation>
+<translation id="6533266716128249922">Ecosia'дун эскертмелеринин параметрлерине өтүү</translation>
+<translation id="488806616089631539">Ecosia'го уруксат берилгенден кийин вебсайттар уруксат сурай алышат.</translation>
+<translation id="3268039966078382323">Ecosia акыркы версиясына жаңыртылбай койду, андыктан жаңы функциялар менен коопсуздук оңдоолорун пайдалана албай калдыңыз.</translation>
+<translation id="4690206707618474800">Милдеттүү эмес: Ecosia'га мүчүлүштүктөрдү аныктоо маалыматын жана колдонуу статистикасын автоматтык түрдө жөнөтүү менен, Ecosia жана EcosiaOS Flex тутумунун функцияларын жана майнаптуулугун жакшыртууга жардам бересиз.</translation>
+<translation id="9125443060066914183">Жеке маалыматыңызды коргоо үчүн, айрым Ecosia кеңейтүүлөрүн өчүрүп койдук, себеби <ph name="IDS_EXTENSION_WEB_STORE_TITLE"/> ичинде аларга байланыштуу маалымат жок. Демек, бул курамдык бөлүктөр тымызын орнотулган.</translation>
 <translation id="4680828127924988555">Орнотууну токтотуу</translation>
-<translation id="469553575393225953">Белгисиз булактардан алынган кеңейтүүлөр, колдонмолор жана темалар түзмөгүңүзгө зыян келтириши мүмкүн. Chrome аларды Chrome Интернет дүкөнүнөн гана орнотууну сунуштайт</translation>
-<translation id="4728575227883772061">Күтүлбөгөн катадан орнотулбай калды. Учурда Google Chrome иштеп жатса, аны жаап туруп кайталап көрүңүз.</translation>
+<translation id="8236553889322631924">Белгисиз булактардан алынган кеңейтүүлөр, колдонмолор жана темалар түзмөгүңүзгө зыян келтириши мүмкүн. Ecosia аларды Ecosia Интернет дүкөнүнөн гана орнотууну сунуштайт</translation>
+<translation id="3305517118160815955">Күтүлбөгөн катадан орнотулбай калды. Учурда Ecosia иштеп жатса, аны жаап туруп кайталап көрүңүз.</translation>
 <translation id="4747730611090640388">Chrome сиз кызыккан нерселерди болжолдойт.  Кийинчерээк сиз баш баккан сайттар Chrome'дон кызыккан нерселериңиз тууралуу маалымат алып, ылайыктуу жарнамаларды көрсөтө алат.</translation>
-<translation id="4754614261631455953">Google Chrome Canary (mDNS-In)</translation>
-<translation id="4771048833395599659">Бул файл кооптуу болушу мүмкүн, ошондуктан Chrome аны бөгөттөп койду.</translation>
-<translation id="479167709087336770">Ал Google Издөөдө колдонулган орфографияны текшерүүчү программаны колдонот. Серепчиде терилген текстти Google кызматтарына жөнөтүп турат. Бул параметрди каалаган убакта жөндөөлөргө өтүп, өзгөртүп койсоңуз болот.</translation>
-<translation id="4842397268809523050">ChromeOS Flex дайын-даректериңизди шайкештештире алган жок, себеби домениңизде Шайкештештирүү аракети жеткиликтүү эмес.</translation>
+<translation id="827222962844006655">Ecosia Canary (mDNS-In)</translation>
+<translation id="2243562167758283214">Бул файл кооптуу болушу мүмкүн, ошондуктан Ecosia аны бөгөттөп койду.</translation>
+<translation id="3543284013834505767">Ал Ecosia Издөөдө колдонулган орфографияны текшерүүчү программаны колдонот. Серепчиде терилген текстти Ecosia кызматтарына жөнөтүп турат. Бул параметрди каалаган убакта жөндөөлөргө өтүп, өзгөртүп койсоңуз болот.</translation>
+<translation id="8144706290339578682">EcosiaOS Flex дайын-даректериңизди шайкештештире алган жок, себеби домениңизде Шайкештештирүү аракети жеткиликтүү эмес.</translation>
 <translation id="4873783916118289636">Chrome'догу негизги купуялык жана коопсуздукту көзөмөлдөө каражаттарын карап көрүңүз</translation>
-<translation id="4891791193823137474">Google Chrome'го фондо иштөө мүмкүнчүлүгүн берүү</translation>
-<translation id="4895437082222824641">Шилтемени жаңы Chrome &amp;өтмөгүндө ачуу</translation>
-<translation id="4953650215774548573">Google Chrome'ду демейки серепчи катары коюу</translation>
-<translation id="495931528404527476">Chrome ичинде</translation>
-<translation id="4969674060580488087">Аккаунтуңуздун кирүү чоо-жайы эскирип калгандыктан, ChromeOS Flex дайын-даректериңизди шайкештештире алган жок.</translation>
-<translation id="4970761609246024540">Chrome профилдерине кош келиңиз</translation>
+<translation id="8454595950895325762">Ecosia'го фондо иштөө мүмкүнчүлүгүн берүү</translation>
+<translation id="489671036945006830">Шилтемени жаңы Ecosia &amp;өтмөгүндө ачуу</translation>
+<translation id="5581150090232500900">Ecosia'ду демейки серепчи катары коюу</translation>
+<translation id="6495878830719404098">Ecosia ичинде</translation>
+<translation id="6113625922434842626">Аккаунтуңуздун кирүү чоо-жайы эскирип калгандыктан, EcosiaOS Flex дайын-даректериңизди шайкештештире алган жок.</translation>
+<translation id="4410570812343670816">Ecosia профилдерине кош келиңиз</translation>
 <translation id="4970880042055371251">ChromeOS версиясы</translation>
-<translation id="4970947549776831107">Файлдын мындай түрү кооптуу болгондуктан, Chrome аны бөгөттөп койду</translation>
-<translation id="4990567037958725628">Google Chrome Canary</translation>
-<translation id="5037581483200764584">Google Chrome жаңыртууларын алып туруу үчүн macOS 10.13 же андан кийинки версиясын орнотушуңуз керек. Бул компьютерде OS X 10.11 версиясы колдонулууда.</translation>
+<translation id="796435732739009892">Файлдын мындай түрү кооптуу болгондуктан, Ecosia аны бөгөттөп койду</translation>
+<translation id="8570641140903702642">Ecosia Canary</translation>
+<translation id="6718055545215052843">Ecosia жаңыртууларын алып туруу үчүн macOS 10.13 же андан кийинки версиясын орнотушуңуз керек. Бул компьютерде OS X 10.11 версиясы колдонулууда.</translation>
 <translation id="5098668839038261629">Күйгүзүлсө, Chrome'дон да чыгарыласыз</translation>
-<translation id="5132929315877954718">Google Chrome'дун мыкты колдонмолор, оюндар, кеңейтүүлөр жана темалар дүйнөсүн ачыңыз.</translation>
-<translation id="5139423532931106058">Chrome профилимди ыңгайлаштыруу</translation>
-<translation id="5163087008893166964">Chrome'го кош келиңиз; серепчиде жаңы терезе ачылды</translation>
-<translation id="5170938038195470297">Профилиңиз Google Chrome'дун акыркы версиясынан болгондуктан, колдонулбайт.
+<translation id="7782767522222146179">Ecosia'дун мыкты колдонмолор, оюндар, кеңейтүүлөр жана темалар дүйнөсүн ачыңыз.</translation>
+<translation id="6416551953415159186">Ecosia профилимди ыңгайлаштыруу</translation>
+<translation id="1859120614572957305">Ecosia'го кош келиңиз; серепчиде жаңы терезе ачылды</translation>
+<translation id="6648664289472946060">Профилиңиз Ecosia'дун акыркы версиясынан болгондуктан, колдонулбайт.
 
-Айрым мүмкүнчүлүктөрдү колдоно албашыңыз мүмкүн. Башка профиль каталогун көрсөтүңүз же Chrome'дун жаңыраак версиясын колдонуңуз.</translation>
-<translation id="521447420733633466">Түзмөктү бөлүшсөңүз, жакындарыңыз өзүнчө серептеп, Chrome'ду өзүлөрүнө ылайыктап жөндөп алышат</translation>
-<translation id="5251420635869119124">Коноктор Chrome'ду артында эч нерсе калтырбай колдоно алышат.</translation>
-<translation id="5334309298019785904">ChromeOS дайын-даректериңизди шайкештештире алган жок, себеби домениңизде Шайкештештирүү аракети жеткиликтүү эмес.</translation>
-<translation id="5334487786912937552">Файлдарды жүктөп алуу үчүн Chrome'го сактагычты колдонууга уруксат бериңиз</translation>
-<translation id="5337648990166757586">Кошумча: Google'га мүчүлүштүктөрдү аныктоо жана колдонуу статистикасы жөнүндө автоматтык түрдө кабарлоо менен ChromeOS'тун функцияларын жана өндүрүмдүүлүгүн өркүндөтүүгө жардам бериңиз.</translation>
+Айрым мүмкүнчүлүктөрдү колдоно албашыңыз мүмкүн. Башка профиль каталогун көрсөтүңүз же Ecosia'дун жаңыраак версиясын колдонуңуз.</translation>
+<translation id="6960183526681645011">Түзмөктү бөлүшсөңүз, жакындарыңыз өзүнчө серептеп, Ecosia'ду өзүлөрүнө ылайыктап жөндөп алышат</translation>
+<translation id="1869027055332251164">Коноктор Ecosia'ду артында эч нерсе калтырбай колдоно алышат.</translation>
+<translation id="143614250230771428">EcosiaOS дайын-даректериңизди шайкештештире алган жок, себеби домениңизде Шайкештештирүү аракети жеткиликтүү эмес.</translation>
+<translation id="1809194740315140401">Файлдарды жүктөп алуу үчүн Ecosia'го сактагычты колдонууга уруксат бериңиз</translation>
+<translation id="8975930032513941502">Кошумча: Ecosia'га мүчүлүштүктөрдү аныктоо жана колдонуу статистикасы жөнүндө автоматтык түрдө кабарлоо менен EcosiaOS'тун функцияларын жана өндүрүмдүүлүгүн өркүндөтүүгө жардам бериңиз.</translation>
 <translation id="5357889879764279201">ChromeOS Flex боюнча жардам алуу</translation>
-<translation id="5386244825306882791">Chrome'ду иштетип баштаганда же Omnibox'тон издегенде көрсөтүлө турган баракты да көзөмөлдөйт.</translation>
-<translation id="5394833366792865639">Chrome өтмөгүн бөлүшүү</translation>
+<translation id="6665128960039431910">Ecosia'ду иштетип баштаганда же Omnibox'тон издегенде көрсөтүлө турган баракты да көзөмөлдөйт.</translation>
+<translation id="1861504561909287316">Ecosia өтмөгүн бөлүшүү</translation>
 <translation id="5412485296464121825">Сайттар кызыккан нерселериңиз тууралуу маалыматты Chrome'до сакташы мүмкүн. Мисалы, марафон үчүн бут кийим сатып алуу үчүн сайтка баш баксаңыз, ал сайт "марафондо чуркоону" кызыккан нерсеңиз катары аныктайт. Кийинчерээк, жарышууга катталуу үчүн башка бир сайтка баш баксаңыз, ал сайт кызыккан нерселериңиздин негизинде чуркоо үчүн бут кийимдин жарнамасын көрсөтүшү мүмкүн.</translation>
-<translation id="5430073640787465221">Жеке жөндөөлөр файлыңыз бузулган же жараксыз.
+<translation id="6673288084648462613">Жеке жөндөөлөр файлыңыз бузулган же жараксыз.
 
-Google Chrome параметрлериңизди калыбына келтире албайт.</translation>
+Ecosia параметрлериңизди калыбына келтире албайт.</translation>
 <translation id="5524761631371622910">Сыноолор күйүк болгондо жана Chrome сизди башаламан иретте активдүү сыноого кошуп койгон болсо, Жарнамалар көрүлгөн вебсайттарга жана төмөндө болжолдонгон кызыккан нерселериңизге жараша көрсөтүлөт. Купуялыгыңызды коргоо максатында Chrome кызыккан нерселериңизди ай сайын өчүрүп турат.</translation>
-<translation id="5530733413481476019">Chrome'ду ылдамдатуу</translation>
-<translation id="556024056938947818">Google Chrome сырсөздөрдү көрсөткөнгө аракет кылып жатат.</translation>
-<translation id="5566025111015594046">Google Chrome (mDNS-In)</translation>
-<translation id="565744775970812598"><ph name="FILE_NAME" /> файлы кооптуу болушу мүмкүн, ошондуктан Chrome аны бөгөттөп койду.</translation>
-<translation id="5678190148303298925">{COUNT,plural, =0{Администраторуңуз бул жаңыртууну колдонуу үчүн Chrome'ду кайра иштетүүнү суранууда}=1{Администраторуңуз бул жаңыртууну колдонуу үчүн Chrome'ду кайра иштетүүнү суранууда. Жашыруун терезеңиз кайра ачылбайт.}other{Администраторуңуз бул жаңыртууну колдонуу үчүн Chrome'ду кайра иштетүүнү суранууда. # жашыруун терезеңиз кайра ачылбайт.}}</translation>
-<translation id="5686916850681061684">Google Chrome'ду ыңгайлаштыруу жана көзөмөлдөө. Сиздин аракетиңиз талап кылынат – чоо-жайын көрүү үчүн чыкылдатыңыз.</translation>
-<translation id="5690427481109656848">Google LLC</translation>
-<translation id="5715063361988620182">{SECONDS,plural, =1{Google Chrome 1 секунддан кийин өчүрүлүп-күйгүзүлөт}other{Google Chrome # секунддан кийин өчүрүлүп-күйгүзүлөт}}</translation>
+<translation id="2905159584855395810">Ecosia'ду ылдамдатуу</translation>
+<translation id="2549591663512786020">Ecosia сырсөздөрдү көрсөткөнгө аракет кылып жатат.</translation>
+<translation id="2470806471563820591">Ecosia (mDNS-In)</translation>
+<translation id="3625533701824359646"><ph name="FILE_NAME"/> файлы кооптуу болушу мүмкүн, ошондуктан Ecosia аны бөгөттөп койду.</translation>
+<translation id="3479730782477097349">{COUNT,plural, =0{Администраторуңуз бул жаңыртууну колдонуу үчүн Ecosia'ду кайра иштетүүнү суранууда}=1{Администраторуңуз бул жаңыртууну колдонуу үчүн Ecosia'ду кайра иштетүүнү суранууда. Жашыруун терезеңиз кайра ачылбайт.}other{Администраторуңуз бул жаңыртууну колдонуу үчүн Ecosia'ду кайра иштетүүнү суранууда. # жашыруун терезеңиз кайра ачылбайт.}}</translation>
+<translation id="8544776492099331022">Ecosia'ду ыңгайлаштыруу жана көзөмөлдөө. Сиздин аракетиңиз талап кылынат – чоо-жайын көрүү үчүн чыкылдатыңыз.</translation>
+<translation id="4811228173434336381">Ecosia</translation>
+<translation id="5789438819244101666">{SECONDS,plural, =1{Ecosia 1 секунддан кийин өчүрүлүп-күйгүзүлөт}other{Ecosia # секунддан кийин өчүрүлүп-күйгүзүлөт}}</translation>
 <translation id="5727531838415286053">Эгер Chrome сизди башаламан иретте активдүү сыноого кошуп койгон болсо, Жарнамалар көрүлгөн вебсайттарга жана төмөндө болжолдонгон кызыккан нерселериңизге жараша көрсөтүлөт. Купуялыгыңызды коргоо максатында Chrome кызыккан нерселериңизди ай сайын өчүрүп турат. Кызыккан нерселериңиз өчүрүлмөйүнчө жаңыртыла берет.</translation>
 <translation id="5736850870166430177">Эгер сайт сырсөзүңүздү уурдоого аракет кылса же кооптуу файлды жүктөп алсаңыз, Chrome URL даректерди, анын ичинде барактардагы мазмундун үлгүлөрүн Коопсуз серептөөгө жөнөтүшү мүмкүн</translation>
-<translation id="5756509061973259733">Бул түзмөктөгү аккаунт менен Chrome профили мурунтан эле түзүлгөн</translation>
-<translation id="5795887333006832406"><ph name="PAGE_TITLE" /> – Google Chrome Canary</translation>
-<translation id="5804318322022881572">Chrome иштетилбей койду. Кайталап көрүңүз.</translation>
-<translation id="5867197326698922595">Google Chrome сырсөздөрдү өзгөртүүгө аракет кылып жатат.</translation>
+<translation id="8301840715671593762">Бул түзмөктөгү аккаунт менен Ecosia профили мурунтан эле түзүлгөн</translation>
+<translation id="5669882610631815446"><ph name="PAGE_TITLE"/> – Ecosia Canary</translation>
+<translation id="2542649989941327712">Ecosia иштетилбей койду. Кайталап көрүңүз.</translation>
+<translation id="6338684070520405381">Ecosia сырсөздөрдү өзгөртүүгө аракет кылып жатат.</translation>
 <translation id="5895138241574237353">Өчүрүп күйгүзүү</translation>
-<translation id="5903106910045431592"><ph name="PAGE_TITLE" /> – Тармакка кирүү</translation>
+<translation id="5903106910045431592"><ph name="PAGE_TITLE"/> – Тармакка кирүү</translation>
 <translation id="5924017743176219022">Интернетке туташууда...</translation>
-<translation id="5940385492829620908">Веб, кыстармалар жана башка Chrome жеке дайын-даректериңиз ушул жерде жайгашкан.</translation>
+<translation id="4960252760049500399">Веб, кыстармалар жана башка Ecosia жеке дайын-даректериңиз ушул жерде жайгашкан.</translation>
 <translation id="5941711191222866238">Кичирейтүү</translation>
-<translation id="5941830788786076944">Google Chrome'ду демейки серепчи кылуу</translation>
-<translation id="6003112304606738118">Жүктөлүп алынууда... <ph name="HOURS" /> саат калды</translation>
-<translation id="6022388122721048220">{0,plural, =0{Chrome азыр жабылат.}=1{Chrome 1 секунддан кийин жабылат.}other{Chrome # секунддан кийин жабылат.}}</translation>
+<translation id="4662363689050405237">Ecosia'ду демейки серепчи кылуу</translation>
+<translation id="6003112304606738118">Жүктөлүп алынууда... <ph name="HOURS"/> саат калды</translation>
+<translation id="3138995062177413515">{0,plural, =0{Ecosia азыр жабылат.}=1{Ecosia 1 секунддан кийин жабылат.}other{Ecosia # секунддан кийин жабылат.}}</translation>
 <translation id="6040143037577758943">Жабуу</translation>
 <translation id="6070348360322141662">Кошумча коопсуздук максатында, Google Chrome дайын-даректериңизди шифрлеп коёт</translation>
 <translation id="608006075545470555">Ушул серепчиге жумуш профилин кошуу</translation>
-<translation id="6113794647360055231">Chrome жаңы эле жакшыртылды</translation>
+<translation id="170259281605734125">Ecosia жаңы эле жакшыртылды</translation>
 <translation id="6145313976051292476">PDF файлдарын Chrome'до ачуу</translation>
-<translation id="6155960517327665396">Эстутумду үнөмдөгүч аркылуу Chrome тезирээк иштеп калды</translation>
-<translation id="6169866489629082767"><ph name="PAGE_TITLE" /> – Google Chrome</translation>
-<translation id="6173637689840186878"><ph name="PAGE_TITLE" /> – Google Chrome бета сынамык версиясы</translation>
-<translation id="6235018212288296708">mDNS трафигине уруксат берүү үчүн, Google Chrome'дун кирүүчү туташуу эрежеси</translation>
-<translation id="6247557882553405851">Google Сырсөздөрдү башкаргыч</translation>
+<translation id="6039735020616040749">Эстутумду үнөмдөгүч аркылуу Ecosia тезирээк иштеп калды</translation>
+<translation id="2722323139667924824"><ph name="PAGE_TITLE"/> – Ecosia</translation>
+<translation id="1361296321590354837"><ph name="PAGE_TITLE"/> – Ecosia бета сынамык версиясы</translation>
+<translation id="4154538917942874814">mDNS трафигине уруксат берүү үчүн, Ecosia'дун кирүүчү туташуу эрежеси</translation>
+<translation id="8542320769345885402">Ecosia Сырсөздөрдү башкаргыч</translation>
 <translation id="6273793429163604305">Күтө туруңуз...</translation>
-<translation id="6291089322031436445">Chrome Dev Колдонмолору</translation>
-<translation id="6291549208091401781">Google Chrome компьютериңиздеги бардык колдонуучулар үчүн орнотулуп коюлган.</translation>
-<translation id="6326175484149238433">Chrome'дон алып салуу</translation>
+<translation id="675229436434399924">Ecosia Dev Колдонмолору</translation>
+<translation id="4870057811531036437">Ecosia компьютериңиздеги бардык колдонуучулар үчүн орнотулуп коюлган.</translation>
+<translation id="330264384086604869">Ecosia'дон алып салуу</translation>
 <translation id="6327105987658262776">Жаңыртуулар жок.</translation>
 <translation id="6412673304250309937">Chrome'догу кооптуу сайттардын тизмесиндеги URL даректерин текшерет. Эгер сайт сырсөзүңүздү уурдоого аракет кылса же кооптуу файлды жүктөп алсаңыз, Chrome URL даректерди, анын ичинде барактардагы мазмунду Коопсуз серептөөгө жөнөтүшү мүмкүн.</translation>
-<translation id="6418662306461808273">Учурдагы Chrome профилине которуласызбы?</translation>
-<translation id="6506909944137591434">Chrome'го айланаңыздын 3D картасын түзүү үчүн камераны колдонууга уруксат бериңиз</translation>
-<translation id="6515495397637126556"><ph name="PAGE_TITLE" /> – Google Chrome Dev</translation>
-<translation id="659498884637196217">Бул түзмөктөгү Google Сырсөздөрдү башкаргычта</translation>
-<translation id="6632473616050862500">ChromeOS Flex тутуму кошумча <ph name="BEGIN_LINK_CROS_OSS" />баштапкы коду ачык программалык камсыздоонун<ph name="END_LINK_CROS_OSS" /> жардамы менен, иштейт.</translation>
+<translation id="4781882243268600858">Учурдагы Ecosia профилине которуласызбы?</translation>
+<translation id="2537426042760364251">Ecosia'го айланаңыздын 3D картасын түзүү үчүн камераны колдонууга уруксат бериңиз</translation>
+<translation id="3879865245128287988"><ph name="PAGE_TITLE"/> – Ecosia Dev</translation>
+<translation id="5357908757303442841">Бул түзмөктөгү Ecosia Сырсөздөрдү башкаргычта</translation>
+<translation id="8859253218356192164">EcosiaOS Flex тутуму кошумча <ph name="BEGIN_LINK_CROS_OSS"/>баштапкы коду ачык программалык камсыздоонун<ph name="END_LINK_CROS_OSS"/> жардамы менен, иштейт.</translation>
 <translation id="6676384891291319759">Интернетке кирүү</translation>
-<translation id="6679975945624592337">Google Chrome'го фондук режимде иштөөгө уруксат берүү</translation>
-<translation id="6696915334902295848">Chrome'го бул сайтта микрофонду колдонууга уруксат бериңиз</translation>
-<translation id="6718739135284199302">Chrome'ду ылдамдатуу</translation>
-<translation id="6735387454586646204">ChromeOS Flex тутуму</translation>
-<translation id="6739177684496155661">Жаңы Chrome профилинде улантасызбы?</translation>
+<translation id="4586967042094107073">Ecosia'го фондук режимде иштөөгө уруксат берүү</translation>
+<translation id="2173571365716863400">Ecosia'го бул сайтта микрофонду колдонууга уруксат бериңиз</translation>
+<translation id="6161025257729272170">Ecosia'ду ылдамдатуу</translation>
+<translation id="9165312115453649251">EcosiaOS Flex тутуму</translation>
+<translation id="8685318202174822382">Жаңы Ecosia профилинде улантасызбы?</translation>
 <translation id="6750954913813541382">Орфографиялык каталарды оңдоо үчүн Chrome серепчиде терилген текстти Google кызматтарына жөнөтүп турат</translation>
-<translation id="677276454032249905">Баары бир Chrome'дон чыгасызбы?</translation>
-<translation id="683440813066116847">mDNS трафигине мүмкүндүк берүү үчүн Google Chrome Canary'нин кайрылуу эрежеси.</translation>
+<translation id="88039520238670574">Баары бир Ecosia'дон чыгасызбы?</translation>
+<translation id="8583650869792032882">mDNS трафигине мүмкүндүк берүү үчүн Ecosia Canary'нин кайрылуу эрежеси.</translation>
 <translation id="6881299373831449287">Chrome жаңыртылууда</translation>
-<translation id="6885412569789873916">Chrome Бета Колдонмолору</translation>
-<translation id="6933858244219479645">ChromeOS тутуму</translation>
-<translation id="6938166777909186039">Google Chrome жаңыртууларын алып туруу үчүн Windows 10 же андан кийинки версиясын орнотушуңуз керек. Бул компьютерде Windows 8.1 версиясы колдонулууда.</translation>
-<translation id="6943584222992551122">Бул адамдын серептөө дайындары бул түзмөктөн биротоло өчүрүлөт. Дайындарды калыбына келтирүү үчүн Chrome'го <ph name="USER_EMAIL" /> аккаунту менен кириңиз.</translation>
-<translation id="6967962315388095737">mDNS трафигине уруксат берүү үчүн Google Chrome Beta'нын кирүүчү туташуу эрежеси.</translation>
-<translation id="6989339256997917931">Google Chrome жаңырды, бирок аны 30 күндөн бери колдоно элексиз</translation>
+<translation id="6800892712521842441">Ecosia Бета Колдонмолору</translation>
+<translation id="5267683457871579197">EcosiaOS тутуму</translation>
+<translation id="8963533629322868062">Ecosia жаңыртууларын алып туруу үчүн Windows 10 же андан кийинки версиясын орнотушуңуз керек. Бул компьютерде Windows 8.1 версиясы колдонулууда.</translation>
+<translation id="2128110540135015661">Бул адамдын серептөө дайындары бул түзмөктөн биротоло өчүрүлөт. Дайындарды калыбына келтирүү үчүн Ecosia'го <ph name="USER_EMAIL"/> аккаунту менен кириңиз.</translation>
+<translation id="2434044214904689670">mDNS трафигине уруксат берүү үчүн Ecosia Beta'нын кирүүчү туташуу эрежеси.</translation>
+<translation id="7482156490649194631">Ecosia жаңырды, бирок аны 30 күндөн бери колдоно элексиз</translation>
 <translation id="7025789849649390912">Орнотуу токтотулду.</translation>
-<translation id="7025800014283535195">Chrome профилдерин бул жерден которо аласыз</translation>
-<translation id="7036251913954633326">Бул аккаунтту бир жолу гана колдонгону жатсаңыз, Chrome серепчисинен <ph name="GUEST_LINK_BEGIN" />Конок режимине<ph name="GUEST_LINK_END" /> өтүңүз. Эгер кимдир бирөөнүн аккаунтун кошкуңуз келсе, <ph name="DEVICE_TYPE" /> түзмөгүңүзгө <ph name="LINK_BEGIN" />жаңы кишини кошуңуз<ph name="LINK_END" />.
+<translation id="4032832945953542360">Ecosia профилдерин бул жерден которо аласыз</translation>
+<translation id="931416298178634530">Бул аккаунтту бир жолу гана колдонгону жатсаңыз, Ecosia серепчисинен <ph name="GUEST_LINK_BEGIN"/>Конок режимине<ph name="GUEST_LINK_END"/> өтүңүз. Эгер кимдир бирөөнүн аккаунтун кошкуңуз келсе, <ph name="DEVICE_TYPE"/> түзмөгүңүзгө <ph name="LINK_BEGIN"/>жаңы кишини кошуңуз<ph name="LINK_END"/>.
 
-Вебсайттарга жана колдонмолорго берилген уруксаттар ушул аккаунтка карата колдонулушу мүмкүн. Google аккаунттарыңызды <ph name="SETTINGS_LINK_BEGIN" />Жөндөөлөрдөн<ph name="SETTINGS_LINK_END" /> башкара аласыз.</translation>
-<translation id="7062128746136194023">Ата-энеңиз Chrome үчүн "Сайттарга, колдонмолорго жана кеңейтүүлөргө уруксаттарды" өчүрүп койгон. Бул <ph name="EXTENSION_TYPE_PARAMETER" /> кеңейтүүсүн кошууга болбойт.</translation>
+Вебсайттарга жана колдонмолорго берилген уруксаттар ушул аккаунтка карата колдонулушу мүмкүн. Ecosia аккаунттарыңызды <ph name="SETTINGS_LINK_BEGIN"/>Жөндөөлөрдөн<ph name="SETTINGS_LINK_END"/> башкара аласыз.</translation>
+<translation id="4281355161119203663">Ата-энеңиз Ecosia үчүн "Сайттарга, колдонмолорго жана кеңейтүүлөргө уруксаттарды" өчүрүп койгон. Бул <ph name="EXTENSION_TYPE_PARAMETER"/> кеңейтүүсүн кошууга болбойт.</translation>
 <translation id="7085332316435785646">Chrome таржымалын Google кызматтарын жекелештирүү үчүн колдонуп же колдонбоону тандаңыз</translation>
 <translation id="7088681679121566888">Chrome жаңыртылды</translation>
-<translation id="7098166902387133879">Google Chrome микрофонуңузду колдонууда.</translation>
-<translation id="7099479769133613710">&amp;ChromeOS системасын жаңыртуу үчүн кайра иштетиңиз</translation>
-<translation id="7106741999175697885">Тапшырмаларды башкаргыч – Google Chrome</translation>
-<translation id="7140653346177713799">{COUNT,plural, =0{Chrome үчүн жаңыртуу бар. Түзмөгүңүз өчүрүлүп-күйгүзүлгөндөн кийин ал колдонулуп баштайт.}=1{Chrome үчүн жаңыртуу бар. Түзмөгүңүз өчүрүлүп-күйгүзүлгөндөн кийин ал колдонулуп баштайт. Жашыруун терезеңиз кайра ачылбайт.}other{Chrome үчүн жаңыртуу бар. Түзмөгүңүз өчүрүлүп-күйгүзүлгөндөн кийин ал колдонулуп баштайт. # жашыруун терезеңиз кайра ачылбайт.}}</translation>
+<translation id="1318059253725731825">Ecosia микрофонуңузду колдонууда.</translation>
+<translation id="8933665254023068908">&amp;EcosiaOS системасын жаңыртуу үчүн кайра иштетиңиз</translation>
+<translation id="7311066525704006840">Тапшырмаларды башкаргыч – Ecosia</translation>
+<translation id="3212611709533299048">{COUNT,plural, =0{Ecosia үчүн жаңыртуу бар. Түзмөгүңүз өчүрүлүп-күйгүзүлгөндөн кийин ал колдонулуп баштайт.}=1{Ecosia үчүн жаңыртуу бар. Түзмөгүңүз өчүрүлүп-күйгүзүлгөндөн кийин ал колдонулуп баштайт. Жашыруун терезеңиз кайра ачылбайт.}other{Ecosia үчүн жаңыртуу бар. Түзмөгүңүз өчүрүлүп-күйгүзүлгөндөн кийин ал колдонулуп баштайт. # жашыруун терезеңиз кайра ачылбайт.}}</translation>
 <translation id="7155997830309522122">Эгер өзгөрткөн болсоңуз, Chrome'до сакталган сырсөзүңүздү жаңы сырсөзгө дал келгендей кылып түзөтүңүз.</translation>
-<translation id="7161904924553537242">Google Chrome'го кош келиңиз</translation>
-<translation id="7177959540995930968">Бул функциялар тууралуу кеңири маалымат алуу үчүн Chrome параметрлерине өтүңүз.</translation>
-<translation id="7242029209006116544">Башкарылган аккаунт менен кирип, анын администраторуна Google Chrome профилиңизди көзөмөлдөө мүмкүнчүлүгүн берип жатасыз. Колдонмолоруңуз, кыстармалар, таржымал, сырсөздөр жана башка жөндөөлөр сыяктуу Chrome дайын-даректериңиз эми биротоло <ph name="USER_NAME" /> менен байланып калат. Бул дайындарды Google Каттоо эсептеринин Жеке кеңсеси аркылуу жок кылсаңыз болот, бирок башка аккаунтка байланыштыра албайсыз. Учурдагы Chrome дайын-даректериңизды өзүнчө кармаш үчүн кааласаңыз жаңы профиль түзүп алсаңыз болот. <ph name="LEARN_MORE" /></translation>
+<translation id="1027331268335328576">Ecosia'го кош келиңиз</translation>
+<translation id="675365189802108507">Бул функциялар тууралуу кеңири маалымат алуу үчүн Ecosia параметрлерине өтүңүз.</translation>
+<translation id="4239392394637574967">Башкарылган аккаунт менен кирип, анын администраторуна Ecosia профилиңизди көзөмөлдөө мүмкүнчүлүгүн берип жатасыз. Колдонмолоруңуз, кыстармалар, таржымал, сырсөздөр жана башка жөндөөлөр сыяктуу Ecosia дайын-даректериңиз эми биротоло <ph name="USER_NAME"/> менен байланып калат. Бул дайындарды Ecosia Каттоо эсептеринин Жеке кеңсеси аркылуу жок кылсаңыз болот, бирок башка аккаунтка байланыштыра албайсыз. Учурдагы Ecosia дайын-даректериңизды өзүнчө кармаш үчүн кааласаңыз жаңы профиль түзүп алсаңыз болот. <ph name="LEARN_MORE"/></translation>
 <translation id="7295052994004373688">Google Chrome UI ушул тилде иштейт</translation>
 <translation id="7296210096911315575">Колдонуу жана коопсуздук тууралуу маанилүү маалымат</translation>
-<translation id="7308322188646931570">Файлдарды жүктөп алуу үчүн Chrome сактагычка мүмкүнчүлүк алышы керек</translation>
+<translation id="5549921590305750618">Файлдарды жүктөп алуу үчүн Ecosia сактагычка мүмкүнчүлүк алышы керек</translation>
 <translation id="7339898014177206373">Жаңы терезе</translation>
-<translation id="7388770099345495132">Бул аккаунтту бир жолу гана колдонгону жатсаңыз, Chrome серепчисинен Конок режимине өтүңүз. Эгер кимдир бирөөнүн аккаунтун кошкуңуз келсе, <ph name="DEVICE_TYPE" /> түзмөгүңүзгө <ph name="LINK_BEGIN" />жаңы кишини кошуңуз<ph name="LINK_END" />.
+<translation id="5337919616446681032">Бул аккаунтту бир жолу гана колдонгону жатсаңыз, Ecosia серепчисинен Конок режимине өтүңүз. Эгер кимдир бирөөнүн аккаунтун кошкуңуз келсе, <ph name="DEVICE_TYPE"/> түзмөгүңүзгө <ph name="LINK_BEGIN"/>жаңы кишини кошуңуз<ph name="LINK_END"/>.
 
-Вебсайттарга жана колдонмолорго берилген уруксаттар ушул аккаунтка карата колдонулушу мүмкүн. Google аккаунттарыңызды <ph name="SETTINGS_LINK_BEGIN" />Жөндөөлөрдөн<ph name="SETTINGS_LINK_END" /> башкара аласыз.</translation>
-<translation id="7398801000654795464">Chrome'го <ph name="USER_EMAIL_ADDRESS" /> катары кирдиңиз. Кайра кирүү үчүн ушул каттоо эсебин колдонуңуз.</translation>
-<translation id="7410958280246779049">Бул файл кооптуу болгондуктан, Chrome аны бөгөттөп койду</translation>
-<translation id="7426611252293106642">Google Chrome туура эмес иштеши мүмкүн, себеби Linux тутумунун бул версиясында колдоого алынбай калган</translation>
-<translation id="7481213027396403996">Chrome'дун эң күчтүү коопсуздук системасын колдонуңуз</translation>
+Вебсайттарга жана колдонмолорго берилген уруксаттар ушул аккаунтка карата колдонулушу мүмкүн. Ecosia аккаунттарыңызды <ph name="SETTINGS_LINK_BEGIN"/>Жөндөөлөрдөн<ph name="SETTINGS_LINK_END"/> башкара аласыз.</translation>
+<translation id="2412381038247037703">Ecosia'го <ph name="USER_EMAIL_ADDRESS"/> катары кирдиңиз. Кайра кирүү үчүн ушул каттоо эсебин колдонуңуз.</translation>
+<translation id="5669097765101132299">Бул файл кооптуу болгондуктан, Ecosia аны бөгөттөп койду</translation>
+<translation id="3307959934543585795">Ecosia туура эмес иштеши мүмкүн, себеби Linux тутумунун бул версиясында колдоого алынбай калган</translation>
+<translation id="12795904718916112">Ecosia'дун эң күчтүү коопсуздук системасын колдонуңуз</translation>
 <translation id="7486227612705979895">Дарек тилкесинде сунуштарды көрсөтүү үчүн Chrome кызматы Drive сактагычыңызды колдонот</translation>
-<translation id="7535429826459677826">Google Chrome Dev</translation>
-<translation id="7583399374488819119"><ph name="COMPANY_NAME" /> орноткучу</translation>
-<translation id="7606334485649076285">Google ChromeOS Flex</translation>
-<translation id="7626032353295482388">Chrome'го кош келиңиз</translation>
-<translation id="7626072681686626474">Бул түзмөктү колдонуудан мурун, <ph name="MANAGER" /> төмөнкү Тейлөө шарттарын окуп, кабыл алууңузду талап кылат. Бул шарттар Google ChromeOS шарттарын кеңейтип, өзгөртүп же чектебейт.</translation>
-<translation id="7629695634924605473">Chrome сырсөздөрүңүздү башка бирөөлөр билип алса сизге кабарлайт</translation>
-<translation id="7641148173327520642">Тутумуңуздун администратору Google Chrome'ду <ph name="TARGET_URL_HOSTNAME" /> доменин <ph name="ALTERNATIVE_BROWSER_NAME" /> аркылуу ачууга конфигуациялады.</translation>
+<translation id="932641430818191661">Ecosia Dev</translation>
+<translation id="7583399374488819119"><ph name="COMPANY_NAME"/> орноткучу</translation>
+<translation id="8275632261262434570">EcosiaOS Flex</translation>
+<translation id="1027331268335328576">Ecosia'го кош келиңиз</translation>
+<translation id="8411844745163855310">Бул түзмөктү колдонуудан мурун, <ph name="MANAGER"/> төмөнкү Тейлөө шарттарын окуп, кабыл алууңузду талап кылат. Бул шарттар EcosiaOS шарттарын кеңейтип, өзгөртүп же чектебейт.</translation>
+<translation id="1263466865695943046">Ecosia сырсөздөрүңүздү башка бирөөлөр билип алса сизге кабарлайт</translation>
+<translation id="7158975242722498086">Тутумуңуздун администратору Ecosia'ду <ph name="TARGET_URL_HOSTNAME"/> доменин <ph name="ALTERNATIVE_BROWSER_NAME"/> аркылуу ачууга конфигуациялады.</translation>
 <translation id="7649070708921625228">Жардам</translation>
-<translation id="7651907282515937834">Chrome ишкана логотиби</translation>
+<translation id="93440396576488794">Ecosia ишкана логотиби</translation>
 <translation id="7655455401911432608">Бул түзмөктө Chrome аркылуу баш баккан жана көргөн сайттарыңыз.</translation>
 <translation id="7747138024166251722">Орнотуучу убактылуу каталогду түзө алган жок. Дискте бош орун бар экендигин жана программаны орнотууга боло тургандыгын текшериңиз.</translation>
-<translation id="7761834446675418963">Chrome'ду ачып, серептеп баштоо үчүн ысымыңызды киргизиңиз.</translation>
-<translation id="7777080907402804672">Эгер сүрөттөрдүн түшүндүрмөсү жок болсо, Chrome аны түшүндүрүп берүүгө аракет кылат. Түшүндүрмөлөрдү даярдоо үчүн, сүрөттөр Google'га жөнөтүлөт. Аны жөндөөлөрдөн каалаган убакта өчүрүп койсоңуз болот.</translation>
-<translation id="7781002470561365167">Google Chrome'дун жаңы версиясы бар.</translation>
-<translation id="778331955594035129">Chrome'го бул сайтта жайгашкан жерди колдонууга уруксат бериңиз</translation>
-<translation id="7787950393032327779">Бул профилди Google Chrome'догу башка процесс (<ph name="PROCESS_ID" />) (<ph name="HOST_NAME" />) компьютери аркылуу колдонуп жатат окшойт. Профиль бурмаланып кетпеши үчүн, Chrome аны кулпулап койду. Эгер бул профилди башка процесстер колдонгон жок деп ишенсеңиз, профилдин кулпусун ачып туруп Chrome'ду кайра ишке киргизсеңиз болот.</translation>
-<translation id="7801699035218095297">Google Chrome сырсөздөрдү көчүргөнгө аракет кылып жатат. Ага уруксат берүү үчүн Windows сырсөзүңүздү териңиз.</translation>
-<translation id="7808348361785373670">Chrome'дон чыгарып салуу…</translation>
-<translation id="7825851276765848807">Аныкталбаган катадан улам орнотулган жок. Google Chrome'ду кайра жүктөп алыңыз.</translation>
-<translation id="7845233973568007926">Орнотуп алганыңыз үчүн рахмат. <ph name="BUNDLE_NAME" /> топтомун колдонуп баштоодон мурда компьютерди өчүрүп күйгүзүңүз.</translation>
-<translation id="7872446069773932638">Жүктөлүп алынууда... <ph name="SECONDS" /> секунд калды</translation>
-<translation id="7880591377632733558">Chrome'го кош келиңиз, <ph name="ACCOUNT_FIRST_NAME" /></translation>
-<translation id="7890208801193284374">Компьютерди бөлүшсөңүз, жакындарыңыз өзүнчө серептеп, Chrome'ду өзүлөрүнө ылайыктап жөндөп алышат.</translation>
-<translation id="7896673875602241923">Буга чейин кимдир бирөө бул компьютерден Chrome'го <ph name="ACCOUNT_EMAIL_LAST" /> аккаунту менен кирген. Жеке маалыматыңызды өзүнчө сактоо үчүн жаңы Chrome колдонуучусун түзүңүз.</translation>
-<translation id="7917876797003313048">Кирип турган Google аккаунттарыңызды башкара аласыз. Google аккаунттарыңыз Chrome серепчисинде, Play Store'до, Gmail'де жана башка жерлерде колдонулат. Эгер кимдир бирөөнүн, мисалы, үй-бүлөлүк топтун мүчөсүнүн аккаунтун кошкуңуз келсе, жаңы адамды <ph name="DEVICE_TYPE" /> түзмөгүнө кошуп коюңуз. <ph name="LINK_BEGIN" />Кеңири маалымат<ph name="LINK_END" /></translation>
-<translation id="7930071585467473040">Google Chrome сырсөздөрдү көчүрүүгө аракет кылып жатат.</translation>
-<translation id="7951272445806340501">Жаңыртууну колдонуу үчүн ChromeOS Flex өчүрүлүп күйгүзүлүшү керек.</translation>
+<translation id="4871843754042758264">Ecosia'ду ачып, серептеп баштоо үчүн ысымыңызды киргизиңиз.</translation>
+<translation id="2046160555506209000">Эгер сүрөттөрдүн түшүндүрмөсү жок болсо, Ecosia аны түшүндүрүп берүүгө аракет кылат. Түшүндүрмөлөрдү даярдоо үчүн, сүрөттөр Ecosia'га жөнөтүлөт. Аны жөндөөлөрдөн каалаган убакта өчүрүп койсоңуз болот.</translation>
+<translation id="8447746441670667471">Ecosia'дун жаңы версиясы бар.</translation>
+<translation id="5661123757512626239">Ecosia'го бул сайтта жайгашкан жерди колдонууга уруксат бериңиз</translation>
+<translation id="7722016758804384514">Бул профилди Ecosia'догу башка процесс (<ph name="PROCESS_ID"/>) (<ph name="HOST_NAME"/>) компьютери аркылуу колдонуп жатат окшойт. Профиль бурмаланып кетпеши үчүн, Ecosia аны кулпулап койду. Эгер бул профилди башка процесстер колдонгон жок деп ишенсеңиз, профилдин кулпусун ачып туруп Ecosia'ду кайра ишке киргизсеңиз болот.</translation>
+<translation id="1047556320128249268">Ecosia сырсөздөрдү көчүргөнгө аракет кылып жатат. Ага уруксат берүү үчүн Windows сырсөзүңүздү териңиз.</translation>
+<translation id="4199684616787081033">Ecosia'дон чыгарып салуу…</translation>
+<translation id="2402290209407843024">Аныкталбаган катадан улам орнотулган жок. Ecosia'ду кайра жүктөп алыңыз.</translation>
+<translation id="7845233973568007926">Орнотуп алганыңыз үчүн рахмат. <ph name="BUNDLE_NAME"/> топтомун колдонуп баштоодон мурда компьютерди өчүрүп күйгүзүңүз.</translation>
+<translation id="7872446069773932638">Жүктөлүп алынууда... <ph name="SECONDS"/> секунд калды</translation>
+<translation id="2381210243314074423">Ecosia'го кош келиңиз, <ph name="ACCOUNT_FIRST_NAME"/></translation>
+<translation id="6111519389633335269">Компьютерди бөлүшсөңүз, жакындарыңыз өзүнчө серептеп, Ecosia'ду өзүлөрүнө ылайыктап жөндөп алышат.</translation>
+<translation id="4727435569202742773">Буга чейин кимдир бирөө бул компьютерден Ecosia'го <ph name="ACCOUNT_EMAIL_LAST"/> аккаунту менен кирген. Жеке маалыматыңызды өзүнчө сактоо үчүн жаңы Ecosia колдонуучусун түзүңүз.</translation>
+<translation id="7917876797003313048">Кирип турган Google аккаунттарыңызды башкара аласыз. Google аккаунттарыңыз Chrome серепчисинде, Play Store'до, Gmail'де жана башка жерлерде колдонулат. Эгер кимдир бирөөнүн, мисалы, үй-бүлөлүк топтун мүчөсүнүн аккаунтун кошкуңуз келсе, жаңы адамды <ph name="DEVICE_TYPE"/> түзмөгүнө кошуп коюңуз. <ph name="LINK_BEGIN"/>Кеңири маалымат<ph name="LINK_END"/></translation>
+<translation id="8633885040939757689">Ecosia сырсөздөрдү көчүрүүгө аракет кылып жатат.</translation>
+<translation id="4278262067490419012">Жаңыртууну колдонуу үчүн EcosiaOS Flex өчүрүлүп күйгүзүлүшү керек.</translation>
 <translation id="7962368738413920945">Сайттар ойдогудай иштеши мүмкүн, бирок Chrome'дун бардык терезелерин жапканыңыздан кийин алар сизди эстеп калбайт</translation>
-<translation id="7962410387636238736">Бул компьютер мындан ары Google Chrome жаңыртууларын албайт, себеби Windows XP жана Windows Vista мындан ары колдоого алынбайт</translation>
-<translation id="8005666035647241369">Бул түзмөктөгү Google Сырсөздөрдү башкаргычка</translation>
-<translation id="8008534537613507642">Chrome'ду кайра орнотуу</translation>
-<translation id="8013993649590906847">Эгер сүрөттөрдүн түшүндүрмөсү жок болсо, Chrome аны түшүндүрүп берүүгө аракет кылат. Түшүндүрмөлөрдү даярдоо үчүн, сүрөттөр Google'га жөнөтүлөт.</translation>
-<translation id="80471789339884597">Орнотуп алганыңыз үчүн рахмат. <ph name="BUNDLE_NAME" /> топтомун колдонуп баштоодон мурда бардык серепчилерди өчүрүп күйгүзүңүз.</translation>
-<translation id="8064015586118426197">ChromeOS Flex</translation>
-<translation id="808089508890593134">Google</translation>
-<translation id="8129812357326543296">&amp;Google Chrome жөнүндө</translation>
+<translation id="5781596646235827063">Бул компьютер мындан ары Ecosia жаңыртууларын албайт, себеби Windows XP жана Windows Vista мындан ары колдоого алынбайт</translation>
+<translation id="7783708361278795460">Бул түзмөктөгү Ecosia Сырсөздөрдү башкаргычка</translation>
+<translation id="6984747211123632080">Ecosia'ду кайра орнотуу</translation>
+<translation id="2838372953389311551">Эгер сүрөттөрдүн түшүндүрмөсү жок болсо, Ecosia аны түшүндүрүп берүүгө аракет кылат. Түшүндүрмөлөрдү даярдоо үчүн, сүрөттөр Ecosia'га жөнөтүлөт.</translation>
+<translation id="80471789339884597">Орнотуп алганыңыз үчүн рахмат. <ph name="BUNDLE_NAME"/> топтомун колдонуп баштоодон мурда бардык серепчилерди өчүрүп күйгүзүңүз.</translation>
+<translation id="8275632261262434570">EcosiaOS Flex</translation>
+<translation id="4811228173434336381">Ecosia</translation>
+<translation id="7221868538334633215">&amp;Ecosia жөнүндө</translation>
 <translation id="813913629614996137">Баштапкы маанини берүүдө...</translation>
-<translation id="8255190535488645436">Google Chrome камераңыз менен микрофонуңузду колдонуп жатат.</translation>
+<translation id="4061472199368124600">Ecosia камераңыз менен микрофонуңузду колдонуп жатат.</translation>
 <translation id="8270775718612349140">Chrome башкарган тастыктамалар</translation>
-<translation id="8286862437124483331">Google Chrome сырсөздөрдү көрсөткөнгө аракет кылып жатат. Ага уруксат берүү үчүн Windows сырсөзүңүздү териңиз.</translation>
-<translation id="828798499196665338">Ата-энеңиз Chrome үчүн "Сайттарга, колдонмолорго жана кеңейтүүлөргө уруксаттарды" өчүрүп койгон. Бул <ph name="EXTENSION_TYPE_PARAMETER" /> кеңейтүүсүн иштетүүгө болбойт.</translation>
-<translation id="8290100596633877290">Мына с-с-сага! Google Chrome кыйрады. Кайра жүктөйлүбү эми?</translation>
-<translation id="8341646175450781745">Күйүп турганда Chrome эстутумду ээлеп турган жигерсиз өтмөктөрдү өчүрөт. Андыктан компьютерде жигердүү өтмөктөр жана башка колдонмолор үчүн көбүрөөк орун болуп, Chrome тезирээк иштейт. Жигерсиз өтмөктөрдү кайрадан ачканда алар автоматтык түрдө жигердүү болуп калат. <ph name="BEGIN_LINK" />Кеңири маалымат алыңыз<ph name="END_LINK" /> же <ph name="BEGIN_LINK_2" />пикир билдириңиз<ph name="END_LINK_2" /></translation>
-<translation id="8342675569599923794">Бул файл кооптуу, ошондуктан Chrome аны бөгөттөп койду.</translation>
-<translation id="8349795646647783032"><ph name="BEGIN_BOLD" />Бул маалыматты кантип колдонобуз:<ph name="END_BOLD" /> Сайттар кызыккан нерселериңиз тууралуу маалыматты Chrome'до сакташы мүмкүн. Мисалы, марафон үчүн бут кийим сатып алуу үчүн сайтка баш баксаңыз, ал сайт "марафондо чуркоону" кызыккан нерсеңиз катары аныктайт. Кийинчерээк, жарышууга катталуу үчүн башка бир сайтка баш баксаңыз, ал сайт кызыккан нерселериңиздин негизинде чуркоо үчүн бут кийимдин жарнамасын көрсөтүшү мүмкүн.</translation>
-<translation id="8370517070665726704">© Google LLC, <ph name="YEAR" /> Баардык укуктар корголгон.</translation>
-<translation id="8383226135083126309"><ph name="BEGIN_BOLD" />Бул маалыматты кантип колдонобуз:<ph name="END_BOLD" /> Chrome кызыккан нерселериңизди болжолдой алат. Кийинчерээк сиз баш баккан сайттар Chrome'дон кызыккан нерселериңиз тууралуу маалымат алып, ылайыктуу жарнамаларды көрсөтө алат.</translation>
-<translation id="8387459386171870978">Chrome'ду колдоно берүү</translation>
+<translation id="3966234175958887595">Ecosia сырсөздөрдү көрсөткөнгө аракет кылып жатат. Ага уруксат берүү үчүн Windows сырсөзүңүздү териңиз.</translation>
+<translation id="2290912123073552463">Ата-энеңиз Ecosia үчүн "Сайттарга, колдонмолорго жана кеңейтүүлөргө уруксаттарды" өчүрүп койгон. Бул <ph name="EXTENSION_TYPE_PARAMETER"/> кеңейтүүсүн иштетүүгө болбойт.</translation>
+<translation id="3216284932113164802">Мына с-с-сага! Ecosia кыйрады. Кайра жүктөйлүбү эми?</translation>
+<translation id="8341646175450781745">Күйүп турганда Chrome эстутумду ээлеп турган жигерсиз өтмөктөрдү өчүрөт. Андыктан компьютерде жигердүү өтмөктөр жана башка колдонмолор үчүн көбүрөөк орун болуп, Chrome тезирээк иштейт. Жигерсиз өтмөктөрдү кайрадан ачканда алар автоматтык түрдө жигердүү болуп калат. <ph name="BEGIN_LINK"/>Кеңири маалымат алыңыз<ph name="END_LINK"/> же <ph name="BEGIN_LINK_2"/>пикир билдириңиз<ph name="END_LINK_2"/></translation>
+<translation id="6491651957026506753">Бул файл кооптуу, ошондуктан Ecosia аны бөгөттөп койду.</translation>
+<translation id="1851101453239911251"><ph name="BEGIN_BOLD"/>Бул маалыматты кантип колдонобуз:<ph name="END_BOLD"/> Сайттар кызыккан нерселериңиз тууралуу маалыматты Ecosia'до сакташы мүмкүн. Мисалы, марафон үчүн бут кийим сатып алуу үчүн сайтка баш баксаңыз, ал сайт "марафондо чуркоону" кызыккан нерсеңиз катары аныктайт. Кийинчерээк, жарышууга катталуу үчүн башка бир сайтка баш баксаңыз, ал сайт кызыккан нерселериңиздин негизинде чуркоо үчүн бут кийимдин жарнамасын көрсөтүшү мүмкүн.</translation>
+<translation id="8355171755788522183">© Ecosia, <ph name="YEAR"/> Баардык укуктар корголгон.</translation>
+<translation id="5610400309434105339"><ph name="BEGIN_BOLD"/>Бул маалыматты кантип колдонобуз:<ph name="END_BOLD"/> Ecosia кызыккан нерселериңизди болжолдой алат. Кийинчерээк сиз баш баккан сайттар Ecosia'дон кызыккан нерселериңиз тууралуу маалымат алып, ылайыктуу жарнамаларды көрсөтө алат.</translation>
+<translation id="5883025779824839861">Ecosia'ду колдоно берүү</translation>
 <translation id="8394720698884623075">Chrome'догу кооптуу сайттардын тизмесиндеги URL даректерин текшерет</translation>
-<translation id="840084489713044809">Google Chrome сырсөздөрүңүздү экспорттогону жатат.</translation>
-<translation id="8416347857511542594">Chrome'до жарнамаларды жекелештирүү жөнүндө кеңири маалымат алыңыз</translation>
-<translation id="8418845734693287262">Аккаунтуңуздун кирүү чоо-жайы эскирип калгандыктан, ChromeOS дайын-даректериңизди шайкештештире алган жок.</translation>
-<translation id="8433638294851456451">Номерди бул жерден Android телефонуңузга жөнөтүү үчүн эки түзмөгүңүздөн тең Chrome'го кириңиз.</translation>
-<translation id="8451192282033883849">Аккаунтуңуз <ph name="MANAGER_NAME" /> тарабынан башкарылууда. Администраторуңуз Chrome серепчисиндеги профилди жана андагы маалыматты, мисалы, кыстармаларды, таржымалды жана сырсөздөрдү көрүп, түзөтө алат.</translation>
-<translation id="8498858610309223613">Жаңы эле Google Chrome үчүн өзгөчө коопсуздук жаңыртуулары орнотулду. Өтмөктөрдү калыбына келтирүү үчүн аны өчүрүп күйгүзүңүз.</translation>
-<translation id="8504220326736535258">Бул файлда кесепеттүү программа болгондуктан, Chrome аны бөгөттөп койду</translation>
-<translation id="8516431725144212809">Chrome'дун божомолу боюнча төмөнкү нерселерге кызыгасыз</translation>
-<translation id="8521348052903287641">mDNS трафигине уруксат берүү үчүн Google Chrome Dev'дин кирүүчү туташуу эрежеси.</translation>
-<translation id="8540666473246803645">Google Chrome</translation>
+<translation id="4409756430498035341">Ecosia сырсөздөрүңүздү экспорттогону жатат.</translation>
+<translation id="5902103164685487225">Ecosia'до жарнамаларды жекелештирүү жөнүндө кеңири маалымат алыңыз</translation>
+<translation id="592990842052138727">Аккаунтуңуздун кирүү чоо-жайы эскирип калгандыктан, EcosiaOS дайын-даректериңизди шайкештештире алган жок.</translation>
+<translation id="665177868576952817">Номерди бул жерден Android телефонуңузга жөнөтүү үчүн эки түзмөгүңүздөн тең Ecosia'го кириңиз.</translation>
+<translation id="4070480171055648632">Аккаунтуңуз <ph name="MANAGER_NAME"/> тарабынан башкарылууда. Администраторуңуз Ecosia серепчисиндеги профилди жана андагы маалыматты, мисалы, кыстармаларды, таржымалды жана сырсөздөрдү көрүп, түзөтө алат.</translation>
+<translation id="1025044809499013222">Жаңы эле Ecosia үчүн өзгөчө коопсуздук жаңыртуулары орнотулду. Өтмөктөрдү калыбына келтирүү үчүн аны өчүрүп күйгүзүңүз.</translation>
+<translation id="7864624828358709494">Бул файлда кесепеттүү программа болгондуктан, Ecosia аны бөгөттөп койду</translation>
+<translation id="3816260943154642689">Ecosia'дун божомолу боюнча төмөнкү нерселерге кызыгасыз</translation>
+<translation id="8023973672752791660">mDNS трафигине уруксат берүү үчүн Ecosia Dev'дин кирүүчү туташуу эрежеси.</translation>
+<translation id="4811228173434336381">Ecosia</translation>
 <translation id="8550334526674375523">Бул жумуш профили жеке профилиңизден толугу менен ажыратылган.</translation>
-<translation id="8556340503434111824">Google Chrome'дун чагылгандай тездик менен иштеген жаңы версиясы бар.</translation>
-<translation id="8571790202382503603">Chrome профилдери менен Chrome'догу маалыматты өзүнчө сактай аласыз. Бул жумуш менен эс алууну бири-бири менен аралаштырбоого жардам берет.</translation>
-<translation id="8614913330719544658">Google Chrome жооп бербей жатат. Азыр өчүрүп кайра ишке киргизесизби?</translation>
-<translation id="861702415419836452">Chrome айланаңыздын 3D картасын түзүү үчүн камераңызды колдонушу керек</translation>
-<translation id="8625237574518804553">{0,plural, =1{Chrome 1 мүнөттөн кийин кайра иштетилет}other{Chrome # мүнөттөн кийин кайра иштетилет}}</translation>
+<translation id="7185777478310554774">Ecosia'дун чагылгандай тездик менен иштеген жаңы версиясы бар.</translation>
+<translation id="5622136942112821750">Ecosia профилдери менен Ecosia'догу маалыматты өзүнчө сактай аласыз. Бул жумуш менен эс алууну бири-бири менен аралаштырбоого жардам берет.</translation>
+<translation id="18064594488616674">Ecosia жооп бербей жатат. Азыр өчүрүп кайра ишке киргизесизби?</translation>
+<translation id="6896860023874996542">Ecosia айланаңыздын 3D картасын түзүү үчүн камераңызды колдонушу керек</translation>
+<translation id="7558678848273505235">{0,plural, =1{Ecosia 1 мүнөттөн кийин кайра иштетилет}other{Ecosia # мүнөттөн кийин кайра иштетилет}}</translation>
 <translation id="8641606876632989680">Chrome уурдалган сырсөз менен киргениңизде эскертет</translation>
 <translation id="8649026945479135076">Сиз баш баккан сайттар жалпысынан эле сиз кызыккан нерселерди тажрыйбаңызды жекелештирүү максатында эстеп калышат. Ошондой эле, сайттар кызыккан нерселериңиз тууралуу маалыматты Chrome'до сакташы мүмкүн.</translation>
-<translation id="8669527147644353129">Google Chrome Жардамчы</translation>
-<translation id="8679801911857917785">Ал ошондой эле Chrome иштеп баштаганда көрүнө турган бетти көзөмөлдөйт.</translation>
-<translation id="8684875378076460854">Chrome бул файлды текшерүүнү сунуштайт. Ал кооптуу болушу мүмкүн</translation>
-<translation id="8686817260976772516">Chrome профилдери менен Chrome'догу маалыматты өзүнчө сактай аласыз. Досторуңуз менен үй-бүлөңүз үчүн профилдерди түзүңүз же жумуш менен эс алууну бири-бири менен аралаштырбаңыз.</translation>
+<translation id="9090890391337853620">Ecosia Жардамчы</translation>
+<translation id="524314285625975879">Ал ошондой эле Ecosia иштеп баштаганда көрүнө турган бетти көзөмөлдөйт.</translation>
+<translation id="4997668724897475215">Ecosia бул файлды текшерүүнү сунуштайт. Ал кооптуу болушу мүмкүн</translation>
+<translation id="4170280082681554565">Ecosia профилдери менен Ecosia'догу маалыматты өзүнчө сактай аласыз. Досторуңуз менен үй-бүлөңүз үчүн профилдерди түзүңүз же жумуш менен эс алууну бири-бири менен аралаштырбаңыз.</translation>
 <translation id="8712767363896337380">Жаңыртылганы аз калды! Жаңыртууну аягына чыгаруу үчүн Chrome'ду кайра иштетиңиз.</translation>
 <translation id="873133009373065397">Google Chrome демейки серепчини аныктап же коё албай жатат</translation>
-<translation id="8821043148920470810">Google Chrome жаңыртууларын алып туруу үчүн Windows 10 же андан кийинки версиясын орнотушуңуз керек. Бул компьютерде Windows 7 версиясы колдонулууда.</translation>
-<translation id="8823341990149967727">Chrome эскирип калган.</translation>
+<translation id="1975037445584526511">Ecosia жаңыртууларын алып туруу үчүн Windows 10 же андан кийинки версиясын орнотушуңуз керек. Бул компьютерде Windows 7 версиясы колдонулууда.</translation>
+<translation id="2695952268686253864">Ecosia эскирип калган.</translation>
 <translation id="8825634023950448068">Купуялыгыңызды камсыздоо үчүн 4 апта мурун кызыккан нерселериңизди автоматтык түрдө жок кылып турабыз. Жаңы сайттарды карап чыккан сайын кызыккан нерселериңиздин тизмеси жаңыланып турат. Жана эгер Chrome туура эмес аныктаса же айрым жарнамаларды көргүңүз келбесе, кызыккан нерсени өчүрүп койсоңуз болот.</translation>
-<translation id="8834965163890861871">Google Chrome сырсөздөрдү өзгөртүүгө аракет кылып жатат. Ага уруксат берүү үчүн Windows сырсөзүңүздү териңиз.</translation>
-<translation id="884296878221830158">Chrome'ду иштетип баштаганда же Башкы бет баскычы чыкылдатылганда, кайсы бет көрсөтүлө тургандыгын көзөмөлдөйт.</translation>
-<translation id="8847000024471094355">Chrome жигерсиз</translation>
+<translation id="5066194399237265772">Ecosia сырсөздөрдү өзгөртүүгө аракет кылып жатат. Ага уруксат берүү үчүн Windows сырсөзүңүздү териңиз.</translation>
+<translation id="6078545897140861225">Ecosia'ду иштетип баштаганда же Башкы бет баскычы чыкылдатылганда, кайсы бет көрсөтүлө тургандыгын көзөмөлдөйт.</translation>
+<translation id="1401515072108809622">Ecosia жигерсиз</translation>
 <translation id="8862326446509486874">Тутум деңгээлинде орнотууга тийиштүү укугуңуз жок. Орноткучту Администратор катары кайра иштетип көрүңүз.</translation>
-<translation id="8914504000324227558">Chrome'ду кайрадан ишке киргизүү</translation>
-<translation id="8922193594870374009">Номерди <ph name="ORIGIN" /> сайтынан Android телефонуңузга жөнөтүү үчүн эки түзмөгүңүздөн тең Chrome'го кириңиз.</translation>
-<translation id="8983720963221508955">Аккаунтуңузда Өркүндөтүлгөн коопсуз серептөөнү күйгүздүңүз. Эми аны Chrome'до да иштетиңиз.</translation>
+<translation id="8282620071565190081">Ecosia'ду кайрадан ишке киргизүү</translation>
+<translation id="7849498640944199147">Номерди <ph name="ORIGIN"/> сайтынан Android телефонуңузга жөнөтүү үчүн эки түзмөгүңүздөн тең Ecosia'го кириңиз.</translation>
+<translation id="7910693244647744044">Аккаунтуңузда Өркүндөтүлгөн коопсуз серептөөнү күйгүздүңүз. Эми аны Ecosia'до да иштетиңиз.</translation>
 <translation id="8986207147630327271">Жумуш профилин ушул серепчиге кошуп, администраторго жумуш профилин гана көзөмөлдөөгө уруксат берип жатасыз.</translation>
 <translation id="8989968390305463310">Жарнамалар көрүлгөн вебсайттарга жана төмөндө болжолдонгон кызыккан нерселериңизге жараша көрсөтүлөт. Купуялыгыңызды коргоо максатында Chrome кызыккан нерселериңизди ай сайын автоматтык түрдө жок кылат. Кызыккан нерселериңиз өчүрүлмөйүнчө жаңыртыла берет.</translation>
-<translation id="8999208279178790196">{0,plural, =0{Chrome'дун жаңы версиясы жеткиликтүү}=1{Chrome'дун жаңы версиясы жеткиликтүү}other{Chrome'дун жаңы версиясы # күндөн бери жеткиликтүү}}</translation>
-<translation id="9003498785844995646">Күйгүзүлсө, Chrome жылмакай сыдыруу жана видеодогу кадрлардын жыштыгы сыяктуу визуалдык кубулуштарды жана фондогу аракеттерди чектөө менен батареянын кубатын үнөмдөйт. <ph name="BEGIN_LINK" />Кеңири маалымат алыңыз<ph name="END_LINK" /> же <ph name="BEGIN_LINK_2" />пикир билдириңиз<ph name="END_LINK_2" /></translation>
-<translation id="9053892488859122171">ChromeOS Flex тутуму</translation>
-<translation id="9067395829937117663">Google Chrome'го Windows 7 же жаңыраак версиясы талап кылынат.</translation>
+<translation id="7348818664647668234">{0,plural, =0{Ecosia'дун жаңы версиясы жеткиликтүү}=1{Ecosia'дун жаңы версиясы жеткиликтүү}other{Ecosia'дун жаңы версиясы # күндөн бери жеткиликтүү}}</translation>
+<translation id="9003498785844995646">Күйгүзүлсө, Chrome жылмакай сыдыруу жана видеодогу кадрлардын жыштыгы сыяктуу визуалдык кубулуштарды жана фондогу аракеттерди чектөө менен батареянын кубатын үнөмдөйт. <ph name="BEGIN_LINK"/>Кеңири маалымат алыңыз<ph name="END_LINK"/> же <ph name="BEGIN_LINK_2"/>пикир билдириңиз<ph name="END_LINK_2"/></translation>
+<translation id="9047384314208087523">EcosiaOS Flex тутуму</translation>
+<translation id="5675757883980078189">Ecosia'го Windows 7 же жаңыраак версиясы талап кылынат.</translation>
 <translation id="911206726377975832">Серептөө дайын-даректериңизди өчүрөсүзбү?</translation>
 <translation id="9138603949443464873">Өзгөртүүлөрдү киргизүү үчүн Chrome'ду кайра иштетиңиз</translation>
 <translation id="9195993889682885387">Chrome кызыккан нерселериңизди акыркы бир нече аптадагы көрүлгөн вебсайттарыңыздын негизинде божомолдойт. Бул маалымат түзмөгүңүздө калат.</translation>
-<translation id="919706545465235479">Шайкештирип баштоо үчүн Chrome'ду жаңыртыңыз</translation>
-<translation id="922152298093051471">Chrome'ду ыңгайлаштыруу</translation>
-<translation id="93760716455950538">ChromeOS Flex'ти өчүрүп күйгүзүү</translation>
-<translation id="940313311831216333">Chrome'догу файлдарды бардык түзмөктөрүңүздө колдонуу үчүн аккаунтуңузга кирип, шайкештирүүнү күйгүзүңүз.</translation>
-<translation id="943390475793766444">Chrome бул файлды текшерүүнү сунуштайт. Ал кооптуу болушу мүмкүн.</translation>
+<translation id="5704599732514791330">Шайкештирип баштоо үчүн Ecosia'ду жаңыртыңыз</translation>
+<translation id="838842459108103907">Ecosia'ду ыңгайлаштыруу</translation>
+<translation id="3070276123152913305">EcosiaOS Flex'ти өчүрүп күйгүзүү</translation>
+<translation id="4512092435423703529">Ecosia'догу файлдарды бардык түзмөктөрүңүздө колдонуу үчүн аккаунтуңузга кирип, шайкештирүүнү күйгүзүңүз.</translation>
+<translation id="7972668220031382654">Ecosia бул файлды текшерүүнү сунуштайт. Ал кооптуу болушу мүмкүн.</translation>
 <translation id="989369509083708165">Google Chrome демейки серепчи катары колдонулат</translation>
-<translation id="989816563149873169"><ph name="SHORTCUT" /> Chrome профилдерин которо алат</translation>
+<translation id="4614106433017753369"><ph name="SHORTCUT"/> Ecosia профилдерин которо алат</translation>
 </translationbundle>

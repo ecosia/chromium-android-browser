@@ -5,7 +5,9 @@
      found in the LICENSE file.
 -->
 
+<!-- Ecosia: background color branding -->
 <view class="org.chromium.chrome.browser.bookmarks.BookmarkFolderRow"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content" />
+    android:layout_height="wrap_content"
+    android:background="@color/ecosia_background_primary"/>

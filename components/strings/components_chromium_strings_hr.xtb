@@ -1,42 +1,42 @@
-<?xml version="1.0" ?>
+<?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE translationbundle>
 <translationbundle lang="hr">
 <translation id="130631256467250065">Promjene će početi vrijediti sljedeći put kad ponovo pokrenete uređaj.</translation>
-<translation id="275588974610408078">Prijavljivanje padova nije dostupno u pregledniku Chromium.</translation>
-<translation id="3064346599913645280">Gledate sigurnu stranicu Chromiuma</translation>
-<translation id="358997566136285270">Logotip Chromiuma</translation>
-<translation id="4365115785552740256">Chromium omogućuju projekt utemeljen na otvorenom kôdu <ph name="BEGIN_LINK_CHROMIUM" />Chromium<ph name="END_LINK_CHROMIUM" /> i drugi <ph name="BEGIN_LINK_OSS" />softveri utemeljeni na otvorenom kôdu<ph name="END_LINK_OSS" />.</translation>
-<translation id="4559775032954821361">Idite na
-          izbornik Chromium &gt;
-          <ph name="SETTINGS_TITLE" />
+<translation id="2955914891289756427">Prijavljivanje padova nije dostupno u pregledniku Ecosia.</translation>
+<translation id="2441066927880955410">Gledate sigurnu stranicu Ecosiaa</translation>
+<translation id="5104341700462991189">Logotip Ecosiaa</translation>
+<translation id="7347361780317841252">Ecosia omogućuju projekt utemeljen na otvorenom kôdu <ph name="BEGIN_LINK_CHROMIUM"/>Ecosia<ph name="END_LINK_CHROMIUM"/> i drugi <ph name="BEGIN_LINK_OSS"/>softveri utemeljeni na otvorenom kôdu<ph name="END_LINK_OSS"/>.</translation>
+<translation id="8920794075861916959">Idite na
+          izbornik Ecosia &gt;
+          <ph name="SETTINGS_TITLE"/>
           &gt;
-          <ph name="ADVANCED_TITLE" />
+          <ph name="ADVANCED_TITLE"/>
           &gt;
-          <ph name="PROXIES_TITLE" />
+          <ph name="PROXIES_TITLE"/>
           &gt;
           Postavke LAN-a
           i poništite odabir potvrdnog okvira "Upotrijebi proxy poslužitelj za LAN".</translation>
-<translation id="4622039161600275920">Chromium je blokirao ovu stranicu</translation>
-<translation id="48558539577516920">U postavkama vatrozida ili antivirusnog programa omogućite Chromiumu da pristupa mreži.</translation>
-<translation id="580822234363523061">Idite na
-          izbornik Chromium &gt;
-          <ph name="SETTINGS_TITLE" />
+<translation id="5177147493498374715">Ecosia je blokirao ovu stranicu</translation>
+<translation id="583128902627777075">U postavkama vatrozida ili antivirusnog programa omogućite Ecosiau da pristupa mreži.</translation>
+<translation id="3913860536599484838">Idite na
+          izbornik Ecosia &gt;
+          <ph name="SETTINGS_TITLE"/>
           &gt;
-          <ph name="ADVANCED_TITLE" />
+          <ph name="ADVANCED_TITLE"/>
           &gt;
-          <ph name="PROXIES_TITLE" />
+          <ph name="PROXIES_TITLE"/>
           i provjerite je li konfiguracija postavljena na "bez proxyja" ili "izravno".</translation>
-<translation id="6613594504749178791">Promjene će početi vrijediti sljedeći put kad ponovo pokrenete Chromium.</translation>
-<translation id="7861509383340276692">Otvorite
-        izbornik Chromiuma &gt;
-        <ph name="SETTINGS_TITLE" />
+<translation id="1722634673917783018">Promjene će početi vrijediti sljedeći put kad ponovo pokrenete Ecosia.</translation>
+<translation id="8143058600367874039">Otvorite
+        izbornik Ecosiaa &gt;
+        <ph name="SETTINGS_TITLE"/>
         &gt;
-        <ph name="ADVANCED_TITLE" />
-        pa poništite odabir stavke "<ph name="NO_PREFETCH_DESCRIPTION" />".
+        <ph name="ADVANCED_TITLE"/>
+        pa poništite odabir stavke "<ph name="NO_PREFETCH_DESCRIPTION"/>".
         Ako se time ne riješi poteškoća, preporučujemo da ponovo odaberete tu opciju
         radi bolje izvedbe.</translation>
 <translation id="8187289872471304532">Idite na
           Aplikacije &gt; Postavke sustava &gt; Mreža &gt; Napredno &gt; Proxy poslužitelji
           i poništite odabir proxy poslužitelja.</translation>
-<translation id="8684913864886094367">Chromium se nije ispravno zatvorio.</translation>
+<translation id="1864711229671391928">Ecosia se nije ispravno zatvorio.</translation>
 </translationbundle>

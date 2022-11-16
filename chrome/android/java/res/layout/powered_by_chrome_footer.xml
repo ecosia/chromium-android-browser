@@ -20,11 +20,11 @@ found in the LICENSE file.
         android:paddingEnd="16dp"
         android:gravity="start|center_vertical"
         android:maxLines="1"
-        android:drawableStart="@mipmap/app_icon"
+        android:drawableStart="@mipmap/ecosia_app_icon"
         android:drawablePadding="@dimen/custom_tabs_menu_footer_margin_horizontal"
         app:drawableWidth="@dimen/custom_tabs_menu_footer_icon_size"
         app:drawableHeight="@dimen/custom_tabs_menu_footer_icon_size"
-        style="@style/TextAppearance.TextSmall.Secondary" />
+        style="@style/TextAppearance.TextSmall.Secondary" /> <!-- Ecosia: App icon -->
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"

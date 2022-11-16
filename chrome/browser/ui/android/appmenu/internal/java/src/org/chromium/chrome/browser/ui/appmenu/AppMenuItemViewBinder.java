@@ -4,6 +4,7 @@
 
 package org.chromium.chrome.browser.ui.appmenu;
 
+import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.text.TextUtils;
 import android.view.View;
@@ -185,8 +186,17 @@ class AppMenuItemViewBinder {
             view.setTag(R.id.menu_item_enter_anim_id,
                     AppMenuUtil.buildIconItemEnterAnimator(buttons, isMenuIconAtStart));
 
+            /*
+             * Ecosia MOB-1568: Adjust color of the header of the context menu
+             *
             // Tint action bar's background.
             view.setBackgroundResource(R.drawable.menu_action_bar_bg);
+
+             */
+
+            final Resources resources = view.getResources();
+            final int color = resources.getColor(R.color.ecosia_context_menu_header, null);
+            view.setBackgroundColor(color);
 
             view.setEnabled(false);
         }

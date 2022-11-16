@@ -1002,6 +1002,10 @@ public class BookmarkTest {
                     public void bookmarkModelChanged() {
                         modelReorderHelper.notifyCalled();
                     }
+
+                    // Ecosia: Bookmark Import / Export
+                    @Override
+                    public void bookmarkModelNeedsReloadAfterBookmarksImport() {}
                 };
         // Perform registration to make callbacks work.
         TestThreadUtils.runOnUiThreadBlocking(

@@ -64,7 +64,7 @@ Use of this source code is governed by the GPLv3 that can be found in the compon
         android:fragment="org.chromium.chrome.browser.privacy.settings.PrivacySettings"
         android:key="privacy"
         android:order="10"
-        android:title="@string/prefs_privacy_security"/>
+        android:title="@string/prefs_privacy_menu_item"/>
     <Preference
         android:fragment="org.chromium.chrome.browser.safety_check.SafetyCheckSettingsFragment"
         android:key="safety_check"
@@ -123,6 +123,7 @@ Use of this source code is governed by the GPLv3 that can be found in the compon
         android:fragment="org.chromium.chrome.browser.tracing.settings.DeveloperSettings"
         android:key="developer"
         android:order="23"
+        app:isPreferenceVisible="false"
         android:title="Developer options"/>
     <Preference
         android:fragment="org.chromium.chrome.browser.about_settings.AboutChromeSettings"

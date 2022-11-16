@@ -59,6 +59,12 @@ public class BookmarkEditActivity extends SynchronousInitializationActivity {
                 finish();
             }
         }
+
+        // Ecosia: Bookmark Import / Export
+        @Override
+        public void bookmarkModelNeedsReloadAfterBookmarksImport() {
+            // only required after successful bookmark import
+        }
     };
 
     @Override
@@ -133,7 +139,7 @@ public class BookmarkEditActivity extends SynchronousInitializationActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         mDeleteButton = menu.add(R.string.bookmark_action_bar_delete)
                                 .setIcon(TintedDrawable.constructTintedDrawable(
-                                        this, R.drawable.ic_delete_white_24dp))
+                                        this, R.drawable.ecosia_bookmark_delete))   // Ecosia: branding
                                 .setShowAsActionFlags(MenuItem.SHOW_AS_ACTION_IF_ROOM);
 
         return super.onCreateOptionsMenu(menu);

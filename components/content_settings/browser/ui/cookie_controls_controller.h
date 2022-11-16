@@ -54,6 +54,9 @@ class CookieControlsController
   void AddObserver(CookieControlsView* obs);
   void RemoveObserver(CookieControlsView* obs);
 
+  // Ecosia: returns allowed Cookies
+  net::CookieList GetAllowedCookies();
+
  private:
   // The observed WebContents changes during the lifetime of the
   // CookieControlsController. SiteDataObserver can't change the observed

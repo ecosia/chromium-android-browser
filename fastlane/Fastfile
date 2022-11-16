@@ -1,0 +1,14 @@
+lane :huawei do
+    huawei_appgallery_connect(
+        client_id: ENV["HUAWEI_CLIENT_ID"],
+        client_secret: ENV["HUAWEI_CLIENT_SECRET"],
+        app_id: "102050599",
+        apk_path: ENV["ARM64_APK"],
+
+        #beyond this is optional
+        is_aab: false,
+        submit_for_review: true,
+        delay_before_submit_for_review: 20,
+    )
+end
+

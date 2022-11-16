@@ -36,6 +36,7 @@
 #include "components/adblock/core/subscription/installed_subscription.h"
 #include "components/adblock/core/subscription/subscription.h"
 #include "components/adblock/core/subscription/subscription_config.h"
+#include "components/adblock/core/subscription/subscription_persistent_metadata_impl.h"
 #include "components/adblock/core/subscription/subscription_service.h"
 #include "components/language/core/common/locale_util.h"
 #include "components/prefs/pref_service.h"
@@ -201,10 +202,41 @@ void AdblockControllerImpl::RunFirstRunLogic(PrefService* pref_service) {
 }
 
 void AdblockControllerImpl::MigrateLegacyPrefs(PrefService* pref_service) {
+  auto subscriptions = MigrateItemsFromList<GURL>(
+      pref_service, prefs::kAdblockSubscriptionsLegacy);
+  auto custom_subscriptions = MigrateItemsFromList<GURL>(
+      pref_service, prefs::kAdblockCustomSubscriptionsLegacy);
+  auto domains = MigrateItemsFromList<std::string>(
+      pref_service, prefs::kAdblockAllowedDomainsLegacy);
+  auto filters = MigrateItemsFromList<std::string>(
+      pref_service, prefs::kAdblockCustomFiltersLegacy);
+
   if (auto aa_value = MigrateBoolFromPrefs(pref_service,
                                            prefs::kEnableAcceptableAdsLegacy)) {
     SetAcceptableAdsEnabled(*aa_value);
     VLOG(1) << "[eyeo] Migrated kEnableAcceptableAdsLegacy pref";
+  } else {
+    if (!subscriptions.empty()) {
+      // In old version AA setting could never be touched but AA was in use.
+      // So if we see no value for AA but kAdblockSubscriptionsLegacy pref was
+      // touched (kAdblockSubscriptionsLegacy is touched during 1st run
+      // scenario) we need to assume AA was enabled. See DPD-2219.
+      SetAcceptableAdsEnabled(true);
+      VLOG(1) << "[eyeo] Fixed AA setting migration";
+    } else if (pref_service->GetBoolean(
+                   prefs::kRunAcceptableAdsRestoringPatch)) {
+      if (!IsAcceptableAdsEnabled()) {
+        auto subscription_metadata =
+            SubscriptionPersistentMetadataImpl(pref_service);
+        auto downloads_count =
+            subscription_metadata.GetDownloadSuccessCount(AcceptableAdsUrl());
+        if (downloads_count >= 30) {
+          VLOG(1) << "[eyeo] Enabled AA in recovery mode";
+          SetAcceptableAdsEnabled(true);
+        }
+      }
+    }
+    pref_service->SetBoolean(prefs::kRunAcceptableAdsRestoringPatch, false);
   }
 
   if (auto enable_value =
@@ -213,29 +245,25 @@ void AdblockControllerImpl::MigrateLegacyPrefs(PrefService* pref_service) {
     VLOG(1) << "[eyeo] Migrated kEnableAdblockLegacy pref";
   }
 
-  for (const auto& url : MigrateItemsFromList<GURL>(
-           pref_service, prefs::kAdblockCustomSubscriptionsLegacy)) {
+  for (const auto& url : custom_subscriptions) {
     adblock_filtering_configuration_->AddFilterList(url);
     VLOG(1) << "[eyeo] Migrated " << url
             << " from kAdblockCustomSubscriptionsLegacy pref";
   }
 
-  for (const auto& url : MigrateItemsFromList<GURL>(
-           pref_service, prefs::kAdblockSubscriptionsLegacy)) {
+  for (const auto& url : subscriptions) {
     adblock_filtering_configuration_->AddFilterList(url);
     VLOG(1) << "[eyeo] Migrated " << url
             << " from kAdblockSubscriptionsLegacy pref";
   }
 
-  for (const auto& domain : MigrateItemsFromList<std::string>(
-           pref_service, prefs::kAdblockAllowedDomainsLegacy)) {
+  for (const auto& domain : domains) {
     adblock_filtering_configuration_->AddAllowedDomain(domain);
     VLOG(1) << "[eyeo] Migrated " << domain
             << " from kAdblockAllowedDomainsLegacy pref";
   }
 
-  for (const auto& filter : MigrateItemsFromList<std::string>(
-           pref_service, prefs::kAdblockCustomFiltersLegacy)) {
+  for (const auto& filter : filters) {
     adblock_filtering_configuration_->AddCustomFilter(filter);
     VLOG(1) << "[eyeo] Migrated " << filter
             << " from kAdblockCustomFiltersLegacy pref";

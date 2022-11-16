@@ -55,5 +55,6 @@ android_resources("java_resources") {
   deps = [
     "//components/browser_ui/styles/android:java_resources",
     "//ui/android:ui_java_resources",
+    "//ui/android:ecosia_ui_java_resources",
   ]
 }

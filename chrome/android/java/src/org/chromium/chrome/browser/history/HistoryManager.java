@@ -318,9 +318,10 @@ public class HistoryManager implements OnMenuItemClickListener, SelectionObserve
         if (historyClustersEnabled) {
             boolean historyClustersVisible = mPrefService.getBoolean(HISTORY_CLUSTERS_VISIBLE_PREF);
             mShowHistoryClustersToggleSupplier.set(historyClustersVisible);
+            //Ecosia : Disable journey option
             mToolbar.getMenu()
                     .findItem(R.id.optout_menu_id)
-                    .setVisible(true)
+                    .setVisible(false)
                     .setTitle(historyClustersVisible
                                     ? R.string.history_clusters_disable_menu_item_label
                                     : R.string.history_clusters_enable_menu_item_label);
@@ -517,8 +518,8 @@ public class HistoryManager implements OnMenuItemClickListener, SelectionObserve
             return true;
         } else if (item.getItemId() == R.id.info_menu_id) {
             toggleInfoHeaderVisibility();
-        } else if (item.getItemId() == R.id.optout_menu_id) {
-            onHistoryClustersOptOutChanged(!mPrefService.getBoolean(HISTORY_CLUSTERS_VISIBLE_PREF));
+        } else if (item.getItemId() == R.id.optout_menu_id) { //Ecosia : Disable Journey feature
+            onHistoryClustersOptOutChanged(/*!mPrefService.getBoolean(HISTORY_CLUSTERS_VISIBLE_PREF)*/false);
             return true;
         }
         return false;

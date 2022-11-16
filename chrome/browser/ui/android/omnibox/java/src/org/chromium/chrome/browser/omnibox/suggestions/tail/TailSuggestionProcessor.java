@@ -62,8 +62,8 @@ public class TailSuggestionProcessor extends BaseSuggestionViewProcessor {
 
         setSuggestionDrawableState(model,
                 SuggestionDrawableState.Builder
-                        .forDrawableRes(getContext(), R.drawable.ic_suggestion_magnifier)
-                        .setAllowTint(true)
+                        .forDrawableRes(getContext(), R.drawable.ic_ecosia_suggestion_magnifier) // Ecosia: search icon
+                        .setAllowTint(false) // Ecosia: search icon
                         .build());
         setTabSwitchOrRefineAction(model, suggestion, position);
     }

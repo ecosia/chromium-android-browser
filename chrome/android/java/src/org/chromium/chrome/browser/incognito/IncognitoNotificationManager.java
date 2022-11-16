@@ -55,7 +55,7 @@ public class IncognitoNotificationManager {
                         .setContentText(actionMessage)
                         .setOngoing(true)
                         .setVisibility(Notification.VISIBILITY_SECRET)
-                        .setSmallIcon(R.drawable.incognito_simple)
+                        .setSmallIcon(R.drawable.incognito_icon)   // Ecosia: branding
                         .setShowWhen(false)
                         .setLocalOnly(true)
                         .setGroup(NotificationConstants.GROUP_INCOGNITO);

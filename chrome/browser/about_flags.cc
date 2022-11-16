@@ -8434,6 +8434,13 @@ const FeatureEntry kFeatureEntries[] = {
      FEATURE_VALUE_TYPE(features::kRequestDesktopSiteExceptions)},
 #endif
 
+    // Ecosia: Bookmark Import / Export
+    {"export-bookmarks-use-saf",
+     flag_descriptions::kBookmarksExportUseSafName,
+     flag_descriptions::kBookmarksExportUseSafDescription, kOsAndroid,
+     FEATURE_VALUE_TYPE(
+         chrome::android::kBookmarksExportUseSaf)},
+
 #if BUILDFLAG(IS_CHROMEOS_ASH)
     {"video-conference", flag_descriptions::kVideoConferenceName,
      flag_descriptions::kVideoConferenceDescription, kOsCrOS,

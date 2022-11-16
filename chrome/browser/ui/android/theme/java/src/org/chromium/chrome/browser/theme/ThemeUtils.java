@@ -86,6 +86,9 @@ public class ThemeUtils {
             return ColorUtils.getColorWithOverlay(color, overlayColorOpaque, overlayColorAlpha);
         }
 
+        /*
+                Ecosia MOB-1568 (https://ecosia.atlassian.net/browse/MOB-1568)
+
         // Text box color on default toolbar background in standard mode is a pre-defined
         // color instead of a calculated color.
         if (ThemeUtils.isUsingDefaultToolbarColor(context, false, color)) {
@@ -100,6 +103,9 @@ public class ThemeUtils {
 
         return ColorUtils.getColorWithOverlay(
                 color, Color.WHITE, LOCATION_BAR_TRANSPARENT_BACKGROUND_ALPHA);
+         */
+
+        return context.getColor(R.color.ecosia_search_input_field_color);
     }
 
     /**

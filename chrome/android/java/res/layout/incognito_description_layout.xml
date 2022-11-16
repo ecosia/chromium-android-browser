@@ -11,32 +11,70 @@ found in the LICENSE file.
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/new_tab_incognito_container"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:gravity="start"
-    android:orientation="vertical"
-    android:paddingStart="@dimen/md_incognito_ntp_padding_left" >
+    android:layout_height="match_parent"
+    android:gravity="center"> <!--Ecosia :Incognito changes-->
 
-    <ImageView
-        android:id="@+id/new_tab_incognito_icon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:ignore="ContentDescription"
-        android:src="@drawable/incognito_splash"
-        app:tint="@color/ntp_incognito_icon_color" />
+    <!--Ecosia :Incognito changes-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginStart="@dimen/md_incognito_ntp_padding_left"
+        android:layout_marginEnd="@dimen/md_incognito_ntp_padding_left">
 
-    <TextView
-        android:id="@+id/new_tab_incognito_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/new_tab_otr_title"
-        android:textAppearance="@style/TextAppearance.Headline.Primary.Baseline.Light" />
+        <ImageView
+            android:id="@+id/new_tab_incognito_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/new_tab_incognito_title"
+            app:layout_constraintVertical_chainStyle="packed"
+            android:src="@drawable/incognito_desc"
+            tools:ignore="ContentDescription" /> <!-- Ecosia :Rebranding -->
 
-    <org.chromium.ui.widget.TextViewWithClickableSpans
-        android:id="@+id/new_tab_incognito_subtitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="@style/TextAppearance.TextMedium.Secondary.Baseline.Light"
-        android:lineSpacingExtra="@dimen/md_incognito_ntp_line_spacing" />
+        <TextView
+            android:id="@+id/new_tab_incognito_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/new_tab_incognito_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/new_tab_incognito_subtitle"
+            app:layout_constraintVertical_chainStyle="packed"
+            android:text="@string/incognito_title"
+            android:fontFamily="@font/FoundersGroteskCondensed"
+            android:textColor="@color/ecosia_text_primary_dark"
+            android:textSize="28sp"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.Headline.Primary.Baseline.Light" />
+
+        <org.chromium.ui.widget.TextViewWithClickableSpans
+            android:id="@+id/new_tab_incognito_subtitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/new_tab_incognito_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_chainStyle="packed"
+            android:gravity="center"
+            android:text="@string/incognito_desc"
+            android:fontFamily="@font/inter"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:textSize="14sp"
+            android:textColor="@color/ecosia_text_secondary_dark"
+            android:textAppearance="@style/TextAppearance.TextMedium.Secondary.Baseline.Light"
+            android:lineSpacingExtra="@dimen/md_incognito_ntp_line_spacing" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout> <!--Ecosia :Incognito changes-->
 
     <LinearLayout
         android:id="@+id/new_tab_incognito_bulletpoints_container"
@@ -44,6 +82,7 @@ found in the LICENSE file.
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="start"
+        android:visibility="gone"
         android:layout_marginBottom="12dp">
 
         <org.chromium.ui.widget.TextViewWithLeading
@@ -58,6 +97,7 @@ found in the LICENSE file.
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="@style/TextAppearance.TextMedium.Secondary.Baseline.Light"
+            android:visibility="gone"
             app:leading="@dimen/text_size_medium_leading" />
 
     </LinearLayout>
@@ -70,6 +110,7 @@ found in the LICENSE file.
         android:gravity="center_vertical"
         android:text="@string/learn_more"
         android:textAppearance="@style/TextAppearance.IncognitoNewTabLearnMoreLinkModern"
+        android:visibility="gone"
         app:leading="@dimen/text_size_medium_leading" />
 
     <RelativeLayout
@@ -79,6 +120,7 @@ found in the LICENSE file.
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
+        android:visibility="gone"
         android:padding="16dp">
 
         <ImageView

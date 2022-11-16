@@ -52,7 +52,7 @@ public abstract class BasicNativePage implements NativePage {
     }
 
     @Override
-    public final View getView() {
+    public View getView() {
         assert mView != null : "Need to call initWithView()";
 
         return mView;

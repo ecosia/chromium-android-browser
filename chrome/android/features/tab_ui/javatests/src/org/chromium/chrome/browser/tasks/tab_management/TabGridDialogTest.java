@@ -90,6 +90,7 @@ import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -331,6 +332,7 @@ public class TabGridDialogTest {
         verifyTabGroupsContinuation(cta, false);
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @MediumTest
     @Features.DisableFeatures({ChromeFeatureList.TAB_SELECTION_EDITOR_V2})
@@ -433,6 +435,7 @@ public class TabGridDialogTest {
         }
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @MediumTest
     // clang-format off
@@ -460,6 +463,7 @@ public class TabGridDialogTest {
         triggerShareGroupAndVerify(cta);
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @MediumTest
     // clang-format off
@@ -483,6 +487,7 @@ public class TabGridDialogTest {
         triggerShareGroupAndVerify(cta);
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @MediumTest
     // clang-format off
@@ -525,6 +530,7 @@ public class TabGridDialogTest {
         verifyTabSwitcherCardCount(cta, 1);
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @MediumTest
     // clang-format off
@@ -984,6 +990,7 @@ public class TabGridDialogTest {
         verifyTabSwitcherCardCount(cta, 0);
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @MediumTest
     // clang-format off
@@ -1051,6 +1058,7 @@ public class TabGridDialogTest {
         checkPosition(cta, true, true);
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @MediumTest
     @Features.EnableFeatures(ChromeFeatureList.TAB_GROUPS_CONTINUATION_ANDROID)
@@ -1089,6 +1097,7 @@ public class TabGridDialogTest {
         }
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @MediumTest
     // clang-format off
@@ -1323,6 +1332,7 @@ public class TabGridDialogTest {
         verifyBackgroundViewAccessibilityImportance(cta, false);
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @MediumTest
     @DisabledTest(message = "TODO(crbug.com/1128345): Fix flakiness.")

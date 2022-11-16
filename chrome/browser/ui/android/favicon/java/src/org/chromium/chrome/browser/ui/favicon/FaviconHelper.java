@@ -22,6 +22,7 @@ import org.chromium.base.ApiCompatibilityUtils;
 import org.chromium.base.annotations.CalledByNative;
 import org.chromium.base.annotations.NativeMethods;
 import org.chromium.chrome.browser.profiles.Profile;
+import org.chromium.components.embedder_support.util.UrlConstants;
 import org.chromium.components.embedder_support.util.UrlUtilities;
 import org.chromium.url.GURL;
 
@@ -71,8 +72,12 @@ public class FaviconHelper {
         private Bitmap mDefaultLightBitmap;
 
         private int getResourceId(GURL url) {
-            return UrlUtilities.isInternalScheme(url) ? R.drawable.chromelogo16
-                                                      : R.drawable.default_favicon;
+            return isNTPUrl(url) ? R.drawable.ic_ecosia : R.drawable.default_favicon;    // Ecosia: favicon branding
+        }
+
+        private static boolean isNTPUrl(GURL gurl) {
+            if (!gurl.isValid() || !UrlUtilities.isInternalScheme(gurl)) return false;
+            return UrlConstants.NTP_HOST.equals(gurl.getHost());
         }
 
         private Bitmap createBitmap(Resources resources, int resourceId, boolean useDarkIcon) {

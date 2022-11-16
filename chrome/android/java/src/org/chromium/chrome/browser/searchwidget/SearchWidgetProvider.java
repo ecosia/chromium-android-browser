@@ -24,6 +24,8 @@ import org.chromium.base.ContextUtils;
 import org.chromium.base.IntentUtils;
 import org.chromium.base.Log;
 import org.chromium.chrome.R;
+import org.chromium.chrome.browser.night_mode.SystemNightModeMonitor;
+import org.ecosia.searchwidget.EcosiaWidgetProvider;
 import org.chromium.chrome.browser.firstrun.FirstRunFlowSequencer;
 import org.chromium.chrome.browser.locale.LocaleManager;
 import org.chromium.chrome.browser.preferences.ChromePreferenceKeys;
@@ -31,6 +33,7 @@ import org.chromium.chrome.browser.preferences.SharedPreferencesManager;
 import org.chromium.chrome.browser.ui.searchactivityutils.SearchActivityConstants;
 import org.chromium.chrome.browser.ui.searchactivityutils.SearchActivityPreferencesManager;
 import org.chromium.chrome.browser.ui.searchactivityutils.SearchActivityPreferencesManager.SearchActivityPreferences;
+import org.ecosia.tracking.TrackingManager;
 
 import java.util.function.Consumer;
 
@@ -48,7 +51,7 @@ import java.util.function.Consumer;
  * a crash stack.  This is done to prevent Android from labeling the whole process as "bad" and
  * blocking taps on the widget.  See http://crbug.com/712061.
  */
-public class SearchWidgetProvider extends AppWidgetProvider {
+public class SearchWidgetProvider extends AppWidgetProvider implements SystemNightModeMonitor.Observer {
     /** Wraps up all things that a {@link SearchWidgetProvider} can request things from. */
     static class SearchWidgetProviderDelegate implements Consumer<SearchActivityPreferences> {
         private final Context mContext;
@@ -73,7 +76,7 @@ public class SearchWidgetProvider extends AppWidgetProvider {
         protected int[] getAllSearchWidgetIds() {
             if (mManager == null) return new int[0];
             return mManager.getAppWidgetIds(
-                    new ComponentName(getContext(), SearchWidgetProvider.class.getName()));
+                    new ComponentName(getContext(), EcosiaWidgetProvider.class.getName()));
         }
 
         /** See {@link AppWidgetManager#updateAppWidget}. */
@@ -98,6 +101,11 @@ public class SearchWidgetProvider extends AppWidgetProvider {
     @SuppressLint("StaticFieldLeak")
     private static SearchWidgetProviderDelegate sDelegate;
 
+    // Ecosia
+    public SearchWidgetProvider() {
+        SystemNightModeMonitor.getInstance().addObserver(this);
+    }
+
     public static void initialize() {
         SearchActivityPreferencesManager.addObserver(getDelegate());
     }
@@ -117,12 +125,13 @@ public class SearchWidgetProvider extends AppWidgetProvider {
         // Launch the SearchActivity.
         Intent searchIntent =
                 new Intent(startVoiceSearch ? SearchActivityConstants.ACTION_START_VOICE_SEARCH
-                                            : SearchActivityConstants.ACTION_START_TEXT_SEARCH);
+                        : SearchActivityConstants.ACTION_START_TEXT_SEARCH);
 
         searchIntent.setClass(context, SearchActivity.class);
         searchIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         searchIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_DOCUMENT);
         searchIntent.putExtra(EXTRA_FROM_SEARCH_WIDGET, true);
+        searchIntent.putExtra(TrackingManager.OPEN_ORIGIN, TrackingManager.WIDGET_ORIGIN); // Ecosia: add info for open origin
 
         Bundle optionsBundle =
                 ActivityOptionsCompat.makeCustomAnimation(context, R.anim.activity_open_enter, 0)
@@ -149,7 +158,7 @@ public class SearchWidgetProvider extends AppWidgetProvider {
     private static RemoteViews createWidgetViews(
             Context context, int id, String engineName, boolean isVoiceSearchAvailable) {
         RemoteViews views =
-                new RemoteViews(context.getPackageName(), R.layout.search_widget_template);
+                new RemoteViews(context.getPackageName(), R.layout.ecosia_search_widget_template);
 
         views.setOnClickPendingIntent(R.id.text_container, createIntent(context, false));
         views.setOnClickPendingIntent(R.id.microphone_icon, createIntent(context, true));
@@ -222,5 +231,11 @@ public class SearchWidgetProvider extends AppWidgetProvider {
     static void setActivityDelegateForTest(SearchWidgetProviderDelegate delegate) {
         assert sDelegate == null;
         sDelegate = delegate;
+    }
+
+    // Ecosia
+    @Override
+    public void onSystemNightModeChanged() {
+        performUpdate(null, null);
     }
 }

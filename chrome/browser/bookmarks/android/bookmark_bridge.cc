@@ -1,6 +1,24 @@
-// Copyright 2013 The Chromium Authors
-// Use of this source code is governed by a BSD-style license that can be
-// found in the LICENSE file.
+/*
+ * Copyright 2013 The Chromium Authors
+ * Copyright (C) 2023 Ecosia Android App source (for GPL 3.0)
+ *
+ * Licensed under the GNU General Public License, Version 3.0 and BSD-style license (found in LICENSE file);
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at 
+ * License: GPL-3.0-only - https://spdx.org/licenses/GPL-3.0-only.html
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+ 
 
 #include "chrome/browser/bookmarks/android/bookmark_bridge.h"
 
@@ -53,6 +71,26 @@
 #include "components/undo/undo_manager.h"
 #include "content/public/browser/browser_thread.h"
 #include "content/public/browser/web_contents.h"
+// Ecosia: Bookmark Import / Export BEGIN
+#include "base/android/content_uri_utils.h"
+#include "base/android/path_utils.h"
+#include "base/strings/utf_string_conversions.h"
+#include "chrome/utility/importer/bookmark_html_reader.h"
+#include "chrome/browser/bookmarks/bookmark_html_writer.h"
+#include "chrome/browser/importer/profile_writer.h"
+#include "chrome/browser/platform_util.h"
+#include "chrome/browser/ui/chrome_select_file_policy.h"
+#include "chrome/common/importer/imported_bookmark_entry.h"
+#include "chrome/common/importer/importer_data_types.h"
+#include "chrome/common/url_constants.h"
+#include "components/favicon_base/favicon_usage_data.h"
+#include "components/search_engines/template_url.h"
+#include "components/url_formatter/url_fixer.h"
+#include "ui/android/window_android.h"
+#include "base/task/task_traits.h"
+#include "base/task/thread_pool.h"
+#include "content/public/browser/browser_task_traits.h"
+// Ecosia: Bookmark Import / Export END
 
 using base::android::AttachCurrentThread;
 using base::android::ConvertUTF16ToJavaString;
@@ -71,7 +109,95 @@ using bookmarks::android::JavaBookmarkIdGetType;
 using content::BrowserThread;
 using power_bookmarks::PowerBookmarkMeta;
 
+// Ecosia: Bookmark Import / Export BEGIN
+namespace internal {
+
+// Returns true if |url| has a valid scheme that we allow to import. We
+// filter out the URL with a unsupported scheme.
+bool CanImportURL(const GURL& url) {
+ // The URL is not valid.
+ if (!url.is_valid())
+   return false;
+
+ // Filter out the URLs with unsupported schemes.
+ const char* const kInvalidSchemes[] = {"wyciwyg", "place"};
+ for (size_t i = 0; i < std::size(kInvalidSchemes); ++i) {
+   if (url.SchemeIs(kInvalidSchemes[i]))
+     return false;
+ }
+
+ // Check if |url| is about:blank.
+ if (url == url::kAboutBlankURL)
+   return true;
+
+ // If |url| starts with chrome:// or about:, check if it's one of the URLs
+ // that we support.
+ if (url.SchemeIs(content::kChromeUIScheme) ||
+     url.SchemeIs(url::kAboutScheme)) {
+   if (url.host_piece() == chrome::kChromeUIAboutHost)
+     return true;
+
+   GURL fixed_url(url_formatter::FixupURL(url.spec(), std::string()));
+   for (size_t i = 0; i < chrome::kNumberOfChromeHostURLs; ++i) {
+     if (fixed_url.DomainIs(chrome::kChromeHostURLs[i]))
+       return true;
+   }
+
+   for (size_t i = 0; i < chrome::kNumberOfChromeDebugURLs; ++i) {
+     if (fixed_url == chrome::kChromeDebugURLs[i])
+       return true;
+   }
+
+   // If url has either chrome:// or about: schemes but wasn't found in the
+   // above lists, it means we don't support it, so we don't allow the user
+   // to import it.
+   return false;
+ }
+
+ // Otherwise, we assume the url has a valid (importable) scheme.
+ return true;
+}
+
+} // internal
+// Ecosia: Bookmark Import / Export END
+
 namespace {
+
+// Ecosia: Bookmark Import / Export BEGIN
+class FileBookmarksExportObserver: public BookmarksExportObserver {
+ public:
+ FileBookmarksExportObserver(
+          const JavaParamRef<jobject>& obj,
+          ui::WindowAndroid* window,
+          const std::string& export_path) :
+   obj_(ScopedJavaGlobalRef<jobject>(obj)),
+   window_(window),
+   export_path_(export_path) {}
+
+ void OnExportFinished(Result result) override {
+   if (result == Result::kSuccess) {
+     LOG(INFO) << "Bookmarks exported successfully to " << export_path_;
+   } else if (result == Result::kCouldNotCreateFile) {
+     LOG(ERROR) << "Bookmarks export: could not create file " << export_path_;
+   } else if (result == Result::kCouldNotWriteHeader) {
+     LOG(ERROR) << "Bookmarks export: could not write header";
+   } else if (result == Result::kCouldNotWriteNodes) {
+     LOG(ERROR) << "Bookmarks export: could not write nodes";
+   }
+
+   JNIEnv* env = AttachCurrentThread();
+   Java_BookmarkBridge_bookmarksExported(env, obj_, window_->GetJavaObject(),
+                                         ConvertUTF8ToJavaString(env, export_path_),
+                                         result == Result::kSuccess);
+   delete this;
+ }
+
+ private:
+ const ScopedJavaGlobalRef<jobject> obj_;
+ ui::WindowAndroid* window_;
+ const std::string export_path_;
+};
+// Ecosia: Bookmark Import / Export END
 
 class BookmarkTitleComparer {
  public:
@@ -182,6 +308,11 @@ BookmarkBridge::~BookmarkBridge() {
   if (partner_bookmarks_shim_)
     partner_bookmarks_shim_->RemoveObserver(this);
   reading_list_manager_->RemoveObserver(this);
+  // Ecosia: Bookmark Import / Export
+  // There may be pending file dialogs, we need to tell them that we've gone
+  // away so they don't try and call back to us.
+  if (select_file_dialog_)
+    select_file_dialog_->ListenerDestroyed();
 }
 
 void BookmarkBridge::Destroy(JNIEnv*, const JavaParamRef<jobject>&) {
@@ -576,6 +707,208 @@ jint BookmarkBridge::GetTotalBookmarkCount(
 
   return count;
 }
+
+// Ecosia: Bookmark Import / Export BEGIN
+void BookmarkBridge::ImportBookmarks(JNIEnv* env,
+                                       const JavaParamRef<jobject>& obj,
+                                       const JavaParamRef<jobject>& java_window) {
+  DCHECK(IsLoaded());
+  DCHECK_CURRENTLY_ON(content::BrowserThread::UI);
+
+  window_ = ui::WindowAndroid::FromJavaWindowAndroid(java_window);
+  CHECK(window_);
+
+  select_file_dialog_ = ui::SelectFileDialog::Create(
+    this, std::make_unique<ChromeSelectFilePolicy>(nullptr));
+
+  //NOTE: extension and description are not used on Android, thus not set
+  ui::SelectFileDialog::FileTypeInfo file_type_info;
+
+  const std::vector<std::u16string> v_accept_types = { u"text/html" };
+
+  // Android needs the original MIME types and an additional capture value.
+  std::pair<std::vector<std::u16string>, bool> accept_types =
+      std::make_pair(v_accept_types, /* use_media_capture */ false);
+
+  select_file_dialog_->SelectFile(
+        ui::SelectFileDialog::SELECT_OPEN_FILE,
+        std::u16string(),
+        export_path_,
+        &file_type_info,
+        0,
+        base::FilePath::StringType(),
+        window_,
+        &accept_types
+  );
+}
+
+void BookmarkBridge::ExportBookmarks(JNIEnv* env,
+                                     const JavaParamRef<jobject>& obj,
+                                     const JavaParamRef<jobject>& java_window,
+                                     const JavaParamRef<jstring>& j_export_path) {
+  DCHECK(IsLoaded());
+  DCHECK_CURRENTLY_ON(content::BrowserThread::UI);
+
+  window_ = ui::WindowAndroid::FromJavaWindowAndroid(java_window);
+  CHECK(window_);
+
+  std::u16string export_path =
+    base::android::ConvertJavaStringToUTF16(env, j_export_path);
+
+  export_path_ = base::FilePath::FromUTF16Unsafe(export_path);
+
+  if (export_path_.empty()) {
+    if (!base::android::GetDownloadsDirectory(&export_path_)) {
+      LOG(ERROR) << "Could not retrieve downloads directory for bookmarks export";
+      return;
+    }
+    export_path_ = export_path_.Append(FILE_PATH_LITERAL("bookmarks.html"));
+  }
+
+  observer_ = new FileBookmarksExportObserver(obj, window_, export_path_.MaybeAsASCII());
+  bookmark_html_writer::WriteBookmarks(profile_, export_path_, observer_);
+}
+
+// Attempts to create a TemplateURL from the provided data. |title| is optional.
+// If TemplateURL creation fails, returns null.
+std::unique_ptr<TemplateURL> CreateTemplateURL(const std::u16string& url,
+                                               const std::u16string& keyword,
+                                               const std::u16string& title) {
+  if (url.empty() || keyword.empty())
+    return nullptr;
+  TemplateURLData data;
+  data.SetKeyword(keyword);
+  // We set short name by using the title if it exists.
+  // Otherwise, we use the shortcut.
+  data.SetShortName(title.empty() ? keyword : title);
+  data.SetURL(TemplateURLRef::DisplayURLToURLRef(url));
+  return std::make_unique<TemplateURL>(data);
+}
+
+void BookmarkBridge::FileSelected(const base::FilePath& path, int index,
+                            void* params) {
+  base::ThreadPool::PostTaskAndReplyWithResult(
+      FROM_HERE, {base::TaskPriority::BEST_EFFORT, base::MayBlock()},
+      base::BindOnce(&BookmarkBridge::FileSelectedImpl,
+        base::Unretained(this),
+        path),
+      base::BindOnce(&BookmarkBridge::FileSelectedImplOnUIThread,
+        base::Unretained(this),
+        path));
+}
+
+const std::string BookmarkBridge::FileSelectedImpl(const base::FilePath& path) {
+  JNIEnv* env = AttachCurrentThread();
+  ScopedJavaLocalRef<jobject> window = window_->GetJavaObject();
+
+  // propagate import start
+  Java_BookmarkBridge_onBookmarkImportStarted(env, ScopedJavaLocalRef<jobject>(java_bookmark_model_));
+
+  std::string mime_type = base::GetContentUriMimeType(path);
+  if (std::strcmp(mime_type.c_str(), "text/html") != 0) {
+    // File has incorrect mime type
+    Java_BookmarkBridge_onBookmarkImportError(
+        env, ScopedJavaLocalRef<jobject>(java_bookmark_model_), 6, window);
+    return "";
+  }
+
+  base::File file;
+  if (path.IsContentUri()) {
+    file = base::OpenContentUriForRead(path);
+  } else {
+    file.Initialize(path, base::File::FLAG_OPEN | base::File::FLAG_READ);
+  }
+  if (!file.IsValid()) {
+    // Cannot open bookmarks file for import
+    Java_BookmarkBridge_onBookmarkImportError(
+        env, ScopedJavaLocalRef<jobject>(java_bookmark_model_), 1, window);
+    return "";
+  }
+
+  auto fileLength = file.GetLength();
+  if (-1 == fileLength) {
+    // Cannot read bookmarks file length
+    Java_BookmarkBridge_onBookmarkImportError(
+        env, ScopedJavaLocalRef<jobject>(java_bookmark_model_), 2, window);
+    return "";
+  }
+
+  if (fileLength > 10 * 1024 * 1024) {
+    // Bookmark file is bigger than 10MB
+    Java_BookmarkBridge_onBookmarkImportError(
+        env, ScopedJavaLocalRef<jobject>(java_bookmark_model_), 3, window);
+    return "";
+  }
+
+  std::vector<char> buffer(fileLength);
+  if (-1 == file.ReadAtCurrentPos(buffer.data(), fileLength)) {
+    // Could not read bookmarks file
+    Java_BookmarkBridge_onBookmarkImportError(
+        env, ScopedJavaLocalRef<jobject>(java_bookmark_model_), 4, window);
+    return "";
+  }
+
+  if (buffer.empty()) {
+    // Empty bookmarks file
+    Java_BookmarkBridge_onBookmarkImportError(
+        env, ScopedJavaLocalRef<jobject>(java_bookmark_model_), 5, window);
+    return "";
+  }
+
+  std::string contents(buffer.begin(), buffer.end());
+  return contents;
+}
+
+void BookmarkBridge::FileSelectedImplOnUIThread(const base::FilePath& path,
+                                        const std::string& contents) {
+  if (contents.empty())
+    return;
+
+  // the following import logic comes from BookmarksFileImporter class
+  std::vector<ImportedBookmarkEntry> bookmarks;
+  std::vector<importer::SearchEngineInfo> search_engines;
+  favicon_base::FaviconUsageDataList favicons;
+
+  bookmark_html_reader::ImportBookmarksFile(
+      base::RepeatingCallback<bool(void)>(),
+      base::BindRepeating(internal::CanImportURL),
+      contents,
+      &bookmarks,
+      &search_engines,
+      &favicons);
+
+  auto *writer = new ProfileWriter(profile_);
+
+  if (!bookmarks.empty()) {
+    // adding bookmarks will begin extensive changes to the model
+    writer->AddBookmarksWithModel(bookmark_model_, bookmarks, u"Imported");
+  }
+  if (!search_engines.empty()) {
+    TemplateURLService::OwnedTemplateURLVector owned_template_urls;
+    for (const auto& search_engine : search_engines) {
+      std::unique_ptr<TemplateURL> owned_template_url = CreateTemplateURL(
+          search_engine.url, search_engine.keyword, search_engine.display_name);
+      if (owned_template_url)
+        owned_template_urls.push_back(std::move(owned_template_url));
+    }
+    writer->AddKeywords(std::move(owned_template_urls), false);
+  }
+
+  std::stringstream message;
+  message << "Imported " << bookmarks.size() << " bookmarks and " <<
+        search_engines.size() << " search engines from " << path.MaybeAsASCII();
+  auto result = message.str();
+
+  JNIEnv* env = AttachCurrentThread();
+  Java_BookmarkBridge_onBookmarkImportSuccess(
+    env, ScopedJavaLocalRef<jobject>(java_bookmark_model_), bookmarks.size(), search_engines.size(), base::android::ConvertUTF8ToJavaString(env, path.MaybeAsASCII()));
+
+  LOG(INFO) << result;
+}
+
+void BookmarkBridge::FileSelectionCanceled(void* params) {
+}
+// Ecosia: Bookmark Import / Export END
 
 void BookmarkBridge::SetBookmarkTitle(JNIEnv* env,
                                       const JavaParamRef<jobject>& obj,

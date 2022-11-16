@@ -701,10 +701,15 @@ public class LocationBarModel implements ToolbarDataProvider, LocationBarDataPro
                 && mNativeLocationBarModelAndroid == 0) {
             return R.drawable.omnibox_info;
         }
-
+        // Ecosia : Modified the check to our NTP (info icon fix)
+        boolean isNTP = true;
+        if (mTab != null && mTab.getUrl() != null) {
+            isNTP = UrlConstants.NTP_HOST.equals(mTab.getUrl().getHost());
+        }
         boolean skipIconForNeutralState =
                 !mSearchEngineLogoUtils.shouldShowSearchEngineLogo(isIncognito())
-                || mNtpDelegate.isCurrentlyVisible() || isInOverviewAndShowingOmnibox();
+                || mNtpDelegate.isCurrentlyVisible() || isInOverviewAndShowingOmnibox()
+                || isNTP;
 
         boolean useUpdatedConnectionSecurityIndicators =
                 mOmniboxUpdatedConnectionSecurityIndicatorsEnabled

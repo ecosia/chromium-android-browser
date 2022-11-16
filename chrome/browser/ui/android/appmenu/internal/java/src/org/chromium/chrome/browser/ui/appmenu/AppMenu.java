@@ -299,14 +299,13 @@ class AppMenu implements OnItemClickListener, OnKeyListener, AppMenuClickHandler
 
         try {
             mPopup.showAtLocation(anchorView.getRootView(), Gravity.NO_GRAVITY, popupPosition[0],
-                    popupPosition[1]);
+                popupPosition[1]);
         } catch (WindowManager.BadTokenException e) {
             // Intentionally ignore BadTokenException. This can happen in a real edge case where
             // parent.getWindowToken is not valid. See http://crbug.com/826052 &
             // https://crbug.com/1105831.
             return;
         }
-
         mSelectedItemBeforeDismiss = false;
         mMenuShownTimeMs = SystemClock.elapsedRealtime();
 

@@ -1,6 +1,23 @@
-// Copyright 2015 The Chromium Authors
-// Use of this source code is governed by a BSD-style license that can be
-// found in the LICENSE file.
+/*
+ * Copyright 2015 The Chromium Authors
+ * Copyright (C) 2023 Ecosia Android App source (for GPL 3.0)
+ *
+ * Licensed under the GNU General Public License, Version 3.0 and BSD-style license (found in LICENSE file);
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * License: GPL-3.0-only - https://spdx.org/licenses/GPL-3.0-only.html
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 package org.chromium.chrome.browser.bookmarks;
 
@@ -67,7 +84,7 @@ public class BookmarkActionBar extends SelectableListToolbar<BookmarkId>
             return;
         }
 
-        mDelegate.openFolder(mCurrentFolder.getParentId());
+        mDelegate.goBack(); // Ecosia: Bookmark Import / Export: MOB-2221 Improve back handling behavior
     }
 
     @Override
@@ -83,6 +100,14 @@ public class BookmarkActionBar extends SelectableListToolbar<BookmarkId>
             return true;
         } else if (menuItem.getItemId() == R.id.search_menu_id) {
             mDelegate.openSearchUI();
+            return true;
+        }  else if (menuItem.getItemId() == R.id.bookmarks_actions) { // Ecosia: Bookmark Import / Export
+            return true;
+        } else if (menuItem.getItemId() == R.id.import_menu_id) { // Ecosia: Bookmark Import / Export
+            mDelegate.importBookmarks();
+            return true;
+        } else if (menuItem.getItemId() == R.id.export_menu_id) { // Ecosia: Bookmark Import / Export
+            mDelegate.exportBookmarks();
             return true;
         }
 
@@ -147,6 +172,7 @@ public class BookmarkActionBar extends SelectableListToolbar<BookmarkId>
     void showLoadingUi() {
         setTitle(null);
         setNavigationButton(NAVIGATION_BUTTON_NONE);
+        getMenu().findItem(R.id.bookmarks_actions).setVisible(false); // Ecosia: Bookmark Import / Export
         getMenu().findItem(R.id.search_menu_id).setVisible(false);
         getMenu().findItem(R.id.edit_menu_id).setVisible(false);
     }
@@ -156,6 +182,7 @@ public class BookmarkActionBar extends SelectableListToolbar<BookmarkId>
         super.showNormalView();
 
         if (mDelegate == null) {
+            getMenu().findItem(R.id.bookmarks_actions).setVisible(false); // Ecosia: Bookmark Import / Export
             getMenu().findItem(R.id.search_menu_id).setVisible(false);
             getMenu().findItem(R.id.edit_menu_id).setVisible(false);
         }
@@ -187,6 +214,9 @@ public class BookmarkActionBar extends SelectableListToolbar<BookmarkId>
         mCurrentFolder = mDelegate.getModel().getBookmarkById(folder);
         getMenu().findItem(R.id.search_menu_id).setVisible(true);
         getMenu().findItem(R.id.edit_menu_id).setVisible(mCurrentFolder.isEditable());
+        // Ecosia: Bookmark Import / Export
+        // Only show bookmark import/export on Root level
+        getMenu().findItem(R.id.bookmarks_actions).setVisible(folder.equals(mDelegate.getModel().getRootFolderId()));
 
         // If this is the root folder, we can't go up anymore.
         if (folder.equals(mDelegate.getModel().getRootFolderId())) {

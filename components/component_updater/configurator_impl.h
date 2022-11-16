@@ -105,7 +105,7 @@ class ConfiguratorImpl {
   const bool deltas_enabled_;
   const bool fast_update_;
   const bool pings_enabled_;
-  const bool require_encryption_;
+  //const bool require_encryption_; // Ecosia: removed component updater according to ungoogled Chromium patch
   const GURL url_source_override_;
   const base::TimeDelta initial_delay_;
 };

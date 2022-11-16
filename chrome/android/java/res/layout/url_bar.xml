@@ -5,6 +5,7 @@ Use of this source code is governed by a BSD-style license that can be
 found in the LICENSE file.
 -->
 
+<!-- Ecosia: changed the search hint -->
 <org.chromium.chrome.browser.omnibox.UrlBarApi26
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/url_bar"
@@ -15,5 +16,5 @@ found in the LICENSE file.
     android:singleLine="true"
     android:imeOptions="actionGo|flagNoExtractUi|flagNoFullscreen"
     android:textSize="@dimen/location_bar_url_text_size"
-    android:hint="@string/search_or_type_web_address"
+    android:hint="@string/search_view_hint"
     android:importantForAutofill="no" />

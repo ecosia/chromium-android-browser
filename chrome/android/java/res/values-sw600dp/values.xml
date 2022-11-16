@@ -23,4 +23,6 @@ found in the LICENSE file.
 
     <!-- Compositor Tab Title Text -->
     <bool name="compositor_tab_title_fake_bold_text">false</bool>
+
+    <bool name="device_screen_size_is_tablet_like">true</bool>
 </resources>

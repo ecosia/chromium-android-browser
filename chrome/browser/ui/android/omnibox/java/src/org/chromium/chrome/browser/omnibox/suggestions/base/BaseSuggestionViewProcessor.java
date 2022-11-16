@@ -114,7 +114,7 @@ public abstract class BaseSuggestionViewProcessor implements SuggestionProcessor
                     mContext.getResources().getString(R.string.accessibility_omnibox_switch_to_tab);
             action = () -> mSuggestionHost.onSwitchToTab(suggestion, position);
         } else {
-            icon = R.drawable.btn_suggestion_refine;
+            icon = R.drawable.ic_ecosia_suggestion_refine; //Ecosia :Rebranding icon
             iconString = mContext.getResources().getString(
                     R.string.accessibility_omnibox_btn_refine, suggestion.getFillIntoEdit());
             action = () -> mSuggestionHost.onRefineSuggestion(suggestion);

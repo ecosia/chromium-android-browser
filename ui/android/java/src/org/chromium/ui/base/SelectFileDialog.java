@@ -1,6 +1,23 @@
-// Copyright 2012 The Chromium Authors
-// Use of this source code is governed by a BSD-style license that can be
-// found in the LICENSE file.
+/*
+ * Copyright 2012 The Chromium Authors
+ * Copyright (C) 2023 Ecosia Android App source (for GPL 3.0)
+ *
+ * Licensed under the GNU General Public License, Version 3.0 and BSD-style license (found in LICENSE file);
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * License: GPL-3.0-only - https://spdx.org/licenses/GPL-3.0-only.html
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 package org.chromium.ui.base;
 
@@ -43,6 +60,7 @@ import org.chromium.base.task.TaskTraits;
 import org.chromium.ui.R;
 import org.chromium.ui.UiUtils;
 import org.chromium.ui.permissions.PermissionConstants;
+import org.chromium.ui.widget.Toast;
 
 import java.io.File;
 import java.io.IOException;
@@ -64,6 +82,7 @@ public class SelectFileDialog implements WindowAndroid.IntentCallback, PhotoPick
     private static final String TAG = "SelectFileDialog";
     private static final String IMAGE_TYPE = "image";
     private static final String VIDEO_TYPE = "video";
+    private static final String HTML_TYPE = "html"; // Ecosia: Bookmark Import / Export
     private static final String AUDIO_TYPE = "audio";
     private static final String ALL_TYPES = "*/*";
 
@@ -284,7 +303,7 @@ public class SelectFileDialog implements WindowAndroid.IntentCallback, PhotoPick
         List<String> missingPermissions = new ArrayList<>();
         String storagePermission = Manifest.permission.READ_EXTERNAL_STORAGE;
         boolean shouldUsePhotoPicker = shouldUsePhotoPicker();
-        if (shouldUsePhotoPicker) {
+        if (shouldUsePhotoPicker || shouldShowHtmlTypes()) { // Ecosia: Bookmark Import / Export
             // The permission scenario for accessing media has evolved a bit over the years:
             // Early on, READ_EXTERNAL_STORAGE was required to access media, but that permission was
             // later deprecated. In its place (starting with Android T) READ_MEDIA_IMAGES and
@@ -333,7 +352,7 @@ public class SelectFileDialog implements WindowAndroid.IntentCallback, PhotoPick
                         }
 
                         // TODO(finnur): Remove once we figure out the cause of crbug.com/950024.
-                        if (shouldUsePhotoPicker) {
+                        if (shouldUsePhotoPicker || shouldShowHtmlTypes()) { // Ecosia: Bookmark Import / Export
                             if (permissions.length != requestPermissions.length) {
                                 throw new RuntimeException(
                                         String.format("Permissions arrays misaligned: %d != %d",
@@ -347,7 +366,7 @@ public class SelectFileDialog implements WindowAndroid.IntentCallback, PhotoPick
                             }
                         }
 
-                        if (shouldUsePhotoPicker) {
+                        if (shouldUsePhotoPicker || shouldShowHtmlTypes()) {
                             if (permissions[i].equals(storagePermission)
                                     || permissions[i].equals(PermissionConstants.READ_MEDIA_IMAGES)
                                     || permissions[i].equals(
@@ -553,6 +572,7 @@ public class SelectFileDialog implements WindowAndroid.IntentCallback, PhotoPick
             }
             if (!mimeTypes.contains(mimeType)) mimeTypes.add(mimeType);
         }
+        if (mimeTypes.size() == 0) return null; // Ecosia: Bookmark Import / Export
         return mimeTypes;
     }
 
@@ -607,7 +627,8 @@ public class SelectFileDialog implements WindowAndroid.IntentCallback, PhotoPick
                     mWindowAndroid.requestPermissions(new String[] {Manifest.permission.CAMERA},
                             (permissions, grantResults) -> {
                                 assert grantResults.length == 1;
-                                if (grantResults[0] == PackageManager.PERMISSION_DENIED) {
+                                //Ecosia : If request is cancelled, result array is empty
+                                if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_DENIED) {
                                     onFileNotSelected();
                                     return;
                                 }
@@ -879,6 +900,11 @@ public class SelectFileDialog implements WindowAndroid.IntentCallback, PhotoPick
      */
     private boolean acceptsOnlyType(String superType) {
         return countAcceptTypesFor(superType) == mFileTypes.size();
+    }
+
+    // Ecosia: Bookmark Import / Export
+    private boolean shouldShowHtmlTypes() {
+        return countAcceptTypesFor(HTML_TYPE) > 0;
     }
 
     /**

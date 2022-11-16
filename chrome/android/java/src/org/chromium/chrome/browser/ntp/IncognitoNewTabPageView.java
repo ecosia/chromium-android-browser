@@ -129,7 +129,10 @@ public class IncognitoNewTabPageView extends FrameLayout {
     }
 
     boolean shouldShowRevampedIncognitoNTP() {
+        /* Ecosia : Disable Incognito NTP revamp mode
         return ChromeFeatureList.isEnabled(ChromeFeatureList.INCOGNITO_NTP_REVAMP);
+        */
+        return false;
     }
 
     /**

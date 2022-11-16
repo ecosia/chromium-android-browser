@@ -73,6 +73,12 @@ public class BookmarkFolderSelectActivity
             updateFolderList();
         }
 
+        // Ecosia: Bookmark Import / Export
+        @Override
+        public void bookmarkModelNeedsReloadAfterBookmarksImport() {
+            updateFolderList();
+        }
+
         @Override
         public void bookmarkNodeRemoved(BookmarkItem parent, int oldIndex, BookmarkItem node,
                 boolean isDoingExtensiveChanges) {

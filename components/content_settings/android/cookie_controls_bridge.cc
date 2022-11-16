@@ -5,6 +5,10 @@
 #include "components/content_settings/android/cookie_controls_bridge.h"
 
 #include <memory>
+#include <string>
+
+#include "base/android/jni_android.h"
+#include "base/android/jni_string.h"
 
 #include "components/content_settings/android/content_settings_jni_headers/CookieControlsBridge_jni.h"
 #include "components/content_settings/core/browser/cookie_settings.h"
@@ -16,6 +20,8 @@
 namespace content_settings {
 
 using base::android::JavaParamRef;
+using base::android::ConvertUTF8ToJavaString;
+using base::android::ScopedJavaLocalRef;
 
 CookieControlsBridge::CookieControlsBridge(
     JNIEnv* env,
@@ -52,6 +58,19 @@ void CookieControlsBridge::OnStatusChanged(
         static_cast<int>(enforcement_));
   }
 
+  // Ecosia: cookies
+  std::string ecfgValue = "";
+  net::CookieList cookies = controller_-> GetAllowedCookies();
+  for(auto & elem : cookies) {
+
+      if (elem.Name() == "ECFG") {
+        ecfgValue = elem.Value();  
+      }
+  }
+  if (!ecfgValue.empty()) {
+    OnCookiesChanged(ecfgValue);
+  }
+ 
   OnCookiesCountChanged(allowed_cookies, blocked_cookies);
 }
 
@@ -68,6 +87,14 @@ void CookieControlsBridge::OnCookiesCountChanged(int allowed_cookies,
   JNIEnv* env = base::android::AttachCurrentThread();
   Java_CookieControlsBridge_onCookiesCountChanged(
       env, jobject_, allowed_cookies, blocked_cookies);
+}
+
+// Ecosia: cookies
+void CookieControlsBridge::OnCookiesChanged(std::string cookies) {
+  JNIEnv* env = base::android::AttachCurrentThread();
+
+  ScopedJavaLocalRef<jstring> jcookie = base::android::ConvertUTF8ToJavaString(env, cookies);
+  Java_CookieControlsBridge_onCookiesChanged(env, jobject_, jcookie);
 }
 
 void CookieControlsBridge::SetThirdPartyCookieBlockingEnabledForSite(

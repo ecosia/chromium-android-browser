@@ -61,6 +61,11 @@ if (is_android || is_chromeos) {
     } else {
       android_static_analysis = "on"
     }
+
+    # Ecosia: custom parameter for monochrome min sdk version
+    # Applies for both monochrome and monochrome64
+    # can be changed via gn parameter
+    min_monochrome_sdk_version = 24
   }
 
   # Avoid typos when setting android_static_analysis in args.gn.

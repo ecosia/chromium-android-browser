@@ -278,6 +278,10 @@ android_resources("java_resources") {
     "java/res/values/styles.xml",
     "java/res/values/values.xml",
     "java/res/xml/adaptive_toolbar_preference.xml",
+
+    # Ecosia
+    "java/res/values/ecosia_colors.xml",
+    "java/res/values-night/ecosia_colors.xml",
   ]
 
   deps = [

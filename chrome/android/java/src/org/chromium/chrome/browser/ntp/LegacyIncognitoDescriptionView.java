@@ -107,7 +107,9 @@ public class LegacyIncognitoDescriptionView
         mCookieControlsTitle = findViewById(R.id.cookie_controls_card_title);
         mCookieControlsSubtitle = findViewById(R.id.cookie_controls_card_subtitle);
 
+        /*Ecosia :Incognito changes
         adjustView();
+        */
     }
 
     @Override
@@ -118,7 +120,9 @@ public class LegacyIncognitoDescriptionView
         if (mWidthDp != config.screenWidthDp || mHeightDp != config.screenHeightDp) {
             mWidthDp = config.screenWidthDp;
             mHeightDp = config.screenHeightDp;
+            /*Ecosia :Incognito changes
             adjustView();
+            */
         }
 
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
@@ -182,7 +186,7 @@ public class LegacyIncognitoDescriptionView
             paddingVerticalDp = 32;
 
             // Align left.
-            mContainer.setGravity(Gravity.START);
+            mContainer.setGravity(Gravity.CENTER); /*Ecosia :Incognito changes */
 
             // Decide the bulletpoints orientation.
             bulletpointsArrangedHorizontally = false;
@@ -203,7 +207,7 @@ public class LegacyIncognitoDescriptionView
             paddingVerticalDp = mHeightDp <= 320 ? 16 : 72;
 
             // Align to the center.
-            mContainer.setGravity(Gravity.CENTER_HORIZONTAL);
+            mContainer.setGravity(Gravity.CENTER); /*Ecosia :Incognito changes */
 
             // Decide the bulletpoints orientation.
             bulletpointsArrangedHorizontally = true;
@@ -225,8 +229,10 @@ public class LegacyIncognitoDescriptionView
         int paddingTop;
         int paddingBottom;
         paddingTop = paddingBottom = dpToPx(getContext(), paddingVerticalDp);
+        /*Ecosia :Incognito changes
         mContainer.setPadding(dpToPx(getContext(), paddingHorizontalDp), paddingTop,
                 dpToPx(getContext(), paddingHorizontalDp), paddingBottom);
+        */
 
         // Total space between adjacent paragraphs (Including margins, paddings, etc.)
         int totalSpaceBetweenViews = getContext().getResources().getDimensionPixelSize(
@@ -290,16 +296,18 @@ public class LegacyIncognitoDescriptionView
                         ? R.string.new_tab_otr_subtitle_with_reading_list
                         : R.string.new_tab_otr_subtitle);
         boolean learnMoreInSubtitle = mWidthDp > WIDE_LAYOUT_THRESHOLD_DP;
-
-        mLearnMore.setVisibility(learnMoreInSubtitle ? View.GONE : View.VISIBLE);
+        //Ecosia : Removing Learn More in incognito mode
+        mLearnMore.setVisibility(View.GONE);
 
         if (!learnMoreInSubtitle) {
+            /* Ecosia : Disabling text from code
             // Revert to the original text.
             mSubtitle.setText(subtitleText);
             mSubtitle.setMovementMethod(null);
+            */
             return;
         }
-
+        /* Ecosia : Disabling text from code
         // Concatenate the original text with a clickable "Learn more" link.
         StringBuilder concatenatedText = new StringBuilder();
         concatenatedText.append(subtitleText);
@@ -310,9 +318,10 @@ public class LegacyIncognitoDescriptionView
         NoUnderlineClickableSpan span = new NoUnderlineClickableSpan(
                 getContext(), R.color.modern_blue_300, (view) -> mLearnMore.callOnClick());
         textWithLearnMoreLink.setSpan(
-                span, subtitleText.length() + 1, textWithLearnMoreLink.length(), 0 /* flags */);
+                span, subtitleText.length() + 1, textWithLearnMoreLink.length(), 0 /* flags );
         mSubtitle.setText(textWithLearnMoreLink);
         mSubtitle.setMovementMethod(LinkMovementMethod.getInstance());
+        */
     }
 
     /** Adjust the Cookie Controls Card. */
@@ -329,8 +338,8 @@ public class LegacyIncognitoDescriptionView
     @Override
     public void setCookieControlsEnforcement(@CookieControlsEnforcement int enforcement) {
         boolean enforced = enforcement != CookieControlsEnforcement.NO_ENFORCEMENT;
-        mCookieControlsToggle.setEnabled(!enforced);
-        mCookieControlsManagedIcon.setVisibility(enforced ? View.VISIBLE : View.GONE);
+        mCookieControlsToggle.setEnabled(false); // Ecosia : Disabling third party cookie toggle
+        mCookieControlsManagedIcon.setVisibility(View.GONE); // Ecosia : Hiding third party cookie
         mCookieControlsTitle.setEnabled(!enforced);
         mCookieControlsSubtitle.setEnabled(!enforced);
 

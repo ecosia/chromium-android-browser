@@ -1,388 +1,388 @@
-<?xml version="1.0" ?>
+<?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE translationbundle>
 <translationbundle lang="fi">
 <translation id="1026101648481255140">Jatka asennusta</translation>
-<translation id="1029669172902658969">Päivitä &amp;Chromium-käyttöjärjestelmä käynnistämällä se uudelleen</translation>
+<translation id="8933665254023068908">Päivitä &amp;Ecosia-käyttöjärjestelmä käynnistämällä se uudelleen</translation>
 <translation id="1065672644894730302">Asetuksiasi ei voi lukea. Kaikkia toimintoja ei voi välttämättä käyttää eikä asetuksiin tehtäviä muutoksia tallenneta.</translation>
 <translation id="1098170124587656448">Chromium voi auttaa suojaamaan sinua tietosuojaloukkauksilta, haitallisilta laajennuksilta ja muilta</translation>
-<translation id="1104942323762546749">Chromium yrittää viedä salasanojasi tiedostoon. Salli tämä kirjoittamalla Windows-salasanasi.</translation>
+<translation id="3632544319066562282">Ecosia yrittää viedä salasanojasi tiedostoon. Salli tämä kirjoittamalla Windows-salasanasi.</translation>
 <translation id="113122355610423240">Chromium on oletusselaimesi.</translation>
-<translation id="1131805035311359397">Jos haluat tarkistaa, ovatko salasanasi turvassa tietosuojaloukkauksilta ja muilta tietoturvaongelmilta, <ph name="BEGIN_LINK" />kirjaudu Chromiumiin<ph name="END_LINK" />.</translation>
+<translation id="1131805035311359397">Jos haluat tarkistaa, ovatko salasanasi turvassa tietosuojaloukkauksilta ja muilta tietoturvaongelmilta, <ph name="BEGIN_LINK"/>kirjaudu Chromiumiin<ph name="END_LINK"/>.</translation>
 <translation id="1185134272377778587">Tietoja Chromiumista</translation>
-<translation id="1203500561924088507">Kiitos asennuksesta. Selain pitää käynnistää uudelleen ennen kuin <ph name="BUNDLE_NAME" /> otetaan käyttöön.</translation>
-<translation id="1231839967188101156">Kun tämä on päällä, Chromium vapauttaa muistia ei-aktiivisilta välilehdiltä. Näin aktiiviset välilehdet ja muut sovellukset voivat käyttää enemmän tietokoneen resursseja ja Chromium pysyy nopeana. Ei-aktiiviset välilehdet aktivoituvat automaattisesti, kun palaat niihin. <ph name="BEGIN_LINK" />Lue lisää<ph name="END_LINK" /></translation>
-<translation id="1261119230216066228">Muistinsäästö nopeuttaa Chromiumia</translation>
-<translation id="1315551408014407711">Luo uusi Chromium-profiili</translation>
-<translation id="1396446129537741364">Chromium yrittää näyttää salasanat.</translation>
-<translation id="1414495520565016063">Olet kirjautunut Chromiumiin!</translation>
-<translation id="1493803763272692301">Saat eniten irti Chromiumista</translation>
-<translation id="1524282610922162960">Jaa Chromium-välilehti</translation>
-<translation id="1553461853655228091">Chromium tarvitsee luvan käyttää kameraasi ympäristön 3D-kartoittamiseen</translation>
-<translation id="1607715478322902680">{COUNT,plural, =0{Ylläpitäjä vaatii Chromiumin uudelleenkäynnistystä, jotta päivitys voidaan ottaa käyttöön.}=1{Ylläpitäjä vaatii Chromiumin uudelleenkäynnistystä, jotta päivitys voidaan ottaa käyttöön. Incognito-ikkunaasi ei avata uudelleen.}other{Ylläpitäjä vaatii Chromiumin uudelleenkäynnistystä, jotta päivitys voidaan ottaa käyttöön. # incognito-ikkunaasi ei avata uudelleen.}}</translation>
+<translation id="1203500561924088507">Kiitos asennuksesta. Selain pitää käynnistää uudelleen ennen kuin <ph name="BUNDLE_NAME"/> otetaan käyttöön.</translation>
+<translation id="1231839967188101156">Kun tämä on päällä, Chromium vapauttaa muistia ei-aktiivisilta välilehdiltä. Näin aktiiviset välilehdet ja muut sovellukset voivat käyttää enemmän tietokoneen resursseja ja Chromium pysyy nopeana. Ei-aktiiviset välilehdet aktivoituvat automaattisesti, kun palaat niihin. <ph name="BEGIN_LINK"/>Lue lisää<ph name="END_LINK"/></translation>
+<translation id="2298752889004612764">Muistinsäästö nopeuttaa Ecosiaia</translation>
+<translation id="319566061277127356">Luo uusi Ecosia-profiili</translation>
+<translation id="2549591663512786020">Ecosia yrittää näyttää salasanat.</translation>
+<translation id="727568860157522676">Olet kirjautunut Ecosiaiin!</translation>
+<translation id="6650631555168164414">Saat eniten irti Ecosiaista</translation>
+<translation id="1861504561909287316">Jaa Ecosia-välilehti</translation>
+<translation id="6896860023874996542">Ecosia tarvitsee luvan käyttää kameraasi ympäristön 3D-kartoittamiseen</translation>
+<translation id="4933729908795930260">{COUNT,plural, =0{Ylläpitäjä vaatii Ecosiain uudelleenkäynnistystä, jotta päivitys voidaan ottaa käyttöön.}=1{Ylläpitäjä vaatii Ecosiain uudelleenkäynnistystä, jotta päivitys voidaan ottaa käyttöön. Incognito-ikkunaasi ei avata uudelleen.}other{Ylläpitäjä vaatii Ecosiain uudelleenkäynnistystä, jotta päivitys voidaan ottaa käyttöön. # incognito-ikkunaasi ei avata uudelleen.}}</translation>
 <translation id="1625909126243026060">Tarkista Chromiumin tärkeimmät yksityisyys‑ ja turvallisuusasetukset</translation>
-<translation id="1632539827495546968">Jos haluat käyttää tiliä vain tämän kerran, voit käyttää Chromium-selaimen <ph name="GUEST_LINK_BEGIN" />vierastilaa<ph name="GUEST_LINK_END" />. Jos haluat lisätä tilin jollekulle toiselle, <ph name="LINK_BEGIN" />lisää uusi henkilö<ph name="LINK_END" /> <ph name="DEVICE_TYPE" />‑laitteelle.
+<translation id="931416298178634530">Jos haluat käyttää tiliä vain tämän kerran, voit käyttää Ecosia-selaimen <ph name="GUEST_LINK_BEGIN"/>vierastilaa<ph name="GUEST_LINK_END"/>. Jos haluat lisätä tilin jollekulle toiselle, <ph name="LINK_BEGIN"/>lisää uusi henkilö<ph name="LINK_END"/> <ph name="DEVICE_TYPE"/>‑laitteelle.
 
-Sivustoille ja sovelluksille myöntämäsi luvat saattavat koskea tätä tiliä. Voit ylläpitää Google-tilejä <ph name="SETTINGS_LINK_BEGIN" />asetuksissa<ph name="SETTINGS_LINK_END" />.</translation>
+Sivustoille ja sovelluksille myöntämäsi luvat saattavat koskea tätä tiliä. Voit ylläpitää Ecosia-tilejä <ph name="SETTINGS_LINK_BEGIN"/>asetuksissa<ph name="SETTINGS_LINK_END"/>.</translation>
 <translation id="1640672724030957280">Ladataan...</translation>
-<translation id="1708666629004767631">Chromiumista on saatavilla uusi, turvallisempi versio.</translation>
-<translation id="17264556997921157">Voit tarkistaa ja poistaa kiinnostuksen kohteita, joita sivustot käyttävät mainosten näyttämiseen. Chromium arvioi viimeaikaisen selaushistoriasi perusteella, mikä saattaisi kiinnostaa sinua.</translation>
-<translation id="1774152462503052664">Jätä Chromium käyntiin taustalle</translation>
-<translation id="1779356040007214683">Paransimme Chromiumin turvallisuutta poistamalla käytöstä sovelluksia, joita ei löydy kohteesta <ph name="IDS_EXTENSION_WEB_STORE_TITLE" /> ja jotka on voitu lisätä ilman lupaasi.</translation>
-<translation id="1808667845054772817">Asenna Chromium uudelleen</translation>
-<translation id="185970820835152459">Voit ylläpitää sisäänkirjautuneita Google-tilejäsi. Google-tilejäsi käytetään Chromium-selaimella, Play Kaupassa ja muualla. Jos haluat lisätä tilin jollekulle toiselle, esim. perheenjäsenelle, lisää tämän sijasta uusi henkilö laitteelle (<ph name="DEVICE_TYPE" />). <ph name="LINK_BEGIN" />Lue lisää<ph name="LINK_END" /></translation>
+<translation id="6876820794875877783">Ecosiaista on saatavilla uusi, turvallisempi versio.</translation>
+<translation id="1118786556671181978">Voit tarkistaa ja poistaa kiinnostuksen kohteita, joita sivustot käyttävät mainosten näyttämiseen. Ecosia arvioi viimeaikaisen selaushistoriasi perusteella, mikä saattaisi kiinnostaa sinua.</translation>
+<translation id="8454595950895325762">Jätä Ecosia käyntiin taustalle</translation>
+<translation id="9125443060066914183">Paransimme Ecosiain turvallisuutta poistamalla käytöstä sovelluksia, joita ei löydy kohteesta <ph name="IDS_EXTENSION_WEB_STORE_TITLE"/> ja jotka on voitu lisätä ilman lupaasi.</translation>
+<translation id="6984747211123632080">Asenna Ecosia uudelleen</translation>
+<translation id="185970820835152459">Voit ylläpitää sisäänkirjautuneita Google-tilejäsi. Google-tilejäsi käytetään Chromium-selaimella, Play Kaupassa ja muualla. Jos haluat lisätä tilin jollekulle toiselle, esim. perheenjäsenelle, lisää tämän sijasta uusi henkilö laitteelle (<ph name="DEVICE_TYPE"/>). <ph name="LINK_BEGIN"/>Lue lisää<ph name="LINK_END"/></translation>
 <translation id="1863308913976887472">Sivustot voivat tallentaa Chromiumiin tietoja kiinnostuksen kohteistasi. Jos esimerkiksi käyt sivustolla, koska haluat ostaa kengät maratonia varten, sivusto voi määritellä maratonjuoksun sinua kiinnostavaksi aiheeksi. Jos myöhemmin käyt toisella sivustolla, jolla ilmoittaudut juoksukilpailuun, kyseinen sivusto voi näyttää sinulle mainoksen juoksukengistä kiinnostuksen kohteidesi perusteella.</translation>
-<translation id="1881322772814446296">Olet kirjautumassa sisään hallinnoidulla tilillä ja antamassa tilin järjestelmänvalvojalle oikeuden hallita Chromium-profiiliasi. Chromium-tietosi, kuten sovelluksesi, kirjanmerkkisi, historiasi, salasanasi ja muut asetuksesi, yhdistetään pysyvästi käyttäjätiliin <ph name="USER_NAME" />. Voit poistaa nämä tiedot Google-tilien Hallintapaneelissa, mutta et voi liittää tietoja toiseen tiliin. Halutessasi voit luoda uuden profiilin, jolloin aiemmat Chromium-tietosi pysyvät erillään. <ph name="LEARN_MORE" /></translation>
+<translation id="4239392394637574967">Olet kirjautumassa sisään hallinnoidulla tilillä ja antamassa tilin järjestelmänvalvojalle oikeuden hallita Ecosia-profiiliasi. Ecosia-tietosi, kuten sovelluksesi, kirjanmerkkisi, historiasi, salasanasi ja muut asetuksesi, yhdistetään pysyvästi käyttäjätiliin <ph name="USER_NAME"/>. Voit poistaa nämä tiedot Ecosia-tilien Hallintapaneelissa, mutta et voi liittää tietoja toiseen tiliin. Halutessasi voit luoda uuden profiilin, jolloin aiemmat Ecosia-tietosi pysyvät erillään. <ph name="LEARN_MORE"/></translation>
 <translation id="1911763535808217981">Poistamalla tämän käytöstä voit kirjautua Google-sivustoille, esim. Gmailiin, kirjautumatta Chromiumiin.</translation>
-<translation id="1929939181775079593">Chromium ei vastaa. Käynnistetäänkö uudelleen?</translation>
-<translation id="193439633299369377">Chromium-käyttöjärjestelmä täytyy käynnistää uudelleen, jotta päivitys voidaan ottaa käyttöön.</translation>
-<translation id="1940680973325097484">Jos haluat käyttää tiliä vain tämän kerran, voit käyttää Chromium-selaimen vierastilaa. Jos haluat lisätä tilin jollekulle toiselle, <ph name="LINK_BEGIN" />lisää uusi henkilö<ph name="LINK_END" /> <ph name="DEVICE_TYPE" />‑laitteelle.
+<translation id="18064594488616674">Ecosia ei vastaa. Käynnistetäänkö uudelleen?</translation>
+<translation id="8047394653992042491">Ecosia-käyttöjärjestelmä täytyy käynnistää uudelleen, jotta päivitys voidaan ottaa käyttöön.</translation>
+<translation id="5337919616446681032">Jos haluat käyttää tiliä vain tämän kerran, voit käyttää Ecosia-selaimen vierastilaa. Jos haluat lisätä tilin jollekulle toiselle, <ph name="LINK_BEGIN"/>lisää uusi henkilö<ph name="LINK_END"/> <ph name="DEVICE_TYPE"/>‑laitteelle.
 
-Sivustoille ja sovelluksille myöntämäsi luvat saattavat koskea tätä tiliä. Voit ylläpitää Google-tilejä <ph name="SETTINGS_LINK_BEGIN" />asetuksissa<ph name="SETTINGS_LINK_END" />.</translation>
-<translation id="1953553007165777902">Ladataan… <ph name="MINUTE" /> minuuttia jäljellä</translation>
+Sivustoille ja sovelluksille myöntämäsi luvat saattavat koskea tätä tiliä. Voit ylläpitää Ecosia-tilejä <ph name="SETTINGS_LINK_BEGIN"/>asetuksissa<ph name="SETTINGS_LINK_END"/>.</translation>
+<translation id="1953553007165777902">Ladataan… <ph name="MINUTE"/> minuuttia jäljellä</translation>
 <translation id="1966382378801805537">Chromium ei voi tunnistaa tai asettaa oletusselainta.</translation>
-<translation id="2008474315282236005">Tämä poistaa yhden kohteen pysyvästi laitteelta. Jos haluat palauttaa tiedot myöhemmin, kirjaudu Chromiumiin käyttäjänä <ph name="USER_EMAIL" />.</translation>
+<translation id="2008474315282236005">Tämä poistaa yhden kohteen pysyvästi laitteelta. Jos haluat palauttaa tiedot myöhemmin, kirjaudu Chromiumiin käyttäjänä <ph name="USER_EMAIL"/>.</translation>
 <translation id="2018879682492276940">Asennus epäonnistui. Yritä uudelleen.</translation>
-<translation id="2020032459870799438">Jos haluat tarkistaa, ovatko muut salasanasi turvassa tietosuojaloukkauksilta ja muilta tietoturvaongelmilta, <ph name="BEGIN_LINK" />kirjaudu Chromiumiin<ph name="END_LINK" />.</translation>
+<translation id="2020032459870799438">Jos haluat tarkistaa, ovatko muut salasanasi turvassa tietosuojaloukkauksilta ja muilta tietoturvaongelmilta, <ph name="BEGIN_LINK"/>kirjaudu Chromiumiin<ph name="END_LINK"/>.</translation>
 <translation id="2049376729098081731">Valitse, käytetäänkö Chromium-historiaa personoituun kokemukseen Google-palveluissa</translation>
 <translation id="2088953378266246249">Tietoa siitä, miten Chromium hallinnoi juurivarmenteitaan</translation>
-<translation id="2174178932569897599">Yksilöi Chromiumia</translation>
+<translation id="838842459108103907">Yksilöi Ecosiaia</translation>
 <translation id="2174917724755363426">Asennus ei ole valmis. Haluatko varmasti perua sen?</translation>
-<translation id="2185166961232948079">Chromium – Kirjautuminen verkkoon – <ph name="PAGE_TITLE" /></translation>
-<translation id="2241627712206172106">Jos käytät jaettua tietokonetta, kaverisi ja perheenjäsenesi voivat selata verkkoa omista profiileistaan käsin ja muokata Chromiumista juuri itselleen sopivan.</translation>
+<translation id="9035946286843935549">Ecosia – Kirjautuminen verkkoon – <ph name="PAGE_TITLE"/></translation>
+<translation id="6111519389633335269">Jos käytät jaettua tietokonetta, kaverisi ja perheenjäsenesi voivat selata verkkoa omista profiileistaan käsin ja muokata Ecosiaista juuri itselleen sopivan.</translation>
 <translation id="2313870531055795960">Tarkistaa URL-osoitteet Chromiumiin tallennetun vaarallisten sivustojen luettelon avulla. Jos sivusto yrittää varastaa salasanaasi tai jos lataat haitallisen tiedoston, Chromium voi myös lähettää Selaussuojan tarkistettavaksi URL-osoitteita, myös osia sivujen sisällöstä.</translation>
-<translation id="2343156876103232566">Jos haluat lähettää numeron täältä Android-puhelimeesi, kirjaudu Chromiumiin molemmilla laitteilla.</translation>
-<translation id="2347108572062610441">Tämä laajennus on vaihtanut Chromiumin aloitussivun.</translation>
+<translation id="665177868576952817">Jos haluat lähettää numeron täältä Android-puhelimeesi, kirjaudu Ecosiaiin molemmilla laitteilla.</translation>
+<translation id="815199437159352723">Tämä laajennus on vaihtanut Ecosiain aloitussivun.</translation>
 <translation id="2359808026110333948">Jatka</translation>
-<translation id="2384373936468275798">Chromium-käyttöjärjestelmä ei voi synkronoida tietoja, sillä tilin kirjautumistiedot ovat vanhentuneet.</translation>
-<translation id="2396765026452590966">Laajennus <ph name="EXTENSION_NAME" /> on vaihtanut Chromiumin aloitussivun.</translation>
-<translation id="2401032172288869980">Chromium tarvitsee kameran ja mikrofonin luvan tällä sivustolla</translation>
-<translation id="2483889755041906834">Chromiumissa</translation>
+<translation id="592990842052138727">Ecosia-käyttöjärjestelmä ei voi synkronoida tietoja, sillä tilin kirjautumistiedot ovat vanhentuneet.</translation>
+<translation id="9032120646440147804">Laajennus <ph name="EXTENSION_NAME"/> on vaihtanut Ecosiain aloitussivun.</translation>
+<translation id="3554373328288278512">Ecosia tarvitsee kameran ja mikrofonin luvan tällä sivustolla</translation>
+<translation id="6495878830719404098">Ecosiaissa</translation>
 <translation id="2485422356828889247">Poista</translation>
-<translation id="2560420686485554789">Chromium tarvitsee tallennustilan käyttöoikeuden tiedostojen lataamiseen.</translation>
-<translation id="2572494885440352020">Chromium Helper</translation>
-<translation id="2583187216237139145">Työprofiilin järjestelmänvalvoja voi poistaa tämän profiilin käytön aikana luotua Chromium-dataa (esim. kirjanmerkit, historia, salasanat ja muut asetukset). <ph name="LEARN_MORE" /></translation>
-<translation id="2592940277904433508">Jatka Chromiumin käyttöä</translation>
-<translation id="2648074677641340862">Asennuksessa ilmeni käyttöjärjestelmävirhe. Lataa Chromium uudelleen.</translation>
-<translation id="2661879430930417727">Jos käytät jaettua laitetta, kaverisi ja perheenjäsenesi voivat selata verkkoa erillään ja räätälöidä Chromiumista juuri itselleen sopivan</translation>
-<translation id="2669853942967761236">Chromium on estänyt tämän arkistotiedoston, koska se voi piilottaa haittaohjelman</translation>
-<translation id="268602741124540128">Tervetuloa Chromiumiin, <ph name="ACCOUNT_FIRST_NAME" /></translation>
-<translation id="2711502716910134313">Chromium-välilehti</translation>
+<translation id="5549921590305750618">Ecosia tarvitsee tallennustilan käyttöoikeuden tiedostojen lataamiseen.</translation>
+<translation id="9090890391337853620">Ecosia Helper</translation>
+<translation id="5707346538075088068">Työprofiilin järjestelmänvalvoja voi poistaa tämän profiilin käytön aikana luotua Ecosia-dataa (esim. kirjanmerkit, historia, salasanat ja muut asetukset). <ph name="LEARN_MORE"/></translation>
+<translation id="5883025779824839861">Jatka Ecosiain käyttöä</translation>
+<translation id="7280797724682955539">Asennuksessa ilmeni käyttöjärjestelmävirhe. Lataa Ecosia uudelleen.</translation>
+<translation id="6960183526681645011">Jos käytät jaettua laitetta, kaverisi ja perheenjäsenesi voivat selata verkkoa erillään ja räätälöidä Ecosiaista juuri itselleen sopivan</translation>
+<translation id="5591151834004774364">Ecosia on estänyt tämän arkistotiedoston, koska se voi piilottaa haittaohjelman</translation>
+<translation id="2381210243314074423">Tervetuloa Ecosiaiin, <ph name="ACCOUNT_FIRST_NAME"/></translation>
+<translation id="385080958066798123">Ecosia-välilehti</translation>
 <translation id="2718390899429598676">Chromium lisää suojausta salaamalla tietosi.</translation>
 <translation id="2770231113462710648">Vaihda oletusselaimeksi:</translation>
 <translation id="2799223571221894425">Käynnistä uudelleen</translation>
-<translation id="2837693172913560447">Tämä luo uuden Chromium-profiilin: <ph name="USER_EMAIL_ADDRESS" /></translation>
-<translation id="2847479871509788944">Poista Chromiumista…</translation>
+<translation id="3952510753191144456">Tämä luo uuden Ecosia-profiilin: <ph name="USER_EMAIL_ADDRESS"/></translation>
+<translation id="4199684616787081033">Poista Ecosiaista…</translation>
 <translation id="2850691299438350830">Pitää sinut turvassa Chromiumissa ja voi parantaa suojaustasi muissa Google-sovelluksissa, kun olet sisäänkirjautuneena</translation>
 <translation id="2885378588091291677">Tehtävänhallinta</translation>
-<translation id="2910007522516064972">Tietoja &amp;Chromiumista</translation>
+<translation id="7221868538334633215">Tietoja &amp;Ecosiaista</translation>
 <translation id="2915996080311180594">Uudelleenkäynnistä myöhemmin</translation>
 <translation id="2928420929544864228">Asennus valmis</translation>
 <translation id="2977470724722393594">Chromium on ajan tasalla.</translation>
 <translation id="2977506796191543575">Jos sivusto yrittää varastaa salasanaasi tai jos lataat haitallisen tiedoston, Chromium voi myös lähettää Selaussuojan tarkistettavaksi URL-osoitteita, myös osia sivujen sisällöstä</translation>
-<translation id="2983934633046890458">Chromium yrittää muuttaa salasanoja.</translation>
-<translation id="3021964162552004083">{NUM_DEVICES,plural, =1{Chromium on yhdistetty HID-laitteeseen}other{Chromium on yhdistetty HID-laitteisiin}}</translation>
+<translation id="6338684070520405381">Ecosia yrittää muuttaa salasanoja.</translation>
+<translation id="2899530016847324742">{NUM_DEVICES,plural, =1{Ecosia on yhdistetty HID-laitteeseen}other{Ecosia on yhdistetty HID-laitteisiin}}</translation>
 <translation id="3032706164202344641">Chromium ei voi tarkistaa salasanojasi. Yritä myöhemmin uudelleen.</translation>
-<translation id="3032787606318309379">Lisätään Chromiumiin...</translation>
+<translation id="1762318218111418450">Lisätään Ecosiaiin...</translation>
 <translation id="3038232873781883849">Asennetaan…</translation>
-<translation id="3068515742935458733">Auta parantamaan Chromiumia lähettämällä kaatumisilmoitukset ja <ph name="UMA_LINK" /> Googlelle</translation>
+<translation id="9178613517891824246">Auta parantamaan Ecosiaia lähettämällä kaatumisilmoitukset ja <ph name="UMA_LINK"/> Ecosialle</translation>
 <translation id="3101560983689755071">Selaushistoria vaikuttaa näkemiisi mainoksiin ja alla kuvatulla tavalla arvioituihin kiinnostuksen kohteisiisi. Yksityisyytesi suojaamiseksi Chromium poistaa kiinnostuksen kohteesi automaattisesti kuukausittain. Kiinnostuksen kohteet voivat päivittyä, ellet poista niitä.</translation>
-<translation id="3103660991484857065">Asennusohjelma ei pystynyt purkamaan arkistotiedostoa. Lataa Chromium uudelleen.</translation>
-<translation id="3130323860337406239">Chromium käyttää mikrofoniasi.</translation>
-<translation id="3155163173539279776">Käynnistä Chromium uudelleen</translation>
-<translation id="3179665906251668410">Avaa linkki Chromiumin inco&amp;gnito-ikkunassa</translation>
-<translation id="3185330573522821672">Muokkaa uusi Chromium-profiili näköiseksesi</translation>
-<translation id="3190315855212034486">Hups! Chromium kaatui. Käynnistetäänkö uudelleen?</translation>
-<translation id="3229526316128325841">Chromium yrittää viedä salasanojasi tiedostoon.</translation>
-<translation id="3258596308407688501">Chromium ei voi lukea tietohakemistoaan ja kirjoittaa siihen:
+<translation id="7691143774653486474">Asennusohjelma ei pystynyt purkamaan arkistotiedostoa. Lataa Ecosia uudelleen.</translation>
+<translation id="1318059253725731825">Ecosia käyttää mikrofoniasi.</translation>
+<translation id="8282620071565190081">Käynnistä Ecosia uudelleen</translation>
+<translation id="5500958820122281144">Avaa linkki Ecosiain inco&amp;gnito-ikkunassa</translation>
+<translation id="3697186779259384993">Muokkaa uusi Ecosia-profiili näköiseksesi</translation>
+<translation id="3216284932113164802">Hups! Ecosia kaatui. Käynnistetäänkö uudelleen?</translation>
+<translation id="4409756430498035341">Ecosia yrittää viedä salasanojasi tiedostoon.</translation>
+<translation id="7602423871874451395">Ecosia ei voi lukea tietohakemistoaan ja kirjoittaa siihen:
 
-<ph name="USER_DATA_DIRECTORY" /></translation>
-<translation id="3283186697780795848">Chromiumin versio <ph name="PRODUCT_VERSION" /> asennettu</translation>
+<ph name="USER_DATA_DIRECTORY"/></translation>
+<translation id="3283186697780795848">Chromiumin versio <ph name="PRODUCT_VERSION"/> asennettu</translation>
 <translation id="3286538390144397061">Käynnistä uudelleen</translation>
-<translation id="328888136576916638">Googlen sovellusliittymän avaimet puuttuvat. Jotkin Chromiumin toiminnoista poistetaan käytöstä.</translation>
+<translation id="4735588186234302898">Ecosian sovellusliittymän avaimet puuttuvat. Jotkin Ecosiain toiminnoista poistetaan käytöstä.</translation>
 <translation id="3296368748942286671">Jätä taustasovellukset käyntiin, kun Chromium suljetaan</translation>
-<translation id="3350761136195634146">Tällä tilillä on jo Chromium-profiili</translation>
-<translation id="3387527074123400161">Chromium-käyttöjärjestelmä</translation>
-<translation id="3406848076815591792">Vaihdetaanko nykyiseen Chromium-profiiliin?</translation>
+<translation id="812798451698099271">Tällä tilillä on jo Ecosia-profiili</translation>
+<translation id="1761341660094265938">Ecosia-käyttöjärjestelmä</translation>
+<translation id="4781882243268600858">Vaihdetaanko nykyiseen Ecosia-profiiliin?</translation>
 <translation id="3412460710772753638">Googlen Salasanojen ylläpidossa tällä laitteella</translation>
-<translation id="3420193029125244288">{COUNT,plural, =1{Järjestelmänvalvoja on määrittänyt Chromiumin sulkeutumaan, jos se on ollut epäaktiivinen yli minuutin.}other{Järjestelmänvalvoja on määrittänyt Chromiumin sulkeutumaan, jos se on epäaktiivinen yli # minuuttia.}}</translation>
-<translation id="3430503420100763906">Kun käytät Chromium-profiileja, voit pitää kaiken Chromium-sisällön erillään. Luo profiileja kavereita ja perhettä varten tai tee ero työn ja hauskanpidon välille.</translation>
+<translation id="1914619467562029368">{COUNT,plural, =1{Järjestelmänvalvoja on määrittänyt Ecosiain sulkeutumaan, jos se on ollut epäaktiivinen yli minuutin.}other{Järjestelmänvalvoja on määrittänyt Ecosiain sulkeutumaan, jos se on epäaktiivinen yli # minuuttia.}}</translation>
+<translation id="4170280082681554565">Kun käytät Ecosia-profiileja, voit pitää kaiken Ecosia-sisällön erillään. Luo profiileja kavereita ja perhettä varten tai tee ero työn ja hauskanpidon välille.</translation>
 <translation id="347328004046849135">Chromium ilmoittaa, kun kirjaudut sisään vaarantuneella salasanalla</translation>
-<translation id="3474745554856756813">Tämä poistaa <ph name="ITEMS_COUNT" /> kohdetta pysyvästi laitteelta. Jos haluat palauttaa tiedot myöhemmin, kirjaudu Chromiumiin käyttäjänä <ph name="USER_EMAIL" />.</translation>
-<translation id="3497319089134299931">Valitsemalla <ph name="SHORTCUT" /> voit vaihdella eri Chromium-profiilien välillä</translation>
-<translation id="3509308970982693815">Sulje kaikki Chromium-ikkunat ja yritä uudelleen.</translation>
+<translation id="3474745554856756813">Tämä poistaa <ph name="ITEMS_COUNT"/> kohdetta pysyvästi laitteelta. Jos haluat palauttaa tiedot myöhemmin, kirjaudu Chromiumiin käyttäjänä <ph name="USER_EMAIL"/>.</translation>
+<translation id="4614106433017753369">Valitsemalla <ph name="SHORTCUT"/> voit vaihdella eri Ecosia-profiilien välillä</translation>
+<translation id="8534308095039131078">Sulje kaikki Ecosia-ikkunat ja yritä uudelleen.</translation>
 <translation id="3533435340678213462">Yksityisyytesi suojaamiseksi poistamme automaattisesti yli neljä viikkoa vanhat kiinnostuksen kohteet. Kun jatkat selaamista, kiinnostuksen kohde voi näkyä listalla uudelleen. Voit myös poistaa kiinnostuksen kohteet, joita et halua Chromiumin ottavan huomioon.</translation>
 <translation id="3567254597502212821">Selaushistoriaasi eli tietoa sivuista, jotka olet avannut Chromiumissa tällä laitteella</translation>
-<translation id="3575459661164320785">Tietokoneellasi on haitallinen ohjelmisto. Chromium voi poistaa sen, palauttaa asetuksesi ja poistaa laajennukset käytöstä, jotta selaimesi toimii taas normaalisti.</translation>
-<translation id="3593091352817399191">Toinen tili on jo kirjautunut sisään. Chromium voi luoda sinulle oman profiilin, jotta selaamisesi pysyy erillään.</translation>
-<translation id="3639635944603682591">Käyttäjän selaustiedot poistetaan tältä laitteelta. Jos haluat palauttaa tiedot myöhemmin, kirjaudu Chromiumiin käyttäjänä <ph name="USER_EMAIL" />.</translation>
-<translation id="364817392622123556">{COUNT,plural, =0{Uusi Chromium-päivitys on saatavilla, ja se otetaan käyttöön uudelleenkäynnistyksen jälkeen.}=1{Uusi Chromium-päivitys on saatavilla, ja se otetaan käyttöön uudelleenkäynnistyksen jälkeen. Incognito-ikkunaasi ei avata uudelleen.}other{Uusi Chromium-päivitys on saatavilla, ja se otetaan käyttöön uudelleenkäynnistyksen jälkeen. # incognito-ikkunaasi ei avata uudelleen.}}</translation>
-<translation id="3651803019964686660">Jos haluat lähettää numeron osoitteesta <ph name="ORIGIN" /> Android-puhelimeesi, kirjaudu Chromiumiin molemmilla laitteilla.</translation>
+<translation id="2804130178228362015">Tietokoneellasi on haitallinen ohjelmisto. Ecosia voi poistaa sen, palauttaa asetuksesi ja poistaa laajennukset käytöstä, jotta selaimesi toimii taas normaalisti.</translation>
+<translation id="7375011918167125899">Toinen tili on jo kirjautunut sisään. Ecosia voi luoda sinulle oman profiilin, jotta selaamisesi pysyy erillään.</translation>
+<translation id="2128110540135015661">Käyttäjän selaustiedot poistetaan tältä laitteelta. Jos haluat palauttaa tiedot myöhemmin, kirjaudu Ecosiaiin käyttäjänä <ph name="USER_EMAIL"/>.</translation>
+<translation id="1323499021727766710">{COUNT,plural, =0{Uusi Ecosia-päivitys on saatavilla, ja se otetaan käyttöön uudelleenkäynnistyksen jälkeen.}=1{Uusi Ecosia-päivitys on saatavilla, ja se otetaan käyttöön uudelleenkäynnistyksen jälkeen. Incognito-ikkunaasi ei avata uudelleen.}other{Uusi Ecosia-päivitys on saatavilla, ja se otetaan käyttöön uudelleenkäynnistyksen jälkeen. # incognito-ikkunaasi ei avata uudelleen.}}</translation>
+<translation id="7849498640944199147">Jos haluat lähettää numeron osoitteesta <ph name="ORIGIN"/> Android-puhelimeesi, kirjaudu Ecosiaiin molemmilla laitteilla.</translation>
 <translation id="3685209450716071127">Chromium ei voi tarkistaa salasanojasi. Tarkista internetyhteytesi.</translation>
-<translation id="3702352323269013324">Lue lisää mainosten personoinnista Chromiumissa</translation>
-<translation id="370962675267501463">{COUNT,plural, =0{Ylläpitäjä pyytää Chromiumin uudelleenkäynnistystä, jotta tämä päivitys voidaan ottaa käyttöön.}=1{Ylläpitäjä pyytää Chromiumin uudelleenkäynnistystä, jotta tämä päivitys voidaan ottaa käyttöön. Incognito-ikkunaasi ei avata uudelleen.}other{Ylläpitäjä pyytää Chromiumin uudelleenkäynnistystä, jotta tämä päivitys voidaan ottaa käyttöön. # incognito-ikkunaasi ei avata uudelleen.}}</translation>
-<translation id="3713809861844741608">Avaa linkki uudella Chromiumin välilehdellä</translation>
+<translation id="5902103164685487225">Lue lisää mainosten personoinnista Ecosiaissa</translation>
+<translation id="3479730782477097349">{COUNT,plural, =0{Ylläpitäjä pyytää Ecosiain uudelleenkäynnistystä, jotta tämä päivitys voidaan ottaa käyttöön.}=1{Ylläpitäjä pyytää Ecosiain uudelleenkäynnistystä, jotta tämä päivitys voidaan ottaa käyttöön. Incognito-ikkunaasi ei avata uudelleen.}other{Ylläpitäjä pyytää Ecosiain uudelleenkäynnistystä, jotta tämä päivitys voidaan ottaa käyttöön. # incognito-ikkunaasi ei avata uudelleen.}}</translation>
+<translation id="489671036945006830">Avaa linkki uudella Ecosiain välilehdellä</translation>
 <translation id="3728336900324680424">Chromium käyttää Drivea antaakseen ehdotuksia osoitepalkissa</translation>
-<translation id="378917192836375108">Chromiumin avulla voit soittaa Skypellä puhelinnumeroon klikkaamalla sitä verkossa!</translation>
-<translation id="3830894615770080216">Chromium-käyttöjärjestelmä</translation>
-<translation id="3848258323044014972"><ph name="PAGE_TITLE" /> - Chromium</translation>
+<translation id="6107290018380796650">Ecosiain avulla voit soittaa Skypellä puhelinnumeroon klikkaamalla sitä verkossa!</translation>
+<translation id="3959732324458144441">Ecosia-käyttöjärjestelmä</translation>
+<translation id="2722323139667924824"><ph name="PAGE_TITLE"/> - Ecosia</translation>
 <translation id="386822487697155367">Ohjeita Chromium-käyttöjärjestelmän käyttöön</translation>
-<translation id="3871664619793219264">Käytä tililtä <ph name="ACCOUNT_EMAIL" /> löytyvää Chromium-selaimen sisältöä</translation>
-<translation id="388648406173476553">Yksilöi ja ylläpidä Chromiumia. Toimenpiteitä vaaditaan. Katso lisätiedot klikkaamalla.</translation>
-<translation id="3889543394854987837">Avaa Chromium klikkaamalla nimeäsi ja aloita selaaminen.</translation>
-<translation id="390528597099634151"><ph name="EXISTING_USER" /> on jo kirjautunut tähän Chromium-profiiliin. Chromium voi luoda sinulle oman profiilin, jotta selaamisesi pysyy erillään.</translation>
-<translation id="391789666908693569"><ph name="MANAGER_NAME" /> ylläpitää tiliäsi. Järjestelmänvalvoja voi nähdä tämän Chromium-selainprofiilin ja sen datan (esim. kirjanmerkit, historian ja salasanat) sekä muokata niitä.</translation>
-<translation id="3945058413678539331">Chromium yrittää kopioida salasanat. Salli tämä kirjoittamalla Windows-salasanasi.</translation>
-<translation id="3962623956404948996">Chromium suosittelee tiedoston skannaamista, koska se voi olla vaarallinen</translation>
+<translation id="6391863622742187823">Käytä tililtä <ph name="ACCOUNT_EMAIL"/> löytyvää Ecosia-selaimen sisältöä</translation>
+<translation id="8544776492099331022">Yksilöi ja ylläpidä Ecosiaia. Toimenpiteitä vaaditaan. Katso lisätiedot klikkaamalla.</translation>
+<translation id="4871843754042758264">Avaa Ecosia klikkaamalla nimeäsi ja aloita selaaminen.</translation>
+<translation id="5824812022890208563"><ph name="EXISTING_USER"/> on jo kirjautunut tähän Ecosia-profiiliin. Ecosia voi luoda sinulle oman profiilin, jotta selaamisesi pysyy erillään.</translation>
+<translation id="4070480171055648632"><ph name="MANAGER_NAME"/> ylläpitää tiliäsi. Järjestelmänvalvoja voi nähdä tämän Ecosia-selainprofiilin ja sen datan (esim. kirjanmerkit, historian ja salasanat) sekä muokata niitä.</translation>
+<translation id="1047556320128249268">Ecosia yrittää kopioida salasanat. Salli tämä kirjoittamalla Windows-salasanasi.</translation>
+<translation id="4997668724897475215">Ecosia suosittelee tiedoston skannaamista, koska se voi olla vaarallinen</translation>
 <translation id="3997429360543082038">Tietoa Chromium-käyttöjärjestelmästä</translation>
-<translation id="4019629340646866719">Toinen <ph name="BEGIN_LINK_CROS_OSS" />avoimen lähdekoodin ohjelmisto<ph name="END_LINK_CROS_OSS" /> tukee Chromium-käyttöjärjestelmää, kuten myös <ph name="BEGIN_LINK_LINUX_OSS" />Linux-kehitysympäristöä<ph name="END_LINK_LINUX_OSS" />.</translation>
-<translation id="4036079820698952681">Auta parantamaan Chromiumia ilmoittamalla <ph name="BEGIN_LINK" />nykyiset asetukset<ph name="END_LINK" />.</translation>
+<translation id="5311911269004680646">Toinen <ph name="BEGIN_LINK_CROS_OSS"/>avoimen lähdekoodin ohjelmisto<ph name="END_LINK_CROS_OSS"/> tukee Ecosia-käyttöjärjestelmää, kuten myös <ph name="BEGIN_LINK_LINUX_OSS"/>Linux-kehitysympäristöä<ph name="END_LINK_LINUX_OSS"/>.</translation>
+<translation id="4036079820698952681">Auta parantamaan Chromiumia ilmoittamalla <ph name="BEGIN_LINK"/>nykyiset asetukset<ph name="END_LINK"/>.</translation>
 <translation id="4050175100176540509">Uusimmassa versiossa on käytettävissä tärkeitä turvallisuusparannuksia ja uusia ominaisuuksia.</translation>
 <translation id="4148957013307229264">Asennetaan...</translation>
-<translation id="419998258129752635"><ph name="PAGE_TITLE" /> – Kirjautuminen verkkoon – Chromium</translation>
-<translation id="421369550622382712">Löydät hienoja sovelluksia, pelejä, laajennuksia ja teemoja Chromiumille.</translation>
+<translation id="3907708440788567041"><ph name="PAGE_TITLE"/> – Kirjautuminen verkkoon – Ecosia</translation>
+<translation id="7782767522222146179">Löydät hienoja sovelluksia, pelejä, laajennuksia ja teemoja Ecosiaille.</translation>
 <translation id="4216212958613226427">Chromium-käyttöliittymä näytetään tällä kielellä</translation>
 <translation id="4222932583846282852">Peruutetaan…</translation>
-<translation id="4230135487732243613">Linkitetäänkö Chromium-tiedot tähän tiliin?</translation>
+<translation id="8384922154025337808">Linkitetäänkö Ecosia-tiedot tähän tiliin?</translation>
 <translation id="4271805377592243930">Ohjeita Chromiumin käyttöön</translation>
-<translation id="4285930937574705105">Asennus epäonnistui tuntemattoman virheen takia. Jos Chromium on tällä hetkellä käynnissä, sulje se ja yritä uudelleen.</translation>
+<translation id="3305517118160815955">Asennus epäonnistui tuntemattoman virheen takia. Jos Ecosia on tällä hetkellä käynnissä, sulje se ja yritä uudelleen.</translation>
 <translation id="4304713468139749426">Salasanojen ylläpito</translation>
 <translation id="4334294535648607276">Lataus on valmis.</translation>
-<translation id="439358628917130594"><ph name="MANAGER" /> edellyttää, että luet ja hyväksyt seuraavat käyttöehdot ennen tämän laitteen käyttöä. Nämä ehdot eivät laajenna, muokkaa tai rajoita Chromium-käyttöjärjestelmän ehtoja.</translation>
-<translation id="4407044323746248786">Suljetaanko Chromium silti?</translation>
-<translation id="4415566066719264597">Jätä Chromium käyntiin taustalle</translation>
-<translation id="4423735387467980091">Chromiumin muokkaus ja hallinta</translation>
+<translation id="8411844745163855310"><ph name="MANAGER"/> edellyttää, että luet ja hyväksyt seuraavat käyttöehdot ennen tämän laitteen käyttöä. Nämä ehdot eivät laajenna, muokkaa tai rajoita Ecosia-käyttöjärjestelmän ehtoja.</translation>
+<translation id="88039520238670574">Suljetaanko Ecosia silti?</translation>
+<translation id="4586967042094107073">Jätä Ecosia käyntiin taustalle</translation>
+<translation id="4817913198787198451">Ecosiain muokkaus ja hallinta</translation>
 <translation id="4427306783828095590">Parannettu suojaus torjuu tietojenkalastelua ja haittaohjelmia entistä tehokkaammin</translation>
-<translation id="452711251841752011">Tervetuloa Chromiumiin, uusi selainikkuna avattu</translation>
-<translation id="4544142686420020088">Chromiumia ei päivitetty, vaan jotain meni pieleen. <ph name="BEGIN_LINK" />Korjaa Chromiumin päivitysongelmat ja epäonnistuneet päivitykset<ph name="END_LINK" />.</translation>
-<translation id="454579500955453258">Jatketaanko uudessa Chromium-profiilissa?</translation>
-<translation id="4567424176335768812">Olet kirjautunut Chromeen tilillä <ph name="USER_EMAIL_ADDRESS" />. Nyt voit käyttää kirjanmerkkejäsi, historiaa ja muita asetuksia kaikilla laitteilla, joihin olet kirjautunut.</translation>
+<translation id="1859120614572957305">Tervetuloa Ecosiaiin, uusi selainikkuna avattu</translation>
+<translation id="4544142686420020088">Chromiumia ei päivitetty, vaan jotain meni pieleen. <ph name="BEGIN_LINK"/>Korjaa Chromiumin päivitysongelmat ja epäonnistuneet päivitykset<ph name="END_LINK"/>.</translation>
+<translation id="8685318202174822382">Jatketaanko uudessa Ecosia-profiilissa?</translation>
+<translation id="4567424176335768812">Olet kirjautunut Chromeen tilillä <ph name="USER_EMAIL_ADDRESS"/>. Nyt voit käyttää kirjanmerkkejäsi, historiaa ja muita asetuksia kaikilla laitteilla, joihin olet kirjautunut.</translation>
 <translation id="4594305310729380060">Googlen Salasanojen ylläpitoon tällä laitteella</translation>
-<translation id="459535195905078186">Chromium-sovellukset</translation>
+<translation id="2636091632287013185">Ecosia-sovellukset</translation>
 <translation id="4613863813562375431">Chromium-käyttöjärjestelmän versio</translation>
 <translation id="4621240073146040695">Melkein valmista. Viimeistele päivitys käynnistämällä Chromium uudelleen.</translation>
-<translation id="4665829708273112819">Varoitus: Chromium ei voi estää laajennuksia tallentamasta selaushistoriaasi. Voit estää tämän laajennuksen käytön incognito-tilassa poistamalla tämän valinnan.</translation>
+<translation id="1676748966275099244">Varoitus: Ecosia ei voi estää laajennuksia tallentamasta selaushistoriaasi. Voit estää tämän laajennuksen käytön incognito-tilassa poistamalla tämän valinnan.</translation>
 <translation id="4673151026126227699">Jos jaat myös Chromiumin käyttöraportteja, avaamasi URL-osoitteet näkyvät niissä</translation>
-<translation id="4677944499843243528">Profiili näyttäisi olevan toisen Chromium-prosessin (<ph name="PROCESS_ID" />) käytössä toisella tietokoneella (<ph name="HOST_NAME" />). Chromium on lukinnut profiilin, jotta se ei vioitu. Jos olet varma, että mikään toinen prosessi ei käytä tätä profiilia, voit poistaa profiilin lukituksen ja käynnistää Chromiumin uudelleen.</translation>
+<translation id="1384607180773886645">Profiili näyttäisi olevan toisen Ecosia-prosessin (<ph name="PROCESS_ID"/>) käytössä toisella tietokoneella (<ph name="HOST_NAME"/>). Ecosia on lukinnut profiilin, jotta se ei vioitu. Jos olet varma, että mikään toinen prosessi ei käytä tätä profiilia, voit poistaa profiilin lukituksen ja käynnistää Ecosiain uudelleen.</translation>
 <translation id="4680828127924988555">Peru asennus</translation>
-<translation id="4708774505295300557">Joku on jo kirjautunut tällä tietokoneella Chromiumiin käyttäjätilillä <ph name="ACCOUNT_EMAIL_LAST" />. Luo uusi Chromium-käyttäjä, jos haluat pitää tiedot erillään.</translation>
-<translation id="4746050847053251315">Suljetaanko Chromium silti?</translation>
-<translation id="4748217263233248895">Chromiumin tärkeä tietoturvapäivitys on asennettu. Käynnistä selain uudelleen – palautamme avoimet välilehdet.</translation>
-<translation id="4765210420921718862">Voit muuttaa tätä milloin tahansa Chromiumin asetuksista. Kokeilut ovat voimassa mainosten nykyisen näyttötavan ohessa, joten et heti näe muutoksia.</translation>
-<translation id="4788777615168560705">Chromium ei voi tarkistaa salasanojasi. Yritä uudelleen 24 tunnin kuluttua tai <ph name="BEGIN_LINK" />tarkista salasanat Google-tililtä<ph name="END_LINK" />.</translation>
-<translation id="479167709087336770">Tämä käyttää samaa oikeinkirjoituksen tarkistusta kuin Google Haku. Selaimeen kirjoittamasi teksti lähetetään Googlelle. Voit vaihtaa valintasi milloin tahansa asetuksista.</translation>
-<translation id="4888717733111232871">Chromiumin saapuvien yhteyksien sääntö, joka sallii mDNS-liikenteen.</translation>
-<translation id="4893347770495441059">Päivitä &amp;Chromium käynnistämällä se uudelleen</translation>
-<translation id="4943838377383847465">Chromium on käynnissä taustalla</translation>
-<translation id="4987820182225656817">Vierailijat voivat käyttää Chromiumia jälkiä jättämättä.</translation>
-<translation id="4994636714258228724">Lisää itsesi Chromiumiin</translation>
-<translation id="5114678101347489141">Chromium kokeilee uusia ominaisuuksia, joiden avulla sivustot voivat tarjota saman selauskokemuksen vähemmällä datalla</translation>
+<translation id="4727435569202742773">Joku on jo kirjautunut tällä tietokoneella Ecosiaiin käyttäjätilillä <ph name="ACCOUNT_EMAIL_LAST"/>. Luo uusi Ecosia-käyttäjä, jos haluat pitää tiedot erillään.</translation>
+<translation id="864244542982029641">Suljetaanko Ecosia silti?</translation>
+<translation id="1025044809499013222">Ecosiain tärkeä tietoturvapäivitys on asennettu. Käynnistä selain uudelleen – palautamme avoimet välilehdet.</translation>
+<translation id="824192326282906244">Voit muuttaa tätä milloin tahansa Ecosiain asetuksista. Kokeilut ovat voimassa mainosten nykyisen näyttötavan ohessa, joten et heti näe muutoksia.</translation>
+<translation id="4788777615168560705">Chromium ei voi tarkistaa salasanojasi. Yritä uudelleen 24 tunnin kuluttua tai <ph name="BEGIN_LINK"/>tarkista salasanat Google-tililtä<ph name="END_LINK"/>.</translation>
+<translation id="3543284013834505767">Tämä käyttää samaa oikeinkirjoituksen tarkistusta kuin Ecosia Haku. Selaimeen kirjoittamasi teksti lähetetään Ecosialle. Voit vaihtaa valintasi milloin tahansa asetuksista.</translation>
+<translation id="4154538917942874814">Ecosiain saapuvien yhteyksien sääntö, joka sallii mDNS-liikenteen.</translation>
+<translation id="2159716220295742156">Päivitä &amp;Ecosia käynnistämällä se uudelleen</translation>
+<translation id="2234042158691635795">Ecosia on käynnissä taustalla</translation>
+<translation id="1869027055332251164">Vierailijat voivat käyttää Ecosiaia jälkiä jättämättä.</translation>
+<translation id="6761747850241550887">Lisää itsesi Ecosiaiin</translation>
+<translation id="3708834841667355707">Ecosia kokeilee uusia ominaisuuksia, joiden avulla sivustot voivat tarjota saman selauskokemuksen vähemmällä datalla</translation>
 <translation id="5224391634244552924">Ei tallennettuja salasanoja. Chromium voi tarkistaa salasanasi, kun tallennat niitä.</translation>
-<translation id="5252179775517634216"><ph name="EXISTING_USER" /> on jo kirjautunut tähän Chromium-profiiliin. Tämä luo uuden Chromium-profiilin: <ph name="USER_EMAIL_ADDRESS" /></translation>
+<translation id="847970842635669371"><ph name="EXISTING_USER"/> on jo kirjautunut tähän Ecosia-profiiliin. Tämä luo uuden Ecosia-profiilin: <ph name="USER_EMAIL_ADDRESS"/></translation>
 <translation id="5277894862589591112">Ota muutokset käyttöön käynnistämällä Chromium uudelleen</translation>
 <translation id="5296845517486664001">Jos Chromium on sijoittanut sinut aktiiviseen kokeiluun satunnaisesti, selaushistoriasi vaikuttaa näkemiisi mainoksiin ja alla kuvatulla tavalla arvioituihin kiinnostuksen kohteisiin kokeilujen aikana. Yksityisyytesi suojaamiseksi Chromium poistaa kiinnostuksen kohteesi kuukausittain.</translation>
-<translation id="5358375970380395591">Olet kirjautumassa sisään hallinnoidulla tilillä ja antamassa tilin järjestelmänvalvojalle oikeuden hallita Chromium-profiiliasi. Chromium-tietosi, kuten sovelluksesi, kirjanmerkkisi, historiasi, salasanasi ja muut asetuksesi, yhdistetään pysyvästi käyttäjätiliin <ph name="USER_NAME" />. Voit poistaa nämä tiedot Google-tilien Hallintapaneelissa, mutta et voi liittää tietoja toiseen tiliin. <ph name="LEARN_MORE" /></translation>
-<translation id="5386450000063123300">Päivitetään Chromiumia (<ph name="PROGRESS_PERCENT" />)</translation>
+<translation id="7105712012505419722">Olet kirjautumassa sisään hallinnoidulla tilillä ja antamassa tilin järjestelmänvalvojalle oikeuden hallita Ecosia-profiiliasi. Ecosia-tietosi, kuten sovelluksesi, kirjanmerkkisi, historiasi, salasanasi ja muut asetuksesi, yhdistetään pysyvästi käyttäjätiliin <ph name="USER_NAME"/>. Voit poistaa nämä tiedot Ecosia-tilien Hallintapaneelissa, mutta et voi liittää tietoja toiseen tiliin. <ph name="LEARN_MORE"/></translation>
+<translation id="5386450000063123300">Päivitetään Chromiumia (<ph name="PROGRESS_PERCENT"/>)</translation>
 <translation id="538767207339317086">Salli Chromium-kirjautuminen</translation>
-<translation id="5398878173008909840">Chromiumista on saatavilla uusi versio.</translation>
-<translation id="5405650547142096840">Poista Chromiumista</translation>
-<translation id="5421879995290576427">{0,plural, =0{Chromium suljetaan nyt.}=1{Chromium suljetaan 1 sekunnin kuluttua.}other{Chromium sulkeutuu # sekunnin kuluttua.}}</translation>
-<translation id="5427571867875391349">Aseta Chromium oletusselaimeksi</translation>
-<translation id="5438241569118040789"><ph name="PAGE_TITLE" /> – Chromium Beta</translation>
-<translation id="5473971139929175403">Chromium ei ehkä toimi oikein, koska sen käyttöä tällä Linux-jakelulla ei enää tueta.</translation>
-<translation id="5480860683791598150">Chromium tarvitsee oikeuden käyttää sijaintiasi, jotta se voidaan jakaa tämän sivuston kanssa.</translation>
+<translation id="8447746441670667471">Ecosiaista on saatavilla uusi versio.</translation>
+<translation id="330264384086604869">Poista Ecosiaista</translation>
+<translation id="3138995062177413515">{0,plural, =0{Ecosia suljetaan nyt.}=1{Ecosia suljetaan 1 sekunnin kuluttua.}other{Ecosia sulkeutuu # sekunnin kuluttua.}}</translation>
+<translation id="5581150090232500900">Aseta Ecosia oletusselaimeksi</translation>
+<translation id="1361296321590354837"><ph name="PAGE_TITLE"/> – Ecosia Beta</translation>
+<translation id="3307959934543585795">Ecosia ei ehkä toimi oikein, koska sen käyttöä tällä Linux-jakelulla ei enää tueta.</translation>
+<translation id="6558895515431832002">Ecosia tarvitsee oikeuden käyttää sijaintiasi, jotta se voidaan jakaa tämän sivuston kanssa.</translation>
 <translation id="5487574057737591516">Yksityisyytesi suojaamiseksi poistamme automaattisesti yli neljä viikkoa vanhat kiinnostuksen kohteet. Kun jatkat selaamista, kiinnostuksen kohde voi näkyä listalla uudelleen. Jos Chromiumin arvio menee pieleen tai jos et halua nähdä tiettyjä mainoksia, voit poistaa haluamasi kiinnostuksen kohteen.</translation>
-<translation id="549669000822060376">Odota hetki, Chromium asentaa uusimpia järjestelmäpäivityksiä.</translation>
-<translation id="5496810170689441661">Chromium yrittää muuttaa salasanoja. Salli tämä kirjoittamalla Windows-salasanasi.</translation>
+<translation id="5279514147510747661">Odota hetki, Ecosia asentaa uusimpia järjestelmäpäivityksiä.</translation>
+<translation id="5066194399237265772">Ecosia yrittää muuttaa salasanoja. Salli tämä kirjoittamalla Windows-salasanasi.</translation>
 <translation id="5527463683072221100">Avaa PDF-tiedostot Chromiumissa</translation>
 <translation id="5614091477838198795">Kun tämä on päällä, sinut kirjataan ulos myös Chromiumista</translation>
-<translation id="5623402015214259806">{0,plural, =0{Chromium-päivitys on saatavilla}=1{Chromium-päivitys on saatavilla}other{Chromium-päivitys on ollut saatavilla # vuorokauden ajan}}</translation>
-<translation id="5634636535844844681">Chromium edellyttää Windows 7:ää tai uudempaa versiota.</translation>
-<translation id="5653831366781983928">Käynnistä Chromium uudelleen nyt</translation>
+<translation id="7348818664647668234">{0,plural, =0{Ecosia-päivitys on saatavilla}=1{Ecosia-päivitys on saatavilla}other{Ecosia-päivitys on ollut saatavilla # vuorokauden ajan}}</translation>
+<translation id="5675757883980078189">Ecosia edellyttää Windows 7:ää tai uudempaa versiota.</translation>
+<translation id="5982672133249369264">Käynnistä Ecosia uudelleen nyt</translation>
 <translation id="5698481217667032250">Näytä Chromium tällä kielellä</translation>
-<translation id="5862307444128926510">Tervetuloa Chromiumiin</translation>
-<translation id="5883558403894052917">Chromium havaitsi, että näissä kohteissa on haittaohjelmia:</translation>
+<translation id="1027331268335328576">Tervetuloa Ecosiaiin</translation>
+<translation id="2942675027725878581">Ecosia havaitsi, että näissä kohteissa on haittaohjelmia:</translation>
 <translation id="5895138241574237353">Käynnistä uudelleen</translation>
-<translation id="5903106910045431592"><ph name="PAGE_TITLE" /> – Kirjautuminen verkkoon</translation>
+<translation id="5903106910045431592"><ph name="PAGE_TITLE"/> – Kirjautuminen verkkoon</translation>
 <translation id="5924017743176219022">Muodostetaan internetyhteyttä…</translation>
 <translation id="5941711191222866238">Pienennä</translation>
 <translation id="5972142260211327093">Jos Chromium on sijoittanut sinut aktiiviseen kokeiluun satunnaisesti, selaushistoriasi vaikuttaa näkemiisi mainoksiin ja alla kuvatulla tavalla arvioituihin kiinnostuksen kohteisiin. Yksityisyytesi suojaamiseksi Chromium poistaa kiinnostuksen kohteesi kuukausittain. Kiinnostuksen kohteet päivittyvät, ellet poista niitä.</translation>
-<translation id="5987687638152509985">Aloita synkronointi päivittämällä Chromium.</translation>
+<translation id="5704599732514791330">Aloita synkronointi päivittämällä Ecosia.</translation>
 <translation id="5988505247484123880">On tavallista, että avaamasi sivustot muistavat sinua kiinnostavat asiat personoidakseen käyttökokemustasi. Sivustot voivat myös tallentaa Chromiumiin tietoja kiinnostuksen kohteistasi.</translation>
-<translation id="6003112304606738118">Ladataan… <ph name="HOURS" /> tuntia jäljellä</translation>
+<translation id="6003112304606738118">Ladataan… <ph name="HOURS"/> tuntia jäljellä</translation>
 <translation id="6040143037577758943">Sulje</translation>
-<translation id="6055895534982063517">Chromiumista on saatavilla uusi versio, joka on entistäkin nopeampi.</translation>
-<translation id="6063093106622310249">&amp;Avaa Chromiumissa</translation>
-<translation id="6072279588547424923"><ph name="EXTENSION_NAME" /> on lisätty Chromiumiin</translation>
-<translation id="6072463441809498330">Chromiumin nopeuttaminen</translation>
+<translation id="7185777478310554774">Ecosiaista on saatavilla uusi versio, joka on entistäkin nopeampi.</translation>
+<translation id="7303930050538184306">&amp;Avaa Ecosiaissa</translation>
+<translation id="2227704215309956084"><ph name="EXTENSION_NAME"/> on lisätty Ecosiaiin</translation>
+<translation id="2905159584855395810">Ecosiain nopeuttaminen</translation>
 <translation id="608006075545470555">Lisää työprofiili tähän selaimeen</translation>
-<translation id="6096348254544841612">Muokkaa ja hallinnoi Chromiumia. Päivitys on saatavilla.</translation>
-<translation id="6119438414301547735">Salli laajennuksen näyttää pääsyoikeuspyyntöjä Chromium-työkalupalkissa</translation>
-<translation id="6120345080069858279">Chromium tallentaa tämän salasanan Google-tilillesi. Sinun ei tarvitse muistaa sitä.</translation>
-<translation id="6129621093834146363"><ph name="FILE_NAME" /> on vaarallinen, joten Chromium on estänyt sen.</translation>
+<translation id="8296565077892323223">Muokkaa ja hallinnoi Ecosiaia. Päivitys on saatavilla.</translation>
+<translation id="6419542773162312746">Salli laajennuksen näyttää pääsyoikeuspyyntöjä Ecosia-työkalupalkissa</translation>
+<translation id="4021894801595982809">Ecosia tallentaa tämän salasanan Ecosia-tilillesi. Sinun ei tarvitse muistaa sitä.</translation>
+<translation id="1936361330890313940"><ph name="FILE_NAME"/> on vaarallinen, joten Ecosia on estänyt sen.</translation>
 <translation id="6134968993075716475">Selaussuoja on pois päältä. Chromium suosittelee laittamaan sen päälle.</translation>
-<translation id="6145820983052037069">Voit vaihdella Chromium-profiilien välillä täällä</translation>
-<translation id="6183079672144801177">Varmista, että olet kirjautunut Chromiumiin laitteellasi (<ph name="TARGET_DEVICE_NAME" />) ja yritä sitten lähettämistä uudelleen.</translation>
-<translation id="6212496753309875659">Tälle tietokoneelle on jo asennettu Chromiumin uudempi versio. Jos Chromium ei toimi, poista sen asennus ja yritä uudelleen.</translation>
-<translation id="6219195342503754812">{0,plural, =0{Chromium käynnistetään uudelleen nyt}=1{Chromium käynnistetään uudelleen 1 sekunnin kuluttua}other{Chromium käynnistetään uudelleen # sekunnin kuluttua}}</translation>
-<translation id="6241367896540709610">Chromium tarvitsee tallennustilan pääsyoikeudet tiedostojen lataamiseen</translation>
+<translation id="4032832945953542360">Voit vaihdella Ecosia-profiilien välillä täällä</translation>
+<translation id="2346323077583431428">Varmista, että olet kirjautunut Ecosiaiin laitteellasi (<ph name="TARGET_DEVICE_NAME"/>) ja yritä sitten lähettämistä uudelleen.</translation>
+<translation id="2995860351618948435">Tälle tietokoneelle on jo asennettu Ecosiain uudempi versio. Jos Ecosia ei toimi, poista sen asennus ja yritä uudelleen.</translation>
+<translation id="5690368185132749068">{0,plural, =0{Ecosia käynnistetään uudelleen nyt}=1{Ecosia käynnistetään uudelleen 1 sekunnin kuluttua}other{Ecosia käynnistetään uudelleen # sekunnin kuluttua}}</translation>
+<translation id="1809194740315140401">Ecosia tarvitsee tallennustilan pääsyoikeudet tiedostojen lataamiseen</translation>
 <translation id="6245734527075554892">Tarkistaa URL-osoitteet Chromiumiin tallennetun vaarallisten sivustojen listan avulla</translation>
-<translation id="6248213926982192922">Tee Chromiumista oletusselain</translation>
+<translation id="4662363689050405237">Tee Ecosiaista oletusselain</translation>
 <translation id="6266342355635466082">Chromium ei voi tarkistaa päivityksiä. Tarkista internetyhteytesi.</translation>
 <translation id="6268381023930128611">Kirjaudutaanko ulos?</translation>
 <translation id="6273793429163604305">Paikoillanne…</translation>
-<translation id="6281746429495226318">Muokkaa Chromium-profiiliasi</translation>
+<translation id="6416551953415159186">Muokkaa Ecosia-profiiliasi</translation>
 <translation id="6290827346642914212">Nimeä Chromium-profiilisi</translation>
-<translation id="6295779123002464101"><ph name="FILE_NAME" /> voi olla vaarallinen, joten Chromium on estänyt sen.</translation>
-<translation id="6309712487085796862">Chromium käyttää kameraasi.</translation>
-<translation id="632355235628111698">Chromium esti tämän tiedoston, koska se on vaarallinen</translation>
+<translation id="3625533701824359646"><ph name="FILE_NAME"/> voi olla vaarallinen, joten Ecosia on estänyt sen.</translation>
+<translation id="4943938785458240142">Ecosia käyttää kameraasi.</translation>
+<translation id="5669097765101132299">Ecosia esti tämän tiedoston, koska se on vaarallinen</translation>
 <translation id="6327105987658262776">Päivityksiä ei ole saatavilla.</translation>
-<translation id="6333502561965082103">Toinen Chromium-prosessi on jo käynnissä. Yritä myöhemmin uudelleen.</translation>
-<translation id="6334986366598267305">Nyt voit helpommin käyttää Chromiumia Google-tililläsi ja jaetuilla tietokoneilla.</translation>
-<translation id="6373523479360886564">Haluatko varmasti poistaa Chromiumin asennuksen?</translation>
-<translation id="6384011394608460044"><ph name="BEGIN_BOLD" />Miten käytämme tätä dataa:<ph name="END_BOLD" /> Chromium voi arvioida sinua kiinnostavia aiheita. Sivut, joilla käyt, voivat myöhemmin pyytää Chromiumilta tietoja kiinnostuksen kohteistasi ja personoida näkemiäsi mainoksia.</translation>
-<translation id="6403826409255603130">Chromium on selain, jolla verkkosivut ja sovellukset toimivat salamannopeasti. Se on nopea, vakaa ja helppokäyttöinen. Chromiumin sisäänrakennettu haittaohjelma- ja tietojenkalastelusuojaus tekevät verkkoselauksesta turvallisempaa.</translation>
-<translation id="6442900851116057561">Käynnistä Chromium-käyttöjärjestelmä uudelleen</translation>
-<translation id="6455857529632101747">Tervetuloa Chromium-profiileihin</translation>
-<translation id="6457450909262716557">{SECONDS,plural, =1{Chromium käynnistyy uudelleen 1 sekunnin kuluttua}other{Chromium käynnistyy uudelleen # sekunnin kuluttua}}</translation>
-<translation id="6475912303565314141">Määrittää myös Chromiumin aloitussivun.</translation>
-<translation id="6510925080656968729">Poista Chromium</translation>
-<translation id="6542839706527980775">Jokainen profiili sisältää omat Chromium-tietonsa, esim. kirjanmerkit, historian ja salasanat</translation>
+<translation id="6450895420388847775">Toinen Ecosia-prosessi on jo käynnissä. Yritä myöhemmin uudelleen.</translation>
+<translation id="464306605599005355">Nyt voit helpommin käyttää Ecosiaia Ecosia-tililläsi ja jaetuilla tietokoneilla.</translation>
+<translation id="7908111389403807005">Haluatko varmasti poistaa Ecosiain asennuksen?</translation>
+<translation id="5610400309434105339"><ph name="BEGIN_BOLD"/>Miten käytämme tätä dataa:<ph name="END_BOLD"/> Ecosia voi arvioida sinua kiinnostavia aiheita. Sivut, joilla käyt, voivat myöhemmin pyytää Ecosiailta tietoja kiinnostuksen kohteistasi ja personoida näkemiäsi mainoksia.</translation>
+<translation id="3939060118711873999">Ecosia on selain, jolla verkkosivut ja sovellukset toimivat salamannopeasti. Se on nopea, vakaa ja helppokäyttöinen. Ecosiain sisäänrakennettu haittaohjelma- ja tietojenkalastelusuojaus tekevät verkkoselauksesta turvallisempaa.</translation>
+<translation id="5404489723475681578">Käynnistä Ecosia-käyttöjärjestelmä uudelleen</translation>
+<translation id="4410570812343670816">Tervetuloa Ecosia-profiileihin</translation>
+<translation id="5789438819244101666">{SECONDS,plural, =1{Ecosia käynnistyy uudelleen 1 sekunnin kuluttua}other{Ecosia käynnistyy uudelleen # sekunnin kuluttua}}</translation>
+<translation id="524314285625975879">Määrittää myös Ecosiain aloitussivun.</translation>
+<translation id="6496553866814956056">Poista Ecosia</translation>
+<translation id="8608092457636055141">Jokainen profiili sisältää omat Ecosia-tietonsa, esim. kirjanmerkit, historian ja salasanat</translation>
 <translation id="6570579332384693436">Chromium lähettää kenttiin kirjoittamasi tekstin Googlelle oikeinkirjoitusvirheiden korjaamiseksi.</translation>
-<translation id="6598877126913850652">Siirry Chromiumin ilmoitusasetuksiin</translation>
-<translation id="6613594504749178791">Muutokset tulevat voimaan, kun käynnistät Chromiumin seuraavan kerran.</translation>
-<translation id="665732753414869868">Chromium tarvitsee kameran luvan, jotta se voi luoda 3D-kartan ympäristöstäsi</translation>
+<translation id="6533266716128249922">Siirry Ecosiain ilmoitusasetuksiin</translation>
+<translation id="1722634673917783018">Muutokset tulevat voimaan, kun käynnistät Ecosiain seuraavan kerran.</translation>
+<translation id="2537426042760364251">Ecosia tarvitsee kameran luvan, jotta se voi luoda 3D-kartan ympäristöstäsi</translation>
 <translation id="6663852025006259149">Sivustot toimivat todennäköisesti odotetulla tavalla, mutta ne eivät muista sinua suljettuasi kaikki Chromium-ikkunat</translation>
 <translation id="6676384891291319759">Käytä internetiä</translation>
-<translation id="668175097507315160">Chromium-käyttöjärjestelmä ei voi synkronoida dataa kirjautumisvirheen vuoksi.</translation>
-<translation id="6709350901466051922">Chromium tarvitsee mikrofonin luvan tällä sivustolla</translation>
-<translation id="6717134281241384636">Profiiliasi ei voi käyttää, sillä se on peräisin Chromiumin uudemmasta versiosta.
+<translation id="8067423333018528301">Ecosia-käyttöjärjestelmä ei voi synkronoida dataa kirjautumisvirheen vuoksi.</translation>
+<translation id="2173571365716863400">Ecosia tarvitsee mikrofonin luvan tällä sivustolla</translation>
+<translation id="6648664289472946060">Profiiliasi ei voi käyttää, sillä se on peräisin Ecosiain uudemmasta versiosta.
 
-Kaikki ominaisuudet eivät ehkä ole käytettävissä. Määritä jokin muu profiilihakemisto tai käytä Chromiumin uudempaa versiota.</translation>
-<translation id="6730677189742196061">Muistinsäästö nopeuttaa Chromiumia</translation>
-<translation id="6734291798041940871">Chromium on jo asennettuna kaikille tietokoneen käyttäjille.</translation>
-<translation id="673636774878526923">Jos haluat pääsyn Chromium-sisältöösi kaikilla laitteilla, kirjaudu sisään ja laita sitten synkronointi päälle.</translation>
-<translation id="67706546131546258">Chromium suosittelee tiedoston skannaamista, koska se voi olla vaarallinen.</translation>
-<translation id="6774082503108938489">Vanhempasi ovat laittaneet Chromiumin sivustojen, sovellusten ja laajennusten käyttöluvat pois päältä. Käyttöönottoa (<ph name="EXTENSION_TYPE_PARAMETER" />) ei sallita.</translation>
-<translation id="6779406956731413166">Toinen <ph name="BEGIN_LINK_CROS_OSS" />avoimen lähdekoodin ohjelmisto<ph name="END_LINK_CROS_OSS" /> tukee Chromium-käyttöjärjestelmää.</translation>
-<translation id="6847869444787758381">Chromium ilmoittaa sinulle, jos salasanasi ovat vaarantuneet</translation>
-<translation id="6852530923436401894">Chromium on estänyt tämän tiedoston, koska se sisältää haittaohjelmia</translation>
-<translation id="6857782730669500492">Chromium – <ph name="PAGE_TITLE" /></translation>
+Kaikki ominaisuudet eivät ehkä ole käytettävissä. Määritä jokin muu profiilihakemisto tai käytä Ecosiain uudempaa versiota.</translation>
+<translation id="6039735020616040749">Muistinsäästö nopeuttaa Ecosiaia</translation>
+<translation id="4870057811531036437">Ecosia on jo asennettuna kaikille tietokoneen käyttäjille.</translation>
+<translation id="4512092435423703529">Jos haluat pääsyn Ecosia-sisältöösi kaikilla laitteilla, kirjaudu sisään ja laita sitten synkronointi päälle.</translation>
+<translation id="7972668220031382654">Ecosia suosittelee tiedoston skannaamista, koska se voi olla vaarallinen.</translation>
+<translation id="2290912123073552463">Vanhempasi ovat laittaneet Ecosiain sivustojen, sovellusten ja laajennusten käyttöluvat pois päältä. Käyttöönottoa (<ph name="EXTENSION_TYPE_PARAMETER"/>) ei sallita.</translation>
+<translation id="2441303983090031276">Toinen <ph name="BEGIN_LINK_CROS_OSS"/>avoimen lähdekoodin ohjelmisto<ph name="END_LINK_CROS_OSS"/> tukee Ecosia-käyttöjärjestelmää.</translation>
+<translation id="1263466865695943046">Ecosia ilmoittaa sinulle, jos salasanasi ovat vaarantuneet</translation>
+<translation id="7864624828358709494">Ecosia on estänyt tämän tiedoston, koska se sisältää haittaohjelmia</translation>
+<translation id="4600924482853773728">Ecosia – <ph name="PAGE_TITLE"/></translation>
 <translation id="6863361426438995919">Google Pay (kopioitu Chromiumiin)</translation>
-<translation id="6873893289264747459">Chromium havaitsi, että "<ph name="EXTENSION_NAME" />" sisältää haittaohjelmia</translation>
-<translation id="6893813176749746474">Chromium on päivitetty, mutta et ole käyttänyt sitä ainakaan 30 päivään.</translation>
-<translation id="691026815377248078">Chromium tarvitsee Bluetoothia jatkaakseen 
- laiteparin muodostusta. <ph name="IDS_BLUETOOTH_DEVICE_CHOOSER_AUTHORIZE_BLUETOOTH_LINK" /></translation>
+<translation id="1490060441084292633">Ecosia havaitsi, että "<ph name="EXTENSION_NAME"/>" sisältää haittaohjelmia</translation>
+<translation id="7482156490649194631">Ecosia on päivitetty, mutta et ole käyttänyt sitä ainakaan 30 päivään.</translation>
+<translation id="4062366803229254216">Ecosia tarvitsee Bluetoothia jatkaakseen 
+ laiteparin muodostusta. <ph name="IDS_BLUETOOTH_DEVICE_CHOOSER_AUTHORIZE_BLUETOOTH_LINK"/></translation>
 <translation id="6929417474050522668">Kokeilujen aikana käyttämäsi sivustot voivat pyytää Chromiumilta mainosten mittaamisen avulla tietoja, jotka auttavat mittaamaan sivustoilla näkyvien mainosten suoriutumista. Mainosten mittaaminen rajoittaa sivustojen välistä seurantaa siirtämällä mahdollisimman vähän tietoja sivustojen välillä.</translation>
 <translation id="6940431691900807093">Sivut, joilla käyt, voivat myöhemmin pyytää Chromiumilta tietoja kiinnostuksen kohteistasi ja personoida näkemiäsi mainoksia. Chromium voi jakaa enintään kolme kiinnostuksen kohdetta.</translation>
-<translation id="6964305034639999644">Avaa linkki Chromiumin inco&amp;gnito-ikkunassa</translation>
-<translation id="6978145336957848883">Heikko salasana on helppo arvata. Chromium voi <ph name="BEGIN_LINK" />luoda ja muistaa vahvoja salasanoja puolestasi<ph name="END_LINK" />.</translation>
-<translation id="6984667024406244807">Chromium ei ole aktiivinen</translation>
-<translation id="6985329841647292029">Chromium-käyttöjärjestelmän käyttöehdot</translation>
-<translation id="6990124437352146030">Chromium tarvitsee oikeuden käyttää mikrofoniasi tällä sivustolla.</translation>
+<translation id="8283315171506895091">Avaa linkki Ecosiain inco&amp;gnito-ikkunassa</translation>
+<translation id="6978145336957848883">Heikko salasana on helppo arvata. Chromium voi <ph name="BEGIN_LINK"/>luoda ja muistaa vahvoja salasanoja puolestasi<ph name="END_LINK"/>.</translation>
+<translation id="1401515072108809622">Ecosia ei ole aktiivinen</translation>
+<translation id="2149148292984034533">Ecosia-käyttöjärjestelmän käyttöehdot</translation>
+<translation id="1831192335802727557">Ecosia tarvitsee oikeuden käyttää mikrofoniasi tällä sivustolla.</translation>
 <translation id="7025789849649390912">Asennus keskeytyi.</translation>
-<translation id="705851970750939768">Päivitä Chromium</translation>
-<translation id="7067091210845072982">Jos kuvalla ei ole hyödyllistä kuvausta, Chromium yrittää luoda sellaisen. Kuvat lähetetään Googlelle kuvausten luomista varten.</translation>
-<translation id="718435575166326686">Chromium tarvitsee kameran luvan tällä sivustolla</translation>
-<translation id="7196312274710523067">Chromiumin käynnistäminen epäonnistui. Yritä uudelleen.</translation>
+<translation id="5598074261782651109">Päivitä Ecosia</translation>
+<translation id="2838372953389311551">Jos kuvalla ei ole hyödyllistä kuvausta, Ecosia yrittää luoda sellaisen. Kuvat lähetetään Ecosialle kuvausten luomista varten.</translation>
+<translation id="219546601381787154">Ecosia tarvitsee kameran luvan tällä sivustolla</translation>
+<translation id="2542649989941327712">Ecosiain käynnistäminen epäonnistui. Yritä uudelleen.</translation>
 <translation id="7197677400338048821">Chromium ei voi tarkistaa salasanojasi. Yritä uudelleen 24 tunnin päästä.</translation>
-<translation id="7223968959479464213">Tehtävänhallinta - Chromium</translation>
-<translation id="7246575524853130370">Chromiumin arvio kiinnostuksen kohteistasi</translation>
+<translation id="7311066525704006840">Tehtävänhallinta - Ecosia</translation>
+<translation id="3816260943154642689">Ecosiain arvio kiinnostuksen kohteistasi</translation>
 <translation id="7309928523159922338">Mainosten mittaamisen avulla käyttämäsi sivustot voivat pyytää Chromiumilta tietoja, jotka auttavat mittaamaan sivustoilla näkyvien mainosten suoriutumista. Mainosten mittaaminen rajoittaa sivustojen välistä seurantaa siirtämällä mahdollisimman vähän tietoja sivustojen välillä.</translation>
 <translation id="731795002583552498">Päivitetään Chromiumia.</translation>
-<translation id="7318036098707714271">Asetustiedostosi on virheellinen.
+<translation id="6673288084648462613">Asetustiedostosi on virheellinen.
 
-Chromium ei voi palauttaa asetuksiasi.</translation>
-<translation id="7337881442233988129">Chromium</translation>
+Ecosia ei voi palauttaa asetuksiasi.</translation>
+<translation id="4811228173434336381">Ecosia</translation>
 <translation id="7339898014177206373">Uusi ikkuna</translation>
-<translation id="734373864078049451">Tämä on verkkosi, kirjanmerkkiesi ja muun Chromium-sisältösi koti.</translation>
-<translation id="7349591376906416160">Järjestelmänvalvojasi on määrittänyt Chromiumin avaamaan osoitteen <ph name="TARGET_URL_HOSTNAME" /> selaimella <ph name="ALTERNATIVE_BROWSER_NAME" />.</translation>
-<translation id="7398989605938454041">Kun käytät Chromium-profiileja, voit pitää kaiken Chromium-sisällön erillään. Näin työ ja hauskanpito on helpompi erottaa toisistaan.</translation>
-<translation id="7449453770951226939"><ph name="PAGE_TITLE" /> – Chromium Dev</translation>
-<translation id="7451052299415159299">Chromium tarvitsee oikeuden käyttää kameraasi tällä sivustolla.</translation>
-<translation id="7461356015007898716">Jotta saat tulevia Chromiumin päivityksiä, sinulla on oltava Windows 10 tai uudempi. Tietokoneen käyttöjärjestelmä on Windows 7.</translation>
+<translation id="4960252760049500399">Tämä on verkkosi, kirjanmerkkiesi ja muun Ecosia-sisältösi koti.</translation>
+<translation id="7158975242722498086">Järjestelmänvalvojasi on määrittänyt Ecosiain avaamaan osoitteen <ph name="TARGET_URL_HOSTNAME"/> selaimella <ph name="ALTERNATIVE_BROWSER_NAME"/>.</translation>
+<translation id="5622136942112821750">Kun käytät Ecosia-profiileja, voit pitää kaiken Ecosia-sisällön erillään. Näin työ ja hauskanpito on helpompi erottaa toisistaan.</translation>
+<translation id="3879865245128287988"><ph name="PAGE_TITLE"/> – Ecosia Dev</translation>
+<translation id="5055330219314726197">Ecosia tarvitsee oikeuden käyttää kameraasi tällä sivustolla.</translation>
+<translation id="1975037445584526511">Jotta saat tulevia Ecosiain päivityksiä, sinulla on oltava Windows 10 tai uudempi. Tietokoneen käyttöjärjestelmä on Windows 7.</translation>
 <translation id="7467949745582939695">Käynnistä Chromium uudelleen?</translation>
-<translation id="7483335560992089831">Chromiumista ei voi asentaa versiota, joka on tällä hetkellä käynnissä. Sulje Chromium ja yritä uudelleen.</translation>
-<translation id="753534427205733210">{0,plural, =1{Chromium käynnistetään uudelleen 1 minuutin kuluttua}other{Chromium käynnistetään uudelleen # minuutin kuluttua}}</translation>
-<translation id="7561906087460245826">Poista data myös Chromiumista (<ph name="URL" />)</translation>
+<translation id="80155189677487610">Ecosiaista ei voi asentaa versiota, joka on tällä hetkellä käynnissä. Sulje Ecosia ja yritä uudelleen.</translation>
+<translation id="7558678848273505235">{0,plural, =1{Ecosia käynnistetään uudelleen 1 minuutin kuluttua}other{Ecosia käynnistetään uudelleen # minuutin kuluttua}}</translation>
+<translation id="3674955518940155608">Poista data myös Ecosiaista (<ph name="URL"/>)</translation>
 <translation id="7582945390259497898">Chromium voi arvioida sinua kiinnostavia aiheita. Sivut, joilla käyt, voivat myöhemmin pyytää Chromiumilta tietoja kiinnostuksen kohteistasi ja personoida näkemiäsi mainoksia.</translation>
-<translation id="7583399374488819119">Asennusohjelma: <ph name="COMPANY_NAME" /></translation>
-<translation id="7597596667193879455">Olet laittanut Parannetun selaussuojan päälle tililläsi. Käytä selaussuojaa myös Chromiumilla.</translation>
-<translation id="761356813943268536">Chromium käyttää kameraasi ja mikrofoniasi.</translation>
-<translation id="7617377681829253106">Chromium on nyt entistä parempi</translation>
+<translation id="7583399374488819119">Asennusohjelma: <ph name="COMPANY_NAME"/></translation>
+<translation id="7910693244647744044">Olet laittanut Parannetun selaussuojan päälle tililläsi. Käytä selaussuojaa myös Ecosiailla.</translation>
+<translation id="4061472199368124600">Ecosia käyttää kameraasi ja mikrofoniasi.</translation>
+<translation id="170259281605734125">Ecosia on nyt entistä parempi</translation>
 <translation id="7649070708921625228">Ohje</translation>
-<translation id="7682213815243802460">Voit lukea lisää näistä ominaisuuksista Chromiumin asetuksista.</translation>
+<translation id="675365189802108507">Voit lukea lisää näistä ominaisuuksista Ecosiain asetuksista.</translation>
 <translation id="7682601070171973634">Chromium kokeilee uusia ominaisuuksia, joiden avulla sivustot voivat tarjota saman selauskokemuksen vähemmällä datalla</translation>
-<translation id="7686590090926151193">Chromium ei ole oletusselain.</translation>
-<translation id="7689606757190482937">Voit synkronoida Chromiumin ja tehdä siitä yksilöllisemmän kaikilla laitteilla.</translation>
-<translation id="7745317241717453663">Tämä poistaa selaustiedot pysyvästi laitteelta. Jos haluat palauttaa tiedot myöhemmin, kirjaudu Chromiumiin käyttäjänä <ph name="USER_EMAIL" />.</translation>
+<translation id="1508200558303644420">Ecosia ei ole oletusselain.</translation>
+<translation id="7174674455569790401">Voit synkronoida Ecosiain ja tehdä siitä yksilöllisemmän kaikilla laitteilla.</translation>
+<translation id="7745317241717453663">Tämä poistaa selaustiedot pysyvästi laitteelta. Jos haluat palauttaa tiedot myöhemmin, kirjaudu Chromiumiin käyttäjänä <ph name="USER_EMAIL"/>.</translation>
 <translation id="7747138024166251722">Asennusohjelma ei pystynyt luomaan väliaikaista hakemistoa. Tarkista, että käytettävissä on riittävästi levytilaa ja että sinulla on oikeus asentaa ohjelmia.</translation>
-<translation id="7786760609782648049">Chromiumin nopeuttaminen</translation>
-<translation id="7790626492778995050"><ph name="PAGE_TITLE" /> – Chromium Canary</translation>
-<translation id="7828947555739565424">Tämän tilin Chromium-profiili on jo tällä laitteella</translation>
-<translation id="7845233973568007926">Kiitos asennuksesta. Tietokone pitää käynnistää uudelleen ennen kuin <ph name="BUNDLE_NAME" /> otetaan käyttöön.</translation>
-<translation id="7867198900892795913">Chromiumia ei voitu päivittää uusimpaan versioon, joten sinulta puuttuu joitakin uusia ominaisuuksia ja tietoturvakorjauksia.</translation>
-<translation id="7872446069773932638">Ladataan… <ph name="SECONDS" /> sekuntia jäljellä</translation>
-<translation id="7877292582355102282"><ph name="BEGIN_BOLD" />Miten voit vaikuttaa dataasi:<ph name="END_BOLD" /> Yksityisyytesi suojaamiseksi poistamme automaattisesti yli neljä viikkoa vanhat kiinnostuksen kohteet. Kun jatkat selaamista, kiinnostuksen kohde voi näkyä listalla uudelleen. Voit myös poistaa kiinnostuksen kohteet, joita et halua Chromiumin ottavan huomioon.</translation>
-<translation id="7937630085815544518">Chromiumiin kirjautunut käyttäjä: <ph name="USER_EMAIL_ADDRESS" />. Kirjaudu uudelleen sisään samalla tilillä.</translation>
+<translation id="6161025257729272170">Ecosiain nopeuttaminen</translation>
+<translation id="5669882610631815446"><ph name="PAGE_TITLE"/> – Ecosia Canary</translation>
+<translation id="8301840715671593762">Tämän tilin Ecosia-profiili on jo tällä laitteella</translation>
+<translation id="7845233973568007926">Kiitos asennuksesta. Tietokone pitää käynnistää uudelleen ennen kuin <ph name="BUNDLE_NAME"/> otetaan käyttöön.</translation>
+<translation id="3268039966078382323">Ecosiaia ei voitu päivittää uusimpaan versioon, joten sinulta puuttuu joitakin uusia ominaisuuksia ja tietoturvakorjauksia.</translation>
+<translation id="7872446069773932638">Ladataan… <ph name="SECONDS"/> sekuntia jäljellä</translation>
+<translation id="5875641815673321623"><ph name="BEGIN_BOLD"/>Miten voit vaikuttaa dataasi:<ph name="END_BOLD"/> Yksityisyytesi suojaamiseksi poistamme automaattisesti yli neljä viikkoa vanhat kiinnostuksen kohteet. Kun jatkat selaamista, kiinnostuksen kohde voi näkyä listalla uudelleen. Voit myös poistaa kiinnostuksen kohteet, joita et halua Ecosiain ottavan huomioon.</translation>
+<translation id="2412381038247037703">Ecosiaiin kirjautunut käyttäjä: <ph name="USER_EMAIL_ADDRESS"/>. Kirjaudu uudelleen sisään samalla tilillä.</translation>
 <translation id="7975919845073681630">Tämä on Chromiumin toissijainen asennus, eikä sitä voi asettaa oletusselaimeksi.</translation>
-<translation id="7997934263947464652">Jos laajennukset, sovellukset ja teemat ovat tuntemattomista lähteistä, ne voivat vahingoittaa laitetta. Chromium suosittelee niiden asentamista vain täältä: <ph name="IDS_EXTENSION_WEB_STORE_TITLE" /></translation>
-<translation id="8013436988911883588">Kun Chromiumilla on käyttöoikeus, sivustot voivat pyytää sitä sinulta.</translation>
-<translation id="80471789339884597">Kiitos asennuksesta. Kaikki selaimet pitää käynnistää uudelleen ennen kuin <ph name="BUNDLE_NAME" /> otetaan käyttöön.</translation>
-<translation id="8105840573057009683">Chromium tarvitsee sijaintiluvan tällä sivustolla</translation>
-<translation id="8133124826068723441">Chromium-käyttöjärjestelmä ei voi synkronoida dataa, koska synkronointi ei ole käytettävissä verkkotunnuksessasi.</translation>
+<translation id="851583113375911087">Jos laajennukset, sovellukset ja teemat ovat tuntemattomista lähteistä, ne voivat vahingoittaa laitetta. Ecosia suosittelee niiden asentamista vain täältä: <ph name="IDS_EXTENSION_WEB_STORE_TITLE"/></translation>
+<translation id="488806616089631539">Kun Ecosiailla on käyttöoikeus, sivustot voivat pyytää sitä sinulta.</translation>
+<translation id="80471789339884597">Kiitos asennuksesta. Kaikki selaimet pitää käynnistää uudelleen ennen kuin <ph name="BUNDLE_NAME"/> otetaan käyttöön.</translation>
+<translation id="5661123757512626239">Ecosia tarvitsee sijaintiluvan tällä sivustolla</translation>
+<translation id="143614250230771428">Ecosia-käyttöjärjestelmä ei voi synkronoida dataa, koska synkronointi ei ole käytettävissä verkkotunnuksessasi.</translation>
 <translation id="813913629614996137">Käynnistetään…</translation>
-<translation id="81770708095080097">Tämä tiedosto on vaarallinen, joten Chromium on estänyt sen.</translation>
-<translation id="8213374284266571500">Chromium on estänyt tiedoston, koska tämäntyyppiset tiedostot ovat vaarallisia</translation>
-<translation id="8248265253516264921">Jos kuvalla ei ole hyödyllistä kuvausta, Chromium yrittää luoda sellaisen. Kuvat lähetetään Googlelle kuvausten luomista varten. Voit milloin tahansa poistaa tämän käytöstä asetuksissa.</translation>
+<translation id="6491651957026506753">Tämä tiedosto on vaarallinen, joten Ecosia on estänyt sen.</translation>
+<translation id="796435732739009892">Ecosia on estänyt tiedoston, koska tämäntyyppiset tiedostot ovat vaarallisia</translation>
+<translation id="2046160555506209000">Jos kuvalla ei ole hyödyllistä kuvausta, Ecosia yrittää luoda sellaisen. Kuvat lähetetään Ecosialle kuvausten luomista varten. Voit milloin tahansa poistaa tämän käytöstä asetuksissa.</translation>
 <translation id="8266560134891435528">Chromium ei voi tarkistaa salasanojasi, koska et ole kirjautuneena sisään</translation>
-<translation id="8276522524898344151">Chromium yrittää kopioida salasanoja.</translation>
-<translation id="8290862415967981663">Tämä tiedosto voi olla vaarallinen, joten Chromium on estänyt sen.</translation>
+<translation id="8633885040939757689">Ecosia yrittää kopioida salasanoja.</translation>
+<translation id="2243562167758283214">Tämä tiedosto voi olla vaarallinen, joten Ecosia on estänyt sen.</translation>
 <translation id="8330519371938183845">Kirjaudu sisään, niin voit synkronoida Chromiumin ja tehdä siitä yksilöllisemmän kaikilla laitteilla.</translation>
-<translation id="8340674089072921962"><ph name="USER_EMAIL_ADDRESS" /> käytti aiemmin Chromiumia</translation>
-<translation id="8357820681460164151">Jos haluat pääsyn Chromiumin selainsisältöön kaikilla laitteilla, kirjaudu sisään ja laita sitten synkronointi päälle.</translation>
-<translation id="8360718212975266891">Jotta saat tulevia Chromiumin päivityksiä, sinulla on oltava Windows 10 tai uudempi. Tietokoneen käyttöjärjestelmä on Windows 8.</translation>
-<translation id="8417404458978023919">{0,plural, =1{Käynnistä Chromium uudelleen vuorokauden kuluessa}other{Käynnistä Chromium uudelleen # vuorokauden kuluessa}}</translation>
-<translation id="8453117565092476964">Asennusarkisto on virheellinen. Lataa Chromium uudelleen.</translation>
-<translation id="8463672209299734063">Valinnainen: Auta parantamaan Chromium-käyttöjärjestelmän ominaisuuksia ja suorituskykyä lähettämällä diagnostiikka- ja käyttödataa Googlelle automaattisesti.</translation>
-<translation id="8493179195440786826">Chromium on vanhentunut</translation>
+<translation id="8055222671516987714"><ph name="USER_EMAIL_ADDRESS"/> käytti aiemmin Ecosiaia</translation>
+<translation id="4337034173783952373">Jos haluat pääsyn Ecosiain selainsisältöön kaikilla laitteilla, kirjaudu sisään ja laita sitten synkronointi päälle.</translation>
+<translation id="8655983536493871574">Jotta saat tulevia Ecosiain päivityksiä, sinulla on oltava Windows 10 tai uudempi. Tietokoneen käyttöjärjestelmä on Windows 8.</translation>
+<translation id="6826163993811146231">{0,plural, =1{Käynnistä Ecosia uudelleen vuorokauden kuluessa}other{Käynnistä Ecosia uudelleen # vuorokauden kuluessa}}</translation>
+<translation id="4033006861724039519">Asennusarkisto on virheellinen. Lataa Ecosia uudelleen.</translation>
+<translation id="8975930032513941502">Valinnainen: Auta parantamaan Ecosia-käyttöjärjestelmän ominaisuuksia ja suorituskykyä lähettämällä diagnostiikka- ja käyttödataa Ecosialle automaattisesti.</translation>
+<translation id="2695952268686253864">Ecosia on vanhentunut</translation>
 <translation id="8550334526674375523">Tämä työprofiili on täysin erillinen henkilökohtaisesta profiilistasi.</translation>
-<translation id="8558383651099478961">Vanhempasi ovat laittaneet Chromiumin sivustojen, sovellusten ja laajennusten käyttöluvat pois päältä. Lisäämistä (<ph name="EXTENSION_TYPE_PARAMETER" />) ei sallita.</translation>
-<translation id="8561285221328166383">Jotta saat tulevia Chromiumin päivityksiä, sinulla on oltava macOS 10.13 tai uudempi. Tällä tietokoneella on macOS 10.12.</translation>
+<translation id="4281355161119203663">Vanhempasi ovat laittaneet Ecosiain sivustojen, sovellusten ja laajennusten käyttöluvat pois päältä. Lisäämistä (<ph name="EXTENSION_TYPE_PARAMETER"/>) ei sallita.</translation>
+<translation id="6235917057647038042">Jotta saat tulevia Ecosiain päivityksiä, sinulla on oltava macOS 10.13 tai uudempi. Tällä tietokoneella on macOS 10.12.</translation>
 <translation id="8568283329061645092">Chromium voi tarkistaa salasanasi, kun kirjaudut sisään Google-tililläsi</translation>
-<translation id="8574036838419011058">Kun se on päällä, Chromium säästää akkua rajoittamalla taustatoimintaa ja visuaalisia tehosteita, esim. sujuvaa vierittämistä ja videon kuvanopeutta. <ph name="BEGIN_LINK" />Lue lisää<ph name="END_LINK" /></translation>
-<translation id="8586442755830160949">Copyright <ph name="YEAR" /> The Chromium Authors. Kaikki oikeudet pidätetään.</translation>
-<translation id="8608079656141766906"><ph name="BEGIN_BOLD" />Miten käytämme tätä dataa:<ph name="END_BOLD" /> Sivustot voivat tallentaa Chromiumiin tietoja kiinnostuksen kohteistasi. Jos esimerkiksi käyt sivustolla, koska haluat ostaa kengät maratonia varten, sivusto voi määritellä maratonjuoksun sinua kiinnostavaksi aiheeksi. Jos myöhemmin käyt toisella sivustolla, jolla ilmoittaudut juoksukilpailuun, kyseinen sivusto voi näyttää sinulle mainoksen juoksukengistä kiinnostuksen kohteidesi perusteella.</translation>
-<translation id="8619360774459241877">Käynnistetään Chromiumia…</translation>
-<translation id="8621669128220841554">Asennus epäonnistui määrittelemättömän virheen vuoksi. Lataa Chromium uudelleen.</translation>
-<translation id="8697124171261953979">Määrittää myös Chromiumin ja omnibox-hakujen aloitussivun.</translation>
-<translation id="8704119203788522458">Tämä on oma Chromiumisi</translation>
-<translation id="8796602469536043152">Chromium tarvitsee oikeuden käyttää kameraasi ja mikrofoniasi tällä sivustolla.</translation>
-<translation id="8833697763442816810">Chromium-käyttöjärjestelmä</translation>
-<translation id="8846118132221683440"><ph name="BEGIN_BOLD" />Mitä dataa käytetään:<ph name="END_BOLD" /> Selaushistoriaasi eli tietoa sivustoista, jotka olet avannut Chromiumissa tällä laitteella</translation>
+<translation id="8574036838419011058">Kun se on päällä, Chromium säästää akkua rajoittamalla taustatoimintaa ja visuaalisia tehosteita, esim. sujuvaa vierittämistä ja videon kuvanopeutta. <ph name="BEGIN_LINK"/>Lue lisää<ph name="END_LINK"/></translation>
+<translation id="7129808598331559748">Copyright <ph name="YEAR"/> The Ecosia Authors. Kaikki oikeudet pidätetään.</translation>
+<translation id="1851101453239911251"><ph name="BEGIN_BOLD"/>Miten käytämme tätä dataa:<ph name="END_BOLD"/> Sivustot voivat tallentaa Ecosiaiin tietoja kiinnostuksen kohteistasi. Jos esimerkiksi käyt sivustolla, koska haluat ostaa kengät maratonia varten, sivusto voi määritellä maratonjuoksun sinua kiinnostavaksi aiheeksi. Jos myöhemmin käyt toisella sivustolla, jolla ilmoittaudut juoksukilpailuun, kyseinen sivusto voi näyttää sinulle mainoksen juoksukengistä kiinnostuksen kohteidesi perusteella.</translation>
+<translation id="8109744984354428711">Käynnistetään Ecosiaia…</translation>
+<translation id="2402290209407843024">Asennus epäonnistui määrittelemättömän virheen vuoksi. Lataa Ecosia uudelleen.</translation>
+<translation id="6665128960039431910">Määrittää myös Ecosiain ja omnibox-hakujen aloitussivun.</translation>
+<translation id="2000339487270823788">Tämä on oma Ecosiaisi</translation>
+<translation id="7273750863406285983">Ecosia tarvitsee oikeuden käyttää kameraasi ja mikrofoniasi tällä sivustolla.</translation>
+<translation id="5267683457871579197">Ecosia-käyttöjärjestelmä</translation>
+<translation id="4565616259974605182"><ph name="BEGIN_BOLD"/>Mitä dataa käytetään:<ph name="END_BOLD"/> Selaushistoriaasi eli tietoa sivustoista, jotka olet avannut Ecosiaissa tällä laitteella</translation>
 <translation id="8862326446509486874">Sinulla ei ole käyttöoikeuksia järjestelmätason asennukseen. Kokeile asennusohjelman suorittamista uudelleen järjestelmänvalvojana.</translation>
 <translation id="8880203542552872219">Jos vaihdoit, päivitä muutos Chromiumin tallennettuihin salasanoihin.</translation>
-<translation id="8897323336392112261">Määrittää myös Chromiumin aloitussivun ja Etusivu-painikkeella avattavan sivun.</translation>
-<translation id="8907580949721785412">Chromium yrittää näyttää salasanat. Salli tämä kirjoittamalla Windows-salasanasi.</translation>
+<translation id="6078545897140861225">Määrittää myös Ecosiain aloitussivun ja Etusivu-painikkeella avattavan sivun.</translation>
+<translation id="3966234175958887595">Ecosia yrittää näyttää salasanat. Salli tämä kirjoittamalla Windows-salasanasi.</translation>
 <translation id="8931379085695076764">Chromium voi arvioida kiinnostuksen kohteitasi muutaman viime viikon selaushistoriasi perusteella. Tiedot pysyvät laitteellasi.</translation>
-<translation id="8941642502866065432">Chromiumin päivitys epäonnistui</translation>
-<translation id="897581876605952338">Chromium Enterprise ‑logo</translation>
+<translation id="6346154190168496057">Ecosiain päivitys epäonnistui</translation>
+<translation id="93440396576488794">Ecosia Enterprise ‑logo</translation>
 <translation id="8986207147630327271">Olet lisäämässä työprofiilia tähän selaimeen ja antamassa järjestelmänvalvojalle oikeuden hallita pelkkää työprofiilia.</translation>
-<translation id="9019929317751753759">Paransimme Chromiumin turvallisuutta poistamalla käytöstä sovelluksia, joita <ph name="IDS_EXTENSION_WEB_STORE_TITLE" /> ei tarjoa ja jotka on voitu lisätä ilman lupaasi.</translation>
-<translation id="9022552996538154597">Kirjaudu sisään Chromiumiin</translation>
-<translation id="9089354809943900324">Chromium on vanhentunut</translation>
-<translation id="9093206154853821181">{0,plural, =1{Chromium käynnistetään uudelleen tunnin kuluttua}other{Chromium käynnistetään uudelleen # tunnin kuluttua}}</translation>
-<translation id="9106612006984859720">Jotta saat tulevia Chromiumin päivityksiä, sinulla on oltava Windows 10 tai uudempi. Tietokoneen käyttöjärjestelmä on Windows 8.1.</translation>
-<translation id="91086099826398415">Avaa linkki uudella Chromiumin välilehdellä</translation>
+<translation id="1597547208646178091">Paransimme Ecosiain turvallisuutta poistamalla käytöstä sovelluksia, joita <ph name="IDS_EXTENSION_WEB_STORE_TITLE"/> ei tarjoa ja jotka on voitu lisätä ilman lupaasi.</translation>
+<translation id="2388751143175762498">Kirjaudu sisään Ecosiaiin</translation>
+<translation id="7268098999602465369">Ecosia on vanhentunut</translation>
+<translation id="6022879254514691681">{0,plural, =1{Ecosia käynnistetään uudelleen tunnin kuluttua}other{Ecosia käynnistetään uudelleen # tunnin kuluttua}}</translation>
+<translation id="8963533629322868062">Jotta saat tulevia Ecosiain päivityksiä, sinulla on oltava Windows 10 tai uudempi. Tietokoneen käyttöjärjestelmä on Windows 8.1.</translation>
+<translation id="7774247008790177839">Avaa linkki uudella Ecosiain välilehdellä</translation>
 <translation id="911206726377975832">Poistetaanko myös selailutiedot?</translation>
-<translation id="9144490074902256427">Kokeilujen aikana voit katsella ja poistaa kiinnostuksen kohteita, joita sivustot käyttävät mainosten näyttämiseen. Chromium arvioi viimeaikaisen selaushistoriasi perusteella, mikä saattaisi kiinnostaa sinua.</translation>
-<translation id="9158494823179993217">Järjestelmänvalvojasi on määrittänyt Chromiumin avaamaan toisen selaimen, jolla <ph name="TARGET_URL_HOSTNAME" /> avataan.</translation>
-<translation id="9185526690718004400">Päivitä &amp;Chromium käynnistämällä se uudelleen</translation>
-<translation id="9190841055450128916">Chromium (saapuva mDNS)</translation>
-<translation id="93478295209880648">Chromium ei välttämättä toimi oikein, koska se ei enää tue Windows XP:tä tai Windows Vistaa.</translation>
+<translation id="7580831958727159171">Kokeilujen aikana voit katsella ja poistaa kiinnostuksen kohteita, joita sivustot käyttävät mainosten näyttämiseen. Ecosia arvioi viimeaikaisen selaushistoriasi perusteella, mikä saattaisi kiinnostaa sinua.</translation>
+<translation id="8901409988302458368">Järjestelmänvalvojasi on määrittänyt Ecosiain avaamaan toisen selaimen, jolla <ph name="TARGET_URL_HOSTNAME"/> avataan.</translation>
+<translation id="1523806373970723624">Päivitä &amp;Ecosia käynnistämällä se uudelleen</translation>
+<translation id="2470806471563820591">Ecosia (saapuva mDNS)</translation>
+<translation id="6933283849886243832">Ecosia ei välttämättä toimi oikein, koska se ei enää tue Windows XP:tä tai Windows Vistaa.</translation>
 <translation id="942598560705308788">Chromiumin hallinnoimat varmenteet</translation>
-<translation id="945990405696787151">Jotta saat tulevia Chromiumin päivityksiä, sinulla on oltava macOS 10.13 tai uudempi. Tällä tietokoneella on OS X 10.11.</translation>
-<translation id="965162752251293939">Kuka käyttää Chromiumia?</translation>
-<translation id="967427899662692980">Ota Chromiumin tehokkain suojaus käyttöön</translation>
+<translation id="6718055545215052843">Jotta saat tulevia Ecosiain päivityksiä, sinulla on oltava macOS 10.13 tai uudempi. Tällä tietokoneella on OS X 10.11.</translation>
+<translation id="8078678931242443254">Kuka käyttää Ecosiaia?</translation>
+<translation id="12795904718916112">Ota Ecosiain tehokkain suojaus käyttöön</translation>
 <translation id="9792300276217204">Tyhjennä sivustodata aina laitteelta, kun suljet Chromiumin</translation>
-<translation id="985602178874221306">The Chromium Authors</translation>
+<translation id="6235001546696543832">The Ecosia Authors</translation>
 </translationbundle>

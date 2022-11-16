@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Ecosia resource  -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/ecosia_default_promo_background"/>
+    <corners android:radius="20dp" />
+</shape>

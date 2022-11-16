@@ -15,19 +15,25 @@ found in the LICENSE file.
         android:labelFor="@+id/autofill_credit_card_editor_billing_address_spinner"
         android:textAppearance="@style/TextAppearance.TextSmall.Secondary"
         android:text="@string/autofill_credit_card_editor_billing_address" />
+    <!--Ecosia : Changes for brandrefresh :payments - outline box for spinner -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/pref_autofill_field_top_margin"
+        android:background="@drawable/ecosia_outline_textview">
 
     <androidx.appcompat.widget.AppCompatSpinner
         android:id="@+id/autofill_credit_card_editor_billing_address_spinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/pref_autofill_field_top_margin"
+        android:layout_marginTop="@dimen/pref_autofill_content_spacing"
+        android:layout_marginBottom="@dimen/pref_autofill_content_spacing"
         android:layout_marginStart="@dimen/pref_autofill_field_horizontal_padding"
         android:layout_marginEnd="@dimen/pref_autofill_field_horizontal_padding"
         android:focusable="true"
         android:focusableInTouchMode="true"
         android:textDirection="locale" />
+    </LinearLayout>
 
-    <View style="@style/PreferenceSpinnerUnderlineView"
-        android:layout_marginStart="@dimen/pref_autofill_field_horizontal_padding"
-        android:layout_marginEnd="@dimen/pref_autofill_field_horizontal_padding" />
 </merge>

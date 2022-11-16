@@ -431,7 +431,8 @@ class BuildConfigGenerator extends DefaultTask {
                 }
             }
 
-            if (!skipLicenses) {
+            boolean isFlatBuffers = dependency.name.equals("flatbuffers-java")  // Ecosia: fix for flatbuffers license issue
+            if (!skipLicenses && !isFlatBuffers) {                              // Ecosia: fix for flatbuffers license issue
                 validateLicenses(dependency)
                 downloadLicenses(dependency, normalisedRepoPath, downloadExecutor, downloadTasks)
                 mergeLicensesDeps.add(dependency)
@@ -910,6 +911,10 @@ class BuildConfigGenerator extends DefaultTask {
               sb.append('  # Can\'t find org.opentest4j.AssertionFailedError classes.\n')
               sb.append('  enable_bytecode_checks = false\n')
               break
+            case 'android_arch_lifecycle_extensions':
+                // Ecosia: fix release builds because of duplicate modules in manifests
+                sb.append('ignore_manifest = true')
+                break
         }
     }
 

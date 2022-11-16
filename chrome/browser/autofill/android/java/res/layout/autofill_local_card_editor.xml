@@ -10,6 +10,7 @@ found in the LICENSE file.
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!-- Ecosia : Changes for brandrefresh :payments-style added -->
     <!-- Credit card number -->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/credit_card_number_label"
@@ -18,6 +19,7 @@ found in the LICENSE file.
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/pref_autofill_field_large_top_margin"
         android:layout_marginBottom="@dimen/pref_autofill_field_bottom_margin"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         app:errorTextAppearance="@style/TextAppearance.ErrorCaption">
 
         <!-- TODO(crbug.com/900912): Fix and remove lint ignore -->
@@ -45,6 +47,7 @@ found in the LICENSE file.
         android:textAppearance="@style/TextAppearance.TextSmall.Secondary"
         android:text="@string/autofill_credit_card_editor_expiration_date" />
 
+    <!--Ecosia : Changes for brandrefresh :payments-style added -->
     <LinearLayout
         android:id="@+id/credit_card_expiration_container"
         android:layout_width="match_parent"
@@ -54,40 +57,42 @@ found in the LICENSE file.
         android:layout_marginStart="@dimen/pref_autofill_field_horizontal_padding"
         android:layout_marginEnd="@dimen/pref_autofill_field_horizontal_padding"
         android:orientation="horizontal"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:baselineAligned="false">
 
         <LinearLayout
             android:id="@+id/credit_card_expiration_month"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:layout_weight="1"
             android:layout_marginEnd="@dimen/editor_dialog_section_large_spacing"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:background="@drawable/ecosia_outline_textview">
 
             <androidx.appcompat.widget.AppCompatSpinner
                 android:id="@+id/autofill_credit_card_editor_month_spinner"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/pref_autofill_content_spacing"
+                android:layout_marginBottom="@dimen/pref_autofill_content_spacing"
                 android:contentDescription="@string/autofill_credit_card_editor_expiration_month" />
-
-            <View style="@style/PreferenceSpinnerUnderlineView" />
-
         </LinearLayout>
 
        <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:layout_weight="1"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:background="@drawable/ecosia_outline_textview">
 
             <androidx.appcompat.widget.AppCompatSpinner
                 android:id="@+id/autofill_credit_card_editor_year_spinner"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/pref_autofill_content_spacing"
+                android:layout_marginBottom="@dimen/pref_autofill_content_spacing"
+                android:layout_gravity="center_vertical"
                 android:contentDescription="@string/autofill_credit_card_editor_expiration_year" />
-
-            <View style="@style/PreferenceSpinnerUnderlineView"  />
-
         </LinearLayout>
     </LinearLayout>
 
@@ -98,6 +103,7 @@ found in the LICENSE file.
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/pref_autofill_field_top_margin"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_marginBottom="@dimen/pref_autofill_field_bottom_margin">
 
         <!-- TODO(crbug.com/900912): Fix and remove lint ignore -->
@@ -123,6 +129,7 @@ found in the LICENSE file.
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/pref_autofill_field_extra_large_top_margin"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_marginBottom="@dimen/pref_autofill_field_bottom_margin">
 
         <EditText

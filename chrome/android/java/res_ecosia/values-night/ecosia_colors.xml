@@ -1,0 +1,49 @@
+<resources>
+  <color name="ecosia_background_preference_category">@color/ecosia_background_primary</color>
+  <color name="ecosia_background_primary">@color/ecosia_background_primary_dark</color>
+  <color name="ecosia_background_secondary">@color/ecosia_background_secondary_dark</color>
+  <color name="ecosia_background_status_bar">@color/ecosia_background_primary</color>
+  <color name="ecosia_background_tertiary">@color/ecosia_background_secondary_dark</color>
+  <color name="ecosia_background_quarternary">@color/ecosia_background_quarternary_dark</color>
+  <color name="ecosia_background_progressbar">@color/ecosia_background_quarternary_dark</color>
+  <color name="ecosia_brand_primary">@color/ecosia_brand_primary_dark</color>
+  <color name="ecosia_brand_secondary">@color/ecosia_brand_secondary_dark</color>
+  <color name="ecosia_bookmarks_background">@color/ecosia_background_primary</color>
+  <color name="ecosia_button_content_primary">@color/ecosia_button_content_primary_dark</color>
+  <color name="ecosia_button_content_secondary">@color/ecosia_button_content_secondary_dark</color>
+  <color name="ecosia_button_primary_default">@color/ecosia_button_primary_default_dark</color>
+  <color name="ecosia_button_secondary_default">@color/ecosia_button_secondary_default_dark</color>
+  <color name="ecosia_default_promo_background">@color/ecosia_default_promo_background_dark</color>
+  <color name="ecosia_disabled">@color/ecosia_disabled_dark</color>
+  <color name="ecosia_fav_icon_button_secondary_default">@color/ecosia_fav_icon_button_secondary_default_dark</color>
+  <color name="ecosia_highlighter">@color/ecosia_highlighter_dark</color>
+  <color name="ecosia_icon_primary_default">@color/ecosia_icon_primary_default_dark</color>
+  <color name="ecosia_icon_primary_active">@color/ecosia_icon_primary_active_dark</color>
+  <color name="ecosia_icon_secondary_default">@color/ecosia_icon_secondary_default_dark</color>
+  <color name="ecosia_main_background">@color/ecosia_main_background_dark</color>
+  <color name="ecosia_more_background">@color/ecosia_more_background_dark</color>
+  <color name="ecosia_more_outline">@color/ecosia_more_outline_dark</color>
+  <color name="ecosia_preference_divider">@color/ecosia_preference_divider_dark</color>
+  <color name="ecosia_text_brand">@color/ecosia_text_dark</color>
+  <color name="ecosia_text_primary">@color/ecosia_text_primary_dark</color>
+  <color name="ecosia_text_secondary">@color/ecosia_text_secondary_dark</color>
+  <color name="ecosia_text_title_primary">@color/ecosia_text_title_primary_dark</color>
+  <color name="ecosia_border">@color/ecosia_border_dark</color>
+  <color name="ecosia_caption">@color/ecosia_caption_dark</color>
+  <color name="ecosia_warning">@color/ecosia_warning_dark</color>
+  <color name="ecosia_button2_text_primary">@color/ecosia_button2_text_primary_dark</color>
+  <color name="ecosia_widget_background">@color/ecosia_background_secondary_dark</color>
+  <color name="ecosia_onboarding_card">@color/ecosia_onboarding_card_dark</color>
+  <color name="ecosia_onboarding_card_text_primary">@color/ecosia_onboarding_card_text_primary_dark</color>
+  <color name="ecosia_onboarding_card_text_secondary">@color/ecosia_onboarding_card_text_secondary_dark</color>
+  <color name="ecosia_onboarding_speech_bubble_text">@color/ecosia_onboarding_speech_bubble_text_dark</color>
+  <color name="ecosia_your_impact_card_bg">@color/ecosia_your_impact_bg_dark</color>
+  <color name="ecosia_your_impact_onhover">@color/ecosia_your_impact_onhover_dark</color>
+  <color name="ecosia_your_impact_tooltip_text">@color/ecosia_text_tertiary_dark</color>
+  <color name="ecosia_your_impact_tooltip_background">@color/ecosia_your_impact_tooltip_background_dark</color>
+
+  <!-- Sheets -->
+  <color name="ecosia_sheet_background">@color/ecosia_abp_popup_dark</color>
+  <color name="ecosia_abp_popup">@color/ecosia_abp_popup_dark</color>
+  <color name="ecosia_abp_popup_text">@color/ecosia_abp_popup_text_dark</color>
+</resources>

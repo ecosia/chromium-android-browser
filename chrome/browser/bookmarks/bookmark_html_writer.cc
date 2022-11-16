@@ -1,6 +1,24 @@
-// Copyright 2012 The Chromium Authors
-// Use of this source code is governed by a BSD-style license that can be
-// found in the LICENSE file.
+/*
+ * Copyright 2012 The Chromium Authors
+ * Copyright (C) 2023 Ecosia Android App source (for GPL 3.0)
+ *
+ * Licensed under the GNU General Public License, Version 3.0 and BSD-style license (found in LICENSE file);
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at 
+ * License: GPL-3.0-only - https://spdx.org/licenses/GPL-3.0-only.html
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+ 
 
 #include "chrome/browser/bookmarks/bookmark_html_writer.h"
 
@@ -27,6 +45,7 @@
 #include "base/task/thread_pool.h"
 #include "base/time/time.h"
 #include "base/values.h"
+#include "base/android/content_uri_utils.h" // Ecosia: Bookmark Import / Export
 #include "chrome/browser/bookmarks/bookmark_model_factory.h"
 #include "chrome/browser/favicon/favicon_service_factory.h"
 #include "chrome/browser/profiles/profile.h"
@@ -232,7 +251,13 @@ class Writer : public base::RefCountedThreadSafe<Writer> {
   // Opens the file, returning true on success.
   bool OpenFile() {
     int flags = base::File::FLAG_CREATE_ALWAYS | base::File::FLAG_WRITE;
-    file_ = std::make_unique<base::File>(path_, flags);
+    // Ecosia: Bookmark Import / Export
+    if (path_.IsContentUri()) {
+      file_ = std::make_unique<base::File>(base::OpenContentUriForWrite(path_));
+    } else {
+      file_ = std::make_unique<base::File>(path_, flags);
+    }
+    
     if (!file_->IsValid()) {
       PLOG(ERROR) << "Could not create " << path_;
       return false;

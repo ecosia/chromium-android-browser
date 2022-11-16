@@ -11,12 +11,14 @@ import android.graphics.Rect;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
+import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.ColorInt;
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 import androidx.core.app.ActivityOptionsCompat;
@@ -76,6 +78,9 @@ import org.chromium.ui.base.ActivityWindowAndroid;
 import org.chromium.ui.base.PageTransition;
 import org.chromium.ui.base.WindowDelegate;
 import org.chromium.ui.modaldialog.ModalDialogManager;
+import org.ecosia.searchwidget.EcosiaSearchActivityExtension;
+import org.ecosia.searchwidget.EcosiaSearchActivityExtensionImplementation;
+import org.ecosia.tracking.TrackingManager;
 import org.chromium.url.GURL;
 
 import java.lang.ref.WeakReference;
@@ -121,10 +126,19 @@ public class SearchActivity extends AsyncInitializationActivity
         }
     }
 
+    // Ecosia
+    public static interface Callbacks {
+        void onAfterPostCreate(@NonNull final SearchActivity searchActivity);
+    }
+
     private static final Object DELEGATE_LOCK = new Object();
 
     /** Notified about events happening for the SearchActivity. */
     private static SearchActivityDelegate sDelegate;
+
+    // Ecosia
+    private Callbacks callbacks;
+    private EcosiaSearchActivityExtension ecosiaSearchActivityExtension;
 
     /** Main content view. */
     private ViewGroup mContentView;
@@ -147,6 +161,22 @@ public class SearchActivity extends AsyncInitializationActivity
     private SearchBoxDataProvider mSearchBoxDataProvider;
     private Tab mTab;
     private ObservableSupplierImpl<Profile> mProfileSupplier = new ObservableSupplierImpl<>();
+
+    // Ecosia
+    public void setCallbacks(@Nullable final Callbacks callbacks) {
+        this.callbacks = callbacks;
+    }
+
+    @Override
+    protected void onPostCreate(@Nullable Bundle savedInstanceState) {
+        super.onPostCreate(savedInstanceState);
+        final TrackingManager trackingManager = TrackingManager.getInstance(this);
+        ecosiaSearchActivityExtension = new EcosiaSearchActivityExtensionImplementation(trackingManager);
+
+        if (callbacks != null) {
+            callbacks.onAfterPostCreate(this);
+        }
+    }
 
     @Override
     protected boolean isStartedUpCorrectly(Intent intent) {
@@ -481,6 +511,9 @@ public class SearchActivity extends AsyncInitializationActivity
                         .toBundle());
         RecordUserAction.record("SearchWidget.SearchMade");
         LocaleManager.getInstance().recordLocaleBasedSearchMetrics(true, url, transition);
+
+        // Ecosia
+        ecosiaSearchActivityExtension.onSearchWidgetSearchMade();
         finish();
     }
 
@@ -502,6 +535,11 @@ public class SearchActivity extends AsyncInitializationActivity
         // Fix up the URL and send it to the full browser.
         GURL fixedUrl = UrlFormatter.fixupUrl(url);
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(fixedUrl.getValidSpecOrEmpty()));
+        // Ecosia: extract origin from intent that launched SearchActivity
+        String origin = IntentUtils.safeGetStringExtra(getIntent(), TrackingManager.OPEN_ORIGIN);
+        if (origin != null) {
+            intent.putExtra(TrackingManager.OPEN_ORIGIN, origin);
+        }
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_NEW_DOCUMENT);
         intent.setClass(this, ChromeLauncherActivity.class);
         if (!TextUtils.isEmpty(postDataType) && postData != null && postData.length != 0) {

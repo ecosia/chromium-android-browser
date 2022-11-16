@@ -31,13 +31,10 @@ public class AdblockSettingsFragment
         extends PreferenceFragmentCompat implements Preference.OnPreferenceChangeListener {
     private ChromeSwitchPreference mAdblockEnabled;
     private ChromeSwitchPreference mAcceptableAdsEnabled;
-    private Preference mFilterLists;
     private Preference mAllowedDomains;
     private Preference mMoreOptions;
 
     private static final String SETTINGS_ENABLED_KEY = "fragment_adblock_settings_enabled_key";
-    private static final String SETTINGS_FILTER_LISTS_KEY =
-            "fragment_adblock_settings_filter_lists_key";
     private static final String SETTINGS_AA_ENABLED_KEY =
             "fragment_adblock_settings_aa_enabled_key";
     private static final String SETTINGS_ALLOWED_DOMAINS_KEY =
@@ -52,14 +49,12 @@ public class AdblockSettingsFragment
 
     private void bindPreferences() {
         mAdblockEnabled = (ChromeSwitchPreference) findPreference(SETTINGS_ENABLED_KEY);
-        mFilterLists = findPreference(SETTINGS_FILTER_LISTS_KEY);
         mAcceptableAdsEnabled = (ChromeSwitchPreference) findPreference(SETTINGS_AA_ENABLED_KEY);
         mAllowedDomains = findPreference(SETTINGS_ALLOWED_DOMAINS_KEY);
         mMoreOptions = findPreference(SETTINGS_MORE_OPTIONS_KEY);
     }
 
     private void applyAdblockEnabled(boolean enabledValue) {
-        mFilterLists.setEnabled(enabledValue);
         mAcceptableAdsEnabled.setEnabled(enabledValue);
         mAllowedDomains.setEnabled(enabledValue);
         mMoreOptions.setEnabled(enabledValue);
@@ -122,9 +117,15 @@ public class AdblockSettingsFragment
             maybeEnableMoreOptions();
 
             applyAdblockEnabled((Boolean) newValue);
+            // Ecosia: tracking event
+            EcosiaAdblockTrackingManager.getInstance(getContext()).changeAdblockEvent((Boolean) newValue);
+            // Ecosia: set adblock button visibility
+            EcosiaAdblockPreferences.setAdblockButtonVisibility(getContext(), (Boolean) newValue);
         } else {
             assert preference.getKey().equals(SETTINGS_AA_ENABLED_KEY);
             AdblockController.getInstance().setAcceptableAdsEnabled((Boolean) newValue);
+            // Ecosia: tracking event
+            EcosiaAdblockTrackingManager.getInstance(getContext()).changeAcceptableAdsEvent((Boolean) newValue);
         }
         return true;
     }

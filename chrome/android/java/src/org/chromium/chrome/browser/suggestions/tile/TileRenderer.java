@@ -8,6 +8,7 @@ import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
@@ -39,6 +40,7 @@ import org.chromium.components.feature_engagement.Tracker;
 import org.chromium.components.search_engines.TemplateUrlService;
 import org.chromium.content_public.browser.UiThreadTaskTraits;
 import org.chromium.ui.base.ViewUtils;
+import org.chromium.url.GURL;
 
 import java.lang.ref.WeakReference;
 import java.util.HashMap;
@@ -323,6 +325,27 @@ public class TileRenderer {
         tile.setIconTint(null);
         tile.setType(
                 isFallbackColorDefault ? TileVisualType.ICON_DEFAULT : TileVisualType.ICON_COLOR);
+    }
+
+    // Ecosia: NTP top tiles icon
+    public Drawable getTileIconFromBitmap(Bitmap icon) {
+        int radius = Math.round(mIconCornerRadius * icon.getWidth() / mDesiredIconSize);
+        RoundedBitmapDrawable roundedIcon =
+                ViewUtils.createRoundedBitmapDrawable(mContext.getResources(), icon, radius);
+        roundedIcon.setAntiAlias(true);
+        roundedIcon.setFilterBitmap(true);
+        return roundedIcon;
+    }
+
+    // Ecosia: NTP top tiles icon
+    public Drawable getTileIconFromColor(GURL url, int fallbackColor, boolean isFallbackColorDefault) {
+        int iconColor = mContext.getColor(R.color.default_favicon_background_color);
+        int iconTextSize = mContext.getResources().getDimensionPixelSize(R.dimen.tile_view_icon_text_size);
+        RoundedIconGenerator iconGenerator = new RoundedIconGenerator(
+                mDesiredIconSize, mDesiredIconSize, mDesiredIconSize / 2, iconColor, iconTextSize);
+        iconGenerator.setBackgroundColor(fallbackColor);
+        Bitmap icon = iconGenerator.generateIconForUrl(url);
+        return new BitmapDrawable(mContext.getResources(), icon);
     }
 
     @LayoutRes

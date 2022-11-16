@@ -463,7 +463,10 @@ public final class ReturnToChromeUtil {
             if (!initialized && !sSkipInitializationCheckForTesting) {
                 return false;
             } else {
+                /* Ecosia : Disable check for Home page launch after onboarding
                 return useChromeHomepage();
+               */
+                return false;
             }
         }
 

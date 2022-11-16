@@ -26,6 +26,7 @@ import org.chromium.components.browser_ui.styles.SemanticColorUtils;
  * Utility class that provides theme related attributes for Tab UI.
  */
 public class TabUiThemeProvider {
+
     private static final String TAG = "TabUiThemeProvider";
 
     /**
@@ -39,6 +40,7 @@ public class TabUiThemeProvider {
     @ColorInt
     public static int getCardViewBackgroundColor(
             Context context, boolean isIncognito, boolean isSelected) {
+        /* Ecosia MOB-1344
         if (isIncognito) {
             // Incognito does not use dynamic colors, so it can use colors from resources.
             int incognitoTabBgColorRes = ChromeFeatureList.sBaselineGm3SurfaceColors.isEnabled()
@@ -59,6 +61,8 @@ public class TabUiThemeProvider {
                               .compositeOverlayWithThemeSurfaceColorIfNeeded(tabElevation);
             return colorInt;
         }
+         */
+        return TabUiThemeProviderEcosiaExtensionImplementation.getInstance(context).getCardViewBackgroundColor(isSelected, isIncognito);
     }
 
     /**
@@ -82,6 +86,7 @@ public class TabUiThemeProvider {
     @ColorInt
     public static int getTabGroupNumberTextColor(
             Context context, boolean isIncognito, boolean isSelected) {
+        /* Ecosia MOB-1344
         if (isIncognito) {
             @ColorRes
             int colorRes = isSelected ? R.color.incognito_tab_tile_number_selected_color
@@ -91,6 +96,8 @@ public class TabUiThemeProvider {
             return isSelected ? MaterialColors.getColor(context, R.attr.colorOnPrimary, TAG)
                               : MaterialColors.getColor(context, R.attr.colorOnSurface, TAG);
         }
+        */
+        return TabUiThemeProviderEcosiaExtensionImplementation.getInstance(context).getTabGroupNumberTextColor(isSelected, isIncognito);
     }
 
     /**
@@ -102,6 +109,7 @@ public class TabUiThemeProvider {
      */
     @ColorInt
     public static int getTitleTextColor(Context context, boolean isIncognito, boolean isSelected) {
+        /* Ecosia MOB-1344
         if (isIncognito) {
             @ColorRes
             int colorRes = isSelected ? R.color.incognito_tab_title_selected_color
@@ -111,6 +119,8 @@ public class TabUiThemeProvider {
             return isSelected ? MaterialColors.getColor(context, R.attr.colorOnPrimary, TAG)
                               : MaterialColors.getColor(context, R.attr.colorOnSurface, TAG);
         }
+        */
+        return TabUiThemeProviderEcosiaExtensionImplementation.getInstance(context).getTitleTextColor(isSelected, isIncognito);
     }
 
     /**
@@ -124,18 +134,19 @@ public class TabUiThemeProvider {
      */
     public static ColorStateList getActionButtonTintList(
             Context context, boolean isIncognito, boolean isSelected) {
+        // Ecosia : Tab switch 'x' button color will remain same as normal case
+        /* Ecosia MOB-1344
         if (isIncognito) {
             @ColorRes
-            int colorRes = isSelected ? R.color.incognito_tab_action_button_selected_color
-                                      : R.color.incognito_tab_action_button_color;
+            int colorRes = R.color.incognito_tab_action_button_color;
             return AppCompatResources.getColorStateList(context, colorRes);
         } else {
             @ColorInt
-            int colorInt = isSelected
-                    ? MaterialColors.getColor(context, R.attr.colorOnPrimary, TAG)
-                    : MaterialColors.getColor(context, R.attr.colorOnSurfaceVariant, TAG);
+            int colorInt = MaterialColors.getColor(context, R.attr.colorOnSurfaceVariant, TAG);
             return ColorStateList.valueOf(colorInt);
         }
+        */
+        return TabUiThemeProviderEcosiaExtensionImplementation.getInstance(context).getActionButtonTintList(isIncognito);
     }
 
     /**
@@ -162,12 +173,15 @@ public class TabUiThemeProvider {
      */
     public static ColorStateList getToggleActionButtonCheckedDrawableTintList(
             Context context, boolean isIncognito) {
+        /* Ecosia MOB-1344
         if (isIncognito) {
             return AppCompatResources.getColorStateList(
                     context, R.color.incognito_tab_bg_selected_color);
         }
         return ColorStateList.valueOf(
                 MaterialColors.getColor(context, org.chromium.chrome.R.attr.colorPrimary, TAG));
+        */
+        return TabUiThemeProviderEcosiaExtensionImplementation.getInstance(context).getToggleActionButtonCheckedDrawableTintList(isIncognito);
     }
 
     /**

@@ -1,6 +1,23 @@
-// Copyright 2020 The Chromium Authors
-// Use of this source code is governed by a BSD-style license that can be
-// found in the LICENSE file.
+/*
+ * Copyright 2020 The Chromium Authors
+ * Copyright (C) 2023 Ecosia Android App source (for GPL 3.0)
+ *
+ * Licensed under the GNU General Public License, Version 3.0 and BSD-style license (found in LICENSE file);
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * License: GPL-3.0-only - https://spdx.org/licenses/GPL-3.0-only.html
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 package org.chromium.chrome.browser.download.dialogs;
 
@@ -36,12 +53,12 @@ import java.util.ArrayList;
 public class DownloadLocationDialogCoordinator implements ModalDialogProperties.Controller {
     @NonNull
     private DownloadLocationDialogController mController;
-    private PropertyModel mDialogModel;
+    protected PropertyModel mDialogModel; // Ecosia: Bookmark Import / Export
     private PropertyModel mDownloadLocationDialogModel;
     private PropertyModelChangeProcessor<PropertyModel, DownloadLocationCustomView, PropertyKey>
             mPropertyModelChangeProcessor;
-    private DownloadLocationCustomView mCustomView;
-    private ModalDialogManager mModalDialogManager;
+    protected DownloadLocationCustomView mCustomView; // Ecosia: Bookmark Import / Export
+    protected ModalDialogManager mModalDialogManager; // Ecosia: Bookmark Import / Export
     private long mTotalBytes;
     private @DownloadLocationDialogType int mDialogType;
     private String mSuggestedPath;
@@ -130,7 +147,8 @@ public class DownloadLocationDialogCoordinator implements ModalDialogProperties.
      * Called after retrieved the download directory options.
      * @param dirs An list of available download directories.
      */
-    private void onDirectoryOptionsRetrieved(ArrayList<DirectoryOption> dirs) {
+    // Ecosia: Bookmark Import / Export
+    protected void onDirectoryOptionsRetrieved(ArrayList<DirectoryOption> dirs) {
         // If there is only one directory available, don't show the default dialog, and set the
         // download directory to default. Dialog will still show for other types of dialogs, like
         // name conflict or disk error or if Incognito download warning is needed.

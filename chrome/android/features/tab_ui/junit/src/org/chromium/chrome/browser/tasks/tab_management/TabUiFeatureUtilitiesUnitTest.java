@@ -9,6 +9,7 @@ import static org.junit.Assert.assertTrue;
 
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TestRule;
@@ -68,6 +69,7 @@ public class TabUiFeatureUtilitiesUnitTest {
         CachedFeatureFlags.cacheNativeFlags(featuresToCache);
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     // clang-format off
     @Features.DisableFeatures({ChromeFeatureList.TAB_GRID_LAYOUT_ANDROID,
@@ -96,6 +98,7 @@ public class TabUiFeatureUtilitiesUnitTest {
                 ContextUtils.getApplicationContext()));
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     // clang-format off
     @Features.EnableFeatures({ChromeFeatureList.TAB_GRID_LAYOUT_ANDROID})
@@ -128,6 +131,7 @@ public class TabUiFeatureUtilitiesUnitTest {
                 ContextUtils.getApplicationContext()));
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     // clang-format off
     @Features.EnableFeatures({ChromeFeatureList.TAB_GRID_LAYOUT_ANDROID})
@@ -160,6 +164,7 @@ public class TabUiFeatureUtilitiesUnitTest {
                 ContextUtils.getApplicationContext()));
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     // clang-format off
     @Features.EnableFeatures({ChromeFeatureList.TAB_GRID_LAYOUT_ANDROID,
@@ -192,6 +197,7 @@ public class TabUiFeatureUtilitiesUnitTest {
                 ContextUtils.getApplicationContext()));
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     // clang-format off
     @Features.EnableFeatures({ChromeFeatureList.TAB_GRID_LAYOUT_ANDROID,
@@ -223,6 +229,7 @@ public class TabUiFeatureUtilitiesUnitTest {
                 ContextUtils.getApplicationContext()));
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     // clang-format off
     @Features.EnableFeatures({ChromeFeatureList.TAB_GROUPS_ANDROID})
@@ -254,6 +261,7 @@ public class TabUiFeatureUtilitiesUnitTest {
                 ContextUtils.getApplicationContext()));
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     // clang-format off
     @Features.EnableFeatures({ChromeFeatureList.TAB_GROUPS_ANDROID})
@@ -285,6 +293,7 @@ public class TabUiFeatureUtilitiesUnitTest {
                 ContextUtils.getApplicationContext()));
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     // clang-format off
     @Features.EnableFeatures({ChromeFeatureList.TAB_GROUPS_CONTINUATION_ANDROID})
@@ -316,6 +325,7 @@ public class TabUiFeatureUtilitiesUnitTest {
                 ContextUtils.getApplicationContext()));
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     // clang-format off
     @Features.EnableFeatures({ChromeFeatureList.TAB_SELECTION_EDITOR_V2})
@@ -386,6 +396,7 @@ public class TabUiFeatureUtilitiesUnitTest {
                 ContextUtils.getApplicationContext()));
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     // clang-format off
     @Features.EnableFeatures({ChromeFeatureList.TAB_GRID_LAYOUT_ANDROID,
@@ -421,6 +432,7 @@ public class TabUiFeatureUtilitiesUnitTest {
                 ContextUtils.getApplicationContext()));
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     // clang-format off
     @Features.EnableFeatures({ChromeFeatureList.TAB_GRID_LAYOUT_ANDROID,
@@ -452,6 +464,7 @@ public class TabUiFeatureUtilitiesUnitTest {
                 ContextUtils.getApplicationContext()));
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     // clang-format off
     @Features.EnableFeatures({ChromeFeatureList.TAB_GRID_LAYOUT_ANDROID,
@@ -483,6 +496,7 @@ public class TabUiFeatureUtilitiesUnitTest {
                 ContextUtils.getApplicationContext()));
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     // clang-format off
     @Features.EnableFeatures({ChromeFeatureList.TAB_GROUPS_ANDROID,
@@ -514,6 +528,7 @@ public class TabUiFeatureUtilitiesUnitTest {
                 ContextUtils.getApplicationContext()));
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     // clang-format off
     @Features.EnableFeatures({ChromeFeatureList.TAB_GROUPS_ANDROID,
@@ -545,6 +560,7 @@ public class TabUiFeatureUtilitiesUnitTest {
                 ContextUtils.getApplicationContext()));
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     // clang-format off
     @Features.EnableFeatures({ChromeFeatureList.TAB_GROUPS_ANDROID,

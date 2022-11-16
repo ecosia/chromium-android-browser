@@ -18,12 +18,23 @@ import("//device/vr/buildflags/buildflags.gni")
 import("//weblayer/variables.gni")
 import("channel.gni")
 
+declare_args() {
+   # Ecosia specific options
+   appcenter_secret = ""
+   cloudflare_client_id = ""
+   cloudflare_client_secret = ""
+}
+
+
 default_chrome_public_jinja_variables = [
   "channel=$android_channel",
   "enable_vr=$enable_vr",
   "include_arcore_manifest_flag=false",
   "enable_cardboard=$enable_cardboard",
   "zygote_preload_class=org.chromium.content_public.app.ZygotePreload",
+  "appcenter_secret=$appcenter_secret",
+  "cloudflare_client_id=$cloudflare_client_id",
+  "cloudflare_client_secret=$cloudflare_client_secret",
 ]
 
 # A template used to declare any target that will implement a full Chromium
@@ -84,7 +95,7 @@ template("chrome_public_common_apk_or_module_tmpl") {
     if (_is_trichrome) {
       min_sdk_version = 29
     } else if (_is_monochrome) {
-      min_sdk_version = 24
+      min_sdk_version = min_monochrome_sdk_version
     } else {
       min_sdk_version = default_min_sdk_version
     }

@@ -158,21 +158,25 @@ public class ClearBrowsingDataTabsFragment extends Fragment {
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         menu.clear();
+        /* Ecosia : Removing Help & Feedback setting
         MenuItem help =
-                menu.add(Menu.NONE, R.id.menu_id_targeted_help, Menu.NONE, R.string.menu_help);
+              menu.add(Menu.NONE, R.id.menu_id_targeted_help, Menu.NONE, R.string.menu_help);
         help.setIcon(VectorDrawableCompat.create(
-                getResources(), R.drawable.ic_help_and_feedback, getActivity().getTheme()));
+              getResources(), R.drawable.ic_help_and_feedback, getActivity().getTheme()));
         help.setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM);
+        */
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+		/* Ecosia : Removing Help & Feedback setting
         if (item.getItemId() == R.id.menu_id_targeted_help) {
             HelpAndFeedbackLauncherImpl.getInstance().show(getActivity(),
                     getString(R.string.help_context_clear_browsing_data),
                     Profile.getLastUsedRegularProfile(), null);
             return true;
         }
+		*/
         return false;
     }
 }

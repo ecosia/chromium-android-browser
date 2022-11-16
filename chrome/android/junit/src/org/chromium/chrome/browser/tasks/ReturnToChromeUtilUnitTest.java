@@ -20,6 +20,7 @@ import androidx.test.filters.SmallTest;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TestRule;
@@ -266,6 +267,7 @@ public class ReturnToChromeUtilUnitTest {
                 ChromePreferenceKeys.START_RETURN_TIME_SEGMENTATION_RESULT_MS);
     }
 
+    @Ignore("Ecosia : Disable Start surface BEHAVIOURAL_TARGETING flag")
     @Test
     @SmallTest
     public void testShouldShowStartSurfaceAtStartupWithDefaultChromeHomepage() {
@@ -307,6 +309,7 @@ public class ReturnToChromeUtilUnitTest {
                 ChromePreferenceKeys.TABBED_ACTIVITY_LAST_BACKGROUNDED_TIME_MS_PREF);
     }
 
+    @Ignore("Ecosia : Disable Start surface BEHAVIOURAL_TARGETING flag")
     @Test
     @SmallTest
     public void testShouldShowStartSurfaceWithCustomizedHomePage() {
@@ -384,6 +387,7 @@ public class ReturnToChromeUtilUnitTest {
         Assert.assertFalse(ReturnToChromeUtil.isStartSurfaceEnabled(mContext));
     }
 
+    @Ignore("Ecosia : Disable Start surface BEHAVIOURAL_TARGETING flag")
     @Test
     @SmallTest
     public void testShouldNotShowStartSurfaceOnStartWhenHomepagePolicyManagerIsNotInitialized() {

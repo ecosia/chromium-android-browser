@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ntp_impact_tooltip"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ecosia_tooltip">
+
+    <TextView
+        android:id="@+id/tooltip_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="19dp"
+        android:gravity="center_vertical"
+        android:paddingEnd="30dp"
+        android:text="@string/ecosia_counter_popup"
+        android:textColor="@color/ecosia_your_impact_tooltip_text"
+        android:textSize="16sp"
+        android:layout_toStartOf="@id/tooltip_close_button"/>
+
+    <ImageView
+        android:id="@+id/tooltip_close_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/tooltip_text"
+        android:layout_alignBottom="@+id/tooltip_text"
+        android:layout_marginEnd="4dp"
+        android:layout_centerVertical="false"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:src="@drawable/ecosia_icon_close"
+        android:tint="@color/ecosia_your_impact_tooltip_text" />
+
+</RelativeLayout>

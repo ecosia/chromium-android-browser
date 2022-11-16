@@ -39,6 +39,8 @@ extern const char kTelemetryPreviousLastPingTime[];
 extern const char kTelemetryFirstPingTime[];
 extern const char kTelemetryNextPingTime[];
 
+extern const char kRunAcceptableAdsRestoringPatch[];
+
 void RegisterProfilePrefs(PrefRegistrySimple* registry);
 
 }  // namespace adblock::prefs

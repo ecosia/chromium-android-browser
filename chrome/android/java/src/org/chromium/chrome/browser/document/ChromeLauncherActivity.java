@@ -13,6 +13,7 @@ import org.chromium.base.TraceEvent;
 import org.chromium.chrome.R;
 import org.chromium.chrome.browser.LaunchIntentDispatcher;
 import org.chromium.chrome.browser.flags.ChromeFeatureList;
+import org.ecosia.unleash.Unleash;
 
 /**
  * Dispatches incoming intents to the appropriate activity based on the current configuration and
@@ -21,6 +22,9 @@ import org.chromium.chrome.browser.flags.ChromeFeatureList;
 public class ChromeLauncherActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
+        // Ecosia: Fetch latest Unleash toggles (if required)
+        Unleash.getInstance(this).onStartOrResume();
+
         // Third-party code adds disk access to Activity.onCreate. http://crbug.com/619824
         TraceEvent.begin("ChromeLauncherActivity.onCreate");
         super.onCreate(savedInstanceState);

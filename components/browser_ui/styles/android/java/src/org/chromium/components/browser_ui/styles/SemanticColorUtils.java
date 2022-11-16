@@ -9,6 +9,7 @@ import android.content.Context;
 import androidx.annotation.AttrRes;
 import androidx.annotation.ColorInt;
 import androidx.annotation.DimenRes;
+import androidx.core.content.ContextCompat;
 
 import com.google.android.material.color.MaterialColors;
 
@@ -100,7 +101,9 @@ public class SemanticColorUtils {
 
     /** Returns the semantic color value that corresponds to default_control_color_active. */
     public static @ColorInt int getDefaultControlColorActive(Context context) {
-        return resolve(R.attr.colorPrimary, context);
+        // Ecosia: setting color manually because R.attr.colorPrimary isn't changing the blue color of some settings widgets
+        //return resolve(R.attr.colorPrimary, context);
+        return ContextCompat.getColor(context, org.chromium.components.browser_ui.styles.R.color.ecosia_brand_primary_color);
     }
 
     /** Returns the semantic color value that corresponds to progress_bar_foreground. */

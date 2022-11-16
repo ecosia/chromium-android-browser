@@ -14,6 +14,7 @@
 #include "base/system/sys_info.h"
 #include "build/build_config.h"
 #include "build/util/chromium_git_revision.h"
+#include "components/version_info/version_info.h"
 
 #if BUILDFLAG(IS_MAC)
 #include "base/mac/mac_util.h"
@@ -383,8 +384,9 @@ std::string BuildUserAgentFromOSAndProduct(const std::string& os_info,
   std::string user_agent;
   base::StringAppendF(&user_agent,
                       "Mozilla/5.0 (%s) AppleWebKit/537.36 (KHTML, like Gecko) "
-                      "%s Safari/537.36",
-                      os_info.c_str(), product.c_str());
+                      "%s Safari/537.36 "
+                      "(Ecosia android@%s)",
+                      os_info.c_str(), product.c_str(), version_info::GetVersionNumber().c_str());
   return user_agent;
 }
 

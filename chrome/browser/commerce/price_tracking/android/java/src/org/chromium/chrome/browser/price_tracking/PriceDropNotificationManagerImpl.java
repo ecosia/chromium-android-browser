@@ -275,6 +275,10 @@ public class PriceDropNotificationManagerImpl implements PriceDropNotificationMa
 
                     @Override
                     public void bookmarkModelChanged() {}
+
+                    // Ecosia: Bookmark Import / Export
+                    @Override
+                    public void bookmarkModelNeedsReloadAfterBookmarksImport() {}
                 });
             }
 

@@ -94,6 +94,8 @@ const char kTelemetryFirstPingTime[] =
 const char kTelemetryNextPingTime[] =
     "adblock.telemetry.activeping.next_ping_time";
 
+const char kRunAcceptableAdsRestoringPatch[] = "adblock.run_aa_restore_patch";
+
 void RegisterTelemetryPrefs(PrefRegistrySimple* registry) {
   registry->RegisterStringPref(kTelemetryLastPingTag, "");
   registry->RegisterStringPref(kTelemetryLastPingTime, "");
@@ -114,6 +116,7 @@ void RegisterProfilePrefs(PrefRegistrySimple* registry) {
   registry->RegisterDictionaryPref(kSubscriptionSignatures);
   registry->RegisterStringPref(kLastUsedSchemaVersion, "");
   registry->RegisterDictionaryPref(kSubscriptionMetadata);
+  registry->RegisterBooleanPref(kRunAcceptableAdsRestoringPatch, true);
   RegisterTelemetryPrefs(registry);
 
   VLOG(3) << "[eyeo] Registered prefs";

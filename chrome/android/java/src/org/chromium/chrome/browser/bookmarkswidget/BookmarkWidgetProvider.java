@@ -18,6 +18,7 @@ import com.google.android.apps.chrome.appwidget.bookmarks.BookmarkThumbnailWidge
 
 import org.chromium.base.ContextUtils;
 import org.chromium.base.IntentUtils;
+import org.ecosia.tracking.TrackingManager;
 import org.chromium.chrome.R;
 
 /**
@@ -121,6 +122,8 @@ public class BookmarkWidgetProvider extends AppWidgetProvider {
             Intent ic = new Intent(context, BookmarkWidgetProxy.class);
             IntentUtils.addTrustedIntentExtras(ic);
             ic.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            // Ecosia: Add origin to launch event
+            ic.putExtra(TrackingManager.OPEN_ORIGIN, TrackingManager.BOOKMARKS_ORIGIN);
             views.setPendingIntentTemplate(R.id.bookmarks_list,
                     PendingIntent.getActivity(context, 0, ic,
                             PendingIntent.FLAG_UPDATE_CURRENT

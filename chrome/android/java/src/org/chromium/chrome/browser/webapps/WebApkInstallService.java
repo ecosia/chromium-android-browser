@@ -122,7 +122,7 @@ public class WebApkInstallService {
         notificationBuilder.setContentTitle(shortName)
                 .setContentText(message)
                 .setLargeIcon(icon)
-                .setSmallIcon(R.drawable.ic_chrome)
+                .setSmallIcon(R.drawable.ic_ecosia)
                 .setContentIntent(clickPendingIntent)
                 .setPriorityBeforeO(preOPriority)
                 .setWhen(System.currentTimeMillis())

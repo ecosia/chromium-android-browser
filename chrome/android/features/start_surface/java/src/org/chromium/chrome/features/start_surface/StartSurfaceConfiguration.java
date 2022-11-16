@@ -63,7 +63,7 @@ public class StartSurfaceConfiguration {
     private static final String BEHAVIOURAL_TARGETING_PARAM = "behavioural_targeting";
     public static final StringCachedFieldTrialParameter BEHAVIOURAL_TARGETING =
             new StringCachedFieldTrialParameter(
-                    ChromeFeatureList.START_SURFACE_ANDROID, BEHAVIOURAL_TARGETING_PARAM, "");
+                    ChromeFeatureList.START_SURFACE_ANDROID, BEHAVIOURAL_TARGETING_PARAM, "false"); //Ecosia : disable this param to launch our NTP on upgrade
 
     private static final String USER_CLICK_THRESHOLD_PARAM = "user_clicks_threshold";
     public static final IntCachedFieldTrialParameter USER_CLICK_THRESHOLD =

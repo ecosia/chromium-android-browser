@@ -9,12 +9,12 @@ found in the LICENSE file.
     <color name="baseline_error_200">#F2B8B5</color>
     <color name="baseline_error_600">#B3261E</color>
     <color name="baseline_primary_0">@android:color/white</color>
-    <color name="baseline_primary_100">#D3E3FD</color>
-    <color name="baseline_primary_200">#A8C7FA</color>
+    <color name="baseline_primary_100">@color/button_secondary_default</color> <!-- Ecosia: switch rail dark and light mode "ecosia_button_secondary_default"-->
+    <color name="baseline_primary_200">#5DD25E</color> <!-- Ecosia: widget active color dark ecosia_button_primary_default_dark -->
     <color name="baseline_primary_200_alpha_10" tools:ignore="UnusedResources">#19A8C7FA</color>
     <color name="baseline_primary_200_alpha_20">#33A8C7FA</color>
     <color name="baseline_primary_200_alpha_50">#80A8C7FA</color>
-    <color name="baseline_primary_600">#0B57D0</color>
+    <color name="baseline_primary_600">#008009</color> <!-- Ecosia: widget active color light ecosia_button_primary_default_light-->
     <color name="baseline_primary_600_alpha_6">#0F0B57D0</color>
     <color name="baseline_primary_600_alpha_10">#190B57D0</color>
     <color name="baseline_primary_600_alpha_12">#1F0B57D0</color>
@@ -22,7 +22,7 @@ found in the LICENSE file.
     <color name="baseline_primary_700">#0842A0</color>
     <color name="baseline_primary_800">#062E6F</color>
     <color name="baseline_primary_900">#041E49</color>
-    <color name="baseline_neutral_0">@android:color/white</color>
+    <color name="baseline_neutral_0">#FFFFFF</color> <!-- Ecosia: background light ecosia_background_primary_light-->
     <color name="baseline_neutral_0_with_neutral_600_alpha_5_with_primary_600_2" tools:ignore="UnusedResources">#F2F4F6</color>
     <color name="baseline_neutral_0_with_neutral_600_alpha_8_with_primary_600_2" tools:ignore="UnusedResources">#EDEFF1</color>
     <color name="baseline_neutral_0_with_neutral_600_alpha_11_with_primary_600_2" tools:ignore="UnusedResources">#E8EAEC</color>
@@ -54,7 +54,7 @@ found in the LICENSE file.
     <color name="baseline_neutral_700">#474747</color>
     <color name="baseline_neutral_800">#303030</color>
     <color name="baseline_neutral_800_alpha_38">#61303030</color>
-    <color name="baseline_neutral_900">#1F1F1F</color>
+    <color name="baseline_neutral_900">#1A1A1A</color> <!-- Ecosia: background dark ecosia_background_primary_dark-->
     <color name="baseline_neutral_900_alpha_10">#191F1F1F</color>
     <color name="baseline_neutral_900_alpha_12">#1E1F1F1F</color>
     <color name="baseline_neutral_900_alpha_38">#611F1F1F</color>
