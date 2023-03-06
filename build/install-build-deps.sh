@@ -576,9 +576,11 @@ fi
 if package_exists libinput-dev; then
     dev_list="${dev_list} libinput-dev"
 fi
-if package_exists snapcraft; then
-    dev_list="${dev_list} snapcraft"
-fi
+#Do NOT install snapcraft, as it hangs inside Docker trying to connect to the
+#store and preventing automated package updates.
+#if package_exists snapcraft; then
+#    dev_list="${dev_list} snapcraft"
+#fi
 
 # Cross-toolchain strip is needed for building the sysroots.
 if package_exists binutils-arm-linux-gnueabihf; then
