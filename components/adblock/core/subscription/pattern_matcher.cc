@@ -204,7 +204,7 @@ absl::optional<base::StringPiece> FindNextTokenInInput(
     // it within consumed_input.
     for (auto match_pos = consumed_input.find(token);
          match_pos != base::StringPiece::npos;
-         match_pos = consumed_input.find(token, match_pos + token.size())) {
+         match_pos = consumed_input.find(token, match_pos + 1)) {
       if (NextTokenBeginsInput(consumed_input.substr(match_pos + token.size()),
                                tokenizer, recursion_depth)) {
         return consumed_input.substr(0, match_pos);

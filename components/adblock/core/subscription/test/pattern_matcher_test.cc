@@ -288,6 +288,17 @@ TEST(AdblockPatternMatcherTest, UrlEndsWithSeparator) {
       DoesPatternMatchUrl(pattern, GURL("https://start.com/file/foobar")));
 }
 
+TEST(AdblockPatternMatcherTest, MatchAfterPartialMatch) {
+  const auto pattern = base::StringPiece("barbar^");
+
+  // This checks that we don't skip too far forward when the first match
+  // position fails. The first position of "barbar" is not followed by a
+  // separator, the second position is but it also overlaps with the first
+  // match.
+  EXPECT_TRUE(
+      DoesPatternMatchUrl(pattern, GURL("https://start.com/barbarbar/")));
+}
+
 TEST(AdblockPatternMatcherTest, UrlEndsWithWildcardAndSeparator) {
   const auto pattern = base::StringPiece("file*^|");
 
