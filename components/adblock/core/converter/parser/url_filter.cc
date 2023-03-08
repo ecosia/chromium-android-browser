@@ -75,7 +75,12 @@ absl::optional<UrlFilter> UrlFilter::FromString(std::string filter_str) {
     return {};
   }
 
-  if (!options || !options->IsMatchCase()) {
+  // Most filters are case-insensitive, we may lowercase them along with
+  // lowercasing the URL during matching. This simplifies and speeds up the
+  // matching algorithm. Do not lowercase case-sensitive filters and regex
+  // filters.
+  if ((!options || !options->IsMatchCase()) &&
+      !ExtractRegexFilterFromPattern(filter_str)) {
     filter_str = base::ToLowerASCII(filter_str);
   }
 

@@ -1,7 +1,7 @@
 # Release Notes
 
 ## eyeo Chromium SDK 111.0
-* Updated to Chromium 111.0.5563.38
+* Updated to Chromium 111.0.5563.58
 * Updated snippets library from v0.5.5 to v0.6.1
 * Removed deprecated subscriptions API (DPD-1771)
 * Refactored filter lists converter (DPD-1355)
@@ -11,6 +11,7 @@
 * Fixed bug when AdblockController is created too late to register its FilteringConfiguration (DPD-1752)
 * Fixed sending redundant HEAD requests for Acceptable Ads when multiple FilteringConfigurations are enabled (DPD-1763)
 * Fixed problem of not removing downloaded filter list file from temp folder (DPD-1748)
+* Fixed converting regular expression filters (DPD-1806)
 
 ## eyeo Chromium SDK 110.0
 * Updated to Chromium 110.0.5481.50

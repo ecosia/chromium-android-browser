@@ -2260,6 +2260,20 @@ TEST_F(AdblockFlatbufferConverterTest, UrlFilterWildcardUrlShortKeywords) {
       ContentType::Script, SiteKey(), FilterCategory::Blocking));
 }
 
+TEST_F(AdblockFlatbufferConverterTest, RegexFilterNotLowercased) {
+  // \D+ matches "not digits", while \d+ matches "digits":
+  auto subscription = ConvertAndLoadRules(R"(
+    /test\D+.png/
+  )");
+  EXPECT_TRUE(subscription->HasUrlFilter(GURL("https://domain.com/testabc.png"),
+                                         "domain.com", ContentType::Image,
+                                         SiteKey(), FilterCategory::Blocking));
+
+  EXPECT_FALSE(subscription->HasUrlFilter(
+      GURL("https://domain.com/test123.png"), "domain.com", ContentType::Image,
+      SiteKey(), FilterCategory::Blocking));
+}
+
 // TODO(mpawlowski) support multiple CSP filters per URL + frame hierarchy:
 // DPD-1145.
 
