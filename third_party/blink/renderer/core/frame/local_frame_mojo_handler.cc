@@ -1,6 +1,10 @@
 // Copyright 2021 The Chromium Authors
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
+//
+// This source code is a part of eyeo Chromium SDK.
+// Use of this source code is governed by the GPLv3 that can be found in the
+// components/adblock/LICENSE file.
 
 #include "third_party/blink/renderer/core/frame/local_frame_mojo_handler.h"
 
@@ -22,6 +26,7 @@
 #include "third_party/blink/public/mojom/timing/resource_timing.mojom-blink-forward.h"
 #include "third_party/blink/public/platform/interface_registry.h"
 #include "third_party/blink/public/platform/platform.h"
+#include "third_party/blink/public/web/web_css_origin.h"
 #include "third_party/blink/public/web/web_local_frame.h"
 #include "third_party/blink/public/web/web_local_frame_client.h"
 #include "third_party/blink/public/web/web_plugin.h"
@@ -353,6 +358,14 @@ LocalFrameMojoHandler::LocalFrameMojoHandler(blink::LocalFrame& frame)
   registry->AddAssociatedInterface(WTF::BindRepeating(
       &LocalFrameMojoHandler::BindFullscreenVideoElementReceiver,
       WrapWeakPersistent(this)));
+}
+
+void LocalFrameMojoHandler::InsertAbpElemhideStylesheet(
+    const WTF::String& stylesheet) {
+  WebLocalFrameImpl* web_frame = WebLocalFrameImpl::FromFrame(frame_);
+  DCHECK(web_frame);
+  web_frame->GetDocument().InsertAbpElemhideStylesheet(stylesheet, nullptr,
+                                                       WebCssOrigin::kUser);
 }
 
 void LocalFrameMojoHandler::Trace(Visitor* visitor) const {

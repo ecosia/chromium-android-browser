@@ -4,6 +4,10 @@
 # Use of this source code is governed by a BSD-style license that can be
 # found in the LICENSE file.
 
+# This source code is a part of eyeo Chromium SDK.
+# Use of this source code is governed by the GPLv3 that can be found in the
+# components/adblock/LICENSE file.
+
 # Script to install everything needed to build chromium (well, ideally, anyway)
 # including items requiring sudo privileges.
 # See https://chromium.googlesource.com/chromium/src/+/main/docs/linux/build_instructions.md

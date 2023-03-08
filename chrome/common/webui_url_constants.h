@@ -2,6 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
+// This source code is a part of eyeo Chromium SDK.
+// Use of this source code is governed by the GPLv3 that can be found in the
+// components/adblock/LICENSE file.
+
 // Contains constants for WebUI UI/Host/SubPage constants. Anything else go in
 // chrome/common/url_constants.h.
 
@@ -508,6 +512,7 @@ extern const char kAccessibilitySubPage[];
 extern const char kAdPrivacySubPage[];
 extern const char kAddressesSubPage[];
 extern const char kAppearanceSubPage[];
+extern const char kAdblockSubPage[];
 extern const char kAutofillSubPage[];
 extern const char kClearBrowserDataSubPage[];
 extern const char kContentSettingsSubPage[];

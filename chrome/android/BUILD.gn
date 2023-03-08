@@ -1,6 +1,10 @@
 # Copyright 2014 The Chromium Authors
 # Use of this source code is governed by a BSD-style license that can be
 # found in the LICENSE file.
+#
+# This source code is a part of eyeo Chromium SDK.
+# Use of this source code is governed by the GPLv3 that can be found in the components/adblock/LICENSE file.
+
 
 import("//build/android/resource_sizes.gni")
 import("//build/config/android/config.gni")
@@ -269,6 +273,7 @@ if (current_toolchain == default_toolchain) {
       "//chrome/browser/ui/android/toolbar:java_resources",
       "//chrome/browser/ui/android/webid/internal:java_resources",
       "//chrome/browser/ui/messages/android:java_resources",
+      "//components/adblock/android:java_resources",
       "//components/autofill/android:autofill_java_resources",
       "//components/autofill/android:autofill_payments_java_resources",
       "//components/blocked_content/android:java_resources",
@@ -498,6 +503,7 @@ if (current_toolchain == default_toolchain) {
       "//chrome/browser/webapps/android:java",
       "//chrome/browser/webauthn/android:java",
       "//chrome/browser/xsurface:java",
+      "//components/adblock/android:adblock_java",
       "//components/autofill/android:autofill_java",
       "//components/autofill/android:prefeditor_autofill_java",
       "//components/background_task_scheduler:background_task_scheduler_java",
@@ -1643,6 +1649,7 @@ if (current_toolchain == default_toolchain) {
       "//chrome/test/android:chrome_java_integration_test_support",
       "//chrome/test/android:chrome_java_test_pagecontroller",
       "//chrome/test/android/test_trusted_web_activity:test_trusted_web_activity_java",
+      "//components/adblock/android:adblock_java_tests",
       "//components/autofill/android:autofill_java",
       "//components/autofill/android:prefeditor_autofill_java",
       "//components/background_task_scheduler:background_task_scheduler_java",
@@ -1826,6 +1833,7 @@ if (current_toolchain == default_toolchain) {
     srcjar_deps = [ "//chrome/browser:tos_dialog_behavior_generated_enum" ]
 
     data = [
+      "//chrome/test/data/adblock/",
       "//chrome/test/data/android/",
       "//chrome/test/data/autofill/",
       "//chrome/test/data/background_sync/",
@@ -3992,6 +4000,7 @@ group("jni_headers") {
     "//chrome/browser/ui/messages/android:jni_headers",
     "//chrome/browser/util:jni_headers",
     "//chrome/browser/webauthn/android:jni_headers",
+    "//components/adblock/android:jni_headers",
     "//components/digital_asset_links/android:jni_headers",
     "//components/image_fetcher:jni_headers",
     "//components/media_router/browser/android:jni_headers",

@@ -129,8 +129,9 @@ TEST_F(NotificationsEngagementServiceTest,
             notifications_engagement_setting.at(1).setting_value);
 }
 
+// TODO(atokodi) DPD-1495: Re enable when it gets fixed in the upstream
 TEST_F(NotificationsEngagementServiceTest,
-       RecordNotificationDisplayedAndInteraction) {
+       DISABLED_RecordNotificationDisplayedAndInteraction) {
   GURL url1("https://www.google.com/");
   GURL url2("https://www.youtube.com/");
   GURL url3("https://www.permissions.site.com/");

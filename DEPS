@@ -169,6 +169,10 @@ vars = {
   # flag is set True.
   'checkout_wpr_archives': False,
 
+  # Eyeo WPR archives are kept separately from Chromium WPRs due to
+  # access restrictions (authenticated Google Cloud Storage).
+  'checkout_eyeo_wpr_archives': False,
+
   # By default, do not check out WebKit for iOS, as it is not needed unless
   # running against ToT WebKit rather than system WebKit. This can be overridden
   # e.g. with custom_vars.
@@ -292,6 +296,8 @@ vars = {
   'rust_toolchain_version': 'version:2@2022-12-09',
 
   'android_git': 'https://android.googlesource.com',
+  'eyeo_distpartners_gitlab': 'https://gitlab.com/eyeo/distpartners',
+  'eyeo_snippets_gitlab': 'https://gitlab.com/eyeo/snippets.git',
   'aomedia_git': 'https://aomedia.googlesource.com',
   'boringssl_git': 'https://boringssl.googlesource.com',
   'chromium_git': 'https://chromium.googlesource.com',
@@ -480,6 +486,11 @@ vars = {
   # the commit queue can handle CLs rolling ffmpeg
   # and whatever else without interference from each other.
   'ffmpeg_revision': 'a249b21db6516234e5456716ae074fbb00176b3f',
+
+  # Three lines of non-changing comments so that
+  # the commit queue can handle CLs rolling feed
+  # and whatever else without interference from each other.
+  'eyeo_snippets_revision': 'v0.6.1',
 
   # If you change this, also update the libc++ revision in
   # //buildtools/deps_revisions.gni.
@@ -774,6 +785,10 @@ deps = {
     'condition': 'checkout_android and checkout_src_internal',
   },
 
+  'src/components/resources/adblocking/snippets': {
+    'url': Var('eyeo_snippets_gitlab') + '@' + Var('eyeo_snippets_revision'),
+  },
+
   'src/docs/website': {
     'url': Var('chromium_git') + '/website.git' + '@' + '7e351332addd1fca691bb524c976a56f17e3eb95',
   },
@@ -921,6 +936,13 @@ deps = {
         },
       ],
       'dep_type': 'cipd',
+  },
+
+  'src/tools/perf/eyeo_data': {
+    'condition':
+      'checkout_eyeo_wpr_archives',
+    'url':
+      Var('eyeo_distpartners_gitlab') + '/web-page-recordings.git@69fd10f2076334d10b2dd938ae84f8cc7c0c9018',
   },
 
   'src/third_party/accessibility_test_framework': {

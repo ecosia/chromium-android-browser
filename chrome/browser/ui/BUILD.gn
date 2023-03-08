@@ -1,6 +1,10 @@
 # Copyright 2014 The Chromium Authors
 # Use of this source code is governed by a BSD-style license that can be
 # found in the LICENSE file.
+#
+# This source code is a part of eyeo Chromium SDK.
+# Use of this source code is governed by the GPLv3 that can be found in the components/adblock/LICENSE file.
+
 
 import("//build/config/buildflags_paint_preview.gni")
 import("//build/config/chromebox_for_meetings/buildflags.gni")
@@ -438,6 +442,7 @@ static_library("ui") {
     "//components/about_ui",
     "//components/access_code_cast/common",
     "//components/account_id",
+    "//components/adblock/content:browser",
     "//components/autofill/content/browser:risk_proto",
     "//components/autofill/core/browser",
     "//components/blocked_content",

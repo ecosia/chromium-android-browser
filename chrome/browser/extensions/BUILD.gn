@@ -1,6 +1,10 @@
 # Copyright 2014 The Chromium Authors
 # Use of this source code is governed by a BSD-style license that can be
 # found in the LICENSE file.
+#
+# This source code is a part of eyeo Chromium SDK.
+# Use of this source code is governed by the GPLv3 that can be found in the components/adblock/LICENSE file.
+
 
 import("//build/config/chromebox_for_meetings/buildflags.gni")
 import("//build/config/chromeos/ui_mode.gni")
@@ -47,6 +51,8 @@ static_library("extensions") {
     # here.
     "api/activity_log_private/activity_log_private_api.cc",
     "api/activity_log_private/activity_log_private_api.h",
+    "api/adblock_private/adblock_private_api.cc",
+    "api/adblock_private/adblock_private_api.h",
     "api/api_browser_context_keyed_service_factories.cc",
     "api/api_browser_context_keyed_service_factories.h",
     "api/autofill_private/autofill_private_api.cc",
@@ -798,6 +804,7 @@ static_library("extensions") {
     "//chrome/browser/safe_browsing:metrics_collector",
     "//chrome/browser/ui/tabs:tab_enums",
     "//chrome/browser/web_applications",
+    "//components/adblock/content:browser",
     "//components/cbor:cbor",
     "//components/commerce/core:pref_names",
     "//components/device_reauth",

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+ function onLoaded() {
+  if (window.domAutomationController) {
+   domAutomationController.send("READY");
+  }
+ }
+</script>
+</head>
+<body onload="onLoaded()">
+  <img id="blocked" src="blocked.png" />
+  <img id="allowed" src="allowed.png" />
+</body>
+</html>
+

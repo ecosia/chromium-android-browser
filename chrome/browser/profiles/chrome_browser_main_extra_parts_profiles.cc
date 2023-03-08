@@ -1,6 +1,10 @@
 // Copyright 2013 The Chromium Authors
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
+//
+// This source code is a part of eyeo Chromium SDK.
+// Use of this source code is governed by the GPLv3 that can be found in the
+// components/adblock/LICENSE file.
 
 #include "chrome/browser/profiles/chrome_browser_main_extra_parts_profiles.h"
 
@@ -11,6 +15,13 @@
 #include "build/chromeos_buildflags.h"
 #include "chrome/browser/accessibility/page_colors_factory.h"
 #include "chrome/browser/ash/app_list/app_list_syncable_service_factory.h"
+#include "chrome/browser/adblock/adblock_controller_factory.h"
+#include "chrome/browser/adblock/adblock_telemetry_service_factory.h"
+#include "chrome/browser/adblock/resource_classification_runner_factory.h"
+#include "chrome/browser/adblock/session_stats_factory.h"
+#include "chrome/browser/adblock/sitekey_storage_factory.h"
+#include "chrome/browser/adblock/subscription_persistent_metadata_factory.h"
+#include "chrome/browser/adblock/subscription_service_factory.h"
 #include "chrome/browser/autocomplete/autocomplete_classifier_factory.h"
 #include "chrome/browser/autocomplete/in_memory_url_index_factory.h"
 #include "chrome/browser/autocomplete/shortcuts_backend_factory.h"
@@ -139,6 +150,9 @@
 #include "services/network/public/cpp/features.h"
 
 #if BUILDFLAG(IS_ANDROID)
+#include "chrome/browser/android/adblock/adblock_jni_factory.h"
+#include "chrome/browser/android/adblock/filtering_configuration_bindings_factory.h"
+#include "chrome/browser/android/adblock/resource_classification_notifier_bindings_factory.h"
 #include "chrome/browser/android/explore_sites/explore_sites_service_factory.h"
 #include "chrome/browser/android/reading_list/reading_list_manager_factory.h"
 #include "chrome/browser/android/reading_list/reading_list_notification_service_factory.h"
@@ -386,9 +400,19 @@ void ChromeBrowserMainExtraPartsProfiles::
 #if BUILDFLAG(ENABLE_SESSION_SERVICE)
   ExitTypeServiceFactory::GetInstance();
 #endif
+  adblock::AdblockControllerFactory::GetInstance();
+  adblock::AdblockTelemetryServiceFactory::GetInstance();
+  adblock::ResourceClassificationRunnerFactory::GetInstance();
+  adblock::SessionStatsFactory::GetInstance();
+  adblock::SitekeyStorageFactory::GetInstance();
 #if BUILDFLAG(IS_ANDROID)
+  adblock::AdblockJNIFactory::GetInstance();
+  adblock::FilteringConfigurationBindingsFactory::GetInstance();
+  adblock::ResourceClassificationNotifierBindingsFactory::GetInstance();
   explore_sites::ExploreSitesServiceFactory::GetInstance();
 #endif
+  adblock::SubscriptionPersistentMetadataFactory::GetInstance();
+  adblock::SubscriptionServiceFactory::GetInstance();
   FaviconServiceFactory::GetInstance();
   feature_engagement::TrackerFactory::GetInstance();
 #if !BUILDFLAG(IS_ANDROID)

@@ -13,6 +13,7 @@ dev_ui_components_resources.grd.
   </outputs>
   <release seq="1">
     <includes>
+      <part file="adblock_resources.grdp" />
       <part file="about_ui_resources.grdp" />
       <part file="commerce_resources.grdp" />
       <part file="dom_distiller_resources.grdp" />

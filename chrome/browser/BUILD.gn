@@ -1,6 +1,9 @@
 # Copyright 2014 The Chromium Authors
 # Use of this source code is governed by a BSD-style license that can be
 # found in the LICENSE file.
+#
+# This source code is a part of eyeo Chromium SDK.
+# Use of this source code is governed by the GPLv3 that can be found in the components/adblock/LICENSE file.
 
 import("//base/allocator/allocator.gni")
 import("//build/buildflag_header.gni")
@@ -152,6 +155,26 @@ static_library("browser") {
     "accessibility/page_colors.h",
     "accessibility/page_colors_factory.cc",
     "accessibility/page_colors_factory.h",
+    "adblock/adblock_content_browser_client.cc",
+    "adblock/adblock_content_browser_client.h",
+    "adblock/adblock_controller_factory.cc",
+    "adblock/adblock_controller_factory.h",
+    "adblock/adblock_telemetry_service_factory.cc",
+    "adblock/adblock_telemetry_service_factory.h",
+    "adblock/content_security_policy_injector_factory.cc",
+    "adblock/content_security_policy_injector_factory.h",
+    "adblock/element_hider_factory.cc",
+    "adblock/element_hider_factory.h",
+    "adblock/resource_classification_runner_factory.cc",
+    "adblock/resource_classification_runner_factory.h",
+    "adblock/session_stats_factory.cc",
+    "adblock/session_stats_factory.h",
+    "adblock/sitekey_storage_factory.cc",
+    "adblock/sitekey_storage_factory.h",
+    "adblock/subscription_persistent_metadata_factory.cc",
+    "adblock/subscription_persistent_metadata_factory.h",
+    "adblock/subscription_service_factory.cc",
+    "adblock/subscription_service_factory.h",
     "after_startup_task_utils.cc",
     "after_startup_task_utils.h",
     "app_mode/app_mode_utils.cc",
@@ -2049,6 +2072,8 @@ static_library("browser") {
     "//chrome/common/notifications",
     "//chrome/installer/util:with_no_strings",
     "//chrome/services/speech/buildflags",
+    "//components/adblock/content:browser",
+    "//components/adblock/core/converter",
     "//components/assist_ranker",
     "//components/autofill/content/browser",
     "//components/autofill/core/browser",
@@ -2540,6 +2565,18 @@ static_library("browser") {
   if (is_android) {
     sources += [
       "after_startup_task_utils_android.cc",
+      "android/adblock/adblock_jni.cc",
+      "android/adblock/adblock_jni.h",
+      "android/adblock/adblock_jni_factory.cc",
+      "android/adblock/adblock_jni_factory.h",
+      "android/adblock/filtering_configuration_bindings_factory.cc",
+      "android/adblock/filtering_configuration_bindings_factory.h",
+      "android/adblock/filtering_configuration_bindings.cc",
+      "android/adblock/filtering_configuration_bindings.h",
+      "android/adblock/resource_classification_notifier_bindings_factory.cc",
+      "android/adblock/resource_classification_notifier_bindings_factory.h",
+      "android/adblock/resource_classification_notifier_bindings.cc",
+      "android/adblock/resource_classification_notifier_bindings.h",
       "android/android_theme_resources.h",
       "android/autocomplete/tab_matcher_android.cc",
       "android/autocomplete/tab_matcher_android.h",
@@ -3267,6 +3304,7 @@ static_library("browser") {
       "webauthn/android/webauthn_request_delegate_android.cc",
       "webauthn/android/webauthn_request_delegate_android.h",
     ]
+
     public_deps += [
       "//chrome/android/features/dev_ui:buildflags",
       "//components/image_fetcher/core",

@@ -2,6 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
+// This source code is a part of eyeo Chromium SDK.
+// Use of this source code is governed by the GPLv3 that can be found in the
+// components/adblock/LICENSE file.
+
 #include <sstream>
 
 #include "base/ranges/algorithm.h"
@@ -192,7 +196,13 @@ IN_PROC_BROWSER_TEST_F(ProfileKeyedServiceBrowserTest,
   // clang-format off
   // List of services expected to be created for the Parent System Profile.
   std::set<std::string> system_active_services {
-    "SiteDataCacheFacadeFactory"
+    "SiteDataCacheFacadeFactory",
+
+    // eyeo Chromium SDK services:
+    "AdblockController",
+    "AdblockSubscriptionPersistentMetadata",
+    "AdblockSubscriptionService",
+    "AdblockTelemetryService",
   };
   // clang-format on
 
@@ -258,7 +268,7 @@ IN_PROC_BROWSER_TEST_F(ProfileKeyedServiceBrowserTest,
     "UkmBackgroundRecorderService",
     "UsbDeviceManager",
     "UsbDeviceResourceManager",
-    "sct_reporting::Factory"
+    "sct_reporting::Factory",
   };
   // clang-format on
 
@@ -493,6 +503,16 @@ IN_PROC_BROWSER_TEST_F(ProfileKeyedServiceBrowserTest,
     "feedback::FeedbackUploaderChrome",
     "sct_reporting::Factory",
     "ZeroSuggestCacheServiceFactory",
+
+     // eyeo Chromium SDK services:
+    "AdblockController",
+    "AdblockPrivateAPI",
+    "AdblockSubscriptionPersistentMetadata",
+    "AdblockSubscriptionService",
+    "AdblockTelemetryService",
+    "ResourceClassificationRunner",
+    "SessionStats",
+    "SitekeyStorage",
   };
   // clang-format on
 

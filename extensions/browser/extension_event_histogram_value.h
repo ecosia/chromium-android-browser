@@ -1,6 +1,10 @@
 // Copyright 2015 The Chromium Authors
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
+//
+// This source code is a part of eyeo Chromium SDK.
+// Use of this source code is governed by the GPLv3 that can be found in the
+// components/adblock/LICENSE file.
 
 #ifndef EXTENSIONS_BROWSER_EXTENSION_EVENT_HISTOGRAM_VALUE_H_
 #define EXTENSIONS_BROWSER_EXTENSION_EVENT_HISTOGRAM_VALUE_H_
@@ -523,6 +527,15 @@ enum HistogramValue {
   SMART_CARD_PROVIDER_PRIVATE_ON_RELEASE_CONTEXT_REQUESTED = 501,
   SMART_CARD_PROVIDER_PRIVATE_ON_LIST_READERS_REQUESTED = 502,
   SMART_CARD_PROVIDER_PRIVATE_ON_GET_STATUS_CHANGE_REQUESTED = 503,
+
+  // Adblock's below:
+  ADBLOCK_PRIVATE_AD_BLOCKED = 995,
+  ADBLOCK_PRIVATE_AD_ALLOWED = 996,
+  ADBLOCK_PRIVATE_SUBSCRIPTION_UPDATED = 997,
+  ADBLOCK_PRIVATE_PAGE_ALLOWED = 998,
+  ADBLOCK_PRIVATE_POPUP_BLOCKED = 999,
+  ADBLOCK_PRIVATE_POPUP_ALLOWED = 1000,
+
   // Last entry: Add new entries above, then run:
   // tools/metrics/histograms/update_extension_histograms.py
   ENUM_BOUNDARY

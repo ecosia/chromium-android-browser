@@ -1,6 +1,10 @@
 // Copyright 2012 The Chromium Authors
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
+//
+// This source code is a part of eyeo Chromium SDK.
+// Use of this source code is governed by the GPLv3 that can be found in the
+// components/adblock/LICENSE file.
 
 #include "chrome/browser/prefs/chrome_command_line_pref_store.h"
 
@@ -21,6 +25,8 @@
 #include "build/chromeos_buildflags.h"
 #include "chrome/common/chrome_switches.h"
 #include "chrome/common/pref_names.h"
+#include "components/adblock/core/adblock_switches.h"
+#include "components/adblock/core/common/adblock_prefs.h"
 #include "components/browser_sync/browser_sync_switches.h"
 #include "components/language/core/browser/pref_names.h"
 #include "components/proxy_config/proxy_config_dictionary.h"

@@ -1,12 +1,17 @@
 // Copyright 2022 The Chromium Authors
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
+//
+// This source code is a part of eyeo Chromium SDK.
+// Use of this source code is governed by the GPLv3 that can be found in the
+// components/adblock/LICENSE file.
 
 #include "chrome/browser/extensions/browser_context_keyed_service_factories.h"
 
 #include "build/build_config.h"
 #include "build/chromeos_buildflags.h"
 #include "chrome/browser/extensions/api/activity_log_private/activity_log_private_api.h"
+#include "chrome/browser/extensions/api/adblock_private/adblock_private_api.h"
 #include "chrome/browser/extensions/api/autofill_private/autofill_private_event_router_factory.h"
 #include "chrome/browser/extensions/api/bookmark_manager_private/bookmark_manager_private_api.h"
 #include "chrome/browser/extensions/api/bookmarks/bookmarks_api.h"
@@ -58,6 +63,7 @@ namespace chrome_extensions {
 
 void EnsureApiBrowserContextKeyedServiceFactoriesBuilt() {
   extensions::ActivityLogAPI::GetFactoryInstance();
+  extensions::AdblockPrivateAPI::GetFactoryInstance();
   extensions::AutofillPrivateEventRouterFactory::GetInstance();
   extensions::BluetoothLowEnergyAPI::GetFactoryInstance();
   extensions::BookmarksAPI::GetFactoryInstance();
