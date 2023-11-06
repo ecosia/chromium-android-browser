@@ -1,5 +1,16 @@
 # Release Notes
 
+## eyeo Browser Ad Filtering Solution 119.0
+* Updated to Chromium 119.0.6045.66
+* Deprecated AdblockController class in Java (DPD-2239)
+* Renamed some C++ functions to use "resource" instead of "ad" more consistently (DPD-2246)
+* Removed a "Copying xpath3 deps code from .." log from the build output (DPD-2114)
+* WebView: started using the user space pref store instead of local space (DPD-2251)
+* Made the FilteringConfiguration Java and JavaScript APIs more consistent wrt naming (DPD-2252)
+
+Known issues:
+* monochrome_public_bundle target doesn't link. This is prioritized for fixing in 121.
+
 ## eyeo Browser Ad Filtering Solution 118.0
 * Updated to Chromium 118.0.5993.48
 * Allow removing existing FilteringConfigurations via Java API (DPD-2090)
