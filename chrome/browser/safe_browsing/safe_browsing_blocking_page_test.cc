@@ -5,6 +5,10 @@
 // This test creates a fake safebrowsing service, where we can inject known-
 // threat urls.  It then uses a real browser to go to these urls, and sends
 // "goback" or "proceed" commands and verifies they work.
+//
+// This source code is a part of eyeo Chromium SDK.
+// Use of this source code is governed by the GPLv3 that can be found in the
+// components/adblock/LICENSE file.
 
 #include <algorithm>
 #include <map>
@@ -62,6 +66,7 @@
 #include "chrome/common/url_constants.h"
 #include "chrome/test/base/in_process_browser_test.h"
 #include "chrome/test/base/ui_test_utils.h"
+#include "components/adblock/core/features.h"
 #include "components/google/core/common/google_util.h"
 #include "components/grit/components_resources.h"
 #include "components/omnibox/browser/omnibox_prefs.h"
@@ -608,7 +613,8 @@ class SafeBrowsingBlockingPageBrowserTest
         {kTagAndAttributeParamName, "div,foo,div,baz"}};
     base::test::FeatureRefAndParams tag_and_attribute(
         safe_browsing::kThreatDomDetailsTagAndAttributeFeature, parameters);
-    scoped_feature_list_.InitWithFeaturesAndParameters({tag_and_attribute}, {});
+    scoped_feature_list_.InitWithFeaturesAndParameters(
+        {tag_and_attribute}, {adblock::kAdblockPlusFeature});
   }
 
   SafeBrowsingBlockingPageBrowserTest(

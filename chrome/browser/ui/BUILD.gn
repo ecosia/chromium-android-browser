@@ -1,6 +1,10 @@
 # Copyright 2014 The Chromium Authors
 # Use of this source code is governed by a BSD-style license that can be
 # found in the LICENSE file.
+#
+# This source code is a part of eyeo Chromium SDK.
+# Use of this source code is governed by the GPLv3 that can be found in the components/adblock/LICENSE file.
+
 
 import("//build/config/buildflags_paint_preview.gni")
 import("//build/config/chromebox_for_meetings/buildflags.gni")
@@ -231,6 +235,10 @@ static_library("ui") {
     "webid/identity_dialog_controller.h",
     "webui/about_ui.cc",
     "webui/about_ui.h",
+    "webui/adblock_internals/adblock_internals_page_handler_impl.cc",
+    "webui/adblock_internals/adblock_internals_page_handler_impl.h",
+    "webui/adblock_internals/adblock_internals_ui.cc",
+    "webui/adblock_internals/adblock_internals_ui.h",
     "webui/autofill_and_password_manager_internals/autofill_internals_ui.cc",
     "webui/autofill_and_password_manager_internals/autofill_internals_ui.h",
     "webui/autofill_and_password_manager_internals/internals_ui_handler.cc",
@@ -432,12 +440,13 @@ static_library("ui") {
     "//chrome/browser/share",
     "//chrome/browser/storage_access_api",
     "//chrome/browser/ui/side_panel:side_panel_enums",
-    "//chrome/browser/ui/webui:configs",
+    "//chrome/browser/ui/webui/adblock_internals:mojo_bindings",
     "//chrome/browser/ui/webui/location_internals:mojo_bindings",
     "//chrome/browser/ui/webui/omnibox:mojo_bindings",
     "//chrome/browser/ui/webui/segmentation_internals:mojo_bindings",
     "//chrome/browser/ui/webui/suggest_internals:mojo_bindings",
     "//chrome/browser/ui/webui/usb_internals:mojo_bindings",
+    "//chrome/browser/ui/webui:configs",
     "//chrome/common",
     "//chrome/common/net",
     "//chrome/common/search:mojo_bindings",
@@ -449,6 +458,7 @@ static_library("ui") {
     "//components/about_ui",
     "//components/access_code_cast/common:metrics",
     "//components/account_id",
+    "//components/adblock/content:browser",
     "//components/autofill/content/browser",
     "//components/autofill/content/browser:risk_proto",
     "//components/autofill/core/browser",

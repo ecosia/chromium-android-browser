@@ -2,6 +2,10 @@
 # Use of this source code is governed by a BSD-style license that can be
 # found in the LICENSE file.
 #
+# This source code is a part of eyeo Chromium SDK.
+# Use of this source code is governed by the GPLv3 that can be found in the
+# components/adblock/LICENSE file.
+#
 # This file is used to assign starting resource ids for resources and strings
 # used by Chromium.  This is done to ensure that resource ids are unique
 # across all the grd files.  If you are adding a new grd file, please add
@@ -666,6 +670,10 @@
   "<(SHARED_INTERMEDIATE_DIR)/chrome/browser/resources/chromeos/enterprise_reporting/resources.grd": {
     "META": {"sizes": {"includes": [20]}},
     "includes": [4960],
+  },
+  "<(SHARED_INTERMEDIATE_DIR)/chrome/browser/resources/adblock_internals/resources.grd": {
+    "META": {"sizes": {"includes": [10],}},
+    "includes": [4970],
   },
   "<(SHARED_INTERMEDIATE_DIR)/chrome/browser/resources/hats/resources.grd": {
     "META": {"sizes": {"includes": [10]}},

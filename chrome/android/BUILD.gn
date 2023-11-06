@@ -1,6 +1,10 @@
 # Copyright 2014 The Chromium Authors
 # Use of this source code is governed by a BSD-style license that can be
 # found in the LICENSE file.
+#
+# This source code is a part of eyeo Chromium SDK.
+# Use of this source code is governed by the GPLv3 that can be found in the components/adblock/LICENSE file.
+
 
 import("//build/android/resource_sizes.gni")
 import("//build/config/android/config.gni")
@@ -236,6 +240,10 @@ if (current_toolchain == default_toolchain) {
       "//third_party/androidx:androidx_gridlayout_gridlayout_java",
       "//third_party/androidx:androidx_preference_preference_java",
     ]
+
+    ### Android UI module start
+    deps += [ "//components/adblock/android:java_ui_resources" ]
+    ### Android UI module end
   }
 
   android_library("app_hooks_java") {
@@ -453,6 +461,7 @@ if (current_toolchain == default_toolchain) {
       "//chrome/browser/xsurface:java",
       "//chrome/browser/xsurface_provider:dependency_provider_impl_java",
       "//chrome/browser/xsurface_provider:java",
+      "//components/adblock/android:adblock_controller_java",
       "//components/autofill/android:autofill_java",
       "//components/background_task_scheduler:background_task_scheduler_java",
       "//components/background_task_scheduler:background_task_scheduler_task_ids_java",
@@ -661,6 +670,10 @@ if (current_toolchain == default_toolchain) {
       "//url:gurl_java",
       "//url/mojom:url_mojom_gurl_java",
     ]
+
+    ### Android UI module start
+    deps += [ "//components/adblock/android:adblock_ui_java" ]
+    ### Android UI module end
 
     deps += feed_deps
 
@@ -1551,6 +1564,7 @@ if (current_toolchain == default_toolchain) {
       "//chrome/android/webapk/libs/client:client_java",
       "//chrome/android/webapk/libs/common:common_java",
       "//chrome/android/webapk/libs/runtime_library:webapk_service_aidl_java",
+      "//chrome/browser/adblock/android:adblock_java_tests",
       "//chrome/browser/android/browserservices/intents:java",
       "//chrome/browser/android/browserservices/verification:java",
       "//chrome/browser/android/browserservices/verification:javatests",
@@ -1890,6 +1904,7 @@ if (current_toolchain == default_toolchain) {
     srcjar_deps = [ "//chrome/browser:tos_dialog_behavior_generated_enum" ]
 
     data = [
+      "//chrome/test/data/adblock/",
       "//chrome/test/data/android/",
       "//chrome/test/data/autofill/",
       "//chrome/test/data/background_sync/",
@@ -3707,6 +3722,7 @@ group("jni_headers") {
     "//chrome/browser/ui/messages/android:jni_headers",
     "//chrome/browser/util:jni_headers",
     "//chrome/browser/webauthn/android:jni_headers",
+    "//components/adblock/android:jni_headers",
     "//components/browser_ui/device_lock/android:device_lock_bridge_jni_headers",
     "//components/content_relationship_verification/android:jni_headers",
     "//components/image_fetcher:jni_headers",

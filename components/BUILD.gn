@@ -1,6 +1,9 @@
 # Copyright 2014 The Chromium Authors
 # Use of this source code is governed by a BSD-style license that can be
 # found in the LICENSE file.
+#
+# This source code is a part of eyeo Chromium SDK.
+# Use of this source code is governed by the GPLv3 that can be found in the components/adblock/LICENSE file.
 
 import("//base/debug/debug.gni")
 import("//build/config/chrome_build.gni")
@@ -178,6 +181,14 @@ test("components_unittests") {
 
   deps = [
     "//base",
+    "//components/adblock/core:unit_tests",
+    "//components/adblock/core/classifier:unit_tests",
+    "//components/adblock/core/common:unit_tests",
+    "//components/adblock/core/configuration:unit_tests",
+    "//components/adblock/core/converter/parser:unit_tests",
+    "//components/adblock/core/converter/serializer:unit_tests",
+    "//components/adblock/core/converter:unit_tests",
+    "//components/adblock/core/subscription:unit_tests",
     "//components/aggregation_service:unit_tests",
     "//components/apdu:unit_tests",
     "//components/assist_ranker:unit_tests",
@@ -401,6 +412,7 @@ test("components_unittests") {
 
   if (use_blink) {
     deps += [
+      "//components/adblock/content/browser:unit_tests",
       "//components/autofill/content/browser:unit_tests",
       "//components/autofill/content/renderer:unit_tests",
       "//components/autofill/core/common/mojom:unit_tests",
@@ -1133,6 +1145,9 @@ if (use_blink) {
 
     deps = [
       "//base",
+      "//components/adblock/core/classifier:perf_tests",
+      "//components/adblock/core/converter:perf_tests",
+      "//components/adblock/core/subscription:perf_tests",
       "//components/bookmarks/test",
       "//components/discardable_memory/common",
       "//components/history/core/test",

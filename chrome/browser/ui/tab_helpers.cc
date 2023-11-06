@@ -1,6 +1,10 @@
 // Copyright 2014 The Chromium Authors
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
+//
+// This source code is a part of eyeo Chromium SDK.
+// Use of this source code is governed by the GPLv3 that can be found in the
+// components/adblock/LICENSE file.
 
 #include "chrome/browser/ui/tab_helpers.h"
 
@@ -13,6 +17,9 @@
 #include "base/trace_event/trace_event.h"
 #include "build/build_config.h"
 #include "build/chromeos_buildflags.h"
+#include "chrome/browser/adblock/element_hider_factory.h"
+#include "chrome/browser/adblock/sitekey_storage_factory.h"
+#include "chrome/browser/adblock/subscription_service_factory.h"
 #include "chrome/browser/bookmarks/bookmark_model_factory.h"
 #include "chrome/browser/breadcrumbs/breadcrumb_manager_tab_helper.h"
 #include "chrome/browser/browser_process.h"
@@ -111,6 +118,7 @@
 #include "chrome/common/chrome_features.h"
 #include "chrome/common/chrome_isolated_world_ids.h"
 #include "chrome/common/chrome_switches.h"
+#include "components/adblock/content/browser/adblock_webcontents_observer.h"
 #include "components/autofill/content/browser/content_autofill_client.h"
 #include "components/autofill/content/browser/content_autofill_driver_factory.h"
 #include "components/autofill/core/browser/browser_autofill_manager.h"
@@ -341,6 +349,16 @@ void TabHelpers::AttachTabHelpers(WebContents* web_contents) {
                                                    optimization_guide_decider);
     }
   }
+
+  AdblockWebContentObserver::CreateForWebContents(
+      web_contents,
+      adblock::SubscriptionServiceFactory::GetForBrowserContext(
+          web_contents->GetBrowserContext()),
+      adblock::ElementHiderFactory::GetForBrowserContext(
+          web_contents->GetBrowserContext()),
+      adblock::SitekeyStorageFactory::GetForBrowserContext(
+          web_contents->GetBrowserContext()),
+      std::make_unique<adblock::FrameHierarchyBuilder>());
   autofill::ChromeAutofillClient::CreateForWebContents(web_contents);
   if (breadcrumbs::IsEnabled())
     BreadcrumbManagerTabHelper::CreateForWebContents(web_contents);

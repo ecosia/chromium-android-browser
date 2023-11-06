@@ -182,6 +182,12 @@ vars = {
   # flag is set True.
   'checkout_wpr_archives': False,
 
+  ### CI & Testing module start
+  # Eyeo WPR archives are kept separately from Chromium WPRs due to
+  # access restrictions (authenticated Google Cloud Storage).
+  'checkout_eyeo_wpr_archives': False,
+  ### CI & Testing module end
+
   # By default, do not check out WebKit for iOS, as it is not needed unless
   # running against ToT WebKit rather than system WebKit. This can be overridden
   # e.g. with custom_vars.
@@ -296,6 +302,8 @@ vars = {
   'download_libaom_testdata': False,
 
   'android_git': 'https://android.googlesource.com',
+  'eyeo_distpartners_gitlab': 'https://gitlab.com/eyeo/distpartners',
+  'eyeo_snippets_gitlab': 'https://gitlab.com/eyeo/anti-cv/snippets.git',
   'aomedia_git': 'https://aomedia.googlesource.com',
   'boringssl_git': 'https://boringssl.googlesource.com',
   'chrome_git': 'https://chrome-internal.googlesource.com',
@@ -518,6 +526,11 @@ vars = {
   # the commit queue can handle CLs rolling beto-core
   # and whatever else without interference from each other.
   'betocore_revision': 'b902b346037ea3f4aadf8177021f6f917b16e648',
+
+  # Three lines of non-changing comments so that
+  # the commit queue can handle CLs rolling feed
+  # and whatever else without interference from each other.
+  'eyeo_snippets_revision': 'v0.8.1',
 
   # If you change this, also update the libc++ revision in
   # //buildtools/deps_revisions.gni.
@@ -849,6 +862,10 @@ deps = {
     'condition': 'checkout_android and checkout_src_internal',
   },
 
+  'src/components/resources/adblocking/snippets': {
+    'url': Var('eyeo_snippets_gitlab') + '@' + Var('eyeo_snippets_revision'),
+  },
+
   'src/docs/website': {
     'url': Var('chromium_git') + '/website.git' + '@' + '98972e05cf600ceefe641ac5d83b661e2792fcb4',
   },
@@ -997,6 +1014,15 @@ deps = {
       ],
       'dep_type': 'cipd',
   },
+
+  ### CI & Testing module start
+  'src/tools/perf/eyeo_data': {
+    'condition':
+      'checkout_eyeo_wpr_archives',
+    'url':
+      Var('eyeo_distpartners_gitlab') + '/web-page-recordings.git@69fd10f2076334d10b2dd938ae84f8cc7c0c9018',
+  },
+  ### CI & Testing module end
 
   'src/third_party/accessibility_test_framework': {
       'packages': [

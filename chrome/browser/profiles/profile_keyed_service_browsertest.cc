@@ -2,6 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
+// This source code is a part of eyeo Chromium SDK.
+// Use of this source code is governed by the GPLv3 that can be found in the
+// components/adblock/LICENSE file.
+
 #include <sstream>
 
 #include "base/ranges/algorithm.h"
@@ -189,12 +193,21 @@ IN_PROC_BROWSER_TEST_F(ProfileKeyedServiceBrowserTest,
 
 IN_PROC_BROWSER_TEST_F(ProfileKeyedServiceBrowserTest,
                        SystemProfileParent_NeededServices) {
+  // clang-format off
+  // List of services expected to be created for the Parent System Profile.
+  std::set<std::string> system_active_services {
+    // eyeo Chromium SDK services:
+    "AdblockSubscriptionPersistentMetadata",
+    "AdblockSubscriptionService",
+    "AdblockTelemetryService",
+  };
+  // clang-format on
+
   Profile* system_profile =
       CreateProfileAndWaitForAllTasks(ProfileManager::GetSystemProfilePath());
   ASSERT_FALSE(system_profile->IsOffTheRecord());
   ASSERT_TRUE(system_profile->IsSystemProfile());
-  TestKeyedProfileServicesActives(system_profile,
-                                  /*expected_active_services_names=*/{});
+  TestKeyedProfileServicesActives(system_profile, system_active_services);
 }
 
 IN_PROC_BROWSER_TEST_F(ProfileKeyedServiceBrowserTest,
@@ -271,7 +284,7 @@ IN_PROC_BROWSER_TEST_F(ProfileKeyedServiceBrowserTest,
     "UkmBackgroundRecorderService",
     "UsbDeviceManager",
     "UsbDeviceResourceManager",
-    "sct_reporting::Factory"
+    "sct_reporting::Factory",
   };
   // clang-format on
 
@@ -524,6 +537,16 @@ IN_PROC_BROWSER_TEST_F(ProfileKeyedServiceBrowserTest,
     "feedback::FeedbackUploaderChrome",
     "sct_reporting::Factory",
     "ZeroSuggestCacheServiceFactory",
+
+     // eyeo Chromium SDK services:
+    "AdblockPrivateAPI",
+    "AdblockSubscriptionPersistentMetadata",
+    "AdblockSubscriptionService",
+    "AdblockTelemetryService",
+    "EyeoFilteringPrivateAPI",
+    "ResourceClassificationRunner",
+    "SessionStats",
+    "SitekeyStorage",
   };
   // clang-format on
 
@@ -570,6 +593,16 @@ IN_PROC_BROWSER_TEST_F(ProfileKeyedServiceBrowserTest,
     "PermissionsUpdaterShutdownFactory",
     "PluginInfoHostImpl",
     "TurnSyncOnHelperShutdownNotifier",
+
+    // Eyeo services:
+    "AdblockSubscriptionPersistentMetadata",
+    "AdblockSubscriptionService",
+    "AdblockTelemetryService",
+    "ContentSecurityPolicyInjector",
+    "ElementHider",
+    "ResourceClassificationRunner",
+    "SessionStats",
+    "SitekeyStorage",
   };
   // clang-format on
 

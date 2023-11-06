@@ -1,6 +1,9 @@
 # Copyright 2014 The Chromium Authors
 # Use of this source code is governed by a BSD-style license that can be
 # found in the LICENSE file.
+#
+# This source code is a part of eyeo Chromium SDK.
+# Use of this source code is governed by the GPLv3 that can be found in the components/adblock/LICENSE file.
 
 import("//build/cipd/cipd.gni")
 import("//build/config/buildflags_paint_preview.gni")
@@ -25,6 +28,7 @@ import("//chrome/test/base/js2gtest.gni")
 import("//chrome/test/include_js_tests.gni")
 import("//chrome/version.gni")
 import("//chromeos/ash/components/assistant/assistant.gni")
+import("//components/adblock/features.gni")
 import("//components/captive_portal/core/features.gni")
 import("//components/enterprise/buildflags/buildflags.gni")
 import("//components/feed/features.gni")
@@ -1206,6 +1210,7 @@ if (is_android) {
 
     deps += [
       ":persisted_tab_data_test_proto",
+      "//components/adblock/content:browser",
       "//components/autofill/content/browser:test_support",
       "//components/back_forward_cache:back_forward_cache",
       "//components/browsing_data/core:core",
@@ -1587,6 +1592,7 @@ if (!is_android) {
       "//chrome/test/data/webui/mojo:mojo_bindings",
       "//chrome/test/media_router/access_code_cast:access_code_cast_integration_base",
       "//chrome/test/payments:test_support",
+      "//components/adblock/content:browser",
       "//components/autofill/content/browser:risk_proto",
       "//components/autofill/content/browser:test_support",
       "//components/autofill/content/common/mojom",
@@ -1924,6 +1930,7 @@ if (!is_android) {
       "//ash/components/arc/test/data/icons",
       "//chrome/browser/page_load_metrics/integration_tests/data/",
       "//chrome/renderer/resources/extensions/",
+      "//chrome/test/data/adblock/",
       "//chrome/test/data/cart/",
       "//components/test/data/ad_tagging/",
       "//components/test/data/ads_observer/",
@@ -2007,6 +2014,17 @@ if (!is_android) {
       "../browser/accessibility/image_annotation_browsertest.cc",
       "../browser/accessibility/interstitial_accessibility_browsertest.cc",
       "../browser/accessibility/page_colors_browsertest.cc",
+      "../browser/adblock/test/adblock_content_browser_client_browsertest.cc",
+      "../browser/adblock/test/adblock_filter_list_browsertest.cc",
+      "../browser/adblock/test/adblock_filtering_configurations_browsertest.cc",
+      "../browser/adblock/test/adblock_frame_hierarchy_builder_browsertest.cc",
+      "../browser/adblock/test/adblock_multiple_tabs_browsertest.cc",
+      "../browser/adblock/test/adblock_non_ascii_browsertest.cc",
+      "../browser/adblock/test/adblock_popup_browsertest.cc",
+      "../browser/adblock/test/adblock_snippets_browsertest.cc",
+      "../browser/adblock/test/adblock_subscription_service_browsertest.cc",
+      "../browser/adblock/test/adblock_telemetry_service_browsertest.cc",
+      "../browser/adblock/test/adblock_web_bundle_browsertest.cc",
       "../browser/apps/guest_view/app_view_browsertest.cc",
       "../browser/apps/guest_view/web_view_browsertest.cc",
       "../browser/apps/platform_apps/app_browsertest.cc",
@@ -2734,6 +2752,10 @@ if (!is_android) {
 
     if (is_chrome_for_testing) {
       sources += [ "../browser/chrome_for_testing/chrome_for_testing_info_bar_browsertest.cc" ]
+    }
+
+    if (eyeo_intercept_debug_url) {
+      sources += [ "../browser/adblock/test/adblock_debug_url_browsertest.cc" ]
     }
 
     if (enable_reporting) {
@@ -3569,6 +3591,13 @@ if (!is_android) {
           "//chrome/browser/extensions/api:native_messaging_test_echo_&_host",
         ]
       }
+
+      ### Extension API module start
+      sources += [
+        "../browser/extensions/api/adblock_private/adblock_private_apitest.cc",
+        "../browser/extensions/api/eyeo_filtering_private/eyeo_filtering_private_apitest.cc",
+      ]
+      ### Extension API module end
 
       if (is_chromeos_ash && enable_extensions) {
         deps +=
@@ -5860,6 +5889,7 @@ test("unit_tests") {
     "../browser/about_flags_unittest.cc",
     "../browser/accessibility/media_app/ax_media_app_handler_unittest.cc",
     "../browser/active_use_util_unittest.cc",
+    "../browser/adblock/adblock_content_browser_client_unittest.cc",
     "../browser/after_startup_task_utils_unittest.cc",
     "../browser/apps/icon_standardizer_unittest.cc",
     "../browser/apps/user_type_filter_unittest.cc",
@@ -6528,6 +6558,8 @@ test("unit_tests") {
     "//chrome/services/file_util:unit_tests",
     "//chrome/services/qrcode_generator/public/cpp",
     "//components/account_id",
+    "//components/adblock/content/browser:test_support",
+    "//components/adblock/core:test_support",
     "//components/assist_ranker/proto",
     "//components/autofill/content/browser:test_support",
     "//components/background_sync",
@@ -10003,6 +10035,7 @@ if (!is_android) {
 
     public_deps = [
       "//chrome/browser:test_support_ui",
+      "//components/adblock/core:test_support",
       "//content/public/browser",
       "//content/test:test_support",
       "//google_apis:test_support",

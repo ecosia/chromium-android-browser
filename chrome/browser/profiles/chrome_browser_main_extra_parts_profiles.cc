@@ -1,6 +1,10 @@
 // Copyright 2013 The Chromium Authors
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
+//
+// This source code is a part of eyeo Chromium SDK.
+// Use of this source code is governed by the GPLv3 that can be found in the
+// components/adblock/LICENSE file.
 
 #include "chrome/browser/profiles/chrome_browser_main_extra_parts_profiles.h"
 
@@ -12,6 +16,14 @@
 #include "build/chromeos_buildflags.h"
 #include "chrome/browser/accessibility/accessibility_labels_service_factory.h"
 #include "chrome/browser/accessibility/page_colors_factory.h"
+#include "chrome/browser/adblock/adblock_telemetry_service_factory.h"
+#include "chrome/browser/adblock/content_security_policy_injector_factory.h"
+#include "chrome/browser/adblock/element_hider_factory.h"
+#include "chrome/browser/adblock/resource_classification_runner_factory.h"
+#include "chrome/browser/adblock/session_stats_factory.h"
+#include "chrome/browser/adblock/sitekey_storage_factory.h"
+#include "chrome/browser/adblock/subscription_persistent_metadata_factory.h"
+#include "chrome/browser/adblock/subscription_service_factory.h"
 #include "chrome/browser/autocomplete/autocomplete_classifier_factory.h"
 #include "chrome/browser/autocomplete/document_suggestions_service_factory.h"
 #include "chrome/browser/autocomplete/in_memory_url_index_factory.h"
@@ -249,6 +261,13 @@
 #include "chrome/browser/signin/signin_manager_android_factory.h"
 #include "components/commerce/core/commerce_feature_list.h"
 #include "components/commerce/core/proto/merchant_signal_db_content.pb.h"
+
+// Android API module start
+#include "chrome/browser/android/adblock/adblock_jni_factory.h"
+#include "chrome/browser/android/adblock/filtering_configuration_bindings_factory.h"
+#include "chrome/browser/android/adblock/resource_classification_notifier_bindings_factory.h"
+// Android API module end
+
 #else
 #include "chrome/browser/accessibility/live_caption/live_caption_controller_factory.h"
 #include "chrome/browser/accessibility/live_translate_controller_factory.h"
@@ -735,8 +754,23 @@ void ChromeBrowserMainExtraPartsProfiles::
 #if BUILDFLAG(ENABLE_SESSION_SERVICE)
   ExitTypeServiceFactory::GetInstance();
 #endif
+  adblock::AdblockTelemetryServiceFactory::GetInstance();
+  adblock::ContentSecurityPolicyInjectorFactory::GetInstance();
+  adblock::ElementHiderFactory::GetInstance();
+  adblock::ResourceClassificationRunnerFactory::GetInstance();
+  adblock::SessionStatsFactory::GetInstance();
+  adblock::SitekeyStorageFactory::GetInstance();
+  adblock::SubscriptionPersistentMetadataFactory::GetInstance();
+  adblock::SubscriptionServiceFactory::GetInstance();
 #if BUILDFLAG(IS_ANDROID)
   FastCheckoutCapabilitiesFetcherFactory::GetInstance();
+
+  // Android API module start
+  adblock::AdblockJNIFactory::GetInstance();
+  adblock::FilteringConfigurationBindingsFactory::GetInstance();
+  adblock::ResourceClassificationNotifierBindingsFactory::GetInstance();
+  // Android API module end
+
 #endif
   FaviconServiceFactory::GetInstance();
   feature_engagement::TrackerFactory::GetInstance();

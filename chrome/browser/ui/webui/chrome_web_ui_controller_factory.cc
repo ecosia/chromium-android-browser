@@ -1,6 +1,10 @@
 // Copyright 2012 The Chromium Authors
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
+//
+// This source code is a part of eyeo Chromium SDK.
+// Use of this source code is governed by the GPLv3 that can be found in the
+// components/adblock/LICENSE file.
 
 #include "chrome/browser/ui/webui/chrome_web_ui_controller_factory.h"
 
@@ -32,6 +36,7 @@
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/signin/signin_features.h"
 #include "chrome/browser/ui/webui/about_ui.h"
+#include "chrome/browser/ui/webui/adblock_internals/adblock_internals_ui.h"
 #include "chrome/browser/ui/webui/autofill_and_password_manager_internals/autofill_internals_ui.h"
 #include "chrome/browser/ui/webui/autofill_and_password_manager_internals/password_manager_internals_ui.h"
 #include "chrome/browser/ui/webui/browsing_topics/browsing_topics_internals_ui.h"
@@ -434,8 +439,12 @@ WebUIFactoryFunction GetWebUIFactoryFunction(WebUI* web_ui,
   // after the host name.
   if (url.host_piece() == chrome::kChromeUIAccessibilityHost)
     return &NewWebUI<AccessibilityUI>;
-  if (url.host_piece() == chrome::kChromeUIAutofillInternalsHost)
+  if (url.host_piece() == chrome::kChromeUIAdblockInternalsHost) {
+    return &NewWebUI<AdblockInternalsUI>;
+  }
+  if (url.host_piece() == chrome::kChromeUIAutofillInternalsHost) {
     return &NewWebUI<AutofillInternalsUI>;
+  }
 
 #if BUILDFLAG(IS_CHROMEOS_ASH)
   if (url.host_piece() == chrome::kChromeUIAppDisabledHost)

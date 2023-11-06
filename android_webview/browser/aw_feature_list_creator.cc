@@ -1,6 +1,10 @@
 // Copyright 2017 The Chromium Authors
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
+//
+// This source code is a part of eyeo Chromium SDK.
+// Use of this source code is governed by the GPLv3 that can be found in the
+// components/adblock/LICENSE file.
 
 #include "android_webview/browser/aw_feature_list_creator.h"
 
@@ -31,6 +35,8 @@
 #include "base/strings/string_split.h"
 #include "base/time/time.h"
 #include "base/trace_event/trace_event.h"
+#include "components/adblock/core/common/adblock_prefs.h"
+#include "components/adblock/core/configuration/filtering_configuration_prefs.h"
 #include "components/autofill/core/common/autofill_prefs.h"
 #include "components/embedder_support/android/metrics/android_metrics_service_client.h"
 #include "components/embedder_support/origin_trials/origin_trial_prefs.h"
@@ -120,6 +126,28 @@ const char* const kPersistentPrefsAllowlist[] = {
     // Records about profiles/contexts and their stored data
     prefs::kProfileListPref,
     prefs::kProfileCounterPref,
+
+    // TODO(DPD-2251): Revert this once we migrate all prefs from local to user
+    // state in AwBrowserContext, meaning when all users are on version v119 or
+    // newer.
+    // adblock prefs
+    adblock::common::prefs::kEnableAdblockLegacy,
+    adblock::common::prefs::kEnableAcceptableAdsLegacy,
+    adblock::common::prefs::kAdblockAllowedDomainsLegacy,
+    adblock::common::prefs::kAdblockCustomFiltersLegacy,
+    adblock::common::prefs::kAdblockSubscriptionsLegacy,
+    adblock::common::prefs::kAdblockCustomSubscriptionsLegacy,
+    adblock::common::prefs::kAdblockMoreOptionsEnabled,
+    adblock::common::prefs::kInstallFirstStartSubscriptions,
+    adblock::common::prefs::kSubscriptionSignatures,
+    adblock::common::prefs::kLastUsedSchemaVersion,
+    adblock::common::prefs::kSubscriptionMetadata,
+    adblock::common::prefs::kTelemetryLastPingTag,
+    adblock::common::prefs::kTelemetryLastPingTime,
+    adblock::common::prefs::kTelemetryPreviousLastPingTime,
+    adblock::common::prefs::kTelemetryFirstPingTime,
+    adblock::common::prefs::kTelemetryNextPingTime,
+    adblock::filtering_configuration::prefs::kConfigurationsPrefsPath,
 };
 
 void HandleReadError(PersistentPrefStore::PrefReadError error) {}
@@ -172,6 +200,13 @@ std::unique_ptr<PrefService> AwFeatureListCreator::CreatePrefService() {
 
   AwMetricsServiceClient::RegisterMetricsPrefs(pref_registry.get());
   variations::VariationsService::RegisterPrefs(pref_registry.get());
+
+  // TODO(DPD-2251): Revert this once we migrate all prefs from local to user
+  // state in AwBrowserContext, meaning when all users are on version v119 or
+  // newer.
+  adblock::common::prefs::RegisterProfilePrefs(pref_registry.get());
+  adblock::filtering_configuration::prefs::RegisterProfilePrefs(
+      pref_registry.get());
 
   embedder_support::OriginTrialPrefs::RegisterPrefs(pref_registry.get());
   AwBrowserProcess::RegisterNetworkContextLocalStatePrefs(pref_registry.get());

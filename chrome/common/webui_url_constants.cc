@@ -1,6 +1,10 @@
 // Copyright 2017 The Chromium Authors
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
+//
+// This source code is a part of eyeo Chromium SDK.
+// Use of this source code is governed by the GPLv3 that can be found in the
+// components/adblock/LICENSE file.
 
 #include "chrome/common/webui_url_constants.h"
 
@@ -32,6 +36,7 @@ const char kChromeUIAboutURL[] = "chrome://about/";
 const char kChromeUIActivateSafetyCheckSettingsURL[] =
     "chrome://settings/safetyCheck?activateSafetyCheck";
 const char kChromeUIAccessibilityHost[] = "accessibility";
+const char kChromeUIAdblockInternalsHost[] = "adblock-internals";
 const char kChromeUIAllSitesPath[] = "/content/all";
 const char kChromeUIAppIconHost[] = "app-icon";
 const char kChromeUIAppIconURL[] = "chrome://app-icon/";

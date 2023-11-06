@@ -1,6 +1,9 @@
 # Copyright 2014 The Chromium Authors
 # Use of this source code is governed by a BSD-style license that can be
 # found in the LICENSE file.
+#
+# This source code is a part of eyeo Chromium SDK.
+# Use of this source code is governed by the GPLv3 that can be found in the components/adblock/LICENSE file.
 
 import("//build/config/chromebox_for_meetings/buildflags.gni")
 import("//build/config/chromeos/ui_mode.gni")
@@ -220,6 +223,7 @@ if (!is_android) {
 group("dev_ui_resources") {
   public_deps = [
     "accessibility:resources",
+    "adblock_internals:resources",
     "bluetooth_internals:resources",
     "browsing_topics:resources",
     "components:resources",
@@ -274,6 +278,7 @@ repack("dev_ui_paks") {
 
   sources = [
     "$root_gen_dir/chrome/accessibility_resources.pak",
+    "$root_gen_dir/chrome/adblock_internals_resources.pak",
     "$root_gen_dir/chrome/bluetooth_internals_resources.pak",
     "$root_gen_dir/chrome/browsing_topics_internals_resources.pak",
     "$root_gen_dir/chrome/components_resources.pak",

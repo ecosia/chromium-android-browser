@@ -2,6 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
+// This source code is a part of eyeo Chromium SDK.
+// Use of this source code is governed by the GPLv3 that can be found in the
+// components/adblock/LICENSE file.
+
 #include "chrome/browser/extensions/api/settings_private/prefs_util.h"
 
 #include <memory>
@@ -27,6 +31,7 @@
 #include "chrome/browser/ssl/generated_https_first_mode_pref.h"
 #include "chrome/common/chrome_features.h"
 #include "chrome/common/pref_names.h"
+#include "components/adblock/core/common/adblock_prefs.h"
 #include "components/autofill/core/common/autofill_prefs.h"
 #include "components/bookmarks/common/bookmark_pref_names.h"
 #include "components/browsing_data/core/pref_names.h"
@@ -172,6 +177,20 @@ const PrefsUtil::TypedPrefMap& PrefsUtil::GetAllowlistedKeys() {
   if (s_allowlist)
     return *s_allowlist;
   s_allowlist = new PrefsUtil::TypedPrefMap();
+
+  // Adblock settings
+  (*s_allowlist)[adblock::common::prefs::kEnableAdblockLegacy] =
+      settings_api::PrefType::PREF_TYPE_BOOLEAN;
+  (*s_allowlist)[adblock::common::prefs::kEnableAcceptableAdsLegacy] =
+      settings_api::PrefType::PREF_TYPE_BOOLEAN;
+  (*s_allowlist)[adblock::common::prefs::kAdblockSubscriptionsLegacy] =
+      settings_api::PrefType::PREF_TYPE_LIST;
+  (*s_allowlist)[adblock::common::prefs::kAdblockCustomSubscriptionsLegacy] =
+      settings_api::PrefType::PREF_TYPE_LIST;
+  (*s_allowlist)[adblock::common::prefs::kAdblockAllowedDomainsLegacy] =
+      settings_api::PrefType::PREF_TYPE_LIST;
+  (*s_allowlist)[adblock::common::prefs::kAdblockCustomFiltersLegacy] =
+      settings_api::PrefType::PREF_TYPE_LIST;
 
   // Miscellaneous
   (*s_allowlist)[::embedder_support::kAlternateErrorPagesEnabled] =

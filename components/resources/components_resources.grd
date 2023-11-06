@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
+  This source code is a part of eyeo Chromium SDK.
+  Use of this source code is governed by the GPLv3 that can be found in the
+  components/adblock/LICENSE file.
+-->
+<!--
 This file aggregates resource GRDPs for user-facing features under /components.
 Resources for developer-facing chrome:// pages should be aggregated in
 dev_ui_components_resources.grd.
@@ -13,6 +18,7 @@ dev_ui_components_resources.grd.
   </outputs>
   <release seq="1">
     <includes>
+      <part file="adblock_resources.grdp" />
       <part file="about_ui_resources.grdp" />
       <part file="commerce_resources.grdp" />
       <part file="dom_distiller_resources.grdp" />

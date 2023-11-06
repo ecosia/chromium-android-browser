@@ -1,6 +1,10 @@
 // Copyright 2017 The Chromium Authors
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
+//
+// This source code is a part of eyeo Chromium SDK.
+// Use of this source code is governed by the GPLv3 that can be found in the
+// components/adblock/LICENSE file.
 
 // Contains constants for WebUI UI/Host/SubPage constants. Anything else go in
 // chrome/common/url_constants.h.
@@ -33,6 +37,7 @@ extern const char kChromeUIAboutHost[];
 extern const char kChromeUIAboutURL[];
 extern const char kChromeUIActivateSafetyCheckSettingsURL[];
 extern const char kChromeUIAccessibilityHost[];
+extern const char kChromeUIAdblockInternalsHost[];
 extern const char kChromeUIAllSitesPath[];
 extern const char kChromeUIAppIconHost[];
 extern const char kChromeUIAppIconURL[];

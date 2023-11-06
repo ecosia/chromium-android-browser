@@ -2,6 +2,10 @@
 # Use of this source code is governed by a BSD-style license that can be
 # found in the LICENSE file.
 
+# This source code is a part of eyeo Chromium SDK.
+# Use of this source code is governed by the GPLv3 that can be found in the
+# components/adblock/LICENSE file.
+
 import("//build/config/android/config.gni")
 import("//components/safe_browsing/buildflags.gni")
 import("//components/signin/features.gni")
@@ -73,6 +77,11 @@ grit("components_resources") {
   if (is_android && safe_browsing_mode == 2) {
     deps += [ "//components/safe_browsing/content/resources/real_time_url_checks_allowlist:make_real_time_url_allowlist_protobuf" ]
   }
+
+  deps += [
+    "//components/resources/adblocking:copy_snippets_lib",
+    "//components/resources/adblocking:make_all_preloaded_subscriptions",
+  ]
 }
 
 grit("dev_ui_components_resources") {
