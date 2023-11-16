@@ -1,9 +1,6 @@
 # Copyright 2019 The Chromium Authors
 # Use of this source code is governed by a BSD-style license that can be
 # found in the LICENSE file.
-#
-# This source code is a part of eyeo Chromium SDK.
-# Use of this source code is governed by the GPLv3 that can be found in the components/adblock/LICENSE file.
 
 import("//build/config/android/rules.gni")
 import("//components/spellcheck/spellcheck_build_features.gni")
@@ -26,31 +23,6 @@ source_set("browser") {
   sources = [
     "android_protocol_handler.cc",
     "android_protocol_handler.h",
-    "adblock/aw_adblock_content_browser_client.cc",
-    "adblock/aw_adblock_content_browser_client.h",
-    "adblock/aw_adblock_jni_factory.cc",
-    "adblock/aw_adblock_jni_factory.h",
-    "adblock/aw_adblock_telemetry_service_factory.cc",
-    "adblock/aw_adblock_telemetry_service_factory.h",
-    "adblock/aw_content_security_policy_injector_factory.cc",
-    "adblock/aw_content_security_policy_injector_factory.h",
-    "adblock/aw_element_hider_factory.cc",
-    "adblock/aw_element_hider_factory.h",
-    "adblock/aw_filtering_configuration_bindings_factory.cc",
-    "adblock/aw_filtering_configuration_bindings_factory.h",
-    "adblock/aw_java_bindings_getters_impl.cc",
-    "adblock/aw_resource_classification_notifier_bindings_factory.cc",
-    "adblock/aw_resource_classification_notifier_bindings_factory.h",
-    "adblock/aw_resource_classification_runner_factory.cc",
-    "adblock/aw_resource_classification_runner_factory.h",
-    "adblock/aw_session_stats_factory.cc",
-    "adblock/aw_session_stats_factory.h",
-    "adblock/aw_sitekey_storage_factory.cc",
-    "adblock/aw_sitekey_storage_factory.h",
-    "adblock/aw_subscription_persistent_metadata_factory.cc",
-    "adblock/aw_subscription_persistent_metadata_factory.h",
-    "adblock/aw_subscription_service_factory.cc",
-    "adblock/aw_subscription_service_factory.h",
     "aw_apk_type.h",
     "aw_autofill_client.cc",
     "aw_autofill_client.h",
@@ -251,10 +223,6 @@ source_set("browser") {
     "//android_webview/common:mojom",
     "//android_webview/proto:aw_variations_seed_proto",
     "//base",
-    "//components/adblock/android:java_bindings",
-    "//components/adblock/android:jni_headers",
-    "//components/adblock/content:browser",
-    "//components/adblock/core/converter",
     "//components/android_autofill/browser:android",
     "//components/autofill/content/browser",
     "//components/cdm/browser",

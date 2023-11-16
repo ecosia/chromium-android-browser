@@ -1,10 +1,6 @@
 // Copyright 2012 The Chromium Authors
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
-//
-// This source code is a part of eyeo Chromium SDK.
-// Use of this source code is governed by the GPLv3 that can be found in the
-// components/adblock/LICENSE file.
 
 #include "android_webview/browser/aw_contents.h"
 
@@ -13,12 +9,6 @@
 #include <string>
 #include <utility>
 
-#include "android_webview/browser/adblock/aw_adblock_telemetry_service_factory.h"
-#include "android_webview/browser/adblock/aw_element_hider_factory.h"
-#include "android_webview/browser/adblock/aw_resource_classification_runner_factory.h"
-#include "android_webview/browser/adblock/aw_session_stats_factory.h"
-#include "android_webview/browser/adblock/aw_sitekey_storage_factory.h"
-#include "android_webview/browser/adblock/aw_subscription_service_factory.h"
 #include "android_webview/browser/aw_autofill_client.h"
 #include "android_webview/browser/aw_browser_context.h"
 #include "android_webview/browser/aw_browser_main_parts.h"
@@ -72,7 +62,6 @@
 #include "base/threading/thread_restrictions.h"
 #include "base/trace_event/trace_event.h"
 #include "base/trace_event/typed_macros.h"
-#include "components/adblock/content/browser/adblock_webcontents_observer.h"
 #include "components/android_autofill/browser/android_autofill_manager.h"
 #include "components/android_autofill/browser/autofill_provider_android.h"
 #include "components/autofill/content/browser/content_autofill_driver.h"
@@ -263,22 +252,6 @@ AwContents::AwContents(std::unique_ptr<WebContents> web_contents)
 
   permission_request_handler_ =
       std::make_unique<PermissionRequestHandler>(this, web_contents_.get());
-
-  auto* browser_context =
-      android_webview::AwBrowserContext::FromWebContents(web_contents_.get());
-  adblock::ResourceClassificationRunnerFactory::GetForBrowserContext(
-      browser_context);
-  adblock::AdblockTelemetryServiceFactory::GetForBrowserContext(
-      browser_context);
-  adblock::SessionStatsFactory::GetForBrowserContext(browser_context);
-  adblock::SitekeyStorageFactory::GetForBrowserContext(browser_context);
-  AdblockWebContentObserver::CreateForWebContents(
-      web_contents_.get(),
-      adblock::SubscriptionServiceFactory::GetForBrowserContext(
-          browser_context),
-      adblock::ElementHiderFactory::GetForBrowserContext(browser_context),
-      adblock::SitekeyStorageFactory::GetForBrowserContext(browser_context),
-      std::make_unique<adblock::FrameHierarchyBuilder>());
 
   AwAutofillClient* browser_autofill_manager_delegate =
       AwAutofillClient::FromWebContents(web_contents_.get());
