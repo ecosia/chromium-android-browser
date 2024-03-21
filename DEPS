@@ -5623,6 +5623,14 @@ hooks = [
                'gs://aom-test-data',
                'src/third_party/libaom/testdata']
   },
+  ### CI & Testing module start
+  {
+    'name': 'reclient_config',
+    'pattern': '.',
+    'condition': 'use_engflow_reclient_configs',
+    'action': ['python3', 'reclient-configs/configure_reclient.py', '--src_dir=src'],
+  },
+  ### CI & Testing module end
 ]
 
 # Add any corresponding DEPS files from this list to chromium.exclusions in

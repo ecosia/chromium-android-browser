@@ -1,0 +1,55 @@
+# This file is part of eyeo Chromium SDK,
+# Copyright (C) 2006-present eyeo GmbH
+# eyeo Chromium SDK is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License version 3 as
+# published by the Free Software Foundation.
+# eyeo Chromium SDK is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+# You should have received a copy of the GNU General Public License
+# along with eyeo Chromium SDK.  If not, see <http://www.gnu.org/licenses/>.
+
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+# Motivation to use hooks and internal agreements are discussed here:
+# https://confluence.eyeo.com/display/DP/Using+pre-commit+to+make+better+commits
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      - id: trailing-whitespace
+      - id: check-added-large-files
+  - repo: https://github.com/adrienverge/yamllint.git
+    rev: v1.31.0
+    hooks:
+      - id: yamllint
+        args: [-d relaxed]
+  - repo: https://github.com/bjd2385/pre-commit-gitlabci-lint
+    rev: v1.3.0
+    hooks:
+      - id: gitlabci-lint
+        files: .gitlab-ci.yml
+        # argument: Gitlab Project ID
+        args: ['-p','26591639']
+  - repo: git@gitlab.com:eyeo/distpartners/chromium-precommit-hooks.git
+    rev: a3bce3af2e9eeb6ac14305c872a8fea3c2f5b734
+    hooks:
+      - id: no-forbidden-words-in-branch-name
+      - id: no-forbidden-words-in-diff
+      - id: eyeo-license-headers-check
+      - id: no-cc-includes
+  - repo: "local"
+    hooks:
+      - id: git-cl-format
+        name: git-cl-format
+        description: Correct formatting errors found with git cl format.
+        entry: "third_party/depot_tools/git-cl format"
+        language: system
+        args: ['--upstream=HEAD^']
+        # it seems git cl format doesn't like to be called concurrently
+        # as it modifies .git/config and fails with:
+        # error: could not lock config file .git/config: File exists
+        require_serial: true
+        # git cl format figures out which files to format on its own.
+        pass_filenames: false
