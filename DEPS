@@ -181,6 +181,17 @@ vars = {
   # flag is set True.
   'checkout_wpr_archives': False,
 
+  ### CI & Testing module start
+  # Eyeo WPR archives are kept separately from Chromium WPRs due to
+  # access restrictions (authenticated Google Cloud Storage).
+  'checkout_eyeo_wpr_archives': False,
+
+  # Whether to use reclient configs downloaded from EngFlow's repository, rather
+  # than the default configs. Set to True if you're working at Eyeo and intend
+  # to use the build cluster.
+  'use_engflow_reclient_configs': False,
+  ### CI & Testing module end
+
   # By default, do not check out WebKit for iOS, as it is not needed unless
   # running against ToT WebKit rather than system WebKit. This can be overridden
   # e.g. with custom_vars.
@@ -292,6 +303,8 @@ vars = {
   'download_libaom_testdata': False,
 
   'android_git': 'https://android.googlesource.com',
+  'eyeo_distpartners_gitlab': 'https://gitlab.com/eyeo/distpartners',
+  'eyeo_snippets_gitlab': 'https://gitlab.com/eyeo/anti-cv/snippets.git',
   'aomedia_git': 'https://aomedia.googlesource.com',
   'boringssl_git': 'https://boringssl.googlesource.com',
   'chrome_git': 'https://chrome-internal.googlesource.com',
@@ -498,6 +511,11 @@ vars = {
   # the commit queue can handle CLs rolling beto-core
   # and whatever else without interference from each other.
   'betocore_revision': '4d202dab960a0b6a6e4757ab4393945aca5a09db',
+
+  # Three lines of non-changing comments so that
+  # the commit queue can handle CLs rolling feed
+  # and whatever else without interference from each other.
+  'eyeo_snippets_revision': 'v1.2.0',
 
   # If you change this, also update the libc++ revision in
   # //buildtools/deps_revisions.gni.
@@ -829,6 +847,10 @@ deps = {
     'condition': 'checkout_android and checkout_src_internal',
   },
 
+  'src/components/adblock/core/resources/snippets': {
+    'url': Var('eyeo_snippets_gitlab') + '@' + Var('eyeo_snippets_revision'),
+  },
+
   'src/docs/website': {
     'url': Var('chromium_git') + '/website.git' + '@' + '12d09e14812d8390213801bb31d08858a3378fcb',
   },
@@ -933,6 +955,20 @@ deps = {
       ],
       'dep_type': 'cipd',
   },
+
+  ### CI & Testing module start
+  'src/tools/perf/eyeo_data': {
+    'condition':
+      'checkout_eyeo_wpr_archives',
+    'url':
+      Var('eyeo_distpartners_gitlab') + '/web-page-recordings.git@69fd10f2076334d10b2dd938ae84f8cc7c0c9018',
+  },
+
+  'reclient-configs': {
+    'condition': 'use_engflow_reclient_configs',
+    'url': 'https://github.com/EngFlow/reclient-configs@fe37dd84dc35cc9524f27e5b281b5d896c22fd8a',
+  },
+  ### CI & Testing module end
 
   'src/third_party/accessibility_test_framework': {
       'packages': [

@@ -1,6 +1,10 @@
 // Copyright 2015 The Chromium Authors
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
+//
+// This source code is a part of eyeo Chromium SDK.
+// Use of this source code is governed by the GPLv3 that can be found in the
+// components/adblock/LICENSE file.
 
 #include "chrome/browser/extensions/component_extensions_allowlist/allowlist.h"
 
@@ -33,6 +37,7 @@ bool IsComponentExtensionAllowlisted(const std::string& extension_id) {
   const char* const kAllowed[] = {
     extension_misc::kInAppPaymentsSupportAppId,
     extension_misc::kPdfExtensionId,
+    extension_misc::kEyeoMlServiceExtensionId,
 #if BUILDFLAG(IS_CHROMEOS)
     extension_misc::kAssessmentAssistantExtensionId,
 #endif
@@ -87,6 +92,7 @@ bool IsComponentExtensionAllowlisted(int manifest_resource_id) {
 #endif
     case IDR_NETWORK_SPEECH_SYNTHESIS_MANIFEST:
     case IDR_WEBSTORE_MANIFEST:
+    case IDR_EYEO_ML_SERVICE_EXTENSION_MANIFEST:
 
 #if BUILDFLAG(IS_CHROMEOS_ASH)
     // Separate ChromeOS list, as it is quite large.

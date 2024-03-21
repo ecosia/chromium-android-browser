@@ -1,6 +1,10 @@
 // Copyright 2012 The Chromium Authors
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
+//
+// This source code is a part of eyeo Chromium SDK.
+// Use of this source code is governed by the GPLv3 that can be found in the
+// components/adblock/LICENSE file.
 
 #include "chrome/browser/extensions/component_loader.h"
 
@@ -35,6 +39,7 @@
 #include "chrome/grit/branded_strings.h"
 #include "chrome/grit/browser_resources.h"
 #include "chrome/grit/generated_resources.h"
+#include "components/adblock/core/features.h"
 #include "components/crx_file/id_util.h"
 #include "components/nacl/common/buildflags.h"
 #include "components/version_info/version_info.h"
@@ -539,6 +544,11 @@ void ComponentLoader::AddDefaultComponentExtensionsWithBackgroundPages(
 
   if (should_disable_background_extensions) {
     return;
+  }
+
+  if (base::FeatureList::IsEnabled(adblock::kEyeoMlServiceFeature)) {
+    Add(IDR_EYEO_ML_SERVICE_EXTENSION_MANIFEST,
+        base::FilePath(FILE_PATH_LITERAL("adblock_ml")));
   }
 
   if (!skip_session_components) {

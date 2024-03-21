@@ -1,6 +1,10 @@
 // Copyright 2012 The Chromium Authors
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
+//
+// This source code is a part of eyeo Chromium SDK.
+// Use of this source code is governed by the GPLv3 that can be found in the
+// components/adblock/LICENSE file.
 
 #include "android_webview/browser/aw_contents.h"
 
@@ -63,6 +67,13 @@
 #include "base/threading/thread_restrictions.h"
 #include "base/trace_event/trace_event.h"
 #include "base/trace_event/typed_macros.h"
+#include "components/adblock/content/browser/adblock_webcontents_observer.h"
+#include "components/adblock/content/browser/factories/adblock_telemetry_service_factory.h"
+#include "components/adblock/content/browser/factories/element_hider_factory.h"
+#include "components/adblock/content/browser/factories/resource_classification_runner_factory.h"
+#include "components/adblock/content/browser/factories/session_stats_factory.h"
+#include "components/adblock/content/browser/factories/sitekey_storage_factory.h"
+#include "components/adblock/content/browser/factories/subscription_service_factory.h"
 #include "components/android_autofill/browser/android_autofill_client.h"
 #include "components/android_autofill/browser/android_autofill_manager.h"
 #include "components/android_autofill/browser/autofill_provider_android.h"
@@ -258,6 +269,21 @@ AwContents::AwContents(std::unique_ptr<WebContents> web_contents)
 
   permission_request_handler_ =
       std::make_unique<PermissionRequestHandler>(this, web_contents_.get());
+
+  auto* browser_context = android_webview::AwBrowserContext::GetDefault();
+  adblock::ResourceClassificationRunnerFactory::GetForBrowserContext(
+      browser_context);
+  adblock::AdblockTelemetryServiceFactory::GetForBrowserContext(
+      browser_context);
+  adblock::SessionStatsFactory::GetForBrowserContext(browser_context);
+  adblock::SitekeyStorageFactory::GetForBrowserContext(browser_context);
+  AdblockWebContentObserver::CreateForWebContents(
+      web_contents_.get(),
+      adblock::SubscriptionServiceFactory::GetForBrowserContext(
+          browser_context),
+      adblock::ElementHiderFactory::GetForBrowserContext(browser_context),
+      adblock::SitekeyStorageFactory::GetForBrowserContext(browser_context),
+      std::make_unique<adblock::FrameHierarchyBuilder>());
 
   content::SynchronousCompositor::SetClientForWebContents(
       web_contents_.get(), &browser_view_renderer_);

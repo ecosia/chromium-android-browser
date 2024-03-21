@@ -278,6 +278,8 @@ vs-chromium-project.txt
 /tools/metrics/histograms/metadata/*/*.before.pretty-print.xml
 /tools/metrics/histograms/enums.before.pretty-print.xml
 /tools/bluetooth
+/tools/perf/abp_data
+/tools/perf/eyeo_data
 /tools/reclient
 /tools/skia_goldctl/
 /tools/tryserver

@@ -1,6 +1,9 @@
 # Copyright 2014 The Chromium Authors
 # Use of this source code is governed by a BSD-style license that can be
 # found in the LICENSE file.
+#
+# This source code is a part of eyeo Chromium SDK.
+# Use of this source code is governed by the GPLv3 that can be found in the components/adblock/LICENSE file.
 
 import("//base/allocator/allocator.gni")
 import("//build/buildflag_header.gni")
@@ -153,6 +156,8 @@ static_library("browser") {
     "accessibility/page_colors_factory.h",
     "accessibility/prefers_default_scrollbar_styles_prefs.cc",
     "accessibility/prefers_default_scrollbar_styles_prefs.h",
+    "adblock/adblock_chrome_content_browser_client.cc",
+    "adblock/adblock_chrome_content_browser_client.h",
     "after_startup_task_utils.cc",
     "after_startup_task_utils.h",
     "app_mode/app_mode_utils.cc",
@@ -1995,6 +2000,7 @@ static_library("browser") {
     "//chrome/common:constants",
     "//chrome/services/file_util/public/mojom",
     "//components/account_id",
+    "//components/adblock/content:browser",
     "//components/autofill/core/browser",
     "//components/cross_device/logging",
     "//components/enterprise/buildflags",
@@ -2135,6 +2141,8 @@ static_library("browser") {
     "//chrome/common/notifications",
     "//chrome/installer/util:with_no_strings",
     "//chrome/services/speech/buildflags",
+    "//components/adblock/content:browser",
+    "//components/adblock/core/converter",
     "//components/assist_ranker",
     "//components/autofill/content/browser",
     "//components/autofill/content/common:features",
@@ -3411,6 +3419,12 @@ static_library("browser") {
       "webauthn/android/webauthn_request_delegate_android.cc",
       "webauthn/android/webauthn_request_delegate_android.h",
     ]
+
+    ### Android API module start
+    sources += [ "android/adblock/tab_id_translator_jni.cc" ]
+
+    ### Android API module end
+
     public_deps += [
       "//chrome/android/features/dev_ui:buildflags",
       "//components/image_fetcher/core",

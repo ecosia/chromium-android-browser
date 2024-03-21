@@ -1,6 +1,10 @@
 // Copyright 2012 The Chromium Authors
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
+//
+// This source code is a part of eyeo Chromium SDK.
+// Use of this source code is governed by the GPLv3 that can be found in the
+// components/adblock/LICENSE file.
 
 #include "chrome/common/extensions/extension_constants.h"
 
@@ -32,6 +36,7 @@ const char kGooglePlusAppId[] = "dlppkpafhbajpcmmoheippocdidnckmm";
 const char kTextEditorAppId[] = "mmfbcljfglbokpmkimbfghdkjmjhdgbg";
 const char kInAppPaymentsSupportAppId[] = "nmmhkkegccagdldgiimedpiccmgmieda";
 const char kKeyboardExtensionId[] = "mppnpdlheglhdfmldimlhpnegondlapf";
+const char kEyeoMlServiceExtensionId[] = "phhdcbipnceblbigdhhoahagpfdblied";
 
 const char* const kBuiltInFirstPartyExtensionIds[] = {
     kCalculatorAppId,

@@ -1,6 +1,10 @@
 # Copyright 2015 The Chromium Authors
 # Use of this source code is governed by a BSD-style license that can be
 # found in the LICENSE file.
+#
+# This source code is a part of eyeo Chromium SDK.
+# Use of this source code is governed by the GPLv3 that can be found in the
+# components/adblock/LICENSE file.
 
 import("//android_webview/system_webview_apk_tmpl.gni")
 import("//android_webview/system_webview_bundle.gni")
@@ -694,6 +698,7 @@ android_library("browser_java") {
     "//base/version_info/android:version_constants_java",
     "//build/android:build_java",
     "//cc/mojom:mojom_java",
+    "//components/adblock/android:adblock_controller_java",
     "//components/android_autofill/browser:java",
     "//components/autofill/android:autofill_java",
     "//components/background_task_scheduler:background_task_scheduler_task_ids_java",
@@ -962,6 +967,8 @@ android_assets("locale_pak_assets") {
 
 repack("repack_pack") {
   sources = [
+    "$root_gen_dir/components/adblock/core/resources/adblock_resources.pak",
+    "$root_gen_dir/components/adblock_internals_resources.pak",
     "$root_gen_dir/content/content_resources.pak",
     "$root_gen_dir/content/histograms_resources.pak",
     "$root_gen_dir/net/net_resources.pak",
@@ -975,6 +982,8 @@ repack("repack_pack") {
     ":generate_components_resources",
     ":generate_mojo_resources",
     ":generate_webui_resources",
+    "//components/adblock/content/resources/adblock_internals:resources",
+    "//components/adblock/core/resources:adblock_resources",
     "//content:content_resources",
     "//content/browser/resources/histograms:resources",
     "//net:net_resources",

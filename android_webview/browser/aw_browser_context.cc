@@ -1,6 +1,10 @@
 // Copyright 2012 The Chromium Authors
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
+//
+// This source code is a part of eyeo Chromium SDK.
+// Use of this source code is governed by the GPLv3 that can be found in the
+// components/adblock/LICENSE file.
 
 #include "android_webview/browser/aw_browser_context.h"
 
@@ -42,6 +46,7 @@
 #include "base/task/single_thread_task_runner.h"
 #include "base/task/thread_pool.h"
 #include "base/threading/thread_restrictions.h"
+#include "components/adblock/core/common/adblock_prefs.h"
 #include "components/autofill/core/browser/autocomplete_history_manager.h"
 #include "components/autofill/core/common/autofill_prefs.h"
 #include "components/cdm/browser/media_drm_storage_impl.h"
@@ -249,6 +254,7 @@ AwBrowserContext::UpdateServiceWorkerXRequestedWithAllowListOriginMatcher(
 
 // static
 void AwBrowserContext::RegisterPrefs(PrefRegistrySimple* registry) {
+  adblock::common::prefs::RegisterProfilePrefs(registry);
   safe_browsing::RegisterProfilePrefs(registry);
 
   // Register the Autocomplete Data Retention Policy pref.
@@ -292,6 +298,11 @@ void AwBrowserContext::CreateUserPrefService() {
   // Persisted to ensure client hints can be sent on next page load.
   persistent_prefs.insert(prefs::kClientHintsCachedPerOriginMap);
 
+  // These prefs go in the JsonPrefStore, and will persist across runs.
+  for (auto& pref_name : adblock::common::prefs::GetPrefs()) {
+    persistent_prefs.insert(pref_name.data());
+  }
+
   pref_service_factory.set_user_prefs(base::MakeRefCounted<SegregatedPrefStore>(
       base::MakeRefCounted<InMemoryPrefStore>(),
       base::MakeRefCounted<JsonPrefStore>(GetPrefStorePath()),
@@ -323,6 +334,7 @@ void AwBrowserContext::CreateUserPrefService() {
 
   if (IsDefaultBrowserContext()) {
     MigrateLocalStatePrefs();
+    MigrateEyeoLocalStatePrefs();
   }
 
   user_prefs::UserPrefs::Set(this, user_pref_service_.get());
@@ -337,6 +349,17 @@ void AwBrowserContext::MigrateLocalStatePrefs() {
   user_pref_service_->Set(cdm::prefs::kMediaDrmStorage,
                           local_state->GetValue(cdm::prefs::kMediaDrmStorage));
   local_state->ClearPref(cdm::prefs::kMediaDrmStorage);
+}
+
+void AwBrowserContext::MigrateEyeoLocalStatePrefs() {
+  PrefService* local_state = AwBrowserProcess::GetInstance()->local_state();
+  for (auto& pref_name : adblock::common::prefs::GetPrefs()) {
+    if (local_state->HasPrefPath(pref_name.data())) {
+      user_pref_service_->Set(pref_name.data(),
+                              local_state->GetValue(pref_name.data()));
+      local_state->ClearPref(pref_name.data());
+    }
+  }
 }
 
 // static

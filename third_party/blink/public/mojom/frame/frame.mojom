@@ -1,6 +1,10 @@
 // Copyright 2019 The Chromium Authors
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
+//
+// This source code is a part of eyeo Chromium SDK.
+// Use of this source code is governed by the GPLv3 that can be found in the components/adblock/LICENSE file.
+
 
 module blink.mojom;
 
@@ -896,6 +900,10 @@ interface LocalFrame {
   // Tells the renderer to perform the given action on the plugin location at
   // the given point in the view coordinate space.
   PluginActionAt(gfx.mojom.Point location, blink.mojom.PluginActionType action);
+
+  // https://gitlab.com/eyeo/adblockplus/chromium/issues/35
+  // Request for the renderer to insert user stylesheet.
+  InsertAbpElemhideStylesheet(string stylesheet);
 
   // Request to continue running the sequential focus navigation algorithm in
   // this frame. |source_frame_token| identifies the frame that issued this

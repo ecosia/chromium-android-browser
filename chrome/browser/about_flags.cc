@@ -1,6 +1,10 @@
 // Copyright 2012 The Chromium Authors
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
+//
+// This source code is a part of eyeo Chromium SDK.
+// Use of this source code is governed by the GPLv3 that can be found in the
+// components/adblock/LICENSE file.
 
 // Instructions for adding new entries to this file:
 // https://chromium.googlesource.com/chromium/src/+/main/docs/how_to_add_your_feature_flag.md#step-2_adding-the-feature-flag-to-the-chrome_flags-ui
@@ -71,6 +75,7 @@
 #include "chrome/common/chrome_features.h"
 #include "chrome/common/chrome_switches.h"
 #include "chrome/common/companion/visual_query/features.h"
+#include "components/adblock/core/features.h"
 #include "components/assist_ranker/predictor_config_definitions.h"
 #include "components/autofill/content/common/content_autofill_features.h"
 #include "components/autofill/core/browser/autofill_experiments.h"
@@ -10909,6 +10914,10 @@ const FeatureEntry kFeatureEntries[] = {
      flag_descriptions::kContentSettingsPartitioningDescription, kOsAll,
      FEATURE_VALUE_TYPE(
          content_settings::features::kContentSettingsPartitioning)},
+
+    {"eyeo-ml-service", flag_descriptions::kEyeoMlServiceName,
+     flag_descriptions::kEyeoMlServiceDescription, kOsDesktop,
+     FEATURE_VALUE_TYPE(adblock::kEyeoMlServiceFeature)},
 
 #if BUILDFLAG(IS_ANDROID)
     {"enable-vertical-automotive-back-button-toolbar",

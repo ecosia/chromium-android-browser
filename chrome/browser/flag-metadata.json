@@ -1,3 +1,6 @@
+// This source code is a part of eyeo Chromium SDK.
+// Use of this source code is governed by the GPLv3 that can be found in the components/adblock/LICENSE file.
+
 // This file lists metadata for chrome://flags entries. This metadata is used to
 // automatically expire flags, as part of the review process, and to clean up
 // flags that have become obsolete or unused. For more details, see:
@@ -4111,6 +4114,11 @@
     "name": "extract-related-searches-from-prefetched-zps-response",
     "owners": [ "khalidpeer@chromium.org", "chrome-journeys@google.com" ],
     "expiry_milestone": 130
+  },
+  {
+    "name": "eyeo-ml-service",
+    "owners": [ "p.kolomiets@eyeo.com" ],
+    "expiry_milestone": -1
   },
   {
     "name": "fast-pair",

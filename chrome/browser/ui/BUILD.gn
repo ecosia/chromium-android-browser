@@ -1,6 +1,9 @@
 # Copyright 2014 The Chromium Authors
 # Use of this source code is governed by a BSD-style license that can be
 # found in the LICENSE file.
+#
+# This source code is a part of eyeo Chromium SDK.
+# Use of this source code is governed by the GPLv3 that can be found in the components/adblock/LICENSE file.
 
 import("//build/config/buildflags_paint_preview.gni")
 import("//build/config/chromeos/ui_mode.gni")
@@ -463,7 +466,11 @@ static_library("ui") {
     "//components/about_ui",
     "//components/access_code_cast/common:metrics",
     "//components/account_id",
+<<<<<<< HEAD
     "//components/affiliations/core/browser:affiliations",
+=======
+    "//components/adblock/content:browser",
+>>>>>>> 6a7140cafda8d... Squashed commits
     "//components/autofill/content/browser",
     "//components/autofill/content/browser:risk_proto",
     "//components/autofill/core/browser",
@@ -1026,6 +1033,14 @@ static_library("ui") {
       "//ui/android",
       "//url",
     ]
+
+    ### Android API module start
+    deps += [
+      "//components/adblock/android:java_bindings",
+      "//components/adblock/android:jni_headers",
+    ]
+
+    ### Android API module end
   } else {
     # !is_android
     sources += [

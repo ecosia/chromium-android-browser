@@ -1,6 +1,10 @@
 // Copyright 2012 The Chromium Authors
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
+//
+// This source code is a part of eyeo Chromium SDK.
+// Use of this source code is governed by the GPLv3 that can be found in the
+// components/adblock/LICENSE file.
 
 #include "chrome/test/base/chrome_test_launcher.h"
 
@@ -25,6 +29,7 @@
 #include "base/time/time.h"
 #include "build/build_config.h"
 #include "build/chromeos_buildflags.h"
+#include "chrome/browser/adblock/adblock_chrome_content_browser_client.h"
 #include "chrome/browser/chrome_content_browser_client.h"
 #include "chrome/browser/metrics/chrome_feature_list_creator.h"
 #include "chrome/common/chrome_constants.h"
@@ -153,7 +158,7 @@ ChromeTestLauncherDelegate::GetUserDataDirectoryCommandLineSwitch() {
 // watch for long-running tasks and produce a useful timeout message in order to
 // find the cause of flaky timeout tests.
 class BrowserTestChromeContentBrowserClient
-    : public ChromeContentBrowserClient {
+    : public AdblockChromeContentBrowserClient {
  public:
   bool CreateThreadPool(base::StringPiece name) override {
     base::test::TaskEnvironment::CreateThreadPool();

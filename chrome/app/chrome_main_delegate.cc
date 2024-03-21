@@ -1,6 +1,10 @@
 // Copyright 2012 The Chromium Authors
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
+//
+// This source code is a part of eyeo Chromium SDK.
+// Use of this source code is governed by the GPLv3 that can be found in the
+// components/adblock/LICENSE file.
 
 #include "chrome/app/chrome_main_delegate.h"
 
@@ -41,6 +45,7 @@
 #include "base/trace_event/trace_event_impl.h"
 #include "build/build_config.h"
 #include "build/chromeos_buildflags.h"
+#include "chrome/browser/adblock/adblock_chrome_content_browser_client.h"
 #include "chrome/browser/buildflags.h"
 #include "chrome/browser/chrome_content_browser_client.h"
 #include "chrome/browser/chrome_resource_bundle_helper.h"
@@ -1886,7 +1891,7 @@ content::ContentClient* ChromeMainDelegate::CreateContentClient() {
 content::ContentBrowserClient*
 ChromeMainDelegate::CreateContentBrowserClient() {
   chrome_content_browser_client_ =
-      std::make_unique<ChromeContentBrowserClient>();
+      std::make_unique<AdblockChromeContentBrowserClient>();
   return chrome_content_browser_client_.get();
 }
 

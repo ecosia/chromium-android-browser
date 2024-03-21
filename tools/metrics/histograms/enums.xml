@@ -17,6 +17,9 @@ https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histogra
 Please pretty-print and validate your edits by running the pretty_print.py
 and validate_format.py scripts in the same directory as this file before
 uploading your change for review.  These are checked by presubmit scripts.
+
+This source code is a part of eyeo Chromium SDK.
+Use of this source code is governed by the GPLv3 that can be found in the components/adblock/LICENSE file.
 -->
 
 <histogram-configuration>
@@ -16932,6 +16935,7 @@ from previous Chrome versions.
   <int value="-1718644168" label="SharingHubLinkToggle:disabled"/>
   <int value="-1718414372" label="ComposeTextSelection:enabled"/>
   <int value="-1718074215" label="HomepageSettingsUIConversion:enabled"/>
+  <int value="-1717089517" label="EyeoMlService:disabled"/>
   <int value="-1716654100" label="tab-capture-downscale-quality"/>
   <int value="-1716140224" label="EnableEmbeddedAssistantUI:disabled"/>
   <int value="-1715642957" label="NtpModulesRedesignedLayout:enabled"/>
@@ -22557,6 +22561,7 @@ from previous Chrome versions.
   <int value="851616920" label="EnableTLS13EarlyData:disabled"/>
   <int value="852313529" label="RTCUnifiedPlanByDefault:disabled"/>
   <int value="852703179" label="OptimizeNetworkBuffers:enabled"/>
+  <int value="852703990" label="EyeoMlService:enabled"/>
   <int value="853279705"
       label="DesktopPWAsAdditionalWindowingControls:disabled"/>
   <int value="854294457" label="EnableOmniboxRichEntities:disabled"/>

@@ -1,6 +1,10 @@
 // Copyright 2019 The Chromium Authors
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
+//
+// This source code is a part of eyeo Chromium SDK.
+// Use of this source code is governed by the GPLv3 that can be found in the
+// components/adblock/LICENSE file.
 
 #include "content/public/test/fake_local_frame.h"
 
@@ -94,6 +98,9 @@ void FakeLocalFrame::RequestVideoFrameAt(const gfx::Point& window_point,
 
 void FakeLocalFrame::PluginActionAt(const gfx::Point& location,
                                     blink::mojom::PluginActionType action) {}
+
+void FakeLocalFrame::InsertAbpElemhideStylesheet(
+    const std::string& stylesheet) {}
 
 void FakeLocalFrame::AdvanceFocusInFrame(
     blink::mojom::FocusType focus_type,

@@ -2,6 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 //
+// This source code is a part of eyeo Chromium SDK.
+// Use of this source code is governed by the GPLv3 that can be found in the components/adblock/LICENSE file.
+//
 // This file contains a list of flags that are permitted to have the
 // never-expire flag set (i.e., expiration milestone set to -1). This is a
 // separate file from flag-metadata.json so that that file can have per-file
@@ -80,6 +83,7 @@
   "enable-zero-copy",
   "extensions-on-chrome-urls",
   "external-navigation-debug-logs",
+  "eyeo-ml-service",
   "force-color-profile",
   "force-effective-connection-type",
   "force-show-update-menu-badge",

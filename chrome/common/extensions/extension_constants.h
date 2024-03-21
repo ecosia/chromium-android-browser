@@ -1,6 +1,10 @@
 // Copyright 2012 The Chromium Authors
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
+//
+// This source code is a part of eyeo Chromium SDK.
+// Use of this source code is governed by the GPLv3 that can be found in the
+// components/adblock/LICENSE file.
 
 #ifndef CHROME_COMMON_EXTENSIONS_EXTENSION_CONSTANTS_H_
 #define CHROME_COMMON_EXTENSIONS_EXTENSION_CONSTANTS_H_
@@ -61,6 +65,9 @@ extern const char kInAppPaymentsSupportAppId[];
 
 // The extension id of virtual keyboard extension.
 extern const char kKeyboardExtensionId[];
+
+// The extension id of adblock ml extension.
+extern const char kEyeoMlServiceExtensionId[];
 
 // A list of all the first party extension IDs, last entry is null.
 extern const char* const kBuiltInFirstPartyExtensionIds[];

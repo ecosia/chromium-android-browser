@@ -1,6 +1,10 @@
 // Copyright 2017 The Chromium Authors
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
+//
+// This source code is a part of eyeo Chromium SDK.
+// Use of this source code is governed by the GPLv3 that can be found in the
+// components/adblock/LICENSE file.
 
 #include "chrome/browser/flag_descriptions.h"
 
@@ -296,6 +300,10 @@ const char kEnableBenchmarkingChoiceDefaultFeatureStates[] =
     "Default Feature States";
 const char kEnableBenchmarkingChoiceMatchFieldTrialTestingConfig[] =
     "Match Field Trial Testing Config";
+
+extern const char kEyeoMlServiceName[] = "Eyeo ML Service";
+extern const char kEyeoMlServiceDescription[] =
+    "Enable inference service for machine learning ad filtering snippets";
 
 const char kPreloadingOnPerformancePageName[] =
     "Preloading Settings on Performance Page";

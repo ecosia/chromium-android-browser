@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+This source code is a part of eyeo Chromium SDK.
+Use of this source code is governed by the GPLv3 that can be found in the components/adblock/LICENSE file.
+-->
 <grit latest_public_release="0" current_release="1" output_all_resource_defines="false">
   <outputs>
     <output filename="grit/browser_resources.h" type="rc_header">
@@ -246,6 +250,8 @@
         <!-- Chrome Cart -->
         <part file="cart/resources/cart_resources.grdp" />
       </if>
+
+      <include name="IDR_EYEO_ML_SERVICE_EXTENSION_MANIFEST" file="resources\adblock_ml\manifest.json" type="BINDATA" />
     </includes>
   </release>
 </grit>

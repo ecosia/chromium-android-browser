@@ -1,6 +1,10 @@
 // Copyright 2017 The Chromium Authors
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
+//
+// This source code is a part of eyeo Chromium SDK.
+// Use of this source code is governed by the GPLv3 that can be found in the
+// components/adblock/LICENSE file.
 
 #ifndef CHROME_BROWSER_FLAG_DESCRIPTIONS_H_
 #define CHROME_BROWSER_FLAG_DESCRIPTIONS_H_
@@ -181,6 +185,9 @@ extern const char kEnableBenchmarkingDescription[];
 extern const char kEnableBenchmarkingChoiceDisabled[];
 extern const char kEnableBenchmarkingChoiceDefaultFeatureStates[];
 extern const char kEnableBenchmarkingChoiceMatchFieldTrialTestingConfig[];
+
+extern const char kEyeoMlServiceName[];
+extern const char kEyeoMlServiceDescription[];
 
 #if BUILDFLAG(USE_FONTATIONS_BACKEND)
 extern const char kFontationsFontBackendName[];

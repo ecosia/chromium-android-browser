@@ -169,6 +169,7 @@ class AwBrowserContext : public content::BrowserContext,
   friend class AwBrowserContextIoThreadHandle;
   void CreateUserPrefService();
   void MigrateLocalStatePrefs();
+  void MigrateEyeoLocalStatePrefs();
 
   // Return the IO thread client for this browser context that should be used
   // by service workers. This method should never be called except by

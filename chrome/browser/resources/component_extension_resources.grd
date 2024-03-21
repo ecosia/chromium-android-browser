@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+This source code is a part of eyeo Chromium SDK.
+Use of this source code is governed by the GPLv3 that can be found in the components/adblock/LICENSE file.
+-->
 <!-- This comment is only here because changes to resources are not picked up
      without changes to the corresponding grd file.  -->
 <grit latest_public_release="0" current_release="1" output_all_resource_defines="false">
@@ -74,6 +78,8 @@
       <include name="IDS_READING_MODE_DARK_PNG" file="side_panel/read_anything/images/read_anything_dark.png" type="BINDATA" />
       <include name="IDS_READING_MODE_YELLOW_PNG" file="side_panel/read_anything/images/read_anything_yellow.png" type="BINDATA" />
       <include name="IDS_READING_MODE_BLUE_PNG" file="side_panel/read_anything/images/read_anything_blue.png" type="BINDATA" />
+
+      <include name="IDR_EYEO_ML_SERVICE_JS" file="adblock_ml/service.js" type="BINDATA" />
     </includes>
 
     <!-- Game Controls lottie json files -->

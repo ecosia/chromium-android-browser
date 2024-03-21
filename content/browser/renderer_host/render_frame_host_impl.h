@@ -1,6 +1,10 @@
 // Copyright 2013 The Chromium Authors
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
+//
+// This source code is a part of eyeo Chromium SDK.
+// Use of this source code is governed by the GPLv3 that can be found in the
+// components/adblock/LICENSE file.
 
 #ifndef CONTENT_BROWSER_RENDERER_HOST_RENDER_FRAME_HOST_IMPL_H_
 #define CONTENT_BROWSER_RENDERER_HOST_RENDER_FRAME_HOST_IMPL_H_
@@ -435,6 +439,10 @@ class CONTENT_EXPORT RenderFrameHostImpl
                                const std::u16string& method_name,
                                base::Value::List arguments,
                                JavaScriptResultCallback callback) override;
+
+  // https://gitlab.com/eyeo/adblockplus/chromium/issues/35
+  void InsertAbpElemhideStylesheet(const std::string& stylesheet) override;
+
   void ExecuteJavaScript(const std::u16string& javascript,
                          JavaScriptResultCallback callback) override;
   void ExecuteJavaScriptInIsolatedWorld(const std::u16string& javascript,
