@@ -1,7 +1,7 @@
 # Release Notes
 
 ## eyeo Browser Ad Filtering Solution 123.0
-* Updated to Chromium 123.0.6312.4
+* Updated to Chromium 123.0.6312.59
 * Added support for Content Shell (DPD-2433)
 * Added ContentShell JNI and Android tests (DPD-2542)
 * Fixed redundant rewrite filter check for navigation (DPD-2490)
@@ -10,12 +10,14 @@
 * Fixed generating the schema hash (DPD-2504)
 * Fixed race condition wrt building frame hierarchy which affected allowlisting (DPD-2291)
 * Improved element hiding script for blocked resource (DPD-2451)
+* Improved element hiding script to skip unsupported CSS selectors (DPD-2543)
 * Updated snippets library to version 1.2.0 (DPD-2567)
 * Reduced code duplication in AdblockContentBrowserClients (DPD-2435)
 * Removed redundant adblock prefs registration (DPD-2468)
 * Separated pack for adblock core resources (DPD-2477)
 * Limited our APIs to only allowlisted extensions (DPD-2465)
 * Moved implementation of chrome://adblock-internals under components (DPD-2475)
+* Enabled filtering and element hiding for localhost urls (DPD-2575)
 
 ## eyeo Browser Ad Filtering Solution 122.0
 * Updated to Chromium 122.0.6261.5

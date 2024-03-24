@@ -181,11 +181,8 @@ test("components_unittests") {
 
   deps = [
     "//base",
-<<<<<<< HEAD
-    "//components/affiliations/core/browser:unit_tests",
-=======
     "//components/adblock:unit_tests",
->>>>>>> 6a7140cafda8d... Squashed commits
+    "//components/affiliations/core/browser:unit_tests",
     "//components/aggregation_service:unit_tests",
     "//components/apdu:unit_tests",
     "//components/assist_ranker:unit_tests",

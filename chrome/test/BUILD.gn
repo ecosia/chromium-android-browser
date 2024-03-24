@@ -1742,12 +1742,9 @@ if (!is_android) {
       "//chrome/test/data/webui/mojo:mojo_bindings",
       "//chrome/test/media_router/access_code_cast:access_code_cast_integration_base",
       "//chrome/test/payments:test_support",
-<<<<<<< HEAD
+      "//components/adblock/content:browser",
       "//components/affiliations/core/browser:affiliation_proto",
       "//components/affiliations/core/browser:test_support",
-=======
-      "//components/adblock/content:browser",
->>>>>>> 6a7140cafda8d... Squashed commits
       "//components/autofill/content/browser:autofill_shared_storage_proto",
       "//components/autofill/content/browser:risk_proto",
       "//components/autofill/content/browser:test_support",
@@ -6762,12 +6759,9 @@ test("unit_tests") {
     "//chrome/renderer/companion/visual_query:unit_tests",
     "//chrome/services/file_util:unit_tests",
     "//components/account_id",
-<<<<<<< HEAD
-    "//components/affiliations/core/browser:test_support",
-=======
     "//components/adblock/content/browser:test_support",
     "//components/adblock/core:test_support",
->>>>>>> 6a7140cafda8d... Squashed commits
+    "//components/affiliations/core/browser:test_support",
     "//components/assist_ranker/proto",
     "//components/autofill/content/browser:test_support",
     "//components/background_sync",
