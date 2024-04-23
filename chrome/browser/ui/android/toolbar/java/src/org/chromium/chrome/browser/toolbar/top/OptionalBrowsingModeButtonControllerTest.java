@@ -13,6 +13,7 @@ import static org.mockito.Mockito.verify;
 import android.content.res.Resources;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.ArgumentCaptor;
@@ -73,6 +74,7 @@ public class OptionalBrowsingModeButtonControllerTest {
         verify(mButtonDataProvider3, times(1)).addObserver(mObserverCaptor3.capture());
     }
 
+    @Ignore   // Ecosia: custom NTP MOB-1894
     @Test
     public void allProvidersEligible_highestPrecedenceShown() {
         mButtonController.updateButtonVisibility();
@@ -89,6 +91,7 @@ public class OptionalBrowsingModeButtonControllerTest {
         verify(mToolbarLayout, times(0)).updateOptionalButton(any());
     }
 
+    @Ignore   // Ecosia: custom NTP MOB-1894
     @Test
     public void noProvidersEligible_oneBecomesEligible() {
         mNewTabButtonData.setCanShow(false);
@@ -103,6 +106,7 @@ public class OptionalBrowsingModeButtonControllerTest {
         verify(mToolbarLayout, times(1)).updateOptionalButton(mShareButtonData);
     }
 
+    @Ignore   // Ecosia: custom NTP MOB-1894
     @Test
     public void higherPrecedenceBecomesEligible() {
         mNewTabButtonData.setCanShow(false);
@@ -120,6 +124,7 @@ public class OptionalBrowsingModeButtonControllerTest {
         verify(mToolbarLayout, times(1)).updateOptionalButton(mNewTabButtonData);
     }
 
+    @Ignore   // Ecosia: custom NTP MOB-1894
     @Test
     public void lowerPrecedenceBecomesEligible() {
         mShareButtonData.setCanShow(false);
@@ -134,6 +139,7 @@ public class OptionalBrowsingModeButtonControllerTest {
         verify(mToolbarLayout, times(1)).updateOptionalButton(mNewTabButtonData);
     }
 
+    @Ignore   // Ecosia: custom NTP MOB-1894
     @Test
     public void updateCurrentlyShowingProvider() {
         mButtonController.updateButtonVisibility();
@@ -149,6 +155,7 @@ public class OptionalBrowsingModeButtonControllerTest {
         verify(mToolbarLayout, times(1)).updateOptionalButton(mShareButtonData);
     }
 
+    @Ignore   // Ecosia: custom NTP MOB-1894
     @Test
     public void updateCurrentlyNotShowingProvider() {
         mButtonController.updateButtonVisibility();
@@ -163,6 +170,7 @@ public class OptionalBrowsingModeButtonControllerTest {
         verify(mToolbarLayout, times(0)).updateOptionalButton(newButtonData);
     }
 
+    @Ignore   // Ecosia: custom NTP MOB-1894
     @Test
     public void noProvidersEligible_hideCalled() {
         mButtonController.updateButtonVisibility();
@@ -175,6 +183,7 @@ public class OptionalBrowsingModeButtonControllerTest {
         verify(mToolbarLayout, times(1)).hideOptionalButton();
     }
 
+    @Ignore   // Ecosia: custom NTP MOB-1894
     @Test
     public void hintContradictsTrueValue() {
         mNewTabButtonData.setCanShow(false);
@@ -193,6 +202,7 @@ public class OptionalBrowsingModeButtonControllerTest {
         verify(mButtonDataProvider3, times(1)).removeObserver(mObserverCaptor3.getValue());
     }
 
+    @Ignore   // Ecosia: custom NTP MOB-1894
     @Test
     public void updateOptionalButtonIsOnEnabled() {
         mNewTabButtonData.setEnabled(false);

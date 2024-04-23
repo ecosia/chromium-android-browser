@@ -25,6 +25,7 @@ import android.widget.PopupMenu;
 import org.hamcrest.Matchers;
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -231,6 +232,7 @@ public class TabbedAppMenuPropertiesDelegateUnitTest {
         ShoppingServiceFactory.setShoppingServiceForTesting(mShoppingService);
     }
 
+    @Ignore("Ecosia : Disabled Help option")
     @Test
     @Config(qualifiers = "sw320dp")
     public void testPageMenuItems_Phone_RegularPage_enterprise_user() {
@@ -259,13 +261,14 @@ public class TabbedAppMenuPropertiesDelegateUnitTest {
             R.id.auto_dark_web_contents_row_menu_id,
             R.id.divider_line_id,
             R.id.preferences_id,
-            R.id.help_id,
+            R.id.ecosia_help_id,   // Ecosia: Add help id
             R.id.managed_by_divider_line_id,
             R.id.managed_by_menu_id
         };
         assertMenuItemsAreEqual(menu, expectedItems);
     }
 
+    @Ignore("Ecosia: Multiwindow feature is disabled")
     @Test
     public void testPageMenuItems_multiWindowMenu_featureEnabled() {
         setUpMocksForPageMenu();
@@ -296,6 +299,7 @@ public class TabbedAppMenuPropertiesDelegateUnitTest {
         assertTestedAllCombinations();
     }
 
+    @Ignore("Ecosia: Multiwindow feature is disabled")
     @Test
     public void testPageMenuItems_instanceSwitcher_newWindow() {
         setUpMocksForPageMenu();
@@ -344,6 +348,7 @@ public class TabbedAppMenuPropertiesDelegateUnitTest {
         assertTrue(isMenuVisible(menu, R.id.move_to_other_window_menu_id));
     }
 
+    @Ignore("Ecosia: Multiwindow feature is disabled")
     @Test
     public void testPageMenuItems_instanceSwitcher_manageAllWindow() {
         setUpMocksForPageMenu();
@@ -362,16 +367,21 @@ public class TabbedAppMenuPropertiesDelegateUnitTest {
         assertTrue(isMenuVisible(menu2, R.id.manage_all_windows_menu_id));
     }
 
+    @Ignore("Ecosia : Disabled universal_install")
     @Test
     @EnableFeatures({ChromeFeatureList.PWA_UNIVERSAL_INSTALL_UI})
     public void testPageMenuItems_universalInstall() {
         setUpMocksForPageMenu();
         Menu menu = createMenuForMultiWindow();
+        /* Ecosia : Disabled universal_install
         assertTrue(isMenuVisible(menu, R.id.universal_install));
+        */
 
         assertFalse(isMenuVisible(menu, R.id.add_to_homescreen_id));
+        /* Ecosia : Disabled install_webapp_id, open_webapk_id
         assertFalse(isMenuVisible(menu, R.id.install_webapp_id));
         assertFalse(isMenuVisible(menu, R.id.open_webapk_id));
+        */
     }
 
     @Test
@@ -418,6 +428,7 @@ public class TabbedAppMenuPropertiesDelegateUnitTest {
                 mTabbedAppMenuPropertiesDelegate.getFooterResourceId());
     }
 
+    @Ignore("Ecosia: Web feed is disabled")
     @Test
     public void getFooterResourceId_httpsUrl_returnsWebFeedMenuItem() {
         setUpMocksForWebFeedFooter();
@@ -440,6 +451,7 @@ public class TabbedAppMenuPropertiesDelegateUnitTest {
                 mTabbedAppMenuPropertiesDelegate.getFooterResourceId());
     }
 
+    @Ignore("Ecosia: Web feed is disabled")
     @Test
     public void getFooterResourceId_dseOn_returnsWebFeedMenuItem() {
         setUpMocksForWebFeedFooter();

@@ -402,6 +402,11 @@ void SetUsesSplitStoresAndUPMForLocal(
   last_migration_attempt_failed =
       split_stores_and_local_upm == kOffAndMigrationPending ? true : false;
 
+  // Ecosia: skip MaybeDeactivateSplitStoresAndLocalUpm that includes MaybeDeleteLoginDataFiles which deletes login db
+  if ((true)) {
+      return;
+  }
+
   if (split_stores_and_local_upm != kOff) {
     MaybeDeactivateSplitStoresAndLocalUpm(pref_service, login_db_directory);
   } else {

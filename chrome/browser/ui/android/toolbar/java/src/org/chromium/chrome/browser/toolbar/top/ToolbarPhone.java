@@ -42,6 +42,7 @@ import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 import androidx.appcompat.content.res.AppCompatResources;
 import androidx.appcompat.graphics.drawable.DrawableWrapperCompat;
+import androidx.core.content.ContextCompat;
 import androidx.core.content.res.ResourcesCompat;
 import androidx.core.widget.ImageViewCompat;
 
@@ -416,13 +417,19 @@ public class ToolbarPhone extends ToolbarLayout
                         context.getDrawable(
                                 R.drawable.modern_toolbar_text_box_background_with_primary_color);
         drawable.mutate();
+        /* Ecosia: override location bar background color changes
         drawable.setTint(ChromeColors.getSurfaceColor(context, R.dimen.toolbar_text_box_elevation));
+        */
 
         return drawable;
     }
 
     /** Set the background color of the location bar to appropriately match the theme color. */
     private void updateModernLocationBarColor(@ColorInt int color) {
+        // Ecosia: override location bar background color changes for non-incognito
+        if (!isIncognitoBranded()) {
+            color = ContextCompat.getColor(getContext(), R.color.ecosia_main_background);
+        }
         if (mCurrentLocationBarColor == color) return;
         mCurrentLocationBarColor = color;
         mLocationBarBackground.setTint(color);

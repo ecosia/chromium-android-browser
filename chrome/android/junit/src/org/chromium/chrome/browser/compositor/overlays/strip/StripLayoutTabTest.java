@@ -18,6 +18,7 @@ import androidx.test.core.app.ApplicationProvider;
 import com.google.android.material.color.MaterialColors;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.annotation.Config;
@@ -52,6 +53,7 @@ public class StripLayoutTabTest {
         mIncognitoTab = createStripLayoutTab(true);
     }
 
+    @Ignore("Ecosia: Incognito mode is customized")
     @Test
     public void testGetTint() {
         @ColorInt int expectedColor;

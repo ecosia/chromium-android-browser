@@ -1026,6 +1026,12 @@ public class ToolbarManager
                             ntp.setUrlFocusAnimationsDisabled(true);
                             onTabOrModelChanged();
                         }
+                        //Ecosia : MOB-3102 Fix for Home button appearing in NTP due to HomePagePolicy
+                        if(UrlUtilities.isNtpUrl(params.getUrl()) && mControlContainer != null) {
+                            mControlContainer.findViewById(R.id.home_button).setVisibility(View.GONE);
+                        } else if(mControlContainer != null) {
+                            mControlContainer.findViewById(R.id.home_button).setVisibility(View.VISIBLE);
+                        }
                     }
 
                     private boolean hasPendingNonNtpNavigation(Tab tab) {
@@ -1116,7 +1122,13 @@ public class ToolbarManager
                     public void bookmarkModelChanged() {
                         updateBookmarkButtonStatus();
                     }
-                };
+
+            		// Ecosia: Bookmark Import / Export
+            		@Override
+            		public void bookmarkModelNeedsReloadAfterBookmarksImport() {
+                		// only required after successful bookmark import
+            		}
+        		};
 
         mBrowserControlsObserver =
                 new BrowserControlsStateProvider.Observer() {
@@ -1400,6 +1412,11 @@ public class ToolbarManager
         HomepageManager.getInstance().onMenuClick(context);
         if (isNtp) {
             BrowserUiUtils.recordModuleLongClickHistogram(ModuleTypeOnStartAndNtp.HOME_BUTTON);
+
+        }
+        //Ecosia : MOB-3102 Fix for Home button appearing in NTP due to HomePagePolicy
+        if(mControlContainer != null) {
+            mControlContainer.findViewById(R.id.home_button).setVisibility(View.GONE);
         }
     }
 
@@ -1727,7 +1744,9 @@ public class ToolbarManager
                 && !currentTab.getUrl().isEmpty()) {
             mControlContainer.setReadyForBitmapCapture(true);
         }
-
+        //Ecosia : MOB-3102 Fix for Home button appearing in NTP due to HomePagePolicy
+        if(mControlContainer != null)
+            mControlContainer.findViewById(R.id.home_button).setVisibility(View.GONE);
         TraceEvent.end("ToolbarManager.initializeWithNative");
     }
 

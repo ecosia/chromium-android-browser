@@ -16,7 +16,7 @@ class DefaultBrowserPromoMetrics {
      * @param currentState The {@link DefaultBrowserState} when the dialog is shown.
      */
     static void recordRoleManagerShow(@DefaultBrowserState int currentState) {
-        assert currentState != DefaultBrowserState.CHROME_DEFAULT;
+        assert currentState != DefaultBrowserState.ECOSIA_DEFAULT;
         RecordHistogram.recordEnumeratedHistogram(
                 "Android.DefaultBrowserPromo.RoleManagerShown",
                 currentState,
@@ -32,7 +32,7 @@ class DefaultBrowserPromoMetrics {
      */
     static void recordOutcome(
             @DefaultBrowserState int oldState, @DefaultBrowserState int newState, int promoCount) {
-        assert oldState != DefaultBrowserState.CHROME_DEFAULT;
+        assert oldState != DefaultBrowserState.ECOSIA_DEFAULT;
         String name =
                 oldState == DefaultBrowserState.NO_DEFAULT
                         ? "Android.DefaultBrowserPromo.Outcome.NoDefault"

@@ -92,6 +92,7 @@ public class IncognitoDescriptionView extends LinearLayout {
     protected void onFinishInflate() {
         super.onFinishInflate();
 
+        /* Ecosia: incognito changes
         mWidthDp = getContext().getResources().getConfiguration().screenWidthDp;
         mHeightDp = getContext().getResources().getConfiguration().screenHeightDp;
 
@@ -111,6 +112,7 @@ public class IncognitoDescriptionView extends LinearLayout {
         mBulletpointsContainer = findViewById(R.id.new_tab_incognito_bulletpoints_container);
 
         adjustView();
+        */
     }
 
     @Override
@@ -121,7 +123,9 @@ public class IncognitoDescriptionView extends LinearLayout {
         if (mWidthDp != config.screenWidthDp || mHeightDp != config.screenHeightDp) {
             mWidthDp = config.screenWidthDp;
             mHeightDp = config.screenHeightDp;
+            /* Ecosia: incognito changes
             adjustView();
+            */
         }
 
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);

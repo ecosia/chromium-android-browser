@@ -1,542 +1,542 @@
-<?xml version="1.0" ?>
+<?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE translationbundle>
 <translationbundle lang="lv">
 <translation id="1026101648481255140">Atsākt instalēšanu</translation>
-<translation id="1029669172902658969">Atkārtoti palaist, lai atjauninātu &amp;Chromium OS</translation>
-<translation id="1040916596585577953">Chromium komanda iesaka pārskatīt šo paplašinājumu.</translation>
+<translation id="8933665254023068908">Atkārtoti palaist, lai atjauninātu &amp;Ecosia OS</translation>
+<translation id="6566258574866003581">Ecosia komanda iesaka pārskatīt šo paplašinājumu.</translation>
 <translation id="1042552502243217427">Kad vietnē tiek piedāvāts privāti iepriekš ielādēt saites lapā, pārlūks Chromium izmanto Google serverus. Tādējādi jūsu identitāte tiek slēpta no iepriekš ielādētās lapas īpašniekiem, taču Google uzzina, kādas lapas tiek iepriekš ielādētas.</translation>
 <translation id="1065672644894730302">Jūsu preferences nevar nolasīt. Dažas funkcijas var nebūt pieejamas, un preferenču izmaiņas netiks saglabātas</translation>
-<translation id="1083934481477628225">Viens no jūsu vecākiem ir izslēdzis iestatījumu “Atļaujas vietnēm, lietotnēm un paplašinājumiem” pārlūkam Chromium.</translation>
+<translation id="8561406087076314604">Viens no jūsu vecākiem ir izslēdzis iestatījumu “Atļaujas vietnēm, lietotnēm un paplašinājumiem” pārlūkam Ecosia.</translation>
 <translation id="1098170124587656448">Chromium var palīdzēt aizsargāt jūs pret datu noplūdi, ļaunprātīgiem paplašinājumiem un citiem apdraudējumiem.</translation>
-<translation id="1104942323762546749">Pārlūkā Chromium tiek mēģināts eksportēt jūsu paroles. Lai to atļautu, ievadiet savu Windows paroli.</translation>
+<translation id="3632544319066562282">Pārlūkā Ecosia tiek mēģināts eksportēt jūsu paroles. Lai to atļautu, ievadiet savu Windows paroli.</translation>
 <translation id="113122355610423240">Jūsu noklusējuma pārlūks ir Chromium.</translation>
-<translation id="1131805035311359397">Lai pārbaudītu, vai jūsu paroles ir aizsargātas pret datu pārkāpumiem un citām drošības problēmām, <ph name="BEGIN_LINK" />pierakstieties pārlūkā Chromium<ph name="END_LINK" />.</translation>
-<translation id="1153368717515616349">Noklikšķiniet uz Chromium izvēlnes</translation>
+<translation id="1131805035311359397">Lai pārbaudītu, vai jūsu paroles ir aizsargātas pret datu pārkāpumiem un citām drošības problēmām, <ph name="BEGIN_LINK"/>pierakstieties pārlūkā Chromium<ph name="END_LINK"/>.</translation>
+<translation id="1224748120031661633">Noklikšķiniet uz Ecosia izvēlnes</translation>
 <translation id="1184145431117212167">Instalēšana neizdevās, jo jūsu izmantotā Windows versija netiek atbalstīta.</translation>
 <translation id="1185134272377778587">Par Chromium</translation>
-<translation id="1188705220418984327">Lai kopīgotu logu, sistēmas preferencēs atļaujiet ekrāna ierakstīšanu pārlūkā Chromium.</translation>
-<translation id="1203500561924088507">Pateicamies, ka veicāt instalēšanu. Pirms <ph name="BUNDLE_NAME" /> izmantošanas ir jārestartē pārlūkprogramma.</translation>
-<translation id="1262876892872089030">Kamēr šī cilne bija neaktīva, tika atbrīvota atmiņa pārlūka Chromium ātrākai darbībai. Varat izvēlēties vienmēr saglabāt šo vietni aktīvu.</translation>
-<translation id="1265577313130862557">Pārlūkā Chromium šī lejupielāde tika bloķēta, jo fails ir bīstams.</translation>
-<translation id="126567311906253476">Ja pierakstāties Google pakalpojumos, piemēram, Gmail vai YouTube, ar kontu <ph name="USER_EMAIL" />, varat automātiski pierakstīties pārlūkā Chromium ar to pašu kontu.</translation>
-<translation id="1290883685122687410">Iestatīšanas kļūda: <ph name="METAINSTALLER_EXIT_CODE" />. <ph name="WINDOWS_ERROR" /></translation>
-<translation id="1315551408014407711">Jaunā Chromium profila iestatīšana</translation>
-<translation id="1324107359134968521">Pārlūkam Chromium ir nepieciešama Bluetooth piekļuve, lai atrastu Bluetooth ierīces. <ph name="IDS_SERIAL_DEVICE_CHOOSER_AUTHORIZE_BLUETOOTH_LINK" /></translation>
-<translation id="1342274909142618978">Dzēst arī datus no pārlūka Chromium (<ph name="URL" />)</translation>
-<translation id="1414495520565016063">Esat pierakstījies operētājsistēmā Chromium!</translation>
+<translation id="1330085168384841023">Lai kopīgotu logu, sistēmas preferencēs atļaujiet ekrāna ierakstīšanu pārlūkā Ecosia.</translation>
+<translation id="1203500561924088507">Pateicamies, ka veicāt instalēšanu. Pirms <ph name="BUNDLE_NAME"/> izmantošanas ir jārestartē pārlūkprogramma.</translation>
+<translation id="7455175614937447568">Kamēr šī cilne bija neaktīva, tika atbrīvota atmiņa pārlūka Ecosia ātrākai darbībai. Varat izvēlēties vienmēr saglabāt šo vietni aktīvu.</translation>
+<translation id="9068280473864300215">Pārlūkā Ecosia šī lejupielāde tika bloķēta, jo fails ir bīstams.</translation>
+<translation id="126567311906253476">Ja pierakstāties Google pakalpojumos, piemēram, Gmail vai YouTube, ar kontu <ph name="USER_EMAIL"/>, varat automātiski pierakstīties pārlūkā Chromium ar to pašu kontu.</translation>
+<translation id="1290883685122687410">Iestatīšanas kļūda: <ph name="METAINSTALLER_EXIT_CODE"/>. <ph name="WINDOWS_ERROR"/></translation>
+<translation id="319566061277127356">Jaunā Ecosia profila iestatīšana</translation>
+<translation id="4019094010333463261">Pārlūkam Ecosia ir nepieciešama Bluetooth piekļuve, lai atrastu Bluetooth ierīces. <ph name="IDS_SERIAL_DEVICE_CHOOSER_AUTHORIZE_BLUETOOTH_LINK"/></translation>
+<translation id="5405885279794834338">Dzēst arī datus no pārlūka Ecosia (<ph name="URL"/>)</translation>
+<translation id="727568860157522676">Esat pierakstījies operētājsistēmā Ecosia!</translation>
 <translation id="1478370723027452770">Saņemt palīdzību saistībā ar Chrome for Testing</translation>
-<translation id="1497802159252041924">Instalēšanas kļūda: <ph name="INSTALL_ERROR" /></translation>
-<translation id="1524282610922162960">Chromium cilnes kopīgošana</translation>
-<translation id="1553461853655228091">Pārlūkam Chromium ir nepieciešama atļauja piekļūt jūsu kamerai, lai varētu izveidot jūsu apkārtnes 3D karti</translation>
-<translation id="1555494096857516577">{NUM_EXTENSIONS,plural, =1{Šis paplašinājums vairs netiek atbalstīts. Chromium iesaka to noņemt.}zero{Šie paplašinājumi vairs netiek atbalstīti. Chromium iesaka tos noņemt.}one{Šie paplašinājumi vairs netiek atbalstīti. Chromium iesaka tos noņemt.}other{Šie paplašinājumi vairs netiek atbalstīti. Chromium iesaka tos noņemt.}}</translation>
+<translation id="1497802159252041924">Instalēšanas kļūda: <ph name="INSTALL_ERROR"/></translation>
+<translation id="1861504561909287316">Ecosia cilnes kopīgošana</translation>
+<translation id="6896860023874996542">Pārlūkam Ecosia ir nepieciešama atļauja piekļūt jūsu kamerai, lai varētu izveidot jūsu apkārtnes 3D karti</translation>
+<translation id="7886351766410889877">{NUM_EXTENSIONS,plural, =1{Šis paplašinājums vairs netiek atbalstīts. Ecosia iesaka to noņemt.}zero{Šie paplašinājumi vairs netiek atbalstīti. Ecosia iesaka tos noņemt.}one{Šie paplašinājumi vairs netiek atbalstīti. Ecosia iesaka tos noņemt.}other{Šie paplašinājumi vairs netiek atbalstīti. Ecosia iesaka tos noņemt.}}</translation>
 <translation id="1574377791422810894">Chromium drošības rīki</translation>
-<translation id="1591808205441691831">Pārlūkā Chromium ir jāverificē jūsu identitāte, lai noteiktus datus varētu saglabāt jūsu Google kontā un izmantot visās jūsu ierīcēs. Ja izrakstīsieties, šie dati paliks šajā ierīcē.</translation>
-<translation id="1594928384848033697">Chromium pieprasa dzēst jūsu paroļu pārvaldnieka datus. Lai to atļautu, ierakstiet savu Windows paroli.</translation>
-<translation id="1607715478322902680">{COUNT,plural, =0{Lai lietotu atjauninājumu, administrators pieprasa restartēt pārlūku Chromium.}=1{Lai lietotu atjauninājumu, administrators pieprasa restartēt pārlūku Chromium. Jūsu inkognito režīma logs netiks atkārtoti atvērts.}zero{Lai lietotu atjauninājumu, administrators pieprasa restartēt pārlūku Chromium. # jūsu inkognito režīma logi netiks atkārtoti atvērti.}one{Lai lietotu atjauninājumu, administrators pieprasa restartēt pārlūku Chromium. # jūsu inkognito režīma logs netiks atkārtoti atvērts.}other{Lai lietotu atjauninājumu, administrators pieprasa restartēt pārlūku Chromium. # jūsu inkognito režīma logi netiks atkārtoti atvērti.}}</translation>
+<translation id="2200308425865645682">Pārlūkā Ecosia ir jāverificē jūsu identitāte, lai noteiktus datus varētu saglabāt jūsu Ecosia kontā un izmantot visās jūsu ierīcēs. Ja izrakstīsieties, šie dati paliks šajā ierīcē.</translation>
+<translation id="7304240387834227637">Ecosia pieprasa dzēst jūsu paroļu pārvaldnieka datus. Lai to atļautu, ierakstiet savu Windows paroli.</translation>
+<translation id="4933729908795930260">{COUNT,plural, =0{Lai lietotu atjauninājumu, administrators pieprasa restartēt pārlūku Ecosia.}=1{Lai lietotu atjauninājumu, administrators pieprasa restartēt pārlūku Ecosia. Jūsu inkognito režīma logs netiks atkārtoti atvērts.}zero{Lai lietotu atjauninājumu, administrators pieprasa restartēt pārlūku Ecosia. # jūsu inkognito režīma logi netiks atkārtoti atvērti.}one{Lai lietotu atjauninājumu, administrators pieprasa restartēt pārlūku Ecosia. # jūsu inkognito režīma logs netiks atkārtoti atvērts.}other{Lai lietotu atjauninājumu, administrators pieprasa restartēt pārlūku Ecosia. # jūsu inkognito režīma logi netiks atkārtoti atvērti.}}</translation>
 <translation id="1625909126243026060">Pārskatiet svarīgākās konfidencialitātes un drošības vadīklas pārlūkā Chromium.</translation>
-<translation id="1632539827495546968">Ja vēlaties šo kontu izmantot tikai vienu reizi, varat lietot <ph name="GUEST_LINK_BEGIN" />viesa režīmu<ph name="GUEST_LINK_END" /> pārlūkā Chromium. Ja vēlaties pievienot kontu kādam citam, <ph name="LINK_BEGIN" />pievienojiet jaunu personu<ph name="LINK_END" /> savai ierīcei (<ph name="DEVICE_TYPE" />).
+<translation id="931416298178634530">Ja vēlaties šo kontu izmantot tikai vienu reizi, varat lietot <ph name="GUEST_LINK_BEGIN"/>viesa režīmu<ph name="GUEST_LINK_END"/> pārlūkā Ecosia. Ja vēlaties pievienot kontu kādam citam, <ph name="LINK_BEGIN"/>pievienojiet jaunu personu<ph name="LINK_END"/> savai ierīcei (<ph name="DEVICE_TYPE"/>).
 
-Uz šo kontu var attiekties atļaujas, ko esat jau piešķīris vietnēm un lietotnēm. Varat pārvaldīt savus Google kontus sadaļā <ph name="SETTINGS_LINK_BEGIN" />Iestatījumi<ph name="SETTINGS_LINK_END" />.</translation>
+Uz šo kontu var attiekties atļaujas, ko esat jau piešķīris vietnēm un lietotnēm. Varat pārvaldīt savus Ecosia kontus sadaļā <ph name="SETTINGS_LINK_BEGIN"/>Iestatījumi<ph name="SETTINGS_LINK_END"/>.</translation>
 <translation id="1640672724030957280">Notiek lejupielāde...</translation>
 <translation id="1715127912119967311">Lai palīdzētu uzlabot šīs funkcijas, pārlūks Chromium nosūta Google serveriem datus par jūsu mijiedarbību ar tām. Šos datus var lasīt, apstrādāt un anotēt pārskatītāji.</translation>
 <translation id="1722488837206509557">Tādējādi varēsiet atlasīt kādu no pieejamām ierīcēm un parādīt tajā saturu.</translation>
-<translation id="17264556997921157">Varat skatīt un noņemt interešu tēmas, kas vietnēs tiek izmantotas reklāmu rādīšanai. Pārlūkā Chromium tiek aptuveni noteiktas jūsu intereses, ņemot vērā neseno pārlūkošanas vēsturi.</translation>
-<translation id="1733725117201708356">Pārlūkā Chromium drīz tiks dzēsti pārlūkošanas dati</translation>
+<translation id="1118786556671181978">Varat skatīt un noņemt interešu tēmas, kas vietnēs tiek izmantotas reklāmu rādīšanai. Pārlūkā Ecosia tiek aptuveni noteiktas jūsu intereses, ņemot vērā neseno pārlūkošanas vēsturi.</translation>
+<translation id="2379593823746842972">Pārlūkā Ecosia drīz tiks dzēsti pārlūkošanas dati</translation>
 <translation id="1736443181683099871">Pārlūkā Chromium tiks mēģināts navigācijai izmantot HTTPS.</translation>
-<translation id="1745121272106313518">Pārlūks Chromium tiks restartēts pēc: <ph name="REMAINING_TIME" /></translation>
+<translation id="5490755016715767023">Pārlūks Ecosia tiks restartēts pēc: <ph name="REMAINING_TIME"/></translation>
 <translation id="1749104137266986751">Ja HTTPS nav pieejams, pārlūkā Chromium bez brīdinājuma tiks izmantots nedrošs savienojums.</translation>
-<translation id="1774152462503052664">Ļaut Chromium darboties fonā</translation>
-<translation id="1779356040007214683">Lai uzlabotu Chromium drošību, mēs atspējojām dažus paplašinājumus, kas nav norādīti vietnē <ph name="IDS_EXTENSION_WEB_STORE_TITLE" /> un, iespējams, tika pievienoti, jums nezinot.</translation>
-<translation id="1808667845054772817">Pārinstalēt Chromium</translation>
-<translation id="1820835682567584003">Chromium mēģina <ph name="AUTHENTICATION_PURPOSE" /></translation>
-<translation id="18552579716432081">Lai dzēstu pārlūkošanas datus tikai no šīs ierīces un paturētu tos Google kontā, <ph name="BEGIN_LINK" />izrakstieties no Chromium<ph name="END_LINK" />.</translation>
-<translation id="185970820835152459">Varat pārvaldīt Google kontus, kuros esat pierakstījies. Jūsu Google konti tiek izmantoti pārlūkā Chromium, Play veikalā, pakalpojumā Gmail un citur. Ja vēlaties pievienot kontu kādam citam, piemēram, ģimenes loceklim, pievienojiet jaunu personu savai <ph name="DEVICE_TYPE" /> ierīcei. <ph name="LINK_BEGIN" />Uzziniet vairāk<ph name="LINK_END" />.</translation>
+<translation id="8454595950895325762">Ļaut Ecosia darboties fonā</translation>
+<translation id="9125443060066914183">Lai uzlabotu Ecosia drošību, mēs atspējojām dažus paplašinājumus, kas nav norādīti vietnē <ph name="IDS_EXTENSION_WEB_STORE_TITLE"/> un, iespējams, tika pievienoti, jums nezinot.</translation>
+<translation id="6984747211123632080">Pārinstalēt Ecosia</translation>
+<translation id="1251415775728969647">Ecosia mēģina <ph name="AUTHENTICATION_PURPOSE"/></translation>
+<translation id="1761584959558744002">Lai dzēstu pārlūkošanas datus tikai no šīs ierīces un paturētu tos Ecosia kontā, <ph name="BEGIN_LINK"/>izrakstieties no Ecosia<ph name="END_LINK"/>.</translation>
+<translation id="185970820835152459">Varat pārvaldīt Google kontus, kuros esat pierakstījies. Jūsu Google konti tiek izmantoti pārlūkā Chromium, Play veikalā, pakalpojumā Gmail un citur. Ja vēlaties pievienot kontu kādam citam, piemēram, ģimenes loceklim, pievienojiet jaunu personu savai <ph name="DEVICE_TYPE"/> ierīcei. <ph name="LINK_BEGIN"/>Uzziniet vairāk<ph name="LINK_END"/>.</translation>
 <translation id="1863308913976887472">Vietnes pārlūkā Chromium var glabāt informāciju par jūsu interesēm. Piemēram, ja apmeklējat kādu vietni, lai iegādātos apavus maratona skriešanai, vietne var noteikt, ka interesējaties par maratonu skriešanu. Ja vēlāk apmeklēsiet citu vietni, lai reģistrētos sacensībām, šajā vietnē var tikt rādīta skriešanas apavu reklāma, pamatojoties uz jūsu interesēm.</translation>
-<translation id="1881322772814446296">Jūs pierakstāties ar pārvaldītu kontu, kura administrators var kontrolēt jūsu profilu. Jūsu Chromium dati, piemēram, lietotnes, grāmatzīmes, vēsture, paroles un citi iestatījumi, tiks neatgriezeniski saistīti ar lietotāju <ph name="USER_NAME" />. Varēsiet dzēst šos datus, izmantojot Google kontu informācijas paneli, taču nevarēsiet šos datus saistīt ar citu kontu. Ja vēlaties, varat izveidot jaunu profilu, lai atsevišķi glabātu Chromium datus. <ph name="LEARN_MORE" /></translation>
+<translation id="4239392394637574967">Jūs pierakstāties ar pārvaldītu kontu, kura administrators var kontrolēt jūsu profilu. Jūsu Ecosia dati, piemēram, lietotnes, grāmatzīmes, vēsture, paroles un citi iestatījumi, tiks neatgriezeniski saistīti ar lietotāju <ph name="USER_NAME"/>. Varēsiet dzēst šos datus, izmantojot Ecosia kontu informācijas paneli, taču nevarēsiet šos datus saistīt ar citu kontu. Ja vēlaties, varat izveidot jaunu profilu, lai atsevišķi glabātu Ecosia datus. <ph name="LEARN_MORE"/></translation>
 <translation id="1906696617298807388">Kad rakstāt adreses joslā vai meklēšanas lodziņā, pārlūks Chromium nosūta ierakstīto tekstu Google diskam, lai iegūtu vienumu ieteikumus. Inkognito režīmā šis iestatījums ir izslēgts.</translation>
 <translation id="1911763535808217981">Ja izslēgsiet šo iestatījumu, varēsiet pierakstīties Google vietnēs, piemēram, pakalpojumā Gmail, nepierakstoties pārlūkā Chromium.</translation>
-<translation id="1929939181775079593">Chromium nereaģē. Vai restartēt to tūlīt?</translation>
-<translation id="193439633299369377">Chromium OS ir jārestartē, lai lietotu atjauninājumu.</translation>
-<translation id="1951406923938785464">Pārlūkā Chromium šī lejupielāde tika bloķēta, jo šī tipa faili parasti netiek lejupielādēti un var būt bīstami.</translation>
-<translation id="1953553007165777902">Notiek lejupielāde... Atlikušais laiks: <ph name="MINUTE" /> minūte(-es).</translation>
+<translation id="18064594488616674">Ecosia nereaģē. Vai restartēt to tūlīt?</translation>
+<translation id="8047394653992042491">Ecosia OS ir jārestartē, lai lietotu atjauninājumu.</translation>
+<translation id="4988569127367972482">Pārlūkā Ecosia šī lejupielāde tika bloķēta, jo šī tipa faili parasti netiek lejupielādēti un var būt bīstami.</translation>
+<translation id="1953553007165777902">Notiek lejupielāde... Atlikušais laiks: <ph name="MINUTE"/> minūte(-es).</translation>
 <translation id="1966382378801805537">Chromium nevar noteikt vai iestatīt noklusējuma pārlūku.</translation>
-<translation id="1990262977744080398">Uzzināt, kāpēc pārlūkā Chromium daži faili tiek bloķēti (saite tiks atvērta jaunā cilnē)</translation>
-<translation id="2008474315282236005">Veicot šo darbību, no šīs ierīces tiks dzēsts 1 vienums. Lai vēlāk izgūtu datus, pierakstieties pārlūkā Chromium kā <ph name="USER_EMAIL" />.</translation>
+<translation id="6583697665130212310">Uzzināt, kāpēc pārlūkā Ecosia daži faili tiek bloķēti (saite tiks atvērta jaunā cilnē)</translation>
+<translation id="2008474315282236005">Veicot šo darbību, no šīs ierīces tiks dzēsts 1 vienums. Lai vēlāk izgūtu datus, pierakstieties pārlūkā Chromium kā <ph name="USER_EMAIL"/>.</translation>
 <translation id="2018879682492276940">Instalēšana neizdevās. Lūdzu, mēģiniet vēlreiz.</translation>
-<translation id="2020032459870799438">Lai pārbaudītu, vai jūsu pārējās paroles ir aizsargātas pret datu pārkāpumiem un citām drošības problēmām, <ph name="BEGIN_LINK" />pierakstieties pārlūkā Chromium<ph name="END_LINK" />.</translation>
+<translation id="2020032459870799438">Lai pārbaudītu, vai jūsu pārējās paroles ir aizsargātas pret datu pārkāpumiem un citām drošības problēmām, <ph name="BEGIN_LINK"/>pierakstieties pārlūkā Chromium<ph name="END_LINK"/>.</translation>
 <translation id="2049376729098081731">Izvēlieties, vai iekļaut Chromium vēsturi, lai iegūtu personalizētākas iespējas Google pakalpojumos.</translation>
-<translation id="2086476982681781442">Pārlūkā Chromium šī lejupielāde tika bloķēta, jo fails ir maldinošs un var veikt neparedzētas izmaiņas jūsu ierīcē.</translation>
+<translation id="7112125772061727648">Pārlūkā Ecosia šī lejupielāde tika bloķēta, jo fails ir maldinošs un var veikt neparedzētas izmaiņas jūsu ierīcē.</translation>
 <translation id="2088953378266246249">Informācija par to, kā Chromium pārvalda savus saknes sertifikātus</translation>
-<translation id="2120965832000301375">{COUNT,plural, =1{Jūsu organizācija automātiski dzēš pārlūkošanas datus, ja pārlūks Chromium nav izmantots vienu minūti. Tie var ietvert vēsturi, automātiskās aizpildes datus un lejupielādes. Cilnes joprojām būs atvērtas.}zero{Jūsu organizācija automātiski dzēš pārlūkošanas datus, ja pārlūks Chromium nav izmantots # minūtes. Tie var ietvert vēsturi, automātiskās aizpildes datus un lejupielādes. Cilnes joprojām būs atvērtas.}one{Jūsu organizācija automātiski dzēš pārlūkošanas datus, ja pārlūks Chromium nav izmantots # minūti. Tie var ietvert vēsturi, automātiskās aizpildes datus un lejupielādes. Cilnes joprojām būs atvērtas.}other{Jūsu organizācija automātiski dzēš pārlūkošanas datus, ja pārlūks Chromium nav izmantots # minūtes. Tie var ietvert vēsturi, automātiskās aizpildes datus un lejupielādes. Cilnes joprojām būs atvērtas.}}</translation>
+<translation id="1876482900355946220">{COUNT,plural, =1{Jūsu organizācija automātiski dzēš pārlūkošanas datus, ja pārlūks Ecosia nav izmantots vienu minūti. Tie var ietvert vēsturi, automātiskās aizpildes datus un lejupielādes. Cilnes joprojām būs atvērtas.}zero{Jūsu organizācija automātiski dzēš pārlūkošanas datus, ja pārlūks Ecosia nav izmantots # minūtes. Tie var ietvert vēsturi, automātiskās aizpildes datus un lejupielādes. Cilnes joprojām būs atvērtas.}one{Jūsu organizācija automātiski dzēš pārlūkošanas datus, ja pārlūks Ecosia nav izmantots # minūti. Tie var ietvert vēsturi, automātiskās aizpildes datus un lejupielādes. Cilnes joprojām būs atvērtas.}other{Jūsu organizācija automātiski dzēš pārlūkošanas datus, ja pārlūks Ecosia nav izmantots # minūtes. Tie var ietvert vēsturi, automātiskās aizpildes datus un lejupielādes. Cilnes joprojām būs atvērtas.}}</translation>
 <translation id="2126108037660393668">Neizdevās verificēt lejupielādēto failu.</translation>
-<translation id="215352261310130060">Pārlūkā Chromium šī lejupielāde tika bloķēta, jo vietnē netiek izmantots drošs savienojums un, iespējams, failā ir veiktas izmaiņas.</translation>
-<translation id="2157600032285353789">Varat atvērt grāmatzīmes, lasīšanas režīmu un citas iespējas, izmantojot Chromium izvēlni.</translation>
-<translation id="2174178932569897599">Pielāgot pārlūkprogrammu Chromium</translation>
+<translation id="2745180350547322293">Pārlūkā Ecosia šī lejupielāde tika bloķēta, jo vietnē netiek izmantots drošs savienojums un, iespējams, failā ir veiktas izmaiņas.</translation>
+<translation id="8296229475165428335">Varat atvērt grāmatzīmes, lasīšanas režīmu un citas iespējas, izmantojot Ecosia izvēlni.</translation>
+<translation id="838842459108103907">Pielāgot pārlūkprogrammu Ecosia</translation>
 <translation id="2174917724755363426">Instalēšana nav pabeigta. Vai tiešām vēlaties atcelt?</translation>
-<translation id="2185166961232948079">Chromium — pierakstīšanās tīklā — <ph name="PAGE_TITLE" /></translation>
-<translation id="2190166659037789668">Atjauninājumu pārbaudes kļūda: <ph name="UPDATE_CHECK_ERROR" />.</translation>
-<translation id="2199210295479376551">Noņemt kontu no pārlūka Chromium</translation>
+<translation id="9035946286843935549">Ecosia — pierakstīšanās tīklā — <ph name="PAGE_TITLE"/></translation>
+<translation id="2190166659037789668">Atjauninājumu pārbaudes kļūda: <ph name="UPDATE_CHECK_ERROR"/>.</translation>
+<translation id="8196791276481156937">Noņemt kontu no pārlūka Ecosia</translation>
 <translation id="2210682093923538346">Bīstama vietne. Pārlūkā Chromium tika noņemti paziņojumi.</translation>
-<translation id="2240214816234246077">Pēdējā laikā neesat apmeklējis šo vietni. Pārlūkā Chromium tika noņemtas šādas atļaujas: <ph name="PERMISSION_1" />, <ph name="PERMISSION_2" /></translation>
-<translation id="2241627712206172106">Ja jūsu datoru izmanto arī jūsu draugi un ģimenes locekļi, viņi var iestatīt pārlūku Chromium atbilstoši savām vēlmēm un pārlūkot saturu atsevišķos kontos.</translation>
+<translation id="2240214816234246077">Pēdējā laikā neesat apmeklējis šo vietni. Pārlūkā Chromium tika noņemtas šādas atļaujas: <ph name="PERMISSION_1"/>, <ph name="PERMISSION_2"/></translation>
+<translation id="6111519389633335269">Ja jūsu datoru izmanto arī jūsu draugi un ģimenes locekļi, viņi var iestatīt pārlūku Ecosia atbilstoši savām vēlmēm un pārlūkot saturu atsevišķos kontos.</translation>
 <translation id="2313870531055795960">Vietrāži URL tiek pārbaudīti, salīdzinot ar nedrošo vietņu sarakstu, kas ir saglabāts pārlūkprogrammā Chromium. Ja kādā vietnē tiek mēģināts nozagt jūsu paroli vai ja jūs lejupielādējat kaitīgu failu, Chromium var arī nosūtīt attiecīgos URL, tostarp lapas satura fragmentus, uz funkciju Droša pārlūkošana.</translation>
 <translation id="2329088755516916767">Ja šis iestatījums ir ieslēgts, pārlūkā Chromium tiek iepriekš ielādētas lapas, tādējādi paātrinot pārlūkošanu un meklēšanu.</translation>
-<translation id="2343156876103232566">Lai nosūtītu numuru no šejienes uz savu Android tālruni, abās ierīcēs pierakstieties pārlūkā Chromium.</translation>
+<translation id="665177868576952817">Lai nosūtītu numuru no šejienes uz savu Android tālruni, abās ierīcēs pierakstieties pārlūkā Ecosia.</translation>
 <translation id="2359808026110333948">Turpināt</translation>
-<translation id="2361918034042471035">Paplašinājums “<ph name="EXTENSION_NAME" />” pieprasa, lai jūs pierakstītos pārlūkā Chromium</translation>
-<translation id="2374216753258219393">Lai izmantotu šo paplašinājumu kontā <ph name="USER_EMAIL_ADDRESS" />, pierakstieties pārlūkā Chromium.</translation>
-<translation id="2384373936468275798">Chromium OS nevarēja sinhronizēt jūsu datus, jo jūsu konta pierakstīšanās informācija ir novecojusi.</translation>
-<translation id="2398377054246527950">{NUM_DEVICES,plural, =0{Vismaz viens Chromium paplašinājums piekļuva 1 HID ierīcei}=1{Vismaz viens Chromium paplašinājums piekļūst 1 HID ierīcei}zero{Vismaz viens Chromium paplašinājums piekļūst # HID ierīcēm}one{Vismaz viens Chromium paplašinājums piekļūst # HID ierīcei}other{Vismaz viens Chromium paplašinājums piekļūst # HID ierīcēm}}</translation>
-<translation id="2401032172288869980">Pārlūkam Chromium ir nepieciešama atļauja izmantot kameru un mikrofonu šajā vietnē.</translation>
-<translation id="2440750600860946460">Izmantojot <ph name="BEGIN_LINK" />Chromium rīkus<ph name="END_LINK" />, varat droši pārlūkot saturu un pārvaldīt jums pieejamās iespējas.</translation>
+<translation id="790624108224468719">Paplašinājums “<ph name="EXTENSION_NAME"/>” pieprasa, lai jūs pierakstītos pārlūkā Ecosia</translation>
+<translation id="2056307067005384438">Lai izmantotu šo paplašinājumu kontā <ph name="USER_EMAIL_ADDRESS"/>, pierakstieties pārlūkā Ecosia.</translation>
+<translation id="592990842052138727">Ecosia OS nevarēja sinhronizēt jūsu datus, jo jūsu konta pierakstīšanās informācija ir novecojusi.</translation>
+<translation id="2526043366208696235">{NUM_DEVICES,plural, =0{Vismaz viens Ecosia paplašinājums piekļuva 1 HID ierīcei}=1{Vismaz viens Ecosia paplašinājums piekļūst 1 HID ierīcei}zero{Vismaz viens Ecosia paplašinājums piekļūst # HID ierīcēm}one{Vismaz viens Ecosia paplašinājums piekļūst # HID ierīcei}other{Vismaz viens Ecosia paplašinājums piekļūst # HID ierīcēm}}</translation>
+<translation id="3554373328288278512">Pārlūkam Ecosia ir nepieciešama atļauja izmantot kameru un mikrofonu šajā vietnē.</translation>
+<translation id="2440750600860946460">Izmantojot <ph name="BEGIN_LINK"/>Chromium rīkus<ph name="END_LINK"/>, varat droši pārlūkot saturu un pārvaldīt jums pieejamās iespējas.</translation>
 <translation id="2451727308784734061">Izmantojot saīsni, varat ātri piekļūt Google paroļu pārvaldniekam. Varat pārvietot saīsni uz datora sākuma ekrānu vai lietotņu palaidēju.</translation>
-<translation id="2478295928299953161">Chromium drīz tiks aizvērts</translation>
-<translation id="2483889755041906834">Pārlūkā Chromium</translation>
+<translation id="5736558630107498475">Ecosia drīz tiks aizvērts</translation>
+<translation id="6495878830719404098">Pārlūkā Ecosia</translation>
 <translation id="2485422356828889247">Atinstalēt</translation>
-<translation id="2513154137948333830">Nepieciešama atkārtota palaišana: <ph name="INSTALL_SUCCESS" /></translation>
-<translation id="2554739539410784893">Pārlūkā Chromium tiek mēģināts aizstāt esošās paroles. Lai to atļautu, ierakstiet savu Windows paroli.</translation>
-<translation id="2560420686485554789">Pārlūkam Chromium ir nepieciešama piekļuve krātuvei, lai varētu lejupielādēt failus.</translation>
-<translation id="2572494885440352020">Chromium palīgs</translation>
-<translation id="2576118232315942160">Pierakstieties pārlūkā Chromium, lai varētu piekļūt parolēm un citiem datiem visās savās ierīcēs.</translation>
-<translation id="2583187216237139145">Darba profila administrators var noņemt šī profila lietošanas laikā ģenerētos Chromium datus (piemēram, grāmatzīmes, vēsturi, paroles un citus iestatījumus). <ph name="LEARN_MORE" /></translation>
-<translation id="2592940277904433508">Turpināt lietot Chromium</translation>
-<translation id="259935314519650377">Lejupielādēto instalēšanas programmu neizdevās saglabāt kešatmiņā. Kļūda: <ph name="UNPACK_CACHING_ERROR_CODE" />.</translation>
-<translation id="264613044588233783">Chromium darbojas ātrāk, un funkcijas, kurās tiek izmantota valoda JavaScript, darbojas paredzētajā veidā (ieteicams)</translation>
-<translation id="2648074677641340862">Instalācijas laikā radās operētājsistēmas kļūda. Lejupielādējiet Chromium vēlreiz.</translation>
-<translation id="2661879430930417727">Ja ierīci izmanto arī jūsu draugi un ģimenes locekļi, viņi var iestatīt pārlūku Chromium atbilstoši savām vēlmēm un pārlūkot saturu atsevišķos profilos.</translation>
-<translation id="268602741124540128">Laipni lūdzam pārlūkā Chromium, <ph name="ACCOUNT_FIRST_NAME" />!</translation>
-<translation id="2711502716910134313">Chromium cilne</translation>
+<translation id="2513154137948333830">Nepieciešama atkārtota palaišana: <ph name="INSTALL_SUCCESS"/></translation>
+<translation id="8957938953005153147">Pārlūkā Ecosia tiek mēģināts aizstāt esošās paroles. Lai to atļautu, ierakstiet savu Windows paroli.</translation>
+<translation id="5549921590305750618">Pārlūkam Ecosia ir nepieciešama piekļuve krātuvei, lai varētu lejupielādēt failus.</translation>
+<translation id="9090890391337853620">Ecosia palīgs</translation>
+<translation id="6094573000614590044">Pierakstieties pārlūkā Ecosia, lai varētu piekļūt parolēm un citiem datiem visās savās ierīcēs.</translation>
+<translation id="5707346538075088068">Darba profila administrators var noņemt šī profila lietošanas laikā ģenerētos Ecosia datus (piemēram, grāmatzīmes, vēsturi, paroles un citus iestatījumus). <ph name="LEARN_MORE"/></translation>
+<translation id="5883025779824839861">Turpināt lietot Ecosia</translation>
+<translation id="259935314519650377">Lejupielādēto instalēšanas programmu neizdevās saglabāt kešatmiņā. Kļūda: <ph name="UNPACK_CACHING_ERROR_CODE"/>.</translation>
+<translation id="2198589091447191935">Ecosia darbojas ātrāk, un funkcijas, kurās tiek izmantota valoda JavaScript, darbojas paredzētajā veidā (ieteicams)</translation>
+<translation id="7280797724682955539">Instalācijas laikā radās operētājsistēmas kļūda. Lejupielādējiet Ecosia vēlreiz.</translation>
+<translation id="6960183526681645011">Ja ierīci izmanto arī jūsu draugi un ģimenes locekļi, viņi var iestatīt pārlūku Ecosia atbilstoši savām vēlmēm un pārlūkot saturu atsevišķos profilos.</translation>
+<translation id="2381210243314074423">Laipni lūdzam pārlūkā Ecosia, <ph name="ACCOUNT_FIRST_NAME"/>!</translation>
+<translation id="385080958066798123">Ecosia cilne</translation>
 <translation id="2718390899429598676">Papildu drošības nolūkos Chromium šifrēs jūsu datus.</translation>
-<translation id="2721354645805494590">Lai noņemtu savu Google kontu no pārlūka Chromium, izrakstieties.</translation>
+<translation id="7347725536241560534">Lai noņemtu savu Ecosia kontu no pārlūka Ecosia, izrakstieties.</translation>
 <translation id="2738871930057338499">Nevar izveidot savienojumu ar internetu. HTTP 403 — aizliegts. Lūdzu, pārbaudiet starpniekservera konfigurāciju.</translation>
 <translation id="2770231113462710648">Mainīt noklusējuma pārlūkprogrammu uz:</translation>
-<translation id="2785438272836277133">Šis paplašinājums satur ļaunprātīgu programmatūru un nav drošs. Noņemiet to no pārlūka Chromium, lai tas jūsu apmeklētajās vietnēs vairs nevarētu skatīt un mainīt jūsu datus, tostarp jūsu personas informāciju.</translation>
+<translation id="3077076541395306362">Šis paplašinājums satur ļaunprātīgu programmatūru un nav drošs. Noņemiet to no pārlūka Ecosia, lai tas jūsu apmeklētajās vietnēs vairs nevarētu skatīt un mainīt jūsu datus, tostarp jūsu personas informāciju.</translation>
 <translation id="2799223571221894425">Restartēt</translation>
-<translation id="2837693172913560447">Tādējādi tiks izveidots jauns Chromium profils lietotājam <ph name="USER_EMAIL_ADDRESS" />.</translation>
+<translation id="3952510753191144456">Tādējādi tiks izveidots jauns Ecosia profils lietotājam <ph name="USER_EMAIL_ADDRESS"/>.</translation>
 <translation id="2846251086934905009">Instalēšanas kļūda: instalēšanas programma nepabeidza darbu. Instalēšana ir priekšlaikus pārtraukta.</translation>
-<translation id="2847479871509788944">Noņemšana no pārlūka Chromium...</translation>
+<translation id="4199684616787081033">Noņemšana no pārlūka Ecosia...</translation>
 <translation id="2850691299438350830">Tiek nodrošināta jūsu aizsardzība pārlūkprogrammā Chromium. Šis režīms var tikt izmantots jūsu drošības uzlabošanai citās Google lietotnēs, kad esat pierakstījies.</translation>
 <translation id="2885378588091291677">Uzdevumu pārvaldnieks</translation>
-<translation id="2910007522516064972">Par &amp;Chromium</translation>
+<translation id="7221868538334633215">Par &amp;Ecosia</translation>
 <translation id="2915996080311180594">Restartēt vēlāk</translation>
 <translation id="2928420929544864228">Instalēšana pabeigta.</translation>
 <translation id="2945997411976714835">Instalēšanas kļūda: neizdevās palaist instalēšanas programmu.</translation>
-<translation id="2970426615109535079">Pārlūku Chromium pārvalda jūsu organizācija</translation>
+<translation id="7527831132809333552">Pārlūku Ecosia pārvalda jūsu organizācija</translation>
 <translation id="2977470724722393594">Chromium ir atjaunināts</translation>
 <translation id="2977506796191543575">Ja kādā vietnē tiek mēģināts nozagt jūsu paroli vai ja jūs lejupielādējat kaitīgu failu, Chromium var arī nosūtīt attiecīgos URL, tostarp lapas satura fragmentus, uz funkciju Droša pārlūkošana.</translation>
-<translation id="2987208172821108655">Lai uzlabotu jūsu pārlūkošanas pieredzi un atbrīvotu resursus, Chromium var padarīt šīs cilnes neaktīvas.</translation>
-<translation id="3013473503895162900">Atveriet vietrādi <ph name="URL" /> jaunā cilnē pārlūkā Chromium.</translation>
+<translation id="7562371913339616107">Lai uzlabotu jūsu pārlūkošanas pieredzi un atbrīvotu resursus, Ecosia var padarīt šīs cilnes neaktīvas.</translation>
+<translation id="6154325450733409298">Atveriet vietrādi <ph name="URL"/> jaunā cilnē pārlūkā Ecosia.</translation>
 <translation id="3032706164202344641">Pārlūkprogrammā Chromium nevar pārbaudīt jūsu paroles. Vēlāk mēģiniet vēlreiz.</translation>
-<translation id="3032787606318309379">Notiek pievienošana pārlūkam Chromium...</translation>
+<translation id="1762318218111418450">Notiek pievienošana pārlūkam Ecosia...</translation>
 <translation id="3038232873781883849">Gaida, lai instalētu...</translation>
-<translation id="3068187312562070417">Citi Chromium profili</translation>
-<translation id="3068515742935458733">Palīdzēt uzlabot Chromium, nosūtot Google serveriem avāriju pārskatus un <ph name="UMA_LINK" /></translation>
-<translation id="3079753320517721795">{NUM_DEVICES,plural, =0{Vismaz viens Chromium paplašinājums piekļuva 1 USB ierīcei}=1{Vismaz viens Chromium paplašinājums piekļūst 1 USB ierīcei}zero{Vismaz viens Chromium paplašinājums piekļūst # USB ierīcēm}one{Vismaz viens Chromium paplašinājums piekļūst # USB ierīcei}other{Vismaz viens Chromium paplašinājums piekļūst # USB ierīcēm}}</translation>
+<translation id="6967821869905227561">Citi Ecosia profili</translation>
+<translation id="9178613517891824246">Palīdzēt uzlabot Ecosia, nosūtot Ecosia serveriem avāriju pārskatus un <ph name="UMA_LINK"/></translation>
+<translation id="7655708678113012665">{NUM_DEVICES,plural, =0{Vismaz viens Ecosia paplašinājums piekļuva 1 USB ierīcei}=1{Vismaz viens Ecosia paplašinājums piekļūst 1 USB ierīcei}zero{Vismaz viens Ecosia paplašinājums piekļūst # USB ierīcēm}one{Vismaz viens Ecosia paplašinājums piekļūst # USB ierīcei}other{Vismaz viens Ecosia paplašinājums piekļūst # USB ierīcēm}}</translation>
 <translation id="3101560983689755071">Pārlūkošanas vēsture ietekmē to, kādas reklāmas jums tiek rādītas, un tālāk redzamās aptuveni noteiktās intereses. Lai aizsargātu jūsu konfidencialitāti, Chromium automātiski katru mēnesi pakāpeniski dzēš jūsu intereses. Intereses var tikt atjaunotas, ja vien nenoņemat tās.</translation>
-<translation id="3103660991484857065">Instalēšanas programmai neizdevās atarhivēt arhīvu. Lejupielādējiet Chromium vēlreiz.</translation>
-<translation id="3130323860337406239">Pārlūkā Chromium tiek izmantots jūsu mikrofons.</translation>
-<translation id="3144188012276422546">Šī cilne izmanto papildu resursus. Lai uzlabotu veiktspēju, ļaujiet pārlūkam Chromium padarīt to neaktīvu.</translation>
-<translation id="3155163173539279776">Restartēt Chromium</translation>
-<translation id="3179665906251668410">Atvērt saiti inko&amp;gnito režīma logā</translation>
-<translation id="3185330573522821672">Pielāgojiet savu jauno Chromium profilu.</translation>
-<translation id="3190315855212034486">Eh! Chromium ir avarējis. Vai restartēt to tūlīt?</translation>
-<translation id="3224847870593914902">Lai noņemtu savu Google kontu no pārlūka Chromium, lapā “Iestatījumi” izrakstieties no pārlūka Chromium.</translation>
-<translation id="3258596308407688501">Chromium nevar nolasīt savu datu direktoriju un ierakstīt tajā:
+<translation id="7691143774653486474">Instalēšanas programmai neizdevās atarhivēt arhīvu. Lejupielādējiet Ecosia vēlreiz.</translation>
+<translation id="1318059253725731825">Pārlūkā Ecosia tiek izmantots jūsu mikrofons.</translation>
+<translation id="51576365410323372">Šī cilne izmanto papildu resursus. Lai uzlabotu veiktspēju, ļaujiet pārlūkam Ecosia padarīt to neaktīvu.</translation>
+<translation id="8282620071565190081">Restartēt Ecosia</translation>
+<translation id="5500958820122281144">Atvērt saiti inko&amp;gnito režīma logā</translation>
+<translation id="3697186779259384993">Pielāgojiet savu jauno Ecosia profilu.</translation>
+<translation id="3216284932113164802">Eh! Ecosia ir avarējis. Vai restartēt to tūlīt?</translation>
+<translation id="8696852719113991652">Lai noņemtu savu Ecosia kontu no pārlūka Ecosia, lapā “Iestatījumi” izrakstieties no pārlūka Ecosia.</translation>
+<translation id="7602423871874451395">Ecosia nevar nolasīt savu datu direktoriju un ierakstīt tajā:
 
-<ph name="USER_DATA_DIRECTORY" /></translation>
-<translation id="3268051428841342958">V8 ir Chromium JavaScript un WebAssembly programma, kas tiek izmantota vietnes veiktspējas uzlabošanai</translation>
-<translation id="3283186697780795848">Ir instalēta Chromium versija <ph name="PRODUCT_VERSION" /></translation>
+<ph name="USER_DATA_DIRECTORY"/></translation>
+<translation id="905744008702074577">V8 ir Ecosia JavaScript un WebAssembly programma, kas tiek izmantota vietnes veiktspējas uzlabošanai</translation>
+<translation id="3283186697780795848">Ir instalēta Chromium versija <ph name="PRODUCT_VERSION"/></translation>
 <translation id="3286538390144397061">Restartēt tūlīt</translation>
-<translation id="328888136576916638">Trūkst Google API atslēgu. Tiks atspējotas dažas Chromium funkcijas.</translation>
+<translation id="4735588186234302898">Trūkst Ecosia API atslēgu. Tiks atspējotas dažas Ecosia funkcijas.</translation>
 <translation id="3296368748942286671">Turpināt lietotņu izpildi fonā, kad Chromium ir aizvērts</translation>
-<translation id="3300643253493387004">Kamēr iestatām piekļuvi kontam, varat turpināt izmantot pārlūku Chromium. Iespējams, nevarēsiet piekļūt dažiem resursiem, kamēr iestatīšana nebūs pabeigta.</translation>
+<translation id="686474599126256998">Kamēr iestatām piekļuvi kontam, varat turpināt izmantot pārlūku Ecosia. Iespējams, nevarēsiet piekļūt dažiem resursiem, kamēr iestatīšana nebūs pabeigta.</translation>
 <translation id="3313189106987092621">Pārlūkā Chromium tiks parādīts brīdinājums pirms jebkuras vietnes ielādes, izmantojot nedrošu savienojumu.</translation>
-<translation id="3316771292331273802">Aizverot visus Chromium logus, automātiski izrakstīsieties no lielākās daļas vietņu, bet ne no Google konta, ja esat pierakstījies pārlūkā Chromium. Lai atļautu vietnēm jūs atcerēties, <ph name="SETTINGS_LINK" />.</translation>
-<translation id="3350761136195634146">Chromium profils ar šādu kontu jau pastāv</translation>
-<translation id="3387527074123400161">Chromium OS</translation>
-<translation id="3406848076815591792">Vai pāriet uz esošo Chromium profilu?</translation>
+<translation id="5513857521842828996">Aizverot visus Ecosia logus, automātiski izrakstīsieties no lielākās daļas vietņu, bet ne no Ecosia konta, ja esat pierakstījies pārlūkā Ecosia. Lai atļautu vietnēm jūs atcerēties, <ph name="SETTINGS_LINK"/>.</translation>
+<translation id="812798451698099271">Ecosia profils ar šādu kontu jau pastāv</translation>
+<translation id="1761341660094265938">Ecosia OS</translation>
+<translation id="4781882243268600858">Vai pāriet uz esošo Ecosia profilu?</translation>
 <translation id="3412460710772753638">Tā tiks atjaunināta Paroļu pārvaldniekā šajā ierīcē</translation>
-<translation id="3430503420100763906">Izmantojot Chromium profilus, varat nodalīt visu savu Chromium saturu. Izveidojiet profilus draugiem un ģimenes locekļiem vai nodaliet darba un izklaides saturu.</translation>
+<translation id="4170280082681554565">Izmantojot Ecosia profilus, varat nodalīt visu savu Ecosia saturu. Izveidojiet profilus draugiem un ģimenes locekļiem vai nodaliet darba un izklaides saturu.</translation>
 <translation id="347328004046849135">Ja pierakstīsieties ar uzlauztu paroli, pārlūkprogrammā Chromium tiks parādīts paziņojums</translation>
-<translation id="3474745554856756813">Veicot šo darbību, no šīs ierīces tiks dzēsts(-i) <ph name="ITEMS_COUNT" /> vienums(-i). Lai vēlāk izgūtu datus, pierakstieties pārlūkā Chromium kā <ph name="USER_EMAIL" />.</translation>
-<translation id="3497319089134299931">Lai pārslēgtos starp Chromium profiliem, izmantojiet īsinājumtaustiņu <ph name="SHORTCUT" />.</translation>
-<translation id="3509308970982693815">Aizveriet visus Chromium logus un mēģiniet vēlreiz.</translation>
-<translation id="3530103706039034513">Jau ir pierakstījies lietotājs <ph name="EXISTING_USER" />.  Lai atdalītu pārlūkošanu, pierakstieties pārlūkā Chromium savā profilā, izmantojot e-pasta adresi <ph name="USER_EMAIL_ADDRESS" />.</translation>
+<translation id="3474745554856756813">Veicot šo darbību, no šīs ierīces tiks dzēsts(-i) <ph name="ITEMS_COUNT"/> vienums(-i). Lai vēlāk izgūtu datus, pierakstieties pārlūkā Chromium kā <ph name="USER_EMAIL"/>.</translation>
+<translation id="4614106433017753369">Lai pārslēgtos starp Ecosia profiliem, izmantojiet īsinājumtaustiņu <ph name="SHORTCUT"/>.</translation>
+<translation id="8534308095039131078">Aizveriet visus Ecosia logus un mēģiniet vēlreiz.</translation>
+<translation id="7984841734836997333">Jau ir pierakstījies lietotājs <ph name="EXISTING_USER"/>.  Lai atdalītu pārlūkošanu, pierakstieties pārlūkā Ecosia savā profilā, izmantojot e-pasta adresi <ph name="USER_EMAIL_ADDRESS"/>.</translation>
 <translation id="3533435340678213462">Lai aizsargātu jūsu konfidencialitāti, mēs automātiski dzēšam intereses, kas ir glabātas ilgāk par četrām nedēļām. Intereses var tikt atkārtoti pievienotas sarakstam, kad turpināsiet pārlūkošanu. Varat arī noņemt intereses, ja nevēlaties, lai Chromium tās apsvērtu.</translation>
 <translation id="3567254597502212821">Jūsu pārlūkošanas vēsture, kurā tiek reģistrētas vietnes, ko šajā ierīcē apmeklējat ar pārlūku Chromium.</translation>
-<translation id="3597003331831379823">Neizdevās izpildīt iestatīšanu ar augstām privilēģijām. <ph name="METAINSTALLER_ERROR" /></translation>
-<translation id="3639635944603682591">Šī lietotāja pārlūkošanas dati tiks dzēsti no šīs ierīces. Lai atkoptu datus, pierakstieties pārlūkprogrammā Chromium kā lietotājs <ph name="USER_EMAIL" />.</translation>
-<translation id="364817392622123556">{COUNT,plural, =0{Pieejams Chromium atjauninājums, un tas tiks lietots, tiklīdz restartēsiet pārlūku.}=1{Pieejams Chromium atjauninājums, un tas tiks lietots, tiklīdz restartēsiet pārlūku. Jūsu inkognito režīma logs netiks atkārtoti atvērts.}zero{Pieejams Chromium atjauninājums, un tas tiks lietots, tiklīdz restartēsiet pārlūku. # jūsu inkognito režīma logi netiks atkārtoti atvērti.}one{Pieejams Chromium atjauninājums, un tas tiks lietots, tiklīdz restartēsiet pārlūku. # jūsu inkognito režīma logs netiks atkārtoti atvērts.}other{Pieejams Chromium atjauninājums, un tas tiks lietots, tiklīdz restartēsiet pārlūku. # jūsu inkognito režīma logi netiks atkārtoti atvērti.}}</translation>
-<translation id="3651803019964686660">Lai nosūtītu numuru no vietnes <ph name="ORIGIN" /> uz savu Android tālruni, abās ierīcēs pierakstieties pārlūkā Chromium.</translation>
+<translation id="3597003331831379823">Neizdevās izpildīt iestatīšanu ar augstām privilēģijām. <ph name="METAINSTALLER_ERROR"/></translation>
+<translation id="2128110540135015661">Šī lietotāja pārlūkošanas dati tiks dzēsti no šīs ierīces. Lai atkoptu datus, pierakstieties pārlūkprogrammā Ecosia kā lietotājs <ph name="USER_EMAIL"/>.</translation>
+<translation id="1323499021727766710">{COUNT,plural, =0{Pieejams Ecosia atjauninājums, un tas tiks lietots, tiklīdz restartēsiet pārlūku.}=1{Pieejams Ecosia atjauninājums, un tas tiks lietots, tiklīdz restartēsiet pārlūku. Jūsu inkognito režīma logs netiks atkārtoti atvērts.}zero{Pieejams Ecosia atjauninājums, un tas tiks lietots, tiklīdz restartēsiet pārlūku. # jūsu inkognito režīma logi netiks atkārtoti atvērti.}one{Pieejams Ecosia atjauninājums, un tas tiks lietots, tiklīdz restartēsiet pārlūku. # jūsu inkognito režīma logs netiks atkārtoti atvērts.}other{Pieejams Ecosia atjauninājums, un tas tiks lietots, tiklīdz restartēsiet pārlūku. # jūsu inkognito režīma logi netiks atkārtoti atvērti.}}</translation>
+<translation id="7849498640944199147">Lai nosūtītu numuru no vietnes <ph name="ORIGIN"/> uz savu Android tālruni, abās ierīcēs pierakstieties pārlūkā Ecosia.</translation>
 <translation id="3667616615096815454">Nevar instalēt. Lietojumprogramma serverim nav zināma.</translation>
-<translation id="3669334504579945026">Lai kopīgotu ekrānu, sistēmas preferencēs atļaujiet ekrāna ierakstīšanu pārlūkā Chromium.</translation>
+<translation id="7845247414826995986">Lai kopīgotu ekrānu, sistēmas preferencēs atļaujiet ekrāna ierakstīšanu pārlūkā Ecosia.</translation>
 <translation id="3685209450716071127">Pārlūkprogrammā Chromium nevar pārbaudīt jūsu paroles. Pārbaudiet interneta savienojumu.</translation>
-<translation id="3702352323269013324">Uzziniet vairāk par reklāmu personalizēšanu pārlūkā Chromium</translation>
-<translation id="370962675267501463">{COUNT,plural, =0{Lai lietotu šo atjauninājumu, administrators lūdz restartēt pārlūku Chromium.}=1{Lai lietotu šo atjauninājumu, administrators lūdz restartēt pārlūku Chromium. Jūsu inkognito režīma logs netiks atkārtoti atvērts.}zero{Lai lietotu šo atjauninājumu, administrators lūdz restartēt pārlūku Chromium. # jūsu inkognito režīma logi netiks atkārtoti atvērti.}one{Lai lietotu šo atjauninājumu, administrators lūdz restartēt pārlūku Chromium. # jūsu inkognito režīma logs netiks atkārtoti atvērts.}other{Lai lietotu šo atjauninājumu, administrators lūdz restartēt pārlūku Chromium. # jūsu inkognito režīma logi netiks atkārtoti atvērti.}}</translation>
-<translation id="3713809861844741608">Atvērt saiti jaunā Chromium &amp;cilnē</translation>
+<translation id="5902103164685487225">Uzziniet vairāk par reklāmu personalizēšanu pārlūkā Ecosia</translation>
+<translation id="3479730782477097349">{COUNT,plural, =0{Lai lietotu šo atjauninājumu, administrators lūdz restartēt pārlūku Ecosia.}=1{Lai lietotu šo atjauninājumu, administrators lūdz restartēt pārlūku Ecosia. Jūsu inkognito režīma logs netiks atkārtoti atvērts.}zero{Lai lietotu šo atjauninājumu, administrators lūdz restartēt pārlūku Ecosia. # jūsu inkognito režīma logi netiks atkārtoti atvērti.}one{Lai lietotu šo atjauninājumu, administrators lūdz restartēt pārlūku Ecosia. # jūsu inkognito režīma logs netiks atkārtoti atvērts.}other{Lai lietotu šo atjauninājumu, administrators lūdz restartēt pārlūku Ecosia. # jūsu inkognito režīma logi netiks atkārtoti atvērti.}}</translation>
+<translation id="489671036945006830">Atvērt saiti jaunā Ecosia &amp;cilnē</translation>
 <translation id="3728124580182886854">Saistiet pārlūku Chromium un citus Google pakalpojumus personalizēšanai un citiem mērķiem</translation>
-<translation id="3788675262216168505">Pārvaldīt Chromium profilus</translation>
-<translation id="3790262771324122253">Uzziniet, kāpēc Chromium bloķē noteiktas lejupielādes</translation>
+<translation id="3140530394740845618">Pārvaldīt Ecosia profilus</translation>
+<translation id="3035352359183300151">Uzziniet, kāpēc Ecosia bloķē noteiktas lejupielādes</translation>
 <translation id="379589255253486813">Ja kaut kas būs jāpārskata, saņemsiet Chromium paziņojumu</translation>
 <translation id="3802055581630249637">Pārlūkā Chromium tiek iepriekš ielādētas lapas, ko jūs, iespējams, apmeklēsiet. Tādējādi var tās ielādēt ātrāk tad, kad tās tiešām apmeklējat.</translation>
-<translation id="3830894615770080216">Chromium OS sistēma</translation>
-<translation id="3848258323044014972"><ph name="PAGE_TITLE" /> — Chromium</translation>
+<translation id="3959732324458144441">Ecosia OS sistēma</translation>
+<translation id="2722323139667924824"><ph name="PAGE_TITLE"/> — Ecosia</translation>
 <translation id="386822487697155367">Saņemt palīdzību saistībā ar Chromium OS</translation>
-<translation id="3871664619793219264">Piekļūstiet savam Chromium saturam no konta <ph name="ACCOUNT_EMAIL" /></translation>
-<translation id="388648406173476553">Pielāgojiet un kontrolējiet pārlūkprogrammu Chromium. Ir nepieciešama jūsu uzmanība. Noklikšķiniet, lai skatītu plašāku informāciju.</translation>
-<translation id="3889543394854987837">Noklikšķiniet uz sava vārda, lai atvērtu Chromium un sāktu pārlūkošanu.</translation>
-<translation id="390528597099634151">Lietotājs <ph name="EXISTING_USER" /> jau ir pierakstījies šajā Chromium profilā. Lai atdalītu pārlūkošanu, pārlūkā Chromium varat sev izveidot atsevišķu profilu.</translation>
-<translation id="3909353120217047026">Šis paplašinājums pārkāpj Chrome interneta veikala politiku, un, iespējams, tas nav drošs. Noņemiet to no pārlūka Chromium, lai tas jūsu apmeklētajās vietnēs vairs nevarētu skatīt un mainīt jūsu datus, tostarp jūsu personas informāciju.</translation>
-<translation id="391789666908693569">Jūsu kontu pārvalda <ph name="MANAGER_NAME" />. Administrators var skatīt un rediģēt šo Chromium profilu un tā datus, piemēram, grāmatzīmes, vēsturi un paroles.</translation>
+<translation id="6391863622742187823">Piekļūstiet savam Ecosia saturam no konta <ph name="ACCOUNT_EMAIL"/></translation>
+<translation id="8544776492099331022">Pielāgojiet un kontrolējiet pārlūkprogrammu Ecosia. Ir nepieciešama jūsu uzmanība. Noklikšķiniet, lai skatītu plašāku informāciju.</translation>
+<translation id="4871843754042758264">Noklikšķiniet uz sava vārda, lai atvērtu Ecosia un sāktu pārlūkošanu.</translation>
+<translation id="5824812022890208563">Lietotājs <ph name="EXISTING_USER"/> jau ir pierakstījies šajā Ecosia profilā. Lai atdalītu pārlūkošanu, pārlūkā Ecosia varat sev izveidot atsevišķu profilu.</translation>
+<translation id="8172133981892685841">Šis paplašinājums pārkāpj Ecosia interneta veikala politiku, un, iespējams, tas nav drošs. Noņemiet to no pārlūka Ecosia, lai tas jūsu apmeklētajās vietnēs vairs nevarētu skatīt un mainīt jūsu datus, tostarp jūsu personas informāciju.</translation>
+<translation id="4070480171055648632">Jūsu kontu pārvalda <ph name="MANAGER_NAME"/>. Administrators var skatīt un rediģēt šo Ecosia profilu un tā datus, piemēram, grāmatzīmes, vēsturi un paroles.</translation>
 <translation id="3941890832296813527">Instalēšanas kļūda: instalēšanas programmas faila nosaukums nav derīgs vai netiek atbalstīts.</translation>
-<translation id="3945058413678539331">Chromium mēģina nokopēt paroles. Lai to atļautu, ierakstiet savu Windows paroli.</translation>
+<translation id="1047556320128249268">Ecosia mēģina nokopēt paroles. Lai to atļautu, ierakstiet savu Windows paroli.</translation>
 <translation id="3962647064319009959">Uzziniet, kā Chromium rūpējas par jūsu drošību</translation>
-<translation id="3975724895399328945">Par Google Chrome for Testing</translation>
+<translation id="8603020525900853944">Par Ecosia for Testing</translation>
 <translation id="3997429360543082038">Par Chromium OS</translation>
-<translation id="4019629340646866719">Chromium OS, kā arī <ph name="BEGIN_LINK_LINUX_OSS" />Linux izstrādes vides<ph name="END_LINK_LINUX_OSS" /> darbību nodrošina papildu <ph name="BEGIN_LINK_CROS_OSS" />atklātā pirmkoda programmatūra<ph name="END_LINK_CROS_OSS" />.</translation>
-<translation id="4036079820698952681">Palīdziet uzlabot pārlūku Chromium, ziņojot par <ph name="BEGIN_LINK" />pašreizējiem iestatījumiem<ph name="END_LINK" />.</translation>
+<translation id="5311911269004680646">Ecosia OS, kā arī <ph name="BEGIN_LINK_LINUX_OSS"/>Linux izstrādes vides<ph name="END_LINK_LINUX_OSS"/> darbību nodrošina papildu <ph name="BEGIN_LINK_CROS_OSS"/>atklātā pirmkoda programmatūra<ph name="END_LINK_CROS_OSS"/>.</translation>
+<translation id="4036079820698952681">Palīdziet uzlabot pārlūku Chromium, ziņojot par <ph name="BEGIN_LINK"/>pašreizējiem iestatījumiem<ph name="END_LINK"/>.</translation>
 <translation id="4050175100176540509">Jaunākajā versijā ir pieejami svarīgi drošības uzlabojumi un jaunas funkcijas.</translation>
 <translation id="4055805654398742145">P&amp;aroļu pārvaldnieks</translation>
-<translation id="4095980151185649725">{COUNT,plural, =1{Jūsu organizācija automātiski aizver pārlūku Chromium, ja tas nav izmantots vienu minūti. Pārlūkošanas dati tiek izdzēsti. Tie var ietvert vēsturi, automātiskās aizpildes datus un lejupielādes.}zero{Jūsu organizācija automātiski aizver pārlūku Chromium, ja tas nav izmantots # minūtes. Pārlūkošanas dati tiek izdzēsti. Tie var ietvert vēsturi, automātiskās aizpildes datus un lejupielādes.}one{Jūsu organizācija automātiski aizver pārlūku Chromium, ja tas nav izmantots # minūti. Pārlūkošanas dati tiek izdzēsti. Tie var ietvert vēsturi, automātiskās aizpildes datus un lejupielādes.}other{Jūsu organizācija automātiski aizver pārlūku Chromium, ja tas nav izmantots # minūtes. Pārlūkošanas dati tiek izdzēsti. Tie var ietvert vēsturi, automātiskās aizpildes datus un lejupielādes.}}</translation>
+<translation id="7757263274906217411">{COUNT,plural, =1{Jūsu organizācija automātiski aizver pārlūku Ecosia, ja tas nav izmantots vienu minūti. Pārlūkošanas dati tiek izdzēsti. Tie var ietvert vēsturi, automātiskās aizpildes datus un lejupielādes.}zero{Jūsu organizācija automātiski aizver pārlūku Ecosia, ja tas nav izmantots # minūtes. Pārlūkošanas dati tiek izdzēsti. Tie var ietvert vēsturi, automātiskās aizpildes datus un lejupielādes.}one{Jūsu organizācija automātiski aizver pārlūku Ecosia, ja tas nav izmantots # minūti. Pārlūkošanas dati tiek izdzēsti. Tie var ietvert vēsturi, automātiskās aizpildes datus un lejupielādes.}other{Jūsu organizācija automātiski aizver pārlūku Ecosia, ja tas nav izmantots # minūtes. Pārlūkošanas dati tiek izdzēsti. Tie var ietvert vēsturi, automātiskās aizpildes datus un lejupielādes.}}</translation>
 <translation id="4118474109249235144">Chromium inkognito režīms</translation>
 <translation id="4122186850977583290">Pāriet uz lapu “Par Chromium”</translation>
 <translation id="4148957013307229264">Notiek instalēšana...</translation>
-<translation id="4149336151887611710">Jūsu organizācija var skatīt un pārvaldīt pārlūkošanas datus jūsu darba profilā, piemēram, grāmatzīmes, vēsturi un paroles. Tā nevar skatīt pārlūkošanas datus personīgajos Chromium profilos.</translation>
-<translation id="419998258129752635"><ph name="PAGE_TITLE" /> — pierakstīšanās tīklā — Chromium</translation>
-<translation id="421369550622382712">Atklājiet lieliskas lietotnes, spēles, paplašinājumus un motīvus, ko varat izmantot pārlūkā Chromium.</translation>
+<translation id="4264506519284061030">Jūsu organizācija var skatīt un pārvaldīt pārlūkošanas datus jūsu darba profilā, piemēram, grāmatzīmes, vēsturi un paroles. Tā nevar skatīt pārlūkošanas datus personīgajos Ecosia profilos.</translation>
+<translation id="3907708440788567041"><ph name="PAGE_TITLE"/> — pierakstīšanās tīklā — Ecosia</translation>
+<translation id="7782767522222146179">Atklājiet lieliskas lietotnes, spēles, paplašinājumus un motīvus, ko varat izmantot pārlūkā Ecosia.</translation>
 <translation id="4216212958613226427">Šī valoda tiek izmantota, lai attēlotu Chromium lietotāja saskarni</translation>
 <translation id="4222932583846282852">Notiek atcelšana...</translation>
 <translation id="4224210481850767180">Instalēšana ir atcelta.</translation>
-<translation id="4230135487732243613">Vai saistīt Chromium datus ar šo kontu?</translation>
+<translation id="8384922154025337808">Vai saistīt Ecosia datus ar šo kontu?</translation>
 <translation id="4251772536351901305">Tiek rādīts brīdinājums par bīstamām vietnēm (pat ja Google par tām iepriekš nezināja), analizējot vairāk datu no vietnēm, nekā analizē standarta aizsardzība. Varat izlaist Chromium brīdinājumus.</translation>
-<translation id="4269093074552541569">Izrakstīties no pārlūka Chromium</translation>
+<translation id="2672632089507560181">Izrakstīties no pārlūka Ecosia</translation>
 <translation id="4271805377592243930">Saņemt palīdzību par Chromium</translation>
 <translation id="4281844954008187215">Google pakalpojumu noteikumi</translation>
-<translation id="4285930937574705105">Instalācija neizdevās nenoteiktas kļūdas dēļ. Ja Chromium šobrīd darbojas, aizveriet to un mēģiniet vēlreiz.</translation>
+<translation id="3305517118160815955">Instalācija neizdevās nenoteiktas kļūdas dēļ. Ja Ecosia šobrīd darbojas, aizveriet to un mēģiniet vēlreiz.</translation>
 <translation id="4304713468139749426">Paroļu pārvaldnieks</translation>
 <translation id="4334294535648607276">Lejupielāde pabeigta.</translation>
-<translation id="439358628917130594"><ph name="MANAGER" /> pieprasa, lai pirms šīs ierīces lietošanas jūs izlasītu tālāk sniegtos pakalpojumu sniegšanas noteikumus un piekristu tiem. Šie noteikumi nepaplašina, nepārveido un neierobežo operētājsistēmas Chromium OS noteikumus.</translation>
-<translation id="4407044323746248786">Vai tik un tā aizvērt pārlūku Chromium?</translation>
-<translation id="4415566066719264597">Ļaut pārlūkam Chromium darboties fonā</translation>
-<translation id="4419831163359812184">{NUM_EXTENSIONS,plural, =1{Chromium iesaka to noņemt. <ph name="BEGIN_LINK" />Uzziniet vairāk par atbalstītajiem paplašinājumiem<ph name="END_LINK" />.}zero{Chromium iesaka tos noņemt. <ph name="BEGIN_LINK" />Uzziniet vairāk par atbalstītajiem paplašinājumiem<ph name="END_LINK" />.}one{Chromium iesaka tos noņemt. <ph name="BEGIN_LINK" />Uzziniet vairāk par atbalstītajiem paplašinājumiem<ph name="END_LINK" />.}other{Chromium iesaka tos noņemt. <ph name="BEGIN_LINK" />Uzziniet vairāk par atbalstītajiem paplašinājumiem<ph name="END_LINK" />.}}</translation>
-<translation id="4423735387467980091">Pielāgot un kontrolēt Chromium</translation>
+<translation id="8411844745163855310"><ph name="MANAGER"/> pieprasa, lai pirms šīs ierīces lietošanas jūs izlasītu tālāk sniegtos pakalpojumu sniegšanas noteikumus un piekristu tiem. Šie noteikumi nepaplašina, nepārveido un neierobežo operētājsistēmas Ecosia OS noteikumus.</translation>
+<translation id="88039520238670574">Vai tik un tā aizvērt pārlūku Ecosia?</translation>
+<translation id="4586967042094107073">Ļaut pārlūkam Ecosia darboties fonā</translation>
+<translation id="804899663814036125">{NUM_EXTENSIONS,plural, =1{Ecosia iesaka to noņemt. <ph name="BEGIN_LINK"/>Uzziniet vairāk par atbalstītajiem paplašinājumiem<ph name="END_LINK"/>.}zero{Ecosia iesaka tos noņemt. <ph name="BEGIN_LINK"/>Uzziniet vairāk par atbalstītajiem paplašinājumiem<ph name="END_LINK"/>.}one{Ecosia iesaka tos noņemt. <ph name="BEGIN_LINK"/>Uzziniet vairāk par atbalstītajiem paplašinājumiem<ph name="END_LINK"/>.}other{Ecosia iesaka tos noņemt. <ph name="BEGIN_LINK"/>Uzziniet vairāk par atbalstītajiem paplašinājumiem<ph name="END_LINK"/>.}}</translation>
+<translation id="4817913198787198451">Pielāgot un kontrolēt Ecosia</translation>
 <translation id="4427306783828095590">Uzlabotā aizsardzība labāk bloķē pikšķerēšanas mēģinājumus un ļaunprātīgu programmatūru</translation>
-<translation id="4434353761996769206">Instalēšanas kļūda: <ph name="INSTALLER_ERROR" /></translation>
-<translation id="4438870983368648614">Pārlūku Chromium pārvalda organizācija “<ph name="MANAGER" />”</translation>
+<translation id="4434353761996769206">Instalēšanas kļūda: <ph name="INSTALLER_ERROR"/></translation>
+<translation id="6994161374830839635">Pārlūku Ecosia pārvalda organizācija “<ph name="MANAGER"/>”</translation>
 <translation id="4447409407328223819">Par Chrome for Testing</translation>
 <translation id="4501471624619070934">Instalēšana neizdevās, jo šajā valstī piekļuve ir ierobežota.</translation>
-<translation id="4510853178268397146">Nav norādīta konfidencialitātes prakse šim paplašinājumam, piemēram, kā tas vāc un izmanto datus. Chromium iesaka to noņemt.</translation>
-<translation id="452711251841752011">Laipni lūdzam pārlūkā Chromium (tika atvērts jauns pārlūka logs)!</translation>
-<translation id="4531137820806573936">Pārlūkam Chromium ir nepieciešama atļauja jūsu apkārtnes kartēšanai un roku kustību izsekošanai</translation>
-<translation id="4536805923587466102">Ar kontu <ph name="USER_EMAIL_ADDRESS" /> jau esat pierakstījies citā Chromium profilā</translation>
-<translation id="4544142686420020088">Pārlūkprogramma Chromium netika atjaunināta. Radās problēma. <ph name="BEGIN_LINK" />Novērsiet Chromium atjaunināšanas problēmas.<ph name="END_LINK" /></translation>
-<translation id="4545268686623374213">Lai uzlabotu un paātrinātu pārlūkošanu, pārlūkā Chromium var padarīt šo cilni neaktīvu.</translation>
-<translation id="454579500955453258">Vai turpināt jaunā Chromium profilā?</translation>
-<translation id="4567424176335768812">Jūs esat pierakstījies kā <ph name="USER_EMAIL_ADDRESS" />. Tagad varat piekļūt savām grāmatzīmēm, vēsturei un citiem iestatījumiem visās ierīcēs, kurās esat pierakstījies.</translation>
-<translation id="4570813286784708942">Pārlūkā Chromium šī lejupielāde tika bloķēta, jo jūs izslēdzāt drošu pārlūkošanu un failu nevar verificēt.</translation>
+<translation id="576192547306902465">Nav norādīta konfidencialitātes prakse šim paplašinājumam, piemēram, kā tas vāc un izmanto datus. Ecosia iesaka to noņemt.</translation>
+<translation id="1859120614572957305">Laipni lūdzam pārlūkā Ecosia (tika atvērts jauns pārlūka logs)!</translation>
+<translation id="378302976931789177">Pārlūkam Ecosia ir nepieciešama atļauja jūsu apkārtnes kartēšanai un roku kustību izsekošanai</translation>
+<translation id="8403827649521531901">Ar kontu <ph name="USER_EMAIL_ADDRESS"/> jau esat pierakstījies citā Ecosia profilā</translation>
+<translation id="4544142686420020088">Pārlūkprogramma Chromium netika atjaunināta. Radās problēma. <ph name="BEGIN_LINK"/>Novērsiet Chromium atjaunināšanas problēmas.<ph name="END_LINK"/></translation>
+<translation id="2020747823154282691">Lai uzlabotu un paātrinātu pārlūkošanu, pārlūkā Ecosia var padarīt šo cilni neaktīvu.</translation>
+<translation id="8685318202174822382">Vai turpināt jaunā Ecosia profilā?</translation>
+<translation id="4567424176335768812">Jūs esat pierakstījies kā <ph name="USER_EMAIL_ADDRESS"/>. Tagad varat piekļūt savām grāmatzīmēm, vēsturei un citiem iestatījumiem visās ierīcēs, kurās esat pierakstījies.</translation>
+<translation id="361644486359722423">Pārlūkā Ecosia šī lejupielāde tika bloķēta, jo jūs izslēdzāt drošu pārlūkošanu un failu nevar verificēt.</translation>
 <translation id="4594305310729380060">Tā tiks saglabāta Paroļu pārvaldniekā šajā ierīcē</translation>
-<translation id="459535195905078186">Chromium lietotnes</translation>
+<translation id="2636091632287013185">Ecosia lietotnes</translation>
 <translation id="4613863813562375431">Chromium OS versija</translation>
-<translation id="4617285639650863674">Lai kopīgotu ekrānu, sistēmas preferencēs atļaujiet ekrāna ierakstīšanu pārlūkā Chromium.</translation>
+<translation id="2394629668475473296">Lai kopīgotu ekrānu, sistēmas preferencēs atļaujiet ekrāna ierakstīšanu pārlūkā Ecosia.</translation>
 <translation id="4621240073146040695">Atjaunināšana ir gandrīz pabeigta. Lai pabeigtu atjaunināšanu, atkārtoti palaidiet pārlūku Chromium.</translation>
-<translation id="4665829708273112819">Brīdinājums! Chromium nevar novērst to, ka paplašinājumi ieraksta jūsu pārlūkošanas vēsturi. Lai atspējotu šo paplašinājumu inkognito režīmā, noņemiet šīs opcijas atlasi.</translation>
+<translation id="1676748966275099244">Brīdinājums! Ecosia nevar novērst to, ka paplašinājumi ieraksta jūsu pārlūkošanas vēsturi. Lai atspējotu šo paplašinājumu inkognito režīmā, noņemiet šīs opcijas atlasi.</translation>
 <translation id="4673151026126227699">Ja kopīgojat arī Chromium lietojuma pārskatus, šajos pārskatos tiek iekļauti jūsu apmeklētie vietrāži URL.</translation>
-<translation id="4677944499843243528">Šķiet, ka profils tiek izmantots citā Chromium procesā (<ph name="PROCESS_ID" />) citā datorā (<ph name="HOST_NAME" />). Lai profils netiktu bojāts, pārlūkā Chromium tas ir bloķēts. Ja esat pārliecināts, ka šis profils netiek izmantots citos procesos, varat to atbloķēt un restartēt pārlūku Chromium.</translation>
+<translation id="1384607180773886645">Šķiet, ka profils tiek izmantots citā Ecosia procesā (<ph name="PROCESS_ID"/>) citā datorā (<ph name="HOST_NAME"/>). Lai profils netiktu bojāts, pārlūkā Ecosia tas ir bloķēts. Ja esat pārliecināts, ka šis profils netiek izmantots citos procesos, varat to atbloķēt un restartēt pārlūku Ecosia.</translation>
 <translation id="4680828127924988555">Atcelt instalēšanu</translation>
-<translation id="469259825538636168">Noteikti jūsu Chromium dati vēl nav saglabāti jūsu Google kontā. Pirms izrakstāties, uzgaidiet dažas minūtes. Ja izrakstīsieties tūlīt, šie dati tiks dzēsti.</translation>
-<translation id="4708193446201257833">Kamēr esat pierakstījies, pārlūkā Chromium varat izmantot savas paroles un citu saturu no Google konta. <ph name="SHORTCUT" /> var mainīt jūsu Google pakalpojumu iestatījumus.</translation>
-<translation id="4708774505295300557">Kāds iepriekš pierakstījās pārlūkā Chromium šajā datorā, izmantojot e-pasta adresi <ph name="ACCOUNT_EMAIL_LAST" />. Lūdzu, izveidojiet jaunu Chromium lietotāju, lai nošķirtu savu informāciju.</translation>
+<translation id="7898621536417126731">Noteikti jūsu Ecosia dati vēl nav saglabāti jūsu Ecosia kontā. Pirms izrakstāties, uzgaidiet dažas minūtes. Ja izrakstīsieties tūlīt, šie dati tiks dzēsti.</translation>
+<translation id="4427878468534147875">Kamēr esat pierakstījies, pārlūkā Ecosia varat izmantot savas paroles un citu saturu no Ecosia konta. <ph name="SHORTCUT"/> var mainīt jūsu Ecosia pakalpojumu iestatījumus.</translation>
+<translation id="4727435569202742773">Kāds iepriekš pierakstījās pārlūkā Ecosia šajā datorā, izmantojot e-pasta adresi <ph name="ACCOUNT_EMAIL_LAST"/>. Lūdzu, izveidojiet jaunu Ecosia lietotāju, lai nošķirtu savu informāciju.</translation>
 <translation id="4724676981607797757">Instalēšana neizdevās, jo radās neatbalstīta protokola kļūda.</translation>
-<translation id="4746050847053251315">Vai tik un tā aizvērt pārlūku Chromium?</translation>
-<translation id="4748217263233248895">Tikko tika piemērots īpašs Chromium drošības atjauninājums. Restartējiet tūlīt, un mēs atjaunosim jūsu cilnes.</translation>
-<translation id="4765210420921718862">Ja pārdomāsiet, jebkurā laikā varēsiet atbilstoši mainīt Chromium iestatījumus. Izmēģinājuma laikā reklāmu rādīšanai tiek izmantotas arī pašreizējās metodes, tāpēc izmaiņas nebūs pamanāmas uzreiz.</translation>
-<translation id="4788777615168560705">Pārlūkprogrammā Chromium nevar pārbaudīt jūsu paroles. Mēģiniet vēlreiz pēc 24 stundām vai <ph name="BEGIN_LINK" />pārbaudiet paroles savā Google kontā<ph name="END_LINK" />.</translation>
-<translation id="479167709087336770">Šeit tiek izmantota tāds pats pareizrakstības pārbaudītājs, kāds tiek izmantots Google meklēšanā. Pārlūkprogrammā ievadītais teksts tiek nosūtīts Google serveriem. Jebkurā brīdī varat mainīt šo darbību iestatījumos.</translation>
-<translation id="4814736265800133385">Izmantot Chromium, nepierakstoties kontā</translation>
-<translation id="4888717733111232871">Ienākošo savienojumu kārtula pārlūkam Chromium, lai atļautu mDNS datplūsmu.</translation>
-<translation id="4893347770495441059">Atkārtoti palaist, lai atjauninātu &amp;Chromium</translation>
-<translation id="4942295735032723435">Lai saņemtu turpmākus Chromium atjauninājumus, nepieciešama operētājsistēma macOS 11 vai jaunāka versija. Šajā datorā tiek izmantota operētājsistēma macOS 10.15.</translation>
-<translation id="4943838377383847465">Chromium darbojas fona režīmā.</translation>
-<translation id="494490797786467921">Noklikšķiniet, lai aizvērtu Chromium pierakstīšanās dialoglodziņu</translation>
-<translation id="4987820182225656817">Viesi var izmantot Chromium, neatstājot nekādas pēdas.</translation>
-<translation id="4994636714258228724">Pievienot savu kontu pārlūkā Chromium</translation>
-<translation id="5114678101347489141">Chromium pēta jaunas funkcijas, kas ļauj vietnēm nodrošināt tādas pašas pārlūkošanas iespējas, izmantojot mazāk informācijas.</translation>
-<translation id="5187123684706427865">Chromium kontam nepieciešama atkārtota autentifikācija</translation>
+<translation id="864244542982029641">Vai tik un tā aizvērt pārlūku Ecosia?</translation>
+<translation id="1025044809499013222">Tikko tika piemērots īpašs Ecosia drošības atjauninājums. Restartējiet tūlīt, un mēs atjaunosim jūsu cilnes.</translation>
+<translation id="824192326282906244">Ja pārdomāsiet, jebkurā laikā varēsiet atbilstoši mainīt Ecosia iestatījumus. Izmēģinājuma laikā reklāmu rādīšanai tiek izmantotas arī pašreizējās metodes, tāpēc izmaiņas nebūs pamanāmas uzreiz.</translation>
+<translation id="4788777615168560705">Pārlūkprogrammā Chromium nevar pārbaudīt jūsu paroles. Mēģiniet vēlreiz pēc 24 stundām vai <ph name="BEGIN_LINK"/>pārbaudiet paroles savā Google kontā<ph name="END_LINK"/>.</translation>
+<translation id="3543284013834505767">Šeit tiek izmantota tāds pats pareizrakstības pārbaudītājs, kāds tiek izmantots Ecosia meklēšanā. Pārlūkprogrammā ievadītais teksts tiek nosūtīts Ecosia serveriem. Jebkurā brīdī varat mainīt šo darbību iestatījumos.</translation>
+<translation id="7787479292144635608">Izmantot Ecosia, nepierakstoties kontā</translation>
+<translation id="4154538917942874814">Ienākošo savienojumu kārtula pārlūkam Ecosia, lai atļautu mDNS datplūsmu.</translation>
+<translation id="2159716220295742156">Atkārtoti palaist, lai atjauninātu &amp;Ecosia</translation>
+<translation id="8701027951719712428">Lai saņemtu turpmākus Ecosia atjauninājumus, nepieciešama operētājsistēma macOS 11 vai jaunāka versija. Šajā datorā tiek izmantota operētājsistēma macOS 10.15.</translation>
+<translation id="2234042158691635795">Ecosia darbojas fona režīmā.</translation>
+<translation id="3271929752667225813">Noklikšķiniet, lai aizvērtu Ecosia pierakstīšanās dialoglodziņu</translation>
+<translation id="1869027055332251164">Viesi var izmantot Ecosia, neatstājot nekādas pēdas.</translation>
+<translation id="6761747850241550887">Pievienot savu kontu pārlūkā Ecosia</translation>
+<translation id="3708834841667355707">Ecosia pēta jaunas funkcijas, kas ļauj vietnēm nodrošināt tādas pašas pārlūkošanas iespējas, izmantojot mazāk informācijas.</translation>
+<translation id="3376578942612115781">Ecosia kontam nepieciešama atkārtota autentifikācija</translation>
 <translation id="5224391634244552924">Nav saglabātu paroļu. Pārlūkprogrammā Chromium var pārbaudīt jūsu paroles, ja jūs tās saglabājat.</translation>
-<translation id="5231355151045086930">Izrakstīšanās no Chromium</translation>
-<translation id="5252179775517634216">Lietotājs <ph name="EXISTING_USER" /> jau ir pierakstījies šajā Chromium profilā. Tādējādi tiks izveidots jauns Chromium profils lietotājam <ph name="USER_EMAIL_ADDRESS" />.</translation>
+<translation id="2421263730139898714">Izrakstīšanās no Ecosia</translation>
+<translation id="847970842635669371">Lietotājs <ph name="EXISTING_USER"/> jau ir pierakstījies šajā Ecosia profilā. Tādējādi tiks izveidots jauns Ecosia profils lietotājam <ph name="USER_EMAIL_ADDRESS"/>.</translation>
 <translation id="5277894862589591112">Lai ieviestu veiktās izmaiņas, atkārtoti palaidiet pārlūku Chromium.</translation>
 <translation id="5294316920224716406">Ja veicat pārlūkošanu inkognito režīmā, pārlūkā Chromium tiks parādīts brīdinājums pirms vietnes ielādes, izmantojot nedrošu savienojumu.</translation>
 <translation id="5296845517486664001">Ja izmēģināšana ir ieslēgta un jūs esat iesaistīts aktīvā izmēģinājumā pārlūkā Chromium, jūsu pārlūkošanas vēsture ietekmē to, kādas reklāmas jums tiek rādītas, un tālāk redzamās aptuveni noteiktās intereses. Lai aizsargātu jūsu konfidencialitāti, Chromium katru mēnesi pakāpeniski dzēš jūsu intereses.</translation>
-<translation id="5310474266708705970">Pierakstīties pārlūkā Chromium ar kontu <ph name="USER_EMAIL" /></translation>
+<translation id="2297526912548649074">Pierakstīties pārlūkā Ecosia ar kontu <ph name="USER_EMAIL"/></translation>
 <translation id="5352264705793813212">Pārlūkā Chromium tika atrasti daži drošības ieteikumi par jūsu atsauksmi</translation>
-<translation id="5352361688875342522">Citi Chromium profili</translation>
-<translation id="5358375970380395591">Jūs pierakstāties ar pārvaldītu kontu, kura administrators var kontrolēt jūsu profilu. Jūsu Chromium dati, piemēram, lietotnes, grāmatzīmes, vēsture, paroles un citi iestatījumi, tiks neatgriezeniski saistīti ar lietotāju <ph name="USER_NAME" />. Varēsiet dzēst šos datus, izmantojot Google kontu informācijas paneli, taču nevarēsiet šos datus saistīt ar citu kontu. <ph name="LEARN_MORE" /></translation>
-<translation id="5368118228313795342">Papildu kods: <ph name="EXTRA_CODE" />.</translation>
+<translation id="5251710252516682805">Citi Ecosia profili</translation>
+<translation id="7105712012505419722">Jūs pierakstāties ar pārvaldītu kontu, kura administrators var kontrolēt jūsu profilu. Jūsu Ecosia dati, piemēram, lietotnes, grāmatzīmes, vēsture, paroles un citi iestatījumi, tiks neatgriezeniski saistīti ar lietotāju <ph name="USER_NAME"/>. Varēsiet dzēst šos datus, izmantojot Ecosia kontu informācijas paneli, taču nevarēsiet šos datus saistīt ar citu kontu. <ph name="LEARN_MORE"/></translation>
+<translation id="5368118228313795342">Papildu kods: <ph name="EXTRA_CODE"/>.</translation>
 <translation id="5377622451696208284">Lai izmantotu personalizēšanu, iekļaujiet pārlūku Chromium iestatījumā “Darbības tīmeklī un lietotnēs”</translation>
-<translation id="5383439451358640070">Uzzināt, kāpēc pārlūkā Chromium daži faili tiek bloķēti</translation>
-<translation id="5386450000063123300">Notiek Chromium atjaunināšana (<ph name="PROGRESS_PERCENT" />)</translation>
+<translation id="350189837353493413">Uzzināt, kāpēc pārlūkā Ecosia daži faili tiek bloķēti</translation>
+<translation id="5386450000063123300">Notiek Chromium atjaunināšana (<ph name="PROGRESS_PERCENT"/>)</translation>
 <translation id="538767207339317086">Atļaut pierakstīties pārlūkā Chromium</translation>
-<translation id="5405650547142096840">Noņemt no pārlūka Chromium</translation>
-<translation id="5427571867875391349">Iestatīt Chromium kā noklusējuma pārlūku</translation>
-<translation id="5438241569118040789"><ph name="PAGE_TITLE" /> — Chromium beta versija</translation>
-<translation id="5473971139929175403">Iespējams, pārlūks Chromium nedarbosies pareizi, jo tas vairs netiek atbalstīts šajā Linux izdevumā.</translation>
-<translation id="5475924890392386523">Pārlūkā Chromium šī lejupielāde tika bloķēta, jo šis fails var kaitēt jūsu personīgajiem un sociālo tīklu kontiem</translation>
-<translation id="5480860683791598150">Pārlūkam Chromium ir nepieciešama piekļuve jūsu atrašanās vietas datiem, lai varētu tos kopīgot ar šo vietni.</translation>
+<translation id="330264384086604869">Noņemt no pārlūka Ecosia</translation>
+<translation id="5581150090232500900">Iestatīt Ecosia kā noklusējuma pārlūku</translation>
+<translation id="1361296321590354837"><ph name="PAGE_TITLE"/> — Ecosia beta versija</translation>
+<translation id="3307959934543585795">Iespējams, pārlūks Ecosia nedarbosies pareizi, jo tas vairs netiek atbalstīts šajā Linux izdevumā.</translation>
+<translation id="197803137365953132">Pārlūkā Ecosia šī lejupielāde tika bloķēta, jo šis fails var kaitēt jūsu personīgajiem un sociālo tīklu kontiem</translation>
+<translation id="6558895515431832002">Pārlūkam Ecosia ir nepieciešama piekļuve jūsu atrašanās vietas datiem, lai varētu tos kopīgot ar šo vietni.</translation>
 <translation id="5487574057737591516">Lai aizsargātu jūsu konfidencialitāti, mēs automātiski dzēšam intereses, kas ir glabātas ilgāk par četrām nedēļām. Intereses var tikt atkārtoti pievienotas sarakstam, kad turpināsiet pārlūkošanu. Ja intereses pārlūkā Chromium nav noteiktas pareizi vai nevēlaties skatīt konkrētas reklāmas, varat noņemt interesi.</translation>
-<translation id="549669000822060376">Lūdzu, uzgaidiet, kamēr Chromium instalē jaunākos sistēmas atjauninājumus.</translation>
-<translation id="5496810170689441661">Chromium mēģina rediģēt paroles. Lai to atļautu, ierakstiet savu Windows paroli.</translation>
+<translation id="5279514147510747661">Lūdzu, uzgaidiet, kamēr Ecosia instalē jaunākos sistēmas atjauninājumus.</translation>
+<translation id="5066194399237265772">Ecosia mēģina rediģēt paroles. Lai to atļautu, ierakstiet savu Windows paroli.</translation>
 <translation id="5527463683072221100">Atvērt PDF failus pārlūkā Chromium</translation>
-<translation id="5623402015214259806">{0,plural, =0{Ir pieejams Chromium atjauninājums}=1{Ir pieejams Chromium atjauninājums}zero{Chromium atjauninājums ir pieejams jau # dienu}one{Chromium atjauninājums ir pieejams jau # dienu}other{Chromium atjauninājums ir pieejams jau # dienas}}</translation>
+<translation id="7348818664647668234">{0,plural, =0{Ir pieejams Ecosia atjauninājums}=1{Ir pieejams Ecosia atjauninājums}zero{Ecosia atjauninājums ir pieejams jau # dienu}one{Ecosia atjauninājums ir pieejams jau # dienu}other{Ecosia atjauninājums ir pieejams jau # dienas}}</translation>
 <translation id="5643865575100044307">Vienmēr notīrīt vietnes datus no ierīces, kad tiek aizvērts pārlūks Chromium</translation>
-<translation id="5653831366781983928">Lūdzu, nekavējoties restartējiet pārlūku Chromium</translation>
-<translation id="5690427481109656848">Google LLC</translation>
+<translation id="5982672133249369264">Lūdzu, nekavējoties restartējiet pārlūku Ecosia</translation>
+<translation id="4811228173434336381">Ecosia LLC</translation>
 <translation id="5698481217667032250">Rādīt Chromium šajā valodā</translation>
 <translation id="569897634095159764">Nevar izveidot savienojumu ar internetu. Starpniekserverī ir nepieciešama autentifikācija.</translation>
-<translation id="5761096224651992291">Pēdējā laikā neesat apmeklējis šo vietni. Pārlūkā Chromium tika noņemtas šādas atļaujas: <ph name="PERMISSION_1" />, <ph name="PERMISSION_2" /> un <ph name="PERMISSION_3" /></translation>
-<translation id="5800158606660203929">Pielāgojiet un kontrolējiet pārlūku Chromium. Iestatiet Chromium kā noklusējuma pārlūku.</translation>
+<translation id="5761096224651992291">Pēdējā laikā neesat apmeklējis šo vietni. Pārlūkā Chromium tika noņemtas šādas atļaujas: <ph name="PERMISSION_1"/>, <ph name="PERMISSION_2"/> un <ph name="PERMISSION_3"/></translation>
+<translation id="1818520302923047971">Pielāgojiet un kontrolējiet pārlūku Ecosia. Iestatiet Ecosia kā noklusējuma pārlūku.</translation>
 <translation id="5809516625706423866">Nevar izveidot savienojumu ar internetu. HTTP 401 — neatļauts. Lūdzu, pārbaudiet starpniekservera konfigurāciju.</translation>
-<translation id="5862307444128926510">Laipni lūdzam pārlūkā Chromium!</translation>
-<translation id="5883558403894052917">Pārlūkā Chromium tika konstatēts, ka tālāk norādītie vienumi satur ļaunprātīgu programmatūru:</translation>
+<translation id="1027331268335328576">Laipni lūdzam pārlūkā Ecosia!</translation>
+<translation id="2942675027725878581">Pārlūkā Ecosia tika konstatēts, ka tālāk norādītie vienumi satur ļaunprātīgu programmatūru:</translation>
 <translation id="5889361821821684993">Chromium regulāri pārbauda, vai pārlūkā ir atlasīti visdrošākie iestatījumi. Ja kaut kas būs jāpārskata, saņemsiet paziņojumu.</translation>
 <translation id="5895138241574237353">Restartēt</translation>
-<translation id="5903106910045431592"><ph name="PAGE_TITLE" /> — pierakstīšanās tīklā</translation>
+<translation id="5903106910045431592"><ph name="PAGE_TITLE"/> — pierakstīšanās tīklā</translation>
 <translation id="5924017743176219022">Notiek savienojuma izveide ar internetu...</translation>
-<translation id="5929318705173562984">Lai uzlabotu pārlūkošanu un atbrīvotu resursus, pārlūkā Chromium var padarīt šo cilni neaktīvu.</translation>
+<translation id="719484593754925816">Lai uzlabotu pārlūkošanu un atbrīvotu resursus, pārlūkā Ecosia var padarīt šo cilni neaktīvu.</translation>
 <translation id="5941711191222866238">Minimizēt</translation>
 <translation id="5972142260211327093">Ja esat iesaistīts aktīvā izmēģinājumā pārlūkā Chromium, jūsu pārlūkošanas vēsture ietekmē to, kādas reklāmas jums tiek rādītas, un tālāk redzamās aptuveni noteiktās intereses. Lai aizsargātu jūsu konfidencialitāti, Chromium katru mēnesi pakāpeniski dzēš jūsu intereses. Intereses tiek atjaunotas, ja vien nenoņemat tās.</translation>
-<translation id="5986585015444752010">{COUNT,plural, =1{Jūsu organizācija automātiski aizver pārlūku Chromium, ja tas nav izmantots vienu minūti.}zero{Jūsu organizācija automātiski aizver pārlūku Chromium, ja tas nav izmantots # minūtes.}one{Jūsu organizācija automātiski aizver pārlūku Chromium, ja tas nav izmantots # minūti.}other{Jūsu organizācija automātiski aizver pārlūku Chromium, ja tas nav izmantots # minūtes.}}</translation>
-<translation id="5987687638152509985">Lai sāktu sinhronizēšanu, atjauniniet Chromium.</translation>
+<translation id="2988629157092722504">{COUNT,plural, =1{Jūsu organizācija automātiski aizver pārlūku Ecosia, ja tas nav izmantots vienu minūti.}zero{Jūsu organizācija automātiski aizver pārlūku Ecosia, ja tas nav izmantots # minūtes.}one{Jūsu organizācija automātiski aizver pārlūku Ecosia, ja tas nav izmantots # minūti.}other{Jūsu organizācija automātiski aizver pārlūku Ecosia, ja tas nav izmantots # minūtes.}}</translation>
+<translation id="5704599732514791330">Lai sāktu sinhronizēšanu, atjauniniet Ecosia.</translation>
 <translation id="5988505247484123880">Bieži vien jūsu apmeklētajās vietnēs tiek saglabāta informācija par jūs interesējošām lietām, lai personalizētu jūsu pieredzi. Vietnes var arī glabāt informāciju par jūsu interesēm pārlūkā Chromium.</translation>
-<translation id="6003112304606738118">Notiek lejupielāde... Atlikušais laiks: <ph name="HOURS" /> stunda(-as).</translation>
-<translation id="6019451407441383358">Varat atvērt grāmatzīmes, lasīšanas režīmu un citas iespējas, izmantojot Chromium izvēlni, kas atrodas augšējā labajā stūrī.</translation>
+<translation id="6003112304606738118">Notiek lejupielāde... Atlikušais laiks: <ph name="HOURS"/> stunda(-as).</translation>
+<translation id="8347473600923066837">Varat atvērt grāmatzīmes, lasīšanas režīmu un citas iespējas, izmantojot Ecosia izvēlni, kas atrodas augšējā labajā stūrī.</translation>
 <translation id="6040143037577758943">Aizvērt</translation>
 <translation id="6058380562449900225">Lai aizsargātu savus datus, ļaujiet pārlūkā Chromium atsaukt atļaujas vietnēm, ko pēdējā laikā neesat apmeklējis (paziņojumi netiks bloķēti)</translation>
-<translation id="6063093106622310249">&amp;Atvērt pārlūkā Chromium</translation>
-<translation id="6072279588547424923">Paplašinājums <ph name="EXTENSION_NAME" /> ir pievienots pārlūkam Chromium</translation>
-<translation id="6072463441809498330">Pārlūka Chromium darbības paātrināšana</translation>
+<translation id="7303930050538184306">&amp;Atvērt pārlūkā Ecosia</translation>
+<translation id="2227704215309956084">Paplašinājums <ph name="EXTENSION_NAME"/> ir pievienots pārlūkam Ecosia</translation>
+<translation id="2905159584855395810">Pārlūka Ecosia darbības paātrināšana</translation>
 <translation id="608006075545470555">Darba profila pievienošana šai pārlūkprogrammai</translation>
-<translation id="6096348254544841612">Pielāgojiet un pārvaldiet pārlūku Chromium. Ir pieejams atjauninājums.</translation>
+<translation id="8296565077892323223">Pielāgojiet un pārvaldiet pārlūku Ecosia. Ir pieejams atjauninājums.</translation>
 <translation id="6102072151902574948">Ja šis iestatījums ir ieslēgts, pārlūkā Chromium tiek taupīta akumulatora jauda, ierobežojot darbības fonā un vizuālos efektus, piemēram, vienmērīgu ritināšanu un video kadru nomaiņas ātrumu.</translation>
-<translation id="6107893135096467929">Ieslēgts • Chromium nevar pārbaudīt šī paplašinājuma izcelsmi</translation>
-<translation id="6119438414301547735">Atļaut paplašinājumam rādīt piekļuves pieprasījumus Chromium rīkjoslā</translation>
-<translation id="6120345080069858279">Pārlūks Chromium saglabās šo paroli jūsu Google kontā. To nav nepieciešams iegaumēt.</translation>
-<translation id="6129621093834146363">Fails <ph name="FILE_NAME" /> ir bīstams, tādēļ Chromium to bloķēja.</translation>
-<translation id="6132897690380286411">Chromium drīz tiks aizvērts, un dati tiks izdzēsti</translation>
+<translation id="8419312540998601274">Ieslēgts • Ecosia nevar pārbaudīt šī paplašinājuma izcelsmi</translation>
+<translation id="6419542773162312746">Atļaut paplašinājumam rādīt piekļuves pieprasījumus Ecosia rīkjoslā</translation>
+<translation id="4021894801595982809">Pārlūks Ecosia saglabās šo paroli jūsu Ecosia kontā. To nav nepieciešams iegaumēt.</translation>
+<translation id="1936361330890313940">Fails <ph name="FILE_NAME"/> ir bīstams, tādēļ Ecosia to bloķēja.</translation>
+<translation id="2446603005062458629">Ecosia drīz tiks aizvērts, un dati tiks izdzēsti</translation>
 <translation id="6134968993075716475">Droša pārlūkošana ir izslēgta. Pārlūkā Chromium tiek ieteikts to ieslēgt.</translation>
-<translation id="6145820983052037069">Šeit varat pārslēgties starp Chromium profiliem.</translation>
+<translation id="4032832945953542360">Šeit varat pārslēgties starp Ecosia profiliem.</translation>
 <translation id="615103374448673771">Ja atļaujat sīkfailus, pārlūks Chromium var tos izmantot iepriekšējai ielādei.</translation>
-<translation id="6174920971222007286">Šis fails var būt bīstams.<ph name="LINE_BREAK" />Chromium var pārbaudīt šo lejupielādi, ja norādīsiet paroli. Informācija par failu tiek nosūtīta funkcijai “Google droša pārlūkošana”, taču faila saturs un parole paliek jūsu ierīcē.</translation>
+<translation id="5032126307005935789">Šis fails var būt bīstams.<ph name="LINE_BREAK"/>Ecosia var pārbaudīt šo lejupielādi, ja norādīsiet paroli. Informācija par failu tiek nosūtīta funkcijai “Ecosia droša pārlūkošana”, taču faila saturs un parole paliek jūsu ierīcē.</translation>
 <translation id="6182736845697986886">Instalēšana neizdevās, jo radās atjauninājumu servera iekšēja kļūda.</translation>
-<translation id="6183079672144801177">Ierīcē <ph name="TARGET_DEVICE_NAME" /> pierakstieties pārlūkā Chromium un pēc tam vēlreiz mēģiniet veikt sūtīšanu.</translation>
-<translation id="6212496753309875659">Šim datoram jau ir jaunākā Chromium versija. Ja programmatūra nedarbojas, atinstalējiet pārlūku Chromium un mēģiniet vēlreiz.</translation>
-<translation id="6219195342503754812">{0,plural, =0{Pārlūks Chromium tūlīt tiks restartēts}=1{Pārlūks Chromium pēc 1 sekundes tiks restartēts}zero{Pārlūks Chromium pēc # sekundēm tiks restartēts}one{Pārlūks Chromium pēc # sekundes tiks restartēts}other{Pārlūks Chromium pēc # sekundēm tiks restartēts}}</translation>
-<translation id="6241367896540709610">Pārlūkam Chromium ir nepieciešama atļauja piekļūt krātuvei, lai varētu lejupielādēt failus.</translation>
+<translation id="2346323077583431428">Ierīcē <ph name="TARGET_DEVICE_NAME"/> pierakstieties pārlūkā Ecosia un pēc tam vēlreiz mēģiniet veikt sūtīšanu.</translation>
+<translation id="2995860351618948435">Šim datoram jau ir jaunākā Ecosia versija. Ja programmatūra nedarbojas, atinstalējiet pārlūku Ecosia un mēģiniet vēlreiz.</translation>
+<translation id="5690368185132749068">{0,plural, =0{Pārlūks Ecosia tūlīt tiks restartēts}=1{Pārlūks Ecosia pēc 1 sekundes tiks restartēts}zero{Pārlūks Ecosia pēc # sekundēm tiks restartēts}one{Pārlūks Ecosia pēc # sekundes tiks restartēts}other{Pārlūks Ecosia pēc # sekundēm tiks restartēts}}</translation>
+<translation id="1809194740315140401">Pārlūkam Ecosia ir nepieciešama atļauja piekļūt krātuvei, lai varētu lejupielādēt failus.</translation>
 <translation id="6245734527075554892">Vietrāži URL tiek pārbaudīti, salīdzinot ar nedrošo vietņu sarakstu, kas ir saglabāts pārlūkprogrammā Chromium.</translation>
-<translation id="6248213926982192922">Padarīt Chromium par noklusējuma pārlūku</translation>
+<translation id="4662363689050405237">Padarīt Ecosia par noklusējuma pārlūku</translation>
 <translation id="6266342355635466082">Pārlūkprogrammā Chromium nevar pārbaudīt atjauninājumu pieejamību. Pārbaudiet interneta savienojumu.</translation>
 <translation id="6268381023930128611">Vai izrakstīties no Chromium?</translation>
-<translation id="6270547683008298381">Šīs cilnes izmanto papildu resursus. Lai uzlabotu veiktspēju, ļaujiet pārlūkam Chromium padarīt tās neaktīvas.</translation>
-<translation id="6281746429495226318">Pielāgot Chromium profilu</translation>
+<translation id="4618410489751241263">Šīs cilnes izmanto papildu resursus. Lai uzlabotu veiktspēju, ļaujiet pārlūkam Ecosia padarīt tās neaktīvas.</translation>
+<translation id="6416551953415159186">Pielāgot Ecosia profilu</translation>
 <translation id="6290827346642914212">Chromium profila nosaukšana</translation>
-<translation id="6294831894865512704">Viens no paplašinājumiem pieprasa, lai jūs pierakstītos pārlūkā Chromium</translation>
-<translation id="6295779123002464101">Fails <ph name="FILE_NAME" /> var būt bīstams, tādēļ Chromium to bloķēja.</translation>
-<translation id="6309712487085796862">Chrome saitē tiek izmantota kamera.</translation>
+<translation id="4882579364090762302">Viens no paplašinājumiem pieprasa, lai jūs pierakstītos pārlūkā Ecosia</translation>
+<translation id="3625533701824359646">Fails <ph name="FILE_NAME"/> var būt bīstams, tādēļ Ecosia to bloķēja.</translation>
+<translation id="4943938785458240142">Ecosia saitē tiek izmantota kamera.</translation>
 <translation id="6327105987658262776">Atjauninājums nav pieejams.</translation>
-<translation id="6333502561965082103">Tiek veikta cita darbība pārlūkā Chromium. Lūdzu, vēlāk mēģiniet vēlreiz.</translation>
-<translation id="6334986366598267305">Tagad pārlūkā Chromium ir vieglāk izmantot Google kontu, kā arī ir atvieglota lietošana datoros, ko izmanto vairākas personas.</translation>
-<translation id="633626832589656416">Lai uzlabotu jūsu pārlūkošanas pieredzi un paātrinātu darbu, Chromium var padarīt šīs cilnes neaktīvas.</translation>
-<translation id="6347933965114150440">Chromium saīsne</translation>
-<translation id="6366160072964553914">Pārlūkā Chromium šī lejupielāde tika bloķēta, jo fails parasti netiek lejupielādēts un var būt bīstams.</translation>
-<translation id="6373523479360886564">Vai tiešām vēlaties atinstalēt pārlūku Chromium?</translation>
+<translation id="6450895420388847775">Tiek veikta cita darbība pārlūkā Ecosia. Lūdzu, vēlāk mēģiniet vēlreiz.</translation>
+<translation id="464306605599005355">Tagad pārlūkā Ecosia ir vieglāk izmantot Ecosia kontu, kā arī ir atvieglota lietošana datoros, ko izmanto vairākas personas.</translation>
+<translation id="6735145163744656874">Lai uzlabotu jūsu pārlūkošanas pieredzi un paātrinātu darbu, Ecosia var padarīt šīs cilnes neaktīvas.</translation>
+<translation id="1284343625991453987">Ecosia saīsne</translation>
+<translation id="7051119589302096163">Pārlūkā Ecosia šī lejupielāde tika bloķēta, jo fails parasti netiek lejupielādēts un var būt bīstams.</translation>
+<translation id="7908111389403807005">Vai tiešām vēlaties atinstalēt pārlūku Ecosia?</translation>
 <translation id="6375219077595103062">Saīsnes pievienošana paroļu pārvaldniekam</translation>
-<translation id="6384011394608460044"><ph name="BEGIN_BOLD" />Kā mēs izmantojam šos datus:<ph name="END_BOLD" /> pārlūkā Chromium var aptuveni noteikt jūsu intereses. Vēlāk kāda jūsu apmeklēta vietne var pieprasīt pārlūkam Chromium atļauju skatīt jūsu intereses, lai personalizētu jums rādāmās reklāmas.</translation>
-<translation id="6400112897226594999">Chromium logotips datora ekrānā.</translation>
-<translation id="6403826409255603130">Chromium ir tīmekļa pārlūks, kas darbina tīmekļa lapas un lietojumprogrammas zibenīgā ātrumā. Tas ir ātrs, stabils un ērti lietojams. Pārlūkojiet tīmekli vēl drošāk ar aizsardzību pret ļaunprātīgu programmatūru un pikšķerēšanu, kas iebūvēta pārlūkā Chromium.</translation>
-<translation id="6442900851116057561">Chromium OS restartēšana</translation>
+<translation id="5610400309434105339"><ph name="BEGIN_BOLD"/>Kā mēs izmantojam šos datus:<ph name="END_BOLD"/> pārlūkā Ecosia var aptuveni noteikt jūsu intereses. Vēlāk kāda jūsu apmeklēta vietne var pieprasīt pārlūkam Ecosia atļauju skatīt jūsu intereses, lai personalizētu jums rādāmās reklāmas.</translation>
+<translation id="7578952608547569314">Ecosia logotips datora ekrānā.</translation>
+<translation id="3939060118711873999">Ecosia ir tīmekļa pārlūks, kas darbina tīmekļa lapas un lietojumprogrammas zibenīgā ātrumā. Tas ir ātrs, stabils un ērti lietojams. Pārlūkojiet tīmekli vēl drošāk ar aizsardzību pret ļaunprātīgu programmatūru un pikšķerēšanu, kas iebūvēta pārlūkā Ecosia.</translation>
+<translation id="5404489723475681578">Ecosia OS restartēšana</translation>
 <translation id="6443470774889161065">Pārlūkā Chromium tiek iepriekš ielādēts vēl vairāk lapu, ko jūs, iespējams, apmeklēsiet. Tādējādi var tās ielādēt ātrāk tad, kad tās tiešām apmeklējat.</translation>
-<translation id="645458117210240797">Izslēgts • Chromium nevar pārbaudīt šī paplašinājuma izcelsmi</translation>
-<translation id="6455857529632101747">Laipni lūdzam Chromium profilos!</translation>
-<translation id="6466344609055215035">Noņemt kontu no pārlūka Chromium</translation>
-<translation id="6475912303565314141">Tas nosaka arī to, kāda lapa tiks rādīta, kad atvērsiet pārlūku Chromium.</translation>
+<translation id="7877883466657693294">Izslēgts • Ecosia nevar pārbaudīt šī paplašinājuma izcelsmi</translation>
+<translation id="4410570812343670816">Laipni lūdzam Ecosia profilos!</translation>
+<translation id="4371259280767924562">Noņemt kontu no pārlūka Ecosia</translation>
+<translation id="524314285625975879">Tas nosaka arī to, kāda lapa tiks rādīta, kad atvērsiet pārlūku Ecosia.</translation>
 <translation id="648319183876919572">Droša pārlūkošana ar papildu aizsardzību nodrošina efektīvāku aizsardzību pret bīstamām vietnēm un lejupielādēm</translation>
-<translation id="6510925080656968729">Atinstalēt Chromium</translation>
-<translation id="651535675648445253">Saīsnes tiek atvērtas pārlūkā Chromium</translation>
-<translation id="6524389414524528185">Kamēr esat pierakstījies, pārlūkā Chromium varat izmantot savas paroles un citu saturu no Google konta. Iestatījumos varat jebkurā brīdī to mainīt.</translation>
-<translation id="6539122709674868420">Jūsu organizācija aizver pārlūku Chromium, ja tas <ph name="TIMEOUT_DURATION" /> netiek izmantots. Pārlūkošanas dati tika izdzēsti. Tie var ietvert vēsturi, automātiskās aizpildes datus un lejupielādes.</translation>
-<translation id="6542839706527980775">Katrā profilā tiek glabāta attiecīgā Chromium profila informācija, piemēram, grāmatzīmes, vēsture, paroles un citi dati.</translation>
-<translation id="6563921047760808519">Uzziniet vairāk par to, <ph name="BEGIN_LINK" />kā pārlūkā Chromium tiek saglabāta jūsu datu konfidencialitāte<ph name="END_LINK" />.</translation>
-<translation id="656935081669708576">Varat pārslēgties, lai skatītu paroles no cita Chromium profila.</translation>
+<translation id="6496553866814956056">Atinstalēt Ecosia</translation>
+<translation id="788366290112401490">Saīsnes tiek atvērtas pārlūkā Ecosia</translation>
+<translation id="1773882594264682232">Kamēr esat pierakstījies, pārlūkā Ecosia varat izmantot savas paroles un citu saturu no Ecosia konta. Iestatījumos varat jebkurā brīdī to mainīt.</translation>
+<translation id="2280934980919215876">Jūsu organizācija aizver pārlūku Ecosia, ja tas <ph name="TIMEOUT_DURATION"/> netiek izmantots. Pārlūkošanas dati tika izdzēsti. Tie var ietvert vēsturi, automātiskās aizpildes datus un lejupielādes.</translation>
+<translation id="8608092457636055141">Katrā profilā tiek glabāta attiecīgā Ecosia profila informācija, piemēram, grāmatzīmes, vēsture, paroles un citi dati.</translation>
+<translation id="6563921047760808519">Uzziniet vairāk par to, <ph name="BEGIN_LINK"/>kā pārlūkā Chromium tiek saglabāta jūsu datu konfidencialitāte<ph name="END_LINK"/>.</translation>
+<translation id="3592624492063123732">Varat pārslēgties, lai skatītu paroles no cita Ecosia profila.</translation>
 <translation id="6570579332384693436">Lai izlabotu pareizrakstības kļūdas, Chromium nosūta teksta laukos ievadīto tekstu Google serveriem.</translation>
-<translation id="6598877126913850652">Pāriet uz Chromium paziņojumu iestatījumiem</translation>
-<translation id="6613594504749178791">Izmaiņas stāsies spēkā, kad restartēsiet Chromium.</translation>
-<translation id="665732753414869868">Pārlūkam Chromium ir nepieciešama atļauja izmantot kameru, lai varētu izveidot jūsu apkārtnes 3D karti.</translation>
+<translation id="6533266716128249922">Pāriet uz Ecosia paziņojumu iestatījumiem</translation>
+<translation id="1722634673917783018">Izmaiņas stāsies spēkā, kad restartēsiet Ecosia.</translation>
+<translation id="2537426042760364251">Pārlūkam Ecosia ir nepieciešama atļauja izmantot kameru, lai varētu izveidot jūsu apkārtnes 3D karti.</translation>
 <translation id="6663852025006259149">Vietnes, visticamāk, darbosies pienācīgi, taču nesaglabās jūsu datus, kad aizvērsiet visus Chromium logus.</translation>
 <translation id="6669284030132180248">Ja saglabāsiet grāmatzīmes arī Google kontā, varēsiet izsekot produktu cenām pārlūkā Chromium un saņemt paziņojumus par cenu kritumiem.</translation>
 <translation id="6676384891291319759">Piekļūt internetam</translation>
-<translation id="668175097507315160">Chromium OS nevarēja sinhronizēt jūsu datus pierakstīšanās kļūdas dēļ.</translation>
+<translation id="8067423333018528301">Ecosia OS nevarēja sinhronizēt jūsu datus pierakstīšanās kļūdas dēļ.</translation>
 <translation id="6692797197837897398">Chromium nodrošina lielāku kontroli pār jums rādītajām reklāmām un ierobežo informāciju, ko vietnes var uzzināt par jums, kad tās rāda jums personalizētas reklāmas.</translation>
-<translation id="6709350901466051922">Pārlūkam Chromium ir nepieciešama atļauja izmantot mikrofonu šajā vietnē.</translation>
-<translation id="6712881677154121168">Lejupielādes kļūda: <ph name="DOWNLOAD_ERROR" />.</translation>
-<translation id="6717134281241384636">Jūsu profilu nevar izmantot, jo tas ir no jaunākas Chromium versijas.
+<translation id="2173571365716863400">Pārlūkam Ecosia ir nepieciešama atļauja izmantot mikrofonu šajā vietnē.</translation>
+<translation id="6712881677154121168">Lejupielādes kļūda: <ph name="DOWNLOAD_ERROR"/>.</translation>
+<translation id="6648664289472946060">Jūsu profilu nevar izmantot, jo tas ir no jaunākas Ecosia versijas.
 
-Dažas funkcijas var nebūt pieejamas. Norādiet citu profila direktoriju vai izmantojiet jaunāku Chromium versiju.</translation>
+Dažas funkcijas var nebūt pieejamas. Norādiet citu profila direktoriju vai izmantojiet jaunāku Ecosia versiju.</translation>
 <translation id="6729124504294600478">Lai varētu izmantot personalizēšanu un citas funkcijas, iekļaujiet pārlūku Chromium iestatījumos “Darbības tīmeklī un lietotnēs” un “Saistītie Google pakalpojumi”.</translation>
-<translation id="6734291798041940871">Pārlūks Chromium jau ir instalēts visiem lietotājiem jūsu datorā.</translation>
-<translation id="673636774878526923">Lai piekļūtu savam Chromium saturam visās jūsu ierīcēs, pierakstieties un pēc tam ieslēdziet sinhronizāciju.</translation>
-<translation id="674245979920622322">Pēdējā laikā neesat apmeklējis šo vietni. Pārlūkā Chromium tika noņemtas šādas atļaujas: <ph name="PERMISSION_1" />, <ph name="PERMISSION_2" /> (un vēl <ph name="COUNT" /> atļaujas)</translation>
-<translation id="67706546131546258">Chromium iesaka pārbaudīt šo failu, jo tas var būt bīstams.</translation>
-<translation id="6779406956731413166">Chromium OS darbību nodrošina papildu <ph name="BEGIN_LINK_CROS_OSS" />atklātā pirmkoda programmatūra<ph name="END_LINK_CROS_OSS" />.</translation>
-<translation id="6847869444787758381">Ja jūsu paroles kādreiz tiks apdraudētas, pārlūkā Chromium saņemsiet paziņojumu</translation>
-<translation id="684888714667046800">Nevar izveidot savienojumu ar internetu. Ja izmantojat ugunsmūri, failam <ph name="PRODUCT_EXE_NAME" /> noteikti ir jābūt iekļautam atļaušanas sarakstā.</translation>
-<translation id="6857782730669500492">Chromium — <ph name="PAGE_TITLE" /></translation>
-<translation id="6873893289264747459">Pārlūkā Chromium tika konstatēts, ka paplašinājums “<ph name="EXTENSION_NAME" />” satur ļaunprātīgu programmatūru.</translation>
+<translation id="4870057811531036437">Pārlūks Ecosia jau ir instalēts visiem lietotājiem jūsu datorā.</translation>
+<translation id="4512092435423703529">Lai piekļūtu savam Ecosia saturam visās jūsu ierīcēs, pierakstieties un pēc tam ieslēdziet sinhronizāciju.</translation>
+<translation id="674245979920622322">Pēdējā laikā neesat apmeklējis šo vietni. Pārlūkā Chromium tika noņemtas šādas atļaujas: <ph name="PERMISSION_1"/>, <ph name="PERMISSION_2"/> (un vēl <ph name="COUNT"/> atļaujas)</translation>
+<translation id="7972668220031382654">Ecosia iesaka pārbaudīt šo failu, jo tas var būt bīstams.</translation>
+<translation id="2441303983090031276">Ecosia OS darbību nodrošina papildu <ph name="BEGIN_LINK_CROS_OSS"/>atklātā pirmkoda programmatūra<ph name="END_LINK_CROS_OSS"/>.</translation>
+<translation id="1263466865695943046">Ja jūsu paroles kādreiz tiks apdraudētas, pārlūkā Ecosia saņemsiet paziņojumu</translation>
+<translation id="684888714667046800">Nevar izveidot savienojumu ar internetu. Ja izmantojat ugunsmūri, failam <ph name="PRODUCT_EXE_NAME"/> noteikti ir jābūt iekļautam atļaušanas sarakstā.</translation>
+<translation id="4600924482853773728">Ecosia — <ph name="PAGE_TITLE"/></translation>
+<translation id="1490060441084292633">Pārlūkā Ecosia tika konstatēts, ka paplašinājums “<ph name="EXTENSION_NAME"/>” satur ļaunprātīgu programmatūru.</translation>
 <translation id="6929417474050522668">Kad izmēģināšana ir ieslēgta, reklāmu izvērtēšana ļauj jūsu apmeklētajām vietnēm pieprasīt informāciju no Chromium, lai efektīvāk novērtētu vietnēs rādīto reklāmu veiktspēju. Reklāmu izvērtēšana ierobežo starpvietņu izsekošanu, pārsūtot starp vietnēm pēc iespējas mazāk informācijas.</translation>
 <translation id="6940431691900807093">Vēlāk kāda jūsu apmeklēta vietne var pieprasīt pārlūkam Chromium atļauju skatīt jūsu intereses, lai personalizētu jums rādāmās reklāmas. Pārlūks Chromium var kopīgot līdz trim interesēm.</translation>
-<translation id="6964305034639999644">Atvērt saiti inko&amp;gnito režīma logā</translation>
-<translation id="6978145336957848883">Nedrošas paroles ir viegli uzminēt. Pārlūkā Chromium <ph name="BEGIN_LINK" />var automātiski veidot un iegaumēt drošas paroles jūsu kontiem<ph name="END_LINK" />.</translation>
+<translation id="8283315171506895091">Atvērt saiti inko&amp;gnito režīma logā</translation>
+<translation id="6978145336957848883">Nedrošas paroles ir viegli uzminēt. Pārlūkā Chromium <ph name="BEGIN_LINK"/>var automātiski veidot un iegaumēt drošas paroles jūsu kontiem<ph name="END_LINK"/>.</translation>
 <translation id="6981396265751285733">Ja šis iestatījums ir ieslēgts, pārlūkā Chromium neaktīvās cilnēs tiek atbrīvota atmiņa. Tādējādi aktīvajām cilnēm un citām lietotnēm tiek nodrošināts vairāk datora resursu un tiek uzlabots Chromium darbības ātrums. Neaktīvās cilnes atkal tiek automātiski aktivizētas, kad tās atverat.</translation>
-<translation id="6985329841647292029">Chromium OS noteikumi</translation>
-<translation id="6990124437352146030">Pārlūkam Chromium ir nepieciešama atļauja piekļūt jūsu mikrofonam šajā vietnē.</translation>
+<translation id="2149148292984034533">Ecosia OS noteikumi</translation>
+<translation id="1831192335802727557">Pārlūkam Ecosia ir nepieciešama atļauja piekļūt jūsu mikrofonam šajā vietnē.</translation>
 <translation id="7011190694940573312">Instalēšana neizdevās, jo šī operētājsistēmas versija netiek atbalstīta.</translation>
-<translation id="7024536598735240744">Atpakošanas kļūda: <ph name="UNPACK_ERROR" />.</translation>
+<translation id="7024536598735240744">Atpakošanas kļūda: <ph name="UNPACK_ERROR"/>.</translation>
 <translation id="7025789849649390912">Instalēšana apturēta.</translation>
-<translation id="7045244423563602563">Pielāgojiet pārlūku Chromium savām vajadzībām</translation>
-<translation id="705851970750939768">Atjaunināt Chromium</translation>
-<translation id="7067091210845072982">Ja attēlam nav vērtīga apraksta, pārlūks Chromium mēģinās jums tādu nodrošināt. Lai izveidotu aprakstus, attēli tiek nosūtīti uzņēmumam Google.</translation>
-<translation id="7141270731789036260">Pielāgot versiju Chrome for Testing</translation>
-<translation id="7163519456498498587">Noņemt paplašinājumu <ph name="EXTENSION_NAME" /> no pārlūka Chromium</translation>
-<translation id="7173822816570314652">Jūsu organizācija dzēš Chromium datus, ja šis pārlūks <ph name="TIMEOUT_DURATION" /> netiek izmantots. Tie var ietvert vēsturi, automātiskās aizpildes datus un lejupielādes.</translation>
-<translation id="718435575166326686">Pārlūkam Chromium ir nepieciešama atļauja izmantot kameru šajā vietnē.</translation>
-<translation id="7196312274710523067">Neizdevās palaist Chromium. Mēģiniet vēlreiz.</translation>
+<translation id="762525592078244189">Pielāgojiet pārlūku Ecosia savām vajadzībām</translation>
+<translation id="5598074261782651109">Atjaunināt Ecosia</translation>
+<translation id="2838372953389311551">Ja attēlam nav vērtīga apraksta, pārlūks Ecosia mēģinās jums tādu nodrošināt. Lai izveidotu aprakstus, attēli tiek nosūtīti uzņēmumam Ecosia.</translation>
+<translation id="550507036977517224">Pielāgot versiju Ecosia for Testing</translation>
+<translation id="9091453616111683919">Noņemt paplašinājumu <ph name="EXTENSION_NAME"/> no pārlūka Ecosia</translation>
+<translation id="5137471865755621561">Jūsu organizācija dzēš Ecosia datus, ja šis pārlūks <ph name="TIMEOUT_DURATION"/> netiek izmantots. Tie var ietvert vēsturi, automātiskās aizpildes datus un lejupielādes.</translation>
+<translation id="219546601381787154">Pārlūkam Ecosia ir nepieciešama atļauja izmantot kameru šajā vietnē.</translation>
+<translation id="2542649989941327712">Neizdevās palaist Ecosia. Mēģiniet vēlreiz.</translation>
 <translation id="7197677400338048821">Pārlūkprogrammā Chromium nevar pārbaudīt jūsu paroles. Mēģiniet vēlreiz pēc 24 stundām.</translation>
-<translation id="7213407614656404070">Izmantojiet Chromium ikreiz, kad noklikšķināt uz saitēm ziņojumos, dokumentos un citās lietotnēs</translation>
-<translation id="7223968959479464213">Uzdevumu pārvaldnieks — Chromium</translation>
-<translation id="7246575524853130370">Jūsu intereses, kas aptuveni noteiktas pārlūkā Chromium</translation>
-<translation id="7295544978856094497">{NUM_EXTENSIONS,plural, =1{Chromium iesaka to noņemt.}zero{Chromium iesaka tos noņemt.}one{Chromium iesaka tos noņemt.}other{Chromium iesaka tos noņemt.}}</translation>
+<translation id="3784023996375784431">Izmantojiet Ecosia ikreiz, kad noklikšķināt uz saitēm ziņojumos, dokumentos un citās lietotnēs</translation>
+<translation id="7311066525704006840">Uzdevumu pārvaldnieks — Ecosia</translation>
+<translation id="3816260943154642689">Jūsu intereses, kas aptuveni noteiktas pārlūkā Ecosia</translation>
+<translation id="1720431815870023289">{NUM_EXTENSIONS,plural, =1{Ecosia iesaka to noņemt.}zero{Ecosia iesaka tos noņemt.}one{Ecosia iesaka tos noņemt.}other{Ecosia iesaka tos noņemt.}}</translation>
 <translation id="7309928523159922338">Reklāmu izvērtēšana ļauj jūsu apmeklētajām vietnēm pieprasīt informāciju no Chromium, lai efektīvāk novērtētu vietnēs rādīto reklāmu veiktspēju. Reklāmu izvērtēšana ierobežo starpvietņu izsekošanu, pārsūtot starp vietnēm pēc iespējas mazāk informācijas.</translation>
 <translation id="731795002583552498">Notiek Chromium atjaunināšana</translation>
-<translation id="7318036098707714271">Jūsu preferenču fails ir bojāts vai nederīgs. Chromium nespēj atkopt jūsu iestatījumus.</translation>
+<translation id="6673288084648462613">Jūsu preferenču fails ir bojāts vai nederīgs. Ecosia nespēj atkopt jūsu iestatījumus.</translation>
 <translation id="7339898014177206373">Jauns logs</translation>
-<translation id="734373864078049451">Šeit atrodas jūsu tīmekļa saturs, grāmatzīmes un cits Chromium saturs.</translation>
-<translation id="7349591376906416160">Jūsu sistēmas administrators ir konfigurējis Chromium atvērt <ph name="ALTERNATIVE_BROWSER_NAME" />, lai piekļūtu <ph name="TARGET_URL_HOSTNAME" />.</translation>
-<translation id="7355355292030546812">Pārlūkā Chromium šī lejupielāde tika bloķēta, jo šis fails var kaitēt jūsu personīgajiem un sociālo tīklu kontiem, tostarp kontam <ph name="USER_EMAIL" /></translation>
-<translation id="7384121030444253939">Šis paplašinājums vairs netiek atbalstīts. Chromium iesaka to noņemt.</translation>
-<translation id="7398989605938454041">Izmantojot Chromium profilus, varat nodalīt visu savu Chromium saturu. Tādējādi tiek atvieglota darba un izklaides satura nodalīšana.</translation>
-<translation id="7449453770951226939"><ph name="PAGE_TITLE" /> — Chromium izstrādātāju versija</translation>
-<translation id="7451052299415159299">Pārlūkam Chromium ir nepieciešama atļauja piekļūt jūsu kamerai šajā vietnē.</translation>
-<translation id="7458892263350425044">Lai izmantotu mikrofonu, piešķiriet pārlūkam Chromium piekļuvi <ph name="BEGIN_LINK" />sistēmas iestatījumos<ph name="END_LINK" />.</translation>
-<translation id="7461356015007898716">Lai saņemtu turpmākus Chromium atjauninājumus, nepieciešama operētājsistēma Windows 10 vai jaunāka versija. Šajā datorā tiek izmantota operētājsistēma Windows 7.</translation>
+<translation id="4960252760049500399">Šeit atrodas jūsu tīmekļa saturs, grāmatzīmes un cits Ecosia saturs.</translation>
+<translation id="7158975242722498086">Jūsu sistēmas administrators ir konfigurējis Ecosia atvērt <ph name="ALTERNATIVE_BROWSER_NAME"/>, lai piekļūtu <ph name="TARGET_URL_HOSTNAME"/>.</translation>
+<translation id="6632508343667825745">Pārlūkā Ecosia šī lejupielāde tika bloķēta, jo šis fails var kaitēt jūsu personīgajiem un sociālo tīklu kontiem, tostarp kontam <ph name="USER_EMAIL"/></translation>
+<translation id="6180968682827452331">Šis paplašinājums vairs netiek atbalstīts. Ecosia iesaka to noņemt.</translation>
+<translation id="5622136942112821750">Izmantojot Ecosia profilus, varat nodalīt visu savu Ecosia saturu. Tādējādi tiek atvieglota darba un izklaides satura nodalīšana.</translation>
+<translation id="3879865245128287988"><ph name="PAGE_TITLE"/> — Ecosia izstrādātāju versija</translation>
+<translation id="5055330219314726197">Pārlūkam Ecosia ir nepieciešama atļauja piekļūt jūsu kamerai šajā vietnē.</translation>
+<translation id="7458892263350425044">Lai izmantotu mikrofonu, piešķiriet pārlūkam Chromium piekļuvi <ph name="BEGIN_LINK"/>sistēmas iestatījumos<ph name="END_LINK"/>.</translation>
+<translation id="1975037445584526511">Lai saņemtu turpmākus Ecosia atjauninājumus, nepieciešama operētājsistēma Windows 10 vai jaunāka versija. Šajā datorā tiek izmantota operētājsistēma Windows 7.</translation>
 <translation id="7467949745582939695">Vai atkārtoti palaist Chromium?</translation>
-<translation id="7483335560992089831">Nevar instalēt to pašu Chromium versiju, kas jau šobrīd darbojas. Aizveriet Chromium un mēģiniet vēlreiz.</translation>
+<translation id="80155189677487610">Nevar instalēt to pašu Ecosia versiju, kas jau šobrīd darbojas. Aizveriet Ecosia un mēģiniet vēlreiz.</translation>
 <translation id="751935028865900641">Vietnes, visticamāk, darbosies, kā paredzēts. Aizverot visus Chromium logus, automātiski izrakstīsieties no lielākās daļas vietņu, bet ne no Google konta, ja esat pierakstījies pārlūkā Chromium.</translation>
-<translation id="753534427205733210">{0,plural, =1{Pārlūks Chromium pēc 1 minūtes tiks restartēts}zero{Pārlūks Chromium pēc # minūtēm tiks restartēts}one{Pārlūks Chromium pēc # minūtes tiks restartēts}other{Pārlūks Chromium pēc # minūtēm tiks restartēts}}</translation>
-<translation id="7553334751796114046">Lai kopīgotu logu, sistēmas preferencēs atļaujiet ekrāna ierakstīšanu pārlūkā Chromium.</translation>
+<translation id="7558678848273505235">{0,plural, =1{Pārlūks Ecosia pēc 1 minūtes tiks restartēts}zero{Pārlūks Ecosia pēc # minūtēm tiks restartēts}one{Pārlūks Ecosia pēc # minūtes tiks restartēts}other{Pārlūks Ecosia pēc # minūtēm tiks restartēts}}</translation>
+<translation id="8228132389897276908">Lai kopīgotu logu, sistēmas preferencēs atļaujiet ekrāna ierakstīšanu pārlūkā Ecosia.</translation>
 <translation id="7582945390259497898">Pārlūkā Chromium var aptuveni noteikt jūsu intereses. Vēlāk kāda jūsu apmeklēta vietne var pieprasīt pārlūkam Chromium atļauju skatīt jūsu intereses, lai personalizētu jums rādāmās reklāmas.</translation>
-<translation id="7583399374488819119"><ph name="COMPANY_NAME" /> instalēšanas programma</translation>
-<translation id="7585391435984513350">Pēdējā laikā neesat apmeklējis šo vietni. Pārlūkā Chromium tika noņemta šāda atļauja: <ph name="PERMISSION" /></translation>
-<translation id="761356813943268536">Pārlūkā Chromium tiek izmantota jūsu kamera un mikrofons.</translation>
-<translation id="7617377681829253106">Pārlūkā Chromium ir veikti uzlabojumi</translation>
+<translation id="7583399374488819119"><ph name="COMPANY_NAME"/> instalēšanas programma</translation>
+<translation id="7585391435984513350">Pēdējā laikā neesat apmeklējis šo vietni. Pārlūkā Chromium tika noņemta šāda atļauja: <ph name="PERMISSION"/></translation>
+<translation id="4061472199368124600">Pārlūkā Ecosia tiek izmantota jūsu kamera un mikrofons.</translation>
+<translation id="170259281605734125">Pārlūkā Ecosia ir veikti uzlabojumi</translation>
 <translation id="7649070708921625228">Palīdzība</translation>
-<translation id="7682213815243802460">Chromium iestatījumos varat uzzināt vairāk par šīm funkcijām.</translation>
-<translation id="7686590090926151193">Chromium nav jūsu noklusējuma pārlūks.</translation>
-<translation id="7689606757190482937">Chromium sinhronizēšana un personalizēšana visās savās ierīcēs</translation>
+<translation id="675365189802108507">Ecosia iestatījumos varat uzzināt vairāk par šīm funkcijām.</translation>
+<translation id="1508200558303644420">Ecosia nav jūsu noklusējuma pārlūks.</translation>
+<translation id="7174674455569790401">Ecosia sinhronizēšana un personalizēšana visās savās ierīcēs</translation>
 <translation id="7699779824407626136">Chromium atjauninājums</translation>
-<translation id="7745317241717453663">Veicot šo darbību, no šīs ierīces tiks dzēsti pārlūkošanas dati. Lai vēlāk izgūtu datus, pierakstieties pārlūkā Chromium kā <ph name="USER_EMAIL" />.</translation>
+<translation id="7745317241717453663">Veicot šo darbību, no šīs ierīces tiks dzēsti pārlūkošanas dati. Lai vēlāk izgūtu datus, pierakstieties pārlūkā Chromium kā <ph name="USER_EMAIL"/>.</translation>
 <translation id="7747138024166251722">Instalētājam neizdevās izveidot pagaidu katalogu. Lūdzu, pārbaudiet, vai diskā pietiek vietas un vai ir atļauja instalēt programmatūru.</translation>
-<translation id="7786760609782648049">Pārlūka Chromium darbības paātrināšana</translation>
-<translation id="7790626492778995050"><ph name="PAGE_TITLE" /> — Chromium Canary</translation>
+<translation id="6161025257729272170">Pārlūka Ecosia darbības paātrināšana</translation>
+<translation id="5669882610631815446"><ph name="PAGE_TITLE"/> — Ecosia Canary</translation>
 <translation id="7803986347287457849">Neļaujiet personām, kurām ir piekļuve jūsu interneta datplūsmai, viegli skatīt jūsu apmeklētās vietnes. Chromium izmanto drošu savienojumu, lai meklētu vietnes IP adresi sistēmā DNS (domēnu nosaukumu sistēmā).</translation>
-<translation id="7828947555739565424">Šajā ierīcē jau pastāv Chromium profils ar šādu kontu.</translation>
-<translation id="7845233973568007926">Pateicamies, ka veicāt instalēšanu. Pirms <ph name="BUNDLE_NAME" /> izmantošanas ir jārestartē dators.</translation>
+<translation id="8301840715671593762">Šajā ierīcē jau pastāv Ecosia profils ar šādu kontu.</translation>
+<translation id="7845233973568007926">Pateicamies, ka veicāt instalēšanu. Pirms <ph name="BUNDLE_NAME"/> izmantošanas ir jārestartē dators.</translation>
 <translation id="7859018312476869945">Kad rakstāt adreses joslā vai meklēšanas lodziņā, pārlūks Chromium nosūta ierakstīto tekstu jūsu noklusējuma meklētājprogrammai, lai iegūtu labākus ieteikumus. Inkognito režīmā šis iestatījums ir izslēgts.</translation>
-<translation id="7867198900892795913">Nevarēja atjaunināt uz jaunāko Chromium versiju, tādēļ jūs nevarēsiet piekļūt jaunākajām funkcijām un drošības labojumiem.</translation>
-<translation id="7872446069773932638">Notiek lejupielāde... Atlikušais laiks: <ph name="SECONDS" /> sekunde(-es).</translation>
-<translation id="7877292582355102282"><ph name="BEGIN_BOLD" />Kā varat pārvaldīt savus datus:<ph name="END_BOLD" /> lai aizsargātu jūsu konfidencialitāti, mēs automātiski dzēšam intereses, kas ir glabātas ilgāk par četrām nedēļām. Intereses var tikt atkārtoti pievienotas sarakstam, kad turpināsiet pārlūkošanu. Varat arī noņemt intereses, ja nevēlaties, lai Chromium tās apsvērtu.</translation>
-<translation id="7888981273428720788">Iestatīt Chromium kā noklusējuma pārlūku</translation>
+<translation id="3268039966078382323">Nevarēja atjaunināt uz jaunāko Ecosia versiju, tādēļ jūs nevarēsiet piekļūt jaunākajām funkcijām un drošības labojumiem.</translation>
+<translation id="7872446069773932638">Notiek lejupielāde... Atlikušais laiks: <ph name="SECONDS"/> sekunde(-es).</translation>
+<translation id="5875641815673321623"><ph name="BEGIN_BOLD"/>Kā varat pārvaldīt savus datus:<ph name="END_BOLD"/> lai aizsargātu jūsu konfidencialitāti, mēs automātiski dzēšam intereses, kas ir glabātas ilgāk par četrām nedēļām. Intereses var tikt atkārtoti pievienotas sarakstam, kad turpināsiet pārlūkošanu. Varat arī noņemt intereses, ja nevēlaties, lai Ecosia tās apsvērtu.</translation>
+<translation id="4638085384909702681">Iestatīt Ecosia kā noklusējuma pārlūku</translation>
 <translation id="7934340546140346950">Pārlūkā Chromium nedrošie savienojumi tiek automātiski jaunināti uz HTTPS, ja iespējams.</translation>
-<translation id="7937630085815544518">Operētājsistēmā Chromium iepriekš pierakstījāties kā lietotājs <ph name="USER_EMAIL_ADDRESS" />. Lai pierakstītos vēlreiz, lūdzu, izmantojiet to pašu kontu.</translation>
+<translation id="2412381038247037703">Operētājsistēmā Ecosia iepriekš pierakstījāties kā lietotājs <ph name="USER_EMAIL_ADDRESS"/>. Lai pierakstītos vēlreiz, lūdzu, izmantojiet to pašu kontu.</translation>
 <translation id="7975919845073681630">Šī ir Chromium papildu instalācija, un to nevar izmantot kā noklusējuma pārlūku.</translation>
-<translation id="7997934263947464652">No nezināmiem avotiem iegūti paplašinājumi, lietotnes un motīvi var kaitēt ierīcei. Chromium komanda iesaka instalēt tos tikai no veikala <ph name="IDS_EXTENSION_WEB_STORE_TITLE" />.</translation>
-<translation id="8013436988911883588">Tiklīdz pārlūkam Chromium tiks sniegta piekļuve, vietnes varēs lūgt jums piekļuvi.</translation>
-<translation id="80471789339884597">Pateicamies, ka veicāt instalēšanu. Pirms <ph name="BUNDLE_NAME" /> izmantošanas ir jārestartē visas pārlūkprogrammas.</translation>
+<translation id="851583113375911087">No nezināmiem avotiem iegūti paplašinājumi, lietotnes un motīvi var kaitēt ierīcei. Ecosia komanda iesaka instalēt tos tikai no veikala <ph name="IDS_EXTENSION_WEB_STORE_TITLE"/>.</translation>
+<translation id="488806616089631539">Tiklīdz pārlūkam Ecosia tiks sniegta piekļuve, vietnes varēs lūgt jums piekļuvi.</translation>
+<translation id="80471789339884597">Pateicamies, ka veicāt instalēšanu. Pirms <ph name="BUNDLE_NAME"/> izmantošanas ir jārestartē visas pārlūkprogrammas.</translation>
 <translation id="8086881907087796310">Instalēšana neizdevās, jo jūsu dators neatbilst minimālajām aparatūras prasībām.</translation>
-<translation id="8096472344908884505"><ph name="PAGE_TITLE" /> — Google Chrome for Testing</translation>
-<translation id="8105840573057009683">Pārlūkam Chromium ir nepieciešama atrašanās vietas atļauja šai vietnei.</translation>
-<translation id="8133124826068723441">Chromium OS nevarēja sinhronizēt jūsu datus, jo jūsu domēnā nav pieejama sinhronizācija.</translation>
+<translation id="1528748166720431933"><ph name="PAGE_TITLE"/> — Ecosia for Testing</translation>
+<translation id="5661123757512626239">Pārlūkam Ecosia ir nepieciešama atrašanās vietas atļauja šai vietnei.</translation>
+<translation id="143614250230771428">Ecosia OS nevarēja sinhronizēt jūsu datus, jo jūsu domēnā nav pieejama sinhronizācija.</translation>
 <translation id="813913629614996137">Notiek inicializēšana...</translation>
-<translation id="8166782796394721554">Ieslēdziet papildu aizsardzību Chromium JavaScript un WebAssembly programmā</translation>
-<translation id="81770708095080097">Šis fails ir bīstams, tāpēc Chromium to bloķēja.</translation>
-<translation id="8223363452568144035">Lai izmantotu kameru, piešķiriet pārlūkam Chromium piekļuvi <ph name="BEGIN_LINK" />sistēmas iestatījumos<ph name="END_LINK" />.</translation>
-<translation id="8232193495299001329">Chromium nevar pārbaudīt šī paplašinājuma izcelsmi, un, iespējams, tas nav drošs. Noņemiet to no pārlūka Chromium, lai tas jūsu apmeklētajās vietnēs vairs nevarētu skatīt un mainīt jūsu datus, tostarp personas informāciju.</translation>
-<translation id="8248265253516264921">Ja attēlam nav vērtīga apraksta, pārlūks Chromium mēģinās jums tādu nodrošināt. Lai izveidotu aprakstus, attēli tiek nosūtīti uzņēmumam Google. Jebkurā brīdī iestatījumos varat izslēgt šo iespēju.</translation>
-<translation id="8254601181414348851">Vai pierakstīties pārlūkā Chromium, izmantojot jaunu profilu?</translation>
+<translation id="588828970866589779">Ieslēdziet papildu aizsardzību Ecosia JavaScript un WebAssembly programmā</translation>
+<translation id="6491651957026506753">Šis fails ir bīstams, tāpēc Ecosia to bloķēja.</translation>
+<translation id="8223363452568144035">Lai izmantotu kameru, piešķiriet pārlūkam Chromium piekļuvi <ph name="BEGIN_LINK"/>sistēmas iestatījumos<ph name="END_LINK"/>.</translation>
+<translation id="7433581196371819898">Ecosia nevar pārbaudīt šī paplašinājuma izcelsmi, un, iespējams, tas nav drošs. Noņemiet to no pārlūka Ecosia, lai tas jūsu apmeklētajās vietnēs vairs nevarētu skatīt un mainīt jūsu datus, tostarp personas informāciju.</translation>
+<translation id="2046160555506209000">Ja attēlam nav vērtīga apraksta, pārlūks Ecosia mēģinās jums tādu nodrošināt. Lai izveidotu aprakstus, attēli tiek nosūtīti uzņēmumam Ecosia. Jebkurā brīdī iestatījumos varat izslēgt šo iespēju.</translation>
+<translation id="3260765223735049374">Vai pierakstīties pārlūkā Ecosia, izmantojot jaunu profilu?</translation>
 <translation id="8266560134891435528">Pārlūkprogrammā Chromium nevar pārbaudīt jūsu paroles, jo jūs neesat pierakstījies.</translation>
-<translation id="8286943863733751221">Pārlūkā <ph name="BEGIN_LINK" />Chromium tiek rādīti brīdinājumi<ph name="END_LINK" /> par nedrošām vietnēm un lejupielādēm</translation>
-<translation id="8318772038038596122">Jūsu organizācija aizver pārlūku Chromium, ja tas <ph name="TIMEOUT_DURATION" /> netiek izmantots.</translation>
+<translation id="8286943863733751221">Pārlūkā <ph name="BEGIN_LINK"/>Chromium tiek rādīti brīdinājumi<ph name="END_LINK"/> par nedrošām vietnēm un lejupielādēm</translation>
+<translation id="5994043198751001258">Jūsu organizācija aizver pārlūku Ecosia, ja tas <ph name="TIMEOUT_DURATION"/> netiek izmantots.</translation>
 <translation id="8330519371938183845">Pierakstieties, lai sinhronizētu un personalizētu pārlūku Chromium visās savās ierīcēs.</translation>
-<translation id="8340674089072921962"><ph name="USER_EMAIL_ADDRESS" /> iepriekš izmantoja Chromium</translation>
-<translation id="8357820681460164151">Lai piekļūtu savam Chromium saturam visās savās ierīcēs, pierakstieties un pēc tam ieslēdziet sinhronizāciju.</translation>
-<translation id="8360718212975266891">Lai saņemtu turpmākus Chromium atjauninājumus, nepieciešama operētājsistēma Windows 10 vai jaunāka versija. Šajā datorā tiek izmantota operētājsistēma Windows 8.</translation>
-<translation id="8370517070665726704">Autortiesības: <ph name="YEAR" /> Google LLC. Visas tiesības paturētas.</translation>
-<translation id="8372327902843331129">Pierakstieties pārlūkā Chromium, lai varētu piekļūt parolēm un citiem datiem visās savās ierīcēs. Šī parole tiks saglabāta jūsu Google kontā pēc pierakstīšanās.</translation>
-<translation id="837460953767177950">Pēc tam jums būs jārestartē pārlūks Chromium.</translation>
-<translation id="8397248745433792218">Chromium iesaka to noņemt. <ph name="BEGIN_LINK" />Uzziniet vairāk par atbalstītajiem paplašinājumiem<ph name="END_LINK" />.</translation>
-<translation id="8401454788024434101">Šī paplašinājuma publicēšanu atcēla izstrādātājs, un paplašinājums, iespējams, nav drošs. Noņemiet to no pārlūka Chromium, lai tas jūsu apmeklētajās vietnēs vairs nevarētu skatīt un mainīt jūsu datus, tostarp jūsu personas informāciju.</translation>
-<translation id="8417404458978023919">{0,plural, =1{Restartējiet pārlūku Chromium vienas dienas laikā}zero{Restartējiet pārlūku Chromium # dienu laikā}one{Restartējiet pārlūku Chromium # dienas laikā}other{Restartējiet pārlūku Chromium # dienu laikā}}</translation>
-<translation id="8453117565092476964">Instalēšanas programmas arhīvs ir bojāts vai nav derīgs. Lejupielādējiet Chromium vēlreiz.</translation>
-<translation id="8458614432758743027">Pārlūka Chromium izmantošanai nepieciešama operētājsistēma Windows 10 vai jaunāka versija.</translation>
-<translation id="8463672209299734063">Neobligāti: palīdziet uzlabot Chromium OS funkcijas un veiktspēju, automātiski nosūtot Google serveriem diagnostikas un lietojuma datus.</translation>
-<translation id="8493179195440786826">Chromium versija ir novecojusi</translation>
+<translation id="8055222671516987714"><ph name="USER_EMAIL_ADDRESS"/> iepriekš izmantoja Ecosia</translation>
+<translation id="4337034173783952373">Lai piekļūtu savam Ecosia saturam visās savās ierīcēs, pierakstieties un pēc tam ieslēdziet sinhronizāciju.</translation>
+<translation id="8655983536493871574">Lai saņemtu turpmākus Ecosia atjauninājumus, nepieciešama operētājsistēma Windows 10 vai jaunāka versija. Šajā datorā tiek izmantota operētājsistēma Windows 8.</translation>
+<translation id="8355171755788522183">Autortiesības: <ph name="YEAR"/> Ecosia. Visas tiesības paturētas.</translation>
+<translation id="4395802781633621239">Pierakstieties pārlūkā Ecosia, lai varētu piekļūt parolēm un citiem datiem visās savās ierīcēs. Šī parole tiks saglabāta jūsu Ecosia kontā pēc pierakstīšanās.</translation>
+<translation id="8268239447047453615">Pēc tam jums būs jārestartē pārlūks Ecosia.</translation>
+<translation id="5167067155585861308">Ecosia iesaka to noņemt. <ph name="BEGIN_LINK"/>Uzziniet vairāk par atbalstītajiem paplašinājumiem<ph name="END_LINK"/>.</translation>
+<translation id="8863497461138396324">Šī paplašinājuma publicēšanu atcēla izstrādātājs, un paplašinājums, iespējams, nav drošs. Noņemiet to no pārlūka Ecosia, lai tas jūsu apmeklētajās vietnēs vairs nevarētu skatīt un mainīt jūsu datus, tostarp jūsu personas informāciju.</translation>
+<translation id="6826163993811146231">{0,plural, =1{Restartējiet pārlūku Ecosia vienas dienas laikā}zero{Restartējiet pārlūku Ecosia # dienu laikā}one{Restartējiet pārlūku Ecosia # dienas laikā}other{Restartējiet pārlūku Ecosia # dienu laikā}}</translation>
+<translation id="4033006861724039519">Instalēšanas programmas arhīvs ir bojāts vai nav derīgs. Lejupielādējiet Ecosia vēlreiz.</translation>
+<translation id="2829233304432701500">Pārlūka Ecosia izmantošanai nepieciešama operētājsistēma Windows 10 vai jaunāka versija.</translation>
+<translation id="8975930032513941502">Neobligāti: palīdziet uzlabot Ecosia OS funkcijas un veiktspēju, automātiski nosūtot Ecosia serveriem diagnostikas un lietojuma datus.</translation>
+<translation id="2695952268686253864">Ecosia versija ir novecojusi</translation>
 <translation id="8522801943730206384">Pārlūkprogrammā Chromium var pārbaudīt jūsu paroles, ja jūs tās saglabājat.</translation>
 <translation id="8550334526674375523">Šis darba profils ir pilnīgi nesaistīts ar jūsu personīgo profilu.</translation>
-<translation id="8555465886620020932">Pakalpojuma kļūda: <ph name="SERVICE_ERROR" />.</translation>
+<translation id="8555465886620020932">Pakalpojuma kļūda: <ph name="SERVICE_ERROR"/>.</translation>
 <translation id="8568283329061645092">Pārlūkprogrammā Chromium var pārbaudīt jūsu paroles, ja esat pierakstījies savā Google kontā.</translation>
-<translation id="8576826849825683917">Pārlūku Chromium pārvalda vairākas organizācijas</translation>
-<translation id="8586442755830160949">Autortiesības <ph name="YEAR" /> Chromium autori. Visas tiesības paturētas.</translation>
-<translation id="8608079656141766906"><ph name="BEGIN_BOLD" />Kā mēs izmantojam šos datus:<ph name="END_BOLD" /> vietnes pārlūkā Chromium var glabāt informāciju par jūsu interesēm. Piemēram, ja apmeklējat kādu vietni, lai iegādātos apavus maratona skriešanai, vietne var noteikt, ka interesējaties par maratonu skriešanu. Ja vēlāk apmeklēsiet citu vietni, lai reģistrētos sacensībām, šajā vietnē var tikt rādīta skriešanas apavu reklāma, pamatojoties uz jūsu interesēm.</translation>
-<translation id="8619360774459241877">Notiek Chromium palaišana...</translation>
-<translation id="8621669128220841554">Instalēšana neizdevās nenoteiktas kļūdas dēļ. Lejupielādējiet pārlūku Chromium vēlreiz.</translation>
+<translation id="4817309082638621362">Pārlūku Ecosia pārvalda vairākas organizācijas</translation>
+<translation id="7129808598331559748">Autortiesības <ph name="YEAR"/> Ecosia autori. Visas tiesības paturētas.</translation>
+<translation id="1851101453239911251"><ph name="BEGIN_BOLD"/>Kā mēs izmantojam šos datus:<ph name="END_BOLD"/> vietnes pārlūkā Ecosia var glabāt informāciju par jūsu interesēm. Piemēram, ja apmeklējat kādu vietni, lai iegādātos apavus maratona skriešanai, vietne var noteikt, ka interesējaties par maratonu skriešanu. Ja vēlāk apmeklēsiet citu vietni, lai reģistrētos sacensībām, šajā vietnē var tikt rādīta skriešanas apavu reklāma, pamatojoties uz jūsu interesēm.</translation>
+<translation id="8109744984354428711">Notiek Ecosia palaišana...</translation>
+<translation id="2402290209407843024">Instalēšana neizdevās nenoteiktas kļūdas dēļ. Lejupielādējiet pārlūku Ecosia vēlreiz.</translation>
 <translation id="8648201657708811153">Google Chrome for Testing nevar iestatīt kā noklusējuma pārlūku.</translation>
-<translation id="8697124171261953979">Tas nosaka arī to, kāda lapa tiks rādīta, kad atvērsiet pārlūku Chromium vai meklēsiet, izmantojot universālo lodziņu.</translation>
-<translation id="8704119203788522458">Šis ir jūsu Chromium</translation>
-<translation id="8719993436687031146">Vai pierakstīties pārlūkā Chromium?</translation>
-<translation id="878572486461146056">Instalēšanas kļūda: administrators ir piemērojis grupas politiku, kas neļauj veikt instalēšanu: <ph name="INSTALL_ERROR" />.</translation>
-<translation id="8796602469536043152">Pārlūkam Chromium ir nepieciešama atļauja piekļūt jūsu kamerai un mikrofonam šajā vietnē.</translation>
-<translation id="8818550178040858407">Vai pierakstīties pārlūkā Chromium?</translation>
+<translation id="6665128960039431910">Tas nosaka arī to, kāda lapa tiks rādīta, kad atvērsiet pārlūku Ecosia vai meklēsiet, izmantojot universālo lodziņu.</translation>
+<translation id="2000339487270823788">Šis ir jūsu Ecosia</translation>
+<translation id="7045045549868370797">Vai pierakstīties pārlūkā Ecosia?</translation>
+<translation id="878572486461146056">Instalēšanas kļūda: administrators ir piemērojis grupas politiku, kas neļauj veikt instalēšanu: <ph name="INSTALL_ERROR"/>.</translation>
+<translation id="7273750863406285983">Pārlūkam Ecosia ir nepieciešama atļauja piekļūt jūsu kamerai un mikrofonam šajā vietnē.</translation>
+<translation id="1485302026917450654">Vai pierakstīties pārlūkā Ecosia?</translation>
 <translation id="8826492472752484139">Noklikšķiniet uz vienuma Paroļu pārvaldnieks.</translation>
-<translation id="8833697763442816810">Chromium OS sistēma</translation>
-<translation id="8846118132221683440"><ph name="BEGIN_BOLD" />Kādi dati tiek izmantoti:<ph name="END_BOLD" /> jūsu pārlūkošanas vēsture, kurā tiek reģistrētas vietnes, ko šajā ierīcē apmeklējat ar pārlūku Chromium.</translation>
+<translation id="5267683457871579197">Ecosia OS sistēma</translation>
+<translation id="4565616259974605182"><ph name="BEGIN_BOLD"/>Kādi dati tiek izmantoti:<ph name="END_BOLD"/> jūsu pārlūkošanas vēsture, kurā tiek reģistrētas vietnes, ko šajā ierīcē apmeklējat ar pārlūku Ecosia.</translation>
 <translation id="8862326446509486874">Jums nav vajadzīgo tiesību, lai instalētu sistēmas līmenī. Mēģiniet vēlreiz palaist instalēšanas programmu kā administrators.</translation>
 <translation id="8880203542552872219">Ja tā ir, lūdzu, rediģējiet saglabāto paroli pārlūkprogrammā Chromium, lai tā atbilstu jūsu jaunajai parolei.</translation>
-<translation id="8907580949721785412">Chromium mēģina rādīt paroles. Lai to atļautu, ierakstiet savu Windows paroli.</translation>
+<translation id="3966234175958887595">Ecosia mēģina rādīt paroles. Lai to atļautu, ierakstiet savu Windows paroli.</translation>
 <translation id="8931379085695076764">Chromium var aptuveni noteikt jūsu intereses, balstoties uz jūsu pēdējo nedēļu pārlūkošanas vēsturi. Šī informācija tiek glabāta jūsu ierīcē.</translation>
-<translation id="8941642502866065432">Nevar atjaunināt Chromium</translation>
-<translation id="897581876605952338">Chromium Enterprise logotips</translation>
+<translation id="6346154190168496057">Nevar atjaunināt Ecosia</translation>
+<translation id="93440396576488794">Ecosia Enterprise logotips</translation>
 <translation id="8986207147630327271">Jūs pievienosiet šai pārlūkprogrammai darba profilu un piešķirsiet administratoram kontroli tikai pār darba profilu.</translation>
-<translation id="8988036198400390003">Pārvaldīt Chromium profilus</translation>
-<translation id="9019929317751753759">Lai uzlabotu Chromium drošību, mēs atspējojām tālāk norādīto paplašinājumu, kas nav norādīts vietnē <ph name="IDS_EXTENSION_WEB_STORE_TITLE" /> un, iespējams, tika pievienots, jums nezinot.</translation>
-<translation id="9022552996538154597">Pierakstieties pārlūkā Chromium</translation>
-<translation id="904366664621834601">Pārlūkā Chromium šī lejupielāde tika bloķēta, jo šajā arhīva failā ir ietverti citi faili, kas, iespējams, slēpj ļaunprātīgu programmatūru</translation>
+<translation id="2985399486579137606">Pārvaldīt Ecosia profilus</translation>
+<translation id="1597547208646178091">Lai uzlabotu Ecosia drošību, mēs atspējojām tālāk norādīto paplašinājumu, kas nav norādīts vietnē <ph name="IDS_EXTENSION_WEB_STORE_TITLE"/> un, iespējams, tika pievienots, jums nezinot.</translation>
+<translation id="2388751143175762498">Pierakstieties pārlūkā Ecosia</translation>
+<translation id="231621248561775155">Pārlūkā Ecosia šī lejupielāde tika bloķēta, jo šajā arhīva failā ir ietverti citi faili, kas, iespējams, slēpj ļaunprātīgu programmatūru</translation>
 <translation id="9062666675513499497">Automātiska pierakstīšanās pārlūkā Chromium, kad pierakstāties citos Google pakalpojumos</translation>
-<translation id="907832235989677238">Pierakstieties pārlūkā Chromium. Ja vēlaties pierakstīties kontā tikai vienreiz, varat <ph name="GUEST_LINK_BEGIN" />izmantot ierīci viesa režīmā<ph name="GUEST_LINK_END" />.</translation>
-<translation id="9078733879136747090">Pārlūks Chromium tika automātiski aizvērts</translation>
-<translation id="9089354809943900324">Chromium versija ir novecojusi.</translation>
-<translation id="9093206154853821181">{0,plural, =1{Pārlūks Chromium pēc stundas tiks restartēts}zero{Pārlūks Chromium pēc # stundām tiks restartēts}one{Pārlūks Chromium pēc # stundas tiks restartēts}other{Pārlūks Chromium pēc # stundām tiks restartēts}}</translation>
-<translation id="9106612006984859720">Lai saņemtu turpmākus Chromium atjauninājumus, nepieciešama operētājsistēma Windows 10 vai jaunāka versija. Šajā datorā tiek izmantota operētājsistēma Windows 8.1.</translation>
-<translation id="91086099826398415">Atvērt saiti jaunā Chromium &amp;cilnē</translation>
+<translation id="5312730628132049495">Pierakstieties pārlūkā Ecosia. Ja vēlaties pierakstīties kontā tikai vienreiz, varat <ph name="GUEST_LINK_BEGIN"/>izmantot ierīci viesa režīmā<ph name="GUEST_LINK_END"/>.</translation>
+<translation id="5061261337583604526">Pārlūks Ecosia tika automātiski aizvērts</translation>
+<translation id="7268098999602465369">Ecosia versija ir novecojusi.</translation>
+<translation id="6022879254514691681">{0,plural, =1{Pārlūks Ecosia pēc stundas tiks restartēts}zero{Pārlūks Ecosia pēc # stundām tiks restartēts}one{Pārlūks Ecosia pēc # stundas tiks restartēts}other{Pārlūks Ecosia pēc # stundām tiks restartēts}}</translation>
+<translation id="8963533629322868062">Lai saņemtu turpmākus Ecosia atjauninājumus, nepieciešama operētājsistēma Windows 10 vai jaunāka versija. Šajā datorā tiek izmantota operētājsistēma Windows 8.1.</translation>
+<translation id="7774247008790177839">Atvērt saiti jaunā Ecosia &amp;cilnē</translation>
 <translation id="911206726377975832">Vai dzēst arī pārlūkošanas datus?</translation>
-<translation id="9144490074902256427">Izmēģinājuma laikā varat skatīt un noņemt interešu tēmas, kas vietnēs tika izmantotas reklāmu rādīšanai. Pārlūkā Chromium tiek aptuveni noteiktas jūsu intereses, ņemot vērā neseno pārlūkošanas vēsturi.</translation>
-<translation id="9158494823179993217">Sistēmas administrators ir konfigurējis Chromium, lai vietne <ph name="TARGET_URL_HOSTNAME" /> tiktu atvērta papildu pārlūkā.</translation>
-<translation id="9185526690718004400">Atkārtoti palaist, lai atjauninātu &amp;Chromium</translation>
-<translation id="9190841055450128916">Chromium (mDNS ienākošie savienojumi)</translation>
-<translation id="924957577793602335">Pielāgojiet pārlūku Chromium savām vajadzībām</translation>
-<translation id="93478295209880648">Iespējams, Chromium nedarbosies pareizi, jo tas vairs netiek atbalstīts operētājsistēmās Windows XP un Windows Vista.</translation>
+<translation id="7580831958727159171">Izmēģinājuma laikā varat skatīt un noņemt interešu tēmas, kas vietnēs tika izmantotas reklāmu rādīšanai. Pārlūkā Ecosia tiek aptuveni noteiktas jūsu intereses, ņemot vērā neseno pārlūkošanas vēsturi.</translation>
+<translation id="8901409988302458368">Sistēmas administrators ir konfigurējis Ecosia, lai vietne <ph name="TARGET_URL_HOSTNAME"/> tiktu atvērta papildu pārlūkā.</translation>
+<translation id="1523806373970723624">Atkārtoti palaist, lai atjauninātu &amp;Ecosia</translation>
+<translation id="2470806471563820591">Ecosia (mDNS ienākošie savienojumi)</translation>
+<translation id="4767994371234572952">Pielāgojiet pārlūku Ecosia savām vajadzībām</translation>
+<translation id="6933283849886243832">Iespējams, Ecosia nedarbosies pareizi, jo tas vairs netiek atbalstīts operētājsistēmās Windows XP un Windows Vista.</translation>
 <translation id="942598560705308788">Chromium pārvaldītie sertifikāti</translation>
-<translation id="965162752251293939">Kas izmanto pārlūku Chromium?</translation>
-<translation id="967427899662692980">Visaugstākais Chromium drošības līmenis</translation>
+<translation id="8078678931242443254">Kas izmanto pārlūku Ecosia?</translation>
+<translation id="12795904718916112">Visaugstākais Ecosia drošības līmenis</translation>
 <translation id="983803489796659991">Instalēšana neizdevās, jo atjauninājumu serverim nav nekādu jaukšanas datu lietojumprogrammai.</translation>
-<translation id="985498048907240953">Izmantot Chromium, nepierakstoties kontā</translation>
-<translation id="985602178874221306">Chromium autori</translation>
-<translation id="992780518932311116">Lai izmantotu atrašanās vietas datus, piešķiriet pārlūkam Chromium piekļuvi <ph name="BEGIN_LINK" />sistēmas iestatījumos<ph name="END_LINK" />.</translation>
+<translation id="5612740201368556834">Izmantot Ecosia, nepierakstoties kontā</translation>
+<translation id="6235001546696543832">Ecosia autori</translation>
+<translation id="992780518932311116">Lai izmantotu atrašanās vietas datus, piešķiriet pārlūkam Chromium piekļuvi <ph name="BEGIN_LINK"/>sistēmas iestatījumos<ph name="END_LINK"/>.</translation>
 </translationbundle>

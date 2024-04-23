@@ -317,7 +317,8 @@ public abstract class QuickActionSearchWidgetProvider extends AppWidgetProvider 
                     // experiment in the past. This can trigger disk access. Unfortunately,
                     // we need to keep it for a little bit longer -- see:
                     // https://crbug.com/1309116
-                    setWidgetEnabled(true, true);
+            		// Ecosia : Disable Dino and quick action search widget
+            		setWidgetEnabled(false, false);
                 });
 
         SearchActivityPreferencesManager.addObserver(

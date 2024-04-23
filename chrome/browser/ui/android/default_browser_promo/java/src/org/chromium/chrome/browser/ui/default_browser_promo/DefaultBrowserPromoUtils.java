@@ -20,7 +20,7 @@ import java.lang.annotation.RetentionPolicy;
 /** A utility class providing information regarding states of default browser. */
 public class DefaultBrowserPromoUtils {
     @IntDef({
-        DefaultBrowserState.CHROME_DEFAULT,
+        DefaultBrowserState.ECOSIA_DEFAULT, // Ecosia: change enum
         DefaultBrowserState.NO_DEFAULT,
         DefaultBrowserState.OTHER_DEFAULT
     })
@@ -33,7 +33,7 @@ public class DefaultBrowserPromoUtils {
          * CHROME_DEFAULT means the currently running Chrome as opposed to
          * #isCurrentDefaultBrowserChrome() which looks for any Chrome.
          */
-        int CHROME_DEFAULT = 2;
+        int ECOSIA_DEFAULT = 2;
 
         int NUM_ENTRIES = 3;
     }
@@ -53,6 +53,7 @@ public class DefaultBrowserPromoUtils {
         DefaultBrowserPromoDeps deps = DefaultBrowserPromoDeps.getInstance();
         if (!shouldShowPromo(deps, activity, ignoreMaxCount)) return false;
         deps.incrementPromoCount();
+
         deps.recordPromoTime();
         deps.recordLastPromoSessionCount();
         DefaultBrowserPromoManager manager =
@@ -62,7 +63,7 @@ public class DefaultBrowserPromoUtils {
         return true;
     }
 
-    /**
+        /**
      * This decides whether the dialog should be promoed.
      * Returns false if any of following criteria is met:
      *      1. A promo dialog has been displayed before, unless {@code ignoreMaxCount} is true.
@@ -80,9 +81,10 @@ public class DefaultBrowserPromoUtils {
             return false;
         }
         // Criteria 1, 2, 5
+        // Ecosia : Default browser promo shown to new users on launch or existing users on 3rd app launch
         if (!ignoreMaxCount
                 && (deps.getPromoCount() >= deps.getMaxPromoCount()
-                        || deps.getSessionCount() < deps.getMinSessionCount()
+                        || (deps.getSessionCount() > 1 && deps.getSessionCount() < deps.getMinSessionCount())
                         || deps.getLastPromoInterval() < deps.getMinPromoInterval())) {
             return false;
         }
@@ -93,20 +95,29 @@ public class DefaultBrowserPromoUtils {
         }
 
         int state = deps.getCurrentDefaultBrowserState(info);
-        if (state == DefaultBrowserState.CHROME_DEFAULT) {
+        if (state == DefaultBrowserState.ECOSIA_DEFAULT) { // Ecosia: Rebranding
             return false;
-        } else if (state == DefaultBrowserState.NO_DEFAULT) {
+        }
+        /* Ecosia : Bug fix where default browser pop up was not shown when
+                    chrome browser is set as default
+        else if (state == DefaultBrowserState.NO_DEFAULT) {
             // Criteria 4
             return !deps.isChromeStable() || !deps.isChromePreStableInstalled();
         } else { // other default
             // Criteria 3
             return !deps.isCurrentDefaultBrowserChrome(info);
         }
+        */
+        return true;
     }
 
     /** Increment session count for triggering feature in the future. */
     public static void incrementSessionCount() {
         ChromeSharedPreferences.getInstance()
                 .incrementInt(ChromePreferenceKeys.DEFAULT_BROWSER_PROMO_SESSION_COUNT);
+    }
+
+    public static int getDefaultBrowserSet() {
+        return DefaultBrowserPromoDeps.getInstance().getCurrentDefaultBrowserState();
     }
 }

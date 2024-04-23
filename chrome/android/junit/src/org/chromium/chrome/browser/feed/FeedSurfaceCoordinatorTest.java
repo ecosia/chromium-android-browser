@@ -28,6 +28,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -314,6 +315,7 @@ public class FeedSurfaceCoordinatorTest {
         assertEquals(false, hasStreamBound());
     }
 
+    @Ignore("Ecosia : Start surface disabled")
     @Test
     public void testActivate_startupCalled() {
         FeedSurfaceTracker.getInstance().startup();

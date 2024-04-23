@@ -25,4 +25,7 @@ found in the LICENSE file.
     <integer name="download_infobar_bar_start_offset">800</integer>
     <integer name="download_infobar_bar_fill_in_delay">400</integer>
     <integer name="download_infobar_bar_fill_out_delay">200</integer>
+	
+	<!-- Ecosia: This value gets overridden in res/values-sw600dp -->
+    <bool name="device_screen_size_is_tablet_like">false</bool>
 </resources>

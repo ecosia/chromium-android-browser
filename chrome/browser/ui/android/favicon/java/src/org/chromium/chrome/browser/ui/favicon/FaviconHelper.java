@@ -21,6 +21,7 @@ import org.jni_zero.JniType;
 import org.jni_zero.NativeMethods;
 
 import org.chromium.chrome.browser.profiles.Profile;
+import org.chromium.components.embedder_support.util.UrlConstants;
 import org.chromium.components.embedder_support.util.UrlUtilities;
 import org.chromium.url.GURL;
 
@@ -69,7 +70,7 @@ public class FaviconHelper {
 
         private int getResourceId(GURL url) {
             return UrlUtilities.isInternalScheme(url)
-                    ? R.drawable.chromelogo16
+                    ? R.drawable.ic_ecosia // Ecosia: logo
                     : R.drawable.ic_globe_24dp;
         }
 

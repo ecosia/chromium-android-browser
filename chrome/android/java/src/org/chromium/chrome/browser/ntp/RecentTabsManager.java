@@ -80,6 +80,22 @@ public class RecentTabsManager
     private final SyncPromoController mSyncPromoController;
     private final SyncService mSyncService;
 
+    // Ecosia: Visible for testing
+    public static RecentTabsManager createTestInstance() {
+        return new RecentTabsManager();
+    }
+
+    // Ecosia: Test constructor
+    private RecentTabsManager() {
+        mProfile = null;
+        mActiveTab = null;
+        mTabModelSelector = null;
+        mShowHistoryManager = null;
+        mProfileDataCache = null;
+        mSyncPromoController = null;
+        mSyncService = null;
+    }
+
     /**
      * Maps Session IDs to whether that entry was restored split by entry type. These are used to
      * record historgrams on {@link #destroy()} to measure restore ratio. Cached Session IDs are
@@ -436,7 +452,12 @@ public class RecentTabsManager
     }
 
     private @SyncPromoState int calculatePromoState() {
-        if (ChromeFeatureList.isEnabled(
+        return SyncPromoState.NO_PROMO;
+        /*
+        * Ecosia MOB-1247: Remove Sync Promo from recent tabs
+        *
+        
+		if (ChromeFeatureList.isEnabled(
                 ChromeFeatureList.REPLACE_SYNC_PROMOS_WITH_SIGN_IN_PROMOS)) {
             // If ReplaceSyncPromosWithSignInPromos is enabled, there's only one promo type.
             //
@@ -471,6 +492,7 @@ public class RecentTabsManager
         // LegacySyncPromoView incorrectly displays a promo with string
         // R.string.ntp_recent_tabs_sync_promo_instructions.
         return SyncPromoState.PROMO_FOR_SYNC_TURNED_OFF_STATE;
+        */
     }
 
     private void updatePromoState() {

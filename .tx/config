@@ -1,0 +1,13 @@
+[main]
+host = https://www.transifex.com
+
+[o:ecosia:p:ecosia-android-browser:r:1f086fe48c90085af55ec5c2abc9662c]
+source_file = chrome/android/java/res_ecosia/values/ecosia_strings.xml
+file_filter = chrome/android/java/res_ecosia/values<lang>/ecosia_strings.xml
+source_lang = en
+type        = ANDROID
+trans.it    = chrome/android/java/res_ecosia/values-it/ecosia_strings.xml
+trans.nl    = chrome/android/java/res_ecosia/values-nl/ecosia_strings.xml
+trans.de    = chrome/android/java/res_ecosia/values-de/ecosia_strings.xml
+trans.es    = chrome/android/java/res_ecosia/values-es/ecosia_strings.xml
+trans.fr    = chrome/android/java/res_ecosia/values-fr/ecosia_strings.xml

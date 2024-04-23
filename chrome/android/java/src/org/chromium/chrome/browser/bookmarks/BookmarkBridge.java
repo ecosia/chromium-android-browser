@@ -1,18 +1,60 @@
-// Copyright 2013 The Chromium Authors
-// Use of this source code is governed by a BSD-style license that can be
-// found in the LICENSE file.
+/*
+ * Copyright 2013 The Chromium Authors
+ * Copyright (C) 2023 Ecosia Android App source (for GPL 3.0)
+ *
+ * Licensed under the GNU General Public License, Version 3.0 and BSD-style license (found in LICENSE file);
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * License: GPL-3.0-only - https://spdx.org/licenses/GPL-3.0-only.html
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 package org.chromium.chrome.browser.bookmarks;
 
+import android.Manifest;
+import android.app.Activity;
+import android.content.ContentResolver;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.content.res.Resources;
+import android.net.Uri;
+import android.os.Build;
+import android.os.Handler;
+import android.os.Looper;
+import android.os.SystemClock;
+import android.provider.Browser;
+import android.provider.DocumentsContract;
 import android.text.TextUtils;
 import android.util.Pair;
+import android.view.LayoutInflater;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
+import androidx.appcompat.app.AlertDialog;
 
 import com.google.protobuf.InvalidProtocolBufferException;
 
+import org.chromium.base.ContentUriUtils;
+import org.chromium.base.shared_preferences.PreferenceKeyRegistry;
+import org.chromium.base.shared_preferences.SharedPreferencesManager;
+import org.chromium.build.BuildConfig;
+import org.chromium.chrome.browser.download.DownloadDialogBridge;
+import org.chromium.chrome.browser.download.settings.DownloadLocationHelperImpl; 
+import org.chromium.chrome.browser.preferences.LegacyChromePreferenceKeys;
+import org.chromium.chrome.browser.profiles.ProfileManager;
 import org.jni_zero.CalledByNative;
 import org.jni_zero.JniType;
 import org.jni_zero.NativeMethods;
@@ -21,15 +63,38 @@ import org.chromium.base.ContextUtils;
 import org.chromium.base.ObserverList;
 import org.chromium.base.ThreadUtils;
 import org.chromium.base.metrics.RecordUserAction;
+import org.chromium.chrome.R;
+
+import org.chromium.base.task.AsyncTask;
+import org.chromium.chrome.browser.IntentHandler;
+import org.chromium.chrome.browser.document.ChromeLauncherActivity;
+import org.chromium.chrome.browser.download.DirectoryOption;
+import org.chromium.chrome.browser.download.DownloadLocationDialogType;
+import org.chromium.chrome.browser.download.dialogs.DownloadLocationCustomView;
+import org.chromium.chrome.browser.download.dialogs.DownloadLocationDialogController;
+import org.chromium.chrome.browser.download.dialogs.DownloadLocationDialogCoordinator;
+import org.chromium.chrome.browser.flags.ChromeFeatureList;
 import org.chromium.chrome.browser.partnerbookmarks.PartnerBookmarksShim;
+import org.chromium.chrome.browser.preferences.ChromePreferenceKeys;
 import org.chromium.chrome.browser.profiles.Profile;
 import org.chromium.components.bookmarks.BookmarkId;
 import org.chromium.components.bookmarks.BookmarkItem;
 import org.chromium.components.bookmarks.BookmarkType;
 import org.chromium.components.power_bookmarks.PowerBookmarkMeta;
 import org.chromium.components.power_bookmarks.PowerBookmarkType;
+import org.chromium.content_public.browser.WebContents;
+import org.chromium.ui.base.PageTransition;
+import org.chromium.ui.base.WindowAndroid;
+import org.chromium.ui.modaldialog.DialogDismissalCause;
+import org.chromium.ui.modaldialog.ModalDialogManager;
+import org.chromium.ui.modaldialog.ModalDialogProperties;
+import org.chromium.ui.modelutil.PropertyModel;
+import org.chromium.ui.widget.Toast;
 import org.chromium.url.GURL;
+import org.chromium.chrome.browser.bookmarks.BookmarkBridgeJni;
+import org.chromium.chrome.browser.preferences.ChromeSharedPreferences;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -52,6 +117,147 @@ class BookmarkBridge {
     private @Nullable BookmarkId mOtherFolderId;
     private @Nullable BookmarkId mDesktopFolderId;
     private @Nullable BookmarkId mLocalOrSyncableReadingListFolderId;
+
+    // Ecosia: Bookmark Import / Export BEGIN
+    private static final int IMPORT_ERROR_INVALID_FILE_FORMAT = 1;
+    private static final int IMPORT_ERROR_INVALID_FILE_LENGTH_TOO_SMALL = 2;
+    private static final int IMPORT_ERROR_INVALID_FILE_LENGTH_TOO_LARGE = 3;
+    private static final int IMPORT_ERROR_INVALID_FILE_COULD_NOT_READ = 4;
+    private static final int IMPORT_ERROR_INVALID_FILE_EMPTY_CONTENTS = 5;
+    private static final int IMPORT_ERROR_INVALID_FILE_TYPE = 6;
+
+    private DownloadLocationCustomView mCustomView;
+
+    private PropertyModel mDialogModel;
+
+    private ModalDialogManager mModalDialogManager;
+
+    /**
+     * Import bookmarks from a selected file.
+     *
+     * @param window The current window of the bookmarks activity or page.
+     */
+    public void importBookmarks(WindowAndroid window) {
+        assert mIsNativeBookmarkModelLoaded;
+        BookmarkBridgeJni.get().importBookmarks(mNativeBookmarkBridge, BookmarkBridge.this, window);
+    }
+
+    /**
+     * Export bookmarks to a path selected by the user.
+     *
+     * @param window The current window of the bookmarks activity or page.
+     */
+    public void exportBookmarks(WindowAndroid window, ModalDialogManager modalDialogManager) {
+        assert mIsNativeBookmarkModelLoaded;
+        exportBookmarksImplUseSaf(window);
+    }
+
+    private void exportBookmarksImplUseSaf(WindowAndroid window) {
+        Context context = window.getContext().get();
+
+        // standard name for boorkmark file
+        final String standardBoorkmarkName = "bookmarks.html";
+
+        // use the fileSelector and saf asking user for the file
+        Intent fileSelector = new Intent(Intent.ACTION_CREATE_DOCUMENT);
+        fileSelector.addCategory(Intent.CATEGORY_OPENABLE);
+        fileSelector.setType("text/html");
+        fileSelector.putExtra(Intent.EXTRA_TITLE, standardBoorkmarkName);
+        fileSelector.setFlags(Intent.FLAG_GRANT_WRITE_URI_PERMISSION |
+                Intent.FLAG_GRANT_READ_URI_PERMISSION |
+                Intent.FLAG_GRANT_PERSISTABLE_URI_PERMISSION);
+
+        // get last exported uri path, if any
+        SharedPreferencesManager sharedPrefs = SharedPreferencesManager.getInstanceForRegistry(ChromeSharedPreferences.REGISTRY);
+        String bookmarksPath = sharedPrefs.readString(ChromePreferenceKeys.BOOKMARKS_LAST_EXPORT_URI, standardBoorkmarkName);
+        Uri lastSelectedUri = Uri.parse(bookmarksPath);
+
+        // prepare delegate for file selector
+        DialogInterface.OnClickListener onClickListener = new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int button) {
+                if (button == AlertDialog.BUTTON_NEGATIVE) {
+                    window.showIntent(fileSelector,
+                            new WindowAndroid.IntentCallback() {
+                                @Override
+                                public void onIntentCompleted(int resultCode, Intent data) {
+                                    if (data == null) return;
+                                    Uri filePath = data.getData();
+                                    doExportBookmarksImpl(window, filePath);
+                                }
+                            },
+                            null);
+                } else {
+                    if (dialog != null) dialog.dismiss();
+                    doExportBookmarksImpl(window, lastSelectedUri);
+                }
+            }
+        };
+
+        // as a workaround for https://issuetracker.google.com/issues/37136466
+        // ask to overwrite if is a valid uri and the file is present
+        if (DocumentsContract.isDocumentUri(context, lastSelectedUri)) {
+            AsyncTask<Void> checkUriTask = new AsyncTask<Void>() {
+                boolean uriExists = false;
+                String actualFilePath = null;
+
+                @Override
+                protected Void doInBackground() {
+                    uriExists = ContentUriUtils.contentUriExists(lastSelectedUri.toString());
+                    if (uriExists) {
+                        actualFilePath = ContentUriUtils.getFilePathFromContentUri(lastSelectedUri);
+                        // get real actual file name on disk
+                        if (actualFilePath == null) actualFilePath = lastSelectedUri.toString();
+                        // set file name to last exported file name
+                        fileSelector.putExtra(Intent.EXTRA_TITLE,
+                                ContentUriUtils.getDisplayName(lastSelectedUri, context,
+                                        DocumentsContract.Document.COLUMN_DISPLAY_NAME));
+                    }
+                    return null;
+                }
+
+                @Override
+                protected void onPostExecute(Void result) {
+                    // check for permissions
+                    if (uriExists) {
+                        AlertDialog.Builder alert =
+                                new AlertDialog.Builder(context, R.style.ThemeOverlay_BrowserUI_AlertDialog);
+                        AlertDialog alertDialog =
+                                alert.setTitle(R.string.bookmarks_export_alert_title)
+                                        .setMessage(context.getString(R.string.bookmarks_export_alert_message, actualFilePath))
+                                        .setPositiveButton(
+                                                R.string.bookmarks_export_alert_message_yes, onClickListener)
+                                        .setNegativeButton(R.string.bookmarks_export_alert_message_no, onClickListener)
+                                        .create();
+                        alertDialog.getDelegate().setHandleNativeActionModesEnabled(false);
+
+                        // show dialog asking for overwrite
+                        alertDialog.show();
+                        return;
+                    } else {
+                        onClickListener.onClick(null, AlertDialog.BUTTON_NEGATIVE);
+                    }
+                }
+            };
+            checkUriTask.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
+            return;
+        }
+
+        // actually open the file selector
+        onClickListener.onClick(null, AlertDialog.BUTTON_NEGATIVE);
+    }
+
+    private void doExportBookmarksImpl(WindowAndroid window, Uri filePath) {
+        ContentResolver resolver = ContextUtils.getApplicationContext().getContentResolver();
+        // since we want to persist the uri in settings, ask for persistable permissions
+        resolver.takePersistableUriPermission(filePath, Intent.FLAG_GRANT_WRITE_URI_PERMISSION |
+                Intent.FLAG_GRANT_READ_URI_PERMISSION);
+
+        BookmarkBridgeJni.get().exportBookmarks(mNativeBookmarkBridge, BookmarkBridge.this,
+                window, filePath.toString());
+    }
+
+    // Ecosia: Bookmark Import / Export END
 
     /** Returns whether account bookmark folders are currently active. */
     public boolean areAccountBookmarkFoldersActive() {
@@ -170,6 +376,12 @@ class BookmarkBridge {
 
                     @Override
                     public void bookmarkModelChanged() {}
+            		
+					// Ecosia: Bookmark Import / Export
+            		@Override
+            		public void bookmarkModelNeedsReloadAfterBookmarksImport() {
+                		// only required after successful bookmark import
+            		}
                 });
 
         // Start reading as a fail-safe measure to avoid waiting forever if the caller forgets to
@@ -512,6 +724,49 @@ class BookmarkBridge {
                         typeInt,
                         maxNumberOfResult);
         return bookmarkMatches;
+    }
+
+    // Ecosia: Bookmark Import / Export
+    @CalledByNative
+    public void bookmarksExported(WindowAndroid window, String bookmarksPath, boolean success) {
+        if (!success) {
+            ((Activity) window.getContext().get()).runOnUiThread(() -> {
+                Context context = window.getContext().get();
+                AlertDialog dialog = new AlertDialog.Builder(context, R.style.ThemeOverlay_BrowserUI_AlertDialog)
+                        .setTitle(R.string.bookmarks_export_error_alert_title)
+                        .setMessage(R.string.bookmarks_export_error_alert_message)
+                        .setNeutralButton(R.string.bookmarks_export_error_alert_more_info_button, (DialogInterface.OnClickListener) (dialog12, which) -> {
+                            startWebsiteIntentForUri(Uri.parse(context.getString(R.string.bookmarks_export_error_alert_more_info_url)));
+                        })
+                        .setPositiveButton(R.string.ok, (dialog1, which) -> {})
+                        .create();
+                dialog.show();
+            });
+
+
+        } else {
+            SharedPreferencesManager sharedPrefs = SharedPreferencesManager.getInstanceForRegistry(ChromeSharedPreferences.REGISTRY);
+            sharedPrefs.writeString(ChromePreferenceKeys.BOOKMARKS_LAST_EXPORT_URI, bookmarksPath);
+            startWebsiteIntentForUri(
+                    ContentUriUtils.isContentUri(bookmarksPath) ? Uri.parse(bookmarksPath) : Uri.parse("file://" + bookmarksPath)
+            );
+        }
+    }
+
+    private void startWebsiteIntentForUri(Uri uri) {
+        Context context = ContextUtils.getApplicationContext();
+        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+        intent.putExtra(Browser.EXTRA_APPLICATION_ID,
+                context.getPackageName());
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        intent.putExtra(IntentHandler.EXTRA_PAGE_TRANSITION_TYPE, PageTransition.AUTO_BOOKMARK);
+
+        // If the bookmark manager is shown in a tab on a phone (rather than in a separate
+        // activity) the component name may be null. Send the intent through
+        // ChromeLauncherActivity instead to avoid crashing. See crbug.com/615012.
+        intent.setClass(context, ChromeLauncherActivity.class);
+
+        IntentHandler.startActivityForTrustedIntent(intent);
     }
 
     /**
@@ -886,6 +1141,55 @@ class BookmarkBridge {
         return BookmarkBridgeJni.get().getPartnerFolderId(mNativeBookmarkBridge);
     }
 
+    // Ecosia: Bookmark Import / Export
+    @CalledByNative
+    private void onBookmarkImportStarted() {
+        new Handler(Looper.getMainLooper()).post(() -> {
+            Context context = ContextUtils.getApplicationContext();
+            Toast.makeText(context, context.getString(R.string.bookmarks_import_started), Toast.LENGTH_LONG).show();
+        });
+    }
+
+    // Ecosia: Bookmark Import / Export
+    @CalledByNative
+    private void onBookmarkImportSuccess(int bookmarks, int searchEngine, String path) {
+        Context context = ContextUtils.getApplicationContext();
+        Toast.makeText(context, context.getString(R.string.bookmarks_import_success, bookmarks), Toast.LENGTH_LONG).show();
+
+        for (BookmarkModelObserver observer : mObservers) {
+            observer.bookmarkModelNeedsReloadAfterBookmarksImport();
+        }
+    }
+
+    // Ecosia: Bookmark Import / Export
+    @CalledByNative
+    private void onBookmarkImportError(int id, WindowAndroid window) {
+        Activity context = (Activity) window.getContext().get();
+
+        context.runOnUiThread(() -> {
+            AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(window.getContext().get(), R.style.ThemeOverlay_BrowserUI_AlertDialog)
+                    .setTitle(R.string.bookmarks_import_error_title)
+                    .setPositiveButton(R.string.ok, (dialog1, which) -> {});
+
+            switch (id) {
+                case IMPORT_ERROR_INVALID_FILE_FORMAT:
+                    dialogBuilder.setMessage(R.string.bookmarks_import_error_1);
+                case IMPORT_ERROR_INVALID_FILE_LENGTH_TOO_SMALL:
+                    dialogBuilder.setMessage(R.string.bookmarks_import_error_2);
+                case IMPORT_ERROR_INVALID_FILE_LENGTH_TOO_LARGE:
+                    dialogBuilder.setMessage(R.string.bookmarks_import_error_3);
+                case IMPORT_ERROR_INVALID_FILE_COULD_NOT_READ:
+                    dialogBuilder.setMessage(R.string.bookmarks_import_error_4);
+                case IMPORT_ERROR_INVALID_FILE_EMPTY_CONTENTS:
+                    dialogBuilder.setMessage(R.string.bookmarks_import_error_5);
+                case IMPORT_ERROR_INVALID_FILE_TYPE:
+                    dialogBuilder.setMessage(R.string.bookmarks_import_error_6);
+
+            }
+            dialogBuilder.create().show();
+        });
+    }
+
     @CalledByNative
     @VisibleForTesting
     void bookmarkModelLoaded() {
@@ -1093,7 +1397,9 @@ class BookmarkBridge {
 
         void getChildIds(
                 long nativeBookmarkBridge, long id, int type, List<BookmarkId> bookmarksList);
-
+        void importBookmarks(long nativeBookmarkBridge, BookmarkBridge caller, WindowAndroid window); // Ecosia: Bookmark Import / Export
+        void exportBookmarks(long nativeBookmarkBridge, BookmarkBridge caller, WindowAndroid window, // Ecosia: Bookmark Import / Export
+                             String export_path);
         BookmarkId getChildAt(long nativeBookmarkBridge, long id, int type, int index);
 
         int getTotalBookmarkCount(long nativeBookmarkBridge, long id, int type);

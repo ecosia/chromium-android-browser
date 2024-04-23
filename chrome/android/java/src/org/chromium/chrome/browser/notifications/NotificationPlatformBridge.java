@@ -910,7 +910,7 @@ public class NotificationPlatformBridge {
                         .setBody(body)
                         .setImage(image)
                         .setLargeIcon(icon)
-                        .setSmallIconId(R.drawable.ic_chrome)
+                        .setSmallIconId(R.drawable.ic_ecosia)
                         .setStatusBarIcon(badge)
                         .setSmallIconForContent(badge)
                         .setTicker(createTickerText(title, body))

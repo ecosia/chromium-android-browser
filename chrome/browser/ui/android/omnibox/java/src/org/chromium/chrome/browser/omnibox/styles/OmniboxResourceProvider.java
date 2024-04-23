@@ -175,9 +175,10 @@ public class OmniboxResourceProvider {
         final @ColorInt int color;
         if (brandedColorScheme == BrandedColorScheme.LIGHT_BRANDED_THEME) {
             color = context.getColor(R.color.branded_url_text_on_light_bg);
-        } else if (brandedColorScheme == BrandedColorScheme.DARK_BRANDED_THEME) {
+        }/* Ecosia: MOB-2992 Fixing bug showing light text color for light themes
+        else if (brandedColorScheme == BrandedColorScheme.DARK_BRANDED_THEME) {
             color = context.getColor(R.color.branded_url_text_on_dark_bg);
-        } else if (brandedColorScheme == BrandedColorScheme.INCOGNITO) {
+        } */else if (brandedColorScheme == BrandedColorScheme.INCOGNITO) {
             color = context.getColor(R.color.url_bar_primary_text_incognito);
         } else {
             color = MaterialColors.getColor(context, R.attr.colorOnSurface, TAG);
@@ -197,9 +198,10 @@ public class OmniboxResourceProvider {
         final @ColorInt int color;
         if (brandedColorScheme == BrandedColorScheme.LIGHT_BRANDED_THEME) {
             color = context.getColor(R.color.branded_url_text_variant_on_light_bg);
-        } else if (brandedColorScheme == BrandedColorScheme.DARK_BRANDED_THEME) {
+        } /* Ecosia: MOB-2992 Fixing bug showing light text color for light themes
+        else if (brandedColorScheme == BrandedColorScheme.DARK_BRANDED_THEME) {
             color = context.getColor(R.color.branded_url_text_variant_on_dark_bg);
-        } else if (brandedColorScheme == BrandedColorScheme.INCOGNITO) {
+        } */else if (brandedColorScheme == BrandedColorScheme.INCOGNITO) {
             color = context.getColor(R.color.url_bar_secondary_text_incognito);
         } else {
             color = MaterialColors.getColor(context, R.attr.colorOnSurfaceVariant, TAG);

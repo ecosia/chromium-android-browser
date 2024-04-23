@@ -278,13 +278,15 @@ public class EditorDialogView extends AlwaysDismissedDialog
                         } else {
                             handleDelete();
                         }
-                    } else if (item.getItemId() == R.id.help_menu_id) {
+                    }/* Ecosia : Remove help
+                    else if (item.getItemId() == R.id.help_menu_id) {
                         HelpAndFeedbackLauncherFactory.getForProfile(mProfile)
                                 .show(
                                         mActivity,
                                         mActivity.getString(R.string.help_context_autofill),
                                         null);
                     }
+                    */
                     return true;
                 });
 

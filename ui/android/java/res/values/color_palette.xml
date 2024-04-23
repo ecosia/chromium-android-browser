@@ -9,20 +9,20 @@ found in the LICENSE file.
     <color name="baseline_error_80">#F2B8B5</color>
     <color name="baseline_error_40">#B3261E</color>
     <color name="baseline_primary_100">@android:color/white</color>
-    <color name="baseline_primary_95">#ECF3FE</color>
+    <color name="baseline_primary_95">@color/ecosia_button_secondary_default</color> <!--Ecosia -MB-3099 Incognito colors changed accordingly-->
     <color name="baseline_primary_90">#D3E3FD</color>
-    <color name="baseline_primary_80">#A8C7FA</color>
+    <color name="baseline_primary_80">@color/ecosia_brand_primary</color>   <!--Ecosia -MOB-3078 Incognito switcher new tab button text color -->
     <color name="baseline_primary_80_alpha_10" tools:ignore="UnusedResources">#19A8C7FA</color>
     <color name="baseline_primary_80_alpha_20">#33A8C7FA</color>
     <color name="baseline_primary_80_alpha_50">#80A8C7FA</color>
-    <color name="baseline_primary_60">#4C8DF6</color>
-    <color name="baseline_primary_40">#0B57D0</color>
+    <color name="baseline_primary_60">@color/ecosia_brand_primary</color> <!--Ecosia -MB-3099 Incognito colors changed accordingly-->
+    <color name="baseline_primary_40">@color/ecosia_brand_primary</color> <!--Ecosia -MB-3099 Incognito colors changed accordingly-->
     <color name="baseline_primary_40_alpha_6">#0F0B57D0</color>
     <color name="baseline_primary_40_alpha_10">#190B57D0</color>
     <color name="baseline_primary_40_alpha_12">#1F0B57D0</color>
     <color name="baseline_primary_40_alpha_65" tools:ignore="UnusedResources">#6A0B57D0</color>
     <color name="baseline_primary_30">#0842A0</color>
-    <color name="baseline_primary_20">#062E6F</color>
+    <color name="baseline_primary_20">@color/ecosia_text_brand</color> <!--Ecosia -MOB-3099 Incognito colors changed accordingly-->
     <color name="baseline_primary_10">#041E49</color>
     <color name="baseline_neutral_100">@android:color/white</color>
     <color name="baseline_neutral_100_with_surface_tint_light_alpha_5" tools:ignore="UnusedResources">#F7F9FC</color>
@@ -70,13 +70,13 @@ found in the LICENSE file.
     <color name="baseline_neutral_variant_50">#747775</color>
     <color name="baseline_neutral_variant_30">#444746</color>
     <color name="baseline_neutral_variant_30_alpha_20">#33444746</color>
-    <color name="baseline_secondary_90">#C2E7FF</color>
+    <color name="baseline_secondary_90">@color/ecosia_text_brand</color>    <!--Ecosia -MOB-3078 Incognito switcher new tab button text color -->
     <color name="baseline_secondary_90_with_neutral_10_alpha_8">#B3D7EF</color>
     <color name="baseline_secondary_90_with_neutral_10_alpha_24">#94B7CF</color>
     <color name="baseline_secondary_70">#5AB3F0</color>
     <color name="baseline_secondary_70_with_neutral_90_alpha_8">#53A7E1</color>
     <color name="baseline_secondary_70_with_neutral_90_alpha_24">#448FC4</color>
-    <color name="baseline_secondary_30">#004A77</color>
+    <color name="baseline_secondary_30">@color/ecosia_button_primary_default</color>    <!--Ecosia -MOB-3078 Incognito switcher new tab button background color -->
     <color name="baseline_secondary_10">#001D35</color>
     <color name="baseline_surface_tint_light_alph_5">@color/gm3_baseline_surface_tint_light_alph_5</color>
     <color name="baseline_tertiary_90">#C4EED0</color>

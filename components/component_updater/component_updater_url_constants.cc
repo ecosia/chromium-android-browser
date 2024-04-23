@@ -15,9 +15,9 @@ namespace component_updater {
 // The value of |kDefaultUrlSource| can be overridden with
 // --component-updater=url-source=someurl.
 const char kUpdaterJSONDefaultUrl[] =
-    "https://update.googleapis.com/service/update2/json";
+    "about:blank";  // Ecosia: removed component updater according to ungoogled Chromium patch
 
 const char kUpdaterJSONFallbackUrl[] =
-    "http://update.googleapis.com/service/update2/json";
+    "about:blank";  // Ecosia: removed component updater according to ungoogled Chromium patch
 
 }  // namespace component_updater

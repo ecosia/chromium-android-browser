@@ -105,7 +105,11 @@ android_library("adblock_ui_java") {
     "java/src/org/chromium/chrome/browser/adblock/settings/AdblockFilterListsFragment.java",
     "java/src/org/chromium/chrome/browser/adblock/settings/AdblockMoreOptionsFragment.java",
     "java/src/org/chromium/chrome/browser/adblock/settings/AdblockSettingsFragment.java",
+    "java/src/org/chromium/chrome/browser/adblock/settings/EcosiaAdblockPreferences.java", 
+    "java/src/org/chromium/chrome/browser/adblock/settings/EcosiaAdblockSharedPreferencesHelpers.java",
+    "java/src/org/chromium/chrome/browser/adblock/settings/EcosiaAdblockTrackingManager.java",
   ]
+  # Ecosia: Adblock classes above
 
   deps = [
     ":java_ui_resources",
@@ -121,6 +125,9 @@ android_library("adblock_ui_java") {
     "//third_party/androidx:androidx_fragment_fragment_java",
     "//third_party/androidx:androidx_preference_preference_java",
     "//third_party/jni_zero:jni_zero_java",
+    # Ecosia: tracking. TODO merge with Ecosia TrackingManager and SharedPreferencesHelpers
+    "//chrome/browser/version:java",
+    "//third_party/android_deps:com_snowplowanalytics_snowplow_android_tracker_java",
   ]
 
   resources_package = "org.chromium.chrome.browser.adblock"

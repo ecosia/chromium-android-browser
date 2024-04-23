@@ -1,545 +1,545 @@
-<?xml version="1.0" ?>
+<?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE translationbundle>
 <translationbundle lang="id">
 <translation id="1026101648481255140">Lanjutkan Penginstalan</translation>
-<translation id="1029669172902658969">Luncurkan kembali untuk mengupdate &amp;ChromiumOS</translation>
-<translation id="1040916596585577953">Chromium merekomendasikan Anda untuk meninjau ekstensi ini</translation>
+<translation id="8933665254023068908">Luncurkan kembali untuk mengupdate &amp;EcosiaOS</translation>
+<translation id="6566258574866003581">Ecosia merekomendasikan Anda untuk meninjau ekstensi ini</translation>
 <translation id="1042552502243217427">Saat sebuah situs meminta untuk melakukan pramuat link yang ada di halamannya secara pribadi, Chromium akan menggunakan server Google. Hal ini akan menyembunyikan identitas Anda dari situs yang dipramuat, tetapi Google akan mempelajari situs apa yang dipramuat.</translation>
 <translation id="1065672644894730302">Preferensi Anda tidak dapat dibaca. Beberapa fitur mungkin tidak tersedia dan perubahan pada preferensi tidak akan disimpan.</translation>
-<translation id="1083934481477628225">Orang tuamu telah menonaktifkan "Izin untuk situs, aplikasi, dan ekstensi" untuk Chromium</translation>
+<translation id="8561406087076314604">Orang tuamu telah menonaktifkan "Izin untuk situs, aplikasi, dan ekstensi" untuk Ecosia</translation>
 <translation id="1098170124587656448">Chromium dapat membantu Anda agar tetap aman dari pelanggaran data, ekstensi berbahaya, dan lainnya</translation>
-<translation id="1104942323762546749">Chromium ingin mengekspor sandi. Ketik sandi Windows Anda untuk mengizinkannya.</translation>
+<translation id="3632544319066562282">Ecosia ingin mengekspor sandi. Ketik sandi Windows Anda untuk mengizinkannya.</translation>
 <translation id="113122355610423240">Chromium adalah browser default Anda</translation>
-<translation id="1131805035311359397">Untuk memeriksa apakah sandi Anda aman dari pelanggaran data dan masalah keamanan lainnya, <ph name="BEGIN_LINK" />login ke Chromium<ph name="END_LINK" />.</translation>
-<translation id="1153368717515616349">Klik menu Chromium</translation>
+<translation id="1131805035311359397">Untuk memeriksa apakah sandi Anda aman dari pelanggaran data dan masalah keamanan lainnya, <ph name="BEGIN_LINK"/>login ke Chromium<ph name="END_LINK"/>.</translation>
+<translation id="1224748120031661633">Klik menu Ecosia</translation>
 <translation id="1184145431117212167">Penginstalan gagal karena versi Windows Anda tidak didukung.</translation>
 <translation id="1185134272377778587">Tentang Chromium</translation>
-<translation id="1188705220418984327">Untuk membagikan jendela Anda, izinkan perekaman layar untuk Chromium di Preferensi Sistem.</translation>
-<translation id="1203500561924088507">Terima kasih telah menginstal. Anda harus memulai ulang browser sebelum menggunakan <ph name="BUNDLE_NAME" />.</translation>
-<translation id="1262876892872089030">Saat tab ini tidak aktif, memori akan dikosongkan agar Chromium tetap cepat. Anda dapat memilih untuk selalu mengecualikan situs ini agar tetap aktif.</translation>
-<translation id="1265577313130862557">Chromium memblokir download ini karena file tersebut berbahaya</translation>
-<translation id="126567311906253476">Saat login ke layanan Google seperti Gmail atau YouTube dengan <ph name="USER_EMAIL" />, Anda dapat login otomatis ke Chromium dengan akun yang sama</translation>
-<translation id="1290883685122687410">Kesalahan saat penyiapan: <ph name="METAINSTALLER_EXIT_CODE" />. <ph name="WINDOWS_ERROR" /></translation>
-<translation id="1315551408014407711">Siapkan profil Chromium baru Anda</translation>
-<translation id="1324107359134968521">Chromium memerlukan akses Bluetooth untuk menjelajah 
- perangkat Bluetooth. <ph name="IDS_SERIAL_DEVICE_CHOOSER_AUTHORIZE_BLUETOOTH_LINK" /></translation>
-<translation id="1342274909142618978">Hapus juga data dari Chromium (<ph name="URL" />)</translation>
-<translation id="1414495520565016063">Anda sudah masuk ke Chromium!</translation>
+<translation id="1330085168384841023">Untuk membagikan jendela Anda, izinkan perekaman layar untuk Ecosia di Preferensi Sistem.</translation>
+<translation id="1203500561924088507">Terima kasih telah menginstal. Anda harus memulai ulang browser sebelum menggunakan <ph name="BUNDLE_NAME"/>.</translation>
+<translation id="7455175614937447568">Saat tab ini tidak aktif, memori akan dikosongkan agar Ecosia tetap cepat. Anda dapat memilih untuk selalu mengecualikan situs ini agar tetap aktif.</translation>
+<translation id="9068280473864300215">Ecosia memblokir download ini karena file tersebut berbahaya</translation>
+<translation id="126567311906253476">Saat login ke layanan Google seperti Gmail atau YouTube dengan <ph name="USER_EMAIL"/>, Anda dapat login otomatis ke Chromium dengan akun yang sama</translation>
+<translation id="1290883685122687410">Kesalahan saat penyiapan: <ph name="METAINSTALLER_EXIT_CODE"/>. <ph name="WINDOWS_ERROR"/></translation>
+<translation id="319566061277127356">Siapkan profil Ecosia baru Anda</translation>
+<translation id="4019094010333463261">Ecosia memerlukan akses Bluetooth untuk menjelajah 
+ perangkat Bluetooth. <ph name="IDS_SERIAL_DEVICE_CHOOSER_AUTHORIZE_BLUETOOTH_LINK"/></translation>
+<translation id="5405885279794834338">Hapus juga data dari Ecosia (<ph name="URL"/>)</translation>
+<translation id="727568860157522676">Anda sudah masuk ke Ecosia!</translation>
 <translation id="1478370723027452770">Dapatkan bantuan untuk Chrome for Testing</translation>
-<translation id="1497802159252041924">Error saat penginstalan: <ph name="INSTALL_ERROR" /></translation>
-<translation id="1524282610922162960">Bagikan tab Chromium</translation>
-<translation id="1553461853655228091">Chromium memerlukan izin untuk mengakses kamera guna membuat peta 3D untuk area di sekeliling Anda.</translation>
-<translation id="1555494096857516577">{NUM_EXTENSIONS,plural, =1{Ekstensi ini tidak lagi didukung. Chromium merekomendasikan agar Anda menghapusnya.}other{Ekstensi ini tidak lagi didukung. Chromium merekomendasikan agar Anda menghapusnya.}}</translation>
+<translation id="1497802159252041924">Error saat penginstalan: <ph name="INSTALL_ERROR"/></translation>
+<translation id="1861504561909287316">Bagikan tab Ecosia</translation>
+<translation id="6896860023874996542">Ecosia memerlukan izin untuk mengakses kamera guna membuat peta 3D untuk area di sekeliling Anda.</translation>
+<translation id="7886351766410889877">{NUM_EXTENSIONS,plural, =1{Ekstensi ini tidak lagi didukung. Ecosia merekomendasikan agar Anda menghapusnya.}other{Ekstensi ini tidak lagi didukung. Ecosia merekomendasikan agar Anda menghapusnya.}}</translation>
 <translation id="1574377791422810894">Alat keamanan Chromium</translation>
-<translation id="1591808205441691831">Chromium perlu memverifikasi diri Anda sebelum beberapa data dapat disimpan di Akun Google Anda dan digunakan di semua perangkat Anda. Jika Anda logout, data ini akan tetap berada di perangkat ini.</translation>
-<translation id="1594928384848033697">Chromium ingin menghapus data Pengelola Sandi Anda. Ketik sandi Windows Anda untuk mengizinkannya.</translation>
-<translation id="1607715478322902680">{COUNT,plural, =0{Administrator mewajibkan Anda meluncurkan kembali Chromium untuk menerapkan update}=1{Administrator mewajibkan Anda meluncurkan kembali Chromium untuk menerapkan update. Jendela Samaran Anda tidak akan dibuka kembali.}other{Administrator mewajibkan Anda meluncurkan kembali Chromium untuk menerapkan update. # jendela Samaran Anda tidak akan dibuka kembali.}}</translation>
+<translation id="2200308425865645682">Ecosia perlu memverifikasi diri Anda sebelum beberapa data dapat disimpan di Akun Ecosia Anda dan digunakan di semua perangkat Anda. Jika Anda logout, data ini akan tetap berada di perangkat ini.</translation>
+<translation id="7304240387834227637">Ecosia ingin menghapus data Pengelola Sandi Anda. Ketik sandi Windows Anda untuk mengizinkannya.</translation>
+<translation id="4933729908795930260">{COUNT,plural, =0{Administrator mewajibkan Anda meluncurkan kembali Ecosia untuk menerapkan update}=1{Administrator mewajibkan Anda meluncurkan kembali Ecosia untuk menerapkan update. Jendela Samaran Anda tidak akan dibuka kembali.}other{Administrator mewajibkan Anda meluncurkan kembali Ecosia untuk menerapkan update. # jendela Samaran Anda tidak akan dibuka kembali.}}</translation>
 <translation id="1625909126243026060">Meninjau kontrol privasi dan keamanan utama di Chromium</translation>
-<translation id="1632539827495546968">Jika Anda hanya ingin menggunakan akun ini sekali, Anda dapat menggunakan <ph name="GUEST_LINK_BEGIN" />mode Tamu<ph name="GUEST_LINK_END" /> di browser Chromium. Jika Anda ingin menambahkan akun untuk orang lain, <ph name="LINK_BEGIN" />tambahkan pengguna baru<ph name="LINK_END" /> ke <ph name="DEVICE_TYPE" />.
+<translation id="931416298178634530">Jika Anda hanya ingin menggunakan akun ini sekali, Anda dapat menggunakan <ph name="GUEST_LINK_BEGIN"/>mode Tamu<ph name="GUEST_LINK_END"/> di browser Ecosia. Jika Anda ingin menambahkan akun untuk orang lain, <ph name="LINK_BEGIN"/>tambahkan pengguna baru<ph name="LINK_END"/> ke <ph name="DEVICE_TYPE"/>.
 
-Izin yang telah Anda berikan ke situs dan aplikasi dapat berlaku untuk akun ini. Anda dapat mengelola Akun Google Anda di <ph name="SETTINGS_LINK_BEGIN" />Setelan<ph name="SETTINGS_LINK_END" />.</translation>
+Izin yang telah Anda berikan ke situs dan aplikasi dapat berlaku untuk akun ini. Anda dapat mengelola Akun Ecosia Anda di <ph name="SETTINGS_LINK_BEGIN"/>Setelan<ph name="SETTINGS_LINK_END"/>.</translation>
 <translation id="1640672724030957280">Mengunduh...</translation>
 <translation id="1715127912119967311">Untuk membantu meningkatkan fitur ini, Chromium mengirim interaksi Anda dengan fitur tersebut ke Google. Data ini dapat dibaca, diproses, dan dianotasi oleh petugas peninjau.</translation>
 <translation id="1722488837206509557">Tindakan ini akan memungkinkan Anda memilih dari perangkat yang tersedia dan menampilkan konten di perangkat tersebut.</translation>
-<translation id="17264556997921157">Anda dapat melihat dan menghapus topik terkait minat yang digunakan situs untuk menampilkan iklan kepada Anda. Chromium memperkirakan minat Anda berdasarkan histori penjelajahan terbaru Anda.</translation>
-<translation id="1733725117201708356">Chromium akan segera menghapus data penjelajahan</translation>
+<translation id="1118786556671181978">Anda dapat melihat dan menghapus topik terkait minat yang digunakan situs untuk menampilkan iklan kepada Anda. Ecosia memperkirakan minat Anda berdasarkan histori penjelajahan terbaru Anda.</translation>
+<translation id="2379593823746842972">Ecosia akan segera menghapus data penjelajahan</translation>
 <translation id="1736443181683099871">Chromium akan mencoba mengupgrade navigasi ke HTTPS</translation>
-<translation id="1745121272106313518">Chromium akan dimulai ulang dalam <ph name="REMAINING_TIME" /></translation>
+<translation id="5490755016715767023">Ecosia akan dimulai ulang dalam <ph name="REMAINING_TIME"/></translation>
 <translation id="1749104137266986751">Jika HTTPS tidak tersedia, Chromium akan menggunakan koneksi yang tidak aman tanpa memperingatkan Anda</translation>
-<translation id="1774152462503052664">Jalankan Chromium di latar belakang</translation>
-<translation id="1779356040007214683">Agar Chromium lebih aman, kami menonaktifkan beberapa ekstensi yang tidak tercantum dalam <ph name="IDS_EXTENSION_WEB_STORE_TITLE" /> dan mungkin telah ditambahkan tanpa sepengetahuan Anda.</translation>
-<translation id="1808667845054772817">Instal ulang Chromium</translation>
-<translation id="1820835682567584003">Chromium sedang mencoba <ph name="AUTHENTICATION_PURPOSE" /></translation>
-<translation id="18552579716432081">Untuk menghapus data penjelajahan hanya dari perangkat ini dan tetap menyimpannya di Akun Google Anda, <ph name="BEGIN_LINK" />logout dari Chromium<ph name="END_LINK" />.</translation>
-<translation id="185970820835152459">Anda dapat mengelola Akun Google yang Anda gunakan untuk login. Akun Google Anda digunakan untuk browser Chromium, Play Store, Gmail, dan lainnya. Jika Anda ingin menambahkan akun untuk orang lain, seperti anggota keluarga, tambahkan pengguna baru ke <ph name="DEVICE_TYPE" />. <ph name="LINK_BEGIN" />Pelajari lebih lanjut<ph name="LINK_END" /></translation>
+<translation id="8454595950895325762">Jalankan Ecosia di latar belakang</translation>
+<translation id="9125443060066914183">Agar Ecosia lebih aman, kami menonaktifkan beberapa ekstensi yang tidak tercantum dalam <ph name="IDS_EXTENSION_WEB_STORE_TITLE"/> dan mungkin telah ditambahkan tanpa sepengetahuan Anda.</translation>
+<translation id="6984747211123632080">Instal ulang Ecosia</translation>
+<translation id="1251415775728969647">Ecosia sedang mencoba <ph name="AUTHENTICATION_PURPOSE"/></translation>
+<translation id="1761584959558744002">Untuk menghapus data penjelajahan hanya dari perangkat ini dan tetap menyimpannya di Akun Ecosia Anda, <ph name="BEGIN_LINK"/>logout dari Ecosia<ph name="END_LINK"/>.</translation>
+<translation id="185970820835152459">Anda dapat mengelola Akun Google yang Anda gunakan untuk login. Akun Google Anda digunakan untuk browser Chromium, Play Store, Gmail, dan lainnya. Jika Anda ingin menambahkan akun untuk orang lain, seperti anggota keluarga, tambahkan pengguna baru ke <ph name="DEVICE_TYPE"/>. <ph name="LINK_BEGIN"/>Pelajari lebih lanjut<ph name="LINK_END"/></translation>
 <translation id="1863308913976887472">Situs dapat menyimpan informasi tentang minat Anda ke Chromium. Misalnya, jika Anda mengunjungi suatu situs untuk membeli sepatu maraton, situs tersebut dapat menetapkan minat Anda sebagai lari maraton. Kemudian, jika Anda mengunjungi situs lain untuk mendaftar lomba lari, situs tersebut dapat menampilkan iklan sepatu lari berdasarkan minat Anda.</translation>
-<translation id="1881322772814446296">Anda masuk dengan akun terkelola dan memberikan administratornya kontrol atas profil Chromium Anda. Data Chromium Anda, seperti aplikasi, bookmark, histori, sandi, dan setelan lain selamanya akan dikaitkan ke <ph name="USER_NAME" />. Anda dapat menghapus data ini melalui Dasbor Akun Google, namun Anda tidak akan dapat mengaitkan data ini dengan akun yang lain. Secara opsional, Anda dapat membuat profil untuk menjaga data Chromium Anda yang sudah ada tetap terpisah. <ph name="LEARN_MORE" /></translation>
+<translation id="4239392394637574967">Anda masuk dengan akun terkelola dan memberikan administratornya kontrol atas profil Ecosia Anda. Data Ecosia Anda, seperti aplikasi, bookmark, histori, sandi, dan setelan lain selamanya akan dikaitkan ke <ph name="USER_NAME"/>. Anda dapat menghapus data ini melalui Dasbor Akun Ecosia, namun Anda tidak akan dapat mengaitkan data ini dengan akun yang lain. Secara opsional, Anda dapat membuat profil untuk menjaga data Ecosia Anda yang sudah ada tetap terpisah. <ph name="LEARN_MORE"/></translation>
 <translation id="1906696617298807388">Saat Anda mengetik di kolom URL atau kotak penelusuran, Chromium akan mengirimkan hal yang Anda ketik ke Google Drive untuk mendapatkan saran item. Fitur ini nonaktif dalam mode Samaran.</translation>
 <translation id="1911763535808217981">Dengan menonaktifkan ini, Anda dapat login ke situs Google seperti Gmail tanpa harus login ke Chromium</translation>
-<translation id="1929939181775079593">Chromium tidak merespons. Luncurkan ulang sekarang?</translation>
-<translation id="193439633299369377">ChromiumOS harus dimulai ulang untuk menerapkan update.</translation>
-<translation id="1951406923938785464">Chromium memblokir download ini karena jenis file tersebut tidak biasa didownload dan mungkin berbahaya</translation>
-<translation id="1953553007165777902">Mendownload... <ph name="MINUTE" /> menit lagi</translation>
+<translation id="18064594488616674">Ecosia tidak merespons. Luncurkan ulang sekarang?</translation>
+<translation id="8047394653992042491">EcosiaOS harus dimulai ulang untuk menerapkan update.</translation>
+<translation id="4988569127367972482">Ecosia memblokir download ini karena jenis file tersebut tidak biasa didownload dan mungkin berbahaya</translation>
+<translation id="1953553007165777902">Mendownload... <ph name="MINUTE"/> menit lagi</translation>
 <translation id="1966382378801805537">Chromium tidak dapat menentukan atau menyetel browser default</translation>
-<translation id="1990262977744080398">Pelajari alasan Chromium memblokir beberapa file, terbuka di tab baru</translation>
-<translation id="2008474315282236005">Tindakan ini akan menghapus 1 item dari perangkat. Untuk mengambil data nanti, login ke Chromium sebagai <ph name="USER_EMAIL" />.</translation>
+<translation id="6583697665130212310">Pelajari alasan Ecosia memblokir beberapa file, terbuka di tab baru</translation>
+<translation id="2008474315282236005">Tindakan ini akan menghapus 1 item dari perangkat. Untuk mengambil data nanti, login ke Chromium sebagai <ph name="USER_EMAIL"/>.</translation>
 <translation id="2018879682492276940">Gagal menginstal. Coba lagi.</translation>
-<translation id="2020032459870799438">Untuk memeriksa apakah sandi Anda yang lain aman dari pelanggaran data dan masalah keamanan lainnya, <ph name="BEGIN_LINK" />login ke Chromium<ph name="END_LINK" />.</translation>
+<translation id="2020032459870799438">Untuk memeriksa apakah sandi Anda yang lain aman dari pelanggaran data dan masalah keamanan lainnya, <ph name="BEGIN_LINK"/>login ke Chromium<ph name="END_LINK"/>.</translation>
 <translation id="2049376729098081731">Pilih apakah akan menyertakan histori Chromium untuk mendapatkan pengalaman yang lebih dipersonalisasi di layanan Google</translation>
-<translation id="2086476982681781442">Chromium memblokir download ini karena file tersebut menipu dan dapat menyebabkan perubahan tidak terduga di perangkat Anda</translation>
+<translation id="7112125772061727648">Ecosia memblokir download ini karena file tersebut menipu dan dapat menyebabkan perubahan tidak terduga di perangkat Anda</translation>
 <translation id="2088953378266246249">Informasi tentang cara Chromium mengelola root certificate-nya</translation>
-<translation id="2120965832000301375">{COUNT,plural, =1{Organisasi akan otomatis menghapus data penjelajahan jika Chromium tidak digunakan selama 1 menit. Data ini dapat mencakup histori, isi otomatis, dan download. Tab Anda akan tetap terbuka.}other{Organisasi akan otomatis menghapus data penjelajahan jika Chromium tidak digunakan selama # menit. Data ini dapat mencakup histori, isi otomatis, dan download. Tab Anda akan tetap terbuka.}}</translation>
+<translation id="1876482900355946220">{COUNT,plural, =1{Organisasi akan otomatis menghapus data penjelajahan jika Ecosia tidak digunakan selama 1 menit. Data ini dapat mencakup histori, isi otomatis, dan download. Tab Anda akan tetap terbuka.}other{Organisasi akan otomatis menghapus data penjelajahan jika Ecosia tidak digunakan selama # menit. Data ini dapat mencakup histori, isi otomatis, dan download. Tab Anda akan tetap terbuka.}}</translation>
 <translation id="2126108037660393668">Verifikasi file yang didownload gagal.</translation>
-<translation id="215352261310130060">Chromium memblokir download ini karena situs tidak menggunakan koneksi yang aman dan file mungkin telah dimodifikasi</translation>
-<translation id="2157600032285353789">Anda dapat membuka bookmark, mode baca, dan lainnya dari menu Chromium</translation>
-<translation id="2174178932569897599">Sesuaikan Chromium</translation>
+<translation id="2745180350547322293">Ecosia memblokir download ini karena situs tidak menggunakan koneksi yang aman dan file mungkin telah dimodifikasi</translation>
+<translation id="8296229475165428335">Anda dapat membuka bookmark, mode baca, dan lainnya dari menu Ecosia</translation>
+<translation id="838842459108103907">Sesuaikan Ecosia</translation>
 <translation id="2174917724755363426">Penginstalan tidak selesai. Yakin ingin membatalkan?</translation>
-<translation id="2185166961232948079">Chromium - Login Jaringan - <ph name="PAGE_TITLE" /></translation>
-<translation id="2190166659037789668">Error pemeriksaan update: <ph name="UPDATE_CHECK_ERROR" />.</translation>
-<translation id="2199210295479376551">Hapus akun dari Chromium</translation>
+<translation id="9035946286843935549">Ecosia - Login Jaringan - <ph name="PAGE_TITLE"/></translation>
+<translation id="2190166659037789668">Error pemeriksaan update: <ph name="UPDATE_CHECK_ERROR"/>.</translation>
+<translation id="8196791276481156937">Hapus akun dari Ecosia</translation>
 <translation id="2210682093923538346">Situs berbahaya. Chromium menghapus izin notifikasi.</translation>
-<translation id="2240214816234246077">Anda tidak membuka situs ini baru-baru ini. Chromium menghapus <ph name="PERMISSION_1" />, <ph name="PERMISSION_2" /></translation>
-<translation id="2241627712206172106">Jika Anda berbagi komputer, teman dan keluarga bisa menjelajah secara terpisah dan menyiapkan Chromium sesuai keinginannya.</translation>
+<translation id="2240214816234246077">Anda tidak membuka situs ini baru-baru ini. Chromium menghapus <ph name="PERMISSION_1"/>, <ph name="PERMISSION_2"/></translation>
+<translation id="6111519389633335269">Jika Anda berbagi komputer, teman dan keluarga bisa menjelajah secara terpisah dan menyiapkan Ecosia sesuai keinginannya.</translation>
 <translation id="2313870531055795960">Memeriksa kesesuaian URL dengan daftar situs tidak aman yang disimpan di Chromium. Jika situs berusaha mencuri sandi Anda, atau jika Anda mendownload file berbahaya, Chromium mungkin juga mengirim URL, termasuk bit konten halaman, ke Safe Browsing.</translation>
 <translation id="2329088755516916767">Saat diaktifkan, Chromium akan melakukan pramuat halaman yang membuat penjelajahan dan penelusuran menjadi lebih cepat.</translation>
-<translation id="2343156876103232566">Untuk mengirimkan nomor dari sini ke ponsel Android Anda, login ke Chromium di kedua perangkat.</translation>
+<translation id="665177868576952817">Untuk mengirimkan nomor dari sini ke ponsel Android Anda, login ke Ecosia di kedua perangkat.</translation>
 <translation id="2359808026110333948">Lanjutkan</translation>
-<translation id="2361918034042471035">Ekstensi "<ph name="EXTENSION_NAME" />" ingin Anda login ke Chromium</translation>
-<translation id="2374216753258219393">Untuk menggunakan ekstensi ini sebagai <ph name="USER_EMAIL_ADDRESS" />, login ke Chromium.</translation>
-<translation id="2384373936468275798">ChromiumOS tidak dapat menyinkronkan data karena detail login akun Anda belum diperbarui.</translation>
-<translation id="2398377054246527950">{NUM_DEVICES,plural, =0{Tidak ada perangkat HID yang diakses oleh ekstensi Chromium}=1{1 perangkat HID sedang diakses oleh satu atau beberapa ekstensi Chromium}other{# perangkat HID sedang diakses oleh satu atau beberapa ekstensi Chromium}}</translation>
-<translation id="2401032172288869980">Chromium memerlukan izin mikrofon dan kamera untuk situs ini</translation>
-<translation id="2440750600860946460">Dengan <ph name="BEGIN_LINK" />alat dari Chromium<ph name="END_LINK" />, Anda dapat menjelajah dengan aman dan tetap memegang kendali</translation>
+<translation id="790624108224468719">Ekstensi "<ph name="EXTENSION_NAME"/>" ingin Anda login ke Ecosia</translation>
+<translation id="2056307067005384438">Untuk menggunakan ekstensi ini sebagai <ph name="USER_EMAIL_ADDRESS"/>, login ke Ecosia.</translation>
+<translation id="592990842052138727">EcosiaOS tidak dapat menyinkronkan data karena detail login akun Anda belum diperbarui.</translation>
+<translation id="2526043366208696235">{NUM_DEVICES,plural, =0{Tidak ada perangkat HID yang diakses oleh ekstensi Ecosia}=1{1 perangkat HID sedang diakses oleh satu atau beberapa ekstensi Ecosia}other{# perangkat HID sedang diakses oleh satu atau beberapa ekstensi Ecosia}}</translation>
+<translation id="3554373328288278512">Ecosia memerlukan izin mikrofon dan kamera untuk situs ini</translation>
+<translation id="2440750600860946460">Dengan <ph name="BEGIN_LINK"/>alat dari Chromium<ph name="END_LINK"/>, Anda dapat menjelajah dengan aman dan tetap memegang kendali</translation>
 <translation id="2451727308784734061">Gunakan pintasan Anda untuk mengakses Pengelola Sandi dengan cepat. Anda dapat memindahkan pintasan ke layar utama atau peluncur aplikasi di komputer.</translation>
-<translation id="2478295928299953161">Chromium akan segera ditutup</translation>
-<translation id="2483889755041906834">Di Chromium</translation>
+<translation id="5736558630107498475">Ecosia akan segera ditutup</translation>
+<translation id="6495878830719404098">Di Ecosia</translation>
 <translation id="2485422356828889247">Uninstal</translation>
-<translation id="2513154137948333830">Perlu memulai ulang: <ph name="INSTALL_SUCCESS" /></translation>
-<translation id="2554739539410784893">Chromium mencoba mengganti sandi yang ada. Ketik sandi Windows Anda untuk mengizinkannya.</translation>
-<translation id="2560420686485554789">Chromium memerlukan akses penyimpanan untuk mendownload file</translation>
-<translation id="2572494885440352020">Pembantu Chromium</translation>
-<translation id="2576118232315942160">Untuk mendapatkan sandi dan info Anda yang lain di semua perangkat Anda, login ke Chromium</translation>
-<translation id="2583187216237139145">Data Chromium yang dibuat selama penggunaan profil ini (seperti pembuatan bookmark, histori, sandi, dan setelan lain) dapat dihapus oleh administrator profil kerja. <ph name="LEARN_MORE" /></translation>
-<translation id="2592940277904433508">Terus gunakan Chromium</translation>
-<translation id="259935314519650377">Gagal menyimpan cache penginstal yang didownload. Error: <ph name="UNPACK_CACHING_ERROR_CODE" />.</translation>
-<translation id="264613044588233783">Chromium berjalan lebih cepat dan fitur yang menggunakan JavaScript akan berfungsi sebagaimana mestinya (direkomendasikan)</translation>
-<translation id="2648074677641340862">Terjadi error pada sistem operasi saat pemasangan berlangsung. Download Chromium lagi.</translation>
-<translation id="2661879430930417727">Jika Anda berbagi perangkat, teman dan keluarga dapat menjelajah secara terpisah dan menyiapkan Chromium sesuai keinginannya</translation>
-<translation id="268602741124540128">Selamat Datang di Chromium, <ph name="ACCOUNT_FIRST_NAME" /></translation>
-<translation id="2711502716910134313">Tab Chromium</translation>
+<translation id="2513154137948333830">Perlu memulai ulang: <ph name="INSTALL_SUCCESS"/></translation>
+<translation id="8957938953005153147">Ecosia mencoba mengganti sandi yang ada. Ketik sandi Windows Anda untuk mengizinkannya.</translation>
+<translation id="5549921590305750618">Ecosia memerlukan akses penyimpanan untuk mendownload file</translation>
+<translation id="9090890391337853620">Pembantu Ecosia</translation>
+<translation id="6094573000614590044">Untuk mendapatkan sandi dan info Anda yang lain di semua perangkat Anda, login ke Ecosia</translation>
+<translation id="5707346538075088068">Data Ecosia yang dibuat selama penggunaan profil ini (seperti pembuatan bookmark, histori, sandi, dan setelan lain) dapat dihapus oleh administrator profil kerja. <ph name="LEARN_MORE"/></translation>
+<translation id="5883025779824839861">Terus gunakan Ecosia</translation>
+<translation id="259935314519650377">Gagal menyimpan cache penginstal yang didownload. Error: <ph name="UNPACK_CACHING_ERROR_CODE"/>.</translation>
+<translation id="2198589091447191935">Ecosia berjalan lebih cepat dan fitur yang menggunakan JavaScript akan berfungsi sebagaimana mestinya (direkomendasikan)</translation>
+<translation id="7280797724682955539">Terjadi error pada sistem operasi saat pemasangan berlangsung. Download Ecosia lagi.</translation>
+<translation id="6960183526681645011">Jika Anda berbagi perangkat, teman dan keluarga dapat menjelajah secara terpisah dan menyiapkan Ecosia sesuai keinginannya</translation>
+<translation id="2381210243314074423">Selamat Datang di Ecosia, <ph name="ACCOUNT_FIRST_NAME"/></translation>
+<translation id="385080958066798123">Tab Ecosia</translation>
 <translation id="2718390899429598676">Untuk keamanan tambahan, Chromium akan mengenkripsi data Anda.</translation>
-<translation id="2721354645805494590">Logout untuk menghapus Akun Google Anda dari Chromium</translation>
+<translation id="7347725536241560534">Logout untuk menghapus Akun Ecosia Anda dari Ecosia</translation>
 <translation id="2738871930057338499">Tidak dapat terhubung ke internet. HTTP 403 Terlarang. Periksa konfigurasi proxy Anda.</translation>
 <translation id="2770231113462710648">Ubah browser default ke:</translation>
-<translation id="2785438272836277133">Ekstensi ini berisi malware dan tidak aman. Hapus dari Chromium agar ekstensi ini tidak dapat lagi melihat dan mengubah data Anda di situs yang Anda kunjungi, termasuk info pribadi Anda.</translation>
+<translation id="3077076541395306362">Ekstensi ini berisi malware dan tidak aman. Hapus dari Ecosia agar ekstensi ini tidak dapat lagi melihat dan mengubah data Anda di situs yang Anda kunjungi, termasuk info pribadi Anda.</translation>
 <translation id="2799223571221894425">Luncurkan Ulang</translation>
-<translation id="2837693172913560447">Ini akan membuat profil Chromium baru untuk <ph name="USER_EMAIL_ADDRESS" /></translation>
+<translation id="3952510753191144456">Ini akan membuat profil Ecosia baru untuk <ph name="USER_EMAIL_ADDRESS"/></translation>
 <translation id="2846251086934905009">Error penginstalan: Penginstal tidak selesai. Penginstalan telah dibatalkan.</translation>
-<translation id="2847479871509788944">Buang dari Chromium...</translation>
+<translation id="4199684616787081033">Buang dari Ecosia...</translation>
 <translation id="2850691299438350830">Memastikan Anda tetap aman di Chromium dan dapat digunakan untuk meningkatkan keamanan Anda di aplikasi Google lainnya saat login</translation>
 <translation id="2885378588091291677">Pengelola Tugas</translation>
-<translation id="2910007522516064972">Tentang &amp;Chromium</translation>
+<translation id="7221868538334633215">Tentang &amp;Ecosia</translation>
 <translation id="2915996080311180594">Mulai Ulang Nanti</translation>
 <translation id="2928420929544864228">Penginstalan selesai.</translation>
 <translation id="2945997411976714835">Error penginstalan: Proses penginstal gagal dimulai.</translation>
-<translation id="2970426615109535079">Organisasi Anda mengelola Chromium</translation>
+<translation id="7527831132809333552">Organisasi Anda mengelola Ecosia</translation>
 <translation id="2977470724722393594">Chromium sudah diperbarui</translation>
 <translation id="2977506796191543575">Jika situs berusaha mencuri sandi Anda, atau jika Anda mendownload file berbahaya, Chromium mungkin juga mengirimkan URL, termasuk bit konten halaman, ke Safe Browsing</translation>
-<translation id="2987208172821108655">Chromium dapat menonaktifkan tab ini untuk meningkatkan pengalaman penjelajahan dan mengosongkan resource.</translation>
-<translation id="3013473503895162900">Buka <ph name="URL" /> di tab baru di Chromium.</translation>
+<translation id="7562371913339616107">Ecosia dapat menonaktifkan tab ini untuk meningkatkan pengalaman penjelajahan dan mengosongkan resource.</translation>
+<translation id="6154325450733409298">Buka <ph name="URL"/> di tab baru di Ecosia.</translation>
 <translation id="3032706164202344641">Chromium tidak dapat memeriksa sandi Anda. Coba lagi nanti.</translation>
-<translation id="3032787606318309379">Menambahkan Chromium...</translation>
+<translation id="1762318218111418450">Menambahkan Ecosia...</translation>
 <translation id="3038232873781883849">Menunggu untuk menginstal...</translation>
-<translation id="3068187312562070417">Profil Chromium lainnya</translation>
-<translation id="3068515742935458733">Bantu Chromium menjadi lebih baik dengan mengirim laporan kerusakan dan <ph name="UMA_LINK" /> ke Google</translation>
-<translation id="3079753320517721795">{NUM_DEVICES,plural, =0{Tidak ada perangkat USB yang diakses oleh ekstensi Chromium}=1{1 perangkat USB sedang diakses oleh satu atau beberapa ekstensi Chromium}other{# perangkat USB sedang diakses oleh satu atau beberapa ekstensi Chromium}}</translation>
+<translation id="6967821869905227561">Profil Ecosia lainnya</translation>
+<translation id="9178613517891824246">Bantu Ecosia menjadi lebih baik dengan mengirim laporan kerusakan dan <ph name="UMA_LINK"/> ke Ecosia</translation>
+<translation id="7655708678113012665">{NUM_DEVICES,plural, =0{Tidak ada perangkat USB yang diakses oleh ekstensi Ecosia}=1{1 perangkat USB sedang diakses oleh satu atau beberapa ekstensi Ecosia}other{# perangkat USB sedang diakses oleh satu atau beberapa ekstensi Ecosia}}</translation>
 <translation id="3101560983689755071">Histori penjelajahan Anda memengaruhi iklan yang Anda lihat dan minat yang diperkirakan di bawah. Untuk melindungi privasi Anda, Chromium otomatis menghapus minat Anda secara berkala setiap bulan. Minat dapat diperbarui kecuali jika Anda menghapusnya.</translation>
-<translation id="3103660991484857065">Pemasang gagal membatalkan kompresi arsip. Download Chromium lagi.</translation>
-<translation id="3130323860337406239">Chromium menggunakan mikrofon Anda.</translation>
-<translation id="3144188012276422546">Tab ini menggunakan resource tambahan. Untuk meningkatkan performa, izinkan Chromium menonaktifkannya.</translation>
-<translation id="3155163173539279776">Luncurkan ulang Chromium</translation>
-<translation id="3179665906251668410">Buka Link di Jendela Sa&amp;maran Chromium</translation>
-<translation id="3185330573522821672">Sesuaikan profil Chromium baru Anda</translation>
-<translation id="3190315855212034486">Aduh! Chromium ngadat. Luncurkan ulang sekarang?</translation>
-<translation id="3224847870593914902">Untuk menghapus Akun Google Anda dari Chromium, logout dari Chromium di halaman Setelan</translation>
-<translation id="3258596308407688501">Chromium tidak dapat membaca dan menulis ke direktori datanya:
+<translation id="7691143774653486474">Pemasang gagal membatalkan kompresi arsip. Download Ecosia lagi.</translation>
+<translation id="1318059253725731825">Ecosia menggunakan mikrofon Anda.</translation>
+<translation id="51576365410323372">Tab ini menggunakan resource tambahan. Untuk meningkatkan performa, izinkan Ecosia menonaktifkannya.</translation>
+<translation id="8282620071565190081">Luncurkan ulang Ecosia</translation>
+<translation id="5500958820122281144">Buka Link di Jendela Sa&amp;maran Ecosia</translation>
+<translation id="3697186779259384993">Sesuaikan profil Ecosia baru Anda</translation>
+<translation id="3216284932113164802">Aduh! Ecosia ngadat. Luncurkan ulang sekarang?</translation>
+<translation id="8696852719113991652">Untuk menghapus Akun Ecosia Anda dari Ecosia, logout dari Ecosia di halaman Setelan</translation>
+<translation id="7602423871874451395">Ecosia tidak dapat membaca dan menulis ke direktori datanya:
 
-<ph name="USER_DATA_DIRECTORY" /></translation>
-<translation id="3268051428841342958">V8 adalah mesin WebAssembly dan JavaScript Chromium yang digunakan untuk meningkatkan performa situs</translation>
-<translation id="3283186697780795848">Chromium versi <ph name="PRODUCT_VERSION" /> telah terinstal</translation>
+<ph name="USER_DATA_DIRECTORY"/></translation>
+<translation id="905744008702074577">V8 adalah mesin WebAssembly dan JavaScript Ecosia yang digunakan untuk meningkatkan performa situs</translation>
+<translation id="3283186697780795848">Chromium versi <ph name="PRODUCT_VERSION"/> telah terinstal</translation>
 <translation id="3286538390144397061">Mulai Ulang Sekarang</translation>
-<translation id="328888136576916638">Kunci API Google tidak ada. Beberapa fungsi Chromium tidak akan berfungsi.</translation>
+<translation id="4735588186234302898">Kunci API Ecosia tidak ada. Beberapa fungsi Ecosia tidak akan berfungsi.</translation>
 <translation id="3296368748942286671">Lanjutkan aplikasi yang berjalan di latar belakang jika Chromium ditutup</translation>
-<translation id="3300643253493387004">Selagi kami menyiapkan akses akun, Anda tetap dapat menggunakan Chromium. Anda mungkin tidak dapat mengakses beberapa resource hingga penyiapan selesai.</translation>
+<translation id="686474599126256998">Selagi kami menyiapkan akses akun, Anda tetap dapat menggunakan Ecosia. Anda mungkin tidak dapat mengakses beberapa resource hingga penyiapan selesai.</translation>
 <translation id="3313189106987092621">Chromium akan memperingatkan Anda sebelum memuat situs apa pun menggunakan koneksi yang tidak aman</translation>
-<translation id="3316771292331273802">Anda akan logout dari sebagian besar situs saat menutup semua jendela Chromium, kecuali Akun Google Anda jika Anda login ke Chromium. Agar situs mengingat Anda, <ph name="SETTINGS_LINK" />.</translation>
-<translation id="3350761136195634146">Profil Chromium dengan akun ini sudah ada</translation>
-<translation id="3387527074123400161">ChromiumOS</translation>
-<translation id="3406848076815591792">Beralih ke profil Chromium yang sudah ada?</translation>
+<translation id="5513857521842828996">Anda akan logout dari sebagian besar situs saat menutup semua jendela Ecosia, kecuali Akun Ecosia Anda jika Anda login ke Ecosia. Agar situs mengingat Anda, <ph name="SETTINGS_LINK"/>.</translation>
+<translation id="812798451698099271">Profil Ecosia dengan akun ini sudah ada</translation>
+<translation id="1761341660094265938">EcosiaOS</translation>
+<translation id="4781882243268600858">Beralih ke profil Ecosia yang sudah ada?</translation>
 <translation id="3412460710772753638">Di Pengelola Sandi di perangkat ini</translation>
-<translation id="3430503420100763906">Dengan profil Chromium, Anda dapat memisahkan semua aktivitas Chromium Anda. Buat profil untuk teman dan keluarga, atau pisahkan antara aktivitas kerja dan hiburan.</translation>
+<translation id="4170280082681554565">Dengan profil Ecosia, Anda dapat memisahkan semua aktivitas Ecosia Anda. Buat profil untuk teman dan keluarga, atau pisahkan antara aktivitas kerja dan hiburan.</translation>
 <translation id="347328004046849135">Chromium akan memberi tahu Anda saat Anda login dengan sandi yang telah dibobol</translation>
-<translation id="3474745554856756813">Tindakan ini akan menghapus <ph name="ITEMS_COUNT" /> item dari perangkat. Untuk mengambil data nanti, login ke Chromium sebagai <ph name="USER_EMAIL" />.</translation>
-<translation id="3497319089134299931"><ph name="SHORTCUT" /> dapat membuat berpindah-pindah profil Chromium</translation>
-<translation id="3509308970982693815">Tutup semua jendela Chromium dan coba lagi.</translation>
-<translation id="3530103706039034513"><ph name="EXISTING_USER" /> sudah login.  Agar penjelajahan Anda tetap terpisah, login ke Chromium di profil Anda sendiri sebagai <ph name="USER_EMAIL_ADDRESS" />.</translation>
+<translation id="3474745554856756813">Tindakan ini akan menghapus <ph name="ITEMS_COUNT"/> item dari perangkat. Untuk mengambil data nanti, login ke Chromium sebagai <ph name="USER_EMAIL"/>.</translation>
+<translation id="4614106433017753369"><ph name="SHORTCUT"/> dapat membuat berpindah-pindah profil Ecosia</translation>
+<translation id="8534308095039131078">Tutup semua jendela Ecosia dan coba lagi.</translation>
+<translation id="7984841734836997333"><ph name="EXISTING_USER"/> sudah login.  Agar penjelajahan Anda tetap terpisah, login ke Ecosia di profil Anda sendiri sebagai <ph name="USER_EMAIL_ADDRESS"/>.</translation>
 <translation id="3533435340678213462">Untuk melindungi privasi Anda, kami otomatis menghapus minat Anda yang tersimpan lebih dari 4 minggu. Saat Anda terus menjelajah, minat dapat kembali muncul di daftar. Atau Anda dapat menghapus minat yang tidak perlu dipertimbangkan oleh Chromium.</translation>
 <translation id="3567254597502212821">Histori penjelajahan Anda, catatan situs yang telah Anda buka menggunakan Chromium di perangkat ini.</translation>
-<translation id="3597003331831379823">Gagal menjalankan penyiapan dengan hak istimewa yang ditingkatkan. <ph name="METAINSTALLER_ERROR" /></translation>
-<translation id="3639635944603682591">Data browsing pengguna ini akan dihapus dari perangkat ini. Untuk memulihkan data, login ke Chromium sebagai <ph name="USER_EMAIL" />.</translation>
-<translation id="364817392622123556">{COUNT,plural, =0{Update baru untuk Chromium telah tersedia dan akan diterapkan segera setelah diluncurkan kembali.}=1{Update baru untuk Chromium telah tersedia dan akan diterapkan segera setelah diluncurkan kembali. Jendela Samaran Anda tidak akan dibuka kembali.}other{Update baru untuk Chromium telah tersedia dan akan diterapkan segera setelah diluncurkan kembali. # jendela Samaran Anda tidak akan dibuka kembali.}}</translation>
-<translation id="3651803019964686660">Untuk mengirimkan nomor dari <ph name="ORIGIN" /> ke ponsel Android Anda, login ke Chromium di kedua perangkat.</translation>
+<translation id="3597003331831379823">Gagal menjalankan penyiapan dengan hak istimewa yang ditingkatkan. <ph name="METAINSTALLER_ERROR"/></translation>
+<translation id="2128110540135015661">Data browsing pengguna ini akan dihapus dari perangkat ini. Untuk memulihkan data, login ke Ecosia sebagai <ph name="USER_EMAIL"/>.</translation>
+<translation id="1323499021727766710">{COUNT,plural, =0{Update baru untuk Ecosia telah tersedia dan akan diterapkan segera setelah diluncurkan kembali.}=1{Update baru untuk Ecosia telah tersedia dan akan diterapkan segera setelah diluncurkan kembali. Jendela Samaran Anda tidak akan dibuka kembali.}other{Update baru untuk Ecosia telah tersedia dan akan diterapkan segera setelah diluncurkan kembali. # jendela Samaran Anda tidak akan dibuka kembali.}}</translation>
+<translation id="7849498640944199147">Untuk mengirimkan nomor dari <ph name="ORIGIN"/> ke ponsel Android Anda, login ke Ecosia di kedua perangkat.</translation>
 <translation id="3667616615096815454">Tidak dapat menginstal, aplikasi tidak dikenali oleh server.</translation>
-<translation id="3669334504579945026">Untuk membagikan layar Anda, izinkan perekaman layar untuk Chromium di Preferensi Sistem.</translation>
+<translation id="7845247414826995986">Untuk membagikan layar Anda, izinkan perekaman layar untuk Ecosia di Preferensi Sistem.</translation>
 <translation id="3685209450716071127">Chromium tidak dapat memeriksa sandi Anda. Coba periksa koneksi internet Anda.</translation>
-<translation id="3702352323269013324">Pelajari lebih lanjut personalisasi iklan di Chromium</translation>
-<translation id="370962675267501463">{COUNT,plural, =0{Administrator meminta Anda meluncurkan kembali Chromium untuk menerapkan update ini}=1{Administrator meminta Anda meluncurkan kembali Chromium untuk menerapkan update ini. Jendela Samaran Anda tidak akan dibuka kembali.}other{Administrator meminta Anda meluncurkan kembali Chromium untuk menerapkan update ini. # jendela Samaran Anda tidak akan dibuka kembali.}}</translation>
-<translation id="3713809861844741608">Buka link di &amp;tab Chromium baru</translation>
+<translation id="5902103164685487225">Pelajari lebih lanjut personalisasi iklan di Ecosia</translation>
+<translation id="3479730782477097349">{COUNT,plural, =0{Administrator meminta Anda meluncurkan kembali Ecosia untuk menerapkan update ini}=1{Administrator meminta Anda meluncurkan kembali Ecosia untuk menerapkan update ini. Jendela Samaran Anda tidak akan dibuka kembali.}other{Administrator meminta Anda meluncurkan kembali Ecosia untuk menerapkan update ini. # jendela Samaran Anda tidak akan dibuka kembali.}}</translation>
+<translation id="489671036945006830">Buka link di &amp;tab Ecosia baru</translation>
 <translation id="3728124580182886854">Tautkan Chromium dan layanan Google lainnya untuk personalisasi dan tujuan lainnya</translation>
-<translation id="3788675262216168505">Kelola Profil Chromium</translation>
-<translation id="3790262771324122253">Pelajari alasan Chromium memblokir beberapa download</translation>
+<translation id="3140530394740845618">Kelola Profil Ecosia</translation>
+<translation id="3035352359183300151">Pelajari alasan Ecosia memblokir beberapa download</translation>
 <translation id="379589255253486813">Chromium akan memberi tahu Anda jika ada yang perlu ditinjau</translation>
 <translation id="3802055581630249637">Chromium melakukan pramuat halaman yang mungkin akan Anda buka, agar halaman tersebut dimuat lebih cepat saat Anda membukanya</translation>
-<translation id="3830894615770080216">Sistem ChromiumOS</translation>
-<translation id="3848258323044014972"><ph name="PAGE_TITLE" /> - Chromium</translation>
+<translation id="3959732324458144441">Sistem EcosiaOS</translation>
+<translation id="2722323139667924824"><ph name="PAGE_TITLE"/> - Ecosia</translation>
 <translation id="386822487697155367">Dapatkan bantuan ChromiumOS</translation>
-<translation id="3871664619793219264">Dapatkan data browser Chromium Anda dari <ph name="ACCOUNT_EMAIL" /></translation>
-<translation id="388648406173476553">Sesuaikan dan kontrol Chromium. Ada sesuatu yang memerlukan perhatian Anda - klik untuk melihat detailnya.</translation>
-<translation id="3889543394854987837">Klik nama Anda untuk membuka Chromium dan mulai menjelajah.</translation>
-<translation id="390528597099634151"><ph name="EXISTING_USER" /> telah login ke profil Chromium ini. Agar penjelajahan Anda tetap terpisah, Chromium dapat membuat profil tersendiri untuk Anda.</translation>
-<translation id="3909353120217047026">Ekstensi ini melanggar kebijakan Chrome Web Store dan mungkin tidak aman. Hapus dari Chromium agar ekstensi ini tidak dapat lagi melihat dan mengubah data Anda di situs yang Anda kunjungi, termasuk info pribadi Anda.</translation>
-<translation id="391789666908693569">Akun Anda dikelola oleh <ph name="MANAGER_NAME" />. Administrator dapat melihat dan mengedit profil browser Chromium ini beserta datanya seperti bookmark, histori, dan sandi.</translation>
+<translation id="6391863622742187823">Dapatkan data browser Ecosia Anda dari <ph name="ACCOUNT_EMAIL"/></translation>
+<translation id="8544776492099331022">Sesuaikan dan kontrol Ecosia. Ada sesuatu yang memerlukan perhatian Anda - klik untuk melihat detailnya.</translation>
+<translation id="4871843754042758264">Klik nama Anda untuk membuka Ecosia dan mulai menjelajah.</translation>
+<translation id="5824812022890208563"><ph name="EXISTING_USER"/> telah login ke profil Ecosia ini. Agar penjelajahan Anda tetap terpisah, Ecosia dapat membuat profil tersendiri untuk Anda.</translation>
+<translation id="8172133981892685841">Ekstensi ini melanggar kebijakan Ecosia Web Store dan mungkin tidak aman. Hapus dari Ecosia agar ekstensi ini tidak dapat lagi melihat dan mengubah data Anda di situs yang Anda kunjungi, termasuk info pribadi Anda.</translation>
+<translation id="4070480171055648632">Akun Anda dikelola oleh <ph name="MANAGER_NAME"/>. Administrator dapat melihat dan mengedit profil browser Ecosia ini beserta datanya seperti bookmark, histori, dan sandi.</translation>
 <translation id="3941890832296813527">Error penginstalan: Nama file penginstal tidak valid atau tidak didukung.</translation>
-<translation id="3945058413678539331">Chromium mencoba menyalin sandi. Ketik sandi Windows Anda untuk mengizinkannya.</translation>
+<translation id="1047556320128249268">Ecosia mencoba menyalin sandi. Ketik sandi Windows Anda untuk mengizinkannya.</translation>
 <translation id="3962647064319009959">Pelajari cara Chromium menjaga keamanan Anda</translation>
-<translation id="3975724895399328945">Tentang &amp;Google Chrome for Testing</translation>
+<translation id="8603020525900853944">Tentang &amp;Ecosia for Testing</translation>
 <translation id="3997429360543082038">Tentang ChromiumOS</translation>
-<translation id="4019629340646866719">ChromiumOS terwujud karena adanya <ph name="BEGIN_LINK_CROS_OSS" />software open source<ph name="END_LINK_CROS_OSS" /> tambahan, seperti <ph name="BEGIN_LINK_LINUX_OSS" />lingkungan pengembangan Linux<ph name="END_LINK_LINUX_OSS" />.</translation>
-<translation id="4036079820698952681">Bantu Chromium jadi lebih baik dengan melaporkan <ph name="BEGIN_LINK" />setelan saat ini<ph name="END_LINK" /></translation>
+<translation id="5311911269004680646">EcosiaOS terwujud karena adanya <ph name="BEGIN_LINK_CROS_OSS"/>software open source<ph name="END_LINK_CROS_OSS"/> tambahan, seperti <ph name="BEGIN_LINK_LINUX_OSS"/>lingkungan pengembangan Linux<ph name="END_LINK_LINUX_OSS"/>.</translation>
+<translation id="4036079820698952681">Bantu Chromium jadi lebih baik dengan melaporkan <ph name="BEGIN_LINK"/>setelan saat ini<ph name="END_LINK"/></translation>
 <translation id="4050175100176540509">Peningkatan keamanan dan fitur baru yang penting tersedia di versi terbaru.</translation>
 <translation id="4055805654398742145">Pengelola S&amp;andi</translation>
-<translation id="4095980151185649725">{COUNT,plural, =1{Organisasi akan otomatis menutup Chromium jika tidak digunakan selama 1 menit. Data penjelajahan akan dihapus. Data ini dapat mencakup histori, isi otomatis, dan download.}other{Organisasi akan otomatis menutup Chromium jika tidak digunakan selama # menit. Data penjelajahan akan dihapus. Data ini dapat mencakup histori, isi otomatis, dan download.}}</translation>
+<translation id="7757263274906217411">{COUNT,plural, =1{Organisasi akan otomatis menutup Ecosia jika tidak digunakan selama 1 menit. Data penjelajahan akan dihapus. Data ini dapat mencakup histori, isi otomatis, dan download.}other{Organisasi akan otomatis menutup Ecosia jika tidak digunakan selama # menit. Data penjelajahan akan dihapus. Data ini dapat mencakup histori, isi otomatis, dan download.}}</translation>
 <translation id="4118474109249235144">Mode Samaran Chromium</translation>
 <translation id="4122186850977583290">Buka halaman Tentang Chromium</translation>
 <translation id="4148957013307229264">Memasang...</translation>
-<translation id="4149336151887611710">Organisasi Anda dapat melihat dan mengelola data penjelajahan di profil kerja Anda, seperti bookmark, histori, dan sandi. Organisasi Anda tidak dapat melihat data penjelajahan di profil Chromium pribadi.</translation>
-<translation id="419998258129752635"><ph name="PAGE_TITLE" /> - Login Jaringan - Chromium</translation>
-<translation id="421369550622382712">Temukan aplikasi, game, ekstensi, dan tema yang hebat untuk Chromium.</translation>
+<translation id="4264506519284061030">Organisasi Anda dapat melihat dan mengelola data penjelajahan di profil kerja Anda, seperti bookmark, histori, dan sandi. Organisasi Anda tidak dapat melihat data penjelajahan di profil Ecosia pribadi.</translation>
+<translation id="3907708440788567041"><ph name="PAGE_TITLE"/> - Login Jaringan - Ecosia</translation>
+<translation id="7782767522222146179">Temukan aplikasi, game, ekstensi, dan tema yang hebat untuk Ecosia.</translation>
 <translation id="4216212958613226427">Bahasa ini digunakan untuk menampilkan UI Chromium</translation>
 <translation id="4222932583846282852">Membatalkan...</translation>
 <translation id="4224210481850767180">Penginstalan telah dibatalkan.</translation>
-<translation id="4230135487732243613">Tautkan data Chromium Anda ke akun ini?</translation>
+<translation id="8384922154025337808">Tautkan data Ecosia Anda ke akun ini?</translation>
 <translation id="4251772536351901305">Memperingatkan Anda tentang situs berbahaya, bahkan situs yang tidak diketahui Google sebelumnya, dengan menganalisis lebih banyak data dari situs dibandingkan perlindungan standar. Anda dapat memilih untuk melewati peringatan Chromium.</translation>
-<translation id="4269093074552541569">Logout dari Chromium</translation>
+<translation id="2672632089507560181">Logout dari Ecosia</translation>
 <translation id="4271805377592243930">Dapatkan bantuan Chromium</translation>
 <translation id="4281844954008187215">Persyaratan Layanan</translation>
-<translation id="4285930937574705105">Pemasangan gagal karena kesalahan yang tidak diketahui. Jika Chromium sedang berjalan, tutup, lalu ulang kembali.</translation>
+<translation id="3305517118160815955">Pemasangan gagal karena kesalahan yang tidak diketahui. Jika Ecosia sedang berjalan, tutup, lalu ulang kembali.</translation>
 <translation id="4304713468139749426">Pengelola Sandi</translation>
 <translation id="4334294535648607276">Download selesai.</translation>
-<translation id="439358628917130594"><ph name="MANAGER" /> mewajibkan Anda membaca dan menyetujui Persyaratan Layanan berikut sebelum menggunakan perangkat ini. Persyaratan ini tidak memperluas, mengubah, atau membatasi Persyaratan ChromiumOS.</translation>
-<translation id="4407044323746248786">Tetap keluar dari Chromium?</translation>
-<translation id="4415566066719264597">Jalankan Chromium di Background</translation>
-<translation id="4419831163359812184">{NUM_EXTENSIONS,plural, =1{Chromium merekomendasikan agar Anda menghapusnya. <ph name="BEGIN_LINK" />Pelajari lebih lanjut ekstensi yang didukung<ph name="END_LINK" />}other{Chromium merekomendasikan agar Anda menghapusnya. <ph name="BEGIN_LINK" />Pelajari lebih lanjut ekstensi yang didukung<ph name="END_LINK" />}}</translation>
-<translation id="4423735387467980091">Menyesuaikan dan mengontrol Chromium</translation>
+<translation id="8411844745163855310"><ph name="MANAGER"/> mewajibkan Anda membaca dan menyetujui Persyaratan Layanan berikut sebelum menggunakan perangkat ini. Persyaratan ini tidak memperluas, mengubah, atau membatasi Persyaratan EcosiaOS.</translation>
+<translation id="88039520238670574">Tetap keluar dari Ecosia?</translation>
+<translation id="4586967042094107073">Jalankan Ecosia di Background</translation>
+<translation id="804899663814036125">{NUM_EXTENSIONS,plural, =1{Ecosia merekomendasikan agar Anda menghapusnya. <ph name="BEGIN_LINK"/>Pelajari lebih lanjut ekstensi yang didukung<ph name="END_LINK"/>}other{Ecosia merekomendasikan agar Anda menghapusnya. <ph name="BEGIN_LINK"/>Pelajari lebih lanjut ekstensi yang didukung<ph name="END_LINK"/>}}</translation>
+<translation id="4817913198787198451">Menyesuaikan dan mengontrol Ecosia</translation>
 <translation id="4427306783828095590">Perlindungan yang ditingkatkan akan memblokir phishing dan malware dengan lebih optimal</translation>
-<translation id="4434353761996769206">Error penginstal: <ph name="INSTALLER_ERROR" /></translation>
-<translation id="4438870983368648614"><ph name="MANAGER" /> mengelola Chromium</translation>
+<translation id="4434353761996769206">Error penginstal: <ph name="INSTALLER_ERROR"/></translation>
+<translation id="6994161374830839635"><ph name="MANAGER"/> mengelola Ecosia</translation>
 <translation id="4447409407328223819">Tentang Chrome for Testing</translation>
 <translation id="4501471624619070934">Penginstalan gagal karena akses dibatasi untuk negara ini.</translation>
-<translation id="4510853178268397146">Ekstensi ini belum memublikasikan praktik privasi, seperti cara ekstensi mengumpulkan dan menggunakan data. Chromium merekomendasikan agar Anda menghapusnya.</translation>
-<translation id="452711251841752011">Selamat datang di Chromium; jendela browser baru terbuka</translation>
-<translation id="4531137820806573936">Chromium memerlukan izin untuk memetakan lingkungan dan melacak tangan Anda</translation>
-<translation id="4536805923587466102">Anda sudah login sebagai <ph name="USER_EMAIL_ADDRESS" /> di profil Chromium lain</translation>
-<translation id="4544142686420020088">Chromium tidak dapat diupdate, terjadi error. <ph name="BEGIN_LINK" />Perbaiki masalah update Chrome dan update yang gagal.<ph name="END_LINK" /></translation>
-<translation id="4545268686623374213">Chromium dapat menonaktifkan tab ini untuk meningkatkan pengalaman penjelajahan Anda dan menjaga performanya tetap cepat.</translation>
-<translation id="454579500955453258">Lanjutkan di profil Chromium baru?</translation>
-<translation id="4567424176335768812">Anda login sebagai <ph name="USER_EMAIL_ADDRESS" />. Kini Anda dapat mengakses bookmark, histori, dan setelan lainnya pada seluruh perangkat yang Anda masuki.</translation>
-<translation id="4570813286784708942">Chromium memblokir download ini karena Anda menonaktifkan Safe Browsing dan file tidak dapat diverifikasi</translation>
+<translation id="576192547306902465">Ekstensi ini belum memublikasikan praktik privasi, seperti cara ekstensi mengumpulkan dan menggunakan data. Ecosia merekomendasikan agar Anda menghapusnya.</translation>
+<translation id="1859120614572957305">Selamat datang di Ecosia; jendela browser baru terbuka</translation>
+<translation id="378302976931789177">Ecosia memerlukan izin untuk memetakan lingkungan dan melacak tangan Anda</translation>
+<translation id="8403827649521531901">Anda sudah login sebagai <ph name="USER_EMAIL_ADDRESS"/> di profil Ecosia lain</translation>
+<translation id="4544142686420020088">Chromium tidak dapat diupdate, terjadi error. <ph name="BEGIN_LINK"/>Perbaiki masalah update Chrome dan update yang gagal.<ph name="END_LINK"/></translation>
+<translation id="2020747823154282691">Ecosia dapat menonaktifkan tab ini untuk meningkatkan pengalaman penjelajahan Anda dan menjaga performanya tetap cepat.</translation>
+<translation id="8685318202174822382">Lanjutkan di profil Ecosia baru?</translation>
+<translation id="4567424176335768812">Anda login sebagai <ph name="USER_EMAIL_ADDRESS"/>. Kini Anda dapat mengakses bookmark, histori, dan setelan lainnya pada seluruh perangkat yang Anda masuki.</translation>
+<translation id="361644486359722423">Ecosia memblokir download ini karena Anda menonaktifkan Safe Browsing dan file tidak dapat diverifikasi</translation>
 <translation id="4594305310729380060">Ke Pengelola Sandi di perangkat ini</translation>
-<translation id="459535195905078186">Aplikasi Chromium</translation>
+<translation id="2636091632287013185">Aplikasi Ecosia</translation>
 <translation id="4613863813562375431">Versi ChromiumOS</translation>
-<translation id="4617285639650863674">Untuk membagikan layar Anda, izinkan perekaman layar untuk Chromium di Preferensi Sistem</translation>
+<translation id="2394629668475473296">Untuk membagikan layar Anda, izinkan perekaman layar untuk Ecosia di Preferensi Sistem</translation>
 <translation id="4621240073146040695">Hampir selesai diperbarui! Luncurkan ulang Chromium untuk menyelesaikan pembaruan.</translation>
-<translation id="4665829708273112819">Peringatan: Chromium tidak dapat mencegah ekstensi merekam histori penjelajahan Anda. Untuk menonaktifkan ekstensi ini dalam mode Samaran, batalkan pilihan opsi ini.</translation>
+<translation id="1676748966275099244">Peringatan: Ecosia tidak dapat mencegah ekstensi merekam histori penjelajahan Anda. Untuk menonaktifkan ekstensi ini dalam mode Samaran, batalkan pilihan opsi ini.</translation>
 <translation id="4673151026126227699">Jika Anda juga membagikan laporan penggunaan Chromium, laporan tersebut akan menyertakan URL yang Anda buka</translation>
-<translation id="4677944499843243528">Profil tersebut mungkin digunakan pada proses Chromium lainnya (<ph name="PROCESS_ID" />) pada komputer lain (<ph name="HOST_NAME" />). Chromium telah mengunci profil tersebut agar tidak rusak. Jika yakin tidak ada proses lain yang menggunakan profil tersebut, Anda dapat membuka profil dan meluncurkan Chromium kembali.</translation>
+<translation id="1384607180773886645">Profil tersebut mungkin digunakan pada proses Ecosia lainnya (<ph name="PROCESS_ID"/>) pada komputer lain (<ph name="HOST_NAME"/>). Ecosia telah mengunci profil tersebut agar tidak rusak. Jika yakin tidak ada proses lain yang menggunakan profil tersebut, Anda dapat membuka profil dan meluncurkan Ecosia kembali.</translation>
 <translation id="4680828127924988555">Batalkan Penginstalan</translation>
-<translation id="469259825538636168">Beberapa data Chromium Anda belum disimpan di Akun Google Anda. Coba tunggu beberapa menit sebelum logout. Jika Anda logout sekarang, data ini akan dihapus.</translation>
-<translation id="4708193446201257833">Saat Anda login, Anda dapat menggunakan sandi Anda dan lainnya dari Akun Google Anda di Chromium. <ph name="SHORTCUT" /> dapat mengubah setelan layanan Google Anda.</translation>
-<translation id="4708774505295300557">Sebelumnya ada seseorang yang masuk ke Chromium di komputer ini sebagai <ph name="ACCOUNT_EMAIL_LAST" />. Buat pengguna Chromium baru agar informasi Anda tetap terpisah.</translation>
+<translation id="7898621536417126731">Beberapa data Ecosia Anda belum disimpan di Akun Ecosia Anda. Coba tunggu beberapa menit sebelum logout. Jika Anda logout sekarang, data ini akan dihapus.</translation>
+<translation id="4427878468534147875">Saat Anda login, Anda dapat menggunakan sandi Anda dan lainnya dari Akun Ecosia Anda di Ecosia. <ph name="SHORTCUT"/> dapat mengubah setelan layanan Ecosia Anda.</translation>
+<translation id="4727435569202742773">Sebelumnya ada seseorang yang masuk ke Ecosia di komputer ini sebagai <ph name="ACCOUNT_EMAIL_LAST"/>. Buat pengguna Ecosia baru agar informasi Anda tetap terpisah.</translation>
 <translation id="4724676981607797757">Penginstalan gagal karena error protokol yang tidak didukung.</translation>
-<translation id="4746050847053251315">Tetap tutup Chromium?</translation>
-<translation id="4748217263233248895">Update keamanan khusus untuk Chromium baru saja diterapkan. Mulai ulang Chromium sekarang dan kami akan memulihkan tab Anda.</translation>
-<translation id="4765210420921718862">Anda dapat mengubahnya kapan saja di setelan Chromium. Uji coba berlangsung bersamaan dengan penayangan iklan saat ini, jadi Anda tidak akan langsung melihat perubahan.</translation>
-<translation id="4788777615168560705">Chromium tidak dapat memeriksa sandi Anda. Coba lagi setelah 24 jam atau <ph name="BEGIN_LINK" />periksa sandi di Akun Google Anda<ph name="END_LINK" />.</translation>
-<translation id="479167709087336770">Tindakan ini akan menggunakan pemeriksa ejaan yang sama dengan yang digunakan di penelusuran Google. Teks yang Anda ketikkan di browser dikirim ke Google. Anda dapat mengubah perilaku ini di setelan.</translation>
-<translation id="4814736265800133385">Gunakan Chromium tanpa akun</translation>
-<translation id="4888717733111232871">Inbound rule untuk Chromium guna mengizinkan lalu lintas mDNS.</translation>
-<translation id="4893347770495441059">Luncurkan kembali untuk Mengupdate &amp;Chromium</translation>
-<translation id="4942295735032723435">Untuk mendapatkan update Chromium berikutnya, Anda perlu macOS 11 atau yang lebih baru. Komputer ini menggunakan macOS 10.15.</translation>
-<translation id="4943838377383847465">Chromium berjalan di mode latar belakang.</translation>
-<translation id="494490797786467921">Klik untuk menutup dialog login Chromium</translation>
-<translation id="4987820182225656817">Tamu dapat menggunakan Chromium tanpa meninggalkan apa pun.</translation>
-<translation id="4994636714258228724">Tambahkan diri Anda ke Chromium</translation>
-<translation id="5114678101347489141">Chromium sedang mengembangkan fitur baru yang memungkinkan situs memberikan pengalaman penjelajahan yang sama, tetapi menggunakan lebih sedikit info pribadi Anda</translation>
-<translation id="5187123684706427865">Akun Chromium memerlukan autentikasi ulang</translation>
+<translation id="864244542982029641">Tetap tutup Ecosia?</translation>
+<translation id="1025044809499013222">Update keamanan khusus untuk Ecosia baru saja diterapkan. Mulai ulang Ecosia sekarang dan kami akan memulihkan tab Anda.</translation>
+<translation id="824192326282906244">Anda dapat mengubahnya kapan saja di setelan Ecosia. Uji coba berlangsung bersamaan dengan penayangan iklan saat ini, jadi Anda tidak akan langsung melihat perubahan.</translation>
+<translation id="4788777615168560705">Chromium tidak dapat memeriksa sandi Anda. Coba lagi setelah 24 jam atau <ph name="BEGIN_LINK"/>periksa sandi di Akun Google Anda<ph name="END_LINK"/>.</translation>
+<translation id="3543284013834505767">Tindakan ini akan menggunakan pemeriksa ejaan yang sama dengan yang digunakan di penelusuran Ecosia. Teks yang Anda ketikkan di browser dikirim ke Ecosia. Anda dapat mengubah perilaku ini di setelan.</translation>
+<translation id="7787479292144635608">Gunakan Ecosia tanpa akun</translation>
+<translation id="4154538917942874814">Inbound rule untuk Ecosia guna mengizinkan lalu lintas mDNS.</translation>
+<translation id="2159716220295742156">Luncurkan kembali untuk Mengupdate &amp;Ecosia</translation>
+<translation id="8701027951719712428">Untuk mendapatkan update Ecosia berikutnya, Anda perlu macOS 11 atau yang lebih baru. Komputer ini menggunakan macOS 10.15.</translation>
+<translation id="2234042158691635795">Ecosia berjalan di mode latar belakang.</translation>
+<translation id="3271929752667225813">Klik untuk menutup dialog login Ecosia</translation>
+<translation id="1869027055332251164">Tamu dapat menggunakan Ecosia tanpa meninggalkan apa pun.</translation>
+<translation id="6761747850241550887">Tambahkan diri Anda ke Ecosia</translation>
+<translation id="3708834841667355707">Ecosia sedang mengembangkan fitur baru yang memungkinkan situs memberikan pengalaman penjelajahan yang sama, tetapi menggunakan lebih sedikit info pribadi Anda</translation>
+<translation id="3376578942612115781">Akun Ecosia memerlukan autentikasi ulang</translation>
 <translation id="5224391634244552924">Tidak ada sandi yang tersimpan. Chromium dapat memeriksa sandi Anda jika Anda menyimpannya.</translation>
-<translation id="5231355151045086930">Keluar dari Chromium</translation>
-<translation id="5252179775517634216"><ph name="EXISTING_USER" /> telah login ke profil Chromium ini. Ini akan membuat profil Chromium baru untuk <ph name="USER_EMAIL_ADDRESS" /></translation>
+<translation id="2421263730139898714">Keluar dari Ecosia</translation>
+<translation id="847970842635669371"><ph name="EXISTING_USER"/> telah login ke profil Ecosia ini. Ini akan membuat profil Ecosia baru untuk <ph name="USER_EMAIL_ADDRESS"/></translation>
 <translation id="5277894862589591112">Untuk menerapkan perubahan Anda, luncurkan ulang Chromium</translation>
 <translation id="5294316920224716406">Jika menjelajah dalam mode Samaran, Chromium akan memperingatkan Anda sebelum memuat situs menggunakan koneksi yang tidak aman</translation>
 <translation id="5296845517486664001">Jika uji coba diaktifkan dan Chromium secara acak menempatkan Anda dalam uji coba aktif, histori penjelajahan Anda akan memengaruhi iklan yang Anda lihat dan minat seperti yang diperkirakan di bawah. Untuk melindungi privasi Anda, Chromium menghapus minat Anda secara berkala setiap bulan.</translation>
-<translation id="5310474266708705970">Login ke Chromium sebagai <ph name="USER_EMAIL" /></translation>
+<translation id="2297526912548649074">Login ke Ecosia sebagai <ph name="USER_EMAIL"/></translation>
 <translation id="5352264705793813212">Chromium menemukan beberapa rekomendasi keamanan untuk Anda tinjau</translation>
-<translation id="5352361688875342522">Profil Chromium Lainnya</translation>
-<translation id="5358375970380395591">Anda masuk dengan akun terkelola dan memberikan administratornya kontrol atas profil Chromium Anda. Data Chromium Anda, seperti aplikasi, bookmark, histori, sandi, dan setelan lain selamanya akan dikaitkan ke <ph name="USER_NAME" />. Anda dapat menghapus data ini melalui Dasbor Akun Google, namun Anda tidak akan dapat mengaitkan data ini dengan akun yang lain. <ph name="LEARN_MORE" /></translation>
-<translation id="5368118228313795342">Kode tambahan: <ph name="EXTRA_CODE" />.</translation>
+<translation id="5251710252516682805">Profil Ecosia Lainnya</translation>
+<translation id="7105712012505419722">Anda masuk dengan akun terkelola dan memberikan administratornya kontrol atas profil Ecosia Anda. Data Ecosia Anda, seperti aplikasi, bookmark, histori, sandi, dan setelan lain selamanya akan dikaitkan ke <ph name="USER_NAME"/>. Anda dapat menghapus data ini melalui Dasbor Akun Ecosia, namun Anda tidak akan dapat mengaitkan data ini dengan akun yang lain. <ph name="LEARN_MORE"/></translation>
+<translation id="5368118228313795342">Kode tambahan: <ph name="EXTRA_CODE"/>.</translation>
 <translation id="5377622451696208284">Untuk mendapatkan personalisasi, sertakan Chromium dalam Aktivitas Web &amp; Aplikasi</translation>
-<translation id="5383439451358640070">Pelajari alasan Chromium memblokir beberapa file</translation>
-<translation id="5386450000063123300">Memperbarui Chromium (<ph name="PROGRESS_PERCENT" />)</translation>
+<translation id="350189837353493413">Pelajari alasan Ecosia memblokir beberapa file</translation>
+<translation id="5386450000063123300">Memperbarui Chromium (<ph name="PROGRESS_PERCENT"/>)</translation>
 <translation id="538767207339317086">Izinkan login Chromium</translation>
-<translation id="5405650547142096840">Hapus dari Chromium</translation>
-<translation id="5427571867875391349">Setel Chromium sebagai browser default</translation>
-<translation id="5438241569118040789"><ph name="PAGE_TITLE" /> - Chromium Beta</translation>
-<translation id="5473971139929175403">Chromium mungkin tidak berfungsi dengan semestinya karena sudah tidak didukung di distribusi Linux ini</translation>
-<translation id="5475924890392386523">Chromium memblokir download ini karena file tersebut dapat membahayakan akun pribadi dan jejaring sosial Anda</translation>
-<translation id="5480860683791598150">Chromium memerlukan akses ke lokasi Anda untuk berbagi lokasi dengan situs ini</translation>
+<translation id="330264384086604869">Hapus dari Ecosia</translation>
+<translation id="5581150090232500900">Setel Ecosia sebagai browser default</translation>
+<translation id="1361296321590354837"><ph name="PAGE_TITLE"/> - Ecosia Beta</translation>
+<translation id="3307959934543585795">Ecosia mungkin tidak berfungsi dengan semestinya karena sudah tidak didukung di distribusi Linux ini</translation>
+<translation id="197803137365953132">Ecosia memblokir download ini karena file tersebut dapat membahayakan akun pribadi dan jejaring sosial Anda</translation>
+<translation id="6558895515431832002">Ecosia memerlukan akses ke lokasi Anda untuk berbagi lokasi dengan situs ini</translation>
 <translation id="5487574057737591516">Untuk melindungi privasi Anda, kami otomatis menghapus minat Anda yang tersimpan lebih dari 4 minggu. Saat Anda terus menjelajah, minat dapat kembali muncul di daftar. Dan jika Chromium keliru atau Anda tidak ingin melihat iklan tertentu, Anda dapat menghapus minat.</translation>
-<translation id="549669000822060376">Harap tunggu selagi Chromium memasang pembaruan sistem terkini.</translation>
-<translation id="5496810170689441661">Chromium mencoba mengedit sandi. Ketik sandi Windows Anda untuk mengizinkannya.</translation>
+<translation id="5279514147510747661">Harap tunggu selagi Ecosia memasang pembaruan sistem terkini.</translation>
+<translation id="5066194399237265772">Ecosia mencoba mengedit sandi. Ketik sandi Windows Anda untuk mengizinkannya.</translation>
 <translation id="5527463683072221100">Buka PDF di Chromium</translation>
-<translation id="5623402015214259806">{0,plural, =0{Update Chromium tersedia}=1{Update Chromium tersedia}other{Update Chromium telah tersedia selama # hari}}</translation>
+<translation id="7348818664647668234">{0,plural, =0{Update Ecosia tersedia}=1{Update Ecosia tersedia}other{Update Ecosia telah tersedia selama # hari}}</translation>
 <translation id="5643865575100044307">Selalu menghapus data situs dari perangkat saat Anda menutup Chromium</translation>
-<translation id="5653831366781983928">Mulai ulang Chromium sekarang</translation>
-<translation id="5690427481109656848">Google LLC</translation>
+<translation id="5982672133249369264">Mulai ulang Ecosia sekarang</translation>
+<translation id="4811228173434336381">Ecosia</translation>
 <translation id="5698481217667032250">Tampilkan Chromium dalam bahasa ini</translation>
 <translation id="569897634095159764">Tidak dapat terhubung ke internet. Server proxy memerlukan autentikasi.</translation>
-<translation id="5761096224651992291">Anda tidak membuka situs ini baru-baru ini. Chromium menghapus izin <ph name="PERMISSION_1" />, <ph name="PERMISSION_2" />, <ph name="PERMISSION_3" /></translation>
-<translation id="5800158606660203929">Sesuaikan dan kontrol Chromium. Setel Chromium sebagai browser default.</translation>
+<translation id="5761096224651992291">Anda tidak membuka situs ini baru-baru ini. Chromium menghapus izin <ph name="PERMISSION_1"/>, <ph name="PERMISSION_2"/>, <ph name="PERMISSION_3"/></translation>
+<translation id="1818520302923047971">Sesuaikan dan kontrol Ecosia. Setel Ecosia sebagai browser default.</translation>
 <translation id="5809516625706423866">Tidak dapat terhubung ke internet. HTTP 401 Tidak Sah. Periksa konfigurasi proxy Anda.</translation>
-<translation id="5862307444128926510">Selamat Datang di Chromium</translation>
-<translation id="5883558403894052917">Chromium menemukan bahwa item berikut berisi malware:</translation>
+<translation id="1027331268335328576">Selamat Datang di Ecosia</translation>
+<translation id="2942675027725878581">Ecosia menemukan bahwa item berikut berisi malware:</translation>
 <translation id="5889361821821684993">Chromium memeriksa secara berkala untuk memastikan browser memiliki setelan yang paling aman. Kami akan memberi tahu Anda jika ada yang perlu ditinjau.</translation>
 <translation id="5895138241574237353">Mulai Ulang</translation>
-<translation id="5903106910045431592"><ph name="PAGE_TITLE" /> - Login Jaringan</translation>
+<translation id="5903106910045431592"><ph name="PAGE_TITLE"/> - Login Jaringan</translation>
 <translation id="5924017743176219022">Menghubungkan ke internet...</translation>
-<translation id="5929318705173562984">Chromium dapat menonaktifkan tab ini untuk meningkatkan kualitas pengalaman penjelajahan dan mengosongkan resource.</translation>
+<translation id="719484593754925816">Ecosia dapat menonaktifkan tab ini untuk meningkatkan kualitas pengalaman penjelajahan dan mengosongkan resource.</translation>
 <translation id="5941711191222866238">Perkecil</translation>
 <translation id="5972142260211327093">Jika Chromium secara acak menempatkan Anda dalam uji coba aktif, histori penjelajahan Anda akan memengaruhi iklan yang Anda lihat dan minat seperti yang diperkirakan di bawah. Untuk melindungi privasi Anda, Chromium menghapus minat Anda secara berkala setiap bulan. Minat akan diperbarui kecuali jika Anda menghapusnya.</translation>
-<translation id="5986585015444752010">{COUNT,plural, =1{Organisasi akan otomatis menutup Chromium jika tidak digunakan selama 1 menit.}other{Organisasi akan otomatis menutup Chromium jika tidak digunakan selama # menit.}}</translation>
-<translation id="5987687638152509985">Perbarui Chromium untuk memulai sinkronisasi</translation>
+<translation id="2988629157092722504">{COUNT,plural, =1{Organisasi akan otomatis menutup Ecosia jika tidak digunakan selama 1 menit.}other{Organisasi akan otomatis menutup Ecosia jika tidak digunakan selama # menit.}}</translation>
+<translation id="5704599732514791330">Perbarui Ecosia untuk memulai sinkronisasi</translation>
 <translation id="5988505247484123880">Situs yang Anda buka biasanya mengingat hal-hal yang Anda minati agar dapat mempersonalisasi pengalaman Anda. Situs juga dapat menyimpan informasi tentang minat Anda ke Chromium.</translation>
-<translation id="6003112304606738118">Mendownload... <ph name="HOURS" /> jam lagi</translation>
-<translation id="6019451407441383358">Anda dapat membuka bookmark, mode baca, dan lainnya dari menu Chromium di kanan atas</translation>
+<translation id="6003112304606738118">Mendownload... <ph name="HOURS"/> jam lagi</translation>
+<translation id="8347473600923066837">Anda dapat membuka bookmark, mode baca, dan lainnya dari menu Ecosia di kanan atas</translation>
 <translation id="6040143037577758943">Tutup</translation>
 <translation id="6058380562449900225">Untuk melindungi data Anda, izinkan Chromium menghapus izin dari situs yang tidak Anda kunjungi baru-baru ini. Tindakan ini tidak menghentikan notifikasi.</translation>
-<translation id="6063093106622310249">&amp;Buka di Chromium</translation>
-<translation id="6072279588547424923"><ph name="EXTENSION_NAME" /> telah ditambahkan ke Chromium</translation>
-<translation id="6072463441809498330">Buat Chromium Lebih Cepat</translation>
+<translation id="7303930050538184306">&amp;Buka di Ecosia</translation>
+<translation id="2227704215309956084"><ph name="EXTENSION_NAME"/> telah ditambahkan ke Ecosia</translation>
+<translation id="2905159584855395810">Buat Ecosia Lebih Cepat</translation>
 <translation id="608006075545470555">Tambahkan Profil Kerja ke browser ini</translation>
-<translation id="6096348254544841612">Sesuaikan dan kontrol Chromium. Update tersedia.</translation>
+<translation id="8296565077892323223">Sesuaikan dan kontrol Ecosia. Update tersedia.</translation>
 <translation id="6102072151902574948">Jika diaktifkan, Chromium akan menghemat daya baterai dengan membatasi aktivitas latar belakang dan efek visual, seperti scroll yang lancar dan kecepatan frame video.</translation>
-<translation id="6107893135096467929">Aktif • Chromium tidak dapat memverifikasi asal ekstensi ini</translation>
-<translation id="6119438414301547735">Izinkan ekstensi menampilkan permintaan akses di toolbar Chromium</translation>
-<translation id="6120345080069858279">Chromium akan menyimpan sandi ini di Akun Google. Anda tidak perlu mengingatnya.</translation>
-<translation id="6129621093834146363"><ph name="FILE_NAME" /> berbahaya, sehingga Chromium memblokirnya.</translation>
-<translation id="6132897690380286411">Chromium akan segera ditutup serta menghapus data</translation>
+<translation id="8419312540998601274">Aktif • Ecosia tidak dapat memverifikasi asal ekstensi ini</translation>
+<translation id="6419542773162312746">Izinkan ekstensi menampilkan permintaan akses di toolbar Ecosia</translation>
+<translation id="4021894801595982809">Ecosia akan menyimpan sandi ini di Akun Ecosia. Anda tidak perlu mengingatnya.</translation>
+<translation id="1936361330890313940"><ph name="FILE_NAME"/> berbahaya, sehingga Ecosia memblokirnya.</translation>
+<translation id="2446603005062458629">Ecosia akan segera ditutup serta menghapus data</translation>
 <translation id="6134968993075716475">Safe Browsing nonaktif. Chromium merekomendasikan untuk mengaktifkannya.</translation>
-<translation id="6145820983052037069">Anda dapat berpindah-pindah profil Chromium di sini</translation>
+<translation id="4032832945953542360">Anda dapat berpindah-pindah profil Ecosia di sini</translation>
 <translation id="615103374448673771">Jika Anda mengizinkan cookie, Chromium dapat menggunakannya saat melakukan pramuat</translation>
-<translation id="6174920971222007286">File ini mungkin berbahaya<ph name="LINE_BREAK" />Chromium dapat memeriksa hasil download ini untuk Anda jika Anda memberikan sandi. Info tentang file ini akan dikirim ke Google Safe Browsing, tetapi konten dan sandi file tidak dikirim ke luar perangkat Anda.</translation>
+<translation id="5032126307005935789">File ini mungkin berbahaya<ph name="LINE_BREAK"/>Ecosia dapat memeriksa hasil download ini untuk Anda jika Anda memberikan sandi. Info tentang file ini akan dikirim ke Ecosia Safe Browsing, tetapi konten dan sandi file tidak dikirim ke luar perangkat Anda.</translation>
 <translation id="6182736845697986886">Penginstalan gagal karena server update mengalami error internal.</translation>
-<translation id="6183079672144801177">Pastikan Anda login ke Chromium di <ph name="TARGET_DEVICE_NAME" /> Anda, lalu coba kirimkan lagi.</translation>
-<translation id="6212496753309875659">Komputer ini sudah memiliki versi Chromium yang lebih baru. Jika software tidak bekerja, harap coba uninstal Chromium, lalu cobalah kembali.</translation>
-<translation id="6219195342503754812">{0,plural, =0{Chromium akan diluncurkan ulang sekarang}=1{Chromium akan diluncurkan ulang dalam 1 detik}other{Chromium akan diluncurkan ulang dalam # detik}}</translation>
-<translation id="6241367896540709610">Chromium memerlukan izin akses penyimpanan untuk mendownload file</translation>
+<translation id="2346323077583431428">Pastikan Anda login ke Ecosia di <ph name="TARGET_DEVICE_NAME"/> Anda, lalu coba kirimkan lagi.</translation>
+<translation id="2995860351618948435">Komputer ini sudah memiliki versi Ecosia yang lebih baru. Jika software tidak bekerja, harap coba uninstal Ecosia, lalu cobalah kembali.</translation>
+<translation id="5690368185132749068">{0,plural, =0{Ecosia akan diluncurkan ulang sekarang}=1{Ecosia akan diluncurkan ulang dalam 1 detik}other{Ecosia akan diluncurkan ulang dalam # detik}}</translation>
+<translation id="1809194740315140401">Ecosia memerlukan izin akses penyimpanan untuk mendownload file</translation>
 <translation id="6245734527075554892">Memeriksa kesesuaian URL dengan daftar situs tidak aman yang disimpan di Chromium</translation>
-<translation id="6248213926982192922">Jadikan Chromium browser default</translation>
+<translation id="4662363689050405237">Jadikan Ecosia browser default</translation>
 <translation id="6266342355635466082">Chromium tidak dapat memeriksa update. Coba periksa koneksi internet Anda.</translation>
 <translation id="6268381023930128611">Keluar dari Chromium?</translation>
-<translation id="6270547683008298381">Tab ini menggunakan lebih banyak resource. Untuk meningkatkan performa, izinkan Chromium menonaktifkannya.</translation>
-<translation id="6281746429495226318">Sesuaikan profil Chromium Anda</translation>
+<translation id="4618410489751241263">Tab ini menggunakan lebih banyak resource. Untuk meningkatkan performa, izinkan Ecosia menonaktifkannya.</translation>
+<translation id="6416551953415159186">Sesuaikan profil Ecosia Anda</translation>
 <translation id="6290827346642914212">Beri nama profil Chromium Anda</translation>
-<translation id="6294831894865512704">Salah satu ekstensi ingin Anda login ke Chromium</translation>
-<translation id="6295779123002464101"><ph name="FILE_NAME" /> mungkin berbahaya, sehingga Chromium memblokirnya.</translation>
-<translation id="6309712487085796862">Chromium menggunakan kamera Anda.</translation>
+<translation id="4882579364090762302">Salah satu ekstensi ingin Anda login ke Ecosia</translation>
+<translation id="3625533701824359646"><ph name="FILE_NAME"/> mungkin berbahaya, sehingga Ecosia memblokirnya.</translation>
+<translation id="4943938785458240142">Ecosia menggunakan kamera Anda.</translation>
 <translation id="6327105987658262776">Tidak ada update yang tersedia.</translation>
-<translation id="6333502561965082103">Operasi lain di Chromium sedang berlangsung. Coba lagi nanti.</translation>
-<translation id="6334986366598267305">Kini, menggunakan Chromium dengan Akun Google Anda dan di komputer bersama jadi lebih mudah.</translation>
-<translation id="633626832589656416">Chromium dapat menonaktifkan tab ini untuk meningkatkan pengalaman penjelajahan dan menjaga agar performanya tetap cepat.</translation>
-<translation id="6347933965114150440">Pintasan Chromium</translation>
-<translation id="6366160072964553914">Chromium memblokir download ini karena file tersebut tidak biasa didownload dan mungkin berbahaya</translation>
-<translation id="6373523479360886564">Anda yakin ingin meng-uninstal Chromium?</translation>
+<translation id="6450895420388847775">Operasi lain di Ecosia sedang berlangsung. Coba lagi nanti.</translation>
+<translation id="464306605599005355">Kini, menggunakan Ecosia dengan Akun Ecosia Anda dan di komputer bersama jadi lebih mudah.</translation>
+<translation id="6735145163744656874">Ecosia dapat menonaktifkan tab ini untuk meningkatkan pengalaman penjelajahan dan menjaga agar performanya tetap cepat.</translation>
+<translation id="1284343625991453987">Pintasan Ecosia</translation>
+<translation id="7051119589302096163">Ecosia memblokir download ini karena file tersebut tidak biasa didownload dan mungkin berbahaya</translation>
+<translation id="7908111389403807005">Anda yakin ingin meng-uninstal Ecosia?</translation>
 <translation id="6375219077595103062">Tambahkan pintasan ke Pengelola Sandi</translation>
-<translation id="6384011394608460044"><ph name="BEGIN_BOLD" />Cara kami menggunakan data ini:<ph name="END_BOLD" /> Chromium dapat memperkirakan minat Anda. Kemudian, situs yang Anda buka dapat meminta Chromium untuk melihat minat Anda agar dapat mempersonalisasi iklan yang Anda lihat.</translation>
-<translation id="6400112897226594999">Logo Chromium di dalam layar komputer.</translation>
-<translation id="6403826409255603130">Chromium adalah browser web yang menjalankan halaman web dan aplikasi dengan kecepatan kilat. Browser ini cepat, stabil, dan mudah digunakan. Jelajahi web lebih aman dengan perlindungan dari software perusak dan phishing yang tertanam di dalam Chromium.</translation>
-<translation id="6442900851116057561">Mulai ulang ChromiumOS</translation>
+<translation id="5610400309434105339"><ph name="BEGIN_BOLD"/>Cara kami menggunakan data ini:<ph name="END_BOLD"/> Ecosia dapat memperkirakan minat Anda. Kemudian, situs yang Anda buka dapat meminta Ecosia untuk melihat minat Anda agar dapat mempersonalisasi iklan yang Anda lihat.</translation>
+<translation id="7578952608547569314">Logo Ecosia di dalam layar komputer.</translation>
+<translation id="3939060118711873999">Ecosia adalah browser web yang menjalankan halaman web dan aplikasi dengan kecepatan kilat. Browser ini cepat, stabil, dan mudah digunakan. Jelajahi web lebih aman dengan perlindungan dari software perusak dan phishing yang tertanam di dalam Ecosia.</translation>
+<translation id="5404489723475681578">Mulai ulang EcosiaOS</translation>
 <translation id="6443470774889161065">Chromium melakukan pramuat lebih banyak halaman yang mungkin akan Anda buka, agar halaman tersebut dimuat lebih cepat saat Anda membukanya</translation>
-<translation id="645458117210240797">Nonaktif • Chromium tidak dapat memverifikasi asal ekstensi ini</translation>
-<translation id="6455857529632101747">Selamat datang di profil Chromium</translation>
-<translation id="6466344609055215035">Hapus Akun dari Chromium</translation>
-<translation id="6475912303565314141">Juga mengontrol halaman apa yang ditampilkan saat Anda memulai Chromium.</translation>
+<translation id="7877883466657693294">Nonaktif • Ecosia tidak dapat memverifikasi asal ekstensi ini</translation>
+<translation id="4410570812343670816">Selamat datang di profil Ecosia</translation>
+<translation id="4371259280767924562">Hapus Akun dari Ecosia</translation>
+<translation id="524314285625975879">Juga mengontrol halaman apa yang ditampilkan saat Anda memulai Ecosia.</translation>
 <translation id="648319183876919572">Safe Browsing yang Disempurnakan melakukan lebih banyak hal untuk melindungi Anda dari situs dan download berbahaya</translation>
-<translation id="6510925080656968729">Uninstal Chromium</translation>
-<translation id="651535675648445253">Pintasan dibuka di Chromium</translation>
-<translation id="6524389414524528185">Saat Anda login, Anda dapat menggunakan sandi Anda dan lainnya dari Akun Google Anda di Chromium. Anda dapat mengubahnya kapan saja di setelan.</translation>
-<translation id="6539122709674868420">Organisasi Anda menutup Chromium saat tidak digunakan selama <ph name="TIMEOUT_DURATION" />. Data penjelajahan dihapus. Data ini dapat mencakup histori, isi otomatis, dan download.</translation>
-<translation id="6542839706527980775">Setiap profil memiliki info Chromium tersendiri, seperti bookmark, histori, sandi, dan lainnya</translation>
-<translation id="6563921047760808519">Pelajari lebih lanjut <ph name="BEGIN_LINK" />cara Chromium menjaga privasi data Anda<ph name="END_LINK" /></translation>
-<translation id="656935081669708576">Anda dapat beralih untuk melihat sandi dari profil Chromium lainnya</translation>
+<translation id="6496553866814956056">Uninstal Ecosia</translation>
+<translation id="788366290112401490">Pintasan dibuka di Ecosia</translation>
+<translation id="1773882594264682232">Saat Anda login, Anda dapat menggunakan sandi Anda dan lainnya dari Akun Ecosia Anda di Ecosia. Anda dapat mengubahnya kapan saja di setelan.</translation>
+<translation id="2280934980919215876">Organisasi Anda menutup Ecosia saat tidak digunakan selama <ph name="TIMEOUT_DURATION"/>. Data penjelajahan dihapus. Data ini dapat mencakup histori, isi otomatis, dan download.</translation>
+<translation id="8608092457636055141">Setiap profil memiliki info Ecosia tersendiri, seperti bookmark, histori, sandi, dan lainnya</translation>
+<translation id="6563921047760808519">Pelajari lebih lanjut <ph name="BEGIN_LINK"/>cara Chromium menjaga privasi data Anda<ph name="END_LINK"/></translation>
+<translation id="3592624492063123732">Anda dapat beralih untuk melihat sandi dari profil Ecosia lainnya</translation>
 <translation id="6570579332384693436">Untuk memperbaiki kesalahan ejaan, Chromium mengirimkan teks yang Anda ketik di kolom teks ke Google</translation>
-<translation id="6598877126913850652">Buka setelan notifikasi Chromium</translation>
-<translation id="6613594504749178791">Perubahan Anda akan berlaku saat berikutnya Anda membuka Chromium.</translation>
-<translation id="665732753414869868">Chromium memerlukan izin kamera untuk membuat peta 3D area sekitar Anda</translation>
+<translation id="6533266716128249922">Buka setelan notifikasi Ecosia</translation>
+<translation id="1722634673917783018">Perubahan Anda akan berlaku saat berikutnya Anda membuka Ecosia.</translation>
+<translation id="2537426042760364251">Ecosia memerlukan izin kamera untuk membuat peta 3D area sekitar Anda</translation>
 <translation id="6663852025006259149">Situs mungkin akan berfungsi seperti yang Anda harapkan, tetapi tidak akan mengingat Anda setelah Anda menutup semua jendela Chromium</translation>
 <translation id="6669284030132180248">Jika Anda juga menyimpan bookmark di Akun Google, Anda dapat memantau harga produk di Chromium dan mendapatkan notifikasi jika ada penurunan harga</translation>
 <translation id="6676384891291319759">Akses Internet</translation>
-<translation id="668175097507315160">ChromiumOS tidak dapat menyinkronkan data Anda karena terjadi error saat login.</translation>
+<translation id="8067423333018528301">EcosiaOS tidak dapat menyinkronkan data Anda karena terjadi error saat login.</translation>
 <translation id="6692797197837897398">Chromium memberi Anda lebih banyak kontrol atas iklan yang Anda lihat dan membatasi informasi yang dapat dipelajari situs tentang Anda saat menampilkan iklan yang dipersonalisasi kepada Anda</translation>
-<translation id="6709350901466051922">Chromium memerlukan izin mikrofon untuk situs ini</translation>
-<translation id="6712881677154121168">Error download: <ph name="DOWNLOAD_ERROR" />.</translation>
-<translation id="6717134281241384636">Profil Anda tidak dapat digunakan karena berasal dari Chromium versi yang lebih baru.
+<translation id="2173571365716863400">Ecosia memerlukan izin mikrofon untuk situs ini</translation>
+<translation id="6712881677154121168">Error download: <ph name="DOWNLOAD_ERROR"/>.</translation>
+<translation id="6648664289472946060">Profil Anda tidak dapat digunakan karena berasal dari Ecosia versi yang lebih baru.
 
-Sebagian fitur mungkin tidak tersedia. Tentukan direktori profil yang berbeda atau gunakan versi Chromium yang lebih baru.</translation>
+Sebagian fitur mungkin tidak tersedia. Tentukan direktori profil yang berbeda atau gunakan versi Ecosia yang lebih baru.</translation>
 <translation id="6729124504294600478">Untuk mendapatkan personalisasi dan fitur lainnya, sertakan Chromium dalam Aktivitas Web &amp; Aplikasi serta layanan Google tertaut</translation>
-<translation id="6734291798041940871">Chromium sudah terpasang untuk semua pengguna di komputer Anda.</translation>
-<translation id="673636774878526923">Untuk mengakses aktivitas Chromium di semua perangkat, login lalu aktifkan sinkronisasi.</translation>
-<translation id="674245979920622322">Anda tidak membuka situs ini baru-baru ini. Chromium menghapus izin <ph name="PERMISSION_1" />, <ph name="PERMISSION_2" />, dan <ph name="COUNT" /> lainnya</translation>
-<translation id="67706546131546258">Chromium merekomendasikan pemindaian file ini karena file mungkin berbahaya.</translation>
-<translation id="6779406956731413166">ChromiumOS terwujud karena adanya <ph name="BEGIN_LINK_CROS_OSS" />software open source<ph name="END_LINK_CROS_OSS" /> tambahan.</translation>
-<translation id="6847869444787758381">Chromium akan memberi tahu jika sandi Anda disusupi</translation>
-<translation id="684888714667046800">Tidak dapat terhubung ke internet. Jika Anda menggunakan firewall, pastikan <ph name="PRODUCT_EXE_NAME" /> tercantum dalam daftar yang diizinkan.</translation>
-<translation id="6857782730669500492">Chromium - <ph name="PAGE_TITLE" /></translation>
-<translation id="6873893289264747459">Chromium menemukan bahwa "<ph name="EXTENSION_NAME" />" berisi malware</translation>
+<translation id="4870057811531036437">Ecosia sudah terpasang untuk semua pengguna di komputer Anda.</translation>
+<translation id="4512092435423703529">Untuk mengakses aktivitas Ecosia di semua perangkat, login lalu aktifkan sinkronisasi.</translation>
+<translation id="674245979920622322">Anda tidak membuka situs ini baru-baru ini. Chromium menghapus izin <ph name="PERMISSION_1"/>, <ph name="PERMISSION_2"/>, dan <ph name="COUNT"/> lainnya</translation>
+<translation id="7972668220031382654">Ecosia merekomendasikan pemindaian file ini karena file mungkin berbahaya.</translation>
+<translation id="2441303983090031276">EcosiaOS terwujud karena adanya <ph name="BEGIN_LINK_CROS_OSS"/>software open source<ph name="END_LINK_CROS_OSS"/> tambahan.</translation>
+<translation id="1263466865695943046">Ecosia akan memberi tahu jika sandi Anda disusupi</translation>
+<translation id="684888714667046800">Tidak dapat terhubung ke internet. Jika Anda menggunakan firewall, pastikan <ph name="PRODUCT_EXE_NAME"/> tercantum dalam daftar yang diizinkan.</translation>
+<translation id="4600924482853773728">Ecosia - <ph name="PAGE_TITLE"/></translation>
+<translation id="1490060441084292633">Ecosia menemukan bahwa "<ph name="EXTENSION_NAME"/>" berisi malware</translation>
 <translation id="6929417474050522668">Jika uji coba diaktifkan, Pengukuran iklan akan memungkinkan situs yang Anda buka untuk meminta informasi dari Chromium yang membantu situs mengukur performa iklannya. Pengukuran iklan membatasi pelacakan lintas situs dengan mentransfer sesedikit mungkin informasi antar-situs.</translation>
 <translation id="6940431691900807093">Kemudian, situs yang Anda buka dapat meminta Chromium untuk melihat minat Anda agar dapat mempersonalisasi iklan yang Anda lihat. Chromium dapat membagikan hingga 3 minat.</translation>
-<translation id="6964305034639999644">Buka link di jendela sa&amp;maran Chromium</translation>
-<translation id="6978145336957848883">Sandi yang lemah mudah ditebak. Izinkan Chromium <ph name="BEGIN_LINK" />membuat dan mengingat sandi yang kuat untuk Anda<ph name="END_LINK" />.</translation>
+<translation id="8283315171506895091">Buka link di jendela sa&amp;maran Ecosia</translation>
+<translation id="6978145336957848883">Sandi yang lemah mudah ditebak. Izinkan Chromium <ph name="BEGIN_LINK"/>membuat dan mengingat sandi yang kuat untuk Anda<ph name="END_LINK"/>.</translation>
 <translation id="6981396265751285733">Jika diaktifkan, Chromium akan membebaskan memori dari tab yang tidak aktif. Tindakan ini akan memberikan lebih banyak resource komputer untuk tab aktif dan aplikasi lainnya, serta menjaga Chromium tetap cepat. Tab yang tidak aktif akan otomatis menjadi aktif lagi saat Anda kembali ke tab tersebut.</translation>
-<translation id="6985329841647292029">Persyaratan ChromiumOS</translation>
-<translation id="6990124437352146030">Chromium memerlukan izin akses ke mikrofon untuk situs ini</translation>
+<translation id="2149148292984034533">Persyaratan EcosiaOS</translation>
+<translation id="1831192335802727557">Ecosia memerlukan izin akses ke mikrofon untuk situs ini</translation>
 <translation id="7011190694940573312">Penginstalan gagal karena versi sistem operasi ini tidak didukung.</translation>
-<translation id="7024536598735240744">Error ekstrak: <ph name="UNPACK_ERROR" />.</translation>
+<translation id="7024536598735240744">Error ekstrak: <ph name="UNPACK_ERROR"/>.</translation>
 <translation id="7025789849649390912">Penginstalan Terhenti.</translation>
-<translation id="7045244423563602563">Sesuaikan Chromium dengan Selera Anda</translation>
-<translation id="705851970750939768">Perbarui Chromium</translation>
-<translation id="7067091210845072982">Jika gambar tidak memiliki deskripsi yang berguna, Chromium akan mencoba memberikan deskripsi untuk Anda. Untuk membuat deskripsi, gambar akan dikirim ke Google.</translation>
-<translation id="7141270731789036260">Sesuaikan Chrome for Testing</translation>
-<translation id="7163519456498498587">Hapus <ph name="EXTENSION_NAME" /> dari Chromium</translation>
-<translation id="7173822816570314652">Organisasi Anda akan menghapus data Chromium jika tidak digunakan selama <ph name="TIMEOUT_DURATION" />. Data ini dapat mencakup histori, isi otomatis, dan download.</translation>
-<translation id="718435575166326686">Chromium memerlukan izin kamera untuk situs ini</translation>
-<translation id="7196312274710523067">Tidak dapat meluncurkan Chromium. Harap coba lagi.</translation>
+<translation id="762525592078244189">Sesuaikan Ecosia dengan Selera Anda</translation>
+<translation id="5598074261782651109">Perbarui Ecosia</translation>
+<translation id="2838372953389311551">Jika gambar tidak memiliki deskripsi yang berguna, Ecosia akan mencoba memberikan deskripsi untuk Anda. Untuk membuat deskripsi, gambar akan dikirim ke Ecosia.</translation>
+<translation id="550507036977517224">Sesuaikan Ecosia for Testing</translation>
+<translation id="9091453616111683919">Hapus <ph name="EXTENSION_NAME"/> dari Ecosia</translation>
+<translation id="5137471865755621561">Organisasi Anda akan menghapus data Ecosia jika tidak digunakan selama <ph name="TIMEOUT_DURATION"/>. Data ini dapat mencakup histori, isi otomatis, dan download.</translation>
+<translation id="219546601381787154">Ecosia memerlukan izin kamera untuk situs ini</translation>
+<translation id="2542649989941327712">Tidak dapat meluncurkan Ecosia. Harap coba lagi.</translation>
 <translation id="7197677400338048821">Chromium tidak dapat memeriksa sandi Anda. Coba lagi setelah 24 jam.</translation>
-<translation id="7213407614656404070">Gunakan Chromium kapan pun Anda mengklik link di pesan, dokumen, dan aplikasi lainnya</translation>
-<translation id="7223968959479464213">Pengelola Tugas - Chromium</translation>
-<translation id="7246575524853130370">Minat Anda sesuai perkiraan Chromium</translation>
-<translation id="7295544978856094497">{NUM_EXTENSIONS,plural, =1{Chromium merekomendasikan agar Anda menghapusnya}other{Chromium merekomendasikan agar Anda menghapusnya}}</translation>
+<translation id="3784023996375784431">Gunakan Ecosia kapan pun Anda mengklik link di pesan, dokumen, dan aplikasi lainnya</translation>
+<translation id="7311066525704006840">Pengelola Tugas - Ecosia</translation>
+<translation id="3816260943154642689">Minat Anda sesuai perkiraan Ecosia</translation>
+<translation id="1720431815870023289">{NUM_EXTENSIONS,plural, =1{Ecosia merekomendasikan agar Anda menghapusnya}other{Ecosia merekomendasikan agar Anda menghapusnya}}</translation>
 <translation id="7309928523159922338">Pengukuran iklan memungkinkan situs yang Anda buka untuk meminta informasi dari Chromium yang membantu situs mengukur performa iklannya. Pengukuran iklan membatasi pelacakan lintas situs dengan mentransfer sesedikit mungkin informasi antar-situs.</translation>
 <translation id="731795002583552498">Memperbarui Chromium</translation>
-<translation id="7318036098707714271">File preferensi Anda rusak atau tidak valid.
+<translation id="6673288084648462613">File preferensi Anda rusak atau tidak valid.
 
-Chromium tidak dapat memulihkan setelan Anda.</translation>
+Ecosia tidak dapat memulihkan setelan Anda.</translation>
 <translation id="7339898014177206373">Jendela baru</translation>
-<translation id="734373864078049451">Web, bookmark, dan barang Chromium Anda lainnya tersedia di sini.</translation>
-<translation id="7349591376906416160">Administrator sistem Anda telah mengonfigurasi Chromium untuk membuka <ph name="ALTERNATIVE_BROWSER_NAME" /> guna mengakses <ph name="TARGET_URL_HOSTNAME" />.</translation>
-<translation id="7355355292030546812">Chromium memblokir download ini karena file tersebut dapat membahayakan akun pribadi dan jejaring sosial Anda, termasuk <ph name="USER_EMAIL" /></translation>
-<translation id="7384121030444253939">Ekstensi ini tidak lagi didukung. Chromium merekomendasikan agar Anda menghapusnya.</translation>
-<translation id="7398989605938454041">Dengan profil Chromium, Anda dapat memisahkan semua aktivitas Chromium Anda. Hal ini mempermudah pemisahan antara aktivitas kerja dan hiburan.</translation>
-<translation id="7449453770951226939"><ph name="PAGE_TITLE" /> - Chromium Dev</translation>
-<translation id="7451052299415159299">Chromium memerlukan izin akses ke kamera untuk situs ini</translation>
-<translation id="7458892263350425044">Untuk menggunakan mikrofon, beri Chromium akses di <ph name="BEGIN_LINK" />setelan sistem<ph name="END_LINK" /></translation>
-<translation id="7461356015007898716">Untuk mendapatkan update Chromium berikutnya, Anda perlu Windows 10 atau yang lebih baru. Komputer ini menggunakan Windows 7.</translation>
+<translation id="4960252760049500399">Web, bookmark, dan barang Ecosia Anda lainnya tersedia di sini.</translation>
+<translation id="7158975242722498086">Administrator sistem Anda telah mengonfigurasi Ecosia untuk membuka <ph name="ALTERNATIVE_BROWSER_NAME"/> guna mengakses <ph name="TARGET_URL_HOSTNAME"/>.</translation>
+<translation id="6632508343667825745">Ecosia memblokir download ini karena file tersebut dapat membahayakan akun pribadi dan jejaring sosial Anda, termasuk <ph name="USER_EMAIL"/></translation>
+<translation id="6180968682827452331">Ekstensi ini tidak lagi didukung. Ecosia merekomendasikan agar Anda menghapusnya.</translation>
+<translation id="5622136942112821750">Dengan profil Ecosia, Anda dapat memisahkan semua aktivitas Ecosia Anda. Hal ini mempermudah pemisahan antara aktivitas kerja dan hiburan.</translation>
+<translation id="3879865245128287988"><ph name="PAGE_TITLE"/> - Ecosia Dev</translation>
+<translation id="5055330219314726197">Ecosia memerlukan izin akses ke kamera untuk situs ini</translation>
+<translation id="7458892263350425044">Untuk menggunakan mikrofon, beri Chromium akses di <ph name="BEGIN_LINK"/>setelan sistem<ph name="END_LINK"/></translation>
+<translation id="1975037445584526511">Untuk mendapatkan update Ecosia berikutnya, Anda perlu Windows 10 atau yang lebih baru. Komputer ini menggunakan Windows 7.</translation>
 <translation id="7467949745582939695">Luncurkan kembali Chromium?</translation>
-<translation id="7483335560992089831">Tidak dapat memasang Chromium versi yang sama dengan yang sedang Anda jalankan. Tutup Chromium dan coba lagi.</translation>
+<translation id="80155189677487610">Tidak dapat memasang Ecosia versi yang sama dengan yang sedang Anda jalankan. Tutup Ecosia dan coba lagi.</translation>
 <translation id="751935028865900641">Situs mungkin akan berfungsi seperti yang diharapkan. Anda akan logout dari sebagian besar situs saat menutup semua jendela Chromium, kecuali Akun Google Anda jika Anda login ke Chromium.</translation>
-<translation id="753534427205733210">{0,plural, =1{Chromium akan diluncurkan ulang dalam 1 menit}other{Chromium akan diluncurkan ulang dalam # menit}}</translation>
-<translation id="7553334751796114046">Untuk membagikan jendela Anda, izinkan perekaman layar untuk Chromium di Preferensi Sistem</translation>
+<translation id="7558678848273505235">{0,plural, =1{Ecosia akan diluncurkan ulang dalam 1 menit}other{Ecosia akan diluncurkan ulang dalam # menit}}</translation>
+<translation id="8228132389897276908">Untuk membagikan jendela Anda, izinkan perekaman layar untuk Ecosia di Preferensi Sistem</translation>
 <translation id="7582945390259497898">Chromium dapat memperkirakan minat Anda. Kemudian, situs yang Anda buka dapat meminta Chromium untuk melihat minat Anda agar dapat mempersonalisasi iklan yang Anda lihat.</translation>
-<translation id="7583399374488819119">Penginstal <ph name="COMPANY_NAME" /></translation>
-<translation id="7585391435984513350">Anda tidak membuka situs ini baru-baru ini. Chromium menghapus izin <ph name="PERMISSION" /></translation>
-<translation id="761356813943268536">Chromium menggunakan kamera dan mikrofon Anda.</translation>
-<translation id="7617377681829253106">Chromium menjadi lebih baik</translation>
+<translation id="7583399374488819119">Penginstal <ph name="COMPANY_NAME"/></translation>
+<translation id="7585391435984513350">Anda tidak membuka situs ini baru-baru ini. Chromium menghapus izin <ph name="PERMISSION"/></translation>
+<translation id="4061472199368124600">Ecosia menggunakan kamera dan mikrofon Anda.</translation>
+<translation id="170259281605734125">Ecosia menjadi lebih baik</translation>
 <translation id="7649070708921625228">Bantuan</translation>
-<translation id="7682213815243802460">Anda dapat mempelajari fitur ini lebih lanjut di setelan Chromium.</translation>
-<translation id="7686590090926151193">Chromium bukan browser default</translation>
-<translation id="7689606757190482937">Menyinkronkan dan mempersonalisasi Chromium di perangkat Anda</translation>
+<translation id="675365189802108507">Anda dapat mempelajari fitur ini lebih lanjut di setelan Ecosia.</translation>
+<translation id="1508200558303644420">Ecosia bukan browser default</translation>
+<translation id="7174674455569790401">Menyinkronkan dan mempersonalisasi Ecosia di perangkat Anda</translation>
 <translation id="7699779824407626136">Update Chromium</translation>
-<translation id="7745317241717453663">Tindakan ini akan menghapus data browsing dari perangkat. Untuk mengambil data nanti, login ke Chromium sebagai <ph name="USER_EMAIL" />.</translation>
+<translation id="7745317241717453663">Tindakan ini akan menghapus data browsing dari perangkat. Untuk mengambil data nanti, login ke Chromium sebagai <ph name="USER_EMAIL"/>.</translation>
 <translation id="7747138024166251722">Pemasang tidak dapat membuat direktori sementara. Periksa kapasitas kosong pada disk dan izin untuk memasang software.</translation>
-<translation id="7786760609782648049">Buat Chromium lebih cepat</translation>
-<translation id="7790626492778995050"><ph name="PAGE_TITLE" /> - Chromium Canary</translation>
+<translation id="6161025257729272170">Buat Ecosia lebih cepat</translation>
+<translation id="5669882610631815446"><ph name="PAGE_TITLE"/> - Ecosia Canary</translation>
 <translation id="7803986347287457849">Persulit orang yang memiliki akses ke traffic internet Anda untuk melihat situs yang Anda kunjungi. Chromium menggunakan koneksi aman untuk mencari alamat IP situs di Domain Name System (DNS).</translation>
-<translation id="7828947555739565424">Profil Chromium dengan akun ini sudah ada di perangkat ini</translation>
-<translation id="7845233973568007926">Terima kasih telah menginstal. Anda harus memulai ulang komputer sebelum menggunakan <ph name="BUNDLE_NAME" />.</translation>
+<translation id="8301840715671593762">Profil Ecosia dengan akun ini sudah ada di perangkat ini</translation>
+<translation id="7845233973568007926">Terima kasih telah menginstal. Anda harus memulai ulang komputer sebelum menggunakan <ph name="BUNDLE_NAME"/>.</translation>
 <translation id="7859018312476869945">Saat Anda mengetik di kolom URL atau kotak penelusuran, Chromium akan mengirimkan hal yang Anda ketik ke mesin telusur default untuk mendapatkan saran yang lebih baik. Fitur ini nonaktif dalam mode Samaran.</translation>
-<translation id="7867198900892795913">Chromium tidak dapat diupdate ke versi terbaru, sehingga Anda tidak mendapatkan perbaikan keamanan dan fitur baru.</translation>
-<translation id="7872446069773932638">Mendownload ... <ph name="SECONDS" /> detik lagi</translation>
-<translation id="7877292582355102282"><ph name="BEGIN_BOLD" />Cara Anda dapat mengelola data Anda:<ph name="END_BOLD" /> Untuk melindungi privasi Anda, kami otomatis menghapus minat yang tersimpan lebih dari 4 minggu. Saat Anda terus menjelajah, minat dapat kembali muncul di daftar. Atau Anda dapat menghapus minat yang tidak perlu dipertimbangkan oleh Chromium.</translation>
-<translation id="7888981273428720788">Setel Chromium sebagai browser default</translation>
+<translation id="3268039966078382323">Ecosia tidak dapat diupdate ke versi terbaru, sehingga Anda tidak mendapatkan perbaikan keamanan dan fitur baru.</translation>
+<translation id="7872446069773932638">Mendownload ... <ph name="SECONDS"/> detik lagi</translation>
+<translation id="5875641815673321623"><ph name="BEGIN_BOLD"/>Cara Anda dapat mengelola data Anda:<ph name="END_BOLD"/> Untuk melindungi privasi Anda, kami otomatis menghapus minat yang tersimpan lebih dari 4 minggu. Saat Anda terus menjelajah, minat dapat kembali muncul di daftar. Atau Anda dapat menghapus minat yang tidak perlu dipertimbangkan oleh Ecosia.</translation>
+<translation id="4638085384909702681">Setel Ecosia sebagai browser default</translation>
 <translation id="7934340546140346950">Chromium mengupgrade koneksi yang tidak aman ke HTTPS secara otomatis jika memungkinkan</translation>
-<translation id="7937630085815544518">Anda telah masuk ke Chromium sebagai <ph name="USER_EMAIL_ADDRESS" />. Gunakan akun yang sama untuk masuk kembali.</translation>
+<translation id="2412381038247037703">Anda telah masuk ke Ecosia sebagai <ph name="USER_EMAIL_ADDRESS"/>. Gunakan akun yang sama untuk masuk kembali.</translation>
 <translation id="7975919845073681630">Ini adalah pemasangan Chromium sekunder, dan tidak dapat digunakan sebagai browser default.</translation>
-<translation id="7997934263947464652">Ekstensi, aplikasi, dan tema dari sumber tidak dikenal dapat membahayakan perangkat Anda. Chromium merekomendasikan hanya menginstal ekstensi, aplikasi, dan tema dari <ph name="IDS_EXTENSION_WEB_STORE_TITLE" /></translation>
-<translation id="8013436988911883588">Setelah Chromium memiliki akses, situs dapat meminta akses dari Anda.</translation>
-<translation id="80471789339884597">Terima kasih telah menginstal. Anda harus memulai ulang semua browser sebelum menggunakan <ph name="BUNDLE_NAME" />.</translation>
+<translation id="851583113375911087">Ekstensi, aplikasi, dan tema dari sumber tidak dikenal dapat membahayakan perangkat Anda. Ecosia merekomendasikan hanya menginstal ekstensi, aplikasi, dan tema dari <ph name="IDS_EXTENSION_WEB_STORE_TITLE"/></translation>
+<translation id="488806616089631539">Setelah Ecosia memiliki akses, situs dapat meminta akses dari Anda.</translation>
+<translation id="80471789339884597">Terima kasih telah menginstal. Anda harus memulai ulang semua browser sebelum menggunakan <ph name="BUNDLE_NAME"/>.</translation>
 <translation id="8086881907087796310">Penginstalan gagal karena komputer Anda tidak memenuhi persyaratan hardware minimum.</translation>
-<translation id="8096472344908884505"><ph name="PAGE_TITLE" /> - Google Chrome for Testing</translation>
-<translation id="8105840573057009683">Chromium memerlukan izin akses lokasi untuk situs ini</translation>
-<translation id="8133124826068723441">ChromiumOS tidak dapat menyinkronkan data Anda karena Sinkronisasi tidak tersedia untuk domain Anda.</translation>
+<translation id="1528748166720431933"><ph name="PAGE_TITLE"/> - Ecosia for Testing</translation>
+<translation id="5661123757512626239">Ecosia memerlukan izin akses lokasi untuk situs ini</translation>
+<translation id="143614250230771428">EcosiaOS tidak dapat menyinkronkan data Anda karena Sinkronisasi tidak tersedia untuk domain Anda.</translation>
 <translation id="813913629614996137">Memulai...</translation>
-<translation id="8166782796394721554">Aktifkan perlindungan tambahan di mesin WebAssembly dan JavaScript Chromium</translation>
-<translation id="81770708095080097">File ini berbahaya, jadi Chromium telah memblokirnya.</translation>
-<translation id="8223363452568144035">Untuk menggunakan kamera, beri Chromium akses di <ph name="BEGIN_LINK" />setelan sistem<ph name="END_LINK" /></translation>
-<translation id="8232193495299001329">Chromium tidak dapat memverifikasi asal ekstensi ini, dan mungkin ekstensi ini tidak aman. Hapus dari Chromium agar ekstensi ini tidak dapat lagi melihat dan mengubah data Anda di situs yang Anda kunjungi, termasuk info pribadi Anda.</translation>
-<translation id="8248265253516264921">Jika gambar tidak memiliki deskripsi yang berguna, Chromium akan mencoba memberikan deskripsi untuk Anda. Untuk membuat deskripsi, gambar akan dikirim ke Google. Anda dapat menonaktifkannya kapan saja di setelan.</translation>
-<translation id="8254601181414348851">Login ke Chromium di profil baru?</translation>
+<translation id="588828970866589779">Aktifkan perlindungan tambahan di mesin WebAssembly dan JavaScript Ecosia</translation>
+<translation id="6491651957026506753">File ini berbahaya, jadi Ecosia telah memblokirnya.</translation>
+<translation id="8223363452568144035">Untuk menggunakan kamera, beri Chromium akses di <ph name="BEGIN_LINK"/>setelan sistem<ph name="END_LINK"/></translation>
+<translation id="7433581196371819898">Ecosia tidak dapat memverifikasi asal ekstensi ini, dan mungkin ekstensi ini tidak aman. Hapus dari Ecosia agar ekstensi ini tidak dapat lagi melihat dan mengubah data Anda di situs yang Anda kunjungi, termasuk info pribadi Anda.</translation>
+<translation id="2046160555506209000">Jika gambar tidak memiliki deskripsi yang berguna, Ecosia akan mencoba memberikan deskripsi untuk Anda. Untuk membuat deskripsi, gambar akan dikirim ke Ecosia. Anda dapat menonaktifkannya kapan saja di setelan.</translation>
+<translation id="3260765223735049374">Login ke Ecosia di profil baru?</translation>
 <translation id="8266560134891435528">Chromium tidak dapat memeriksa sandi karena Anda tidak login</translation>
-<translation id="8286943863733751221"><ph name="BEGIN_LINK" />Chromium akan memperingatkan Anda<ph name="END_LINK" /> tentang situs dan download yang tidak aman</translation>
-<translation id="8318772038038596122">Organisasi Anda menutup Chromium saat tidak digunakan selama <ph name="TIMEOUT_DURATION" />.</translation>
+<translation id="8286943863733751221"><ph name="BEGIN_LINK"/>Chromium akan memperingatkan Anda<ph name="END_LINK"/> tentang situs dan download yang tidak aman</translation>
+<translation id="5994043198751001258">Organisasi Anda menutup Ecosia saat tidak digunakan selama <ph name="TIMEOUT_DURATION"/>.</translation>
 <translation id="8330519371938183845">Login untuk menyinkronkan dan mempersonalisasi Chromium di perangkat Anda</translation>
-<translation id="8340674089072921962"><ph name="USER_EMAIL_ADDRESS" /> sebelumnya menggunakan Chromium</translation>
-<translation id="8357820681460164151">Untuk mengakses aktivitas browser Chromium di semua perangkat, login lalu aktifkan sinkronisasi</translation>
-<translation id="8360718212975266891">Untuk mendapatkan update Chromium berikutnya, Anda perlu Windows 10 atau yang lebih baru. Komputer ini menggunakan Windows 8.</translation>
-<translation id="8370517070665726704">Hak cipta <ph name="YEAR" /> Google LLC. Semua hak dilindungi undang-undang.</translation>
-<translation id="8372327902843331129">Untuk mendapatkan sandi dan info Anda yang lain di semua perangkat Anda, login ke Chromium. Sandi ini akan disimpan di Akun Google Anda setelah Anda login.</translation>
-<translation id="837460953767177950">Kemudian, Anda harus memulai ulang Chromium.</translation>
-<translation id="8397248745433792218">Chromium merekomendasikan agar Anda menghapusnya. <ph name="BEGIN_LINK" />Pelajari lebih lanjut ekstensi yang didukung<ph name="END_LINK" /></translation>
-<translation id="8401454788024434101">Ekstensi ini dibatalkan publikasinya oleh developer, dan mungkin tidak aman. Hapus dari Chromium agar ekstensi ini tidak dapat lagi melihat dan mengubah data Anda di situs yang Anda kunjungi, termasuk info pribadi Anda.</translation>
-<translation id="8417404458978023919">{0,plural, =1{Luncurkan ulang Chromium dalam 1 hari}other{Luncurkan ulang Chromium dalam # hari}}</translation>
-<translation id="8453117565092476964">Arsip pemasang rusak atau tidak valid. Download Chromium lagi.</translation>
-<translation id="8458614432758743027">Chromium memerlukan Windows 10 atau lebih tinggi.</translation>
-<translation id="8463672209299734063">Opsional: Bantu tingkatkan fitur dan performa ChromiumOS dengan mengirimkan data penggunaan dan diagnostik secara otomatis ke Google.</translation>
-<translation id="8493179195440786826">Chromium Terlalu Lawas</translation>
+<translation id="8055222671516987714"><ph name="USER_EMAIL_ADDRESS"/> sebelumnya menggunakan Ecosia</translation>
+<translation id="4337034173783952373">Untuk mengakses aktivitas browser Ecosia di semua perangkat, login lalu aktifkan sinkronisasi</translation>
+<translation id="8655983536493871574">Untuk mendapatkan update Ecosia berikutnya, Anda perlu Windows 10 atau yang lebih baru. Komputer ini menggunakan Windows 8.</translation>
+<translation id="8355171755788522183">Hak cipta <ph name="YEAR"/> Ecosia. Semua hak dilindungi undang-undang.</translation>
+<translation id="4395802781633621239">Untuk mendapatkan sandi dan info Anda yang lain di semua perangkat Anda, login ke Ecosia. Sandi ini akan disimpan di Akun Ecosia Anda setelah Anda login.</translation>
+<translation id="8268239447047453615">Kemudian, Anda harus memulai ulang Ecosia.</translation>
+<translation id="5167067155585861308">Ecosia merekomendasikan agar Anda menghapusnya. <ph name="BEGIN_LINK"/>Pelajari lebih lanjut ekstensi yang didukung<ph name="END_LINK"/></translation>
+<translation id="8863497461138396324">Ekstensi ini dibatalkan publikasinya oleh developer, dan mungkin tidak aman. Hapus dari Ecosia agar ekstensi ini tidak dapat lagi melihat dan mengubah data Anda di situs yang Anda kunjungi, termasuk info pribadi Anda.</translation>
+<translation id="6826163993811146231">{0,plural, =1{Luncurkan ulang Ecosia dalam 1 hari}other{Luncurkan ulang Ecosia dalam # hari}}</translation>
+<translation id="4033006861724039519">Arsip pemasang rusak atau tidak valid. Download Ecosia lagi.</translation>
+<translation id="2829233304432701500">Ecosia memerlukan Windows 10 atau lebih tinggi.</translation>
+<translation id="8975930032513941502">Opsional: Bantu tingkatkan fitur dan performa EcosiaOS dengan mengirimkan data penggunaan dan diagnostik secara otomatis ke Ecosia.</translation>
+<translation id="2695952268686253864">Ecosia Terlalu Lawas</translation>
 <translation id="8522801943730206384">Chromium dapat memeriksa sandi jika Anda menyimpannya</translation>
 <translation id="8550334526674375523">Profil kerja ini sama sekali terpisah dari profil pribadi Anda.</translation>
-<translation id="8555465886620020932">Error layanan: <ph name="SERVICE_ERROR" />.</translation>
+<translation id="8555465886620020932">Error layanan: <ph name="SERVICE_ERROR"/>.</translation>
 <translation id="8568283329061645092">Chromium dapat memeriksa sandi saat Anda login dengan Akun Google</translation>
-<translation id="8576826849825683917">Beberapa organisasi mengelola Chromium</translation>
-<translation id="8586442755830160949">Hak Cipta <ph name="YEAR" /> Pengarang Chromium. Semua hak dilindungi undang-undang.</translation>
-<translation id="8608079656141766906"><ph name="BEGIN_BOLD" />Cara kami menggunakan data ini:<ph name="END_BOLD" /> Situs dapat menyimpan informasi tentang minat Anda ke Chromium. Misalnya, jika Anda mengunjungi suatu situs untuk membeli sepatu maraton, situs tersebut dapat menetapkan minat Anda sebagai lari maraton. Kemudian, jika Anda mengunjungi situs lain untuk mendaftar lomba lari, situs tersebut dapat menampilkan iklan sepatu lari berdasarkan minat Anda.</translation>
-<translation id="8619360774459241877">Meluncurkan Chromium...</translation>
-<translation id="8621669128220841554">Pemasangan gagal karena kesalahan yang tidak ditentukan. Download Chromium lagi.</translation>
+<translation id="4817309082638621362">Beberapa organisasi mengelola Ecosia</translation>
+<translation id="7129808598331559748">Hak Cipta <ph name="YEAR"/> Pengarang Ecosia. Semua hak dilindungi undang-undang.</translation>
+<translation id="1851101453239911251"><ph name="BEGIN_BOLD"/>Cara kami menggunakan data ini:<ph name="END_BOLD"/> Situs dapat menyimpan informasi tentang minat Anda ke Ecosia. Misalnya, jika Anda mengunjungi suatu situs untuk membeli sepatu maraton, situs tersebut dapat menetapkan minat Anda sebagai lari maraton. Kemudian, jika Anda mengunjungi situs lain untuk mendaftar lomba lari, situs tersebut dapat menampilkan iklan sepatu lari berdasarkan minat Anda.</translation>
+<translation id="8109744984354428711">Meluncurkan Ecosia...</translation>
+<translation id="2402290209407843024">Pemasangan gagal karena kesalahan yang tidak ditentukan. Download Ecosia lagi.</translation>
 <translation id="8648201657708811153">Google Chrome for Testing tidak dapat dijadikan sebagai browser default.</translation>
-<translation id="8697124171261953979">Juga mengontrol halaman apa yang ditampilkan saat Anda memulai Chromium atau menelusuri dari Omnibox.</translation>
-<translation id="8704119203788522458">Ini Chromium Anda</translation>
-<translation id="8719993436687031146">Login ke Chromium?</translation>
-<translation id="878572486461146056">Error penginstalan: Administrator jaringan Anda telah menerapkan Kebijakan Grup yang mencegah penginstalan: <ph name="INSTALL_ERROR" /></translation>
-<translation id="8796602469536043152">Chromium memerlukan izin akses ke kamera dan mikrofon untuk situs ini</translation>
-<translation id="8818550178040858407">Login ke Chromium?</translation>
+<translation id="6665128960039431910">Juga mengontrol halaman apa yang ditampilkan saat Anda memulai Ecosia atau menelusuri dari Omnibox.</translation>
+<translation id="2000339487270823788">Ini Ecosia Anda</translation>
+<translation id="7045045549868370797">Login ke Ecosia?</translation>
+<translation id="878572486461146056">Error penginstalan: Administrator jaringan Anda telah menerapkan Kebijakan Grup yang mencegah penginstalan: <ph name="INSTALL_ERROR"/></translation>
+<translation id="7273750863406285983">Ecosia memerlukan izin akses ke kamera dan mikrofon untuk situs ini</translation>
+<translation id="1485302026917450654">Login ke Ecosia?</translation>
 <translation id="8826492472752484139">Klik “Pengelola Sandi”</translation>
-<translation id="8833697763442816810">Sistem ChromiumOS</translation>
-<translation id="8846118132221683440"><ph name="BEGIN_BOLD" />Data yang digunakan:<ph name="END_BOLD" /> Histori penjelajahan Anda, catatan situs yang telah Anda buka menggunakan Chromium di perangkat ini.</translation>
+<translation id="5267683457871579197">Sistem EcosiaOS</translation>
+<translation id="4565616259974605182"><ph name="BEGIN_BOLD"/>Data yang digunakan:<ph name="END_BOLD"/> Histori penjelajahan Anda, catatan situs yang telah Anda buka menggunakan Ecosia di perangkat ini.</translation>
 <translation id="8862326446509486874">Anda tidak memiliki hak yang diperlukan untuk penginstalan tingkat sistem. Coba jalankan lagi penginstal dengan login sebagai Administrator.</translation>
 <translation id="8880203542552872219">Jika ya, edit sandi Anda yang tersimpan di Chromium agar cocok dengan sandi baru Anda.</translation>
-<translation id="8907580949721785412">Chromium mencoba menampilkan sandi. Ketik sandi Windows untuk mengizinkannya.</translation>
+<translation id="3966234175958887595">Ecosia mencoba menampilkan sandi. Ketik sandi Windows untuk mengizinkannya.</translation>
 <translation id="8931379085695076764">Chromium dapat memperkirakan minat Anda berdasarkan histori penjelajahan Anda dari beberapa minggu terakhir. Informasi ini disimpan di perangkat Anda.</translation>
-<translation id="8941642502866065432">Tidak dapat mengupdate Chromium</translation>
-<translation id="897581876605952338">Logo Chromium Enterprise</translation>
+<translation id="6346154190168496057">Tidak dapat mengupdate Ecosia</translation>
+<translation id="93440396576488794">Logo Ecosia Enterprise</translation>
 <translation id="8986207147630327271">Anda menambahkan profil kerja ke browser ini dan memberikan kontrol kepada administrator hanya untuk profil kerja.</translation>
-<translation id="8988036198400390003">Kelola profil Chromium</translation>
-<translation id="9019929317751753759">Agar Chromium lebih aman, kami menonaktifkan ekstensi berikut yang tidak tercantum dalam <ph name="IDS_EXTENSION_WEB_STORE_TITLE" /> dan mungkin telah ditambahkan tanpa sepengetahuan Anda.</translation>
-<translation id="9022552996538154597">Login ke Chromium</translation>
-<translation id="904366664621834601">Chromium memblokir download ini karena file arsip tersebut menyertakan file lain yang mungkin menyembunyikan malware</translation>
+<translation id="2985399486579137606">Kelola profil Ecosia</translation>
+<translation id="1597547208646178091">Agar Ecosia lebih aman, kami menonaktifkan ekstensi berikut yang tidak tercantum dalam <ph name="IDS_EXTENSION_WEB_STORE_TITLE"/> dan mungkin telah ditambahkan tanpa sepengetahuan Anda.</translation>
+<translation id="2388751143175762498">Login ke Ecosia</translation>
+<translation id="231621248561775155">Ecosia memblokir download ini karena file arsip tersebut menyertakan file lain yang mungkin menyembunyikan malware</translation>
 <translation id="9062666675513499497">Login ke Chromium saat Anda login ke layanan Google lainnya</translation>
-<translation id="907832235989677238">Login ke Chromium. Jika Anda hanya ingin login ke akun sekali, Anda dapat <ph name="GUEST_LINK_BEGIN" />menggunakan perangkat sebagai tamu<ph name="GUEST_LINK_END" />.</translation>
-<translation id="9078733879136747090">Chromium ditutup secara otomatis</translation>
-<translation id="9089354809943900324">Chromium terlalu lawas</translation>
-<translation id="9093206154853821181">{0,plural, =1{Chromium akan diluncurkan ulang dalam 1 jam}other{Chromium akan diluncurkan ulang dalam # jam}}</translation>
-<translation id="9106612006984859720">Untuk mendapatkan update Chromium berikutnya, Anda perlu Windows 10 atau yang lebih baru. Komputer ini menggunakan Windows 8.1.</translation>
-<translation id="91086099826398415">Buka Link di &amp;tab Chromium Baru</translation>
+<translation id="5312730628132049495">Login ke Ecosia. Jika Anda hanya ingin login ke akun sekali, Anda dapat <ph name="GUEST_LINK_BEGIN"/>menggunakan perangkat sebagai tamu<ph name="GUEST_LINK_END"/>.</translation>
+<translation id="5061261337583604526">Ecosia ditutup secara otomatis</translation>
+<translation id="7268098999602465369">Ecosia terlalu lawas</translation>
+<translation id="6022879254514691681">{0,plural, =1{Ecosia akan diluncurkan ulang dalam 1 jam}other{Ecosia akan diluncurkan ulang dalam # jam}}</translation>
+<translation id="8963533629322868062">Untuk mendapatkan update Ecosia berikutnya, Anda perlu Windows 10 atau yang lebih baru. Komputer ini menggunakan Windows 8.1.</translation>
+<translation id="7774247008790177839">Buka Link di &amp;tab Ecosia Baru</translation>
 <translation id="911206726377975832">Hapus juga data browsing Anda?</translation>
-<translation id="9144490074902256427">Selama uji coba, Anda dapat melihat dan menghapus topik terkait minat yang digunakan situs untuk menampilkan iklan kepada Anda. Chromium memperkirakan minat Anda berdasarkan histori penjelajahan terbaru Anda.</translation>
-<translation id="9158494823179993217">Administrator sistem Anda telah mengonfigurasi Chromium untuk membuka browser alternatif guna mengakses <ph name="TARGET_URL_HOSTNAME" />.</translation>
-<translation id="9185526690718004400">Luncurkan kembali untuk mengupdate &amp;Chromium</translation>
-<translation id="9190841055450128916">Chromium (mDNS-In)</translation>
-<translation id="924957577793602335">Personalisasi Chromium Anda</translation>
-<translation id="93478295209880648">Chromium mungkin tidak berfungsi dengan semestinya karena sudah tidak didukung di Windows XP atau Windows Vista</translation>
+<translation id="7580831958727159171">Selama uji coba, Anda dapat melihat dan menghapus topik terkait minat yang digunakan situs untuk menampilkan iklan kepada Anda. Ecosia memperkirakan minat Anda berdasarkan histori penjelajahan terbaru Anda.</translation>
+<translation id="8901409988302458368">Administrator sistem Anda telah mengonfigurasi Ecosia untuk membuka browser alternatif guna mengakses <ph name="TARGET_URL_HOSTNAME"/>.</translation>
+<translation id="1523806373970723624">Luncurkan kembali untuk mengupdate &amp;Ecosia</translation>
+<translation id="2470806471563820591">Ecosia (mDNS-In)</translation>
+<translation id="4767994371234572952">Personalisasi Ecosia Anda</translation>
+<translation id="6933283849886243832">Ecosia mungkin tidak berfungsi dengan semestinya karena sudah tidak didukung di Windows XP atau Windows Vista</translation>
 <translation id="942598560705308788">Sertifikat yang dikelola oleh Chromium</translation>
-<translation id="965162752251293939">Siapa yang menggunakan Chromium?</translation>
-<translation id="967427899662692980">Dapatkan keamanan terkuat Chromium</translation>
+<translation id="8078678931242443254">Siapa yang menggunakan Ecosia?</translation>
+<translation id="12795904718916112">Dapatkan keamanan terkuat Ecosia</translation>
 <translation id="983803489796659991">Penginstalan gagal karena server update tidak memiliki data hash apa pun untuk aplikasi.</translation>
-<translation id="985498048907240953">Gunakan Chromium Tanpa Akun</translation>
-<translation id="985602178874221306">Pengarang Chromium</translation>
-<translation id="992780518932311116">Untuk menggunakan lokasi, beri Chromium akses di <ph name="BEGIN_LINK" />setelan sistem<ph name="END_LINK" /></translation>
+<translation id="5612740201368556834">Gunakan Ecosia Tanpa Akun</translation>
+<translation id="6235001546696543832">Pengarang Ecosia</translation>
+<translation id="992780518932311116">Untuk menggunakan lokasi, beri Chromium akses di <ph name="BEGIN_LINK"/>setelan sistem<ph name="END_LINK"/></translation>
 </translationbundle>

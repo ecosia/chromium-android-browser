@@ -36,7 +36,8 @@ found in the LICENSE file.
     <dimen name="content_suggestions_card_modern_margin">0dp</dimen>
     <dimen name="ntp_wide_card_lateral_margins">36dp</dimen>
     <dimen name="feed_v2_header_menu_touch_size">48dp</dimen>
-    <dimen name="ntp_header_lateral_paddings_v2">16dp</dimen>
+    <!-- <dimen name="ntp_header_lateral_paddings_v2">16dp</dimen> Ecosia: remove NTP padding MOB-1894 -->
+    <dimen name="ntp_header_lateral_paddings_v2">0dp</dimen>
     <dimen name="ntp_wide_card_width_breakpoint">840dp</dimen>
     <dimen name="ntp_wide_card_width_max">1200dp</dimen>
     <dimen name="ntp_wide_card_lateral_margins_max">200dp</dimen>

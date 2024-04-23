@@ -49,6 +49,7 @@ import org.chromium.components.signin.identitymanager.ConsentLevel;
 import org.chromium.components.user_prefs.UserPrefs;
 import org.chromium.ui.text.NoUnderlineClickableSpan;
 import org.chromium.ui.text.SpanApplier;
+import org.ecosia.tracking.TrackingManager;
 
 /** Fragment to keep track of the all the privacy related preferences. */
 public class PrivacySettings extends ChromeBaseSettingsFragment
@@ -66,6 +67,7 @@ public class PrivacySettings extends ChromeBaseSettingsFragment
     private static final String PREF_INCOGNITO_LOCK = "incognito_lock";
     private static final String PREF_THIRD_PARTY_COOKIES = "third_party_cookies";
     private static final String PREF_TRACKING_PROTECTION = "tracking_protection";
+    private static final String PREF_ANALYTICS_ENABLED = "analytics_switch";
     @VisibleForTesting static final String PREF_FP_PROTECTION = "fp_protection";
     @VisibleForTesting static final String PREF_IP_PROTECTION = "ip_protection";
     @VisibleForTesting static final String PREF_CLEAR_BROWSING_DATA = "clear_browsing_data";
@@ -81,7 +83,9 @@ public class PrivacySettings extends ChromeBaseSettingsFragment
 
         SettingsUtils.addPreferencesFromResource(this, R.xml.privacy_preferences);
 
-        Preference fpProtectionPreference = findPreference(PREF_FP_PROTECTION);
+        /* Ecosia MOB-1158: Deactivate safe browsing
+        
+		Preference fpProtectionPreference = findPreference(PREF_FP_PROTECTION);
         fpProtectionPreference.setVisible(shouldShowFpProtectionUI());
 
         Preference ipProtectionPreference = findPreference(PREF_IP_PROTECTION);
@@ -133,12 +137,14 @@ public class PrivacySettings extends ChromeBaseSettingsFragment
         if (getProfile().isChild() || ManagedBrowserUtils.isBrowserManaged(getProfile())) {
             getPreferenceScreen().removePreference(privacyGuidePreference);
         }
+        */
 
         IncognitoReauthSettingSwitchPreference incognitoReauthPreference =
                 (IncognitoReauthSettingSwitchPreference) findPreference(PREF_INCOGNITO_LOCK);
         mIncognitoLockSettings = new IncognitoLockSettings(incognitoReauthPreference, getProfile());
         mIncognitoLockSettings.setUpIncognitoReauthPreference(getActivity());
 
+        /* Ecosia MOB-1158: Deactivate safe browsing
         Preference safeBrowsingPreference = findPreference(PREF_SAFE_BROWSING);
         safeBrowsingPreference.setSummary(
                 SafeBrowsingSettingsFragment.getSafeBrowsingSummaryString(
@@ -152,12 +158,20 @@ public class PrivacySettings extends ChromeBaseSettingsFragment
                                     SettingsAccessPoint.PARENT_SETTINGS);
                     return false;
                 });
+         */
 
         setHasOptionsMenu(true);
 
+        /* Ecosia : Disable PREF_CAN_MAKE_PAYMENT
         ChromeSwitchPreference canMakePaymentPref =
                 (ChromeSwitchPreference) findPreference(PREF_CAN_MAKE_PAYMENT);
         canMakePaymentPref.setOnPreferenceChangeListener(this);
+        */
+
+        //Ecosia : Opt out switch initialization
+        ChromeSwitchPreference analyticsPref = findPreference(PREF_ANALYTICS_ENABLED);
+        analyticsPref.setOnPreferenceChangeListener(this);
+        analyticsPref.setChecked(TrackingManager.getInstance(getContext()).isTrackingEnabled());
 
         ChromeSwitchPreference httpsFirstModePref =
                 (ChromeSwitchPreference) findPreference(PREF_HTTPS_FIRST_MODE);
@@ -192,18 +206,23 @@ public class PrivacySettings extends ChromeBaseSettingsFragment
                                             .settings_https_first_mode_with_advanced_protection_summary));
         }
 
+        /*Ecosia MOB-1158: Deactivate safe browsing
         Preference syncAndServicesLink = findPreference(PREF_SYNC_AND_SERVICES_LINK);
         syncAndServicesLink.setSummary(buildFooterString());
+        */
 
         Preference thirdPartyCookies = findPreference(PREF_THIRD_PARTY_COOKIES);
         Preference doNotTrackPref = findPreference(PREF_DO_NOT_TRACK);
 
+        /* Ecosia MOB-2250: Deactivate privacy features
         if (showTrackingProtectionUI()) {
             if (thirdPartyCookies != null) thirdPartyCookies.setVisible(false);
             if (doNotTrackPref != null) doNotTrackPref.setVisible(false);
             Preference trackingProtection = findPreference(PREF_TRACKING_PROTECTION);
             trackingProtection.setVisible(true);
-        } else if (thirdPartyCookies != null) {
+        } else 
+		*/
+		if (thirdPartyCookies != null) {
             thirdPartyCookies
                     .getExtras()
                     .putString(SingleCategorySettings.EXTRA_CATEGORY, thirdPartyCookies.getKey());
@@ -219,7 +238,10 @@ public class PrivacySettings extends ChromeBaseSettingsFragment
             Preference clearBrowsingDataAdvancedPreference =
                     findPreference(PREF_CLEAR_BROWSING_DATA_ADVANCED);
             clearBrowsingDataPreference.setVisible(false);
-            clearBrowsingDataAdvancedPreference.setVisible(true);
+            //Ecosia: safe browsing is deactivated, so the preference is null
+            if (clearBrowsingDataAdvancedPreference != null) {
+                clearBrowsingDataAdvancedPreference.setVisible(true);
+            }
         }
 
         updatePreferences();
@@ -287,6 +309,8 @@ public class PrivacySettings extends ChromeBaseSettingsFragment
         } else if (PREF_HTTPS_FIRST_MODE.equals(key)) {
             UserPrefs.get(getProfile())
                     .setBoolean(Pref.HTTPS_ONLY_MODE_ENABLED, (boolean) newValue);
+        } else if (PREF_ANALYTICS_ENABLED.equals(key)) { // Ecosia : Analytics Switch
+            TrackingManager.getInstance(getContext()).setIsTrackingEnabled((boolean) newValue);
         }
         return true;
     }
@@ -342,12 +366,14 @@ public class PrivacySettings extends ChromeBaseSettingsFragment
             secureDnsPref.setSummary(SecureDnsSettings.getSummary(getContext()));
         }
 
+        /* Ecosia MOB-1158: Deactivate safe browsing
         Preference safeBrowsingPreference = findPreference(PREF_SAFE_BROWSING);
         if (safeBrowsingPreference != null && safeBrowsingPreference.isVisible()) {
             safeBrowsingPreference.setSummary(
                     SafeBrowsingSettingsFragment.getSafeBrowsingSummaryString(
                             getContext(), getProfile()));
         }
+        */
 
         Preference usageStatsPref = findPreference(PREF_USAGE_STATS);
         if (usageStatsPref != null) {
@@ -400,20 +426,24 @@ public class PrivacySettings extends ChromeBaseSettingsFragment
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         menu.clear();
+        /* Ecosia : Removing Help & Feedback setting
         MenuItem help =
                 menu.add(Menu.NONE, R.id.menu_id_targeted_help, Menu.NONE, R.string.menu_help);
         help.setIcon(
                 TraceEventVectorDrawableCompat.create(
                         getResources(), R.drawable.ic_help_and_feedback, getActivity().getTheme()));
+        */
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        /* Ecosia : Removing Help & Feedback setting
         if (item.getItemId() == R.id.menu_id_targeted_help) {
             getHelpAndFeedbackLauncher()
                     .show(getActivity(), getString(R.string.help_context_privacy), null);
             return true;
         }
+        */
         return false;
     }
 

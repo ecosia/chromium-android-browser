@@ -146,7 +146,10 @@ public class ChromeColors {
      * @return the {@link ColorInt} for the background of a surface view.
      */
     public static @ColorInt int getSurfaceColor(Context context, @Px float elevation) {
+        /* Ecosia: set the background color of the NTP and toolbar here since changing the theme is not enough
         ElevationOverlayProvider elevationOverlayProvider = new ElevationOverlayProvider(context);
         return elevationOverlayProvider.compositeOverlayWithThemeSurfaceColorIfNeeded(elevation);
+        */
+        return context.getColor(R.color.ecosia_surface_color);
     }
 }

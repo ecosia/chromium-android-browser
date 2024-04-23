@@ -415,6 +415,12 @@ public class BookmarkSaveFlowMediator extends BookmarkModelObserver
         bindBookmarkProperties(item, mPowerBookmarkMeta, mWasBookmarkMoved);
     }
 
+    // Ecosia: Bookmark Import / Export
+    @Override
+    public void bookmarkModelNeedsReloadAfterBookmarksImport() {
+        // only required after successful bookmark import
+    }
+
     // SubscriptionsObserver implementation
 
     @Override

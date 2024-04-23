@@ -20,7 +20,8 @@ public class LegacyChromePreferenceKeys {
     /**
      * @return The list of [keys in use] that do not conform to the "Chrome.[Feature].[Key]" format.
      */
-    static List<String> getKeysInUse() {
+    //Ecosia : Method modified to public for Bookmarks
+   public static List<String> getKeysInUse() {
         return Arrays.asList(
                 ChromePreferenceKeys.APP_LOCALE,
                 ChromePreferenceKeys.AUTOFILL_ASSISTANT_ENABLED,
@@ -131,7 +132,8 @@ public class LegacyChromePreferenceKeys {
                 ChromePreferenceKeys.KEY_ZERO_SUGGEST_LIST_SIZE);
     }
 
-    static List<KeyPrefix> getPrefixesInUse() {
+    //Ecosia : Making method public for Bookmarks
+    public static List<KeyPrefix> getPrefixesInUse() {
         return Arrays.asList(
                 ChromePreferenceKeys.CUSTOM_TABS_DEX_LAST_UPDATE_TIME_PREF_PREFIX,
                 ChromePreferenceKeys.PAYMENTS_PAYMENT_INSTRUMENT_USE_COUNT,

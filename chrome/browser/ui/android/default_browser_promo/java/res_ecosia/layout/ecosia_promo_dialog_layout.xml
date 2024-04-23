@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/default_promo_width"
+    android:layout_height="@dimen/default_promo_height"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:padding="0dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/default_promo"/>
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:textDirection="locale"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/default_browser_title"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/FoundersGroteskCondensed"
+        android:textAppearance="@style/TextAppearance.TextMediumThick" />
+
+    <LinearLayout
+        android:id="@+id/subheader_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginEnd="10dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ecosia_check"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/default_browser_desc_gm"
+                android:textDirection="locale"
+                android:textSize="14dp"
+                android:textColor="@color/ecosia_text_secondary"
+                android:fontFamily="@font/inter"
+                android:textStyle="normal"
+                app:leading="@dimen/text_size_medium_leading"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginEnd="10dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ecosia_check"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/default_browser_steps_manager"
+                android:textDirection="locale"
+                android:textSize="14dp"
+                android:textColor="@color/ecosia_text_secondary"
+                android:fontFamily="@font/inter"
+                android:textStyle="normal"
+                app:leading="@dimen/text_size_medium_leading"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="4dp"
+        android:letterSpacing="0.01"
+        android:fontFamily="@font/inter"
+        android:text="@string/default_browser_button_settings"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:background="@drawable/ecosia_button_primary"
+        app:backgroundTint="@color/ecosia_button_primary_default"
+        android:textColor="@color/ecosia_button_content_primary"/>
+
+    <Button
+        android:id="@+id/button_secondary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:letterSpacing="0.01"
+        android:fontFamily="@font/inter"
+        android:text="@string/default_browser_button_dismiss"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:background="@android:color/transparent"
+        android:textColor="@color/ecosia_brand_primary"/>
+
+</LinearLayout>

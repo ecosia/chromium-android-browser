@@ -45,6 +45,7 @@ import androidx.test.ext.junit.rules.ActivityScenarioRule;
 
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -1412,6 +1413,7 @@ public class BookmarkManagerMediatorTest {
         verify(mBookmarkUiObserver, times(1)).onUiModeChanged(BookmarkUiMode.FOLDER);
     }
 
+    @Ignore("Ecosia : Bookmarks Promo disabled")
     @Test
     public void testPromoHeader() {
         BookmarkPromoHeader.forcePromoStateForTesting(SyncPromoState.PROMO_FOR_SIGNED_IN_STATE);
@@ -1437,6 +1439,7 @@ public class BookmarkManagerMediatorTest {
                 ViewType.IMPROVED_BOOKMARK_COMPACT);
     }
 
+    @Ignore("Ecosia : Bookmarks Promo disabled")
     @Test
     public void testPromoHeaderDefaultMargin() {
         BookmarkPromoHeader.forcePromoStateForTesting(SyncPromoState.PROMO_FOR_SIGNED_IN_STATE);

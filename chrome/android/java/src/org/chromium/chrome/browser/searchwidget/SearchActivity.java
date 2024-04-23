@@ -10,6 +10,7 @@ import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.GradientDrawable;
 import android.net.Uri;
+import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.view.ViewGroup;
@@ -81,6 +82,9 @@ import org.chromium.ui.base.ActivityKeyboardVisibilityDelegate;
 import org.chromium.ui.base.ActivityWindowAndroid;
 import org.chromium.ui.base.WindowDelegate;
 import org.chromium.ui.modaldialog.ModalDialogManager;
+import org.ecosia.searchwidget.EcosiaSearchActivityExtension;
+import org.ecosia.searchwidget.EcosiaSearchActivityExtensionImplementation;
+import org.ecosia.tracking.TrackingManager;
 import org.chromium.url.GURL;
 
 import java.lang.annotation.Retention;
@@ -219,6 +223,22 @@ public class SearchActivity extends AsyncInitializationActivity
     @IntentOrigin Integer mIntentOrigin;
     // Incoming intent search type. See {@link SearchActivityUtils#SearchType}.
     @SearchType Integer mSearchType;
+    
+	// Ecosia
+    public static interface Callbacks {
+        void onAfterPostCreate(@NonNull final SearchActivity searchActivity);
+    }
+
+    private static final Object DELEGATE_LOCK = new Object();
+
+    // Ecosia
+    private Callbacks callbacks;
+    private EcosiaSearchActivityExtension ecosiaSearchActivityExtension;
+
+    /** Main content view. */
+    private ViewGroup mContentView;
+
+    private View mAnchorView;
 
     /** Whether the user is now allowed to perform searches. */
     private boolean mIsActivityUsable;
@@ -244,6 +264,22 @@ public class SearchActivity extends AsyncInitializationActivity
     public SearchActivity() {
         mUmaActivityObserver = new UmaActivityObserver(this);
         mLocationBarUiOverrides.setForcedPhoneStyleOmnibox();
+    }
+
+    // Ecosia
+    public void setCallbacks(@Nullable final Callbacks callbacks) {
+        this.callbacks = callbacks;
+    }
+
+    @Override
+    protected void onPostCreate(@Nullable Bundle savedInstanceState) {
+        super.onPostCreate(savedInstanceState);
+        final TrackingManager trackingManager = TrackingManager.getInstance(this);
+        ecosiaSearchActivityExtension = new EcosiaSearchActivityExtensionImplementation(trackingManager);
+
+        if (callbacks != null) {
+            callbacks.onAfterPostCreate(this);
+        }
     }
 
     @Override
@@ -681,9 +717,12 @@ public class SearchActivity extends AsyncInitializationActivity
         RecordUserAction.record("SearchWidget.SearchMade");
         LocaleManager.getInstance()
                 .recordLocaleBasedSearchMetrics(true, params.url, params.transitionType);
-    }
 
-    @VisibleForTesting
+        // Ecosia
+        ecosiaSearchActivityExtension.onSearchWidgetSearchMade();
+    }
+    
+	@VisibleForTesting
     /* package */ ViewGroup createContentView() {
         var contentView =
                 (ViewGroup) getLayoutInflater().inflate(R.layout.search_activity, null, false);

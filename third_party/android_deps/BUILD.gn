@@ -497,6 +497,13 @@ java_prebuilt("org_ow2_asm_asm_analysis_java") {
 }
 if (!limit_android_deps) {
   # This is generated, do not edit. Update BuildConfigGenerator.groovy instead.
+  android_aar_prebuilt("com_android_installreferrer_installreferrer_java") {
+    aar_path = "cipd/libs/com_android_installreferrer_installreferrer/installreferrer-2.1.aar"
+    info_path = "libs/com_android_installreferrer_installreferrer/com_android_installreferrer_installreferrer.info"
+    enable_bytecode_checks = false
+  }
+
+  # This is generated, do not edit. Update BuildConfigGenerator.groovy instead.
   android_aar_prebuilt("com_android_support_drawerlayout_java") {
     aar_path =
         "cipd/libs/com_android_support_drawerlayout/drawerlayout-28.0.0.aar"
@@ -586,6 +593,20 @@ if (!limit_android_deps) {
       "//third_party/hamcrest:hamcrest_core_java",
       "//third_party/hamcrest:hamcrest_library_java",
     ]
+  }
+
+  # This is generated, do not edit. Update BuildConfigGenerator.groovy instead.
+  if (google_play_services_package == "//third_party/android_deps") {
+    android_aar_prebuilt("google_play_services_appset_java") {
+      aar_path = "cipd/libs/com_google_android_gms_play_services_appset/play-services-appset-16.0.2.aar"
+      info_path = "libs/com_google_android_gms_play_services_appset/com_google_android_gms_play_services_appset.info"
+      enable_bytecode_checks = false
+      deps = [
+        "$google_play_services_package:google_play_services_base_java",
+        "$google_play_services_package:google_play_services_basement_java",
+        "$google_play_services_package:google_play_services_tasks_java",
+      ]
+    }
   }
 
   # This is generated, do not edit. Update BuildConfigGenerator.groovy instead.
@@ -848,7 +869,7 @@ if (!limit_android_deps) {
         ":com_google_errorprone_error_prone_annotations_java",
         "//third_party/androidx:androidx_activity_activity_java",
         "//third_party/androidx:androidx_annotation_annotation_experimental_java",
-        "//third_party/androidx:androidx_annotation_annotation_java",
+        "//third_party/androidx:androidx_annotation_annotation_jvm_java",
         "//third_party/androidx:androidx_appcompat_appcompat_java",
         "//third_party/androidx:androidx_cardview_cardview_java",
         "//third_party/androidx:androidx_constraintlayout_constraintlayout_java",
@@ -1022,6 +1043,21 @@ if (!limit_android_deps) {
   }
 
   # This is generated, do not edit. Update BuildConfigGenerator.groovy instead.
+  android_aar_prebuilt("com_snowplowanalytics_snowplow_android_tracker_java") {
+    aar_path = "cipd/libs/com_snowplowanalytics_snowplow_android_tracker/snowplow-android-tracker-6.0.2.aar"
+    info_path = "libs/com_snowplowanalytics_snowplow_android_tracker/com_snowplowanalytics_snowplow_android_tracker.info"
+    enable_bytecode_checks = false
+    deps = [
+      ":com_squareup_okhttp3_okhttp_java",
+      "//third_party/androidx:androidx_annotation_annotation_jvm_java",
+      "//third_party/androidx:androidx_appcompat_appcompat_java",
+      "//third_party/androidx:androidx_core_core_ktx_java",
+      "//third_party/androidx:androidx_preference_preference_java",
+      "//third_party/kotlin_stdlib:kotlin_stdlib_java",
+    ]
+  }
+
+  # This is generated, do not edit. Update BuildConfigGenerator.groovy instead.
   java_prebuilt("com_squareup_moshi_moshi_adapters_java") {
     jar_path =
         "cipd/libs/com_squareup_moshi_moshi_adapters/moshi-adapters-1.15.0.jar"
@@ -1031,6 +1067,18 @@ if (!limit_android_deps) {
     testonly = true
     deps = [
       ":com_squareup_moshi_moshi_java",
+      "//third_party/kotlin_stdlib:kotlin_stdlib_java",
+    ]
+  }
+
+  # This is generated, do not edit. Update BuildConfigGenerator.groovy instead.
+  java_prebuilt("com_squareup_okhttp3_okhttp_java") {
+    jar_path = "cipd/libs/com_squareup_okhttp3_okhttp/okhttp-4.12.0.jar"
+    output_name = "com_squareup_okhttp3_okhttp"
+    supports_android = true
+    enable_bytecode_checks = false
+    deps = [
+      ":com_squareup_okio_okio_jvm_java",
       "//third_party/kotlin_stdlib:kotlin_stdlib_java",
     ]
   }
@@ -1073,7 +1121,7 @@ if (!limit_android_deps) {
     deps = [
       ":io_grpc_grpc_core_java",
       "//third_party/android_deps:guava_android_java",
-      "//third_party/androidx:androidx_annotation_annotation_java",
+      "//third_party/androidx:androidx_annotation_annotation_jvm_java",
       "//third_party/androidx:androidx_core_core_java",
       "//third_party/androidx:androidx_lifecycle_lifecycle_common_java",
     ]
@@ -1760,7 +1808,8 @@ if (!limit_android_deps) {
         ":*",
         "//third_party/androidx:*",
       ]
-      deps = [ "//third_party/androidx:androidx_annotation_annotation_java" ]
+      deps =
+          [ "//third_party/androidx:androidx_annotation_annotation_jvm_java" ]
     }
   }
 
@@ -1952,7 +2001,7 @@ if (!limit_android_deps) {
       ]
       deps = [
         "$google_play_services_package:google_firebase_firebase_annotations_java",
-        "//third_party/androidx:androidx_annotation_annotation_java",
+        "//third_party/androidx:androidx_annotation_annotation_jvm_java",
       ]
     }
   }
@@ -1971,7 +2020,8 @@ if (!limit_android_deps) {
         ":*",
         "//third_party/androidx:*",
       ]
-      deps = [ "//third_party/androidx:androidx_annotation_annotation_java" ]
+      deps =
+          [ "//third_party/androidx:androidx_annotation_annotation_jvm_java" ]
 
       # https://crbug.com/1412551
       requires_android = true
@@ -1993,7 +2043,7 @@ if (!limit_android_deps) {
       ]
       deps = [
         "$google_play_services_package:google_firebase_firebase_encoders_java",
-        "//third_party/androidx:androidx_annotation_annotation_java",
+        "//third_party/androidx:androidx_annotation_annotation_jvm_java",
       ]
     }
   }
@@ -2129,7 +2179,6 @@ if (!limit_android_deps) {
       ":*",
       "//third_party/androidx:*",
     ]
-    testonly = true
     deps = [ "//third_party/kotlin_stdlib:kotlin_stdlib_java" ]
   }
 

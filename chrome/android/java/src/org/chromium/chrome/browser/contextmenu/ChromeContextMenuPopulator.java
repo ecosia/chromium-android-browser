@@ -425,7 +425,9 @@ public class ChromeContextMenuPopulator implements ContextMenuPopulator {
                                     .second;
             if (UrlUtilities.isAcceptedScheme(mParams.getUrl())) {
                 if (mMode == ContextMenuMode.WEB_APP) {
+                    /* Ecosia : Disable Open in Chrome menu option
                     items.add(createListItem(Item.OPEN_IN_CHROME));
+                    */
                 } else if (mMode == ContextMenuMode.CUSTOM_TAB && !mItemDelegate.isIncognito()) {
                     boolean addNewEntries =
                             !UrlUtilities.isInternalScheme(mParams.getUrl())
@@ -434,7 +436,9 @@ public class ChromeContextMenuPopulator implements ContextMenuPopulator {
                                     .readBoolean(ChromePreferenceKeys.CHROME_DEFAULT_BROWSER, false)
                             && addNewEntries) {
                         if (mItemDelegate.isIncognitoSupported()) {
+                            /* Ecosia : Disable Open in Chrome menu option
                             items.add(0, createListItem(Item.OPEN_IN_CHROME_INCOGNITO_TAB));
+                            */
                         }
                         items.add(0, createListItem(Item.OPEN_IN_NEW_CHROME_TAB));
                     } else if (addNewEntries && UrlUtilities.isAcceptedScheme(mParams.getUrl())) {

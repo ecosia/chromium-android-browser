@@ -636,7 +636,8 @@ public class KeyboardShortcuts {
                     if (currentTab != null && currentTab.canGoForward()) currentTab.goForward();
                     return true;
                 case KeyboardShortcutsSemanticMeaning.OPEN_HELP:
-                    menuOrKeyboardActionController.onMenuOrKeyboardAction(R.id.help_id, false);
+                  	// Ecosia : Removing Help & Feedback setting
+                  	// menuOrKeyboardActionController.onMenuOrKeyboardAction(R.id.help_id, false);
                     return true;
             }
         }

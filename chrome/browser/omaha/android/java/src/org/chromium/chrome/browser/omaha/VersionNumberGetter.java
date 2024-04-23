@@ -34,7 +34,7 @@ public class VersionNumberGetter {
     private static boolean sDisableUpdateDetectionForTesting;
 
     @VisibleForTesting
-    static VersionNumberGetter getInstance() {
+    public static VersionNumberGetter getInstance() {
         assert !ThreadUtils.runningOnUiThread();
         return sInstance;
     }

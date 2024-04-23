@@ -155,6 +155,7 @@ import java.util.function.Function;
 /** A {@link RootUiCoordinator} variant that controls tabbed-mode specific UI. */
 public class TabbedRootUiCoordinator extends RootUiCoordinator {
     private static boolean sDisableTopControlsAnimationForTesting;
+    private static ActivityWindowAndroid mWindowAndroidInstance; // Ecosia : Getting WindowAndroid instance for default browser selection pop up
     private final RootUiTabObserver mRootUiTabObserver;
     private TabbedSystemUiCoordinator mSystemUiCoordinator;
     private TabGroupSyncController mTabGroupSyncController;
@@ -398,6 +399,7 @@ public class TabbedRootUiCoordinator extends RootUiCoordinator {
         mManualFillingComponentSupplier = manualFillingComponentSupplier;
 
         initAppHeaderCoordinator(savedInstanceState);
+        mWindowAndroidInstance = windowAndroid; // Ecosia : Getting WindowAndroid instance for default browser selection pop up
     }
 
     @Override
@@ -1269,10 +1271,13 @@ public class TabbedRootUiCoordinator extends RootUiCoordinator {
                     && FirstRunStatus.getFirstRunFlowComplete()
                     && preferenceManager.readBoolean(
                             ChromePreferenceKeys.PROMOS_SKIPPED_ON_FIRST_START, false)) {
-                isShowingPromo = maybeShowPromo(profile);
+                isShowingPromo = maybeShowPromo();
+
             } else {
                 preferenceManager.writeBoolean(
                         ChromePreferenceKeys.PROMOS_SKIPPED_ON_FIRST_START, true);
+                //Ecosia : Showing for new users on first launch on install
+                maybeShowPromo();
             }
 
             if (FirstRunStatus.isFirstRunTriggered()) {
@@ -1298,7 +1303,10 @@ public class TabbedRootUiCoordinator extends RootUiCoordinator {
         PwaRestorePromoUtils.notifyFirstRunPromoTriggered();
     }
 
-    private boolean maybeShowPromo(Profile profile) {
+    private boolean maybeShowPromo() {
+        // Only one promo can be shown in one run to avoid nagging users too much.
+        
+		/* Ecosia: disable sign in, data reduction , default browser and language promo
         // NOTE: Only one promo can be shown in one run to avoid nagging users too much.
 
         // The PWA Restore promotion runs when we've detected that a user has switched to a new
@@ -1317,19 +1325,29 @@ public class TabbedRootUiCoordinator extends RootUiCoordinator {
                 VersionInfo.getProductMajorVersion())) {
             return true;
         }
+
+
         if (DefaultBrowserPromoUtils.prepareLaunchPromoIfNeeded(
-                mActivity, mWindowAndroid, /* ignoreMaxCount= */ false)) {
+                    mActivity, mWindowAndroid, false /* ignoreMaxCount *//*)) {
             return true;
         }
+
         return AppLanguagePromoDialog.maybeShowPrompt(
                 mActivity,
                 profile,
                 mModalDialogManagerSupplier,
                 () -> ApplicationLifetime.terminate(true));
+        */
+		return false;
     }
 
     public static void setDisableTopControlsAnimationsForTesting(boolean disable) {
         sDisableTopControlsAnimationForTesting = disable;
         ResettersForTesting.register(() -> sDisableTopControlsAnimationForTesting = false);
+    }
+
+     // Ecosia : Getting WindowAndroid instance for default browser selection pop up
+    public static ActivityWindowAndroid getWindowAndroid() {
+        return mWindowAndroidInstance;
     }
 }

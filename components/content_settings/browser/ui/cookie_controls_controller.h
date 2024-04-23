@@ -81,7 +81,8 @@ class CookieControlsController final
   base::WeakPtr<CookieControlsController> AsWeakPtr() {
     return weak_ptr_factory_.GetWeakPtr();
   }
-
+  
+  
  private:
   struct Status {
     Status(bool controls_visible,

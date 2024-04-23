@@ -459,7 +459,8 @@ public abstract class AsyncInitializationActivity extends ChromeBaseAppCompatAct
      * @return Whether or not the user needs to go through First Run before using this Activity.
      */
     protected boolean requiresFirstRunToBeCompleted(Intent intent) {
-        return true;
+        // Ecosia: don't require Google first run
+        return false;
     }
 
     /**

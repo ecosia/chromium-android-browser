@@ -14,19 +14,21 @@ found in the LICENSE file.
     android:focusableInTouchMode="true"
     android:contentDescription="@string/accessibility_new_incognito_tab_page">
 
+    <!-- Ecosia: `fillViewport="true"` so we can center the contents vertically -->
     <org.chromium.chrome.browser.ntp.NewTabPageScrollView
         android:id="@+id/ntp_scrollview"
         android:background="@color/ntp_bg_incognito"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fadingEdgeLength="9dp"
-        android:fillViewport="false"
+        android:fillViewport="true"
         android:requiresFadingEdge="vertical" >
 
+        <!-- Ecosia: `layout_height="match_parent"` so we can center the contents vertically -->
         <ViewStub
             android:id="@+id/incognito_description_layout_stub"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="match_parent" />
 
     </org.chromium.chrome.browser.ntp.NewTabPageScrollView>
 

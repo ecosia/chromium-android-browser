@@ -10,6 +10,9 @@ android_library("java") {
     "java/src/org/chromium/chrome/browser/ui/default_browser_promo/DefaultBrowserPromoManager.java",
     "java/src/org/chromium/chrome/browser/ui/default_browser_promo/DefaultBrowserPromoMetrics.java",
     "java/src/org/chromium/chrome/browser/ui/default_browser_promo/DefaultBrowserPromoUtils.java",
+
+    # Ecosia
+    "java/src/org/chromium/chrome/browser/ui/default_browser_promo/EcosiaDefaultBrowserPromoDialog.java",
   ]
   deps = [
     "//base:base_java",
@@ -19,8 +22,27 @@ android_library("java") {
     "//chrome/browser/profiles/android:java",
     "//third_party/androidx:androidx_annotation_annotation_java",
     "//ui/android:ui_full_java",
+
+    # Ecosia
+    ":java_resources",
+    "//components/browser_ui/widget/android:java",
   ]
   resources_package = "org.chromium.chrome.browser.ui.default_browser_promo"
+}
+
+# Ecosia: resources
+android_resources("java_resources") {
+  sources = [
+    "java/res_ecosia/drawable/ecosia_button_primary.xml",
+    "java/res_ecosia/layout/ecosia_promo_dialog_layout.xml",
+  ]
+
+  deps = [
+    "//chrome/browser/ui/android/strings:ui_strings_grd",
+    "//components/browser_ui/widget/android:java_resources",
+    "//ui/android:ui_java_resources",
+    "//ui/android:ecosia_ui_java_resources",
+  ]
 }
 
 robolectric_library("junit") {

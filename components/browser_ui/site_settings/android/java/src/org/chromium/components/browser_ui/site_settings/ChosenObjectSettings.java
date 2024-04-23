@@ -126,7 +126,8 @@ public class ChosenObjectSettings extends BaseSiteSettingsFragment
                     }
                 };
         mSearchView.setOnQueryTextListener(queryTextListener);
-
+        
+        /* Ecosia : Remove Help & Feedback option
         if (getSiteSettingsDelegate().isHelpAndFeedbackEnabled()) {
             MenuItem help =
                     menu.add(
@@ -140,6 +141,7 @@ public class ChosenObjectSettings extends BaseSiteSettingsFragment
                             R.drawable.ic_help_and_feedback,
                             getContext().getTheme()));
         }
+        */
     }
 
     @Override

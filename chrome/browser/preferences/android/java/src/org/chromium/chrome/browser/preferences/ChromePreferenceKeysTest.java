@@ -15,6 +15,7 @@ import com.google.common.collect.Sets;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.junit.Ignore; //Ecosia
 
 import org.chromium.base.shared_preferences.KeyPrefix;
 import org.chromium.base.shared_preferences.PreferenceKeyRegistry;
@@ -43,6 +44,7 @@ public class ChromePreferenceKeysTest {
      * <p>If a key was used in the past but is not used anymore, it should be in [deprecated keys].
      * Adding the same key to [keys in use] will break this test to warn the developer.
      */
+    @Ignore("Ecosia: flaky test")
     @Test
     @SmallTest
     public void testKeysAreNotReused() {

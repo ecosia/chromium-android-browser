@@ -188,7 +188,7 @@ LocaleTemplateUrlLoader::GetLocalPrepopulatedEngines() {
 }
 
 int LocaleTemplateUrlLoader::GetDesignatedSearchEngineForChina() {
-  return TemplateURLPrepopulateData::sogou.id;
+  return TemplateURLPrepopulateData::ecosia.id;
 }
 
 LocaleTemplateUrlLoader::~LocaleTemplateUrlLoader() {}

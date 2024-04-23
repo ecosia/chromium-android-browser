@@ -664,7 +664,6 @@ public class LocationBarModel implements ToolbarDataProvider, LocationBarDataPro
                 && mNativeLocationBarModelAndroid == 0) {
             return R.drawable.omnibox_info;
         }
-
         boolean skipIconForNeutralState =
                 (mProfile != null
                                 && !SearchEngineUtils.getForProfile(mProfile)

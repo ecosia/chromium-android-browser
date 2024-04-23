@@ -71,7 +71,7 @@ public class HistoryItemView extends SelectableItemView<HistoryItem> {
         ImageViewCompat.setImageTintList(
                 mRemoveButton,
                 AppCompatResources.getColorStateList(
-                        getContext(), R.color.default_icon_color_secondary_tint_list));
+                        getContext(), R.color.ecosia_onboarding_card_text_secondary));//Ecosia : Btn Color change brand refresh
         mRemoveButton.setOnClickListener(v -> remove());
         mRemoveButton.setScaleType(ScaleType.CENTER_INSIDE);
         mRemoveButton.setPaddingRelative(
@@ -94,6 +94,9 @@ public class HistoryItemView extends SelectableItemView<HistoryItem> {
         super.setItem(item);
 
         mTitleView.setText(item.getTitle());
+        //Ecosia : Set font size and color for web search title
+        mTitleView.setTextSize(16);
+        mTitleView.setTextColor(getResources().getColor(R.color.ecosia_text_primary));
         mDescriptionView.setText(item.getDomain());
         // Try to make the TLD part of the URL string visible.
         mDescriptionView.setEllipsize(TextUtils.TruncateAt.START);
@@ -103,6 +106,9 @@ public class HistoryItemView extends SelectableItemView<HistoryItem> {
                 mRemoveButton,
                 item.getTitle(),
                 SelectableListUtils.ContentDescriptionSource.REMOVE_BUTTON);
+        //Ecosia : Set font size and color for web url
+        mDescriptionView.setTextSize(14);
+        mDescriptionView.setTextColor(getResources().getColor(R.color.ecosia_onboarding_card_text_secondary));
         mIsItemRemoved = false;
 
         if (item.wasBlockedVisit()) {

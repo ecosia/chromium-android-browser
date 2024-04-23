@@ -560,6 +560,7 @@ public class TabGridDialogTest {
         }
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @MediumTest
     public void testTabGroupDialogRemainsOpenOnSyncUpdate() {
@@ -753,6 +754,7 @@ public class TabGridDialogTest {
         verifyTabSwitcherCardCount(cta, 1);
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @MediumTest
     @EnableFeatures(TAB_GROUP_PARITY_ANDROID)
@@ -1225,6 +1227,7 @@ public class TabGridDialogTest {
         verifyTabSwitcherCardCount(cta, 0);
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @MediumTest
     @Restriction(DeviceRestriction.RESTRICTION_TYPE_NON_AUTO)
@@ -1288,6 +1291,7 @@ public class TabGridDialogTest {
         checkPosition(cta, true, true);
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @MediumTest
     public void testTabGroupNaming() throws ExecutionException {
@@ -1327,6 +1331,7 @@ public class TabGridDialogTest {
         }
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @MediumTest
     @EnableFeatures(TAB_GROUP_PARITY_ANDROID)
@@ -1709,6 +1714,7 @@ public class TabGridDialogTest {
         verifyBackgroundViewAccessibilityImportance(cta, false);
     }
 
+    @Ignore("Ecosia : Disabled Tab group feature")
     @Test
     @MediumTest
     @DisabledTest(message = "TODO(crbug.com/40148943): Fix flakiness.")

@@ -93,6 +93,7 @@ import org.chromium.ui.modelutil.MVCListAdapter.ListItem;
 import org.chromium.ui.modelutil.MVCListAdapter.ModelList;
 import org.chromium.ui.modelutil.PropertyModel;
 import org.chromium.url.GURL;
+import org.ecosia.referrals.Referrals;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -774,6 +775,9 @@ public class AppMenuPropertiesDelegateImpl implements AppMenuPropertiesDelegate 
      * @return Whether the "New window" menu item should be displayed.
      */
     protected boolean shouldShowNewWindow() {
+        // Ecosia: MOB-2162 disable multi window support
+        return false;
+        /*
         // Hide the menu on automotive devices.
         if (BuildInfo.getInstance().isAutomotive) return false;
 
@@ -794,6 +798,7 @@ public class AppMenuPropertiesDelegateImpl implements AppMenuPropertiesDelegate 
                     || mMultiWindowModeStateDispatcher.isInMultiWindowMode()
                     || mMultiWindowModeStateDispatcher.isInMultiDisplayMode();
         }
+        */
     }
 
     private boolean shouldShowManageAllWindows() {
@@ -876,14 +881,16 @@ public class AppMenuPropertiesDelegateImpl implements AppMenuPropertiesDelegate 
     protected void prepareAddToHomescreenMenuItem(
             Menu menu, Tab currentTab, boolean shouldShowHomeScreenMenuItem) {
         MenuItem addTohomescreenItem = menu.findItem(R.id.add_to_homescreen_id);
+        addTohomescreenItem.setVisible(false);
+        /* Ecosia : Disabling Install App option
         MenuItem installWebAppItem = menu.findItem(R.id.install_webapp_id);
         MenuItem universalInstallItem = menu.findItem(R.id.universal_install);
         MenuItem openWebApkItem = menu.findItem(R.id.open_webapk_id);
 
-        addTohomescreenItem.setVisible(false);
         installWebAppItem.setVisible(false);
         universalInstallItem.setVisible(false);
         openWebApkItem.setVisible(false);
+        */
 
         if (currentTab == null || !shouldShowHomeScreenMenuItem) {
             return;
@@ -895,6 +902,7 @@ public class AppMenuPropertiesDelegateImpl implements AppMenuPropertiesDelegate 
                 "Android.PrepareMenu.OpenWebApkVisibilityCheck",
                 SystemClock.elapsedRealtime() - addToHomeScreenStart);
 
+        /*Ecosia : Disable web apk install option
         boolean openWebApkItemVisible =
                 resolveInfo != null && resolveInfo.activityInfo.packageName != null;
         if (ChromeFeatureList.isEnabled(ChromeFeatureList.PWA_UNIVERSAL_INSTALL_UI)) {
@@ -914,16 +922,22 @@ public class AppMenuPropertiesDelegateImpl implements AppMenuPropertiesDelegate 
         if (ChromeFeatureList.isEnabled(ChromeFeatureList.PWA_UNIVERSAL_INSTALL_UI)) {
             universalInstallItem.setVisible(true);
         } else {
+        */
             AppBannerManager.InstallStringPair installStrings = getAddToHomeScreenTitle(currentTab);
 
+            /*Ecosia : Disable web apk install option
             if (installStrings.titleTextId == AppBannerManager.PWA_PAIR.titleTextId) {
                 installWebAppItem.setTitle(installStrings.titleTextId);
                 installWebAppItem.setVisible(true);
-            } else if (installStrings.titleTextId == AppBannerManager.NON_PWA_PAIR.titleTextId) {
+            } else
+             */
+            if (installStrings.titleTextId == AppBannerManager.NON_PWA_PAIR.titleTextId) {
                 addTohomescreenItem.setTitle(installStrings.titleTextId);
                 addTohomescreenItem.setVisible(true);
             }
+        /*Ecosia : Disable web apk install option
         }
+        */
     }
 
     public static ResolveInfo queryWebApkResolveInfo(Context context, Tab currentTab) {
@@ -1125,11 +1139,13 @@ public class AppMenuPropertiesDelegateImpl implements AppMenuPropertiesDelegate 
 
     @VisibleForTesting
     boolean shouldShowIconRow() {
-        boolean shouldShowIconRow =
+        boolean shouldShowIconRow = true;
+        /* Ecosia : MOB-3099 Settings menu change for Tablet based on the Tablet and DecorView Width disabled
                 mIsTablet
                         ? mDecorView.getWidth()
                                 < DeviceFormFactor.getNonMultiDisplayMinimumTabletWidthPx(mContext)
                         : true;
+        */
 
         final boolean isMenuButtonOnTop = mToolbarManager != null;
         shouldShowIconRow &= isMenuButtonOnTop;
@@ -1195,11 +1211,17 @@ public class AppMenuPropertiesDelegateImpl implements AppMenuPropertiesDelegate 
         }
 
         if (currentTab != null && shouldCheckBookmarkStar(currentTab)) {
+            /* Ecosia: branding
             bookmarkMenuItemShortcut.setIcon(R.drawable.btn_star_filled);
+            */
+            bookmarkMenuItemShortcut.setIcon(R.drawable.ic_ecosia_bookmarked);
             bookmarkMenuItemShortcut.setChecked(true);
             bookmarkMenuItemShortcut.setTitleCondensed(mContext.getString(R.string.edit_bookmark));
         } else {
+            /* Ecosia: branding
             bookmarkMenuItemShortcut.setIcon(R.drawable.star_outline_24dp);
+            */
+            bookmarkMenuItemShortcut.setIcon(R.drawable.ic_ecosia_bookmark);
             bookmarkMenuItemShortcut.setChecked(false);
             bookmarkMenuItemShortcut.setTitleCondensed(mContext.getString(R.string.menu_bookmark));
         }

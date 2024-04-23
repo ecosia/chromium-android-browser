@@ -366,6 +366,7 @@ public class SyncPromoController {
 
     /** Determines whether the Sync promo can be shown. */
     public boolean canShowSyncPromo() {
+		/* Ecosia: disable sync promo MOB-1875
         switch (mAccessPoint) {
             case SigninAccessPoint.BOOKMARK_MANAGER:
                 return canShowBookmarkPromo();
@@ -379,6 +380,8 @@ public class SyncPromoController {
                 assert false : "Unexpected value for access point: " + mAccessPoint;
                 return false;
         }
+		*/
+		return false;
     }
 
     private boolean canShowNTPPromo() {

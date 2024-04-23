@@ -17,6 +17,7 @@ import android.content.Intent;
 
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.ArgumentCaptor;
@@ -33,6 +34,7 @@ import org.chromium.ui.base.WindowAndroid;
 import org.chromium.ui.base.WindowAndroid.IntentCallback;
 
 /** Test whether metrics are correctly recorded by {@link DefaultBrowserPromoManager}. */
+@Ignore("Ecosia : Disable default browser promo tests as launch method is changed")
 @RunWith(BaseRobolectricTestRunner.class)
 @Batch(Batch.UNIT_TESTS)
 @EnableFeatures(ChromeFeatureList.DEFAULT_BROWSER_PROMO_ANDROID)
@@ -69,7 +71,7 @@ public class DefaultBrowserPromoManagerTest {
 
     @Test
     public void testRecordWhenNoDefault_OutcomeChromeDefault() {
-        testRecord(DefaultBrowserState.NO_DEFAULT, DefaultBrowserState.CHROME_DEFAULT);
+        testRecord(DefaultBrowserState.NO_DEFAULT, DefaultBrowserState.ECOSIA_DEFAULT);
     }
 
     @Test
@@ -84,7 +86,7 @@ public class DefaultBrowserPromoManagerTest {
 
     @Test
     public void testRecordWhenOtherDefault_OutComeChromeDefault() {
-        testRecord(DefaultBrowserState.OTHER_DEFAULT, DefaultBrowserState.CHROME_DEFAULT);
+        testRecord(DefaultBrowserState.OTHER_DEFAULT, DefaultBrowserState.ECOSIA_DEFAULT);
     }
 
     @Test
@@ -92,7 +94,7 @@ public class DefaultBrowserPromoManagerTest {
         when(mDefaultBrowserPromoDeps.getPromoCount()).thenReturn(1);
         testRecord(
                 DefaultBrowserState.OTHER_DEFAULT,
-                DefaultBrowserState.CHROME_DEFAULT,
+                DefaultBrowserState.ECOSIA_DEFAULT,
                 "Android.DefaultBrowserPromo.Outcome.OtherDefault.FirstPromo");
     }
 
@@ -101,7 +103,7 @@ public class DefaultBrowserPromoManagerTest {
         when(mDefaultBrowserPromoDeps.getPromoCount()).thenReturn(2);
         testRecord(
                 DefaultBrowserState.OTHER_DEFAULT,
-                DefaultBrowserState.CHROME_DEFAULT,
+                DefaultBrowserState.ECOSIA_DEFAULT,
                 "Android.DefaultBrowserPromo.Outcome.OtherDefault.SecondPromo");
     }
 
@@ -110,7 +112,7 @@ public class DefaultBrowserPromoManagerTest {
         when(mDefaultBrowserPromoDeps.getPromoCount()).thenReturn(3);
         testRecord(
                 DefaultBrowserState.OTHER_DEFAULT,
-                DefaultBrowserState.CHROME_DEFAULT,
+                DefaultBrowserState.ECOSIA_DEFAULT,
                 "Android.DefaultBrowserPromo.Outcome.OtherDefault.ThirdPromo");
     }
 
@@ -119,7 +121,7 @@ public class DefaultBrowserPromoManagerTest {
         when(mDefaultBrowserPromoDeps.getPromoCount()).thenReturn(4);
         testRecord(
                 DefaultBrowserState.OTHER_DEFAULT,
-                DefaultBrowserState.CHROME_DEFAULT,
+                DefaultBrowserState.ECOSIA_DEFAULT,
                 "Android.DefaultBrowserPromo.Outcome.OtherDefault.FourthPromo");
     }
 
@@ -128,7 +130,7 @@ public class DefaultBrowserPromoManagerTest {
         when(mDefaultBrowserPromoDeps.getPromoCount()).thenReturn(6);
         testRecord(
                 DefaultBrowserState.OTHER_DEFAULT,
-                DefaultBrowserState.CHROME_DEFAULT,
+                DefaultBrowserState.ECOSIA_DEFAULT,
                 "Android.DefaultBrowserPromo.Outcome.OtherDefault.FifthOrMorePromo");
     }
 

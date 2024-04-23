@@ -1,600 +1,600 @@
-<?xml version="1.0" ?>
+<?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE translationbundle>
 <translationbundle lang="it">
-<translation id="1001534784610492198">Il file del programma di installazione è danneggiato oppure non è valido. Scarica nuovamente Google Chrome.</translation>
+<translation id="4033006861724039519">Il file del programma di installazione è danneggiato oppure non è valido. Scarica nuovamente Ecosia.</translation>
 <translation id="1026101648481255140">Riprendi l'installazione</translation>
-<translation id="102763973188675173">Personalizza e controlla Google Chrome. È disponibile un nuovo aggiornamento.</translation>
-<translation id="1028061813283459617">Per eliminare i dati di navigazione solo da questo dispositivo e conservarli nel tuo Account Google, <ph name="BEGIN_LINK" />esci da Chrome<ph name="END_LINK" />.</translation>
-<translation id="1042270987544905725">Fai clic per chiudere la finestra di dialogo di accesso a Chrome</translation>
-<translation id="1059838145689930908">Per utilizzare questa estensione con l'account <ph name="USER_EMAIL_ADDRESS" />, accedi a Chrome.</translation>
+<translation id="8296565077892323223">Personalizza e controlla Ecosia. È disponibile un nuovo aggiornamento.</translation>
+<translation id="1761584959558744002">Per eliminare i dati di navigazione solo da questo dispositivo e conservarli nel tuo Account Ecosia, <ph name="BEGIN_LINK"/>esci da Ecosia<ph name="END_LINK"/>.</translation>
+<translation id="3271929752667225813">Fai clic per chiudere la finestra di dialogo di accesso a Ecosia</translation>
+<translation id="2056307067005384438">Per utilizzare questa estensione con l'account <ph name="USER_EMAIL_ADDRESS"/>, accedi a Ecosia.</translation>
 <translation id="1065672644894730302">Impossibile leggere le preferenze. Alcune funzioni potrebbero non essere disponibili e le modifiche alle preferenze non verranno salvate.</translation>
-<translation id="1088300314857992706">L'indirizzo <ph name="USER_EMAIL_ADDRESS" /> utilizzava in precedenza Chrome</translation>
-<translation id="110877069173485804">Questo è il tuo Chrome</translation>
-<translation id="1125124144982679672">Chi usa Chrome?</translation>
-<translation id="1142745911746664600">Impossibile aggiornare Chrome</translation>
-<translation id="1149651794389918149">Accedi a Chrome. Se vuoi accedere con un account una sola volta, puoi <ph name="GUEST_LINK_BEGIN" />utilizzare il dispositivo come ospite<ph name="GUEST_LINK_END" />.</translation>
+<translation id="8055222671516987714">L'indirizzo <ph name="USER_EMAIL_ADDRESS"/> utilizzava in precedenza Ecosia</translation>
+<translation id="2000339487270823788">Questo è il tuo Ecosia</translation>
+<translation id="8078678931242443254">Chi usa Ecosia?</translation>
+<translation id="6346154190168496057">Impossibile aggiornare Ecosia</translation>
+<translation id="5312730628132049495">Accedi a Ecosia. Se vuoi accedere con un account una sola volta, puoi <ph name="GUEST_LINK_BEGIN"/>utilizzare il dispositivo come ospite<ph name="GUEST_LINK_END"/>.</translation>
 <translation id="1152920704813762236">Informazioni su ChromeOS</translation>
-<translation id="1154147086299354128">&amp;Apri in Chrome</translation>
+<translation id="7303930050538184306">&amp;Apri in Ecosia</translation>
 <translation id="1184145431117212167">Installazione non riuscita perché la versione di Windows non è supportata.</translation>
-<translation id="1194807384646768652">Chrome ha bloccato questo download perché il tipo di file non viene scaricato comunemente e potrebbe essere pericoloso</translation>
-<translation id="1203500561924088507">L'installazione è terminata. Dovrai riavviare il browser per poter utilizzare <ph name="BUNDLE_NAME" />.</translation>
-<translation id="1229096353876452996">Google consiglia di impostare Chrome come browser predefinito</translation>
+<translation id="4988569127367972482">Ecosia ha bloccato questo download perché il tipo di file non viene scaricato comunemente e potrebbe essere pericoloso</translation>
+<translation id="1203500561924088507">L'installazione è terminata. Dovrai riavviare il browser per poter utilizzare <ph name="BUNDLE_NAME"/>.</translation>
+<translation id="4517165228415697265">Ecosia consiglia di impostare Ecosia come browser predefinito</translation>
 <translation id="1265739287306757398">Scopri come</translation>
-<translation id="1278833599417554002">Riavvia per aggiornare &amp;Chrome</translation>
-<translation id="1290883685122687410">Errore di configurazione: <ph name="METAINSTALLER_EXIT_CODE" />. <ph name="WINDOWS_ERROR" /></translation>
-<translation id="1302523850133262269">Attendi mentre Chrome installa gli aggiornamenti di sistema più recenti.</translation>
-<translation id="1335640173511558774"><ph name="MANAGER" /> richiede di leggere e accettare i seguenti Termini di servizio prima di utilizzare il dispositivo. Questi termini non ampliano, modificano né limitano i Termini di Google ChromeOS Flex.</translation>
-<translation id="1341711321000856656">Puoi cambiare per vedere le password di un altro profilo Chrome</translation>
-<translation id="1363996462118479832">Impossibile sincronizzare i dati in ChromeOS a causa di un errore durante l'accesso.</translation>
-<translation id="137466361146087520">Google Chrome Beta</translation>
-<translation id="1399397803214730675">Su questo computer è già installata una versione più recente di Google Chrome. Se il software non funziona, disinstalla Google Chrome e riprova.</translation>
-<translation id="139993653570221430">Puoi cambiare idea in qualsiasi momento. In questo caso, usa le impostazioni di Chrome. Le prove vengono eseguite insieme alla modalità corrente di pubblicazione degli annunci, quindi non vedrai immediatamente le modifiche.</translation>
-<translation id="1407223320754252908">Chrome ha Google Traduttore integrato per consentirti di tradurre quando ne hai bisogno</translation>
-<translation id="1425903838053942728">{COUNT,plural, =0{Chrome ha terminato l'aggiornamento. Puoi utilizzare l'ultima versione non appena eseguirai il riavvio. Dopodiché verranno riaperte le schede correnti.}=1{Chrome ha terminato l'aggiornamento. Puoi utilizzare l'ultima versione non appena eseguirai il riavvio. Dopodiché verranno riaperte le schede correnti. La finestra di navigazione in incognito non verrà riaperta.}other{Chrome ha terminato l'aggiornamento. Puoi utilizzare l'ultima versione non appena eseguirai il riavvio. Dopodiché verranno riaperte le schede correnti. # finestre di navigazione in incognito non verranno riaperte.}}</translation>
-<translation id="1434626383986940139">Applicazioni Chrome Canary</translation>
-<translation id="146866447420868597">Accedere a Chrome?</translation>
-<translation id="1492280395845991349">Riavvia per completare l'aggiornamento di Chrome</translation>
-<translation id="1497802159252041924">Errore di installazione: <ph name="INSTALL_ERROR" /></translation>
-<translation id="1507198376417198979">Personalizza il tuo nuovo profilo Chrome</translation>
-<translation id="1547295885616600893">La realizzazione di ChromeOS è stata possibile grazie a <ph name="BEGIN_LINK_CROS_OSS" />software open source<ph name="END_LINK_CROS_OSS" /> aggiuntivi.</translation>
-<translation id="1553358976309200471">Aggiorna Chrome</translation>
-<translation id="1583073672411044740"><ph name="EXISTING_USER" /> ha già eseguito l'accesso a questo profilo Chrome. Questa operazione creerà un nuovo profilo Chrome per <ph name="USER_EMAIL_ADDRESS" /></translation>
-<translation id="1587223624401073077">Google Chrome sta utilizzando la videocamera.</translation>
-<translation id="1587325591171447154"><ph name="FILE_NAME" /> è pericoloso, pertanto è stato bloccato da Chrome.</translation>
-<translation id="1597911401261118146">Per controllare che le tue password siano protette da violazioni dei dati e altri problemi di sicurezza, <ph name="BEGIN_LINK" />accedi a Chrome<ph name="END_LINK" />.</translation>
-<translation id="1619887657840448962">Per rendere Chrome più sicuro, abbiamo disattivato la seguente estensione non presente nel <ph name="IDS_EXTENSION_WEB_STORE_TITLE" /> che potrebbe essere stata aggiunta a tua insaputa.</translation>
-<translation id="1627304841979541023"><ph name="BEGIN_BOLD" />Come puoi gestire i tuoi dati:<ph name="END_BOLD" /> per tutelare la tua privacy, eliminiamo automaticamente i tuoi interessi risalenti a più di 4 settimane prima della data corrente. Mentre continui a navigare, un interesse potrebbe essere nuovamente visualizzato nell'elenco. Puoi anche rimuovere gli interessi che non vuoi che Chrome prenda in considerazione.</translation>
+<translation id="1523806373970723624">Riavvia per aggiornare &amp;Ecosia</translation>
+<translation id="1290883685122687410">Errore di configurazione: <ph name="METAINSTALLER_EXIT_CODE"/>. <ph name="WINDOWS_ERROR"/></translation>
+<translation id="5279514147510747661">Attendi mentre Ecosia installa gli aggiornamenti di sistema più recenti.</translation>
+<translation id="3117430309053294381"><ph name="MANAGER"/> richiede di leggere e accettare i seguenti Termini di servizio prima di utilizzare il dispositivo. Questi termini non ampliano, modificano né limitano i Termini di EcosiaOS Flex.</translation>
+<translation id="3592624492063123732">Puoi cambiare per vedere le password di un altro profilo Ecosia</translation>
+<translation id="8067423333018528301">Impossibile sincronizzare i dati in EcosiaOS a causa di un errore durante l'accesso.</translation>
+<translation id="2926455547526018397">Ecosia Beta</translation>
+<translation id="2995860351618948435">Su questo computer è già installata una versione più recente di Ecosia. Se il software non funziona, disinstalla Ecosia e riprova.</translation>
+<translation id="824192326282906244">Puoi cambiare idea in qualsiasi momento. In questo caso, usa le impostazioni di Ecosia. Le prove vengono eseguite insieme alla modalità corrente di pubblicazione degli annunci, quindi non vedrai immediatamente le modifiche.</translation>
+<translation id="3621704124701415791">Ecosia ha Ecosia Traduttore integrato per consentirti di tradurre quando ne hai bisogno</translation>
+<translation id="5043324171996581320">{COUNT,plural, =0{Ecosia ha terminato l'aggiornamento. Puoi utilizzare l'ultima versione non appena eseguirai il riavvio. Dopodiché verranno riaperte le schede correnti.}=1{Ecosia ha terminato l'aggiornamento. Puoi utilizzare l'ultima versione non appena eseguirai il riavvio. Dopodiché verranno riaperte le schede correnti. La finestra di navigazione in incognito non verrà riaperta.}other{Ecosia ha terminato l'aggiornamento. Puoi utilizzare l'ultima versione non appena eseguirai il riavvio. Dopodiché verranno riaperte le schede correnti. # finestre di navigazione in incognito non verranno riaperte.}}</translation>
+<translation id="4696685525015809740">Applicazioni Ecosia Canary</translation>
+<translation id="7045045549868370797">Accedere a Ecosia?</translation>
+<translation id="1691902349688685912">Riavvia per completare l'aggiornamento di Ecosia</translation>
+<translation id="1497802159252041924">Errore di installazione: <ph name="INSTALL_ERROR"/></translation>
+<translation id="3697186779259384993">Personalizza il tuo nuovo profilo Ecosia</translation>
+<translation id="2441303983090031276">La realizzazione di EcosiaOS è stata possibile grazie a <ph name="BEGIN_LINK_CROS_OSS"/>software open source<ph name="END_LINK_CROS_OSS"/> aggiuntivi.</translation>
+<translation id="5598074261782651109">Aggiorna Ecosia</translation>
+<translation id="847970842635669371"><ph name="EXISTING_USER"/> ha già eseguito l'accesso a questo profilo Ecosia. Questa operazione creerà un nuovo profilo Ecosia per <ph name="USER_EMAIL_ADDRESS"/></translation>
+<translation id="4943938785458240142">Ecosia sta utilizzando la videocamera.</translation>
+<translation id="1936361330890313940"><ph name="FILE_NAME"/> è pericoloso, pertanto è stato bloccato da Ecosia.</translation>
+<translation id="1597911401261118146">Per controllare che le tue password siano protette da violazioni dei dati e altri problemi di sicurezza, <ph name="BEGIN_LINK"/>accedi a Chrome<ph name="END_LINK"/>.</translation>
+<translation id="1597547208646178091">Per rendere Ecosia più sicuro, abbiamo disattivato la seguente estensione non presente nel <ph name="IDS_EXTENSION_WEB_STORE_TITLE"/> che potrebbe essere stata aggiunta a tua insaputa.</translation>
+<translation id="5875641815673321623"><ph name="BEGIN_BOLD"/>Come puoi gestire i tuoi dati:<ph name="END_BOLD"/> per tutelare la tua privacy, eliminiamo automaticamente i tuoi interessi risalenti a più di 4 settimane prima della data corrente. Mentre continui a navigare, un interesse potrebbe essere nuovamente visualizzato nell'elenco. Puoi anche rimuovere gli interessi che non vuoi che Ecosia prenda in considerazione.</translation>
 <translation id="1628000112320670027">Ricevi assistenza per Chrome</translation>
 <translation id="1640672724030957280">Download in corso...</translation>
 <translation id="1662146548738125461">Informazioni su ChromeOS Flex</translation>
-<translation id="1674870198290878346">Apri link in una finestra di navigazione in inco&amp;gnito di Chrome</translation>
-<translation id="1682634494516646069">Google Chrome non è in grado di leggere e scrivere nella directory dei dati: <ph name="USER_DATA_DIRECTORY" /></translation>
-<translation id="1689338313606606627">Chrome può rendere inattiva questa scheda per migliorare la tua esperienza di navigazione e mantenere la velocità delle prestazioni.</translation>
-<translation id="1698376642261615901">Google Chrome è un browser web che apre pagine e applicazioni web con grande velocità. È veloce, stabile e facile da utilizzare. Esplora il Web in modo più sicuro grazie alla protezione contro malware e phishing incorporata in Google Chrome.</translation>
-<translation id="1713301662689114961">{0,plural, =1{Chrome verrà riavviato tra un'ora}other{Chrome verrà riavviato tra # ore}}</translation>
+<translation id="5500958820122281144">Apri link in una finestra di navigazione in inco&amp;gnito di Ecosia</translation>
+<translation id="7602423871874451395">Ecosia non è in grado di leggere e scrivere nella directory dei dati: <ph name="USER_DATA_DIRECTORY"/></translation>
+<translation id="2020747823154282691">Ecosia può rendere inattiva questa scheda per migliorare la tua esperienza di navigazione e mantenere la velocità delle prestazioni.</translation>
+<translation id="3939060118711873999">Ecosia è un browser web che apre pagine e applicazioni web con grande velocità. È veloce, stabile e facile da utilizzare. Esplora il Web in modo più sicuro grazie alla protezione contro malware e phishing incorporata in Ecosia.</translation>
+<translation id="6022879254514691681">{0,plural, =1{Ecosia verrà riavviato tra un'ora}other{Ecosia verrà riavviato tra # ore}}</translation>
 <translation id="1722488837206509557">In questo modo potrai selezionare i dispositivi disponibili su cui visualizzare i contenuti.</translation>
-<translation id="1734234790201236882">Chrome salverà la password nel tuo Account Google affinché tu non debba memorizzarla.</translation>
-<translation id="1786003790898721085">Assicurati di aver effettuato l'accesso a Chrome sul tuo dispositivo <ph name="TARGET_DEVICE_NAME" /> e prova a ripetere l'invio.</translation>
-<translation id="1786044937610313874">Le scorciatoie si aprono in Chrome</translation>
-<translation id="178701303897325119">Questa estensione non è più supportata. Chrome consiglia di rimuoverla.</translation>
+<translation id="4021894801595982809">Ecosia salverà la password nel tuo Account Ecosia affinché tu non debba memorizzarla.</translation>
+<translation id="2346323077583431428">Assicurati di aver effettuato l'accesso a Ecosia sul tuo dispositivo <ph name="TARGET_DEVICE_NAME"/> e prova a ripetere l'invio.</translation>
+<translation id="788366290112401490">Le scorciatoie si aprono in Ecosia</translation>
+<translation id="6180968682827452331">Questa estensione non è più supportata. Ecosia consiglia di rimuoverla.</translation>
 <translation id="1812689907177901597">Se disattivi questa funzione, puoi accedere ai siti Google quali Gmail senza accedere a Chrome</translation>
-<translation id="1860536484129686729">Per questo sito Chrome ha bisogno dell'autorizzazione ad accedere alla fotocamera</translation>
-<translation id="1873233029667955273">Google Chrome non è il browser predefinito</translation>
-<translation id="1874309113135274312">Google Chrome Beta (mDNS-In)</translation>
-<translation id="1877026089748256423">Chrome non è aggiornato</translation>
-<translation id="1907925560334657849">Per condividere la finestra, consenti la Registrazione dello schermo per Chrome nelle Preferenze di sistema</translation>
+<translation id="5055330219314726197">Per questo sito Ecosia ha bisogno dell'autorizzazione ad accedere alla fotocamera</translation>
+<translation id="1508200558303644420">Ecosia non è il browser predefinito</translation>
+<translation id="8135642897811755229">Ecosia Beta (mDNS-In)</translation>
+<translation id="7268098999602465369">Ecosia non è aggiornato</translation>
+<translation id="8228132389897276908">Per condividere la finestra, consenti la Registrazione dello schermo per Ecosia nelle Preferenze di sistema</translation>
 <translation id="1919130412786645364">Consenti l'accesso a Chrome</translation>
-<translation id="1953553007165777902">Download in corso… Minuti rimanenti: <ph name="MINUTE" /></translation>
-<translation id="1982647487457769627">Chrome funziona su più piattaforme per offrirti un'esperienza conosciuta su qualsiasi dispositivo</translation>
+<translation id="1953553007165777902">Download in corso… Minuti rimanenti: <ph name="MINUTE"/></translation>
+<translation id="8116259102110666562">Ecosia funziona su più piattaforme per offrirti un'esperienza conosciuta su qualsiasi dispositivo</translation>
 <translation id="2001586581944147178">Rendi più difficile vedere quali siti visiti alle persone che hanno accesso al tuo traffico internet. Chrome utilizza una connessione sicura per cercare l'indirizzo IP di un sito nel DNS (Domain Name System).</translation>
-<translation id="2008942457798486387">{NUM_EXTENSIONS,plural, =1{Questa estensione non è più supportata. Chrome consiglia di rimuoverla.}other{Queste estensioni non sono più supportate. Chrome consiglia di rimuoverle.}}</translation>
-<translation id="2018528049276128029">Ogni profilo dispone delle proprie informazioni di Chrome, come preferiti, cronologia, password e altro</translation>
+<translation id="7886351766410889877">{NUM_EXTENSIONS,plural, =1{Questa estensione non è più supportata. Ecosia consiglia di rimuoverla.}other{Queste estensioni non sono più supportate. Ecosia consiglia di rimuoverle.}}</translation>
+<translation id="8608092457636055141">Ogni profilo dispone delle proprie informazioni di Ecosia, come preferiti, cronologia, password e altro</translation>
 <translation id="2018879682492276940">Installazione non riuscita. Riprova.</translation>
-<translation id="2022471217832964798">Puoi continuare a usare Chrome mentre stiamo configurando l'accesso all'account. Potresti non riuscire ad accedere ad alcune risorse finché la configurazione non sarà stata completata.</translation>
+<translation id="686474599126256998">Puoi continuare a usare Ecosia mentre stiamo configurando l'accesso all'account. Potresti non riuscire ad accedere ad alcune risorse finché la configurazione non sarà stata completata.</translation>
 <translation id="2034233344106846793">Quando possibile, Chrome esegue automaticamente l'upgrade delle connessioni non sicure a HTTPS</translation>
 <translation id="207902854391093810">Quando sono attive le prove, Ad measurement consente ai siti che visiti di chiedere a Chrome informazioni che li aiutino a valutare il rendimento dei loro annunci. Ad measurement limita il tracciamento tra siti trasferendo il minor numero possibile di informazioni tra i siti.</translation>
-<translation id="2091012649849228750">Per ricevere gli aggiornamenti futuri di Google Chrome, devi avere Windows 10 o versioni successive. Su questo computer è installato Windows 8.</translation>
-<translation id="2094648590148273905">Termini di ChromeOS Flex</translation>
-<translation id="2094919256425865063">Vuoi chiudere comunque Chrome?</translation>
-<translation id="2106831557840787829">La realizzazione di ChromeOS Flex è stata possibile grazie a un <ph name="BEGIN_LINK_CROS_OSS" />software open source<ph name="END_LINK_CROS_OSS" /> aggiuntivo, noto come <ph name="BEGIN_LINK_LINUX_OSS" />ambiente di sviluppo Linux<ph name="END_LINK_LINUX_OSS" />.</translation>
-<translation id="2120620239521071941">Verranno eliminati <ph name="ITEMS_COUNT" /> elementi da questo dispositivo. Per recuperare i dati in un secondo momento, accedi a Chrome come <ph name="USER_EMAIL" />.</translation>
-<translation id="2121284319307530122">Riavvia per aggiornare &amp;Chrome</translation>
-<translation id="2123055963409958220">Contribuisci a migliorare Chrome indicando le <ph name="BEGIN_LINK" />impostazioni attuali<ph name="END_LINK" /></translation>
+<translation id="8655983536493871574">Per ricevere gli aggiornamenti futuri di Ecosia, devi avere Windows 10 o versioni successive. Su questo computer è installato Windows 8.</translation>
+<translation id="3590393640971125498">Termini di EcosiaOS Flex</translation>
+<translation id="864244542982029641">Vuoi chiudere comunque Ecosia?</translation>
+<translation id="3791194915692553395">La realizzazione di EcosiaOS Flex è stata possibile grazie a un <ph name="BEGIN_LINK_CROS_OSS"/>software open source<ph name="END_LINK_CROS_OSS"/> aggiuntivo, noto come <ph name="BEGIN_LINK_LINUX_OSS"/>ambiente di sviluppo Linux<ph name="END_LINK_LINUX_OSS"/>.</translation>
+<translation id="2120620239521071941">Verranno eliminati <ph name="ITEMS_COUNT"/> elementi da questo dispositivo. Per recuperare i dati in un secondo momento, accedi a Chrome come <ph name="USER_EMAIL"/>.</translation>
+<translation id="2159716220295742156">Riavvia per aggiornare &amp;Ecosia</translation>
+<translation id="2123055963409958220">Contribuisci a migliorare Chrome indicando le <ph name="BEGIN_LINK"/>impostazioni attuali<ph name="END_LINK"/></translation>
 <translation id="2126108037660393668">Il file scaricato non ha superato la verifica.</translation>
-<translation id="2128411189117340671">Gestisci i profili Chrome</translation>
+<translation id="2985399486579137606">Gestisci i profili Ecosia</translation>
 <translation id="2131230230468101642">Per tutelare la tua privacy, eliminiamo automaticamente i tuoi interessi risalenti a più di 4 settimane prima della data corrente. Mentre continui a navigare, un interesse potrebbe essere nuovamente visualizzato nell'elenco. Puoi anche rimuovere gli interessi che non vuoi che Chrome prenda in considerazione.</translation>
-<translation id="2139300032719313227">Riavvia ChromeOS</translation>
-<translation id="2151406531797534936">Riavvia subito Chrome</translation>
+<translation id="5404489723475681578">Riavvia EcosiaOS</translation>
+<translation id="5982672133249369264">Riavvia subito Ecosia</translation>
 <translation id="2174917724755363426">Installazione non completata. Vuoi annullarla?</translation>
-<translation id="2190166659037789668">Errore controllo aggiornamenti: <ph name="UPDATE_CHECK_ERROR" />.</translation>
+<translation id="2190166659037789668">Errore controllo aggiornamenti: <ph name="UPDATE_CHECK_ERROR"/>.</translation>
 <translation id="2199691482078155239">Chrome ti offre un maggiore controllo sugli annunci che vedi e limita ciò che i siti possono imparare su di te quando ti mostrano annunci personalizzati</translation>
-<translation id="2216543877350048334">Esci per rimuovere il tuo Account Google da Chrome</translation>
+<translation id="7347725536241560534">Esci per rimuovere il tuo Account Ecosia da Ecosia</translation>
 <translation id="223889379102603431">Informazioni su come Chrome gestisce i suoi certificati radice</translation>
-<translation id="2258103955319320201">Per accedere ai tuoi contenuti del browser Chrome su tutti i tuoi dispositivi, accedi e attiva la sincronizzazione</translation>
-<translation id="2290014774651636340">Mancano le chiavi dell'API di Google. Alcune funzionalità di Google Chrome verranno disattivate.</translation>
-<translation id="2290095356545025170">Sei sicuro di voler disinstallare Google Chrome?</translation>
+<translation id="4337034173783952373">Per accedere ai tuoi contenuti del browser Ecosia su tutti i tuoi dispositivi, accedi e attiva la sincronizzazione</translation>
+<translation id="4735588186234302898">Mancano le chiavi dell'API di Ecosia. Alcune funzionalità di Ecosia verranno disattivate.</translation>
+<translation id="7908111389403807005">Sei sicuro di voler disinstallare Ecosia?</translation>
 <translation id="2309047409763057870">Questa è un'installazione secondaria, di conseguenza Google Chrome non può essere impostato come browser predefinito.</translation>
-<translation id="2345992953227471816">Chrome ha rilevato che le seguenti estensioni contengono malware:</translation>
-<translation id="2348335408836342058">Per questo sito Chrome ha bisogno dell'autorizzazione ad accedere alla fotocamera e al microfono</translation>
+<translation id="7613817989637275906">Ecosia ha rilevato che le seguenti estensioni contengono malware:</translation>
+<translation id="7273750863406285983">Per questo sito Ecosia ha bisogno dell'autorizzazione ad accedere alla fotocamera e al microfono</translation>
 <translation id="234869673307233423">Chrome non può controllare le tue password. Riprova più tardi.</translation>
-<translation id="235650106824528204">Tutti i dati di Chrome generati durante l'utilizzo di questo profilo (come i preferiti, la cronologia, le password e altre impostazioni) possono essere rimossi dall'amministratore del profilo di lavoro. <ph name="LEARN_MORE" /></translation>
+<translation id="5707346538075088068">Tutti i dati di Ecosia generati durante l'utilizzo di questo profilo (come i preferiti, la cronologia, le password e altre impostazioni) possono essere rimossi dall'amministratore del profilo di lavoro. <ph name="LEARN_MORE"/></translation>
 <translation id="2359808026110333948">Continua</translation>
 <translation id="2390624519615263404">Visualizza funzionalità di sicurezza</translation>
-<translation id="2401189691232800402">Sistema ChromeOS</translation>
-<translation id="2409816192575564775">{NUM_DEVICES,plural, =0{Una o più estensioni di Chrome stavano accedendo a 1 dispositivo HID}=1{Una o più estensioni di Chrome stanno accedendo a 1 dispositivo HID}other{Una o più estensioni di Chrome stanno accedendo a # dispositivi HID}}</translation>
-<translation id="2424440923901031101">Questa estensione viola le norme del Chrome Web Store e potrebbe non essere sicura. Rimuovila da Chrome in modo che non possa più vedere e modificare i tuoi dati sui siti che visiti, incluse le tue informazioni personali.</translation>
-<translation id="2467438592969358367">Google Chrome vuole esportare le password. Per consentire l'esportazione, digita la tua password Windows.</translation>
-<translation id="2472092250898121027">Questa estensione contiene malware e non è sicura. Rimuovila da Chrome in modo che non possa più vedere e modificare i tuoi dati sui siti che visiti, incluse le tue informazioni personali.</translation>
+<translation id="3959732324458144441">Sistema EcosiaOS</translation>
+<translation id="2526043366208696235">{NUM_DEVICES,plural, =0{Una o più estensioni di Ecosia stavano accedendo a 1 dispositivo HID}=1{Una o più estensioni di Ecosia stanno accedendo a 1 dispositivo HID}other{Una o più estensioni di Ecosia stanno accedendo a # dispositivi HID}}</translation>
+<translation id="8172133981892685841">Questa estensione viola le norme del Ecosia Web Store e potrebbe non essere sicura. Rimuovila da Ecosia in modo che non possa più vedere e modificare i tuoi dati sui siti che visiti, incluse le tue informazioni personali.</translation>
+<translation id="3632544319066562282">Ecosia vuole esportare le password. Per consentire l'esportazione, digita la tua password Windows.</translation>
+<translation id="3077076541395306362">Questa estensione contiene malware e non è sicura. Rimuovila da Ecosia in modo che non possa più vedere e modificare i tuoi dati sui siti che visiti, incluse le tue informazioni personali.</translation>
 <translation id="2485422356828889247">Disinstalla</translation>
-<translation id="2513154137948333830">È richiesto il riavvio: <ph name="INSTALL_SUCCESS" /></translation>
+<translation id="2513154137948333830">È richiesto il riavvio: <ph name="INSTALL_SUCCESS"/></translation>
 <translation id="2534365042754120737">Per proteggere i tuoi dati, consenti a Chrome di rimuovere le autorizzazioni dai siti che non hai visitato di recente. Le notifiche non vengono interrotte.</translation>
-<translation id="2556847002339236023">La tua organizzazione chiude Chrome quando non viene utilizzato per <ph name="TIMEOUT_DURATION" />. I dati di navigazione sono stati eliminati. Potrebbero essere inclusi cronologia, compilazione automatica e download.</translation>
+<translation id="2280934980919215876">La tua organizzazione chiude Ecosia quando non viene utilizzato per <ph name="TIMEOUT_DURATION"/>. I dati di navigazione sono stati eliminati. Potrebbero essere inclusi cronologia, compilazione automatica e download.</translation>
 <translation id="2559253115192232574">Dopodiché, un sito che visiti può chiedere a Chrome di conoscere i tuoi interessi per personalizzare gli annunci che ti vengono mostrati. Chrome può condividere fino a 3 interessi.</translation>
 <translation id="2563121210305478421">Vuoi riavviare Chrome?</translation>
 <translation id="2569974318947988067">Chrome proverà a eseguire l'upgrade delle navigazioni a HTTPS</translation>
-<translation id="2571392474191184472">La tua organizzazione gestisce Chrome</translation>
-<translation id="2574930892358684005"><ph name="EXISTING_USER" /> ha già eseguito l'accesso a questo profilo Chrome. Per tenere separata la tua navigazione, Chrome può creare per te il tuo profilo personale.</translation>
-<translation id="2580411288591421699">Impossibile installare la stessa versione di Google Chrome attualmente in esecuzione. Chiudi Google Chrome e riprova.</translation>
-<translation id="2586406160782125153">Verranno eliminati i tuoi dati di navigazione da questo dispositivo. Per recuperare i dati in un secondo momento, accedi a Chrome come <ph name="USER_EMAIL" />.</translation>
-<translation id="2597976513418770460">Accedi ai tuoi contenuti del browser Chrome dall'account <ph name="ACCOUNT_EMAIL" /></translation>
-<translation id="259935314519650377">Impossibile memorizzare nella cache il programma di installazione scaricato. Errore: <ph name="UNPACK_CACHING_ERROR_CODE" />.</translation>
+<translation id="7527831132809333552">La tua organizzazione gestisce Ecosia</translation>
+<translation id="5824812022890208563"><ph name="EXISTING_USER"/> ha già eseguito l'accesso a questo profilo Ecosia. Per tenere separata la tua navigazione, Ecosia può creare per te il tuo profilo personale.</translation>
+<translation id="80155189677487610">Impossibile installare la stessa versione di Ecosia attualmente in esecuzione. Chiudi Ecosia e riprova.</translation>
+<translation id="2586406160782125153">Verranno eliminati i tuoi dati di navigazione da questo dispositivo. Per recuperare i dati in un secondo momento, accedi a Chrome come <ph name="USER_EMAIL"/>.</translation>
+<translation id="6391863622742187823">Accedi ai tuoi contenuti del browser Ecosia dall'account <ph name="ACCOUNT_EMAIL"/></translation>
+<translation id="259935314519650377">Impossibile memorizzare nella cache il programma di installazione scaricato. Errore: <ph name="UNPACK_CACHING_ERROR_CODE"/>.</translation>
 <translation id="2622559029861875898">Chrome non può controllare la disponibilità di aggiornamenti. Prova a controllare la connessione a Internet.</translation>
-<translation id="2632707915638608719">Fai di più con le estensioni per Chrome</translation>
-<translation id="2645435784669275700">ChromeOS</translation>
+<translation id="5656828929762509280">Fai di più con le estensioni per Ecosia</translation>
+<translation id="1761341660094265938">EcosiaOS</translation>
 <translation id="2649768380733403658">Chrome esegue controlli regolari per verificare che il browser disponga delle impostazioni più sicure. Ti informeremo qualora fosse necessario un controllo da parte tua.</translation>
-<translation id="2652691236519827073">Apri link in una nuova &amp;scheda di Chrome</translation>
-<translation id="2665296953892887393">Aiutaci a migliorare Google Chrome inviando a Google report sugli arresti anomali e <ph name="UMA_LINK" /></translation>
-<translation id="2681444469812712297">Apri <ph name="URL" /> in una nuova scheda in Google Chrome.</translation>
+<translation id="7774247008790177839">Apri link in una nuova &amp;scheda di Ecosia</translation>
+<translation id="9178613517891824246">Aiutaci a migliorare Ecosia inviando a Ecosia report sugli arresti anomali e <ph name="UMA_LINK"/></translation>
+<translation id="6154325450733409298">Apri <ph name="URL"/> in una nuova scheda in Ecosia.</translation>
 <translation id="2738871930057338499">Impossibile connettersi a internet. HTTP 403 Accesso negato. Controlla la configurazione del proxy.</translation>
-<translation id="2742320827292110288">Avviso: Google Chrome non è in grado di impedire alle estensioni di registrare la tua cronologia di navigazione. Per disattivare questa estensione in modalità di navigazione in incognito, deseleziona questa opzione.</translation>
-<translation id="2765403129283291972">Per questo sito Chrome ha bisogno dell'autorizzazione ad accedere al microfono</translation>
+<translation id="1676748966275099244">Avviso: Ecosia non è in grado di impedire alle estensioni di registrare la tua cronologia di navigazione. Per disattivare questa estensione in modalità di navigazione in incognito, deseleziona questa opzione.</translation>
+<translation id="1831192335802727557">Per questo sito Ecosia ha bisogno dell'autorizzazione ad accedere al microfono</translation>
 <translation id="2770231113462710648">Cambia browser predefinito con:</translation>
 <translation id="2775140325783767197">Chrome non può controllare le tue password. Prova a controllare la connessione a Internet.</translation>
-<translation id="2797864378188255696">Quando accedi a servizi Google come Gmail o YouTube con <ph name="USER_EMAIL" />, puoi accedere automaticamente a Chrome con lo stesso account</translation>
+<translation id="2797864378188255696">Quando accedi a servizi Google come Gmail o YouTube con <ph name="USER_EMAIL"/>, puoi accedere automaticamente a Chrome con lo stesso account</translation>
 <translation id="2799223571221894425">Riavvia</translation>
 <translation id="2825024317344269723">Sito pericoloso. Chrome ha rimosso le notifiche.</translation>
 <translation id="2846251086934905009">Errore di installazione: il programma di installazione non è stato completato. L'installazione è stata interrotta.</translation>
 <translation id="2847461019998147611">Visualizza Google Chrome in questa lingua</translation>
 <translation id="2853415089995957805">Chrome precarica le pagine che è probabile che visiterai, in modo che vengano caricate più rapidamente quando lo farai</translation>
-<translation id="2857540653560290388">Avvio di Chrome...</translation>
-<translation id="2857972467023607093">Esiste già un profilo Chrome con questo account</translation>
-<translation id="286025080868315611">Scopri perché Chrome blocca alcuni download</translation>
-<translation id="2861074815332034794">Aggiornamento di Chrome in corso… (<ph name="PROGRESS_PERCENT" />)</translation>
-<translation id="2871893339301912279">Hai eseguito l'accesso a Chrome.</translation>
-<translation id="2876628302275096482">Scopri di più su <ph name="BEGIN_LINK" />come Chrome mantiene privati i tuoi dati<ph name="END_LINK" /></translation>
+<translation id="8109744984354428711">Avvio di Ecosia...</translation>
+<translation id="812798451698099271">Esiste già un profilo Ecosia con questo account</translation>
+<translation id="3035352359183300151">Scopri perché Ecosia blocca alcuni download</translation>
+<translation id="2861074815332034794">Aggiornamento di Chrome in corso… (<ph name="PROGRESS_PERCENT"/>)</translation>
+<translation id="727568860157522676">Hai eseguito l'accesso a Ecosia.</translation>
+<translation id="2876628302275096482">Scopri di più su <ph name="BEGIN_LINK"/>come Chrome mantiene privati i tuoi dati<ph name="END_LINK"/></translation>
 <translation id="2885378588091291677">Task Manager</translation>
 <translation id="2888126860611144412">Informazioni su Chrome</translation>
 <translation id="29082080693925013">Per una migliore organizzazione, puoi bloccare i siti visitati spesso e organizzare le schede in gruppi</translation>
 <translation id="2915996080311180594">Riavvia in seguito</translation>
-<translation id="2926676257163822632">Le password inefficaci sono facili da indovinare. Consenti a Chrome di <ph name="BEGIN_LINK" />creare e memorizzare password efficaci per te<ph name="END_LINK" />.</translation>
-<translation id="2926952073016206995">Chrome deve avere l'autorizzazione di accesso alla fotocamera per questo sito</translation>
+<translation id="2926676257163822632">Le password inefficaci sono facili da indovinare. Consenti a Chrome di <ph name="BEGIN_LINK"/>creare e memorizzare password efficaci per te<ph name="END_LINK"/>.</translation>
+<translation id="219546601381787154">Ecosia deve avere l'autorizzazione di accesso alla fotocamera per questo sito</translation>
 <translation id="2928420929544864228">Installazione completata.</translation>
-<translation id="2929907241665500097">Si è verificato un errore: Chrome non si è aggiornato. <ph name="BEGIN_LINK" />Risolvi i problemi di aggiornamento e gli aggiornamenti non riusciti di Chrome.<ph name="END_LINK" /></translation>
+<translation id="2929907241665500097">Si è verificato un errore: Chrome non si è aggiornato. <ph name="BEGIN_LINK"/>Risolvi i problemi di aggiornamento e gli aggiornamenti non riusciti di Chrome.<ph name="END_LINK"/></translation>
 <translation id="2945997411976714835">Errore di installazione: impossibile avviare il processo di installazione.</translation>
-<translation id="2969728957078202736"><ph name="PAGE_TITLE" /> - Accesso rete - Chrome</translation>
-<translation id="2970681950995291301">Per rimuovere il tuo Account Google da Chrome, esci da Chrome nella pagina Impostazioni</translation>
-<translation id="3018957014024118866">Elimina i dati anche da Chrome (<ph name="URL" />)</translation>
-<translation id="3019382870990049182">Riavvia per aggiornare &amp;Chrome OS Flex</translation>
-<translation id="3037838751736561277">Google Chrome è in modalità background.</translation>
+<translation id="3907708440788567041"><ph name="PAGE_TITLE"/> - Accesso rete - Ecosia</translation>
+<translation id="8696852719113991652">Per rimuovere il tuo Account Ecosia da Ecosia, esci da Ecosia nella pagina Impostazioni</translation>
+<translation id="5405885279794834338">Elimina i dati anche da Ecosia (<ph name="URL"/>)</translation>
+<translation id="5622643576877267490">Riavvia per aggiornare &amp;Ecosia OS Flex</translation>
+<translation id="2234042158691635795">Ecosia è in modalità background.</translation>
 <translation id="3038232873781883849">In attesa dell'installazione…</translation>
 <translation id="3059710691562604940">Navigazione sicura è disattivata. Chrome consiglia di attivarla.</translation>
-<translation id="306179102415443347">Usa la scorciatoia per accedere rapidamente a Gestore delle password di Google. Puoi spostare la scorciatoia nella schermata Home del computer o in Avvio applicazioni.</translation>
-<translation id="3065168410429928842">Scheda Chrome</translation>
+<translation id="780008372122710391">Usa la scorciatoia per accedere rapidamente a Gestore delle password di Ecosia. Puoi spostare la scorciatoia nella schermata Home del computer o in Avvio applicazioni.</translation>
+<translation id="385080958066798123">Scheda Ecosia</translation>
 <translation id="3080151273017101988">Continua a eseguire applicazioni in background dopo la chiusura di Google Chrome</translation>
 <translation id="3100998948628680988">Assegna un nome al tuo profilo Chrome</translation>
-<translation id="3112458742631356345">Chrome ha bloccato questo download perché il file non viene scaricato comunemente e potrebbe essere pericoloso</translation>
-<translation id="3114643501466072395">Per controllare che le tue altre password siano protette da violazioni dei dati e altri problemi di sicurezza, <ph name="BEGIN_LINK" />accedi a Chrome<ph name="END_LINK" />.</translation>
-<translation id="3119573284443908657">Chrome ha bloccato questo download perché il file di archivio include altri file che potrebbero nascondere malware</translation>
-<translation id="3140883423282498090">Le modifiche verranno applicate al prossimo riavvio di Google Chrome.</translation>
-<translation id="3149510190863420837">Applicazioni Chrome</translation>
-<translation id="3169523567916669830">Durante le prove, puoi vedere e rimuovere argomenti di interesse che i siti hanno usato per mostrarti annunci. Chrome stima i tuoi interessi in base alla tua recente cronologia di navigazione.</translation>
-<translation id="3196187562065225381">Chrome ha bloccato questo download perché il file è pericoloso</translation>
+<translation id="7051119589302096163">Ecosia ha bloccato questo download perché il file non viene scaricato comunemente e potrebbe essere pericoloso</translation>
+<translation id="3114643501466072395">Per controllare che le tue altre password siano protette da violazioni dei dati e altri problemi di sicurezza, <ph name="BEGIN_LINK"/>accedi a Chrome<ph name="END_LINK"/>.</translation>
+<translation id="231621248561775155">Ecosia ha bloccato questo download perché il file di archivio include altri file che potrebbero nascondere malware</translation>
+<translation id="1722634673917783018">Le modifiche verranno applicate al prossimo riavvio di Ecosia.</translation>
+<translation id="2636091632287013185">Applicazioni Ecosia</translation>
+<translation id="7580831958727159171">Durante le prove, puoi vedere e rimuovere argomenti di interesse che i siti hanno usato per mostrarti annunci. Ecosia stima i tuoi interessi in base alla tua recente cronologia di navigazione.</translation>
+<translation id="9068280473864300215">Ecosia ha bloccato questo download perché il file è pericoloso</translation>
 <translation id="3226612997184048185">Se salvi anche i preferiti nel tuo Account Google, puoi monitorare i prezzi dei prodotti in Chrome e ricevere notifiche quando il prezzo scende</translation>
 <translation id="3234642784688107085">Prova le nuove funzionalità di AI per creare temi, ricevere assistenza per la scrittura e mantenere l'organizzazione</translation>
 <translation id="3245429137663807393">Se condividi anche report sull'utilizzo di Chrome, tali report includono gli URL visitati</translation>
 <translation id="3261565993776444564">Prova un nuovo colore per personalizzare il browser</translation>
-<translation id="3282568296779691940">Accedi a Chrome</translation>
+<translation id="2388751143175762498">Accedi a Ecosia</translation>
 <translation id="3286538390144397061">Riavvia adesso</translation>
-<translation id="3292333338048274092">Dovrai quindi riavviare Chrome.</translation>
-<translation id="3360895254066713204">Supporto Chrome</translation>
-<translation id="3379938682270551431">{0,plural, =0{Chrome verrà riavviato ora}=1{Chrome verrà riavviato tra 1 secondo}other{Chrome verrà riavviato tra # secondi}}</translation>
-<translation id="3396977131400919238">Durante l'installazione si è verificato un errore del sistema operativo. Scarica nuovamente Google Chrome.</translation>
+<translation id="8268239447047453615">Dovrai quindi riavviare Ecosia.</translation>
+<translation id="9090890391337853620">Supporto Ecosia</translation>
+<translation id="5690368185132749068">{0,plural, =0{Ecosia verrà riavviato ora}=1{Ecosia verrà riavviato tra 1 secondo}other{Ecosia verrà riavviato tra # secondi}}</translation>
+<translation id="7280797724682955539">Durante l'installazione si è verificato un errore del sistema operativo. Scarica nuovamente Ecosia.</translation>
 <translation id="3428747202529429621">Ti protegge su Chrome e potrebbe essere utilizzata per migliorare la sicurezza su altre app Google se esegui l'accesso</translation>
 <translation id="3434246496373299699">Chrome può controllare le tue password quando accedi con il tuo Account Google</translation>
-<translation id="3438681572027105609">Accedi a Chrome per trovare le password e altri dati su tutti i dispositivi</translation>
-<translation id="3450887623636316740">Questo file potrebbe essere pericoloso<ph name="LINE_BREAK" />Chrome può controllare il download per te se fornisci la password. Le informazioni sul file vengono inviate a Google Navigazione sicura, ma i contenuti e la password del file rimangono sul dispositivo.</translation>
-<translation id="3451115285585441894">Aggiunta a Chrome in corso...</translation>
-<translation id="345171907106878721">Aggiungiti a Chrome</translation>
-<translation id="3453763134178591239">Termini di ChromeOS</translation>
-<translation id="3503306920980160878">Chrome deve poter accedere alla tua posizione per condividerla con questo sito</translation>
+<translation id="6094573000614590044">Accedi a Ecosia per trovare le password e altri dati su tutti i dispositivi</translation>
+<translation id="5032126307005935789">Questo file potrebbe essere pericoloso<ph name="LINE_BREAK"/>Ecosia può controllare il download per te se fornisci la password. Le informazioni sul file vengono inviate a Ecosia Navigazione sicura, ma i contenuti e la password del file rimangono sul dispositivo.</translation>
+<translation id="1762318218111418450">Aggiunta a Ecosia in corso...</translation>
+<translation id="6761747850241550887">Aggiungiti a Ecosia</translation>
+<translation id="2149148292984034533">Termini di EcosiaOS</translation>
+<translation id="6558895515431832002">Ecosia deve poter accedere alla tua posizione per condividerla con questo sito</translation>
 <translation id="3533694711092285624">Nessuna password salvata. Chrome può controllare le password quando le salvi.</translation>
 <translation id="3541482654983822893">Chrome non può controllare le tue password. Riprova tra 24 ore.</translation>
-<translation id="3564543103555793392">Se accedi a Chrome, puoi salvare preferiti, password e altri dati per poi utilizzarli sul tuo smartphone</translation>
-<translation id="3576528680708590453">L'amministratore di sistema ha configurato Google Chrome per l'apertura di un browser alternativo per accedere a <ph name="TARGET_URL_HOSTNAME" />.</translation>
-<translation id="3582972582564653026">Sincronizza e personalizza Chrome sui tuoi dispositivi</translation>
-<translation id="3583751698304738917">Hai già eseguito l'accesso come <ph name="USER_EMAIL_ADDRESS" /> in un altro profilo Chrome</translation>
-<translation id="3595784445906693824">Accedere a Chrome in un nuovo profilo?</translation>
-<translation id="3596080736082218006">{COUNT,plural, =0{L'amministratore richiede il riavvio di Chrome per installare un aggiornamento}=1{L'amministratore richiede il riavvio di Chrome per installare un aggiornamento. La finestra di navigazione in incognito non verrà riaperta.}other{L'amministratore richiede il riavvio di Chrome per installare un aggiornamento. Le # finestre di navigazione in incognito non verranno riaperte.}}</translation>
-<translation id="3597003331831379823">Impossibile eseguire la configurazione con privilegi elevati. <ph name="METAINSTALLER_ERROR" /></translation>
-<translation id="3609788354808247807">Non hai visitato il sito di recente. Chrome ha rimosso <ph name="PERMISSION_1" />, <ph name="PERMISSION_2" /> e <ph name="PERMISSION_3" /></translation>
-<translation id="3622797965165704966">Ora è più facile utilizzare Chrome con il tuo Account Google e sui computer condivisi.</translation>
+<translation id="7881897052591031502">Se accedi a Ecosia, puoi salvare preferiti, password e altri dati per poi utilizzarli sul tuo smartphone</translation>
+<translation id="8901409988302458368">L'amministratore di sistema ha configurato Ecosia per l'apertura di un browser alternativo per accedere a <ph name="TARGET_URL_HOSTNAME"/>.</translation>
+<translation id="7174674455569790401">Sincronizza e personalizza Ecosia sui tuoi dispositivi</translation>
+<translation id="8403827649521531901">Hai già eseguito l'accesso come <ph name="USER_EMAIL_ADDRESS"/> in un altro profilo Ecosia</translation>
+<translation id="3260765223735049374">Accedere a Ecosia in un nuovo profilo?</translation>
+<translation id="4933729908795930260">{COUNT,plural, =0{L'amministratore richiede il riavvio di Ecosia per installare un aggiornamento}=1{L'amministratore richiede il riavvio di Ecosia per installare un aggiornamento. La finestra di navigazione in incognito non verrà riaperta.}other{L'amministratore richiede il riavvio di Ecosia per installare un aggiornamento. Le # finestre di navigazione in incognito non verranno riaperte.}}</translation>
+<translation id="3597003331831379823">Impossibile eseguire la configurazione con privilegi elevati. <ph name="METAINSTALLER_ERROR"/></translation>
+<translation id="3609788354808247807">Non hai visitato il sito di recente. Chrome ha rimosso <ph name="PERMISSION_1"/>, <ph name="PERMISSION_2"/> e <ph name="PERMISSION_3"/></translation>
+<translation id="464306605599005355">Ora è più facile utilizzare Ecosia con il tuo Account Ecosia e sui computer condivisi.</translation>
 <translation id="3635073343384702370">Chrome può controllare le password quando le salvi</translation>
 <translation id="3667616615096815454">Impossibile installare l'applicazione. Applicazione sconosciuta al server.</translation>
-<translation id="3673813398384385993">Chrome ha rilevato che l'estensione "<ph name="EXTENSION_NAME" />" contiene malware</translation>
+<translation id="1490060441084292633">Ecosia ha rilevato che l'estensione "<ph name="EXTENSION_NAME"/>" contiene malware</translation>
 <translation id="3695446226812920698">Scopri come</translation>
-<translation id="3697952514309507634">Altri profili Chrome</translation>
-<translation id="3703994572283698466">La realizzazione di ChromeOS è stata possibile grazie a un <ph name="BEGIN_LINK_CROS_OSS" />software open source<ph name="END_LINK_CROS_OSS" /> aggiuntivo, noto come <ph name="BEGIN_LINK_LINUX_OSS" />ambiente di sviluppo Linux<ph name="END_LINK_LINUX_OSS" />.</translation>
+<translation id="6967821869905227561">Altri profili Ecosia</translation>
+<translation id="5311911269004680646">La realizzazione di EcosiaOS è stata possibile grazie a un <ph name="BEGIN_LINK_CROS_OSS"/>software open source<ph name="END_LINK_CROS_OSS"/> aggiuntivo, noto come <ph name="BEGIN_LINK_LINUX_OSS"/>ambiente di sviluppo Linux<ph name="END_LINK_LINUX_OSS"/>.</translation>
 <translation id="3716540481907974026">Versione ChromeOS Flex</translation>
-<translation id="3718181793972440140">Verrà eliminato 1 elemento da questo dispositivo. Per recuperare i dati in un secondo momento, accedi a Chrome come <ph name="USER_EMAIL" />.</translation>
-<translation id="3723744677043446310">{NUM_EXTENSIONS,plural, =1{Chrome consiglia di rimuoverla. <ph name="BEGIN_LINK" />Scopri di più sulle estensioni supportate<ph name="END_LINK" />}other{Chrome consiglia di rimuoverle. <ph name="BEGIN_LINK" />Scopri di più sulle estensioni supportate<ph name="END_LINK" />}}</translation>
+<translation id="3718181793972440140">Verrà eliminato 1 elemento da questo dispositivo. Per recuperare i dati in un secondo momento, accedi a Chrome come <ph name="USER_EMAIL"/>.</translation>
+<translation id="804899663814036125">{NUM_EXTENSIONS,plural, =1{Ecosia consiglia di rimuoverla. <ph name="BEGIN_LINK"/>Scopri di più sulle estensioni supportate<ph name="END_LINK"/>}other{Ecosia consiglia di rimuoverle. <ph name="BEGIN_LINK"/>Scopri di più sulle estensioni supportate<ph name="END_LINK"/>}}</translation>
 <translation id="3744202345691150878">Ricevi assistenza per ChromeOS</translation>
-<translation id="3780814664026482060">Chrome - <ph name="PAGE_TITLE" /></translation>
-<translation id="3785324443014631273">Impossibile sincronizzare i dati in ChromeOS Flex a causa di un errore durante l'accesso.</translation>
-<translation id="3795971588916395511">Google ChromeOS</translation>
-<translation id="3809772425479558446">Google Chrome richiede Windows 10 o versioni successive.</translation>
-<translation id="3835168907083856002">Questa operazione creerà un nuovo profilo Chrome per <ph name="USER_EMAIL_ADDRESS" /></translation>
-<translation id="383928141529488001">Google Chrome richiede l'accesso al Bluetooth per individuare i dispositivi Bluetooth. <ph name="IDS_SERIAL_DEVICE_CHOOSER_AUTHORIZE_BLUETOOTH_LINK" /></translation>
-<translation id="386202838227397562">Chiudi tutte le finestre di Google Chrome e riprova.</translation>
-<translation id="3865754807470779944">La versione di Chrome <ph name="PRODUCT_VERSION" /> è installata</translation>
-<translation id="3873044882194371212">Apri link in una finestra di navigazione in inco&amp;gnito di Chrome</translation>
-<translation id="3889417619312448367">Disinstalla Google Chrome</translation>
+<translation id="4600924482853773728">Ecosia - <ph name="PAGE_TITLE"/></translation>
+<translation id="4969069484658032230">Impossibile sincronizzare i dati in EcosiaOS Flex a causa di un errore durante l'accesso.</translation>
+<translation id="1761341660094265938">EcosiaOS</translation>
+<translation id="2829233304432701500">Ecosia richiede Windows 10 o versioni successive.</translation>
+<translation id="3952510753191144456">Questa operazione creerà un nuovo profilo Ecosia per <ph name="USER_EMAIL_ADDRESS"/></translation>
+<translation id="4019094010333463261">Ecosia richiede l'accesso al Bluetooth per individuare i dispositivi Bluetooth. <ph name="IDS_SERIAL_DEVICE_CHOOSER_AUTHORIZE_BLUETOOTH_LINK"/></translation>
+<translation id="8534308095039131078">Chiudi tutte le finestre di Ecosia e riprova.</translation>
+<translation id="3865754807470779944">La versione di Chrome <ph name="PRODUCT_VERSION"/> è installata</translation>
+<translation id="8283315171506895091">Apri link in una finestra di navigazione in inco&amp;gnito di Ecosia</translation>
+<translation id="6496553866814956056">Disinstalla Ecosia</translation>
 <translation id="3941890832296813527">Errore di installazione: il nome file del programma di installazione non è valido o non è supportato.</translation>
-<translation id="3973161977468201858">Google Chrome vuole eliminare i tuoi dati del Gestore delle password di Google. Digita la tua password di Windows per consentire l'operazione.</translation>
-<translation id="398236277091248993">Chrome rimane veloce grazie a funzionalità che migliorano le prestazioni</translation>
-<translation id="3999683152997576765">Puoi visualizzare e rimuovere argomenti di interesse usati dai siti per mostrarti annunci. Chrome stima i tuoi interessi in base alla tua recente cronologia di navigazione.</translation>
-<translation id="4035053306113201399">Per applicare l'aggiornamento è necessario riavviare ChromeOS.</translation>
+<translation id="4459596553899864514">Ecosia vuole eliminare i tuoi dati del Gestore delle password di Ecosia. Digita la tua password di Windows per consentire l'operazione.</translation>
+<translation id="8846463365332065180">Ecosia rimane veloce grazie a funzionalità che migliorano le prestazioni</translation>
+<translation id="1118786556671181978">Puoi visualizzare e rimuovere argomenti di interesse usati dai siti per mostrarti annunci. Ecosia stima i tuoi interessi in base alla tua recente cronologia di navigazione.</translation>
+<translation id="8047394653992042491">Per applicare l'aggiornamento è necessario riavviare EcosiaOS.</translation>
 <translation id="4050175100176540509">Nell'ultima versione sono stati apportati miglioramenti rilevanti in materia di sicurezza e sono state aggiunte nuove funzioni.</translation>
-<translation id="4053720452172726777">Personalizza e controlla Google Chrome</translation>
-<translation id="408393047846373801">Accedi a Chrome per trovare le password e altri dati su tutti i dispositivi. Questa password verrà salvata nel tuo Account Google dopo l'accesso.</translation>
-<translation id="4084404300720192944">Per condividere la finestra, consenti la Registrazione dello schermo per Chrome nelle Preferenze di sistema.</translation>
-<translation id="4106587138345390261">Chrome sta esaminando nuove funzionalità che consentono ai siti di offrire la stessa esperienza di navigazione utilizzando meno informazioni personali</translation>
-<translation id="4110895483821904099">Configura il tuo nuovo profilo di Chrome</translation>
-<translation id="4111566860456076004">Chrome non può verificare la provenienza dell'estensione. Potrebbe non essere sicura. Rimuovila da Chrome in modo che non possa più vedere e modificare i tuoi dati sui siti che visiti, incluse le informazioni personali.</translation>
-<translation id="4128488089242627000">Chrome esegue ogni operazione con la massima rapidità e le funzionalità che utilizzano JavaScript dovrebbero avere il comportamento previsto (consigliato)</translation>
-<translation id="4147555960264124640">Stai per accedere con un account gestito e per dare al relativo amministratore il controllo del tuo profilo Google Chrome. I tuoi dati di Chrome, come app, Preferiti, cronologia, password e altre impostazioni, verranno collegati definitivamente a <ph name="USER_NAME" />. Potrai eliminare questi dati tramite la Dashboard di Google Account, ma non potrai associare questi dati a un altro account. <ph name="LEARN_MORE" /></translation>
+<translation id="4817913198787198451">Personalizza e controlla Ecosia</translation>
+<translation id="4395802781633621239">Accedi a Ecosia per trovare le password e altri dati su tutti i dispositivi. Questa password verrà salvata nel tuo Account Ecosia dopo l'accesso.</translation>
+<translation id="1330085168384841023">Per condividere la finestra, consenti la Registrazione dello schermo per Ecosia nelle Preferenze di sistema.</translation>
+<translation id="3708834841667355707">Ecosia sta esaminando nuove funzionalità che consentono ai siti di offrire la stessa esperienza di navigazione utilizzando meno informazioni personali</translation>
+<translation id="319566061277127356">Configura il tuo nuovo profilo di Ecosia</translation>
+<translation id="7433581196371819898">Ecosia non può verificare la provenienza dell'estensione. Potrebbe non essere sicura. Rimuovila da Ecosia in modo che non possa più vedere e modificare i tuoi dati sui siti che visiti, incluse le informazioni personali.</translation>
+<translation id="2198589091447191935">Ecosia esegue ogni operazione con la massima rapidità e le funzionalità che utilizzano JavaScript dovrebbero avere il comportamento previsto (consigliato)</translation>
+<translation id="7105712012505419722">Stai per accedere con un account gestito e per dare al relativo amministratore il controllo del tuo profilo Ecosia. I tuoi dati di Ecosia, come app, Preferiti, cronologia, password e altre impostazioni, verranno collegati definitivamente a <ph name="USER_NAME"/>. Potrai eliminare questi dati tramite la Dashboard di Ecosia Account, ma non potrai associare questi dati a un altro account. <ph name="LEARN_MORE"/></translation>
 <translation id="4148957013307229264">Installazione...</translation>
-<translation id="4149882025268051530">Il programma di installazione non è riuscito a decomprimere il file. Scarica nuovamente Google Chrome.</translation>
-<translation id="4153934450158521343">A breve Chrome chiuderà ed eliminerà i dati</translation>
+<translation id="7691143774653486474">Il programma di installazione non è riuscito a decomprimere il file. Scarica nuovamente Ecosia.</translation>
+<translation id="2446603005062458629">A breve Ecosia chiuderà ed eliminerà i dati</translation>
 <translation id="4173512894976930765">È probabile che i siti funzionino come previsto. Quando chiudi tutte le finestre di Chrome, uscirai dalla maggior parte dei siti, ad eccezione del tuo Account Google se hai eseguito l'accesso a Chrome.</translation>
-<translation id="4175922240926474352">Chrome ha bloccato questo download perché il sito non utilizza una connessione sicura e il file potrebbe essere stato manomesso</translation>
-<translation id="4191857738314598978">{0,plural, =1{Riavvia Chrome entro un giorno}other{Riavvia Chrome entro # giorni}}</translation>
-<translation id="4205939740494406371">Chrome non può controllare le tue password. Riprova tra 24 ore oppure <ph name="BEGIN_LINK" />controlla le password nel tuo Account Google<ph name="END_LINK" />.</translation>
+<translation id="2745180350547322293">Ecosia ha bloccato questo download perché il sito non utilizza una connessione sicura e il file potrebbe essere stato manomesso</translation>
+<translation id="6826163993811146231">{0,plural, =1{Riavvia Ecosia entro un giorno}other{Riavvia Ecosia entro # giorni}}</translation>
+<translation id="4205939740494406371">Chrome non può controllare le tue password. Riprova tra 24 ore oppure <ph name="BEGIN_LINK"/>controlla le password nel tuo Account Google<ph name="END_LINK"/>.</translation>
 <translation id="4222932583846282852">Annullamento…</translation>
 <translation id="4224210481850767180">L'installazione è stata annullata.</translation>
-<translation id="4242034826641750751">Chrome deve avere le autorizzazioni di accesso al microfono e alla fotocamera per questo sito</translation>
+<translation id="3554373328288278512">Ecosia deve avere le autorizzazioni di accesso al microfono e alla fotocamera per questo sito</translation>
 <translation id="424864128008805179">Uscire da Chrome?</translation>
-<translation id="4251615635259297716">Collegare i tuoi dati Chrome a questo account?</translation>
-<translation id="4262915912852657291"><ph name="BEGIN_BOLD" />Quali dati vengono utilizzati:<ph name="END_BOLD" /> la cronologia di navigazione, ossia un record dei siti visitati da Chrome sul dispositivo in uso.</translation>
+<translation id="8384922154025337808">Collegare i tuoi dati Ecosia a questo account?</translation>
+<translation id="4565616259974605182"><ph name="BEGIN_BOLD"/>Quali dati vengono utilizzati:<ph name="END_BOLD"/> la cronologia di navigazione, ossia un record dei siti visitati da Ecosia sul dispositivo in uso.</translation>
 <translation id="4281844954008187215">Termini di servizio</translation>
 <translation id="4293420128516039005">Accedi per sincronizzare e personalizzare Chrome sui tuoi dispositivi</translation>
-<translation id="430327780270213103">Consenti all'estensione di mostrare le richieste di accesso nella barra degli strumenti di Chrome</translation>
-<translation id="4328355335528187361">Google Chrome Dev (mDNS-In)</translation>
+<translation id="6419542773162312746">Consenti all'estensione di mostrare le richieste di accesso nella barra degli strumenti di Ecosia</translation>
+<translation id="8864449561723972619">Ecosia Dev (mDNS-In)</translation>
 <translation id="4329315893554541805">Per accedere alla personalizzazione e ad altre funzionalità, includi Chrome in Attività web e app e nei servizi Google collegati</translation>
 <translation id="4334294535648607276">Download completato.</translation>
 <translation id="4335235004908507846">Chrome può contribuire a proteggerti da violazioni dei dati, estensioni non valide e non solo</translation>
-<translation id="4343195214584226067">L'estensione <ph name="EXTENSION_NAME" /> è stata aggiunta a Chrome</translation>
+<translation id="2227704215309956084">L'estensione <ph name="EXTENSION_NAME"/> è stata aggiunta a Ecosia</translation>
 <translation id="4348548358339558429">Per accedere alla personalizzazione, includi Chrome in Attività web e app</translation>
-<translation id="436060642166082913">Chrome ha bloccato questo download perché il file può danneggiare i tuoi account personali e dei social network</translation>
+<translation id="197803137365953132">Ecosia ha bloccato questo download perché il file può danneggiare i tuoi account personali e dei social network</translation>
 <translation id="4384570495110188418">Chrome non può controllare le tue password perché non hai effettuato l'accesso</translation>
 <translation id="4389991535395284064">Quando navighi in modalità di navigazione in incognito, Chrome ti avvisa prima di caricare un sito utilizzando una connessione non sicura</translation>
 <translation id="4427306783828095590">La protezione avanzata blocca malware e tentativi di phishing con maggiore efficacia</translation>
-<translation id="4434353761996769206">Errore del programma di installazione: <ph name="INSTALLER_ERROR" /></translation>
-<translation id="4438657683599538446">Accedi a Chrome come <ph name="USER_EMAIL" /></translation>
-<translation id="4450664632294415862">Chrome - Accesso rete - <ph name="PAGE_TITLE" /></translation>
-<translation id="4458462641685292929">C'è un'altra operazione in corso su Google Chrome. Riprova più tardi.</translation>
+<translation id="4434353761996769206">Errore del programma di installazione: <ph name="INSTALLER_ERROR"/></translation>
+<translation id="2297526912548649074">Accedi a Ecosia come <ph name="USER_EMAIL"/></translation>
+<translation id="9035946286843935549">Ecosia - Accesso rete - <ph name="PAGE_TITLE"/></translation>
+<translation id="6450895420388847775">C'è un'altra operazione in corso su Ecosia. Riprova più tardi.</translation>
 <translation id="4459234553906210702">Ad measurement consente ai siti che visiti di chiedere a Chrome informazioni che li aiutino a valutare il rendimento dei loro annunci. Ad measurement limita il tracciamento tra siti trasferendo il minor numero possibile di informazioni tra i siti.</translation>
 <translation id="4501471624619070934">Installazione non riuscita perché l'accesso in questo paese è sottoposto a limitazioni.</translation>
-<translation id="4567424176335768812">Hai eseguito l'accesso come <ph name="USER_EMAIL_ADDRESS" />. Ora puoi accedere ai tuoi Preferiti, alla tua cronologia e ad altre impostazioni su tutti i tuoi dispositivi su cui esegui l'accesso.</translation>
-<translation id="4571503333518166079">Vai alle impostazioni di notifica di Chrome</translation>
-<translation id="4575717501879784448">Chrome può rendere inattive queste schede per migliorare la tua esperienza di navigazione e liberare risorse.</translation>
-<translation id="459622048091363950">Dopo che Chrome avrà ottenuto l'accesso, i siti web potranno chiederti l'accesso.</translation>
-<translation id="4600710005438004015">Non è stato possibile aggiornare Chrome alla versione più recente, quindi non potrai utilizzare le nuove funzioni e gli aggiornamenti di sicurezza.</translation>
+<translation id="4567424176335768812">Hai eseguito l'accesso come <ph name="USER_EMAIL_ADDRESS"/>. Ora puoi accedere ai tuoi Preferiti, alla tua cronologia e ad altre impostazioni su tutti i tuoi dispositivi su cui esegui l'accesso.</translation>
+<translation id="6533266716128249922">Vai alle impostazioni di notifica di Ecosia</translation>
+<translation id="7562371913339616107">Ecosia può rendere inattive queste schede per migliorare la tua esperienza di navigazione e liberare risorse.</translation>
+<translation id="488806616089631539">Dopo che Ecosia avrà ottenuto l'accesso, i siti web potranno chiederti l'accesso.</translation>
+<translation id="3268039966078382323">Non è stato possibile aggiornare Ecosia alla versione più recente, quindi non potrai utilizzare le nuove funzioni e gli aggiornamenti di sicurezza.</translation>
 <translation id="4624065194742029982">Navigazione in incognito di Chrome</translation>
-<translation id="4627412468266359539">Facoltativo: contribuisci a migliorare le funzionalità e le prestazioni di ChromeOS Flex inviando automaticamente a Google dati diagnostici e sull'utilizzo.</translation>
-<translation id="4633000520311261472">Per rendere Chrome più sicuro, abbiamo disattivato alcune estensioni che non sono elencate nel <ph name="IDS_EXTENSION_WEB_STORE_TITLE" /> e potrebbero essere state aggiunte a tua insaputa.</translation>
+<translation id="4690206707618474800">Facoltativo: contribuisci a migliorare le funzionalità e le prestazioni di EcosiaOS Flex inviando automaticamente a Ecosia dati diagnostici e sull'utilizzo.</translation>
+<translation id="9125443060066914183">Per rendere Ecosia più sicuro, abbiamo disattivato alcune estensioni che non sono elencate nel <ph name="IDS_EXTENSION_WEB_STORE_TITLE"/> e potrebbero essere state aggiunte a tua insaputa.</translation>
 <translation id="4680828127924988555">Annulla l'installazione</translation>
-<translation id="469553575393225953">Estensioni, app e temi da origini sconosciute possono danneggiare il tuo dispositivo. Chrome consiglia di installare questi elementi soltanto dal Chrome Web Store</translation>
+<translation id="8236553889322631924">Estensioni, app e temi da origini sconosciute possono danneggiare il tuo dispositivo. Ecosia consiglia di installare questi elementi soltanto dal Ecosia Web Store</translation>
 <translation id="4710245680469034439">Personalizza il browser con temi ispirati a natura, collezioni di artisti e altro ancora</translation>
 <translation id="4724676981607797757">Installazione non riuscita a causa di un errore di protocollo non supportato.</translation>
-<translation id="4728575227883772061">Installazione non riuscita a causa di un errore non specificato. Se Google Chrome è attivo, chiudilo e riprova.</translation>
+<translation id="3305517118160815955">Installazione non riuscita a causa di un errore non specificato. Se Ecosia è attivo, chiudilo e riprova.</translation>
 <translation id="4747730611090640388">Chrome può stimare i tuoi interessi.  Dopodiché, un sito che visiti può chiedere a Chrome di conoscere i tuoi interessi per personalizzare gli annunci da mostrarti.</translation>
-<translation id="4754614261631455953">Google Chrome Canary (mDNS-In)</translation>
-<translation id="479167709087336770">Viene usato lo stesso controllo ortografico utilizzato nella Ricerca Google. Il testo che digiti nel browser viene inviato a Google. Puoi modificare questo comportamento in qualsiasi momento nelle impostazioni.</translation>
+<translation id="827222962844006655">Ecosia Canary (mDNS-In)</translation>
+<translation id="3543284013834505767">Viene usato lo stesso controllo ortografico utilizzato nella Ricerca Ecosia. Il testo che digiti nel browser viene inviato a Ecosia. Puoi modificare questo comportamento in qualsiasi momento nelle impostazioni.</translation>
 <translation id="4793679854893018356">Scopri in che modo Chrome ti protegge</translation>
-<translation id="4828579605166583682">Google Chrome sta cercando di sostituire le password esistenti. Digita la tua password di Windows per consentire l'operazione.</translation>
-<translation id="4842397268809523050">Impossibile sincronizzare i dati in ChromeOS Flex perché la sincronizzazione non è disponibile per il tuo dominio.</translation>
-<translation id="4851866215237571846"><ph name="EXISTING_USER" /> ha già eseguito l’accesso.  Per tenere separata la tua navigazione, accedi a Chrome nel tuo profilo per <ph name="USER_EMAIL_ADDRESS" />.</translation>
-<translation id="4862446263930606916">La tua organizzazione può vedere e gestire i dati di navigazione nel tuo profilo di lavoro, ad esempio i preferiti, la cronologia e le password. Non può vedere i dati di navigazione nei profili Chrome personali.</translation>
-<translation id="4873692836499071887">Per ricevere gli aggiornamenti futuri di Google Chrome, devi avere macOS 11 o versioni successive. Su questo computer è installato macOS 10.15.</translation>
+<translation id="8957938953005153147">Ecosia sta cercando di sostituire le password esistenti. Digita la tua password di Windows per consentire l'operazione.</translation>
+<translation id="8144706290339578682">Impossibile sincronizzare i dati in EcosiaOS Flex perché la sincronizzazione non è disponibile per il tuo dominio.</translation>
+<translation id="7984841734836997333"><ph name="EXISTING_USER"/> ha già eseguito l’accesso.  Per tenere separata la tua navigazione, accedi a Ecosia nel tuo profilo per <ph name="USER_EMAIL_ADDRESS"/>.</translation>
+<translation id="4264506519284061030">La tua organizzazione può vedere e gestire i dati di navigazione nel tuo profilo di lavoro, ad esempio i preferiti, la cronologia e le password. Non può vedere i dati di navigazione nei profili Ecosia personali.</translation>
+<translation id="8701027951719712428">Per ricevere gli aggiornamenti futuri di Ecosia, devi avere macOS 11 o versioni successive. Su questo computer è installato macOS 10.15.</translation>
 <translation id="4873783916118289636">Esamina i controlli per la privacy e la sicurezza più importanti in Chrome</translation>
-<translation id="4891791193823137474">Lascia Google Chrome in esecuzione in background</translation>
-<translation id="4895437082222824641">Apri link in una nuova &amp;scheda di Chrome</translation>
-<translation id="492720062778050435">Chrome consiglia di esaminare questa estensione</translation>
+<translation id="8454595950895325762">Lascia Ecosia in esecuzione in background</translation>
+<translation id="489671036945006830">Apri link in una nuova &amp;scheda di Ecosia</translation>
+<translation id="6566258574866003581">Ecosia consiglia di esaminare questa estensione</translation>
 <translation id="4951177103388687412">Organizzati e mantieni la concentrazione con l'aiuto dei gruppi di schede</translation>
-<translation id="4953650215774548573">Imposta Google Chrome come browser predefinito</translation>
-<translation id="495931528404527476">In Chrome</translation>
-<translation id="4969674060580488087">Impossibile sincronizzare i dati in ChromeOS Flex perché i dati di accesso dell'account sono obsoleti.</translation>
-<translation id="4970761609246024540">Ti diamo il benvenuto nei profili Chrome</translation>
+<translation id="5581150090232500900">Imposta Ecosia come browser predefinito</translation>
+<translation id="6495878830719404098">In Ecosia</translation>
+<translation id="6113625922434842626">Impossibile sincronizzare i dati in EcosiaOS Flex perché i dati di accesso dell'account sono obsoleti.</translation>
+<translation id="4410570812343670816">Ti diamo il benvenuto nei profili Ecosia</translation>
 <translation id="4970880042055371251">Versione di ChromeOS</translation>
-<translation id="4990567037958725628">Google Chrome Canary</translation>
-<translation id="4997044641749333913">Chrome può rendere inattive queste schede per migliorare la tua esperienza di navigazione e mantenere la velocità delle prestazioni.</translation>
-<translation id="5003967926796347400">Fai clic su "Gestore delle password di Google"</translation>
+<translation id="8570641140903702642">Ecosia Canary</translation>
+<translation id="6735145163744656874">Ecosia può rendere inattive queste schede per migliorare la tua esperienza di navigazione e mantenere la velocità delle prestazioni.</translation>
+<translation id="2569934116750022163">Fai clic su "Gestore delle password di Ecosia"</translation>
 <translation id="5120334927898581447">Accedi a Chrome quando accedi ad altri servizi Google</translation>
 <translation id="5126049312684316860">Chrome precarica ancora più pagine che è probabile che visiterai, in modo che vengano caricate più rapidamente quando lo farai</translation>
-<translation id="5132929315877954718">Scopri applicazioni, giochi, estensioni e temi straordinari per Google Chrome.</translation>
-<translation id="5139423532931106058">Personalizza il tuo profilo Chrome</translation>
-<translation id="5161361450770099246">Chrome può rendere inattiva questa scheda per migliorare la tua esperienza di navigazione e liberare risorse.</translation>
-<translation id="5163087008893166964">Ti diamo il benvenuto in Chrome; nuova finestra del browser aperta</translation>
-<translation id="5170938038195470297">Non è possibile utilizzare il tuo profilo perché è associato a una versione di Google Chrome più recente. Alcune funzioni potrebbero non essere disponibili. Specifica una directory del profilo diversa o utilizza una versione di Chrome più recente.</translation>
+<translation id="7782767522222146179">Scopri applicazioni, giochi, estensioni e temi straordinari per Ecosia.</translation>
+<translation id="6416551953415159186">Personalizza il tuo profilo Ecosia</translation>
+<translation id="719484593754925816">Ecosia può rendere inattiva questa scheda per migliorare la tua esperienza di navigazione e liberare risorse.</translation>
+<translation id="1859120614572957305">Ti diamo il benvenuto in Ecosia; nuova finestra del browser aperta</translation>
+<translation id="6648664289472946060">Non è possibile utilizzare il tuo profilo perché è associato a una versione di Ecosia più recente. Alcune funzioni potrebbero non essere disponibili. Specifica una directory del profilo diversa o utilizza una versione di Ecosia più recente.</translation>
 <translation id="5201744974236816379">Aggiornamento di Chrome</translation>
-<translation id="521447420733633466">Se condividi un dispositivo, i tuoi amici e la tua famiglia possono navigare separatamente e configurare Chrome in base alle proprie esigenze</translation>
-<translation id="5239627039202700673">Usa Chrome ogni volta che fai clic sui link in messaggi, documenti e altre app</translation>
-<translation id="5251420635869119124">Gli ospiti possono utilizzare Chrome senza lasciare tracce.</translation>
+<translation id="6960183526681645011">Se condividi un dispositivo, i tuoi amici e la tua famiglia possono navigare separatamente e configurare Ecosia in base alle proprie esigenze</translation>
+<translation id="3784023996375784431">Usa Ecosia ogni volta che fai clic sui link in messaggi, documenti e altre app</translation>
+<translation id="1869027055332251164">Gli ospiti possono utilizzare Ecosia senza lasciare tracce.</translation>
 <translation id="5320351714793324716">Se consenti i cookie, Chromium potrebbe usarli durante il precaricamento</translation>
-<translation id="5334309298019785904">Impossibile sincronizzare i dati in ChromeOS perché la sincronizzazione non è disponibile per il tuo dominio.</translation>
-<translation id="5334487786912937552">Chrome deve avere l'autorizzazione di accesso allo spazio di archiviazione per poter scaricare file</translation>
-<translation id="5337648990166757586">(Facoltativo) Contribuisci a migliorare le funzionalità e le prestazioni di ChromeOS inviando automaticamente a Google dati diagnostici e sull'utilizzo.</translation>
+<translation id="143614250230771428">Impossibile sincronizzare i dati in EcosiaOS perché la sincronizzazione non è disponibile per il tuo dominio.</translation>
+<translation id="1809194740315140401">Ecosia deve avere l'autorizzazione di accesso allo spazio di archiviazione per poter scaricare file</translation>
+<translation id="8975930032513941502">(Facoltativo) Contribuisci a migliorare le funzionalità e le prestazioni di EcosiaOS inviando automaticamente a Ecosia dati diagnostici e sull'utilizzo.</translation>
 <translation id="5357889879764279201">Ricevi assistenza per ChromeOS Flex</translation>
-<translation id="5368118228313795342">Codice aggiuntivo: <ph name="EXTRA_CODE" />.</translation>
-<translation id="5386244825306882791">Controlla anche la pagina visualizzata all'avvio di Chrome o quando esegui ricerche dalla Omnibox.</translation>
-<translation id="5394833366792865639">Condividi una scheda di Chrome</translation>
+<translation id="5368118228313795342">Codice aggiuntivo: <ph name="EXTRA_CODE"/>.</translation>
+<translation id="6665128960039431910">Controlla anche la pagina visualizzata all'avvio di Ecosia o quando esegui ricerche dalla Omnibox.</translation>
+<translation id="1861504561909287316">Condividi una scheda di Ecosia</translation>
 <translation id="5412485296464121825">I siti possono memorizzare su Chrome informazioni relative ai tuoi interessi. Ad esempio, se visiti un sito per acquistare scarpe per una maratona, il sito potrebbe definire come tuo interesse le maratone. Se in un secondo momento visiti un altro sito per registrarti a una gara, il sito può mostrarti un annuncio relativo a scarpe da corsa in base ai tuoi interessi.</translation>
-<translation id="5430073640787465221">Il file delle preferenze è danneggiato o non valido. Google Chrome non è in grado di recuperare le impostazioni.</translation>
+<translation id="6673288084648462613">Il file delle preferenze è danneggiato o non valido. Ecosia non è in grado di recuperare le impostazioni.</translation>
 <translation id="5468572406162360320">Per contribuire a migliorare queste funzionalità, Chrome invia le tue interazioni a Google. Questi dati potrebbero essere letti, elaborati e annotati da revisori.</translation>
 <translation id="5524761631371622910">Quando sono attive le prove e se Chrome ti ha inserito in modo casuale in una prova attiva, la cronologia di navigazione incide sugli annunci che ti vengono mostrati e sugli interessi stimati riportati qui sotto. Per tutelare la tua privacy, Chrome elimina i tuoi interessi ogni mese.</translation>
-<translation id="5530733413481476019">Rendi Chrome più veloce</translation>
-<translation id="5566025111015594046">Google Chrome (mDNS-In)</translation>
-<translation id="5602351063754773347">Chrome consiglia di rimuoverla. <ph name="BEGIN_LINK" />Scopri di più sulle estensioni supportate<ph name="END_LINK" /></translation>
-<translation id="5648328599815354043">Chrome fa di più per garantire la tua sicurezza online</translation>
-<translation id="565744775970812598"><ph name="FILE_NAME" /> potrebbe essere pericoloso, pertanto è stato bloccato da Chrome.</translation>
-<translation id="5678190148303298925">{COUNT,plural, =0{L'amministratore raccomanda il riavvio di Chrome per installare questo aggiornamento}=1{L'amministratore raccomanda il riavvio di Chrome per installare questo aggiornamento. La finestra di navigazione in incognito non verrà riaperta.}other{L'amministratore raccomanda il riavvio di Chrome per installare questo aggiornamento. Le # finestre di navigazione in incognito non verranno riaperte.}}</translation>
-<translation id="5686916850681061684">Personalizza e controlla Google Chrome. C'è qualcosa che richiede la tua attenzione. Fai clic per avere informazioni dettagliate.</translation>
-<translation id="5690427481109656848">Google LLC</translation>
+<translation id="2905159584855395810">Rendi Ecosia più veloce</translation>
+<translation id="2470806471563820591">Ecosia (mDNS-In)</translation>
+<translation id="5167067155585861308">Ecosia consiglia di rimuoverla. <ph name="BEGIN_LINK"/>Scopri di più sulle estensioni supportate<ph name="END_LINK"/></translation>
+<translation id="7005470355724599337">Ecosia fa di più per garantire la tua sicurezza online</translation>
+<translation id="3625533701824359646"><ph name="FILE_NAME"/> potrebbe essere pericoloso, pertanto è stato bloccato da Ecosia.</translation>
+<translation id="3479730782477097349">{COUNT,plural, =0{L'amministratore raccomanda il riavvio di Ecosia per installare questo aggiornamento}=1{L'amministratore raccomanda il riavvio di Ecosia per installare questo aggiornamento. La finestra di navigazione in incognito non verrà riaperta.}other{L'amministratore raccomanda il riavvio di Ecosia per installare questo aggiornamento. Le # finestre di navigazione in incognito non verranno riaperte.}}</translation>
+<translation id="8544776492099331022">Personalizza e controlla Ecosia. C'è qualcosa che richiede la tua attenzione. Fai clic per avere informazioni dettagliate.</translation>
+<translation id="4811228173434336381">Ecosia</translation>
 <translation id="569897634095159764">Impossibile connettersi a internet. Il server proxy richiede l'autenticazione.</translation>
 <translation id="570005089986962444">Se questa opzione è attiva, Chrome libera la memoria dalle schede non attive. In questo modo, le schede attive e altre app hanno più risorse per il computer e mantengono Chrome veloce. Le schede inattive si riattivano automaticamente quando ci torni.</translation>
-<translation id="5709557627224531708">Imposta Chrome come browser predefinito</translation>
+<translation id="5581150090232500900">Imposta Ecosia come browser predefinito</translation>
 <translation id="5727531838415286053">Se Chrome ti ha inserito in modo casuale in una prova attiva, la cronologia di navigazione incide sugli annunci che ti vengono mostrati e sugli interessi stimati riportati qui sotto. Per tutelare la tua privacy, Chrome elimina i tuoi interessi ogni mese. A meno che non li rimuovi, gli interessi vengono aggiornati.</translation>
 <translation id="5736850870166430177">Se un sito cerca di rubare la tua password o se scarichi un file dannoso, Chrome potrebbe anche inviare gli URL, inclusi frammenti dei contenuti delle pagine, a Navigazione sicura</translation>
-<translation id="5756509061973259733">Esiste già un profilo Chrome con questo account su questo dispositivo</translation>
-<translation id="5795887333006832406"><ph name="PAGE_TITLE" /> - Google Chrome Canary</translation>
-<translation id="5804318322022881572">Impossibile avviare Chrome. Riprova.</translation>
+<translation id="8301840715671593762">Esiste già un profilo Ecosia con questo account su questo dispositivo</translation>
+<translation id="5669882610631815446"><ph name="PAGE_TITLE"/> - Ecosia Canary</translation>
+<translation id="2542649989941327712">Impossibile avviare Ecosia. Riprova.</translation>
 <translation id="5809516625706423866">Impossibile connettersi a internet. HTTP 401 Autorizzazione assente. Controlla la configurazione del proxy.</translation>
-<translation id="5825922397106002626">Rimuovi <ph name="EXTENSION_NAME" /> da Chrome</translation>
-<translation id="58431560289969279">Se hai eseguito l'accesso, puoi usare le password e altri dati del tuo Account Google in Chrome. Puoi modificare questa opzione in qualsiasi momento nelle Impostazioni.</translation>
-<translation id="5858486459377137936">Quando chiudi tutte le finestre di Chrome, uscirai dalla maggior parte dei siti, ad eccezione del tuo Account Google se hai eseguito l'accesso a Chrome. Per consentire ai siti di memorizzare le tue informazioni, <ph name="SETTINGS_LINK" />.</translation>
-<translation id="586971344380992563"><ph name="BEGIN_LINK" />Chrome ti avvisa<ph name="END_LINK" /> in caso di siti e download non sicuri</translation>
+<translation id="9091453616111683919">Rimuovi <ph name="EXTENSION_NAME"/> da Ecosia</translation>
+<translation id="1773882594264682232">Se hai eseguito l'accesso, puoi usare le password e altri dati del tuo Account Ecosia in Ecosia. Puoi modificare questa opzione in qualsiasi momento nelle Impostazioni.</translation>
+<translation id="5513857521842828996">Quando chiudi tutte le finestre di Ecosia, uscirai dalla maggior parte dei siti, ad eccezione del tuo Account Ecosia se hai eseguito l'accesso a Ecosia. Per consentire ai siti di memorizzare le tue informazioni, <ph name="SETTINGS_LINK"/>.</translation>
+<translation id="586971344380992563"><ph name="BEGIN_LINK"/>Chrome ti avvisa<ph name="END_LINK"/> in caso di siti e download non sicuri</translation>
 <translation id="5895138241574237353">Riavvia</translation>
-<translation id="5903106910045431592"><ph name="PAGE_TITLE" /> - Accesso rete</translation>
+<translation id="5903106910045431592"><ph name="PAGE_TITLE"/> - Accesso rete</translation>
 <translation id="5924017743176219022">Connessione a Internet in corso…</translation>
 <translation id="5932997892801542621">Quando digiti nella barra degli indirizzi o nella casella di ricerca, Chrome invia ciò che digiti a Google Drive per ricevere suggerimenti sugli elementi. Questa opzione è disattivata nella modalità di navigazione in incognito.</translation>
-<translation id="5940385492829620908">Il tuoi siti web, i tuoi segnalibri e gli altri contenuti Chrome sempre disponibili e aggiornati qui.</translation>
+<translation id="4960252760049500399">Il tuoi siti web, i tuoi segnalibri e gli altri contenuti Ecosia sempre disponibili e aggiornati qui.</translation>
 <translation id="5941711191222866238">Riduci a icona</translation>
-<translation id="5941830788786076944">Imposta Google Chrome come browser predefinito</translation>
-<translation id="5947104538377036631">Scorciatoia Chrome</translation>
-<translation id="5953954252731207958">Non hai visitato il sito di recente. Chrome ha rimosso <ph name="PERMISSION" /></translation>
-<translation id="6003112304606738118">Download in corso… Ore rimanenti: <ph name="HOURS" /></translation>
-<translation id="6014316319780893079">Con gli <ph name="BEGIN_LINK" />strumenti di Chrome<ph name="END_LINK" /> puoi navigare in sicurezza e tenere tutto sotto controllo</translation>
-<translation id="6022659036123304283">Personalizza il tuo Chrome</translation>
-<translation id="6025087594896450715">Google Chrome verrà riavviato tra <ph name="REMAINING_TIME" /></translation>
+<translation id="4662363689050405237">Imposta Ecosia come browser predefinito</translation>
+<translation id="1284343625991453987">Scorciatoia Ecosia</translation>
+<translation id="5953954252731207958">Non hai visitato il sito di recente. Chrome ha rimosso <ph name="PERMISSION"/></translation>
+<translation id="6003112304606738118">Download in corso… Ore rimanenti: <ph name="HOURS"/></translation>
+<translation id="6014316319780893079">Con gli <ph name="BEGIN_LINK"/>strumenti di Chrome<ph name="END_LINK"/> puoi navigare in sicurezza e tenere tutto sotto controllo</translation>
+<translation id="4767994371234572952">Personalizza il tuo Ecosia</translation>
+<translation id="5490755016715767023">Ecosia verrà riavviato tra <ph name="REMAINING_TIME"/></translation>
 <translation id="6040143037577758943">Chiudi</translation>
 <translation id="6070348360322141662">Per maggiore sicurezza, Google Chrome cripterà i tuoi dati</translation>
 <translation id="608006075545470555">Aggiungi profilo di lavoro a questo browser</translation>
 <translation id="6097822892606850415">Scrivi con maggiore sicurezza grazie all'aiuto dell'AI</translation>
-<translation id="6113794647360055231">Da oggi Chrome è ancora meglio</translation>
-<translation id="6134085236017727171">Per usare il microfono, concedi l'accesso a Chrome nelle <ph name="BEGIN_LINK" />impostazioni di sistema<ph name="END_LINK" /></translation>
-<translation id="6135456723633883042">Queste schede utilizzano risorse aggiuntive. Per migliorare le prestazioni, consenti a Chrome di renderle inattive.</translation>
+<translation id="170259281605734125">Da oggi Ecosia è ancora meglio</translation>
+<translation id="6134085236017727171">Per usare il microfono, concedi l'accesso a Chrome nelle <ph name="BEGIN_LINK"/>impostazioni di sistema<ph name="END_LINK"/></translation>
+<translation id="4618410489751241263">Queste schede utilizzano risorse aggiuntive. Per migliorare le prestazioni, consenti a Ecosia di renderle inattive.</translation>
 <translation id="6145313976051292476">Apri PDF in Chrome</translation>
-<translation id="6157638032135951407">La tua organizzazione elimina i dati di Chrome quando non vengono utilizzati per <ph name="TIMEOUT_DURATION" />. Potrebbero essere inclusi cronologia, compilazione automatica e download.</translation>
-<translation id="6169866489629082767"><ph name="PAGE_TITLE" /> - Google Chrome</translation>
-<translation id="6173637689840186878"><ph name="PAGE_TITLE" /> - Google Chrome Beta</translation>
-<translation id="6180522807229584611">Questa scheda utilizza risorse aggiuntive. Per migliorare le prestazioni, consenti a Chrome di renderla inattiva.</translation>
+<translation id="5137471865755621561">La tua organizzazione elimina i dati di Ecosia quando non vengono utilizzati per <ph name="TIMEOUT_DURATION"/>. Potrebbero essere inclusi cronologia, compilazione automatica e download.</translation>
+<translation id="2722323139667924824"><ph name="PAGE_TITLE"/> - Ecosia</translation>
+<translation id="1361296321590354837"><ph name="PAGE_TITLE"/> - Ecosia Beta</translation>
+<translation id="51576365410323372">Questa scheda utilizza risorse aggiuntive. Per migliorare le prestazioni, consenti a Ecosia di renderla inattiva.</translation>
 <translation id="6182736845697986886">Installazione non riuscita a causa di un errore interno del server di aggiornamento.</translation>
-<translation id="6200139057479872438">Non hai visitato il sito di recente. Chrome ha rimosso <ph name="PERMISSION_1" /> e <ph name="PERMISSION_2" /></translation>
-<translation id="621585339844629864">Per condividere lo schermo, consenti la Registrazione dello schermo per Chrome nelle Preferenze di sistema.</translation>
-<translation id="6235018212288296708">Regola inbound per consentire il traffico mDNS in Google Chrome.</translation>
-<translation id="624230925347970731">Chrome verrà chiuso a breve</translation>
-<translation id="6247557882553405851">Gestore delle password di Google</translation>
+<translation id="6200139057479872438">Non hai visitato il sito di recente. Chrome ha rimosso <ph name="PERMISSION_1"/> e <ph name="PERMISSION_2"/></translation>
+<translation id="7845247414826995986">Per condividere lo schermo, consenti la Registrazione dello schermo per Ecosia nelle Preferenze di sistema.</translation>
+<translation id="4154538917942874814">Regola inbound per consentire il traffico mDNS in Ecosia.</translation>
+<translation id="5736558630107498475">Ecosia verrà chiuso a breve</translation>
+<translation id="8542320769345885402">Gestore delle password di Ecosia</translation>
 <translation id="6251759518630934363">Ricevi un avviso in caso di siti pericolosi, inclusi quelli di cui Google non era a conoscenza, in base all'analisi di più dati provenienti dai siti rispetto al livello Protezione standard. Puoi scegliere di ignorare gli avvisi di Chrome.</translation>
-<translation id="6277547788421725101">Uno dei tuoi genitori ha disattivato l'impostazione "Autorizzazioni per siti, app ed estensioni" per Chrome</translation>
-<translation id="627882678981830918">Personalizza e controlla Chrome. Imposta Chrome come browser predefinito.</translation>
-<translation id="6288788894729749483">Imposta Chrome come browser predefinito per svolgere attività, creare ed esplorare online in tutta sicurezza</translation>
-<translation id="6291089322031436445">App di Chrome Dev</translation>
-<translation id="6291549208091401781">Google Chrome è già installato per tutti gli utenti sul computer.</translation>
-<translation id="6319856120645568262">Chrome deve avere l'autorizzazione per mappare l'ambiente circostante e monitorare le tue mani</translation>
-<translation id="6321592572353357376">L'estensione "<ph name="EXTENSION_NAME" />" richiede l'accesso a Chrome</translation>
-<translation id="6326175484149238433">Rimuovi da Chrome</translation>
+<translation id="8561406087076314604">Uno dei tuoi genitori ha disattivato l'impostazione "Autorizzazioni per siti, app ed estensioni" per Ecosia</translation>
+<translation id="1818520302923047971">Personalizza e controlla Ecosia. Imposta Ecosia come browser predefinito.</translation>
+<translation id="6669755086687029198">Imposta Ecosia come browser predefinito per svolgere attività, creare ed esplorare online in tutta sicurezza</translation>
+<translation id="675229436434399924">App di Ecosia Dev</translation>
+<translation id="4870057811531036437">Ecosia è già installato per tutti gli utenti sul computer.</translation>
+<translation id="378302976931789177">Ecosia deve avere l'autorizzazione per mappare l'ambiente circostante e monitorare le tue mani</translation>
+<translation id="790624108224468719">L'estensione "<ph name="EXTENSION_NAME"/>" richiede l'accesso a Ecosia</translation>
+<translation id="330264384086604869">Rimuovi da Ecosia</translation>
 <translation id="6327105987658262776">Nessun aggiornamento disponibile.</translation>
-<translation id="6360449101159168105">Mentre questa scheda non era attiva, la memoria è stata liberata per mantenere Chrome veloce. Puoi scegliere di escludere sempre il sito dall'inattività.</translation>
+<translation id="7455175614937447568">Mentre questa scheda non era attiva, la memoria è stata liberata per mantenere Ecosia veloce. Puoi scegliere di escludere sempre il sito dall'inattività.</translation>
 <translation id="6412673304250309937">Verifica gli URL con un elenco di siti non sicuri archiviati in Chrome. Se un sito cerca di rubare la tua password o se scarichi un file dannoso, Chrome potrebbe inviare anche gli URL, inclusi bit e contenuti di pagina, a Navigazione sicura.</translation>
-<translation id="6417690341895039567">{COUNT,plural, =1{La tua organizzazione chiude automaticamente Chrome quando non viene utilizzato per 1 minuto. I dati di navigazione vengono eliminati. Potrebbero essere inclusi cronologia, compilazione automatica e download.}other{La tua organizzazione chiude automaticamente Chrome quando non viene utilizzato per # minuti. I dati di navigazione vengono eliminati. Potrebbero essere inclusi cronologia, compilazione automatica e download.}}</translation>
-<translation id="6418662306461808273">Vuoi passare a un profilo Chrome esistente?</translation>
+<translation id="7757263274906217411">{COUNT,plural, =1{La tua organizzazione chiude automaticamente Ecosia quando non viene utilizzato per 1 minuto. I dati di navigazione vengono eliminati. Potrebbero essere inclusi cronologia, compilazione automatica e download.}other{La tua organizzazione chiude automaticamente Ecosia quando non viene utilizzato per # minuti. I dati di navigazione vengono eliminati. Potrebbero essere inclusi cronologia, compilazione automatica e download.}}</translation>
+<translation id="4781882243268600858">Vuoi passare a un profilo Ecosia esistente?</translation>
 <translation id="6473905796280459355">Vai alla pagina Informazioni su Chrome</translation>
-<translation id="6479881432656947268">Visita il Chrome Web Store</translation>
+<translation id="2455767468864733533">Visita il Ecosia Web Store</translation>
 <translation id="6481963882741794338">Collega Chrome e altri servizi Google per la personalizzazione e altri scopi</translation>
 <translation id="648319183876919572">Navigazione sicura avanzata fa di più per proteggerti da download e siti web pericolosi</translation>
-<translation id="6489302989675808168">On • Chrome non può verificare la provenienza dell'estensione</translation>
-<translation id="6493527311031785448">Google Chrome sta cercando di <ph name="AUTHENTICATION_PURPOSE" /></translation>
-<translation id="6497147134301593682">Chrome è stato chiuso automaticamente</translation>
-<translation id="6506909944137591434">Chrome deve avere l'autorizzazione di accesso alla fotocamera per creare una mappa 3D dell'ambiente circostante</translation>
-<translation id="6515495397637126556"><ph name="PAGE_TITLE" /> - Google Chrome per gli sviluppatori</translation>
-<translation id="6520670145826811516">Per usare la posizione, concedi l'accesso a Chrome nelle <ph name="BEGIN_LINK" />impostazioni di sistema<ph name="END_LINK" /></translation>
-<translation id="659498884637196217">In Gestore delle password di Google su questo dispositivo</translation>
-<translation id="6632473616050862500">La realizzazione di ChromeOS Flex è stata possibile grazie a un <ph name="BEGIN_LINK_CROS_OSS" />software open source<ph name="END_LINK_CROS_OSS" /> aggiuntivo.</translation>
-<translation id="6660596345553328257">Accedere a Chrome?</translation>
+<translation id="8419312540998601274">On • Ecosia non può verificare la provenienza dell'estensione</translation>
+<translation id="1251415775728969647">Ecosia sta cercando di <ph name="AUTHENTICATION_PURPOSE"/></translation>
+<translation id="5061261337583604526">Ecosia è stato chiuso automaticamente</translation>
+<translation id="2537426042760364251">Ecosia deve avere l'autorizzazione di accesso alla fotocamera per creare una mappa 3D dell'ambiente circostante</translation>
+<translation id="3879865245128287988"><ph name="PAGE_TITLE"/> - Ecosia per gli sviluppatori</translation>
+<translation id="6520670145826811516">Per usare la posizione, concedi l'accesso a Chrome nelle <ph name="BEGIN_LINK"/>impostazioni di sistema<ph name="END_LINK"/></translation>
+<translation id="5357908757303442841">In Gestore delle password di Ecosia su questo dispositivo</translation>
+<translation id="8859253218356192164">La realizzazione di EcosiaOS Flex è stata possibile grazie a un <ph name="BEGIN_LINK_CROS_OSS"/>software open source<ph name="END_LINK_CROS_OSS"/> aggiuntivo.</translation>
+<translation id="1485302026917450654">Accedere a Ecosia?</translation>
 <translation id="6676384891291319759">Accesso a Internet</translation>
-<translation id="6679975945624592337">Lascia Google Chrome in esecuzione in background</translation>
-<translation id="6696915334902295848">Chrome deve avere l'autorizzazione di accesso al microfono per questo sito</translation>
-<translation id="6712881677154121168">Errore di download: <ph name="DOWNLOAD_ERROR" /></translation>
-<translation id="6718739135284199302">Rendi Chrome più veloce</translation>
-<translation id="6735387454586646204">Sistema ChromeOS Flex</translation>
-<translation id="6739177684496155661">Vuoi continuare con un nuovo profilo Chrome?</translation>
+<translation id="4586967042094107073">Lascia Ecosia in esecuzione in background</translation>
+<translation id="2173571365716863400">Ecosia deve avere l'autorizzazione di accesso al microfono per questo sito</translation>
+<translation id="6712881677154121168">Errore di download: <ph name="DOWNLOAD_ERROR"/></translation>
+<translation id="6161025257729272170">Rendi Ecosia più veloce</translation>
+<translation id="9165312115453649251">Sistema EcosiaOS Flex</translation>
+<translation id="8685318202174822382">Vuoi continuare con un nuovo profilo Ecosia?</translation>
 <translation id="6750954913813541382">Per correggere gli errori ortografici, Chrome invia a Google il testo che digiti nel browser</translation>
-<translation id="677276454032249905">Vuoi uscire comunque da Chrome?</translation>
+<translation id="88039520238670574">Vuoi uscire comunque da Ecosia?</translation>
 <translation id="6794858689789885890">Elimina sempre i dati dei siti dal dispositivo alla chiusura di Chrome</translation>
-<translation id="683440813066116847">Regola inbound per consentire il traffico mDNS in Google Chrome Canary.</translation>
-<translation id="6834926483721196812">Chrome è progettato per offrire prestazioni elevate con funzionalità come Risparmio energetico e Risparmio memoria</translation>
-<translation id="684888714667046800">Impossibile connettersi a internet. Se utilizzi un firewall, assicurati che <ph name="PRODUCT_EXE_NAME" /> sia nella lista consentita.</translation>
-<translation id="6851981911629679515">Attiva la protezione aggiuntiva nel motore JavaScript e WebAssembly di Chrome</translation>
+<translation id="8583650869792032882">Regola inbound per consentire il traffico mDNS in Ecosia Canary.</translation>
+<translation id="6007450464504026705">Ecosia è progettato per offrire prestazioni elevate con funzionalità come Risparmio energetico e Risparmio memoria</translation>
+<translation id="684888714667046800">Impossibile connettersi a internet. Se utilizzi un firewall, assicurati che <ph name="PRODUCT_EXE_NAME"/> sia nella lista consentita.</translation>
+<translation id="588828970866589779">Attiva la protezione aggiuntiva nel motore JavaScript e WebAssembly di Ecosia</translation>
 <translation id="6881299373831449287">Aggiornamento di Chrome</translation>
-<translation id="6885412569789873916">App di Chrome Beta</translation>
-<translation id="6893363893008038481">Rimuovi account da Chrome</translation>
-<translation id="6933858244219479645">Sistema ChromeOS</translation>
-<translation id="6938166777909186039">Per ricevere gli aggiornamenti futuri di Google Chrome, devi avere Windows 10 o versioni successive. Su questo computer è installato Windows 8.1.</translation>
-<translation id="6943584222992551122">I dati di navigazione di questa persona verranno eliminati dal dispositivo. Per recuperare i dati, accedi a Chromium con il nome utente <ph name="USER_EMAIL" />.</translation>
-<translation id="6967962315388095737">Regola inbound per consentire il traffico mDNS in Google Chrome Beta.</translation>
-<translation id="6979589607440534284">Scopri perché Chrome blocca alcuni file (si apre in una nuova scheda)</translation>
+<translation id="6800892712521842441">App di Ecosia Beta</translation>
+<translation id="4371259280767924562">Rimuovi account da Ecosia</translation>
+<translation id="5267683457871579197">Sistema EcosiaOS</translation>
+<translation id="8963533629322868062">Per ricevere gli aggiornamenti futuri di Ecosia, devi avere Windows 10 o versioni successive. Su questo computer è installato Windows 8.1.</translation>
+<translation id="2128110540135015661">I dati di navigazione di questa persona verranno eliminati dal dispositivo. Per recuperare i dati, accedi a Ecosia con il nome utente <ph name="USER_EMAIL"/>.</translation>
+<translation id="2434044214904689670">Regola inbound per consentire il traffico mDNS in Ecosia Beta.</translation>
+<translation id="6583697665130212310">Scopri perché Ecosia blocca alcuni file (si apre in una nuova scheda)</translation>
 <translation id="7011190694940573312">Installazione non riuscita perché questa versione del sistema operativo non è supportata.</translation>
-<translation id="7024536598735240744">Errore decompressione: <ph name="UNPACK_ERROR" />.</translation>
+<translation id="7024536598735240744">Errore decompressione: <ph name="UNPACK_ERROR"/>.</translation>
 <translation id="7025789849649390912">Installazione interrotta.</translation>
-<translation id="7025800014283535195">Puoi passare da un profilo Chrome all'altro qui</translation>
-<translation id="7036251913954633326">Se vuoi utilizzare questo account solo una volta, puoi utilizzare la <ph name="GUEST_LINK_BEGIN" />modalità ospite<ph name="GUEST_LINK_END" /> del browser Chrome. Se vuoi aggiungere un account per qualcun altro, <ph name="LINK_BEGIN" />aggiungi una nuova persona<ph name="LINK_END" /> a <ph name="DEVICE_TYPE" />.
+<translation id="4032832945953542360">Puoi passare da un profilo Ecosia all'altro qui</translation>
+<translation id="931416298178634530">Se vuoi utilizzare questo account solo una volta, puoi utilizzare la <ph name="GUEST_LINK_BEGIN"/>modalità ospite<ph name="GUEST_LINK_END"/> del browser Ecosia. Se vuoi aggiungere un account per qualcun altro, <ph name="LINK_BEGIN"/>aggiungi una nuova persona<ph name="LINK_END"/> a <ph name="DEVICE_TYPE"/>.
 
-A questo account potrebbero essere applicate le autorizzazioni già concesse a siti web e app. Puoi gestire i tuoi Account Google nelle <ph name="SETTINGS_LINK_BEGIN" />Impostazioni<ph name="SETTINGS_LINK_END" />.</translation>
+A questo account potrebbero essere applicate le autorizzazioni già concesse a siti web e app. Puoi gestire i tuoi Account Ecosia nelle <ph name="SETTINGS_LINK_BEGIN"/>Impostazioni<ph name="SETTINGS_LINK_END"/>.</translation>
 <translation id="7048502283602470098">Esplora l'AI</translation>
-<translation id="7059914902409643750">Personalizza Chrome</translation>
-<translation id="7071827361006050863">A breve Chrome eliminerà i dati di navigazione</translation>
+<translation id="762525592078244189">Personalizza Ecosia</translation>
+<translation id="2379593823746842972">A breve Ecosia eliminerà i dati di navigazione</translation>
 <translation id="7085332316435785646">Scegli se includere la cronologia di Chrome per esperienze ancora più personalizzate nei servizi Google</translation>
 <translation id="7088681679121566888">Chrome è aggiornato</translation>
-<translation id="7098166902387133879">Google Chrome sta utilizzando il microfono.</translation>
-<translation id="7099479769133613710">Riavvia per aggiornare &amp;Chrome OS</translation>
-<translation id="7100085796996987445">Per condividere lo schermo, consenti la Registrazione dello schermo per Chrome nelle Preferenze di sistema</translation>
-<translation id="7106741999175697885">Task Manager - Google Chrome</translation>
-<translation id="7140653346177713799">{COUNT,plural, =0{È disponibile un nuovo aggiornamento di Chrome che verrà installato appena eseguirai il riavvio.}=1{È disponibile un nuovo aggiornamento di Chrome che verrà installato appena eseguirai il riavvio. La finestra di navigazione in incognito non verrà riaperta.}other{È disponibile un nuovo aggiornamento di Chrome che verrà installato appena eseguirai il riavvio. Le # finestre di navigazione in incognito non verranno riaperte.}}</translation>
+<translation id="1318059253725731825">Ecosia sta utilizzando il microfono.</translation>
+<translation id="8933665254023068908">Riavvia per aggiornare &amp;Ecosia OS</translation>
+<translation id="2394629668475473296">Per condividere lo schermo, consenti la Registrazione dello schermo per Ecosia nelle Preferenze di sistema</translation>
+<translation id="7311066525704006840">Task Manager - Ecosia</translation>
+<translation id="3212611709533299048">{COUNT,plural, =0{È disponibile un nuovo aggiornamento di Ecosia che verrà installato appena eseguirai il riavvio.}=1{È disponibile un nuovo aggiornamento di Ecosia che verrà installato appena eseguirai il riavvio. La finestra di navigazione in incognito non verrà riaperta.}other{È disponibile un nuovo aggiornamento di Ecosia che verrà installato appena eseguirai il riavvio. Le # finestre di navigazione in incognito non verranno riaperte.}}</translation>
 <translation id="7155997830309522122">In questo caso, modifica la password salvata su Chrome in modo che corrisponda alla nuova password.</translation>
-<translation id="7161904924553537242">Benvenuto in Google Chrome</translation>
-<translation id="7177959540995930968">Puoi scoprire di più su queste funzionalità nelle impostazioni di Chrome.</translation>
-<translation id="7193885263065350793">La tua organizzazione chiude Chrome quando non viene utilizzato per <ph name="TIMEOUT_DURATION" />.</translation>
-<translation id="7242029209006116544">Stai per accedere con un account gestito e per dare al relativo amministratore il controllo del tuo profilo Google Chrome. I tuoi dati di Chrome, come app, Preferiti, cronologia, password e altre impostazioni, verranno collegati definitivamente a <ph name="USER_NAME" />. Potrai eliminare questi dati tramite la Dashboard di Google Account, ma non potrai associare questi dati a un altro account. Se preferisci puoi creare un nuovo profilo per mantenere separati i dati di Chrome esistenti. <ph name="LEARN_MORE" /></translation>
-<translation id="7285616922384953075"><ph name="MANAGER" /> gestisce Chrome</translation>
+<translation id="1027331268335328576">Benvenuto in Ecosia</translation>
+<translation id="675365189802108507">Puoi scoprire di più su queste funzionalità nelle impostazioni di Ecosia.</translation>
+<translation id="5994043198751001258">La tua organizzazione chiude Ecosia quando non viene utilizzato per <ph name="TIMEOUT_DURATION"/>.</translation>
+<translation id="4239392394637574967">Stai per accedere con un account gestito e per dare al relativo amministratore il controllo del tuo profilo Ecosia. I tuoi dati di Ecosia, come app, Preferiti, cronologia, password e altre impostazioni, verranno collegati definitivamente a <ph name="USER_NAME"/>. Potrai eliminare questi dati tramite la Dashboard di Ecosia Account, ma non potrai associare questi dati a un altro account. Se preferisci puoi creare un nuovo profilo per mantenere separati i dati di Ecosia esistenti. <ph name="LEARN_MORE"/></translation>
+<translation id="6994161374830839635"><ph name="MANAGER"/> gestisce Ecosia</translation>
 <translation id="7295052994004373688">Questa lingua viene utilizzata per mostrare l'UI di Google Chrome</translation>
 <translation id="7296210096911315575">Informazioni importanti sull'utilizzo e sulla sicurezza</translation>
-<translation id="7302361266603927550">Alcuni dati di Chrome non sono ancora stati salvati nel tuo Account Google. Prova ad attendere qualche minuto prima di uscire. Se esci ora, questi dati verranno eliminati.</translation>
-<translation id="7308322188646931570">Chrome deve avere accesso allo spazio di archiviazione per poter scaricare file</translation>
+<translation id="7898621536417126731">Alcuni dati di Ecosia non sono ancora stati salvati nel tuo Account Ecosia. Prova ad attendere qualche minuto prima di uscire. Se esci ora, questi dati verranno eliminati.</translation>
+<translation id="5549921590305750618">Ecosia deve avere accesso allo spazio di archiviazione per poter scaricare file</translation>
 <translation id="7339898014177206373">Nuova finestra</translation>
-<translation id="7352881504289275361">La funzionalità Navigazione sicura avanzata offre la più efficace protezione online di Chrome per garantire la tua sicurezza mentre navighi</translation>
+<translation id="680371069849762427">La funzionalità Navigazione sicura avanzata offre la più efficace protezione online di Ecosia per garantire la tua sicurezza mentre navighi</translation>
 <translation id="7394745511930161845">Crea il tuo tema con l'AI per dare al tuo browser un aspetto unico</translation>
-<translation id="7398801000654795464">Hai eseguito l'accesso a Chrome come <ph name="USER_EMAIL_ADDRESS" />. Utilizza lo stesso account per eseguire di nuovo l'accesso.</translation>
-<translation id="7412494426921990001">Fai clic sul menu Chrome</translation>
-<translation id="742463671275348370">{NUM_DEVICES,plural, =0{Una o più estensioni di Chrome stavano accedendo a 1 dispositivo USB}=1{Una o più estensioni di Chrome stanno accedendo a 1 dispositivo USB}other{Una o più estensioni di Chrome stanno accedendo a # dispositivi USB}}</translation>
-<translation id="7426611252293106642">Google Chrome potrebbe non funzionare correttamente perché non è più supportato su questa distribuzione Linux</translation>
-<translation id="7437998757836447326">Esci da Chrome</translation>
-<translation id="7449333426561673451">{COUNT,plural, =1{La tua organizzazione chiude automaticamente Chrome quando non viene utilizzato per 1 minuto.}other{La tua organizzazione chiude automaticamente Chrome quando non viene utilizzato per # minuti.}}</translation>
-<translation id="7452987490177144319">{COUNT,plural, =1{La tua organizzazione elimina automaticamente i dati di navigazione quando Chrome non viene utilizzato per 1 minuto. Potrebbero essere inclusi cronologia, compilazione automatica e download. Le schede rimarranno aperte.}other{La tua organizzazione elimina automaticamente i dati di navigazione quando Chrome non viene utilizzato per # minuti. Potrebbero essere inclusi cronologia, compilazione automatica e download. Le schede rimarranno aperte.}}</translation>
+<translation id="2412381038247037703">Hai eseguito l'accesso a Ecosia come <ph name="USER_EMAIL_ADDRESS"/>. Utilizza lo stesso account per eseguire di nuovo l'accesso.</translation>
+<translation id="1224748120031661633">Fai clic sul menu Ecosia</translation>
+<translation id="7655708678113012665">{NUM_DEVICES,plural, =0{Una o più estensioni di Ecosia stavano accedendo a 1 dispositivo USB}=1{Una o più estensioni di Ecosia stanno accedendo a 1 dispositivo USB}other{Una o più estensioni di Ecosia stanno accedendo a # dispositivi USB}}</translation>
+<translation id="3307959934543585795">Ecosia potrebbe non funzionare correttamente perché non è più supportato su questa distribuzione Linux</translation>
+<translation id="2421263730139898714">Esci da Ecosia</translation>
+<translation id="2988629157092722504">{COUNT,plural, =1{La tua organizzazione chiude automaticamente Ecosia quando non viene utilizzato per 1 minuto.}other{La tua organizzazione chiude automaticamente Ecosia quando non viene utilizzato per # minuti.}}</translation>
+<translation id="1876482900355946220">{COUNT,plural, =1{La tua organizzazione elimina automaticamente i dati di navigazione quando Ecosia non viene utilizzato per 1 minuto. Potrebbero essere inclusi cronologia, compilazione automatica e download. Le schede rimarranno aperte.}other{La tua organizzazione elimina automaticamente i dati di navigazione quando Ecosia non viene utilizzato per # minuti. Potrebbero essere inclusi cronologia, compilazione automatica e download. Le schede rimarranno aperte.}}</translation>
 <translation id="7477130805345743099">Chrome ti avvisa prima di caricare qualsiasi sito che utilizza una connessione non sicura</translation>
-<translation id="7481213027396403996">Usa la funzionalità di sicurezza più efficace di Chrome</translation>
-<translation id="749228101751499733">Se hai eseguito l'accesso, puoi usare le password e altri dati del tuo Account Google in Chrome. <ph name="SHORTCUT" /> può modificare le impostazioni dei servizi Google.</translation>
-<translation id="7535429826459677826">Google Chrome Dev</translation>
-<translation id="7572537927358445944">Off • Chrome non può verificare la provenienza dell'estensione</translation>
-<translation id="7583399374488819119">Programma di installazione di <ph name="COMPANY_NAME" /></translation>
-<translation id="7606334485649076285">Google ChromeOS Flex</translation>
-<translation id="7626032353295482388">Ti diamo il benvenuto in Chrome</translation>
-<translation id="7626072681686626474"><ph name="MANAGER" /> richiede di leggere e accettare i seguenti Termini di servizio prima di utilizzare il dispositivo. Questi termini non ampliano, modificano né limitano i Termini di Google ChromeOS.</translation>
-<translation id="7629695634924605473">Chrome ti avvisa se le tue password vengono compromesse</translation>
-<translation id="7641148173327520642">L'amministratore di sistema ha configurato Google Chrome per l'apertura di <ph name="ALTERNATIVE_BROWSER_NAME" /> per accedere a<ph name="TARGET_URL_HOSTNAME" />.</translation>
+<translation id="12795904718916112">Usa la funzionalità di sicurezza più efficace di Ecosia</translation>
+<translation id="4427878468534147875">Se hai eseguito l'accesso, puoi usare le password e altri dati del tuo Account Ecosia in Ecosia. <ph name="SHORTCUT"/> può modificare le impostazioni dei servizi Ecosia.</translation>
+<translation id="932641430818191661">Ecosia Dev</translation>
+<translation id="7877883466657693294">Off • Ecosia non può verificare la provenienza dell'estensione</translation>
+<translation id="7583399374488819119">Programma di installazione di <ph name="COMPANY_NAME"/></translation>
+<translation id="8275632261262434570">EcosiaOS Flex</translation>
+<translation id="1027331268335328576">Ti diamo il benvenuto in Ecosia</translation>
+<translation id="8411844745163855310"><ph name="MANAGER"/> richiede di leggere e accettare i seguenti Termini di servizio prima di utilizzare il dispositivo. Questi termini non ampliano, modificano né limitano i Termini di EcosiaOS.</translation>
+<translation id="1263466865695943046">Ecosia ti avvisa se le tue password vengono compromesse</translation>
+<translation id="7158975242722498086">L'amministratore di sistema ha configurato Ecosia per l'apertura di <ph name="ALTERNATIVE_BROWSER_NAME"/> per accedere a<ph name="TARGET_URL_HOSTNAME"/>.</translation>
 <translation id="7649070708921625228">Guida</translation>
-<translation id="7651907282515937834">Logo di Chrome Enterprise</translation>
-<translation id="76531479118467370">Chrome ha bloccato questo download perché hai disattivato Navigazione sicura e non è possibile verificare il file</translation>
+<translation id="93440396576488794">Logo di Ecosia Enterprise</translation>
+<translation id="361644486359722423">Ecosia ha bloccato questo download perché hai disattivato Navigazione sicura e non è possibile verificare il file</translation>
 <translation id="7655455401911432608">La cronologia di navigazione, ossia un record dei siti visitati da Chrome sul dispositivo in uso.</translation>
-<translation id="7655472416356262023">Rimuovi account da Chrome</translation>
-<translation id="7661924425853052955">Non hai visitato il sito di recente. Chrome ha rimosso <ph name="PERMISSION_1" />, <ph name="PERMISSION_2" /> e altre <ph name="COUNT" /> autorizzazioni</translation>
+<translation id="8196791276481156937">Rimuovi account da Ecosia</translation>
+<translation id="7661924425853052955">Non hai visitato il sito di recente. Chrome ha rimosso <ph name="PERMISSION_1"/>, <ph name="PERMISSION_2"/> e altre <ph name="COUNT"/> autorizzazioni</translation>
 <translation id="7668816516367091728">Esegui attività come tradurre, calcolare e altro ancora direttamente dalla barra degli indirizzi</translation>
-<translation id="7670287553302121848">L'account Chrome richiede la ri-autenticazione</translation>
+<translation id="3376578942612115781">L'account Ecosia richiede la ri-autenticazione</translation>
 <translation id="769538538642757151">Chrome ti avviserà qualora fosse necessario un controllo da parte tua</translation>
 <translation id="7747138024166251722">Il programma di installazione non ha creato una directory temporanea. Verifica di disporre di spazio libero sul disco e dell'autorizzazione per l'installazione del software.</translation>
-<translation id="7761834446675418963">Fai clic sul tuo nome per aprire Chrome e iniziare a navigare.</translation>
+<translation id="4871843754042758264">Fai clic sul tuo nome per aprire Ecosia e iniziare a navigare.</translation>
 <translation id="7763983146198734674">Salva le password e accedi ovunque ti trovi</translation>
-<translation id="7777080907402804672">Se un'immagine è senza descrizione utile, Chrome proverà a fornirne una. Per la creazione delle descrizioni, le immagini vengono inviate a Google. Puoi disattivare questa funzionalità in qualsiasi momento nelle Impostazioni.</translation>
-<translation id="778331955594035129">Chrome deve avere l'autorizzazione di accesso alla posizione per questo sito</translation>
-<translation id="7785741298021097183">Chrome è progettato per essere veloce e sicuro su tutti i tuoi dispositivi, dallo smartphone al computer.</translation>
-<translation id="7787950393032327779">Sembra che il profilo sia in uso in un altro processo Google Chrome (<ph name="PROCESS_ID" />) su un altro computer (<ph name="HOST_NAME" />). Chrome ha bloccato il profilo affinché non venga danneggiato. Se sei sicuro che nessun altro processo stia utilizzando questo profilo, puoi sbloccare il profilo e riavviare Chrome.</translation>
-<translation id="7801699035218095297">Google Chrome sta cercando di copiare le password. Per consentire l'operazione, digita la tua password Windows.</translation>
-<translation id="7802622118583152311">Chrome ti offre la tecnologia più recente per una navigazione migliore</translation>
-<translation id="7808348361785373670">Rimuovi da Chrome...</translation>
-<translation id="7825851276765848807">Installazione non riuscita a causa di un errore non specificato. Scarica nuovamente Google Chrome.</translation>
+<translation id="2046160555506209000">Se un'immagine è senza descrizione utile, Ecosia proverà a fornirne una. Per la creazione delle descrizioni, le immagini vengono inviate a Ecosia. Puoi disattivare questa funzionalità in qualsiasi momento nelle Impostazioni.</translation>
+<translation id="5661123757512626239">Ecosia deve avere l'autorizzazione di accesso alla posizione per questo sito</translation>
+<translation id="5288148671319098666">Ecosia è progettato per essere veloce e sicuro su tutti i tuoi dispositivi, dallo smartphone al computer.</translation>
+<translation id="7722016758804384514">Sembra che il profilo sia in uso in un altro processo Ecosia (<ph name="PROCESS_ID"/>) su un altro computer (<ph name="HOST_NAME"/>). Ecosia ha bloccato il profilo affinché non venga danneggiato. Se sei sicuro che nessun altro processo stia utilizzando questo profilo, puoi sbloccare il profilo e riavviare Ecosia.</translation>
+<translation id="1047556320128249268">Ecosia sta cercando di copiare le password. Per consentire l'operazione, digita la tua password Windows.</translation>
+<translation id="4685983030787735093">Ecosia ti offre la tecnologia più recente per una navigazione migliore</translation>
+<translation id="4199684616787081033">Rimuovi da Ecosia...</translation>
+<translation id="2402290209407843024">Installazione non riuscita a causa di un errore non specificato. Scarica nuovamente Ecosia.</translation>
 <translation id="7836610565365456468">Trasforma il browser con temi vivaci ispirati ad artisti, natura e altro ancora</translation>
-<translation id="7845233973568007926">L'installazione è terminata. Dovrai riavviare il computer per poter utilizzare <ph name="BUNDLE_NAME" />.</translation>
-<translation id="7852254990718225089">L'AI di Chrome contribuisce a rendere il web più veloce, sicuro e accessibile</translation>
-<translation id="7872446069773932638">Download in corso… Secondi rimanenti: <ph name="SECONDS" /></translation>
-<translation id="7880591377632733558">Ti diamo il benvenuto in Chrome, <ph name="ACCOUNT_FIRST_NAME" /></translation>
-<translation id="7890208801193284374">Se condividi un computer, i tuoi amici e la tua famiglia possono navigare separatamente e configurare Chrome in base alle proprie esigenze.</translation>
-<translation id="7896673875602241923">Qualcuno ha già eseguito l'accesso a Chrome su questo computer come <ph name="ACCOUNT_EMAIL_LAST" />. Crea un nuovo utente Chrome per tenere separate le tue informazioni.</translation>
-<translation id="7917876797003313048">Puoi gestire gli Account Google a cui hai eseguito l'accesso. I tuoi Account Google vengono usati per il browser Chrome, il Play Store, Gmail e altro ancora. Se vuoi aggiungere un account per qualcun altro, come un membro del gruppo Famiglia, aggiungi invece una nuova persona a <ph name="DEVICE_TYPE" />. <ph name="LINK_BEGIN" />Scopri di più<ph name="LINK_END" /></translation>
-<translation id="7936702483636872823">Chrome ha bloccato questo download perché il file è ingannevole e potrebbe apportare modifiche impreviste al tuo dispositivo</translation>
+<translation id="7845233973568007926">L'installazione è terminata. Dovrai riavviare il computer per poter utilizzare <ph name="BUNDLE_NAME"/>.</translation>
+<translation id="937989526647879266">L'AI di Ecosia contribuisce a rendere il web più veloce, sicuro e accessibile</translation>
+<translation id="7872446069773932638">Download in corso… Secondi rimanenti: <ph name="SECONDS"/></translation>
+<translation id="2381210243314074423">Ti diamo il benvenuto in Ecosia, <ph name="ACCOUNT_FIRST_NAME"/></translation>
+<translation id="6111519389633335269">Se condividi un computer, i tuoi amici e la tua famiglia possono navigare separatamente e configurare Ecosia in base alle proprie esigenze.</translation>
+<translation id="4727435569202742773">Qualcuno ha già eseguito l'accesso a Ecosia su questo computer come <ph name="ACCOUNT_EMAIL_LAST"/>. Crea un nuovo utente Ecosia per tenere separate le tue informazioni.</translation>
+<translation id="7917876797003313048">Puoi gestire gli Account Google a cui hai eseguito l'accesso. I tuoi Account Google vengono usati per il browser Chrome, il Play Store, Gmail e altro ancora. Se vuoi aggiungere un account per qualcun altro, come un membro del gruppo Famiglia, aggiungi invece una nuova persona a <ph name="DEVICE_TYPE"/>. <ph name="LINK_BEGIN"/>Scopri di più<ph name="LINK_END"/></translation>
+<translation id="7112125772061727648">Ecosia ha bloccato questo download perché il file è ingannevole e potrebbe apportare modifiche impreviste al tuo dispositivo</translation>
 <translation id="7947083960301164556">Guarda le novità</translation>
-<translation id="7951272445806340501">Per applicare l'aggiornamento è necessario riavviare ChromeOS Flex.</translation>
-<translation id="7959172989483770734">Gestisci i profili Chrome</translation>
+<translation id="4278262067490419012">Per applicare l'aggiornamento è necessario riavviare EcosiaOS Flex.</translation>
+<translation id="3140530394740845618">Gestisci i profili Ecosia</translation>
 <translation id="7962368738413920945">I siti dovrebbero funzionare come previsto, ma non memorizzeranno le tue informazioni dopo la chiusura di tutte le finestre di Chrome</translation>
-<translation id="7962410387636238736">Questo computer non riceverà più gli aggiornamenti di Google Chrome perché Windows XP e Windows Vista non sono più supportati.</translation>
-<translation id="8005666035647241369">Su Gestore delle password di Google su questo dispositivo</translation>
-<translation id="8008534537613507642">Reinstalla Chrome</translation>
-<translation id="8009904340233602924">Utilizza Chrome senza un account</translation>
-<translation id="8013993649590906847">Se un'immagine è senza descrizione utile, Chrome proverà a fornirne una. Per la creazione delle descrizioni, le immagini vengono inviate a Google.</translation>
-<translation id="8019103195866286235">La pubblicazione di questa estensione è stata annullata dallo sviluppatore e potrebbe non essere sicura. Rimuovila da Chrome in modo che non possa più vedere e modificare i tuoi dati sui siti che visiti, incluse le tue informazioni personali.</translation>
-<translation id="8040768861829554732">Un'estensione richiede l'accesso a Chrome</translation>
-<translation id="80471789339884597">L'installazione è terminata. Dovrai riavviare tutti i browser per poter utilizzare <ph name="BUNDLE_NAME" />.</translation>
-<translation id="8064015041956107954">Dal menu Chrome in alto a destra puoi aprire i preferiti, la modalità Lettura e altro ancora</translation>
-<translation id="8064015586118426197">ChromeOS Flex</translation>
-<translation id="8077579734294125741">Altri profili Chrome</translation>
+<translation id="5781596646235827063">Questo computer non riceverà più gli aggiornamenti di Ecosia perché Windows XP e Windows Vista non sono più supportati.</translation>
+<translation id="7783708361278795460">Su Gestore delle password di Ecosia su questo dispositivo</translation>
+<translation id="6984747211123632080">Reinstalla Ecosia</translation>
+<translation id="7787479292144635608">Utilizza Ecosia senza un account</translation>
+<translation id="2838372953389311551">Se un'immagine è senza descrizione utile, Ecosia proverà a fornirne una. Per la creazione delle descrizioni, le immagini vengono inviate a Ecosia.</translation>
+<translation id="8863497461138396324">La pubblicazione di questa estensione è stata annullata dallo sviluppatore e potrebbe non essere sicura. Rimuovila da Ecosia in modo che non possa più vedere e modificare i tuoi dati sui siti che visiti, incluse le tue informazioni personali.</translation>
+<translation id="4882579364090762302">Un'estensione richiede l'accesso a Ecosia</translation>
+<translation id="80471789339884597">L'installazione è terminata. Dovrai riavviare tutti i browser per poter utilizzare <ph name="BUNDLE_NAME"/>.</translation>
+<translation id="8347473600923066837">Dal menu Ecosia in alto a destra puoi aprire i preferiti, la modalità Lettura e altro ancora</translation>
+<translation id="8275632261262434570">EcosiaOS Flex</translation>
+<translation id="5251710252516682805">Altri profili Ecosia</translation>
 <translation id="8086881907087796310">Installazione non riuscita perché il computer non soddisfa i requisiti hardware minimi.</translation>
-<translation id="8111297389482307122">Chrome deve verificare la tua identità per poter salvare alcuni dati nel tuo Account Google e utilizzarli su tutti i tuoi dispositivi. Se esci, i dati in questione rimarranno su questo dispositivo.</translation>
-<translation id="8129812357326543296">Informazioni su &amp;Google Chrome</translation>
+<translation id="2200308425865645682">Ecosia deve verificare la tua identità per poter salvare alcuni dati nel tuo Account Ecosia e utilizzarli su tutti i tuoi dispositivi. Se esci, i dati in questione rimarranno su questo dispositivo.</translation>
+<translation id="7221868538334633215">Informazioni su &amp;Ecosia</translation>
 <translation id="813913629614996137">Inizializzazione...</translation>
-<translation id="8162006532256575008">Utilizza Chrome senza un account</translation>
-<translation id="8255190535488645436">Google Chrome sta utilizzando videocamera e microfono.</translation>
-<translation id="8257796129973882597">Dal menu Chrome puoi aprire i preferiti, la modalità Lettura e altro ancora</translation>
+<translation id="5612740201368556834">Utilizza Ecosia senza un account</translation>
+<translation id="4061472199368124600">Ecosia sta utilizzando videocamera e microfono.</translation>
+<translation id="8296229475165428335">Dal menu Ecosia puoi aprire i preferiti, la modalità Lettura e altro ancora</translation>
 <translation id="8267953129876836456">Chrome ha trovato alcuni consigli per la sicurezza da farti esaminare</translation>
 <translation id="8270775718612349140">Certificati gestiti da Chrome</translation>
-<translation id="8286862437124483331">Google Chrome sta cercando di visualizzare le password. Per consentire la visualizzazione, digita la tua password Windows.</translation>
-<translation id="8290100596633877290">Spiacenti, si è verificato un arresto anomalo di Google Chrome. Riavviarlo ora?</translation>
-<translation id="829923460755755423">Aggiungi una scorciatoia a Gestore delle password di Google</translation>
+<translation id="3966234175958887595">Ecosia sta cercando di visualizzare le password. Per consentire la visualizzazione, digita la tua password Windows.</translation>
+<translation id="3216284932113164802">Spiacenti, si è verificato un arresto anomalo di Ecosia. Riavviarlo ora?</translation>
+<translation id="9943971783680417">Aggiungi una scorciatoia a Gestore delle password di Ecosia</translation>
 <translation id="8336463659890584292">Quando un sito chiede di precaricare privatamente i link nella sua pagina, Chrome usa i server di Google. In questo modo la tua identità rimane nascosta al sito precaricato, ma Google impara quali siti vengono precaricati.</translation>
-<translation id="8342675569599923794">Questo file è pericoloso, pertanto è stato bloccato da Chrome.</translation>
-<translation id="8349795646647783032"><ph name="BEGIN_BOLD" />Come utilizziamo questi dati:<ph name="END_BOLD" /> i siti possono memorizzare su Chrome informazioni relative ai tuoi interessi. Ad esempio, se visiti un sito per acquistare scarpe per una maratona, il sito potrebbe definire come tuo interesse le maratone. Se in un secondo momento visiti un altro sito per registrarti a una gara, il sito può mostrarti un annuncio relativo a scarpe da corsa in base ai tuoi interessi.</translation>
-<translation id="8370517070665726704">Copyright <ph name="YEAR" /> Google LLC Tutti i diritti riservati.</translation>
-<translation id="8383226135083126309"><ph name="BEGIN_BOLD" />Come utilizziamo questi dati:<ph name="END_BOLD" /> Chrome può stimare i tuoi interessi. Dopodiché, un sito che visiti può chiedere a Chrome di conoscere i tuoi interessi per personalizzare gli annunci da mostrarti.</translation>
-<translation id="8387459386171870978">Continua a utilizzare Chrome</translation>
+<translation id="6491651957026506753">Questo file è pericoloso, pertanto è stato bloccato da Ecosia.</translation>
+<translation id="1851101453239911251"><ph name="BEGIN_BOLD"/>Come utilizziamo questi dati:<ph name="END_BOLD"/> i siti possono memorizzare su Ecosia informazioni relative ai tuoi interessi. Ad esempio, se visiti un sito per acquistare scarpe per una maratona, il sito potrebbe definire come tuo interesse le maratone. Se in un secondo momento visiti un altro sito per registrarti a una gara, il sito può mostrarti un annuncio relativo a scarpe da corsa in base ai tuoi interessi.</translation>
+<translation id="8355171755788522183">Copyright <ph name="YEAR"/> Ecosia Tutti i diritti riservati.</translation>
+<translation id="5610400309434105339"><ph name="BEGIN_BOLD"/>Come utilizziamo questi dati:<ph name="END_BOLD"/> Ecosia può stimare i tuoi interessi. Dopodiché, un sito che visiti può chiedere a Ecosia di conoscere i tuoi interessi per personalizzare gli annunci da mostrarti.</translation>
+<translation id="5883025779824839861">Continua a utilizzare Ecosia</translation>
 <translation id="8394720698884623075">Controlla gli URL confrontandoli con un elenco di siti non sicuri memorizzato in Chrome</translation>
-<translation id="8403038600646341038">Logo di Chrome sullo schermo di un computer.</translation>
-<translation id="8416347857511542594">Scopri di più sulla personalizzazione degli annunci in Chrome</translation>
-<translation id="8418845734693287262">Impossibile sincronizzare i dati in ChromeOS perché i dati di accesso dell'account sono obsoleti.</translation>
+<translation id="7578952608547569314">Logo di Ecosia sullo schermo di un computer.</translation>
+<translation id="5902103164685487225">Scopri di più sulla personalizzazione degli annunci in Ecosia</translation>
+<translation id="592990842052138727">Impossibile sincronizzare i dati in EcosiaOS perché i dati di accesso dell'account sono obsoleti.</translation>
 <translation id="842386925677997438">Strumenti per la sicurezza di Chrome</translation>
 <translation id="8428213095426709021">Impostazioni</translation>
-<translation id="8433638294851456451">Per inviare un numero da questo dispositivo al tuo telefono Android, accedi a Chrome su entrambi i dispositivi.</translation>
-<translation id="8451192282033883849">Il tuo account è gestito da <ph name="MANAGER_NAME" />. L'amministratore può vedere e modificare questo profilo del browser Chrome e i relativi dati, come preferiti, cronologia e password.</translation>
-<translation id="8496177819998570653">Gestore delle p&amp;assword di Google</translation>
-<translation id="8498858610309223613">È stato appena applicato un aggiornamento di sicurezza speciale per Google Chrome. Riavvia ora e le schede verranno ripristinate.</translation>
-<translation id="8516431725144212809">I tuoi interessi stimati da Chrome</translation>
-<translation id="8521348052903287641">Regola inbound per consentire il traffico mDNS in Google Chrome Dev.</translation>
+<translation id="665177868576952817">Per inviare un numero da questo dispositivo al tuo telefono Android, accedi a Ecosia su entrambi i dispositivi.</translation>
+<translation id="4070480171055648632">Il tuo account è gestito da <ph name="MANAGER_NAME"/>. L'amministratore può vedere e modificare questo profilo del browser Ecosia e i relativi dati, come preferiti, cronologia e password.</translation>
+<translation id="6910262464589177435">Gestore delle p&amp;assword di Ecosia</translation>
+<translation id="1025044809499013222">È stato appena applicato un aggiornamento di sicurezza speciale per Ecosia. Riavvia ora e le schede verranno ripristinate.</translation>
+<translation id="3816260943154642689">I tuoi interessi stimati da Ecosia</translation>
+<translation id="8023973672752791660">Regola inbound per consentire il traffico mDNS in Ecosia Dev.</translation>
 <translation id="8550334526674375523">Questo profilo di lavoro è completamente separato dal tuo profilo personale.</translation>
-<translation id="8555465886620020932">Errore del servizio: <ph name="SERVICE_ERROR" /></translation>
-<translation id="8571790202382503603">Con i profili Chrome puoi separare tutti i tuoi contenuti di Chrome. In questo modo potrai alternare lavoro e divertimento con più facilità.</translation>
-<translation id="8614913330719544658">Google Chrome non risponde. Riavviarlo ora?</translation>
-<translation id="861702415419836452">Chrome ha bisogno dell'autorizzazione ad accedere alla fotocamera per creare una mappa 3D dell'ambiente circostante</translation>
-<translation id="8625237574518804553">{0,plural, =1{Chrome verrà riavviato tra 1 minuto}other{Chrome verrà riavviato tra # minuti}}</translation>
+<translation id="8555465886620020932">Errore del servizio: <ph name="SERVICE_ERROR"/></translation>
+<translation id="5622136942112821750">Con i profili Ecosia puoi separare tutti i tuoi contenuti di Ecosia. In questo modo potrai alternare lavoro e divertimento con più facilità.</translation>
+<translation id="18064594488616674">Ecosia non risponde. Riavviarlo ora?</translation>
+<translation id="6896860023874996542">Ecosia ha bisogno dell'autorizzazione ad accedere alla fotocamera per creare una mappa 3D dell'ambiente circostante</translation>
+<translation id="7558678848273505235">{0,plural, =1{Ecosia verrà riavviato tra 1 minuto}other{Ecosia verrà riavviato tra # minuti}}</translation>
 <translation id="8641606876632989680">Chrome ti invierà una notifica quando esegui l'accesso con una password compromessa</translation>
 <translation id="8649026945479135076">È normale che i siti che visiti memorizzino argomenti di tuo interesse per personalizzare la tua esperienza. I siti possono anche memorizzare su Chrome informazioni relative ai tuoi interessi.</translation>
-<translation id="8669527147644353129">Supporto Google Chrome</translation>
-<translation id="8679801911857917785">Controlla anche la pagina visualizzata all'avvio di Chrome.</translation>
-<translation id="8686817260976772516">Con i profili Chrome puoi separare tutti i tuoi contenuti di Chrome. Crea profili per amici e familiari oppure dividi i dati di lavoro e i contenuti di svago.</translation>
+<translation id="9090890391337853620">Supporto Ecosia</translation>
+<translation id="524314285625975879">Controlla anche la pagina visualizzata all'avvio di Ecosia.</translation>
+<translation id="4170280082681554565">Con i profili Ecosia puoi separare tutti i tuoi contenuti di Ecosia. Crea profili per amici e familiari oppure dividi i dati di lavoro e i contenuti di svago.</translation>
 <translation id="8712767363896337380">Aggiornamento quasi terminato. Riavvia Chrome per terminare l'aggiornamento.</translation>
-<translation id="8718062187489036808">Esci da Chrome</translation>
+<translation id="2672632089507560181">Esci da Ecosia</translation>
 <translation id="873133009373065397">Google Chrome non è in grado di determinare o impostare il browser predefinito</translation>
 <translation id="8765470054473112089">Quando digiti nella barra degli indirizzi o nella casella di ricerca, Chrome invia ciò che digiti al tuo motore di ricerca predefinito per ricevere suggerimenti migliori. Questa opzione è disattivata nella modalità di navigazione in incognito</translation>
-<translation id="8781673607513845160">Per usare la fotocamera, consenti l'accesso a Chrome nelle <ph name="BEGIN_LINK" />impostazioni di sistema<ph name="END_LINK" /></translation>
-<translation id="878572486461146056">Errore di installazione: l'amministratore di rete ha applicato un criterio di gruppo che impedisce l'installazione: <ph name="INSTALL_ERROR" /></translation>
-<translation id="8796073561259064743">Chrome ha bloccato questo download perché il file può danneggiare i tuoi account personali e dei social network, tra cui <ph name="USER_EMAIL" /></translation>
+<translation id="8781673607513845160">Per usare la fotocamera, consenti l'accesso a Chrome nelle <ph name="BEGIN_LINK"/>impostazioni di sistema<ph name="END_LINK"/></translation>
+<translation id="878572486461146056">Errore di installazione: l'amministratore di rete ha applicato un criterio di gruppo che impedisce l'installazione: <ph name="INSTALL_ERROR"/></translation>
+<translation id="6632508343667825745">Ecosia ha bloccato questo download perché il file può danneggiare i tuoi account personali e dei social network, tra cui <ph name="USER_EMAIL"/></translation>
 <translation id="8797423385604279835">Organizza le schede con l'aiuto dell'AI</translation>
-<translation id="8801657293260363985">V8 è il motore JavaScript e WebAssembly di Chrome utilizzato per migliorare le prestazioni del sito</translation>
-<translation id="8821043148920470810">Per ricevere gli aggiornamenti futuri di Google Chrome, devi avere Windows 10 o versioni successive. Su questo computer è installato Windows 7.</translation>
-<translation id="8823341990149967727">Chrome non è aggiornato</translation>
+<translation id="905744008702074577">V8 è il motore JavaScript e WebAssembly di Ecosia utilizzato per migliorare le prestazioni del sito</translation>
+<translation id="1975037445584526511">Per ricevere gli aggiornamenti futuri di Ecosia, devi avere Windows 10 o versioni successive. Su questo computer è installato Windows 7.</translation>
+<translation id="2695952268686253864">Ecosia non è aggiornato</translation>
 <translation id="8825634023950448068">Per tutelare la tua privacy, eliminiamo automaticamente i tuoi interessi risalenti a più di 4 settimane prima della data corrente. Mentre continui a navigare, un interesse potrebbe essere nuovamente visualizzato nell'elenco. Se Chrome ha fatto la scelta sbagliata o se non vuoi ricevere determinati annunci, puoi rimuovere un interesse.</translation>
-<translation id="8834965163890861871">Google Chrome sta cercando di modificare le password. Per consentire la modifica, digita la tua password Windows.</translation>
-<translation id="8843389967774722327">Chrome aggiunge regolarmente nuove funzionalità che ti aiutano a svolgere le tue attività</translation>
-<translation id="8851180723659088381">{NUM_EXTENSIONS,plural, =1{Chrome consiglia di rimuoverla}other{Chrome consiglia di rimuoverle}}</translation>
+<translation id="5066194399237265772">Ecosia sta cercando di modificare le password. Per consentire la modifica, digita la tua password Windows.</translation>
+<translation id="1152277553870553858">Ecosia aggiunge regolarmente nuove funzionalità che ti aiutano a svolgere le tue attività</translation>
+<translation id="4534680278117737254">{NUM_EXTENSIONS,plural, =1{Ecosia consiglia di rimuoverla}other{Ecosia consiglia di rimuoverle}}</translation>
 <translation id="8862326446509486874">Non disponi dei diritti appropriati per l'installazione a livello di sistema. Prova a eseguire nuovamente il programma di installazione come Amministratore.</translation>
 <translation id="8908277254462331033">Visualizza funzionalità di sicurezza</translation>
-<translation id="8914504000324227558">Riavvia Chrome</translation>
-<translation id="8922193594870374009">Per inviare un numero da <ph name="ORIGIN" /> al tuo telefono Android, accedi a Chrome su entrambi i dispositivi.</translation>
-<translation id="8948460679427074738">Per questa estensione non sono state pubblicate Norme di tutela della privacy, ad esempio la modalità di raccolta e utilizzo dei dati. Chrome consiglia di rimuoverla.</translation>
+<translation id="8282620071565190081">Riavvia Ecosia</translation>
+<translation id="7849498640944199147">Per inviare un numero da <ph name="ORIGIN"/> al tuo telefono Android, accedi a Ecosia su entrambi i dispositivi.</translation>
+<translation id="576192547306902465">Per questa estensione non sono state pubblicate Norme di tutela della privacy, ad esempio la modalità di raccolta e utilizzo dei dati. Ecosia consiglia di rimuoverla.</translation>
 <translation id="8986207147630327271">Stai per aggiungere a questo browser un profilo di lavoro che sarà controllato dal tuo amministratore.</translation>
 <translation id="8989968390305463310">La cronologia di navigazione incide sugli annunci che ti vengono mostrati e sugli interessi stimati riportati qui sotto. Per tutelare la tua privacy, Chrome elimina automaticamente i tuoi interessi ogni mese. A meno che non li rimuovi, gli interessi possono essere aggiornati.</translation>
 <translation id="8999117580775242387">Quando HTTPS non è disponibile, Chrome utilizza una connessione non sicura senza avvisarti</translation>
-<translation id="8999208279178790196">{0,plural, =0{È disponibile un aggiornamento di Chrome}=1{È disponibile un aggiornamento di Chrome}other{È disponibile un aggiornamento di Chrome da # giorni}}</translation>
-<translation id="9014771989710951291">Più organizzazioni gestiscono Chrome</translation>
-<translation id="9024318700713112071">Imposta Chrome come browser predefinito</translation>
-<translation id="9053892488859122171">Sistema ChromeOS Flex</translation>
-<translation id="9090566250983691233">Scopri perché Chrome blocca alcuni file</translation>
+<translation id="7348818664647668234">{0,plural, =0{È disponibile un aggiornamento di Ecosia}=1{È disponibile un aggiornamento di Ecosia}other{È disponibile un aggiornamento di Ecosia da # giorni}}</translation>
+<translation id="4817309082638621362">Più organizzazioni gestiscono Ecosia</translation>
+<translation id="4638085384909702681">Imposta Ecosia come browser predefinito</translation>
+<translation id="9047384314208087523">Sistema EcosiaOS Flex</translation>
+<translation id="350189837353493413">Scopri perché Ecosia blocca alcuni file</translation>
 <translation id="911206726377975832">Eliminare anche i tuoi dati di navigazione?</translation>
 <translation id="9138603949443464873">Riavvia Chrome per applicare le modifiche</translation>
 <translation id="9195993889682885387">Chrome può stimare i tuoi interessi in base alla cronologia di navigazione delle ultime settimane. Queste informazioni rimangono sul dispositivo.</translation>
-<translation id="919706545465235479">Aggiorna Chrome per avviare la sincronizzazione</translation>
-<translation id="922152298093051471">Personalizza Chrome</translation>
+<translation id="5704599732514791330">Aggiorna Ecosia per avviare la sincronizzazione</translation>
+<translation id="838842459108103907">Personalizza Ecosia</translation>
 <translation id="92460355979482493">Quando questa impostazione è attiva, Chrome precarica le pagine per velocizzare la navigazione e la ricerca.</translation>
-<translation id="93760716455950538">Riavvia ChromeOS Flex</translation>
-<translation id="940313311831216333">Per accedere ai tuoi contenuti Chrome su tutti i tuoi dispositivi, accedi e attiva la sincronizzazione.</translation>
-<translation id="943390475793766444">Chrome consiglia di analizzare questo file perché potrebbe essere pericoloso.</translation>
+<translation id="3070276123152913305">Riavvia EcosiaOS Flex</translation>
+<translation id="4512092435423703529">Per accedere ai tuoi contenuti Ecosia su tutti i tuoi dispositivi, accedi e attiva la sincronizzazione.</translation>
+<translation id="7972668220031382654">Ecosia consiglia di analizzare questo file perché potrebbe essere pericoloso.</translation>
 <translation id="963650557422347554">Quando questa modalità è attiva, Chrome risparmia carica della batteria limitando l'attività in background e gli effetti visivi, ad esempio lo scorrimento continuo e le frequenze di fotogrammi dei video.</translation>
 <translation id="983803489796659991">Installazione non riuscita perché il server di aggiornamento non dispone di dati di hashing per l'applicazione.</translation>
 <translation id="989369509083708165">Google Chrome è il tuo browser predefinito</translation>
-<translation id="989816563149873169">La scorciatoia <ph name="SHORTCUT" /> consente di passare da un profilo Chrome all'altro</translation>
+<translation id="4614106433017753369">La scorciatoia <ph name="SHORTCUT"/> consente di passare da un profilo Ecosia all'altro</translation>
 </translationbundle>

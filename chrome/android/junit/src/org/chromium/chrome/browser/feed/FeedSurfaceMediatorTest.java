@@ -26,6 +26,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -87,6 +88,7 @@ import org.chromium.ui.modelutil.PropertyModel;
 // TODO(crbug.com/40858677): Disabling the feature explicitly, because native is not
 // available to provide a default value. This should be enabled if the feature is enabled by
 // default or removed if the flag is removed.
+@Ignore("Ecosia : News Feed tests are disabled")
 @DisableFeatures(ChromeFeatureList.SYNC_ANDROID_LIMIT_NTP_PROMO_IMPRESSIONS)
 @EnableFeatures({
     ChromeFeatureList.INTEREST_FEED_V2_HEARTS,

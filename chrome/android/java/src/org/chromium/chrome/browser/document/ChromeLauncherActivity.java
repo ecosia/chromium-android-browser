@@ -12,6 +12,11 @@ import com.google.android.material.color.DynamicColors;
 import org.chromium.base.TraceEvent;
 import org.chromium.chrome.browser.LaunchIntentDispatcher;
 
+// Ecosia: imports
+import org.ecosia.firstrun.EcosiaFirstRunHelper;
+import org.ecosia.tracking.TrackingManager;
+import org.ecosia.unleash.Unleash;
+
 /**
  * Dispatches incoming intents to the appropriate activity based on the current configuration and
  * Intent fired.
@@ -22,6 +27,13 @@ public class ChromeLauncherActivity extends Activity {
         // Third-party code adds disk access to Activity.onCreate. http://crbug.com/619824
         TraceEvent.begin("ChromeLauncherActivity.onCreate");
         super.onCreate(savedInstanceState);
+
+        // Ecosia: Do these on every start
+        Unleash.getInstance(this).onStartOrResume();
+        TrackingManager.getInstance(this).trackOriginEvent(getIntent());
+
+        // Ecosia: Do first run tasks
+        EcosiaFirstRunHelper.getInstance(this).performStepsForFirstRunIfNeeded();
 
         // TODO(crbug.com/40775606): Figure out a scalable way to apply overlays to
         // activities like this.

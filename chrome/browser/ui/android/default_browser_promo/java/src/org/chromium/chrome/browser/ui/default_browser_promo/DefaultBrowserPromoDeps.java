@@ -80,7 +80,7 @@ public class DefaultBrowserPromoDeps {
     int getMaxPromoCount() {
         if (ChromeFeatureList.isEnabled(ChromeFeatureList.DEFAULT_BROWSER_PROMO_ANDROID)) {
             return ChromeFeatureList.getFieldTrialParamByFeatureAsInt(
-                    ChromeFeatureList.DEFAULT_BROWSER_PROMO_ANDROID, MAX_PROMO_COUNT_PARAM, 3);
+                    ChromeFeatureList.DEFAULT_BROWSER_PROMO_ANDROID, MAX_PROMO_COUNT_PARAM, 1); //Ecosia: Changing the count to show once
         }
         return MAX_PROMO_COUNT;
     }
@@ -180,7 +180,7 @@ public class DefaultBrowserPromoDeps {
         if (TextUtils.equals(
                 ContextUtils.getApplicationContext().getPackageName(),
                 info.activityInfo.packageName)) {
-            return DefaultBrowserState.CHROME_DEFAULT; // Already default
+            return DefaultBrowserState.ECOSIA_DEFAULT; // Ecosia: Already default
         }
         return DefaultBrowserState.OTHER_DEFAULT;
     }

@@ -118,13 +118,16 @@ found in the LICENSE file.
     <style name="Base.Theme.BrowserUI" parent="Base.V31.Theme.BrowserUI" />
     <style name="Theme.BrowserUI" parent="Base.Theme.BrowserUI" />
     <!-- Overridden by night mode. -->
-    <style name="Theme.BrowserUI.DayNight" parent="Theme.BrowserUI" />
+    <style name="Theme.BrowserUI.DayNight" parent="Theme.BrowserUI" >
+        <!--Ecosia: Fixing Settings and tab switcher selection colors -->
+        <item name="colorPrimary">@color/ecosia_brand_primary</item>
+    </style>
 
     <!-- Colors should be mirrored by Base.V21.Theme.BrowserUI. -->
     <style name="Theme.BrowserUI.DialogWhenLarge" parent="Theme.Material3.DayNight.DialogWhenLarge">
         <item name="dynamicColorThemeOverlay">@style/ThemeOverlay.BrowserUI.DynamicColors</item>
 
-         <!-- Color palettes -->
+        <!-- Color palettes -->
         <item name="colorPrimary">@color/baseline_primary_40</item>
         <item name="colorPrimaryDark">@android:color/black</item>
         <item name="colorPrimaryInverse">@color/baseline_primary_80</item>

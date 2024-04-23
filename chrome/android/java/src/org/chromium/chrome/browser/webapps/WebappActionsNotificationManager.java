@@ -120,7 +120,7 @@ class WebappActionsNotificationManager implements PauseResumeWithNativeObserver 
                         NotificationConstants.NOTIFICATION_ID_WEBAPP_ACTIONS);
         return NotificationWrapperBuilderFactory.createNotificationWrapperBuilder(
                         ChromeChannelDefinitions.ChannelId.WEBAPP_ACTIONS, metadata)
-                .setSmallIcon(R.drawable.ic_chrome)
+                .setSmallIcon(R.drawable.ic_ecosia) // Ecosia: Branding
                 .setContentTitle(webappExtras.shortName)
                 .setContentText(appContext.getString(R.string.webapp_tap_to_copy_url))
                 .setShowWhen(false)

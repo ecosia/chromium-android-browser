@@ -30,6 +30,7 @@ import androidx.annotation.ColorRes;
 import androidx.annotation.DrawableRes;
 import androidx.annotation.VisibleForTesting;
 import androidx.appcompat.content.res.AppCompatResources;
+import androidx.core.content.ContextCompat;
 import androidx.core.view.ViewCompat;
 import androidx.core.widget.ImageViewCompat;
 
@@ -50,6 +51,7 @@ import org.chromium.chrome.browser.toolbar.R;
 import org.chromium.chrome.browser.toolbar.ToolbarDataProvider;
 import org.chromium.chrome.browser.toolbar.ToolbarFeatures;
 import org.chromium.chrome.browser.toolbar.ToolbarTabController;
+import org.chromium.chrome.browser.toolbar.home_button.HomeButton;
 import org.chromium.chrome.browser.toolbar.menu_button.MenuButtonCoordinator;
 import org.chromium.chrome.browser.toolbar.top.CaptureReadinessResult.TopToolbarBlockCaptureReason;
 import org.chromium.chrome.browser.toolbar.top.NavigationPopup.HistoryDelegate;
@@ -82,7 +84,8 @@ public class ToolbarTablet extends ToolbarLayout
 
     private static final int HOME_BUTTON_POSITION_FOR_TAB_STRIP_REDESIGN = 3;
 
-    private ImageButton mHomeButton;
+    // Ecosia: make visible for subclass
+    protected HomeButton mHomeButton;
     private ImageButton mBackButton;
     private ImageButton mForwardButton;
     private ImageButton mReloadButton;
@@ -202,7 +205,10 @@ public class ToolbarTablet extends ToolbarLayout
     public void setLocationBarCoordinator(LocationBarCoordinator locationBarCoordinator) {
         mLocationBar = locationBarCoordinator;
         final @ColorInt int color =
+                /* Ecosia: set location bar background color
                 ChromeColors.getSurfaceColor(getContext(), R.dimen.default_elevation_2);
+                */
+                ContextCompat.getColor(getContext(), R.color.ecosia_main_background);
         mLocationBar.getTabletCoordinator().tintBackground(color);
     }
 
@@ -546,9 +552,19 @@ public class ToolbarTablet extends ToolbarLayout
     @Override
     public void onThemeColorChanged(@ColorInt int color, boolean shouldAnimate) {
         setBackgroundColor(color);
+        /* Ecosia: set location bar background color
         final @ColorInt int textBoxColor =
                 ThemeUtils.getTextBoxColorForToolbarBackgroundInNonNativePage(
-                        getContext(), color, isIncognitoBranded(), /* isCustomTab= */ false);
+                        getContext(), color, isIncognitoBranded(), false);
+        */
+        final @ColorInt int textBoxColor;
+        if (isIncognitoBranded()) {
+            textBoxColor =
+                    ThemeUtils.getTextBoxColorForToolbarBackgroundInNonNativePage(
+                            getContext(), color, isIncognitoBranded(), false);
+        } else {
+            textBoxColor = ContextCompat.getColor(getContext(), R.color.ecosia_main_background);
+        }
         mLocationBar.getTabletCoordinator().tintBackground(textBoxColor);
         mLocationBar.updateVisualsForState();
         setToolbarHairlineColor(color);
@@ -576,8 +592,9 @@ public class ToolbarTablet extends ToolbarLayout
         updateNtp();
     }
 
+    // Ecosia: make visible for subclass
     @Override
-    void updateButtonVisibility() {
+    protected void updateButtonVisibility() {
         mLocationBar.updateButtonVisibility();
     }
 

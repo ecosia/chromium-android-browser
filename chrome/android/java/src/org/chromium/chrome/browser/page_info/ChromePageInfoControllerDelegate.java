@@ -368,7 +368,7 @@ public class ChromePageInfoControllerDelegate extends PageInfoControllerDelegate
                             } else if (UrlUtilities.isInternalScheme(url)) {
                                 callback.onResult(
                                         TintedDrawable.constructTintedDrawable(
-                                                mContext, R.drawable.chromelogo16));
+                                                mContext, R.drawable.ic_ecosia)); // Ecosia: logo
                             } else {
                                 callback.onResult(null);
                             }

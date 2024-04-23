@@ -24,9 +24,9 @@ found in the LICENSE file.
     <dimen name="dialog_max_width">600dp</dimen>
     <dimen name="dialog_header_margin">14dp</dimen>
     <dimen name="promo_dialog_illustration_margin">8dp</dimen>
-    <dimen name="promo_dialog_illustration_width">150dp</dimen>
+    <dimen name="promo_dialog_illustration_width">110dp</dimen>
     <dimen name="promo_dialog_padding">16dp</dimen>
-    <dimen name="promo_dialog_stacked_margin">16dp</dimen>
+    <dimen name="promo_dialog_stacked_margin">6dp</dimen> <!-- Ecosia : Stacked buttons in promo dlg -->
     <dimen name="promo_dialog_max_content_width">320dp</dimen>
     <dimen name="promo_dialog_min_scrollable_height">100dp</dimen>
 

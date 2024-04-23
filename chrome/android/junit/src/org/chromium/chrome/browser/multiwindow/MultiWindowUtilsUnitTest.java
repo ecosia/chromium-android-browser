@@ -22,6 +22,7 @@ import android.util.SparseIntArray;
 
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -219,6 +220,7 @@ public class MultiWindowUtilsUnitTest {
         }
     }
 
+    @Ignore("Ecosia: Multiwindow feature is disabled")
     @Test
     @Config(sdk = VERSION_CODES.S)
     public void testIsMoveOtherWindowSupported_InstanceSwitcherEnabled_ReturnsTrue() {

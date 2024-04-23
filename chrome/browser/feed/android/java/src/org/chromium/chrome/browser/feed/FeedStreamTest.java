@@ -36,6 +36,7 @@ import androidx.test.filters.SmallTest;
 import com.google.protobuf.ByteString;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -1316,6 +1317,7 @@ public class FeedStreamTest {
         assertFalse(stream.supportsOptions());
     }
 
+    @Ignore("Ecosia: ChromeFeatureList.WEB_FEED_SORT flag is disabled")
     @Test
     @SmallTest
     public void testSupportsOptions_WebFeed_sortOn() {

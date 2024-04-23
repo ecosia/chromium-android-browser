@@ -21,6 +21,8 @@ public class DefaultBrowserPromoManager {
     private final Activity mActivity;
     private final @DefaultBrowserState int mCurrentState;
     private final WindowAndroid mWindowAndroid;
+    // Ecosia: promo dialog
+    private EcosiaDefaultBrowserPromoDialog mDialog;
 
     /**
      * @param activity Activity to show promo dialogs.
@@ -41,6 +43,7 @@ public class DefaultBrowserPromoManager {
         DefaultBrowserPromoMetrics.recordRoleManagerShow(mCurrentState);
 
         Intent intent = roleManager.createRequestRoleIntent(RoleManager.ROLE_BROWSER);
+        /* Ecosia: custom promo dialog
         mWindowAndroid.showCancelableIntent(
                 intent,
                 (resultCode, data) -> {
@@ -50,5 +53,28 @@ public class DefaultBrowserPromoManager {
                             DefaultBrowserPromoDeps.getInstance().getPromoCount());
                 },
                 null);
+        */
+        mDialog = new EcosiaDefaultBrowserPromoDialog(mActivity);
+        Runnable onAcceptCallback = () -> mWindowAndroid.showCancelableIntent(
+                intent,
+                (resultCode, data) -> {
+                    DefaultBrowserPromoMetrics.recordOutcome(
+                            mCurrentState,
+                            DefaultBrowserPromoDeps.getInstance().getCurrentDefaultBrowserState(),
+                            DefaultBrowserPromoDeps.getInstance().getPromoCount());
+                    trackUserResponseAnalytics(resultCode);
+                },
+                null);
+        mDialog.setOnAcceptCallback(onAcceptCallback);
+        mDialog.show();
+    }
+
+    // Ecosia: default promo tracking
+    private void trackUserResponseAnalytics(final int resultCode) {
+        if (resultCode == Activity.RESULT_CANCELED) {
+            mDialog.sendDismissBroadcast();
+        } else {
+            mDialog.sendAcceptBroadcast();
+        }
     }
 }

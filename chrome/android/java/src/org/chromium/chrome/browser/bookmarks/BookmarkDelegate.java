@@ -66,6 +66,16 @@ public interface BookmarkDelegate {
     /** Shows the search UI. */
     void openSearchUi();
 
+    /**
+     * Imports bookmarks from user-selected file.
+     */
+    void importBookmarks(); // Ecosia: Bookmark Import / Export
+
+    /**
+     * Exports bookmarks to downloads directory.
+     */
+    void exportBookmarks(); // Ecosia: Bookmark Import / Export
+
     /** Add an observer to bookmark UI changes. */
     void addUiObserver(BookmarkUiObserver observer);
 
@@ -117,4 +127,9 @@ public interface BookmarkDelegate {
      * @param bookmarkId The BookmarkId of the bookmark of interest.
      */
     void highlightBookmark(BookmarkId bookmarkId);
+
+    /**
+     * Ecosia: Notify implementers about back buttion press to use native back navigation implementation
+     */
+    boolean goBack();
 }

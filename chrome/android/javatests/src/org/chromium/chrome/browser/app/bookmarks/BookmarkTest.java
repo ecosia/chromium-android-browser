@@ -855,6 +855,10 @@ public class BookmarkTest {
                     public void bookmarkModelChanged() {
                         modelReorderHelper.notifyCalled();
                     }
+
+                    // Ecosia: Bookmark Import / Export
+                    @Override
+                    public void bookmarkModelNeedsReloadAfterBookmarksImport() {}
                 };
 
         // Perform registration to make callbacks work.
@@ -937,6 +941,10 @@ public class BookmarkTest {
                     public void bookmarkModelChanged() {
                         modelReorderHelper.notifyCalled();
                     }
+
+                    // Ecosia: Bookmark Import / Export
+                    @Override
+                    public void bookmarkModelNeedsReloadAfterBookmarksImport() {}
                 };
 
         // Perform registration to make callbacks work.
@@ -1007,6 +1015,10 @@ public class BookmarkTest {
                     public void bookmarkModelChanged() {
                         modelReorderHelper.notifyCalled();
                     }
+
+                    // Ecosia: Bookmark Import / Export
+                    @Override
+                    public void bookmarkModelNeedsReloadAfterBookmarksImport() {}
                 };
         // Perform registration to make callbacks work.
         runOnUiThreadBlocking(
@@ -1619,15 +1631,16 @@ public class BookmarkTest {
         assertEquals(1, getBookmarkCount());
         startSelectionThroughMoreMenu(getNthBookmarkRow(1));
         CallbackHelper helper = new CallbackHelper();
-        runOnUiThreadBlocking(
-                () ->
-                        mBookmarkModel.addObserver(
-                                new BookmarkModelObserver() {
-                                    @Override
-                                    public void bookmarkModelChanged() {
-                                        helper.notifyCalled();
-                                    }
-                                }));
+        runOnUiThreadBlocking(() -> mBookmarkModel.addObserver(new BookmarkModelObserver() {
+            @Override
+            public void bookmarkModelChanged() {
+                helper.notifyCalled();
+            }
+
+            // Ecosia: Bookmark Import / Export
+            @Override
+            public void bookmarkModelNeedsReloadAfterBookmarksImport() {}
+        }));
 
         runOnUiThreadBlocking(() -> mBookmarkModel.setBookmarkTitle(id, TEST_PAGE_TITLE_GOOGLE));
 

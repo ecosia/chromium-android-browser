@@ -188,18 +188,22 @@ public class GoogleServicesSettings extends ChromeBaseSettingsFragment
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         menu.clear();
+        /* Ecosia : Removing Help & Feedback setting
         MenuItem help =
                 menu.add(Menu.NONE, R.id.menu_id_targeted_help, Menu.NONE, R.string.menu_help);
         help.setIcon(R.drawable.ic_help_and_feedback);
+        */
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        /* Ecosia : Removing Help & Feedback setting
         if (item.getItemId() == R.id.menu_id_targeted_help) {
             getHelpAndFeedbackLauncher()
                     .show(getActivity(), getString(R.string.help_context_sync_and_services), null);
             return true;
         }
+        */
         return false;
     }
 

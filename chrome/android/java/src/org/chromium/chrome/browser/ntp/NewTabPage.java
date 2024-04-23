@@ -110,6 +110,7 @@ import org.chromium.ui.base.DeviceFormFactor;
 import org.chromium.ui.base.WindowAndroid;
 import org.chromium.ui.modaldialog.ModalDialogManager;
 import org.chromium.url.GURL;
+import org.ecosia.preferences.EcosiaHomepagePreferencesHelper;
 
 import java.util.List;
 
@@ -473,7 +474,10 @@ public class NewTabPage
         mLifecycleObserver =
                 new PauseResumeWithNativeObserver() {
                     @Override
-                    public void onResumeWithNative() {}
+                    public void onResumeWithNative() {
+                        // Ecosia: handle NTP customization on resume
+                        handleNewTabPageCustomization();
+                    }
 
                     @Override
                     public void onPauseWithNative() {
@@ -551,7 +555,42 @@ public class NewTabPage
 
         initializeHomeModules();
 
+        // Ecosia: handle NTP customization on create
+        handleNewTabPageCustomization();
+
         TraceEvent.end(TAG);
+    }
+
+    // Ecosia: handle NTP customization
+    private void handleNewTabPageCustomization() {
+        boolean isTopSitesEnabled = EcosiaHomepagePreferencesHelper.isTopSitesEnabled(mContext);
+        if (isTopSitesEnabled) {
+            mNewTabPageLayout.getMvTilesContainerLayout().setVisibility(View.VISIBLE);
+        } else {
+            mNewTabPageLayout.getMvTilesContainerLayout().setVisibility(View.GONE);
+        }
+
+        boolean isClimateImpactEnabled = EcosiaHomepagePreferencesHelper.isClimateImpactEnabled(mContext);
+        if (isClimateImpactEnabled) {
+            mNewTabPageLayout.getEcosiaImpactContainer().setVisibility(View.VISIBLE);
+        } else {
+            mNewTabPageLayout.getEcosiaImpactContainer().setVisibility(View.GONE);
+        }
+
+        boolean isEcosiaNewsEnabled = EcosiaHomepagePreferencesHelper.isEcosiaNewsEnabled(mContext);
+        boolean isNewsAvailable = EcosiaHomepagePreferencesHelper.isEcosiaNewsAvailable(mContext);
+        if (isEcosiaNewsEnabled && isNewsAvailable) {
+            mNewTabPageLayout.getEcosiaNewsContainer().setVisibility(View.VISIBLE);
+        } else {
+            mNewTabPageLayout.getEcosiaNewsContainer().setVisibility(View.GONE);
+        }
+
+        boolean isAboutEcosiaEnabled = EcosiaHomepagePreferencesHelper.isAboutEcosiaEnabled(mContext);
+        if (isAboutEcosiaEnabled) {
+            mNewTabPageLayout.getEcosiaAboutContainer().setVisibility(View.VISIBLE);
+        } else {
+            mNewTabPageLayout.getEcosiaAboutContainer().setVisibility(View.GONE);
+        }
     }
 
     /**
@@ -1124,11 +1163,13 @@ public class NewTabPage
      * to show Home surface UI on NTP upon creation.
      */
     public void showHomeSurfaceUi(Tab mostRecentTab) {
+        /* Ecosia : Disable Magic stack experiment on NTP
         if (mSingleTabSwitcherCoordinator == null) {
             initializeSingleTabCard(mostRecentTab);
         } else {
             mSingleTabSwitcherCoordinator.show(mostRecentTab);
         }
+        */
     }
 
     /**
@@ -1137,6 +1178,7 @@ public class NewTabPage
      * @param mostRecentTab The last shown Tab if exists. It is non null for NTP home surface only.
      */
     public void showMagicStack(Tab mostRecentTab) {
+        /* Ecosia : Disable Magic stack experiment on NTP
         if (mModuleRegistrySupplier.get() == null) {
             return;
         }
@@ -1149,6 +1191,7 @@ public class NewTabPage
             initializeMagicStack(mostRecentTab);
         }
         mHomeModulesCoordinator.show(this::onMagicStackShown);
+        */
     }
 
     /** Show the module when the current new tab page is been used as the home surface. */
@@ -1204,7 +1247,8 @@ public class NewTabPage
     }
 
     private void onMagicStackShown(boolean isVisible) {
-        mHomeModulesContainer.setVisibility(isVisible ? View.VISIBLE : View.GONE);
+        // Ecosia : Disable Magic stack experiment on NTP
+        mHomeModulesContainer.setVisibility(View.GONE);
     }
 
     private void onSingleTabCardClicked(int tabId) {

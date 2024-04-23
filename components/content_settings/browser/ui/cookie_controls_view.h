@@ -16,6 +16,9 @@ namespace content_settings {
 // Interface for the CookieControls observer.
 class CookieControlsObserver : public base::CheckedObserver {
  public:
+  // Ecosia: cookies, empty override
+  virtual void OnEcosiaCookiesChanged(std::string name, std::string value) = 0;    
+
   // Called when the third-party cookie blocking status has changed or when
   // cookie  setting was changed. Also called as part of UI initialization to
   // trigger the update. Replaces previous `OnStatusChanged()` for the new UIs.

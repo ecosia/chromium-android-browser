@@ -252,7 +252,10 @@ base::Value::List DefaultPopularSites(std::optional<std::string> country) {
     return base::Value::List();
   }
 
+  /* Ecosia: use custom default popular sites for the first launch MOB-2776
   int popular_sites_json = IDR_DEFAULT_POPULAR_SITES_JSON;
+  */
+  int popular_sites_json = IDR_DEFAULT_POPULAR_SITES_WITHOUT_POPULAR_APPS_JSON;
 
 #if BUILDFLAG(IS_IOS)
   if (country.has_value() && *country == "US") {

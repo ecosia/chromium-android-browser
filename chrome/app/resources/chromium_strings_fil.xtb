@@ -1,547 +1,547 @@
-<?xml version="1.0" ?>
+<?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE translationbundle>
 <translationbundle lang="fil">
 <translation id="1026101648481255140">Ituloy ang Pag-install</translation>
-<translation id="1029669172902658969">Ilunsad ulit para ma-update ang &amp;ChromiumOS</translation>
-<translation id="1040916596585577953">Inirerekomenda ng Chromium na suriin mo ang extension na ito</translation>
+<translation id="8933665254023068908">Ilunsad ulit para ma-update ang &amp;EcosiaOS</translation>
+<translation id="6566258574866003581">Inirerekomenda ng Ecosia na suriin mo ang extension na ito</translation>
 <translation id="1042552502243217427">Kapag humiling ang isang site na pribadong mag-preload ng mga link sa page nito, gumagamit ang Chromium ng mga server ng Google. Maitatago nito ang iyong pagkakakilanlan sa na-preload na site, pero malalaman ng Google kung anong mga site ang na-preload.</translation>
 <translation id="1065672644894730302">Hindi mabasa ang iyong mga kagustuhan.
 
 Maaaring hindi available ang ilang tampok at hindi mase-save ang mga pagbabago sa mga kagustuhan.</translation>
-<translation id="1083934481477628225">In-off ng iyong magulang ang "Mga pahintulot para sa mga site, app, at extension" para sa Chromium</translation>
+<translation id="8561406087076314604">In-off ng iyong magulang ang "Mga pahintulot para sa mga site, app, at extension" para sa Ecosia</translation>
 <translation id="1098170124587656448">Makakatulong ang Chromium na panatilihin kang ligtas laban sa mga paglabag sa data, sirang extension, at higit pa</translation>
-<translation id="1104942323762546749">Gustong i-export ng Chromium ang iyong mga password. I-type ang iyong password sa Windows para payagan ito.</translation>
+<translation id="3632544319066562282">Gustong i-export ng Ecosia ang iyong mga password. I-type ang iyong password sa Windows para payagan ito.</translation>
 <translation id="113122355610423240">Chromium ang iyong default na browser</translation>
-<translation id="1131805035311359397">Para makita kung ligtas ang iyong mga password mula sa mga paglabag sa data at iba pang isyu sa seguridad, <ph name="BEGIN_LINK" />mag-sign in sa Chromium<ph name="END_LINK" />.</translation>
-<translation id="1153368717515616349">I-click ang menu ng Chromium</translation>
+<translation id="1131805035311359397">Para makita kung ligtas ang iyong mga password mula sa mga paglabag sa data at iba pang isyu sa seguridad, <ph name="BEGIN_LINK"/>mag-sign in sa Chromium<ph name="END_LINK"/>.</translation>
+<translation id="1224748120031661633">I-click ang menu ng Ecosia</translation>
 <translation id="1184145431117212167">Hindi na-install dahil hindi sinusuportahan ang iyong bersyon ng Windows.</translation>
 <translation id="1185134272377778587">Tungkol sa Chromium</translation>
-<translation id="1188705220418984327">Para i-share ang iyong window, payagan ang pag-record ng screen para sa Chromium sa Mga Preference sa System.</translation>
-<translation id="1203500561924088507">Salamat sa pag-install. Dapat mong i-restart ang iyong browser bago gamitin ang <ph name="BUNDLE_NAME" />.</translation>
-<translation id="1262876892872089030">Habang hindi aktibo ang tab na ito, nagbakante ng memory para mapanatiling mabilis ang Chromium. Puwede mong piliing palaging huwag isama ang site na ito sa pagiging hindi aktibo.</translation>
-<translation id="1265577313130862557">Na-block ng Chromium ang pag-download na ito dahil mapanganib ang file</translation>
-<translation id="126567311906253476">Kapag nagsa-sign in sa mga serbisyo ng Google tulad ng Gmail o YouTube gamit ang <ph name="USER_EMAIL" />, puwede kang awtomatikong mag-sign in sa Chromium gamit ang parehong account</translation>
-<translation id="1290883685122687410">Error sa pag-set up: <ph name="METAINSTALLER_EXIT_CODE" />. <ph name="WINDOWS_ERROR" /></translation>
-<translation id="1315551408014407711">I-set up ang iyong bagong profile sa Chromium</translation>
-<translation id="1324107359134968521">Kailangan ng Chromium ng access sa Bluetooth para i-explore ang 
- mga Bluetooth device. <ph name="IDS_SERIAL_DEVICE_CHOOSER_AUTHORIZE_BLUETOOTH_LINK" /></translation>
-<translation id="1342274909142618978">I-delete din ang data mula sa Chromium (<ph name="URL" />)</translation>
-<translation id="1414495520565016063">Naka-sign in ka sa Chromium!</translation>
+<translation id="1330085168384841023">Para i-share ang iyong window, payagan ang pag-record ng screen para sa Ecosia sa Mga Preference sa System.</translation>
+<translation id="1203500561924088507">Salamat sa pag-install. Dapat mong i-restart ang iyong browser bago gamitin ang <ph name="BUNDLE_NAME"/>.</translation>
+<translation id="7455175614937447568">Habang hindi aktibo ang tab na ito, nagbakante ng memory para mapanatiling mabilis ang Ecosia. Puwede mong piliing palaging huwag isama ang site na ito sa pagiging hindi aktibo.</translation>
+<translation id="9068280473864300215">Na-block ng Ecosia ang pag-download na ito dahil mapanganib ang file</translation>
+<translation id="126567311906253476">Kapag nagsa-sign in sa mga serbisyo ng Google tulad ng Gmail o YouTube gamit ang <ph name="USER_EMAIL"/>, puwede kang awtomatikong mag-sign in sa Chromium gamit ang parehong account</translation>
+<translation id="1290883685122687410">Error sa pag-set up: <ph name="METAINSTALLER_EXIT_CODE"/>. <ph name="WINDOWS_ERROR"/></translation>
+<translation id="319566061277127356">I-set up ang iyong bagong profile sa Ecosia</translation>
+<translation id="4019094010333463261">Kailangan ng Ecosia ng access sa Bluetooth para i-explore ang 
+ mga Bluetooth device. <ph name="IDS_SERIAL_DEVICE_CHOOSER_AUTHORIZE_BLUETOOTH_LINK"/></translation>
+<translation id="5405885279794834338">I-delete din ang data mula sa Ecosia (<ph name="URL"/>)</translation>
+<translation id="727568860157522676">Naka-sign in ka sa Ecosia!</translation>
 <translation id="1478370723027452770">Humingi ng tulong para sa Chrome na Pang-test</translation>
-<translation id="1497802159252041924">Error sa pag-install: <ph name="INSTALL_ERROR" /></translation>
-<translation id="1524282610922162960">Magbahagi ng tab ng Chromium</translation>
-<translation id="1553461853655228091">Kailangan ng Chromium ng access sa iyong camera para gumawa ng 3D na mapa ng kapaligiran mo</translation>
-<translation id="1555494096857516577">{NUM_EXTENSIONS,plural, =1{Hindi na sinusuportahan ang extension na ito. Inirerekomenda ng Chromium na alisin mo ito.}one{Hindi na sinusuportahan ang mga extension na ito. Inirerekomenda ng Chromium na alisin mo ang mga ito.}other{Hindi na sinusuportahan ang mga extension na ito. Inirerekomenda ng Chromium na alisin mo ang mga ito.}}</translation>
+<translation id="1497802159252041924">Error sa pag-install: <ph name="INSTALL_ERROR"/></translation>
+<translation id="1861504561909287316">Magbahagi ng tab ng Ecosia</translation>
+<translation id="6896860023874996542">Kailangan ng Ecosia ng access sa iyong camera para gumawa ng 3D na mapa ng kapaligiran mo</translation>
+<translation id="7886351766410889877">{NUM_EXTENSIONS,plural, =1{Hindi na sinusuportahan ang extension na ito. Inirerekomenda ng Ecosia na alisin mo ito.}one{Hindi na sinusuportahan ang mga extension na ito. Inirerekomenda ng Ecosia na alisin mo ang mga ito.}other{Hindi na sinusuportahan ang mga extension na ito. Inirerekomenda ng Ecosia na alisin mo ang mga ito.}}</translation>
 <translation id="1574377791422810894">Mga tool sa kaligtasan ng Chromium</translation>
-<translation id="1591808205441691831">Kailangang i-verify ng Chromium na ikaw ito bago ma-save ang ilang data sa iyong Google Account at magamit ito sa lahat ng device mo. Kung magsa-sign out ka, mananatili ang data sa device na ito.</translation>
-<translation id="1594928384848033697">Gustong i-delete ng Chromium ang iyong data sa Password Manager. I-type ang iyong password sa Windows para payagan ito.</translation>
-<translation id="1607715478322902680">{COUNT,plural, =0{Ipinag-aatas ng iyong administrator na ilunsad mo ulit ang Chromium para mailapat ang isang update}=1{Ipinag-aatas ng iyong administrator na ilunsad mo ulit ang Chromium para mailapat ang isang update. Hindi bubukas ulit ang iyong Incognito window.}one{Ipinag-aatas ng iyong administrator na ilunsad mo ulit ang Chromium para mailapat ang isang update. Hindi bubukas ulit ang iyong # Incognito window.}other{Ipinag-aatas ng iyong administrator na ilunsad mo ulit ang Chromium para mailapat ang isang update. Hindi bubukas ulit ang iyong # na Incognito window.}}</translation>
+<translation id="2200308425865645682">Kailangang i-verify ng Ecosia na ikaw ito bago ma-save ang ilang data sa iyong Ecosia Account at magamit ito sa lahat ng device mo. Kung magsa-sign out ka, mananatili ang data sa device na ito.</translation>
+<translation id="7304240387834227637">Gustong i-delete ng Ecosia ang iyong data sa Password Manager. I-type ang iyong password sa Windows para payagan ito.</translation>
+<translation id="4933729908795930260">{COUNT,plural, =0{Ipinag-aatas ng iyong administrator na ilunsad mo ulit ang Ecosia para mailapat ang isang update}=1{Ipinag-aatas ng iyong administrator na ilunsad mo ulit ang Ecosia para mailapat ang isang update. Hindi bubukas ulit ang iyong Incognito window.}one{Ipinag-aatas ng iyong administrator na ilunsad mo ulit ang Ecosia para mailapat ang isang update. Hindi bubukas ulit ang iyong # Incognito window.}other{Ipinag-aatas ng iyong administrator na ilunsad mo ulit ang Ecosia para mailapat ang isang update. Hindi bubukas ulit ang iyong # na Incognito window.}}</translation>
 <translation id="1625909126243026060">Suriin ang mga pangunahing kontrol sa privacy at seguridad sa Chromium</translation>
-<translation id="1632539827495546968">Kung isang beses mo lang gustong gamitin ang account na ito, puwede mong gamitin ang <ph name="GUEST_LINK_BEGIN" />Guest mode<ph name="GUEST_LINK_END" /> sa Chromium browser. Kung gusto mong magdagdag ng account para sa ibang tao, <ph name="LINK_BEGIN" />magdagdag ng bagong tao<ph name="LINK_END" /> sa iyong <ph name="DEVICE_TYPE" />.
+<translation id="931416298178634530">Kung isang beses mo lang gustong gamitin ang account na ito, puwede mong gamitin ang <ph name="GUEST_LINK_BEGIN"/>Guest mode<ph name="GUEST_LINK_END"/> sa Ecosia browser. Kung gusto mong magdagdag ng account para sa ibang tao, <ph name="LINK_BEGIN"/>magdagdag ng bagong tao<ph name="LINK_END"/> sa iyong <ph name="DEVICE_TYPE"/>.
 
-Posibleng malapat sa account na ito ang mga pahintulot na naibigay mo na sa mga website at app. Puwede mong pamahalaan ang iyong mga Google Account sa <ph name="SETTINGS_LINK_BEGIN" />Mga Setting<ph name="SETTINGS_LINK_END" />.</translation>
+Posibleng malapat sa account na ito ang mga pahintulot na naibigay mo na sa mga website at app. Puwede mong pamahalaan ang iyong mga Ecosia Account sa <ph name="SETTINGS_LINK_BEGIN"/>Mga Setting<ph name="SETTINGS_LINK_END"/>.</translation>
 <translation id="1640672724030957280">Dina-download...</translation>
 <translation id="1715127912119967311">Para makatulong na pahusayin ang mga feature na ito, ipinapadala ng Chromium sa Google ang iyong mga interaction dito. Posibleng basahin, iproseso, at i-annotate ang data na ito ng mga taong tagasuri.</translation>
 <translation id="1722488837206509557">Magbibigay-daan ito sa iyong pumili mula sa mga available na device at magpakita ng content sa mga ito.</translation>
-<translation id="17264556997921157">Makikita at maaalis mo ang mga paksa ng interes na ginagamit ng mga site para magpakita sa iyo ng mga ad. Tinataya ng Chromium ang iyong mga interes batay sa iyong kamakailang history ng pag-browse.</translation>
-<translation id="1733725117201708356">Ide-delete na ng Chromium ang data mula sa pag-browse sa ilang saglit</translation>
+<translation id="1118786556671181978">Makikita at maaalis mo ang mga paksa ng interes na ginagamit ng mga site para magpakita sa iyo ng mga ad. Tinataya ng Ecosia ang iyong mga interes batay sa iyong kamakailang history ng pag-browse.</translation>
+<translation id="2379593823746842972">Ide-delete na ng Ecosia ang data mula sa pag-browse sa ilang saglit</translation>
 <translation id="1736443181683099871">Susubukan ng Chromium na i-upgrade ang mga pag-navigate sa HTTPS</translation>
-<translation id="1745121272106313518">Magre-restart ang Chromium sa <ph name="REMAINING_TIME" /></translation>
+<translation id="5490755016715767023">Magre-restart ang Ecosia sa <ph name="REMAINING_TIME"/></translation>
 <translation id="1749104137266986751">Kapag hindi available ang HTTPS, gagamit ang Chromium ng hindi secure na koneksyon nang hindi ka binabalaan</translation>
-<translation id="1774152462503052664">Hayaang tumakbo ang Chromium sa background</translation>
-<translation id="1779356040007214683">Upang gawing mas ligtas ang Chromium, nag-disable kami ng ilang extension na hindi nakalista sa <ph name="IDS_EXTENSION_WEB_STORE_TITLE" /> at maaaring naidagdag nang hindi mo nalalaman.</translation>
-<translation id="1808667845054772817">Muling i-install ang Chromium</translation>
-<translation id="1820835682567584003">Sinusubukan ng Chromium na <ph name="AUTHENTICATION_PURPOSE" /></translation>
-<translation id="18552579716432081">Para ma-delete ang data mula sa pag-browse sa device lang na ito, habang pinapanatili ito sa iyong Google Account, <ph name="BEGIN_LINK" />mag-sign out sa Chromium<ph name="END_LINK" />.</translation>
-<translation id="185970820835152459">Puwede mong pamahalaan ang iyong mga naka-sign in na Google Account. Ginagamit ang iyong mga Google Account para sa Chromium browser, Play Store, Gmail, at higit pa. Kung gusto mong magdagdag ng account para sa ibang tao, tulad ng miyembro ng pamilya, magdagdag na lang ng bagong tao sa iyong <ph name="DEVICE_TYPE" />. <ph name="LINK_BEGIN" />Matuto pa<ph name="LINK_END" /></translation>
+<translation id="8454595950895325762">Hayaang tumakbo ang Ecosia sa background</translation>
+<translation id="9125443060066914183">Upang gawing mas ligtas ang Ecosia, nag-disable kami ng ilang extension na hindi nakalista sa <ph name="IDS_EXTENSION_WEB_STORE_TITLE"/> at maaaring naidagdag nang hindi mo nalalaman.</translation>
+<translation id="6984747211123632080">Muling i-install ang Ecosia</translation>
+<translation id="1251415775728969647">Sinusubukan ng Ecosia na <ph name="AUTHENTICATION_PURPOSE"/></translation>
+<translation id="1761584959558744002">Para ma-delete ang data mula sa pag-browse sa device lang na ito, habang pinapanatili ito sa iyong Ecosia Account, <ph name="BEGIN_LINK"/>mag-sign out sa Ecosia<ph name="END_LINK"/>.</translation>
+<translation id="185970820835152459">Puwede mong pamahalaan ang iyong mga naka-sign in na Google Account. Ginagamit ang iyong mga Google Account para sa Chromium browser, Play Store, Gmail, at higit pa. Kung gusto mong magdagdag ng account para sa ibang tao, tulad ng miyembro ng pamilya, magdagdag na lang ng bagong tao sa iyong <ph name="DEVICE_TYPE"/>. <ph name="LINK_BEGIN"/>Matuto pa<ph name="LINK_END"/></translation>
 <translation id="1863308913976887472">Puwedeng mag-store ang mga site sa Chromium tungkol sa iyong mga interes. Halimbawa, kung bibisita ka sa isang site para bumili ng mga sapatos para sa isang marathon, posibleng tukuyin ng site ang iyong interes bilang pagtakbo sa mga marathon. Sa ibang pagkakataon, kung bibisita ka sa ibang site para magparehistro para sa isang karera, puwedeng magpakita sa iyo ang site na iyon ng ad para sa running shoes batay sa mga interes mo.</translation>
-<translation id="1881322772814446296">Nagsa-sign in ka gamit ang isang pinamamahalaang account at nagbibigay sa administrator nito ng kontrol sa iyong profile sa Chromium. Permanenteng mauugnay ang iyong data sa Chromium, gaya ng iyong apps, mga bookmark, kasaysayan, password, at iba pang mga setting sa <ph name="USER_NAME" />. Matatanggal mo ang data na ito sa Google Accounts Dashboard, ngunit hindi mo maiuugnay ang data na ito sa isa pang account. Maaari ka ring gumawa ng bagong profile upang ihiwalay ang iyong umiiral na data sa Chromium. <ph name="LEARN_MORE" /></translation>
+<translation id="4239392394637574967">Nagsa-sign in ka gamit ang isang pinamamahalaang account at nagbibigay sa administrator nito ng kontrol sa iyong profile sa Ecosia. Permanenteng mauugnay ang iyong data sa Ecosia, gaya ng iyong apps, mga bookmark, kasaysayan, password, at iba pang mga setting sa <ph name="USER_NAME"/>. Matatanggal mo ang data na ito sa Ecosia Accounts Dashboard, ngunit hindi mo maiuugnay ang data na ito sa isa pang account. Maaari ka ring gumawa ng bagong profile upang ihiwalay ang iyong umiiral na data sa Ecosia. <ph name="LEARN_MORE"/></translation>
 <translation id="1906696617298807388">Kapag nag-type ka sa address bar o sa box para sa paghahanap, ipapadala ng Chromium kung ano ang tina-type mo sa Google Drive para makakuha ng mga suhestyon sa item. Naka-off ito sa Incognito.</translation>
 <translation id="1911763535808217981">Kapag na-off ito, maaari kang mag-sign in sa mga site ng Google tulad ng Gmail nang hindi nagsa-sign in sa Chromium</translation>
-<translation id="1929939181775079593">Hindi gumagana ang Chromium. Muling ilunsad ngayon?</translation>
-<translation id="193439633299369377">Kailangang ma-restart ang ChromiumOS para mailapat ang update.</translation>
-<translation id="1951406923938785464">Na-block ng Chromium ang pag-download na ito dahil hindi karaniwang dina-download ang uri ng file at posibleng mapanganib ito</translation>
-<translation id="1953553007165777902">Nagda-download... <ph name="MINUTE" /> (na) minuto na lang ang natitira</translation>
+<translation id="18064594488616674">Hindi gumagana ang Ecosia. Muling ilunsad ngayon?</translation>
+<translation id="8047394653992042491">Kailangang ma-restart ang EcosiaOS para mailapat ang update.</translation>
+<translation id="4988569127367972482">Na-block ng Ecosia ang pag-download na ito dahil hindi karaniwang dina-download ang uri ng file at posibleng mapanganib ito</translation>
+<translation id="1953553007165777902">Nagda-download... <ph name="MINUTE"/> (na) minuto na lang ang natitira</translation>
 <translation id="1966382378801805537">Hindi matukoy o maitakda ng Chromium ang default na browser</translation>
-<translation id="1990262977744080398">Alamin kung bakit bina-block ng Chromium ang ilang file, magbubukas sa bagong tab</translation>
-<translation id="2008474315282236005">Magde-delete ito ng 1 item sa device na ito. Upang makuha ang iyong data sa ibang pagkakataon, mag-sign in sa Chromium bilang <ph name="USER_EMAIL" />.</translation>
+<translation id="6583697665130212310">Alamin kung bakit bina-block ng Ecosia ang ilang file, magbubukas sa bagong tab</translation>
+<translation id="2008474315282236005">Magde-delete ito ng 1 item sa device na ito. Upang makuha ang iyong data sa ibang pagkakataon, mag-sign in sa Chromium bilang <ph name="USER_EMAIL"/>.</translation>
 <translation id="2018879682492276940">Hindi na-install. Pakisubukan ulit.</translation>
-<translation id="2020032459870799438">Para makita kung ligtas ang iyong iba pang password mula sa mga paglabag sa data at iba pang isyu sa seguridad, <ph name="BEGIN_LINK" />mag-sign in sa Chromium<ph name="END_LINK" />.</translation>
+<translation id="2020032459870799438">Para makita kung ligtas ang iyong iba pang password mula sa mga paglabag sa data at iba pang isyu sa seguridad, <ph name="BEGIN_LINK"/>mag-sign in sa Chromium<ph name="END_LINK"/>.</translation>
 <translation id="2049376729098081731">Piliin kung isasama ang history ng Chromium para sa mas naka-personalize na mga karanasan sa mga serbisyo ng Google</translation>
-<translation id="2086476982681781442">Na-block ng Chromium ang pag-download na ito dahil mapanlinlang ang file at posible itong gumawa ng mga hindi inaasahang pagbabago sa iyong device</translation>
+<translation id="7112125772061727648">Na-block ng Ecosia ang pag-download na ito dahil mapanlinlang ang file at posible itong gumawa ng mga hindi inaasahang pagbabago sa iyong device</translation>
 <translation id="2088953378266246249">Impormasyon tungkol sa kung paano pinapamahalaan ng Chromium ang mga root certificate nito</translation>
-<translation id="2120965832000301375">{COUNT,plural, =1{Awtomatikong ide-delete ng iyong organisasyon ang data mula sa pag-browse kapag hindi nagamit ang Chromium nang 1 minuto. Posibleng kasama rito ang history, autofill, at mga download. Mananatiling nakabukas ang iyong mga tab.}one{Awtomatikong ide-delete ng iyong organisasyon ang data mula sa pag-browse kapag hindi nagamit ang Chromium nang # minuto. Posibleng kasama rito ang history, autofill, at mga download. Mananatiling nakabukas ang iyong mga tab.}other{Awtomatikong ide-delete ng iyong organisasyon ang data mula sa pag-browse kapag hindi nagamit ang Chromium nang # na minuto. Posibleng kasama rito ang history, autofill, at mga download. Mananatiling nakabukas ang iyong mga tab.}}</translation>
+<translation id="1876482900355946220">{COUNT,plural, =1{Awtomatikong ide-delete ng iyong organisasyon ang data mula sa pag-browse kapag hindi nagamit ang Ecosia nang 1 minuto. Posibleng kasama rito ang history, autofill, at mga download. Mananatiling nakabukas ang iyong mga tab.}one{Awtomatikong ide-delete ng iyong organisasyon ang data mula sa pag-browse kapag hindi nagamit ang Ecosia nang # minuto. Posibleng kasama rito ang history, autofill, at mga download. Mananatiling nakabukas ang iyong mga tab.}other{Awtomatikong ide-delete ng iyong organisasyon ang data mula sa pag-browse kapag hindi nagamit ang Ecosia nang # na minuto. Posibleng kasama rito ang history, autofill, at mga download. Mananatiling nakabukas ang iyong mga tab.}}</translation>
 <translation id="2126108037660393668">Hindi na-verify ang na-download na file.</translation>
-<translation id="215352261310130060">Na-block ng Chromium ang pag-download na ito dahil hindi gumagamit ng secure na koneksyon ang site at posibleng na-tamper ang file</translation>
-<translation id="2157600032285353789">Puwede mong buksan ang mga bookmark, reading mode, at higit pa sa menu ng Chromium</translation>
-<translation id="2174178932569897599">I-customize ang Chromium</translation>
+<translation id="2745180350547322293">Na-block ng Ecosia ang pag-download na ito dahil hindi gumagamit ng secure na koneksyon ang site at posibleng na-tamper ang file</translation>
+<translation id="8296229475165428335">Puwede mong buksan ang mga bookmark, reading mode, at higit pa sa menu ng Ecosia</translation>
+<translation id="838842459108103907">I-customize ang Ecosia</translation>
 <translation id="2174917724755363426">Hindi nakumpleto ang pag-install. Sigurado ka bang gusto mong kanselahin?</translation>
-<translation id="2185166961232948079">Chromium - Pag-sign in sa Network - <ph name="PAGE_TITLE" /></translation>
-<translation id="2190166659037789668">Error sa pagtingin kung may update: <ph name="UPDATE_CHECK_ERROR" />.</translation>
-<translation id="2199210295479376551">Alisin ang account sa Chromium</translation>
+<translation id="9035946286843935549">Ecosia - Pag-sign in sa Network - <ph name="PAGE_TITLE"/></translation>
+<translation id="2190166659037789668">Error sa pagtingin kung may update: <ph name="UPDATE_CHECK_ERROR"/>.</translation>
+<translation id="8196791276481156937">Alisin ang account sa Ecosia</translation>
 <translation id="2210682093923538346">Mapanganib na site. Inalis ng Chromium ang mga notification.</translation>
-<translation id="2240214816234246077">Hindi mo ito binisita kamakailan. Inalis ng Chromium ang <ph name="PERMISSION_1" />, <ph name="PERMISSION_2" /></translation>
-<translation id="2241627712206172106">Kung nagpapahiram ka ng computer, ang mga kaibigan at kapamilya ay maaaring mag-browse nang hiwalay at i-set up ang Chromium sa paraang gusto nila.</translation>
+<translation id="2240214816234246077">Hindi mo ito binisita kamakailan. Inalis ng Chromium ang <ph name="PERMISSION_1"/>, <ph name="PERMISSION_2"/></translation>
+<translation id="6111519389633335269">Kung nagpapahiram ka ng computer, ang mga kaibigan at kapamilya ay maaaring mag-browse nang hiwalay at i-set up ang Ecosia sa paraang gusto nila.</translation>
 <translation id="2313870531055795960">Sinusuri ang mga URL sa pamamagitan ng listahan ng mga hindi ligtas na site na naka-store sa Chromium. Kung susubukan ng site na nakawin ang iyong password, o kapag nag-download ka ng mapaminsalang file, posible ring magpadala ang Chromium sa Ligtas na Pag-browse ng mga URL, kabilang ang ilang content ng page.</translation>
 <translation id="2329088755516916767">Kapag naka-on, magpe-preload ang Chromium ng mga page na magpapabilis sa pag-browse at paghahanap.</translation>
-<translation id="2343156876103232566">Para magpadala ng numero sa iyong Android phone mula rito, mag-sign in sa Chromium sa parehong device.</translation>
+<translation id="665177868576952817">Para magpadala ng numero sa iyong Android phone mula rito, mag-sign in sa Ecosia sa parehong device.</translation>
 <translation id="2359808026110333948">Magpatuloy</translation>
-<translation id="2361918034042471035">Gusto ng extension na "<ph name="EXTENSION_NAME" />" na mag-sign in ka sa Chromium</translation>
-<translation id="2374216753258219393">Para magamit ang extension na ito bilang <ph name="USER_EMAIL_ADDRESS" />, mag-sign in sa Chromium.</translation>
-<translation id="2384373936468275798">Hindi ma-sync ng ChromiumOS ang iyong data dahil hindi napapanahon ang mga detalye sa pag-sign in sa iyong account.</translation>
-<translation id="2398377054246527950">{NUM_DEVICES,plural, =0{1 HID device ang ina-access ng isa o higit pang extension ng Chromium}=1{1 HID device ang ina-access ng isa o higit pang extension ng Chromium}one{# HID device ang ina-access ng isa o higit pang extension ng Chromium}other{# HID device ang ina-access ng isa o higit pang extension ng Chromium}}</translation>
-<translation id="2401032172288869980">Kailangan ng Chromium ng pahintulot sa camera at mikropono para sa site na ito</translation>
-<translation id="2440750600860946460">Gamit ang <ph name="BEGIN_LINK" />mga tool mula sa Chromium<ph name="END_LINK" />, makakapag-browse ka nang ligtas at mananatili kang may kontrol</translation>
+<translation id="790624108224468719">Gusto ng extension na "<ph name="EXTENSION_NAME"/>" na mag-sign in ka sa Ecosia</translation>
+<translation id="2056307067005384438">Para magamit ang extension na ito bilang <ph name="USER_EMAIL_ADDRESS"/>, mag-sign in sa Ecosia.</translation>
+<translation id="592990842052138727">Hindi ma-sync ng EcosiaOS ang iyong data dahil hindi napapanahon ang mga detalye sa pag-sign in sa iyong account.</translation>
+<translation id="2526043366208696235">{NUM_DEVICES,plural, =0{1 HID device ang ina-access ng isa o higit pang extension ng Ecosia}=1{1 HID device ang ina-access ng isa o higit pang extension ng Ecosia}one{# HID device ang ina-access ng isa o higit pang extension ng Ecosia}other{# HID device ang ina-access ng isa o higit pang extension ng Ecosia}}</translation>
+<translation id="3554373328288278512">Kailangan ng Ecosia ng pahintulot sa camera at mikropono para sa site na ito</translation>
+<translation id="2440750600860946460">Gamit ang <ph name="BEGIN_LINK"/>mga tool mula sa Chromium<ph name="END_LINK"/>, makakapag-browse ka nang ligtas at mananatili kang may kontrol</translation>
 <translation id="2451727308784734061">Gamitin ang iyong shortcut para mabilis na makarating sa Password Manager. Puwede mong ilipat ang iyong shortcut sa home screen o app launcher ng computer mo.</translation>
-<translation id="2478295928299953161">Magsasara na ang Chromium sa ilang saglit</translation>
-<translation id="2483889755041906834">Sa Chromium</translation>
+<translation id="5736558630107498475">Magsasara na ang Ecosia sa ilang saglit</translation>
+<translation id="6495878830719404098">Sa Ecosia</translation>
 <translation id="2485422356828889247">I-uninstall</translation>
-<translation id="2513154137948333830">Nire-require na i-reboot: <ph name="INSTALL_SUCCESS" /></translation>
-<translation id="2554739539410784893">Sinusubukang palitan ng Chromium ang mga kasalukuyang password. I-type ang iyong password sa Windows para payagan ito.</translation>
-<translation id="2560420686485554789">Kailangan ng Chromium ang access sa storage upang maka-download ng mga file</translation>
-<translation id="2572494885440352020">Helper ng Chromium</translation>
-<translation id="2576118232315942160">Para makuha ang iyong mga password at higit pa sa lahat ng device mo, mag-sign in sa Chromium</translation>
-<translation id="2583187216237139145">Puwedeng alisin ng administrator ng profile sa trabaho ang anumang data ng Chromium na nabuo sa panahon ng paggamit ng profile na ito (gaya ng paggawa ng mga bookmark, history, mga password, at iba pang setting). <ph name="LEARN_MORE" /></translation>
-<translation id="2592940277904433508">Ipagpatuloy ang paggamit ng Chromium</translation>
-<translation id="259935314519650377">Hindi na-cache ang na-download na installer. Error: <ph name="UNPACK_CACHING_ERROR_CODE" />.</translation>
-<translation id="264613044588233783">Mas mabilis na tatakbo ang Chromium at gagana ayon sa pagkakadisenyo sa mga ito ang mga feature na gumagamit ng JavaScript (inirerekomenda)</translation>
-<translation id="2648074677641340862">May naganap na error sa operating system sa panahon ng pag-install. Mangyaring i-download muli ang Chromium.</translation>
-<translation id="2661879430930417727">Kung magpapahiram ka ng device, puwedeng mag-browse nang hiwalay ang mga kaibigan at kapamilya, at puwede nilang i-set up ang Chromium sa paraang gusto nila</translation>
-<translation id="268602741124540128">Maligayang Pagdating sa Chromium, <ph name="ACCOUNT_FIRST_NAME" /></translation>
-<translation id="2711502716910134313">Tab ng Chromium</translation>
+<translation id="2513154137948333830">Nire-require na i-reboot: <ph name="INSTALL_SUCCESS"/></translation>
+<translation id="8957938953005153147">Sinusubukang palitan ng Ecosia ang mga kasalukuyang password. I-type ang iyong password sa Windows para payagan ito.</translation>
+<translation id="5549921590305750618">Kailangan ng Ecosia ang access sa storage upang maka-download ng mga file</translation>
+<translation id="9090890391337853620">Helper ng Ecosia</translation>
+<translation id="6094573000614590044">Para makuha ang iyong mga password at higit pa sa lahat ng device mo, mag-sign in sa Ecosia</translation>
+<translation id="5707346538075088068">Puwedeng alisin ng administrator ng profile sa trabaho ang anumang data ng Ecosia na nabuo sa panahon ng paggamit ng profile na ito (gaya ng paggawa ng mga bookmark, history, mga password, at iba pang setting). <ph name="LEARN_MORE"/></translation>
+<translation id="5883025779824839861">Ipagpatuloy ang paggamit ng Ecosia</translation>
+<translation id="259935314519650377">Hindi na-cache ang na-download na installer. Error: <ph name="UNPACK_CACHING_ERROR_CODE"/>.</translation>
+<translation id="2198589091447191935">Mas mabilis na tatakbo ang Ecosia at gagana ayon sa pagkakadisenyo sa mga ito ang mga feature na gumagamit ng JavaScript (inirerekomenda)</translation>
+<translation id="7280797724682955539">May naganap na error sa operating system sa panahon ng pag-install. Mangyaring i-download muli ang Ecosia.</translation>
+<translation id="6960183526681645011">Kung magpapahiram ka ng device, puwedeng mag-browse nang hiwalay ang mga kaibigan at kapamilya, at puwede nilang i-set up ang Ecosia sa paraang gusto nila</translation>
+<translation id="2381210243314074423">Maligayang Pagdating sa Ecosia, <ph name="ACCOUNT_FIRST_NAME"/></translation>
+<translation id="385080958066798123">Tab ng Ecosia</translation>
 <translation id="2718390899429598676">Para sa karagdagang seguridad, ie-encrypt ng Chromium ang iyong data.</translation>
-<translation id="2721354645805494590">Para alisin ang iyong Google Account sa Chromium, mag-sign out</translation>
+<translation id="7347725536241560534">Para alisin ang iyong Ecosia Account sa Ecosia, mag-sign out</translation>
 <translation id="2738871930057338499">Hindi makakonekta sa Internet. HTTP 403 Forbidden. Tingnan ang configuration ng iyong proxy.</translation>
 <translation id="2770231113462710648">Baguhin ang default na browser sa:</translation>
-<translation id="2785438272836277133">May malware ang extension na ito at hindi ito ligtas. Alisin ito sa Chromium para hindi na nito makita at mabago ang iyong data sa mga site na binibisita mo, kabilang ang iyong personal na impormasyon.</translation>
+<translation id="3077076541395306362">May malware ang extension na ito at hindi ito ligtas. Alisin ito sa Ecosia para hindi na nito makita at mabago ang iyong data sa mga site na binibisita mo, kabilang ang iyong personal na impormasyon.</translation>
 <translation id="2799223571221894425">Ilunsad Muli</translation>
-<translation id="2837693172913560447">Gagawa ito ng bagong profile sa Chromium para sa <ph name="USER_EMAIL_ADDRESS" /></translation>
+<translation id="3952510753191144456">Gagawa ito ng bagong profile sa Ecosia para sa <ph name="USER_EMAIL_ADDRESS"/></translation>
 <translation id="2846251086934905009">Error sa pag-install: Hindi natapos ang installer. Na-abort ang pag-install.</translation>
-<translation id="2847479871509788944">Alisin sa Chromium...</translation>
+<translation id="4199684616787081033">Alisin sa Ecosia...</translation>
 <translation id="2850691299438350830">Pinapanatili kang ligtas sa Chromium at puwedeng gamitin para paigtingin ang iyong seguridad sa iba pang Google app kapag naka-sign in ka</translation>
 <translation id="2885378588091291677">Task Manager</translation>
-<translation id="2910007522516064972">Tungkol sa &amp;Chromium</translation>
+<translation id="7221868538334633215">Tungkol sa &amp;Ecosia</translation>
 <translation id="2915996080311180594">I-restart sa Ibang Pagkakataon</translation>
 <translation id="2928420929544864228">Tapos na ang pag-install.</translation>
 <translation id="2945997411976714835">Error sa pag-install: Hindi nagsimula ang proseso ng installer.</translation>
-<translation id="2970426615109535079">Pinapamahalaan ng iyong organisasyon ang Chromium</translation>
+<translation id="7527831132809333552">Pinapamahalaan ng iyong organisasyon ang Ecosia</translation>
 <translation id="2977470724722393594">Napapanahon ang Chromium</translation>
 <translation id="2977506796191543575">Kung susubukan ng site na nakawin ang iyong password, o kapag nag-download ka ng mapaminsalang file, posible ring magpadala ang Chromium sa Ligtas na Pag-browse ng mga URL, kabilang ang ilang content ng page</translation>
-<translation id="2987208172821108655">Magagawa ng Chromium na gawing hindi aktibo ang mga tab na ito para pagandahin ang iyong experience sa pag-browse at bakantehin ang mga resource.</translation>
-<translation id="3013473503895162900">Buksan ang <ph name="URL" /> sa bagong tab sa Chromium.</translation>
+<translation id="7562371913339616107">Magagawa ng Ecosia na gawing hindi aktibo ang mga tab na ito para pagandahin ang iyong experience sa pag-browse at bakantehin ang mga resource.</translation>
+<translation id="6154325450733409298">Buksan ang <ph name="URL"/> sa bagong tab sa Ecosia.</translation>
 <translation id="3032706164202344641">Hindi masuri ng Chromium ang iyong mga password. Subukan ulit sa ibang pagkakataon.</translation>
-<translation id="3032787606318309379">Idinaragdag sa Chromium...</translation>
+<translation id="1762318218111418450">Idinaragdag sa Ecosia...</translation>
 <translation id="3038232873781883849">Naghihintay sa pag-install...</translation>
-<translation id="3068187312562070417">Iba pang profile sa Chromium</translation>
-<translation id="3068515742935458733">Tumulong na gawing mas mahusay ang Chromium sa pamamagitan ng pagpapadala ng mga ulat ng pag-crash at <ph name="UMA_LINK" /> sa Google</translation>
-<translation id="3079753320517721795">{NUM_DEVICES,plural, =0{1 USB device ang ina-access ng isa o higit pang extension ng Chromium}=1{1 USB device ang ina-access ng isa o higit pang extension ng Chromium}one{# USB device ang ina-access ng isa o higit pang extension ng Chromium}other{# na USB device ang ina-access ng isa o higit pang extension ng Chromium}}</translation>
+<translation id="6967821869905227561">Iba pang profile sa Ecosia</translation>
+<translation id="9178613517891824246">Tumulong na gawing mas mahusay ang Ecosia sa pamamagitan ng pagpapadala ng mga ulat ng pag-crash at <ph name="UMA_LINK"/> sa Ecosia</translation>
+<translation id="7655708678113012665">{NUM_DEVICES,plural, =0{1 USB device ang ina-access ng isa o higit pang extension ng Ecosia}=1{1 USB device ang ina-access ng isa o higit pang extension ng Ecosia}one{# USB device ang ina-access ng isa o higit pang extension ng Ecosia}other{# na USB device ang ina-access ng isa o higit pang extension ng Ecosia}}</translation>
 <translation id="3101560983689755071">Naaapektuhan ng iyong history ng pag-browse ang mga ad na nakikita mo at mga interes tulad ng tinatantya sa ibaba. Para protektahan ang iyong privacy, awtomatikong ide-delete ng Chromium ang mga interes mo sa rolling na paraan bawat buwan. Puwedeng ma-refresh ang mga interes maliban na lang kung alisin mo ang mga ito.</translation>
-<translation id="3103660991484857065">Nabigong i-uncompress ng installer ang archive. Mangyaring i-download muli ang Chromium.</translation>
-<translation id="3130323860337406239">Ginagamit ng Chromium ang iyong mikropono.</translation>
-<translation id="3144188012276422546">Gumagamit ang tab na ito ng mga karagdagang resource. Para pahusayin ang iyong performance, hayaan ang Chromium na gawin itong hindi aktibo.</translation>
-<translation id="3155163173539279776">Muling ilunsad ang Chromium</translation>
-<translation id="3179665906251668410">Buksan ang Link sa Inco&amp;gnito Window ng Chromium</translation>
-<translation id="3185330573522821672">I-customize ang iyong bagong profile sa Chromium</translation>
-<translation id="3190315855212034486">Whoa! Nag-crash ang Chromium. Muling ilunsad ngayon?</translation>
-<translation id="3224847870593914902">Para alisin ang iyong Google Account sa Chromium, mag-sign out sa Chromium sa page na Mga Setting</translation>
-<translation id="3258596308407688501">Hindi makakapag-read at makakapag-write ang Chromium sa direktoryo ng data nito:
+<translation id="7691143774653486474">Nabigong i-uncompress ng installer ang archive. Mangyaring i-download muli ang Ecosia.</translation>
+<translation id="1318059253725731825">Ginagamit ng Ecosia ang iyong mikropono.</translation>
+<translation id="51576365410323372">Gumagamit ang tab na ito ng mga karagdagang resource. Para pahusayin ang iyong performance, hayaan ang Ecosia na gawin itong hindi aktibo.</translation>
+<translation id="8282620071565190081">Muling ilunsad ang Ecosia</translation>
+<translation id="5500958820122281144">Buksan ang Link sa Inco&amp;gnito Window ng Ecosia</translation>
+<translation id="3697186779259384993">I-customize ang iyong bagong profile sa Ecosia</translation>
+<translation id="3216284932113164802">Whoa! Nag-crash ang Ecosia. Muling ilunsad ngayon?</translation>
+<translation id="8696852719113991652">Para alisin ang iyong Ecosia Account sa Ecosia, mag-sign out sa Ecosia sa page na Mga Setting</translation>
+<translation id="7602423871874451395">Hindi makakapag-read at makakapag-write ang Ecosia sa direktoryo ng data nito:
 
-<ph name="USER_DATA_DIRECTORY" /></translation>
-<translation id="3268051428841342958">V8 ang JavaScript at WebAssembly engine ng Chromium na ginagamit para pahusayin ang performance ng site</translation>
-<translation id="3283186697780795848">Na-install na ang bersyong <ph name="PRODUCT_VERSION" /> ng Chrome</translation>
+<ph name="USER_DATA_DIRECTORY"/></translation>
+<translation id="905744008702074577">V8 ang JavaScript at WebAssembly engine ng Ecosia na ginagamit para pahusayin ang performance ng site</translation>
+<translation id="3283186697780795848">Na-install na ang bersyong <ph name="PRODUCT_VERSION"/> ng Chrome</translation>
 <translation id="3286538390144397061">I-restart Ngayon</translation>
-<translation id="328888136576916638">Nawawala ang mga Google API key. Madi-disable ang ilang pagpapagana ng Chromium.</translation>
+<translation id="4735588186234302898">Nawawala ang mga Ecosia API key. Madi-disable ang ilang pagpapagana ng Ecosia.</translation>
 <translation id="3296368748942286671">Patuloy na magpatakbo ng background na apps kapag nakasara ang Chromium</translation>
-<translation id="3300643253493387004">Habang sine-set up namin ang access sa account, magagamit mo pa rin ang Chromium. Posibleng hindi mo ma-access ang ilang resource hangga't hindi nakukumpleto ang pag-set up.</translation>
+<translation id="686474599126256998">Habang sine-set up namin ang access sa account, magagamit mo pa rin ang Ecosia. Posibleng hindi mo ma-access ang ilang resource hangga't hindi nakukumpleto ang pag-set up.</translation>
 <translation id="3313189106987092621">Bibigyan ka ng babala ng Chromium bago nito i-load ang anumang site na gumagamit ng hindi secure na koneksyon</translation>
-<translation id="3316771292331273802">Masa-sign out ka sa karamihan ng mga site kapag isinara mo ang lahat ng window ng Chromium, maliban sa iyong Google Account kung naka-sign in ka sa Chromium. Para payagan ang mga site na matandaan ka, <ph name="SETTINGS_LINK" />.</translation>
-<translation id="3350761136195634146">Mayroon nang profile sa Chromium na gumagamit ng account na ito</translation>
-<translation id="3387527074123400161">ChromiumOS</translation>
-<translation id="3406848076815591792">Lumipat sa kasalukuyang profile sa Chromium?</translation>
+<translation id="5513857521842828996">Masa-sign out ka sa karamihan ng mga site kapag isinara mo ang lahat ng window ng Ecosia, maliban sa iyong Ecosia Account kung naka-sign in ka sa Ecosia. Para payagan ang mga site na matandaan ka, <ph name="SETTINGS_LINK"/>.</translation>
+<translation id="812798451698099271">Mayroon nang profile sa Ecosia na gumagamit ng account na ito</translation>
+<translation id="1761341660094265938">EcosiaOS</translation>
+<translation id="4781882243268600858">Lumipat sa kasalukuyang profile sa Ecosia?</translation>
 <translation id="3412460710772753638">Sa Password Manager sa device na ito</translation>
-<translation id="3430503420100763906">Gamit ang mga profile sa Chromium, magagawa mong paghiwalayin ang lahat ng iyong bagay-bagay sa Chromium. Gumawa ng mga profile para sa mga kaibigan at kapamilya, o gumawa ng magkahiwalay na profile para sa trabaho at kasiyahan.</translation>
+<translation id="4170280082681554565">Gamit ang mga profile sa Ecosia, magagawa mong paghiwalayin ang lahat ng iyong bagay-bagay sa Ecosia. Gumawa ng mga profile para sa mga kaibigan at kapamilya, o gumawa ng magkahiwalay na profile para sa trabaho at kasiyahan.</translation>
 <translation id="347328004046849135">Aabisuhan ka ng Chromium kapag nag-sign in ka gamit ang isang nakompromisong password</translation>
-<translation id="3474745554856756813">Magde-delete ito ng <ph name="ITEMS_COUNT" /> (na) item sa device na ito. Upang makuha ang iyong data sa ibang pagkakataon, mag-sign in sa Chromium bilang <ph name="USER_EMAIL" />.</translation>
-<translation id="3497319089134299931">Puwedeng magpalipat-lipat sa mga profile sa Chromium sa pamamagitan ng <ph name="SHORTCUT" /></translation>
-<translation id="3509308970982693815">Pakisara ang lahat ng window sa Chromium at subukan ulit.</translation>
-<translation id="3530103706039034513">Naka-sign in na si <ph name="EXISTING_USER" />.  Para panatilihing hiwalay ang iyong pag-browse, mag-sign in sa Chromium sa sarili mong profile bilang <ph name="USER_EMAIL_ADDRESS" />.</translation>
+<translation id="3474745554856756813">Magde-delete ito ng <ph name="ITEMS_COUNT"/> (na) item sa device na ito. Upang makuha ang iyong data sa ibang pagkakataon, mag-sign in sa Chromium bilang <ph name="USER_EMAIL"/>.</translation>
+<translation id="4614106433017753369">Puwedeng magpalipat-lipat sa mga profile sa Ecosia sa pamamagitan ng <ph name="SHORTCUT"/></translation>
+<translation id="8534308095039131078">Pakisara ang lahat ng window sa Ecosia at subukan ulit.</translation>
+<translation id="7984841734836997333">Naka-sign in na si <ph name="EXISTING_USER"/>.  Para panatilihing hiwalay ang iyong pag-browse, mag-sign in sa Ecosia sa sarili mong profile bilang <ph name="USER_EMAIL_ADDRESS"/>.</translation>
 <translation id="3533435340678213462">Para protektahan ang iyong privacy, awtomatiko naming dine-delete ang mga interes mo na mas matagal sa 4 na linggo. Habang patuloy kang nagba-browse, posibleng lumabas ulit sa listahan ang isang interes. O puwede kang mag-alis ng mga interes na ayaw mong isaalang-alang ng Chromium.</translation>
 <translation id="3567254597502212821">Iyong history ng pag-browse, record ng mga site na binisita mo gamit ang Chromium sa device na ito.</translation>
-<translation id="3597003331831379823">Hindi napagana ang pag-set up na may mga mas mataas na pribilehiyo. <ph name="METAINSTALLER_ERROR" /></translation>
-<translation id="3639635944603682591">Made-delete sa device na ito ang data sa pag-browse ng taong ito. Para ma-recover ang data, mag-sign in sa Chromium bilang <ph name="USER_EMAIL" />.</translation>
-<translation id="364817392622123556">{COUNT,plural, =0{May available na bagong update para sa Chromium at ilalapat ito sa sandaling maglunsad ka ulit.}=1{May available na bagong update para sa Chromium at ilalapat ito sa sandaling maglunsad ka ulit. Hindi bubukas ulit ang iyong Incognito window.}one{May available na bagong update para sa Chromium at ilalapat ito sa sandaling maglunsad ka ulit. Hindi bubukas ulit ang iyong # Incognito window.}other{May available na bagong update para sa Chromium at ilalapat ito sa sandaling maglunsad ka ulit. Hindi bubukas ulit ang iyong # na Incognito window.}}</translation>
-<translation id="3651803019964686660">Para magpadala ng numero sa iyong Android phone mula sa <ph name="ORIGIN" />, mag-sign in sa Chromium sa parehong device.</translation>
+<translation id="3597003331831379823">Hindi napagana ang pag-set up na may mga mas mataas na pribilehiyo. <ph name="METAINSTALLER_ERROR"/></translation>
+<translation id="2128110540135015661">Made-delete sa device na ito ang data sa pag-browse ng taong ito. Para ma-recover ang data, mag-sign in sa Ecosia bilang <ph name="USER_EMAIL"/>.</translation>
+<translation id="1323499021727766710">{COUNT,plural, =0{May available na bagong update para sa Ecosia at ilalapat ito sa sandaling maglunsad ka ulit.}=1{May available na bagong update para sa Ecosia at ilalapat ito sa sandaling maglunsad ka ulit. Hindi bubukas ulit ang iyong Incognito window.}one{May available na bagong update para sa Ecosia at ilalapat ito sa sandaling maglunsad ka ulit. Hindi bubukas ulit ang iyong # Incognito window.}other{May available na bagong update para sa Ecosia at ilalapat ito sa sandaling maglunsad ka ulit. Hindi bubukas ulit ang iyong # na Incognito window.}}</translation>
+<translation id="7849498640944199147">Para magpadala ng numero sa iyong Android phone mula sa <ph name="ORIGIN"/>, mag-sign in sa Ecosia sa parehong device.</translation>
 <translation id="3667616615096815454">Hindi na-install, hindi kilala ng server ang application.</translation>
-<translation id="3669334504579945026">Para i-share ang iyong screen, payagan ang pag-record ng screen para sa Chromium sa Mga Preference sa System.</translation>
+<translation id="7845247414826995986">Para i-share ang iyong screen, payagan ang pag-record ng screen para sa Ecosia sa Mga Preference sa System.</translation>
 <translation id="3685209450716071127">Hindi masusuri ng Chromium ang iyong mga password. Subukang tingnan ang iyong koneksyon sa internet.</translation>
-<translation id="3702352323269013324">Matuto pa tungkol sa pag-personalize ng ad sa Chromium</translation>
-<translation id="370962675267501463">{COUNT,plural, =0{Hinihiling ng iyong administrator na ilunsad mo ulit ang Chromium para mailapat ang update na ito}=1{Hinihiling ng iyong administrator na ilunsad mo ulit ang Chromium para mailapat ang update na ito. Hindi bubukas ulit ang iyong Incognito window.}one{Hinihiling ng iyong administrator na ilunsad mo ulit ang Chromium para mailapat ang update na ito. Hindi bubukas ulit ang iyong # Incognito window.}other{Hinihiling ng iyong administrator na ilunsad mo ulit ang Chromium para mailapat ang update na ito. Hindi bubukas ulit ang iyong # na Incognito window.}}</translation>
-<translation id="3713809861844741608">Buksan ang link sa bagong &amp;tab ng Chromium</translation>
+<translation id="5902103164685487225">Matuto pa tungkol sa pag-personalize ng ad sa Ecosia</translation>
+<translation id="3479730782477097349">{COUNT,plural, =0{Hinihiling ng iyong administrator na ilunsad mo ulit ang Ecosia para mailapat ang update na ito}=1{Hinihiling ng iyong administrator na ilunsad mo ulit ang Ecosia para mailapat ang update na ito. Hindi bubukas ulit ang iyong Incognito window.}one{Hinihiling ng iyong administrator na ilunsad mo ulit ang Ecosia para mailapat ang update na ito. Hindi bubukas ulit ang iyong # Incognito window.}other{Hinihiling ng iyong administrator na ilunsad mo ulit ang Ecosia para mailapat ang update na ito. Hindi bubukas ulit ang iyong # na Incognito window.}}</translation>
+<translation id="489671036945006830">Buksan ang link sa bagong &amp;tab ng Ecosia</translation>
 <translation id="3728124580182886854">I-link ang Chromium at iba pang serbisyo ng Google para sa pag-personalize at iba pang layunin</translation>
-<translation id="3788675262216168505">Pamahalaan ang Mga Profile sa Chromium</translation>
-<translation id="3790262771324122253">Alamin kung bakit bina-block ng Chromium ang ilang pag-download</translation>
+<translation id="3140530394740845618">Pamahalaan ang Mga Profile sa Ecosia</translation>
+<translation id="3035352359183300151">Alamin kung bakit bina-block ng Ecosia ang ilang pag-download</translation>
 <translation id="379589255253486813">Ipapaalam sa iyo ng Chromium kung may anumang nangangailangan ng iyong pagsusuri</translation>
 <translation id="3802055581630249637">Nagpi-preload ang Chromium ng mga page na malamang na bisitahin mo, para mas mabilis na mag-load ang mga ito kapag binisita mo</translation>
-<translation id="3830894615770080216">ChromiumOS system</translation>
-<translation id="3848258323044014972"><ph name="PAGE_TITLE" /> - Chromium</translation>
+<translation id="3959732324458144441">EcosiaOS system</translation>
+<translation id="2722323139667924824"><ph name="PAGE_TITLE"/> - Ecosia</translation>
 <translation id="386822487697155367">Humingi ng tulong sa ChromiumOS</translation>
-<translation id="3871664619793219264">Makuha ang sarili mong mga bagay sa Chromium browser mula sa <ph name="ACCOUNT_EMAIL" /></translation>
-<translation id="388648406173476553">I-customize at kontrolin ang Chromium. May kailangan kang pagtuunan ng pansin - mag-click para sa mga detalye.</translation>
-<translation id="3889543394854987837">I-click ang iyong pangalan upang buksan ang Chromium at simulan ang pagba-browse.</translation>
-<translation id="390528597099634151">Naka-sign in na si <ph name="EXISTING_USER" /> sa profile sa Chromium na ito. Para panatilihing hiwalay ang iyong pag-browse, puwedeng gumawa ang Chromium ng sarili mong profile para sa iyo.</translation>
-<translation id="3909353120217047026">Lumalabag ang extension na ito sa patakaran ng Chrome Web Store, at posibleng hindi ito ligtas. Alisin ito sa Chromium para hindi na nito makita at mabago ang iyong data sa mga site na binibisita mo, kabilang ang iyong personal na impormasyon.</translation>
-<translation id="391789666908693569">Pinapamahalaan ni <ph name="MANAGER_NAME" /> ang iyong account. Makikita at mae-edit ng iyong administrator ang profile na ito sa Chromium browser at ang data nito gaya ng mga bookmark, history, at mga password.</translation>
+<translation id="6391863622742187823">Makuha ang sarili mong mga bagay sa Ecosia browser mula sa <ph name="ACCOUNT_EMAIL"/></translation>
+<translation id="8544776492099331022">I-customize at kontrolin ang Ecosia. May kailangan kang pagtuunan ng pansin - mag-click para sa mga detalye.</translation>
+<translation id="4871843754042758264">I-click ang iyong pangalan upang buksan ang Ecosia at simulan ang pagba-browse.</translation>
+<translation id="5824812022890208563">Naka-sign in na si <ph name="EXISTING_USER"/> sa profile sa Ecosia na ito. Para panatilihing hiwalay ang iyong pag-browse, puwedeng gumawa ang Ecosia ng sarili mong profile para sa iyo.</translation>
+<translation id="8172133981892685841">Lumalabag ang extension na ito sa patakaran ng Ecosia Web Store, at posibleng hindi ito ligtas. Alisin ito sa Ecosia para hindi na nito makita at mabago ang iyong data sa mga site na binibisita mo, kabilang ang iyong personal na impormasyon.</translation>
+<translation id="4070480171055648632">Pinapamahalaan ni <ph name="MANAGER_NAME"/> ang iyong account. Makikita at mae-edit ng iyong administrator ang profile na ito sa Ecosia browser at ang data nito gaya ng mga bookmark, history, at mga password.</translation>
 <translation id="3941890832296813527">Error sa pag-install: Invalid o hindi sinusuportahan ang filename ng installer.</translation>
-<translation id="3945058413678539331">Sinusubukan ng Chromium na kopyahin ang mga password. I-type ang iyong password sa Windows para payagan ito.</translation>
+<translation id="1047556320128249268">Sinusubukan ng Ecosia na kopyahin ang mga password. I-type ang iyong password sa Windows para payagan ito.</translation>
 <translation id="3962647064319009959">Alamin kung paano ka pinapanatiling ligtas ng Chromium</translation>
-<translation id="3975724895399328945">Tungkol sa &amp;Google Chrome na Pang-test</translation>
+<translation id="8603020525900853944">Tungkol sa &amp;Ecosia na Pang-test</translation>
 <translation id="3997429360543082038">Tungkol sa ChromiumOS</translation>
-<translation id="4019629340646866719">Pinapagana ng karagdagang <ph name="BEGIN_LINK_CROS_OSS" />open source na software<ph name="END_LINK_CROS_OSS" /> ang ChromiumOS, pati na rin ang <ph name="BEGIN_LINK_LINUX_OSS" />environment sa pag-develop ng Linux<ph name="END_LINK_LINUX_OSS" />.</translation>
-<translation id="4036079820698952681">Tulungang pahusayin ang Chromium sa pamamagitan ng pag-ulat sa <ph name="BEGIN_LINK" />mga kasalukuyang setting<ph name="END_LINK" /></translation>
+<translation id="5311911269004680646">Pinapagana ng karagdagang <ph name="BEGIN_LINK_CROS_OSS"/>open source na software<ph name="END_LINK_CROS_OSS"/> ang EcosiaOS, pati na rin ang <ph name="BEGIN_LINK_LINUX_OSS"/>environment sa pag-develop ng Linux<ph name="END_LINK_LINUX_OSS"/>.</translation>
+<translation id="4036079820698952681">Tulungang pahusayin ang Chromium sa pamamagitan ng pag-ulat sa <ph name="BEGIN_LINK"/>mga kasalukuyang setting<ph name="END_LINK"/></translation>
 <translation id="4050175100176540509">May available na mahahalagang pagpapahusay sa seguridad at mga bagong feature sa pinakabagong bersyon.</translation>
 <translation id="4055805654398742145">P&amp;assword Manager</translation>
-<translation id="4095980151185649725">{COUNT,plural, =1{Awtomatikong isinasara ng iyong organisasyon ang Chromium kapag hindi ito nagamit nang 1 minuto. Ide-delete ang data mula sa pag-browse. Posibleng kasama rito ang history, autofill, at mga download.}one{Awtomatikong isinasara ng iyong organisasyon ang Chromium kapag hindi ito nagamit nang # minuto. Ide-delete ang data mula sa pag-browse. Posibleng kasama rito ang history, autofill, at mga download.}other{Awtomatikong isinasara ng iyong organisasyon ang Chromium kapag hindi ito nagamit nang # na minuto. Ide-delete ang data mula sa pag-browse. Posibleng kasama rito ang history, autofill, at mga download.}}</translation>
+<translation id="7757263274906217411">{COUNT,plural, =1{Awtomatikong isinasara ng iyong organisasyon ang Ecosia kapag hindi ito nagamit nang 1 minuto. Ide-delete ang data mula sa pag-browse. Posibleng kasama rito ang history, autofill, at mga download.}one{Awtomatikong isinasara ng iyong organisasyon ang Ecosia kapag hindi ito nagamit nang # minuto. Ide-delete ang data mula sa pag-browse. Posibleng kasama rito ang history, autofill, at mga download.}other{Awtomatikong isinasara ng iyong organisasyon ang Ecosia kapag hindi ito nagamit nang # na minuto. Ide-delete ang data mula sa pag-browse. Posibleng kasama rito ang history, autofill, at mga download.}}</translation>
 <translation id="4118474109249235144">Incognito sa Chromium</translation>
 <translation id="4122186850977583290">Pumunta sa page na Tungkol sa Chromium</translation>
 <translation id="4148957013307229264">Ini-install...</translation>
-<translation id="4149336151887611710">Makikita at mapapamahalaan ng organisasyon mo ang data mula sa pagba-browse sa iyong profile sa trabaho, tulad ng mga bookmark, history, at mga password mo. Hindi nito makikita ang data mula sa pagba-browse sa mga personal na profile sa Chromium.</translation>
-<translation id="419998258129752635"><ph name="PAGE_TITLE" /> - Pag-sign in sa Network - Chromium</translation>
-<translation id="421369550622382712">Tumuklas ng mahuhusay na app, laro, extension at tema para sa Chromium.</translation>
+<translation id="4264506519284061030">Makikita at mapapamahalaan ng organisasyon mo ang data mula sa pagba-browse sa iyong profile sa trabaho, tulad ng mga bookmark, history, at mga password mo. Hindi nito makikita ang data mula sa pagba-browse sa mga personal na profile sa Ecosia.</translation>
+<translation id="3907708440788567041"><ph name="PAGE_TITLE"/> - Pag-sign in sa Network - Ecosia</translation>
+<translation id="7782767522222146179">Tumuklas ng mahuhusay na app, laro, extension at tema para sa Ecosia.</translation>
 <translation id="4216212958613226427">Ginagamit ang wikang ito para ipakita ang Chromium UI</translation>
 <translation id="4222932583846282852">Kinakansela...</translation>
 <translation id="4224210481850767180">Nakansela ang pag-install.</translation>
-<translation id="4230135487732243613">I-link ang iyong data sa Chromium sa account na ito?</translation>
+<translation id="8384922154025337808">I-link ang iyong data sa Ecosia sa account na ito?</translation>
 <translation id="4251772536351901305">Babalaan ka tungkol sa mga mapanganib na site, kahit iyong mga hindi alam ng Google noon, sa pamamagitan ng pagsusuri sa higit pang data mula sa mga site kaysa sa karaniwang proteksyon. Puwede mong piliing laktawan ang mga babala ng Chromium.</translation>
-<translation id="4269093074552541569">Mag-sign Out sa Chromium</translation>
+<translation id="2672632089507560181">Mag-sign Out sa Ecosia</translation>
 <translation id="4271805377592243930">Humingi ng tulong sa Chromium</translation>
 <translation id="4281844954008187215">Mga Tuntunin ng Serbisyo</translation>
-<translation id="4285930937574705105">Nabigo ang pag-install dahil sa hindi natukoy na error. Kung kasalukuyang tumatakbo ang Chromium, pakisara ito at subukan ulit.</translation>
+<translation id="3305517118160815955">Nabigo ang pag-install dahil sa hindi natukoy na error. Kung kasalukuyang tumatakbo ang Ecosia, pakisara ito at subukan ulit.</translation>
 <translation id="4304713468139749426">Password Manager</translation>
 <translation id="4334294535648607276">Tapos na ang pag-download.</translation>
-<translation id="439358628917130594">Kinakailangan ng <ph name="MANAGER" /> na basahin at tanggapin mo ang sumusunod na Mga Tuntunin ng Serbisyo bago gamitin ang device na ito. Hindi pinapalawak, binabago, o nililimitahan ng mga tuntuning ito ang Mga Tuntunin ng ChromiumOS.</translation>
-<translation id="4407044323746248786">Lumabas pa rin sa Chromium?</translation>
-<translation id="4415566066719264597">Hayaang Tumakbo ang Chromium sa Background</translation>
-<translation id="4419831163359812184">{NUM_EXTENSIONS,plural, =1{Inirerekomenda ng Chromium na alisin mo ito. <ph name="BEGIN_LINK" />Matuto pa tungkol sa mga sinusuportahang extension<ph name="END_LINK" />}one{Inirerekomenda ng Chromium na alisin mo ang mga ito. <ph name="BEGIN_LINK" />Matuto pa tungkol sa mga sinusuportahang extension<ph name="END_LINK" />}other{Inirerekomenda ng Chromium na alisin mo ang mga ito. <ph name="BEGIN_LINK" />Matuto pa tungkol sa mga sinusuportahang extension<ph name="END_LINK" />}}</translation>
-<translation id="4423735387467980091">I-customize at kontrolin ang Chromium</translation>
+<translation id="8411844745163855310">Kinakailangan ng <ph name="MANAGER"/> na basahin at tanggapin mo ang sumusunod na Mga Tuntunin ng Serbisyo bago gamitin ang device na ito. Hindi pinapalawak, binabago, o nililimitahan ng mga tuntuning ito ang Mga Tuntunin ng EcosiaOS.</translation>
+<translation id="88039520238670574">Lumabas pa rin sa Ecosia?</translation>
+<translation id="4586967042094107073">Hayaang Tumakbo ang Ecosia sa Background</translation>
+<translation id="804899663814036125">{NUM_EXTENSIONS,plural, =1{Inirerekomenda ng Ecosia na alisin mo ito. <ph name="BEGIN_LINK"/>Matuto pa tungkol sa mga sinusuportahang extension<ph name="END_LINK"/>}one{Inirerekomenda ng Ecosia na alisin mo ang mga ito. <ph name="BEGIN_LINK"/>Matuto pa tungkol sa mga sinusuportahang extension<ph name="END_LINK"/>}other{Inirerekomenda ng Ecosia na alisin mo ang mga ito. <ph name="BEGIN_LINK"/>Matuto pa tungkol sa mga sinusuportahang extension<ph name="END_LINK"/>}}</translation>
+<translation id="4817913198787198451">I-customize at kontrolin ang Ecosia</translation>
 <translation id="4427306783828095590">Mas maraming magagawa ang pinahusay na proteksyon para mag-block ng phishing and malware</translation>
-<translation id="4434353761996769206">Error sa installer: <ph name="INSTALLER_ERROR" /></translation>
-<translation id="4438870983368648614">Pinapamahalaan ni <ph name="MANAGER" /> ang Chromium</translation>
+<translation id="4434353761996769206">Error sa installer: <ph name="INSTALLER_ERROR"/></translation>
+<translation id="6994161374830839635">Pinapamahalaan ni <ph name="MANAGER"/> ang Ecosia</translation>
 <translation id="4447409407328223819">Tungkol sa Chrome na Pang-test</translation>
 <translation id="4501471624619070934">Hindi na-install dahil pinaghihigpitan ang access sa bansang ito.</translation>
-<translation id="4510853178268397146">Hindi nag-publish ang extension na ito ng mga kagawian sa privacy, gaya ng kung paano ito nangongolekta at gumagamit ng data. Inirerekomenda ng Chromium na alisin mo ito.</translation>
-<translation id="452711251841752011">Welcome sa Chromium; binuksan ang bagong window ng browser</translation>
-<translation id="4531137820806573936">Kailangan ng Chromium ng pahintulot na imapa ang paligid mo at i-track ang iyong mga kamay</translation>
-<translation id="4536805923587466102">Naka-sign in ka na bilang <ph name="USER_EMAIL_ADDRESS" /> sa ibang profile sa Chromium</translation>
-<translation id="4544142686420020088">Hindi na-update ang Chromium, nagkaproblema. <ph name="BEGIN_LINK" />Ayusin ang mga problema sa pag-update ng Chromium at ang mga hindi naisagawang pag-update dito.<ph name="END_LINK" /></translation>
-<translation id="4545268686623374213">Magagawa ng Chromium na gawing hindi aktibo ang tab na ito para pagandahin ang iyong experience sa pag-browse at panatilihing mabilis ang mga bagay.</translation>
-<translation id="454579500955453258">Magpatuloy sa bagong profile sa Chromium?</translation>
-<translation id="4567424176335768812">Naka-sign in ka bilang <ph name="USER_EMAIL_ADDRESS" />. Maaari mo na ngayong i-access ang iyong mga bookmark, kasaysayan, at iba pang setting sa lahat ng iyong device na naka-sign in.</translation>
-<translation id="4570813286784708942">Na-block ng Chromium ang pag-download na ito dahil in-off mo ang Ligtas na Pag-browse at hindi ma-verify ang file</translation>
+<translation id="576192547306902465">Hindi nag-publish ang extension na ito ng mga kagawian sa privacy, gaya ng kung paano ito nangongolekta at gumagamit ng data. Inirerekomenda ng Ecosia na alisin mo ito.</translation>
+<translation id="1859120614572957305">Welcome sa Ecosia; binuksan ang bagong window ng browser</translation>
+<translation id="378302976931789177">Kailangan ng Ecosia ng pahintulot na imapa ang paligid mo at i-track ang iyong mga kamay</translation>
+<translation id="8403827649521531901">Naka-sign in ka na bilang <ph name="USER_EMAIL_ADDRESS"/> sa ibang profile sa Ecosia</translation>
+<translation id="4544142686420020088">Hindi na-update ang Chromium, nagkaproblema. <ph name="BEGIN_LINK"/>Ayusin ang mga problema sa pag-update ng Chromium at ang mga hindi naisagawang pag-update dito.<ph name="END_LINK"/></translation>
+<translation id="2020747823154282691">Magagawa ng Ecosia na gawing hindi aktibo ang tab na ito para pagandahin ang iyong experience sa pag-browse at panatilihing mabilis ang mga bagay.</translation>
+<translation id="8685318202174822382">Magpatuloy sa bagong profile sa Ecosia?</translation>
+<translation id="4567424176335768812">Naka-sign in ka bilang <ph name="USER_EMAIL_ADDRESS"/>. Maaari mo na ngayong i-access ang iyong mga bookmark, kasaysayan, at iba pang setting sa lahat ng iyong device na naka-sign in.</translation>
+<translation id="361644486359722423">Na-block ng Ecosia ang pag-download na ito dahil in-off mo ang Ligtas na Pag-browse at hindi ma-verify ang file</translation>
 <translation id="4594305310729380060">Sa Password Manager sa device na ito</translation>
-<translation id="459535195905078186">Chromium Apps</translation>
+<translation id="2636091632287013185">Ecosia Apps</translation>
 <translation id="4613863813562375431">Bersyon ng ChromiumOS</translation>
-<translation id="4617285639650863674">Para i-share ang iyong screen, payagan ang pag-record ng screen para sa Chromium sa Mga Preference sa System</translation>
+<translation id="2394629668475473296">Para i-share ang iyong screen, payagan ang pag-record ng screen para sa Ecosia sa Mga Preference sa System</translation>
 <translation id="4621240073146040695">Halos napapanahon na! Muling ilunsad ang Chromium upang tapusin ang pag-a-update.</translation>
-<translation id="4665829708273112819">Babala: Hindi mapipigilan ng Chromium ang pag-record ng mga extension sa iyong history ng pag-browse. Para i-disable ang extension na ito sa Incognito mode, i-unselect ang opsyong ito.</translation>
+<translation id="1676748966275099244">Babala: Hindi mapipigilan ng Ecosia ang pag-record ng mga extension sa iyong history ng pag-browse. Para i-disable ang extension na ito sa Incognito mode, i-unselect ang opsyong ito.</translation>
 <translation id="4673151026126227699">Kung magbabahagi ka rin ng mga ulat ng paggamit sa Chromium, isasama sa mga ulat na iyon ang mga URL na binibisita mo</translation>
-<translation id="4677944499843243528">Mukhang ginagamit ang profile ng iba pang proseso ng Chromium (<ph name="PROCESS_ID" />) sa iba pang computer (<ph name="HOST_NAME" />).  Ni-lock ng Chromium ang profile upang hindi ito ma-corrupt.  Kung nakakatiyak ka na walang ibang mga proseso ang gumagamit sa profile na ito, maaari mong i-unlock ang profile at ilunsad muli ang Chromium.</translation>
+<translation id="1384607180773886645">Mukhang ginagamit ang profile ng iba pang proseso ng Ecosia (<ph name="PROCESS_ID"/>) sa iba pang computer (<ph name="HOST_NAME"/>).  Ni-lock ng Ecosia ang profile upang hindi ito ma-corrupt.  Kung nakakatiyak ka na walang ibang mga proseso ang gumagamit sa profile na ito, maaari mong i-unlock ang profile at ilunsad muli ang Ecosia.</translation>
 <translation id="4680828127924988555">Kanselahin ang Pag-install</translation>
-<translation id="469259825538636168">Hindi pa nase-save sa Google Account mo ang ilan sa iyong data sa Chromium. Subukang maghintay nang ilang minuto bago mag-sign out. Kung magsa-sign out ka ngayon, made-delete ang data na ito.</translation>
-<translation id="4708193446201257833">Habang naka-sign in ka, magagamit mo ang iyong mga password at higit pa mula sa Google Account mo sa Chromium. Gamit ang <ph name="SHORTCUT" />, puwede mong baguhin ang iyong mga setting ng Mga serbisyo ng Google.</translation>
-<translation id="4708774505295300557">May nag-sign in dati sa Chromium sa computer na ito bilang <ph name="ACCOUNT_EMAIL_LAST" />. Mangyaring gumawa ng bagong user ng Chromium upang ihiwalay ang iyong impormasyon.</translation>
+<translation id="7898621536417126731">Hindi pa nase-save sa Ecosia Account mo ang ilan sa iyong data sa Ecosia. Subukang maghintay nang ilang minuto bago mag-sign out. Kung magsa-sign out ka ngayon, made-delete ang data na ito.</translation>
+<translation id="4427878468534147875">Habang naka-sign in ka, magagamit mo ang iyong mga password at higit pa mula sa Ecosia Account mo sa Ecosia. Gamit ang <ph name="SHORTCUT"/>, puwede mong baguhin ang iyong mga setting ng Mga serbisyo ng Ecosia.</translation>
+<translation id="4727435569202742773">May nag-sign in dati sa Ecosia sa computer na ito bilang <ph name="ACCOUNT_EMAIL_LAST"/>. Mangyaring gumawa ng bagong user ng Ecosia upang ihiwalay ang iyong impormasyon.</translation>
 <translation id="4724676981607797757">Hindi na-install dahil sa error na hindi sinusuportahang protocol.</translation>
-<translation id="4746050847053251315">Umalis pa rin sa Chromium?</translation>
-<translation id="4748217263233248895">Naglapat ng espesyal na update sa seguridad para sa Chromium. Mag-restart na at ire-restore namin ang iyong mga tab.</translation>
-<translation id="4765210420921718862">Puwede kang magbago ng isip anumang oras sa mga setting ng Chromium. Tumatakbo ang mga trial kasabay ng kasalukuyang paraan kung paano inihahatid ang mga ad, kaya hindi ka kaagad makakakita ng mga pagbabago.</translation>
-<translation id="4788777615168560705">Hindi masuri ng Chromium ang iyong mga password. Subukan ulit pagkalipas ng 24 na oras o <ph name="BEGIN_LINK" />suriin ang mga password sa iyong Google Account<ph name="END_LINK" />.</translation>
-<translation id="479167709087336770">Ginagamit nito ang parehong spellchecker na ginagamit sa paghahanap sa Google. Ipinapadala sa Google ang text na tina-type mo sa browser. Puwede mong baguhin ang gawing ito sa mga setting sa lahat ng oras.</translation>
-<translation id="4814736265800133385">Gamitin ang Chromium nang walang account</translation>
-<translation id="4888717733111232871">Inbound na panuntunan para sa Chromium upang payagan ang trapiko ng mDNS.</translation>
-<translation id="4893347770495441059">Ilunsad Ulit para Ma-update ang Chromium</translation>
-<translation id="4942295735032723435">Para makatanggap ng mga update sa Chromium sa hinaharap, kakailanganin mo ng macOS 11 o mas bago. Gumagamit ng macOS 10.15 ang computer na ito.</translation>
-<translation id="4943838377383847465">Nasa background mode ang Chromium.</translation>
-<translation id="494490797786467921">I-click para isara ang dialog ng pag-sign in sa Chromium</translation>
-<translation id="4987820182225656817">Makakagamit ng Chromium ang mga bisita nang hindi nag-iiwan ng anumang bakas.</translation>
-<translation id="4994636714258228724">Idagdag ang iyong sarili sa Chromium</translation>
-<translation id="5114678101347489141">Nag-e-explore ang Chromium ng mga bagong feature na nagbibigay-daan sa mga site na ihatid ang parehong karanasan sa pag-browse nang hindi gaanong gumagamit ng iyong impormasyon</translation>
-<translation id="5187123684706427865">Nagre-require ang Chromium account ng pag-authenticate ulit</translation>
+<translation id="864244542982029641">Umalis pa rin sa Ecosia?</translation>
+<translation id="1025044809499013222">Naglapat ng espesyal na update sa seguridad para sa Ecosia. Mag-restart na at ire-restore namin ang iyong mga tab.</translation>
+<translation id="824192326282906244">Puwede kang magbago ng isip anumang oras sa mga setting ng Ecosia. Tumatakbo ang mga trial kasabay ng kasalukuyang paraan kung paano inihahatid ang mga ad, kaya hindi ka kaagad makakakita ng mga pagbabago.</translation>
+<translation id="4788777615168560705">Hindi masuri ng Chromium ang iyong mga password. Subukan ulit pagkalipas ng 24 na oras o <ph name="BEGIN_LINK"/>suriin ang mga password sa iyong Google Account<ph name="END_LINK"/>.</translation>
+<translation id="3543284013834505767">Ginagamit nito ang parehong spellchecker na ginagamit sa paghahanap sa Ecosia. Ipinapadala sa Ecosia ang text na tina-type mo sa browser. Puwede mong baguhin ang gawing ito sa mga setting sa lahat ng oras.</translation>
+<translation id="7787479292144635608">Gamitin ang Ecosia nang walang account</translation>
+<translation id="4154538917942874814">Inbound na panuntunan para sa Ecosia upang payagan ang trapiko ng mDNS.</translation>
+<translation id="2159716220295742156">Ilunsad Ulit para Ma-update ang Ecosia</translation>
+<translation id="8701027951719712428">Para makatanggap ng mga update sa Ecosia sa hinaharap, kakailanganin mo ng macOS 11 o mas bago. Gumagamit ng macOS 10.15 ang computer na ito.</translation>
+<translation id="2234042158691635795">Nasa background mode ang Ecosia.</translation>
+<translation id="3271929752667225813">I-click para isara ang dialog ng pag-sign in sa Ecosia</translation>
+<translation id="1869027055332251164">Makakagamit ng Ecosia ang mga bisita nang hindi nag-iiwan ng anumang bakas.</translation>
+<translation id="6761747850241550887">Idagdag ang iyong sarili sa Ecosia</translation>
+<translation id="3708834841667355707">Nag-e-explore ang Ecosia ng mga bagong feature na nagbibigay-daan sa mga site na ihatid ang parehong karanasan sa pag-browse nang hindi gaanong gumagamit ng iyong impormasyon</translation>
+<translation id="3376578942612115781">Nagre-require ang Ecosia account ng pag-authenticate ulit</translation>
 <translation id="5224391634244552924">Walang naka-save na password. Masusuri ng Chromium ang iyong mga password kapag na-save mo ang mga ito.</translation>
-<translation id="5231355151045086930">Mag-sign out sa Chromium</translation>
-<translation id="5252179775517634216">Naka-sign in na si <ph name="EXISTING_USER" /> sa profile sa Chromium na ito. Gagawa ito ng bagong profile sa Chromium para sa <ph name="USER_EMAIL_ADDRESS" /></translation>
+<translation id="2421263730139898714">Mag-sign out sa Ecosia</translation>
+<translation id="847970842635669371">Naka-sign in na si <ph name="EXISTING_USER"/> sa profile sa Ecosia na ito. Gagawa ito ng bagong profile sa Ecosia para sa <ph name="USER_EMAIL_ADDRESS"/></translation>
 <translation id="5277894862589591112">Para ilapat ang iyong mga pagbabago, muling ilunsad ang Chromium</translation>
 <translation id="5294316920224716406">Kapag nagba-browse sa Incognito mode, bibigyan ka ng babala ng Chromium bago nito i-load ang isang site na gumagamit ng hindi secure na koneksyon</translation>
 <translation id="5296845517486664001">Kapag naka-on ang mga trial at kung random kang inilagay ng Chromium sa isang aktibong trial, maaapektuhan ng iyong history ng pag-browse ang mga ad na makikita mo at ang mga interes tulad ng itinantya sa ibaba. Para protektahan ang iyong privacy, ide-delete ng Chromium ang mga interes mo sa rolling na paraan bawat buwan.</translation>
-<translation id="5310474266708705970">Mag-sign in sa Chromium bilang <ph name="USER_EMAIL" /></translation>
+<translation id="2297526912548649074">Mag-sign in sa Ecosia bilang <ph name="USER_EMAIL"/></translation>
 <translation id="5352264705793813212">Nakakita ang Chromium ng ilang rekomendasyon sa kaligtasan para sa pagsusuri mo</translation>
-<translation id="5352361688875342522">Iba pang Profile sa Chromium</translation>
-<translation id="5358375970380395591">Nagsa-sign in ka gamit ang isang pinamamahalaang account at nagbibigay sa administrator nito ng kontrol sa iyong profile sa Chromium. Permanenteng mauugnay ang iyong data sa Chromium, gaya ng iyong apps, mga bookmark, kasaysayan, password, at iba pang mga setting sa <ph name="USER_NAME" />. Matatanggal mo ang data na ito sa Google Accounts Dashboard, ngunit hindi mo maiuugnay ang data na ito sa isa pang account. <ph name="LEARN_MORE" /></translation>
-<translation id="5368118228313795342">Dagdag na code: <ph name="EXTRA_CODE" />.</translation>
+<translation id="5251710252516682805">Iba pang Profile sa Ecosia</translation>
+<translation id="7105712012505419722">Nagsa-sign in ka gamit ang isang pinamamahalaang account at nagbibigay sa administrator nito ng kontrol sa iyong profile sa Ecosia. Permanenteng mauugnay ang iyong data sa Ecosia, gaya ng iyong apps, mga bookmark, kasaysayan, password, at iba pang mga setting sa <ph name="USER_NAME"/>. Matatanggal mo ang data na ito sa Ecosia Accounts Dashboard, ngunit hindi mo maiuugnay ang data na ito sa isa pang account. <ph name="LEARN_MORE"/></translation>
+<translation id="5368118228313795342">Dagdag na code: <ph name="EXTRA_CODE"/>.</translation>
 <translation id="5377622451696208284">Para makuha ang pag-personalize, isama ang Chromium sa Aktibidad sa Web at App</translation>
-<translation id="5383439451358640070">Alamin kung bakit bina-block ng Chromium ang ilang file</translation>
-<translation id="5386450000063123300">Ina-update ang Chromium (<ph name="PROGRESS_PERCENT" />)</translation>
+<translation id="350189837353493413">Alamin kung bakit bina-block ng Ecosia ang ilang file</translation>
+<translation id="5386450000063123300">Ina-update ang Chromium (<ph name="PROGRESS_PERCENT"/>)</translation>
 <translation id="538767207339317086">Pagayan ang pag-sign in sa Chromium</translation>
-<translation id="5405650547142096840">Alisin mula sa Chromium</translation>
-<translation id="5427571867875391349">Itakda ang Chromium bilang iyong default na browser</translation>
-<translation id="5438241569118040789"><ph name="PAGE_TITLE" /> - Chromium Beta</translation>
-<translation id="5473971139929175403">Posibleng hindi gumana nang maayos ang Chromium dahil hindi na ito sinusuportahan sa Linux distribution na ito.</translation>
-<translation id="5475924890392386523">Na-block ng Chromium ang pag-download na ito dahil puwedeng mapinsala ng file ang iyong mga personal na account at account sa social network</translation>
-<translation id="5480860683791598150">Kailangan ng Chromium ng access sa iyong lokasyon upang maibahagi ang lokasyon mo sa site na ito</translation>
+<translation id="330264384086604869">Alisin mula sa Ecosia</translation>
+<translation id="5581150090232500900">Itakda ang Ecosia bilang iyong default na browser</translation>
+<translation id="1361296321590354837"><ph name="PAGE_TITLE"/> - Ecosia Beta</translation>
+<translation id="3307959934543585795">Posibleng hindi gumana nang maayos ang Ecosia dahil hindi na ito sinusuportahan sa Linux distribution na ito.</translation>
+<translation id="197803137365953132">Na-block ng Ecosia ang pag-download na ito dahil puwedeng mapinsala ng file ang iyong mga personal na account at account sa social network</translation>
+<translation id="6558895515431832002">Kailangan ng Ecosia ng access sa iyong lokasyon upang maibahagi ang lokasyon mo sa site na ito</translation>
 <translation id="5487574057737591516">Para protektahan ang iyong privacy, awtomatiko naming dine-delete ang mga interes mo na mas matagal sa 4 na linggo. Habang patuloy kang nagba-browse, posibleng lumabas ulit sa listahan ang isang interes. At kung magkakamali ang Chromium o kung ayaw mong makakita ng ilang partikular na ad, puwede kang mag-alis ng interes.</translation>
-<translation id="549669000822060376">Mangyaring maghintay habang ini-install ng Chromium ang mga pinakabagong update sa system.</translation>
-<translation id="5496810170689441661">Sinusubukan ng Chromium na i-edit ang mga password. I-type ang iyong password sa Windows para payagan ito.</translation>
+<translation id="5279514147510747661">Mangyaring maghintay habang ini-install ng Ecosia ang mga pinakabagong update sa system.</translation>
+<translation id="5066194399237265772">Sinusubukan ng Ecosia na i-edit ang mga password. I-type ang iyong password sa Windows para payagan ito.</translation>
 <translation id="5527463683072221100">Magbukas ng mga PDF sa Chromium</translation>
-<translation id="5623402015214259806">{0,plural, =0{May available na update sa Chromium}=1{May available na update sa Chromium}one{# araw nang may available na update sa Chromium}other{# na araw nang may available na update sa Chromium}}</translation>
+<translation id="7348818664647668234">{0,plural, =0{May available na update sa Ecosia}=1{May available na update sa Ecosia}one{# araw nang may available na update sa Ecosia}other{# na araw nang may available na update sa Ecosia}}</translation>
 <translation id="5643865575100044307">Palaging i-delete ang data ng site mula sa iyong device kapag isinasara mo ang Chromium</translation>
-<translation id="5653831366781983928">Paki-restart ang Chromium ngayon</translation>
-<translation id="5690427481109656848">Google LLC</translation>
+<translation id="5982672133249369264">Paki-restart ang Ecosia ngayon</translation>
+<translation id="4811228173434336381">Ecosia</translation>
 <translation id="5698481217667032250">Ipakita ang Chromium sa wikang ito</translation>
 <translation id="569897634095159764">Hindi makakonekta sa Internet. Nagre-require ng pag-authenticate ang proxy server.</translation>
-<translation id="5761096224651992291">Hindi mo ito binisita kamakailan. Inalis ng Chromium ang <ph name="PERMISSION_1" />, <ph name="PERMISSION_2" />, <ph name="PERMISSION_3" /></translation>
-<translation id="5800158606660203929">I-customize at kontrolin ang Chromium. Itakda ang Chromium bilang default mo.</translation>
+<translation id="5761096224651992291">Hindi mo ito binisita kamakailan. Inalis ng Chromium ang <ph name="PERMISSION_1"/>, <ph name="PERMISSION_2"/>, <ph name="PERMISSION_3"/></translation>
+<translation id="1818520302923047971">I-customize at kontrolin ang Ecosia. Itakda ang Ecosia bilang default mo.</translation>
 <translation id="5809516625706423866">Hindi makakonekta sa Internet. HTTP 401 Unauthorized. Tingnan ang configuration ng iyong proxy.</translation>
-<translation id="5862307444128926510">Maligayang Pagdating sa Chromium</translation>
-<translation id="5883558403894052917">Napag-alaman ng Chromium na naglalaman ng malware ang mga item na ito:</translation>
+<translation id="1027331268335328576">Maligayang Pagdating sa Ecosia</translation>
+<translation id="2942675027725878581">Napag-alaman ng Ecosia na naglalaman ng malware ang mga item na ito:</translation>
 <translation id="5889361821821684993">Regular na nagsusuri ang Chromium para tiyaking may mga pinakaligtas na setting ang iyong browser. Ipapaalam namin sa iyo kung may anumang nangangailangan ng iyong pagsusuri.</translation>
 <translation id="5895138241574237353">I-restart</translation>
-<translation id="5903106910045431592"><ph name="PAGE_TITLE" /> - Pag-sign in sa Network</translation>
+<translation id="5903106910045431592"><ph name="PAGE_TITLE"/> - Pag-sign in sa Network</translation>
 <translation id="5924017743176219022">Kumokonekta sa Internet...</translation>
-<translation id="5929318705173562984">Magagawa ng Chromium na gawing hindi aktibo ang tab na ito para pagandahin ang iyong experience sa pag-browse at bakantehin ang mga resource.</translation>
+<translation id="719484593754925816">Magagawa ng Ecosia na gawing hindi aktibo ang tab na ito para pagandahin ang iyong experience sa pag-browse at bakantehin ang mga resource.</translation>
 <translation id="5941711191222866238">I-minimize</translation>
 <translation id="5972142260211327093">Kung random kang inilagay ng Chromium sa isang aktibong trial, maaapektuhan ng iyong history ng pag-browse ang mga ad na makikita mo at ang mga interes tulad ng itinantya sa ibaba. Para protektahan ang iyong privacy, ide-delete ng Chromium ang mga interes mo sa rolling na paraan bawat buwan. Nagre-refresh ang mga interes maliban na lang kung alisin mo ang mga ito.</translation>
-<translation id="5986585015444752010">{COUNT,plural, =1{Awtomatikong isinasara ng iyong organisasyon ang Chromium kapag hindi ito nagamit nang 1 minuto.}one{Awtomatikong isinasara ng iyong organisasyon ang Chromium kapag hindi ito nagamit nang # minuto.}other{Awtomatikong isinasara ng iyong organisasyon ang Chromium kapag hindi ito nagamit nang # na minuto.}}</translation>
-<translation id="5987687638152509985">I-update ang Chromium upang simulan ang pag-sync</translation>
+<translation id="2988629157092722504">{COUNT,plural, =1{Awtomatikong isinasara ng iyong organisasyon ang Ecosia kapag hindi ito nagamit nang 1 minuto.}one{Awtomatikong isinasara ng iyong organisasyon ang Ecosia kapag hindi ito nagamit nang # minuto.}other{Awtomatikong isinasara ng iyong organisasyon ang Ecosia kapag hindi ito nagamit nang # na minuto.}}</translation>
+<translation id="5704599732514791330">I-update ang Ecosia upang simulan ang pag-sync</translation>
 <translation id="5988505247484123880">Karaniwan para sa mga binibisita mong site na tandaan ang mga bagay na interesado ka, para ma-personalize ang iyong karanasan. Puwede ring mag-store ang mga site sa Chromium tungkol sa iyong mga interes.</translation>
-<translation id="6003112304606738118">Nagda-download... <ph name="HOURS" /> (na) oras na lang ang natitira</translation>
-<translation id="6019451407441383358">Puwede mong buksan ang mga bookmark, reading mode, at higit pa sa menu ng Chromium sa kanang bahagi sa itaas</translation>
+<translation id="6003112304606738118">Nagda-download... <ph name="HOURS"/> (na) oras na lang ang natitira</translation>
+<translation id="8347473600923066837">Puwede mong buksan ang mga bookmark, reading mode, at higit pa sa menu ng Ecosia sa kanang bahagi sa itaas</translation>
 <translation id="6040143037577758943">Isara</translation>
 <translation id="6058380562449900225">Para protektahan ang iyong data, hayaan ang Chromium na mag-alis ng mga pahintulot sa mga site na hindi mo binisita kamakailan. Hindi nito mapapahinto ang mga notification.</translation>
-<translation id="6063093106622310249">&amp;Buksan sa Chromium</translation>
-<translation id="6072279588547424923">Naidagdag na ang <ph name="EXTENSION_NAME" /> sa Chromium</translation>
-<translation id="6072463441809498330">Pabilisin ang Chromium</translation>
+<translation id="7303930050538184306">&amp;Buksan sa Ecosia</translation>
+<translation id="2227704215309956084">Naidagdag na ang <ph name="EXTENSION_NAME"/> sa Ecosia</translation>
+<translation id="2905159584855395810">Pabilisin ang Ecosia</translation>
 <translation id="608006075545470555">Magdagdag ng Profile sa Trabaho sa browser na ito</translation>
-<translation id="6096348254544841612">I-customize at kontrolin ang Chromium. May available na update.</translation>
+<translation id="8296565077892323223">I-customize at kontrolin ang Ecosia. May available na update.</translation>
 <translation id="6102072151902574948">Kapag naka-on ito, nakakatipid ng baterya ang Chromium sa pamamagitan ng paglimita sa aktibidad sa background at mga visual effect, tulad ng maayos na pag-scroll at mga frame rate ng video.</translation>
-<translation id="6107893135096467929">Naka-on • Hindi ma-verify ng Chromium kung saan galing ang extension na ito</translation>
-<translation id="6119438414301547735">Payagan ang extension na ipakita ang mga kahilingan sa access sa toolbar ng Chromium</translation>
-<translation id="6120345080069858279">Ise-save ng Chromium ang password na ito sa iyong Google Account. Hindi mo na ito kailangang tandaan.</translation>
-<translation id="6129621093834146363">Mapanganib ang <ph name="FILE_NAME" />, kaya na-block ito ng Chromium.</translation>
-<translation id="6132897690380286411">Magsasara at magde-delete na ng data ang Chromium sa ilang saglit</translation>
+<translation id="8419312540998601274">Naka-on • Hindi ma-verify ng Ecosia kung saan galing ang extension na ito</translation>
+<translation id="6419542773162312746">Payagan ang extension na ipakita ang mga kahilingan sa access sa toolbar ng Ecosia</translation>
+<translation id="4021894801595982809">Ise-save ng Ecosia ang password na ito sa iyong Ecosia Account. Hindi mo na ito kailangang tandaan.</translation>
+<translation id="1936361330890313940">Mapanganib ang <ph name="FILE_NAME"/>, kaya na-block ito ng Ecosia.</translation>
+<translation id="2446603005062458629">Magsasara at magde-delete na ng data ang Ecosia sa ilang saglit</translation>
 <translation id="6134968993075716475">Naka-off ang Ligtas na Pag-browse. Inirerekomenda ng Chromium na i-on ito.</translation>
-<translation id="6145820983052037069">Puwede kang magpalipat-lipat sa mga profile sa Chromium dito</translation>
+<translation id="4032832945953542360">Puwede kang magpalipat-lipat sa mga profile sa Ecosia dito</translation>
 <translation id="615103374448673771">Kung papayagan mo ang cookies, posibleng gamitin ng Chromium ang mga ito kapag nagpi-preload.</translation>
-<translation id="6174920971222007286">Posibleng mapanganib ang file na ito<ph name="LINE_BREAK" />Puwedeng suriin ng Chromium ang download na ito para sa iyo kung ibibigay mo ang password. Ipapadala sa Ligtas na Pag-browse sa Google ang impormasyon tungkol sa file, pero mananatili sa iyong device ang content ng file at ang password.</translation>
+<translation id="5032126307005935789">Posibleng mapanganib ang file na ito<ph name="LINE_BREAK"/>Puwedeng suriin ng Ecosia ang download na ito para sa iyo kung ibibigay mo ang password. Ipapadala sa Ligtas na Pag-browse sa Ecosia ang impormasyon tungkol sa file, pero mananatili sa iyong device ang content ng file at ang password.</translation>
 <translation id="6182736845697986886">Hindi na-install dahil sa isang internal na error sa server ng update.</translation>
-<translation id="6183079672144801177">Tiyaking naka-sign in ka sa Chromium sa iyong <ph name="TARGET_DEVICE_NAME" /> at pagkatapos ay subukang ipadala ulit.</translation>
-<translation id="6212496753309875659">May mas bagong bersyon ng Chromium na ang computer na ito. Kung hindi gumagana ang software, mangyaring i-uninstall ang Chromium at subukan ulit.</translation>
-<translation id="6219195342503754812">{0,plural, =0{Muli nang ilulunsad ang Chromium ngayon}=1{Muli nang ilulunsad ang Chromium sa loob ng 1 segundo}one{Muli nang ilulunsad ang Chromium sa loob ng # segundo}other{Muli nang ilulunsad ang Chromium sa loob ng # na segundo}}</translation>
-<translation id="6241367896540709610">Kailangan ng Chromium ng pahintulot sa access sa storage para makapag-download ng mga file</translation>
+<translation id="2346323077583431428">Tiyaking naka-sign in ka sa Ecosia sa iyong <ph name="TARGET_DEVICE_NAME"/> at pagkatapos ay subukang ipadala ulit.</translation>
+<translation id="2995860351618948435">May mas bagong bersyon ng Ecosia na ang computer na ito. Kung hindi gumagana ang software, mangyaring i-uninstall ang Ecosia at subukan ulit.</translation>
+<translation id="5690368185132749068">{0,plural, =0{Muli nang ilulunsad ang Ecosia ngayon}=1{Muli nang ilulunsad ang Ecosia sa loob ng 1 segundo}one{Muli nang ilulunsad ang Ecosia sa loob ng # segundo}other{Muli nang ilulunsad ang Ecosia sa loob ng # na segundo}}</translation>
+<translation id="1809194740315140401">Kailangan ng Ecosia ng pahintulot sa access sa storage para makapag-download ng mga file</translation>
 <translation id="6245734527075554892">Sinusuri ang mga URL sa pamamagitan ng listahan ng mga hindi ligtas na site na naka-store sa Chromium</translation>
-<translation id="6248213926982192922">Gawing default na browser ang Chromium</translation>
+<translation id="4662363689050405237">Gawing default na browser ang Ecosia</translation>
 <translation id="6266342355635466082">Hindi matingnan ng Chromium kung may mga update. Subukang tingnan ang iyong koneksyon sa internet.</translation>
 <translation id="6268381023930128611">Mag-sign out sa Chromium?</translation>
-<translation id="6270547683008298381">Gumagamit ang mga tab na ito ng mga karagdagang resource. Para pahusayin ang iyong performance, hayaan ang Chromium na gawing hindi aktibo ang mga ito.</translation>
-<translation id="6281746429495226318">I-customize ang iyong profile sa Chromium</translation>
+<translation id="4618410489751241263">Gumagamit ang mga tab na ito ng mga karagdagang resource. Para pahusayin ang iyong performance, hayaan ang Ecosia na gawing hindi aktibo ang mga ito.</translation>
+<translation id="6416551953415159186">I-customize ang iyong profile sa Ecosia</translation>
 <translation id="6290827346642914212">Pangalanan ang iyong profile sa Chromium</translation>
-<translation id="6294831894865512704">Gusto ng isang extension na mag-sign in ka sa Chromium</translation>
-<translation id="6295779123002464101">Maaaring mapanganib ang <ph name="FILE_NAME" />, kaya na-block ito ng Chromium.</translation>
-<translation id="6309712487085796862">Ginagamit ng Chromium ang iyong camera.</translation>
+<translation id="4882579364090762302">Gusto ng isang extension na mag-sign in ka sa Ecosia</translation>
+<translation id="3625533701824359646">Maaaring mapanganib ang <ph name="FILE_NAME"/>, kaya na-block ito ng Ecosia.</translation>
+<translation id="4943938785458240142">Ginagamit ng Ecosia ang iyong camera.</translation>
 <translation id="6327105987658262776">Walang available na update.</translation>
-<translation id="6333502561965082103">May kasalukuyang isinasagawang isa pang pagpapatakbo sa Chromium. Pakisubukang muli sa ibang pagkakataon.</translation>
-<translation id="6334986366598267305">Ngayon, mas madali nang gamitin ang Chromium sa iyong Google Account at sa mga nakabahaging computer.</translation>
-<translation id="633626832589656416">Magagawa ng Chromium na gawing hindi aktibo ang mga tab na ito para pagandahin ang iyong experience sa pag-browse at panatilihing mabilis ang mga bagay.</translation>
-<translation id="6347933965114150440">Shortcut ng Chromium</translation>
-<translation id="6366160072964553914">Na-block ng Chromium ang pag-download na ito dahil hindi karaniwang dina-download ang file at posibleng mapanganib ito</translation>
-<translation id="6373523479360886564">Sigurado ka bang nais mong i-uninstall ang Chromium?</translation>
+<translation id="6450895420388847775">May kasalukuyang isinasagawang isa pang pagpapatakbo sa Ecosia. Pakisubukang muli sa ibang pagkakataon.</translation>
+<translation id="464306605599005355">Ngayon, mas madali nang gamitin ang Ecosia sa iyong Ecosia Account at sa mga nakabahaging computer.</translation>
+<translation id="6735145163744656874">Magagawa ng Ecosia na gawing hindi aktibo ang mga tab na ito para pagandahin ang iyong experience sa pag-browse at panatilihing mabilis ang mga bagay.</translation>
+<translation id="1284343625991453987">Shortcut ng Ecosia</translation>
+<translation id="7051119589302096163">Na-block ng Ecosia ang pag-download na ito dahil hindi karaniwang dina-download ang file at posibleng mapanganib ito</translation>
+<translation id="7908111389403807005">Sigurado ka bang nais mong i-uninstall ang Ecosia?</translation>
 <translation id="6375219077595103062">Magdagdag ng shortcut papuntang Password Manager</translation>
-<translation id="6384011394608460044"><ph name="BEGIN_BOLD" />Paano namin ginagamit ang data na ito:<ph name="END_BOLD" /> Puwedeng tantyahin ng Chromium ang iyong mga interes. Sa ibang pagkakataon, puwedeng hilingin ng site na binibisita mo sa Chromium na makita ang iyong mga interes para ma-personalize ang mga ad na nakikita mo.</translation>
-<translation id="6400112897226594999">Logo ng Chromium sa loob ng screen ng computer.</translation>
-<translation id="6403826409255603130">Ang Chromium ay isang web browser na nagpapatakbo ng mga webpage at application sa bilis ng kidlat. Ito ay mabilis, maaasahan, at madaling gamitin. Mas maingat na mag-browse sa web gamit ang proteksyon ng Chromium laban sa malware at phishing.</translation>
-<translation id="6442900851116057561">I-restart ang ChromiumOS</translation>
+<translation id="5610400309434105339"><ph name="BEGIN_BOLD"/>Paano namin ginagamit ang data na ito:<ph name="END_BOLD"/> Puwedeng tantyahin ng Ecosia ang iyong mga interes. Sa ibang pagkakataon, puwedeng hilingin ng site na binibisita mo sa Ecosia na makita ang iyong mga interes para ma-personalize ang mga ad na nakikita mo.</translation>
+<translation id="7578952608547569314">Logo ng Ecosia sa loob ng screen ng computer.</translation>
+<translation id="3939060118711873999">Ang Ecosia ay isang web browser na nagpapatakbo ng mga webpage at application sa bilis ng kidlat. Ito ay mabilis, maaasahan, at madaling gamitin. Mas maingat na mag-browse sa web gamit ang proteksyon ng Ecosia laban sa malware at phishing.</translation>
+<translation id="5404489723475681578">I-restart ang EcosiaOS</translation>
 <translation id="6443470774889161065">Nagpi-preload ang Chromium ng mas marami pang page na malamang na bibisitahin mo, para mas mabilis na mag-load ang mga ito kapag binisita mo.</translation>
-<translation id="645458117210240797">Naka-off • Hindi ma-verify ng Chromium kung saan galing ang extension na ito</translation>
-<translation id="6455857529632101747">Welcome sa mga profile sa Chromium</translation>
-<translation id="6466344609055215035">Alisin ang Account sa Chromium</translation>
-<translation id="6475912303565314141">Kinokontrol din nito kung anong pahina ang ipinapakita kapag sinimulan mo ang Chromium.</translation>
+<translation id="7877883466657693294">Naka-off • Hindi ma-verify ng Ecosia kung saan galing ang extension na ito</translation>
+<translation id="4410570812343670816">Welcome sa mga profile sa Ecosia</translation>
+<translation id="4371259280767924562">Alisin ang Account sa Ecosia</translation>
+<translation id="524314285625975879">Kinokontrol din nito kung anong pahina ang ipinapakita kapag sinimulan mo ang Ecosia.</translation>
 <translation id="648319183876919572">Mas maraming magagawa ang Pinahusay na Ligtas na Pag-browse para protektahan ka laban sa mga mapanganib na website at download</translation>
-<translation id="6510925080656968729">I-uninstall ang Chromium</translation>
-<translation id="651535675648445253">Magbubukas ang mga shortcut sa Chromium</translation>
-<translation id="6524389414524528185">Habang naka-sign in ka, magagamit mo ang iyong mga password at higit pa mula sa Google Account mo sa Chromium. Puwede mo itong baguhin sa anumang oras sa mga setting.</translation>
-<translation id="6539122709674868420">Isinasara ng iyong organisasyon ang Chromium kapag hindi ito ginagamit sa loob ng <ph name="TIMEOUT_DURATION" />. Na-delete ang data mula sa pag-browse. Posibleng kasama rito ang history, autofill, at mga download.</translation>
-<translation id="6542839706527980775">Ang bawat profile ay may sariling impormasyon sa Chromium tulad ng mga bookmark, history, mga password, at iba pa</translation>
-<translation id="6563921047760808519">Matuto pa tungkol sa kung <ph name="BEGIN_LINK" />paano pinapanatiling pribado ng Chromium ang iyong data<ph name="END_LINK" /></translation>
-<translation id="656935081669708576">Puwede kang lumipat para makita ang mga password mula sa ibang profile sa Chromium</translation>
+<translation id="6496553866814956056">I-uninstall ang Ecosia</translation>
+<translation id="788366290112401490">Magbubukas ang mga shortcut sa Ecosia</translation>
+<translation id="1773882594264682232">Habang naka-sign in ka, magagamit mo ang iyong mga password at higit pa mula sa Ecosia Account mo sa Ecosia. Puwede mo itong baguhin sa anumang oras sa mga setting.</translation>
+<translation id="2280934980919215876">Isinasara ng iyong organisasyon ang Ecosia kapag hindi ito ginagamit sa loob ng <ph name="TIMEOUT_DURATION"/>. Na-delete ang data mula sa pag-browse. Posibleng kasama rito ang history, autofill, at mga download.</translation>
+<translation id="8608092457636055141">Ang bawat profile ay may sariling impormasyon sa Ecosia tulad ng mga bookmark, history, mga password, at iba pa</translation>
+<translation id="6563921047760808519">Matuto pa tungkol sa kung <ph name="BEGIN_LINK"/>paano pinapanatiling pribado ng Chromium ang iyong data<ph name="END_LINK"/></translation>
+<translation id="3592624492063123732">Puwede kang lumipat para makita ang mga password mula sa ibang profile sa Ecosia</translation>
 <translation id="6570579332384693436">Para maayos ang mga error sa pagbabaybay, ipinapadala ng Chromium sa Google ang text na na-type mo sa mga text field</translation>
-<translation id="6598877126913850652">Pumunta sa mga setting ng notification ng Chromium</translation>
-<translation id="6613594504749178791">Magkakabisa ang iyong mga pagbabago sa susunod na ilunsad mong muli ang Chromium.</translation>
-<translation id="665732753414869868">Kailangan ng Chromium ng pahintulot sa camera para makagawa ng 3D na mapa ng iyong kapaligiran</translation>
+<translation id="6533266716128249922">Pumunta sa mga setting ng notification ng Ecosia</translation>
+<translation id="1722634673917783018">Magkakabisa ang iyong mga pagbabago sa susunod na ilunsad mong muli ang Ecosia.</translation>
+<translation id="2537426042760364251">Kailangan ng Ecosia ng pahintulot sa camera para makagawa ng 3D na mapa ng iyong kapaligiran</translation>
 <translation id="6663852025006259149">Posibleng gumana ang mga site tulad ng inaasahan mo pero hindi ka matatandaan ng mga ito pagkatapos mong isara ang lahat ng window ng Chromium</translation>
 <translation id="6669284030132180248">Kung sine-save mo rin ang iyong mga bookmark sa Google Account mo, puwede mong subaybayan sa Chromium ang mga presyo ng produkto at puwede kang maabisuhan kapag bumaba ang presyo</translation>
 <translation id="6676384891291319759">I-access ang Internet</translation>
-<translation id="668175097507315160">Hindi ma-sync ng ChromiumOS ang iyong data dahil sa isang error sa pag-sign in.</translation>
+<translation id="8067423333018528301">Hindi ma-sync ng EcosiaOS ang iyong data dahil sa isang error sa pag-sign in.</translation>
 <translation id="6692797197837897398">Binibigyan ka ng Chromium ng higit pang kontrol sa mga nakikita mong ad at nililimitahan nito kung ano ang matututunan ng mga site tungkol sa iyo kapag nagpakita ang mga ito ng mga naka-personalize na ad sa iyo</translation>
-<translation id="6709350901466051922">Kailangan ng Chromium ng pahintulot sa mikropono para sa site na ito</translation>
-<translation id="6712881677154121168">Error sa pag-download: <ph name="DOWNLOAD_ERROR" />.</translation>
-<translation id="6717134281241384636">Hindi maaaring gamitin ang iyong profile dahil mula ito sa isang mas bagong bersyon ng Chromium.
+<translation id="2173571365716863400">Kailangan ng Ecosia ng pahintulot sa mikropono para sa site na ito</translation>
+<translation id="6712881677154121168">Error sa pag-download: <ph name="DOWNLOAD_ERROR"/>.</translation>
+<translation id="6648664289472946060">Hindi maaaring gamitin ang iyong profile dahil mula ito sa isang mas bagong bersyon ng Ecosia.
 
-Maaaring hindi available ang ilang tampok. Mangyaring tumukoy ng ibang direktoryo ng profile o gumamit ng mas bagong bersyon ng Chromium.</translation>
+Maaaring hindi available ang ilang tampok. Mangyaring tumukoy ng ibang direktoryo ng profile o gumamit ng mas bagong bersyon ng Ecosia.</translation>
 <translation id="6729124504294600478">Para makuha ang pag-personalize at iba pang feature, isama ang Chromium sa Aktibidad sa Web at App at mga naka-link na serbisyo ng Google</translation>
-<translation id="6734291798041940871">Naka-install na ang Chromium para sa lahat ng user sa iyong computer.</translation>
-<translation id="673636774878526923">Para ma-access ang iyong mga bagay sa Chromium sa lahat ng device mo, mag-sign in, at pagkatapos ay i-on ang pag-sync.</translation>
-<translation id="674245979920622322">Hindi mo ito binisita kamakailan. Inalis ng Chromium ang <ph name="PERMISSION_1" />, <ph name="PERMISSION_2" />, at <ph name="COUNT" /> pa</translation>
-<translation id="67706546131546258">Inirerekomenda ng Chromium na i-scan ang file na ito dahil posibleng mapanganib ito.</translation>
-<translation id="6779406956731413166">Pinapagana ng karagdagang <ph name="BEGIN_LINK_CROS_OSS" />open source na software<ph name="END_LINK_CROS_OSS" /> ang ChromiumOS.</translation>
-<translation id="6847869444787758381">Ipinapaalam sa iyo ng Chromium kung nakompromiso ang mga password mo</translation>
-<translation id="684888714667046800">Hindi makakonekta sa Internet. Kung gumagamit ka ng firewall, tiyaking nasa allowlist ang <ph name="PRODUCT_EXE_NAME" />.</translation>
-<translation id="6857782730669500492">Chromium - <ph name="PAGE_TITLE" /></translation>
-<translation id="6873893289264747459">Napag-alaman ng Chromium na naglalaman ng malware ang "<ph name="EXTENSION_NAME" />"</translation>
+<translation id="4870057811531036437">Naka-install na ang Ecosia para sa lahat ng user sa iyong computer.</translation>
+<translation id="4512092435423703529">Para ma-access ang iyong mga bagay sa Ecosia sa lahat ng device mo, mag-sign in, at pagkatapos ay i-on ang pag-sync.</translation>
+<translation id="674245979920622322">Hindi mo ito binisita kamakailan. Inalis ng Chromium ang <ph name="PERMISSION_1"/>, <ph name="PERMISSION_2"/>, at <ph name="COUNT"/> pa</translation>
+<translation id="7972668220031382654">Inirerekomenda ng Ecosia na i-scan ang file na ito dahil posibleng mapanganib ito.</translation>
+<translation id="2441303983090031276">Pinapagana ng karagdagang <ph name="BEGIN_LINK_CROS_OSS"/>open source na software<ph name="END_LINK_CROS_OSS"/> ang EcosiaOS.</translation>
+<translation id="1263466865695943046">Ipinapaalam sa iyo ng Ecosia kung nakompromiso ang mga password mo</translation>
+<translation id="684888714667046800">Hindi makakonekta sa Internet. Kung gumagamit ka ng firewall, tiyaking nasa allowlist ang <ph name="PRODUCT_EXE_NAME"/>.</translation>
+<translation id="4600924482853773728">Ecosia - <ph name="PAGE_TITLE"/></translation>
+<translation id="1490060441084292633">Napag-alaman ng Ecosia na naglalaman ng malware ang "<ph name="EXTENSION_NAME"/>"</translation>
 <translation id="6929417474050522668">Kapag naka-on ang mga trial, nagbibigay-daan ang pagsukat ng ad sa mga site na binibisita mo na humiling ng impormasyon mula sa Chromium na tumutulong sa site na sukatin ang performance ng mga ad ng mga ito. Pinaghihigpitan ng pagsukat ng ad ang cross-site na pagsubaybay sa pamamagitan ng paglilipat ng kaunting impormasyon hangga't posible sa pagitan ng mga site.</translation>
 <translation id="6940431691900807093">Sa ibang pagkakataon, puwedeng hilingin ng site na binibisita mo sa Chromium na makita ang iyong mga interes para ma-personalize ang mga ad na nakikita mo. Puwedeng magbahagi ng hanggang 3 interes ang Chromium.</translation>
-<translation id="6964305034639999644">Buksan ang link sa inco&amp;gnito window ng Chromium</translation>
-<translation id="6978145336957848883">Madaling hulaan ang mahihinang password. Hayaan ang Chromium na <ph name="BEGIN_LINK" />gumawa ng malalakas na password at tandaan ang mga ito para sa iyo<ph name="END_LINK" />.</translation>
+<translation id="8283315171506895091">Buksan ang link sa inco&amp;gnito window ng Ecosia</translation>
+<translation id="6978145336957848883">Madaling hulaan ang mahihinang password. Hayaan ang Chromium na <ph name="BEGIN_LINK"/>gumawa ng malalakas na password at tandaan ang mga ito para sa iyo<ph name="END_LINK"/>.</translation>
 <translation id="6981396265751285733">Kapag naka-on ito, nagbabakante ng memory ang Chromium mula sa mga hindi aktibong tab. Binibigyan nito ang mga aktibong tab at iba pang app ng higit pang resource ng computer at pinapanatili nitong mabilis ang Chromium. Awtomatikong nagiging aktibo ulit ang iyong mga hindi aktibong tab kapag bumalik ka sa mga ito.</translation>
-<translation id="6985329841647292029">Mga tuntunin ng ChromiumOS</translation>
-<translation id="6990124437352146030">Kailangan ng Chromium ng pahintulot na i-access ang iyong mikropono para sa site na ito</translation>
+<translation id="2149148292984034533">Mga tuntunin ng EcosiaOS</translation>
+<translation id="1831192335802727557">Kailangan ng Ecosia ng pahintulot na i-access ang iyong mikropono para sa site na ito</translation>
 <translation id="7011190694940573312">Hindi na-install dahil hindi sinusuportahan ang bersyong ito ng operating system.</translation>
-<translation id="7024536598735240744">Error sa pag-unpack: <ph name="UNPACK_ERROR" />.</translation>
+<translation id="7024536598735240744">Error sa pag-unpack: <ph name="UNPACK_ERROR"/>.</translation>
 <translation id="7025789849649390912">Inihinto ang Pag-install.</translation>
-<translation id="7045244423563602563">Gawing Iyo ang Chromium</translation>
-<translation id="705851970750939768">I-update ang Chromium</translation>
-<translation id="7067091210845072982">Kung hindi sapat ang deskripsyon ng isang larawan, susubukan ng Chromium na ayusin ito para sa iyo. Para gumawa ng mga deskripsyon, ipinapadala ang mga larawan sa Google.</translation>
-<translation id="7141270731789036260">I-customize ang Chrome for Testing</translation>
-<translation id="7163519456498498587">Alisin ang <ph name="EXTENSION_NAME" /> sa Chromium</translation>
-<translation id="7173822816570314652">Nagde-delete ang iyong organisasyon ng data ng Chromium kapag hindi ito ginagamit sa loob ng <ph name="TIMEOUT_DURATION" />. Posibleng kasama rito ang history, autofill, at mga download.</translation>
-<translation id="718435575166326686">Kailangan ng Chromium ng pahintulot sa camera para sa site na ito</translation>
-<translation id="7196312274710523067">Hindi mailunsad ang Chromium. Subukang muli.</translation>
+<translation id="762525592078244189">Gawing Iyo ang Ecosia</translation>
+<translation id="5598074261782651109">I-update ang Ecosia</translation>
+<translation id="2838372953389311551">Kung hindi sapat ang deskripsyon ng isang larawan, susubukan ng Ecosia na ayusin ito para sa iyo. Para gumawa ng mga deskripsyon, ipinapadala ang mga larawan sa Ecosia.</translation>
+<translation id="550507036977517224">I-customize ang Ecosia for Testing</translation>
+<translation id="9091453616111683919">Alisin ang <ph name="EXTENSION_NAME"/> sa Ecosia</translation>
+<translation id="5137471865755621561">Nagde-delete ang iyong organisasyon ng data ng Ecosia kapag hindi ito ginagamit sa loob ng <ph name="TIMEOUT_DURATION"/>. Posibleng kasama rito ang history, autofill, at mga download.</translation>
+<translation id="219546601381787154">Kailangan ng Ecosia ng pahintulot sa camera para sa site na ito</translation>
+<translation id="2542649989941327712">Hindi mailunsad ang Ecosia. Subukang muli.</translation>
 <translation id="7197677400338048821">Hindi masuri ng Chromium ang iyong mga password. Subukan ulit pagkalipas ng 24 na oras.</translation>
-<translation id="7213407614656404070">Gamitin ang Chromium sa tuwing magki-click ka ng mga link sa mga mensahe, dokumento, at iba pang app</translation>
-<translation id="7223968959479464213">Task Manager - Chromium</translation>
-<translation id="7246575524853130370">Iyong mga interes tulad ng tinatantya ng Chromium</translation>
-<translation id="7295544978856094497">{NUM_EXTENSIONS,plural, =1{Inirerekomenda ng Chromium na alisin mo ito}one{Inirerekomenda ng Chromium na alisin mo ang mga ito}other{Inirerekomenda ng Chromium na alisin mo ang mga ito}}</translation>
+<translation id="3784023996375784431">Gamitin ang Ecosia sa tuwing magki-click ka ng mga link sa mga mensahe, dokumento, at iba pang app</translation>
+<translation id="7311066525704006840">Task Manager - Ecosia</translation>
+<translation id="3816260943154642689">Iyong mga interes tulad ng tinatantya ng Ecosia</translation>
+<translation id="1720431815870023289">{NUM_EXTENSIONS,plural, =1{Inirerekomenda ng Ecosia na alisin mo ito}one{Inirerekomenda ng Ecosia na alisin mo ang mga ito}other{Inirerekomenda ng Ecosia na alisin mo ang mga ito}}</translation>
 <translation id="7309928523159922338">Nagbibigay-daan ang pagsukat ng ad sa mga site na binibisita mo na humiling ng impormasyon mula sa Chromium na tumutulong sa site na sukatin ang performance ng mga ad ng mga ito. Pinaghihigpitan ng pagsukat ng ad ang cross-site na pagsubaybay sa pamamagitan ng paglilipat ng kaunting impormasyon hangga't posible sa pagitan ng mga site.</translation>
 <translation id="731795002583552498">Ina-update ang Chromium</translation>
-<translation id="7318036098707714271">Sira o di-wasto ang file ng iyong mga kagustuhan.
+<translation id="6673288084648462613">Sira o di-wasto ang file ng iyong mga kagustuhan.
 
-Hindi mabawi ng Chromium ang iyong mga setting.</translation>
+Hindi mabawi ng Ecosia ang iyong mga setting.</translation>
 <translation id="7339898014177206373">Bagong window</translation>
-<translation id="734373864078049451">Makikita dito ang iyong web, mga bookmark at iba pang mga bagay-bagay sa Chromium.</translation>
-<translation id="7349591376906416160">Na-configure ng iyong system administrator ang Chromium para buksan ang <ph name="ALTERNATIVE_BROWSER_NAME" /> para ma-access ang <ph name="TARGET_URL_HOSTNAME" />.</translation>
-<translation id="7355355292030546812">Na-block ng Chromium ang pag-download na ito dahil puwedeng mapinsala ng file ang iyong mga personal na account at account sa social network, kabilang ang <ph name="USER_EMAIL" /></translation>
-<translation id="7384121030444253939">Hindi na sinusuportahan ang extension na ito. Inirerekomenda ng Chromium na alisin mo na lang ito.</translation>
-<translation id="7398989605938454041">Gamit ang mga profile sa Chromium, magagawa mong paghiwalayin ang lahat ng iyong bagay-bagay sa Chromium. Pinapadali nitong mapaghiwalay ang trabaho at kasiyahan.</translation>
-<translation id="7449453770951226939"><ph name="PAGE_TITLE" /> - Chromium Dev</translation>
-<translation id="7451052299415159299">Kailangan ng Chromium ng pahintulot na i-access ang iyong camera para sa site na ito</translation>
-<translation id="7458892263350425044">Para magamit ang iyong mikropono, bigyan ng access ang Chromium sa <ph name="BEGIN_LINK" />mga setting ng system<ph name="END_LINK" /></translation>
-<translation id="7461356015007898716">Para makatanggap ng mga update sa Chromium sa hinaharap, mangangailangan ka ng Windows 10 o mas bago. Ang computer na ito ay gumagamit ng Windows 7.</translation>
+<translation id="4960252760049500399">Makikita dito ang iyong web, mga bookmark at iba pang mga bagay-bagay sa Ecosia.</translation>
+<translation id="7158975242722498086">Na-configure ng iyong system administrator ang Ecosia para buksan ang <ph name="ALTERNATIVE_BROWSER_NAME"/> para ma-access ang <ph name="TARGET_URL_HOSTNAME"/>.</translation>
+<translation id="6632508343667825745">Na-block ng Ecosia ang pag-download na ito dahil puwedeng mapinsala ng file ang iyong mga personal na account at account sa social network, kabilang ang <ph name="USER_EMAIL"/></translation>
+<translation id="6180968682827452331">Hindi na sinusuportahan ang extension na ito. Inirerekomenda ng Ecosia na alisin mo na lang ito.</translation>
+<translation id="5622136942112821750">Gamit ang mga profile sa Ecosia, magagawa mong paghiwalayin ang lahat ng iyong bagay-bagay sa Ecosia. Pinapadali nitong mapaghiwalay ang trabaho at kasiyahan.</translation>
+<translation id="3879865245128287988"><ph name="PAGE_TITLE"/> - Ecosia Dev</translation>
+<translation id="5055330219314726197">Kailangan ng Ecosia ng pahintulot na i-access ang iyong camera para sa site na ito</translation>
+<translation id="7458892263350425044">Para magamit ang iyong mikropono, bigyan ng access ang Chromium sa <ph name="BEGIN_LINK"/>mga setting ng system<ph name="END_LINK"/></translation>
+<translation id="1975037445584526511">Para makatanggap ng mga update sa Ecosia sa hinaharap, mangangailangan ka ng Windows 10 o mas bago. Ang computer na ito ay gumagamit ng Windows 7.</translation>
 <translation id="7467949745582939695">Muling ilunsad ang Chromium?</translation>
-<translation id="7483335560992089831">Hindi ma-install ang parehong Bersyon ng Chromium na kasalukuyang tumatakbo. Pakisara ang Chromium at subukan ulit.</translation>
+<translation id="80155189677487610">Hindi ma-install ang parehong Bersyon ng Ecosia na kasalukuyang tumatakbo. Pakisara ang Ecosia at subukan ulit.</translation>
 <translation id="751935028865900641">Malamang na gagana ang mga site na gaya ng inaasahan. Masa-sign out ka sa karamihan ng mga site kapag isinara mo ang lahat ng window ng Chromium, maliban sa iyong Google Account kung naka-sign in ka sa Chromium.</translation>
-<translation id="753534427205733210">{0,plural, =1{Muling ilulunsad ang Chromium sa loob ng 1 minuto}one{Muling ilulunsad ang Chromium sa loob ng # minuto}other{Muling ilulunsad ang Chromium sa loob ng # na minuto}}</translation>
-<translation id="7553334751796114046">Para i-share ang iyong window, payagan ang pag-record ng screen para sa Chromium sa Mga Preference sa System</translation>
+<translation id="7558678848273505235">{0,plural, =1{Muling ilulunsad ang Ecosia sa loob ng 1 minuto}one{Muling ilulunsad ang Ecosia sa loob ng # minuto}other{Muling ilulunsad ang Ecosia sa loob ng # na minuto}}</translation>
+<translation id="8228132389897276908">Para i-share ang iyong window, payagan ang pag-record ng screen para sa Ecosia sa Mga Preference sa System</translation>
 <translation id="7582945390259497898">Puwedeng tantyahin ng Chromium ang iyong mga interes. Sa ibang pagkakataon, puwedeng hilingin ng site na binibisita mo sa Chromium na makita ang iyong mga interes para ma-personalize ang mga ad na nakikita mo.</translation>
-<translation id="7583399374488819119">Installer ng <ph name="COMPANY_NAME" /></translation>
-<translation id="7585391435984513350">Hindi mo ito binisita kamakailan. Inalis ng Chromium ang <ph name="PERMISSION" /></translation>
-<translation id="761356813943268536">Ginagamit ng Chromium ang iyong camera at mikropono.</translation>
-<translation id="7617377681829253106">Mas mahusay na ang Chromium</translation>
+<translation id="7583399374488819119">Installer ng <ph name="COMPANY_NAME"/></translation>
+<translation id="7585391435984513350">Hindi mo ito binisita kamakailan. Inalis ng Chromium ang <ph name="PERMISSION"/></translation>
+<translation id="4061472199368124600">Ginagamit ng Ecosia ang iyong camera at mikropono.</translation>
+<translation id="170259281605734125">Mas mahusay na ang Ecosia</translation>
 <translation id="7649070708921625228">Tulong</translation>
-<translation id="7682213815243802460">Puwede kang matuto pa tungkol sa mga feature na ito sa mga setting ng Chromium.</translation>
-<translation id="7686590090926151193">Hindi Chromium ang iyong default na browser</translation>
-<translation id="7689606757190482937">I-sync at i-personalize ang Chromium sa lahat ng iyong device</translation>
+<translation id="675365189802108507">Puwede kang matuto pa tungkol sa mga feature na ito sa mga setting ng Ecosia.</translation>
+<translation id="1508200558303644420">Hindi Ecosia ang iyong default na browser</translation>
+<translation id="7174674455569790401">I-sync at i-personalize ang Ecosia sa lahat ng iyong device</translation>
 <translation id="7699779824407626136">Update sa Chromium</translation>
-<translation id="7745317241717453663">Ide-delete nito ang iyong data sa pag-browse sa device na ito. Upang makuha ang iyong data sa ibang pagkakataon, mag-sign in sa Chromium bilang <ph name="USER_EMAIL" />.</translation>
+<translation id="7745317241717453663">Ide-delete nito ang iyong data sa pag-browse sa device na ito. Upang makuha ang iyong data sa ibang pagkakataon, mag-sign in sa Chromium bilang <ph name="USER_EMAIL"/>.</translation>
 <translation id="7747138024166251722">Hindi makalikha ng pansamantalang direktoryo ang installer. Paki-suri para sa puwang sa disk na walang laman at pahintulot upang i-install ang software.</translation>
-<translation id="7786760609782648049">Gawing mas mabilis ang Chromium</translation>
-<translation id="7790626492778995050"><ph name="PAGE_TITLE" /> - Chromium Canary</translation>
+<translation id="6161025257729272170">Gawing mas mabilis ang Ecosia</translation>
+<translation id="5669882610631815446"><ph name="PAGE_TITLE"/> - Ecosia Canary</translation>
 <translation id="7803986347287457849">Gawing mas mahirap para sa mga taong may access sa iyong internet traffic na makita kung aling mga site ang binibisita mo. Gumagamit ang Chromium ng secure na koneksyon para hanapin ang IP address ng isang site sa DNS (Domain Name System).</translation>
-<translation id="7828947555739565424">Mayroon nang profile sa Chromium na gumagamit ng account na ito sa device na ito</translation>
-<translation id="7845233973568007926">Salamat sa pag-install. Dapat mong i-restart ang iyong computer bago gamitin ang <ph name="BUNDLE_NAME" />.</translation>
+<translation id="8301840715671593762">Mayroon nang profile sa Ecosia na gumagamit ng account na ito sa device na ito</translation>
+<translation id="7845233973568007926">Salamat sa pag-install. Dapat mong i-restart ang iyong computer bago gamitin ang <ph name="BUNDLE_NAME"/>.</translation>
 <translation id="7859018312476869945">Kapag nag-type ka sa address bar o sa box para sa paghahanap, ipapadala ng Chromium kung ano ang tina-type mo sa iyong default na search engine para makakuha ng mas magagandang suhestyon. Naka-off ito sa Incognito.</translation>
-<translation id="7867198900892795913">Hindi ma-update ang Chromium sa pinakabagong bersyon, kaya may napapalampas kang mga bagong feature at pag-aayos sa seguridad.</translation>
-<translation id="7872446069773932638">Dina-download... <ph name="SECONDS" /> (na) segundo ang natitira</translation>
-<translation id="7877292582355102282"><ph name="BEGIN_BOLD" />Paano mo mapapamahalaan ang iyong data:<ph name="END_BOLD" /> Para protektahan ang iyong privacy, awtomatiko naming dine-delete ang mga interes mo na mas matagal sa 4 na linggo. Habang patuloy kang nagba-browse, posibleng lumabas ulit sa listahan ang isang interes. O puwede kang mag-alis ng mga interes na ayaw mong isaalang-alang ng Chromium.</translation>
-<translation id="7888981273428720788">Itakda ang Chromium bilang iyong default</translation>
+<translation id="3268039966078382323">Hindi ma-update ang Ecosia sa pinakabagong bersyon, kaya may napapalampas kang mga bagong feature at pag-aayos sa seguridad.</translation>
+<translation id="7872446069773932638">Dina-download... <ph name="SECONDS"/> (na) segundo ang natitira</translation>
+<translation id="5875641815673321623"><ph name="BEGIN_BOLD"/>Paano mo mapapamahalaan ang iyong data:<ph name="END_BOLD"/> Para protektahan ang iyong privacy, awtomatiko naming dine-delete ang mga interes mo na mas matagal sa 4 na linggo. Habang patuloy kang nagba-browse, posibleng lumabas ulit sa listahan ang isang interes. O puwede kang mag-alis ng mga interes na ayaw mong isaalang-alang ng Ecosia.</translation>
+<translation id="4638085384909702681">Itakda ang Ecosia bilang iyong default</translation>
 <translation id="7934340546140346950">Awtomatikong ina-upgrade ng Chromium ang mga hindi secure na koneksyon sa HTTPS kapag posible</translation>
-<translation id="7937630085815544518">Naka-sign in ka sa Chromium bilang <ph name="USER_EMAIL_ADDRESS" />. Pakigamit ang parehong account upang mag-sign in muli.</translation>
+<translation id="2412381038247037703">Naka-sign in ka sa Ecosia bilang <ph name="USER_EMAIL_ADDRESS"/>. Pakigamit ang parehong account upang mag-sign in muli.</translation>
 <translation id="7975919845073681630">Pangalawang pag-install ito ng Chromium at hindi ito maaaring gawing iyong default na browser.</translation>
-<translation id="7997934263947464652">Puwedeng mapinsala ng mga extension, app, at tema mula sa mga hindi kilalang source ang iyong device. Inirerekomenda ng Chromium na i-install lang ang mga ito mula sa <ph name="IDS_EXTENSION_WEB_STORE_TITLE" /></translation>
-<translation id="8013436988911883588">Kapag mayroon nang access ang Chromium, makakahingi na ang mga website ng access sa iyo.</translation>
-<translation id="80471789339884597">Salamat sa pag-install. Dapat mong i-restart ang lahat ng iyong browser bago gamitin ang <ph name="BUNDLE_NAME" />.</translation>
+<translation id="851583113375911087">Puwedeng mapinsala ng mga extension, app, at tema mula sa mga hindi kilalang source ang iyong device. Inirerekomenda ng Ecosia na i-install lang ang mga ito mula sa <ph name="IDS_EXTENSION_WEB_STORE_TITLE"/></translation>
+<translation id="488806616089631539">Kapag mayroon nang access ang Ecosia, makakahingi na ang mga website ng access sa iyo.</translation>
+<translation id="80471789339884597">Salamat sa pag-install. Dapat mong i-restart ang lahat ng iyong browser bago gamitin ang <ph name="BUNDLE_NAME"/>.</translation>
 <translation id="8086881907087796310">Hindi na-install dahil hindi natutugunan ng iyong computer ang mga minimum na requirement sa hardware.</translation>
-<translation id="8096472344908884505"><ph name="PAGE_TITLE" /> - Google Chrome for Testing</translation>
-<translation id="8105840573057009683">Kailangan ng Chromium ng pahintulot sa lokasyon para sa site na ito</translation>
-<translation id="8133124826068723441">Hindi ma-sync ng ChromiumOS ang iyong data dahil hindi available ang Pag-sync para sa domain mo.</translation>
+<translation id="1528748166720431933"><ph name="PAGE_TITLE"/> - Ecosia for Testing</translation>
+<translation id="5661123757512626239">Kailangan ng Ecosia ng pahintulot sa lokasyon para sa site na ito</translation>
+<translation id="143614250230771428">Hindi ma-sync ng EcosiaOS ang iyong data dahil hindi available ang Pag-sync para sa domain mo.</translation>
 <translation id="813913629614996137">Sinisimulan...</translation>
-<translation id="8166782796394721554">I-on ang karagdagang proteksyon sa JavaScript at WebAssembly engine ng Chromium</translation>
-<translation id="81770708095080097">Mapanganib ang file na ito, kaya na-block ito ng Chromium.</translation>
-<translation id="8223363452568144035">Para magamit ang iyong camera, bigyan ng access ang Chromium sa <ph name="BEGIN_LINK" />mga setting ng system<ph name="END_LINK" /></translation>
-<translation id="8232193495299001329">Hindi ma-verify ng Chromium kung saan galing ang extension na ito, at posibleng hindi ito ligtas. Alisin ito sa Chromium para hindi na nito makita at mabago ang iyong data sa mga site na binibisita mo, kabilang ang personal na impormasyon.</translation>
-<translation id="8248265253516264921">Kung hindi sapat ang deskripsyon ng isang larawan, susubukan ng Chromium na ayusin ito para sa iyo. Para gumawa ng mga deskripsyon, ipinapadala ang mga larawan sa Google. Puwede mo itong i-off sa mga setting anumang oras.</translation>
-<translation id="8254601181414348851">Mag-sign in sa Chromium sa bagong profile?</translation>
+<translation id="588828970866589779">I-on ang karagdagang proteksyon sa JavaScript at WebAssembly engine ng Ecosia</translation>
+<translation id="6491651957026506753">Mapanganib ang file na ito, kaya na-block ito ng Ecosia.</translation>
+<translation id="8223363452568144035">Para magamit ang iyong camera, bigyan ng access ang Chromium sa <ph name="BEGIN_LINK"/>mga setting ng system<ph name="END_LINK"/></translation>
+<translation id="7433581196371819898">Hindi ma-verify ng Ecosia kung saan galing ang extension na ito, at posibleng hindi ito ligtas. Alisin ito sa Ecosia para hindi na nito makita at mabago ang iyong data sa mga site na binibisita mo, kabilang ang personal na impormasyon.</translation>
+<translation id="2046160555506209000">Kung hindi sapat ang deskripsyon ng isang larawan, susubukan ng Ecosia na ayusin ito para sa iyo. Para gumawa ng mga deskripsyon, ipinapadala ang mga larawan sa Ecosia. Puwede mo itong i-off sa mga setting anumang oras.</translation>
+<translation id="3260765223735049374">Mag-sign in sa Ecosia sa bagong profile?</translation>
 <translation id="8266560134891435528">Hindi masusuri ng Chromium ang iyong mga password dahil hindi ka naka-sign in</translation>
-<translation id="8286943863733751221"><ph name="BEGIN_LINK" />Babalaan ka ng Chromium<ph name="END_LINK" /> tungkol sa mga hindi ligtas na site at download</translation>
-<translation id="8318772038038596122">Isinasara ng iyong organisasyon ang Chromium kapag hindi ito ginagamit sa loob ng <ph name="TIMEOUT_DURATION" />.</translation>
+<translation id="8286943863733751221"><ph name="BEGIN_LINK"/>Babalaan ka ng Chromium<ph name="END_LINK"/> tungkol sa mga hindi ligtas na site at download</translation>
+<translation id="5994043198751001258">Isinasara ng iyong organisasyon ang Ecosia kapag hindi ito ginagamit sa loob ng <ph name="TIMEOUT_DURATION"/>.</translation>
 <translation id="8330519371938183845">Mag-sign in para i-sync at i-personalize ang Chromium sa lahat ng iyong device</translation>
-<translation id="8340674089072921962">Chromium ang dating ginagamit ng <ph name="USER_EMAIL_ADDRESS" /></translation>
-<translation id="8357820681460164151">Para ma-access ang iyong mga bagay sa Chromium browser sa lahat ng device mo, mag-sign in, pagkatapos ay i-on ang pag-sync</translation>
-<translation id="8360718212975266891">Para makatanggap ng mga update sa Chromium sa hinaharap, kakailanganin mo ng Windows 10 o mas bago. Gumagamit ng Windows 8 ang computer na ito.</translation>
-<translation id="8370517070665726704">Copyright <ph name="YEAR" /> Google LLC. Nakalaan ang lahat ng karapatan.</translation>
-<translation id="8372327902843331129">Para makuha ang iyong mga password at higit pa sa lahat ng device mo, mag-sign in sa Chromium. Mase-save ang password na ito sa iyong Google Account pagkatapos mong mag-sign in.</translation>
-<translation id="837460953767177950">Pagkatapos, kakailanganin mong i-restart ang Chromium.</translation>
-<translation id="8397248745433792218">Inirerekomenda ng Chromium na alisin mo ito. <ph name="BEGIN_LINK" />Matuto pa tungkol sa mga sinusuportahang extension<ph name="END_LINK" /></translation>
-<translation id="8401454788024434101">In-unpublish ng developer nito ang extension na ito, at posibleng hindi ito ligtas. Alisin ito sa Chromium para hindi na nito makita at mabago ang iyong data sa mga site na binibisita mo, kabilang ang iyong personal na impormasyon.</translation>
-<translation id="8417404458978023919">{0,plural, =1{Muling ilunsad ang Chromium sa loob ng isang araw}one{Muling ilunsad ang Chromium sa loob ng # araw}other{Muling ilunsad ang Chromium sa loob ng # na araw}}</translation>
-<translation id="8453117565092476964">Sira o di-wasto ang archive ng installer. Mangyaring i-download muli ang Chromium.</translation>
-<translation id="8458614432758743027">Nagre-require ang Chromium ng Windows 10 o mas bago.</translation>
-<translation id="8463672209299734063">Opsyonal: Tumulong na pahusayin ang mga feature at performance ng ChromiumOS sa pamamagitan ng awtomatikong pagpapadala sa Google ng data ng diagnostic at paggamit.</translation>
-<translation id="8493179195440786826">Luma na ang Chromium</translation>
+<translation id="8055222671516987714">Ecosia ang dating ginagamit ng <ph name="USER_EMAIL_ADDRESS"/></translation>
+<translation id="4337034173783952373">Para ma-access ang iyong mga bagay sa Ecosia browser sa lahat ng device mo, mag-sign in, pagkatapos ay i-on ang pag-sync</translation>
+<translation id="8655983536493871574">Para makatanggap ng mga update sa Ecosia sa hinaharap, kakailanganin mo ng Windows 10 o mas bago. Gumagamit ng Windows 8 ang computer na ito.</translation>
+<translation id="8355171755788522183">Copyright <ph name="YEAR"/> Ecosia. Nakalaan ang lahat ng karapatan.</translation>
+<translation id="4395802781633621239">Para makuha ang iyong mga password at higit pa sa lahat ng device mo, mag-sign in sa Ecosia. Mase-save ang password na ito sa iyong Ecosia Account pagkatapos mong mag-sign in.</translation>
+<translation id="8268239447047453615">Pagkatapos, kakailanganin mong i-restart ang Ecosia.</translation>
+<translation id="5167067155585861308">Inirerekomenda ng Ecosia na alisin mo ito. <ph name="BEGIN_LINK"/>Matuto pa tungkol sa mga sinusuportahang extension<ph name="END_LINK"/></translation>
+<translation id="8863497461138396324">In-unpublish ng developer nito ang extension na ito, at posibleng hindi ito ligtas. Alisin ito sa Ecosia para hindi na nito makita at mabago ang iyong data sa mga site na binibisita mo, kabilang ang iyong personal na impormasyon.</translation>
+<translation id="6826163993811146231">{0,plural, =1{Muling ilunsad ang Ecosia sa loob ng isang araw}one{Muling ilunsad ang Ecosia sa loob ng # araw}other{Muling ilunsad ang Ecosia sa loob ng # na araw}}</translation>
+<translation id="4033006861724039519">Sira o di-wasto ang archive ng installer. Mangyaring i-download muli ang Ecosia.</translation>
+<translation id="2829233304432701500">Nagre-require ang Ecosia ng Windows 10 o mas bago.</translation>
+<translation id="8975930032513941502">Opsyonal: Tumulong na pahusayin ang mga feature at performance ng EcosiaOS sa pamamagitan ng awtomatikong pagpapadala sa Ecosia ng data ng diagnostic at paggamit.</translation>
+<translation id="2695952268686253864">Luma na ang Ecosia</translation>
 <translation id="8522801943730206384">Masusuri ng Chromium ang iyong mga password kapag na-save mo ang mga ito</translation>
 <translation id="8550334526674375523">Ang profile sa trabaho na ito ay ganap na hiwalay sa iyong personal na profile.</translation>
-<translation id="8555465886620020932">Error sa serbisyo: <ph name="SERVICE_ERROR" />.</translation>
+<translation id="8555465886620020932">Error sa serbisyo: <ph name="SERVICE_ERROR"/>.</translation>
 <translation id="8568283329061645092">Masusuri ng Chromium ang iyong mga password kapag nag-sign in ka sa Google Account mo</translation>
-<translation id="8576826849825683917">Maraming organisasyon ang namamahala sa Chromium</translation>
-<translation id="8586442755830160949">Copyright <ph name="YEAR" /> Ang Mga May-akda ng Chromium. Nakalaan ang lahat ng karapatan.</translation>
-<translation id="8608079656141766906"><ph name="BEGIN_BOLD" />Paano namin ginagamit ang data na ito:<ph name="END_BOLD" /> Puwedeng mag-store ang mga site sa Chromium tungkol sa iyong mga interes. Halimbawa, kung bibisita ka sa isang site para bumili ng mga sapatos para sa isang marathon, posibleng tukuyin ng site ang iyong interes bilang pagtakbo sa mga marathon. Sa ibang pagkakataon, kung bibisita ka sa ibang site para magparehistro para sa isang karera, puwedeng magpakita sa iyo ang site na iyon ng ad para sa running shoes batay sa mga interes mo.</translation>
-<translation id="8619360774459241877">Inilulunsad ang Chromium...</translation>
-<translation id="8621669128220841554">Nabigo ang pag-install dahil sa hindi natukoy na error. Mangyaring i-download muli ang Chromium.</translation>
+<translation id="4817309082638621362">Maraming organisasyon ang namamahala sa Ecosia</translation>
+<translation id="7129808598331559748">Copyright <ph name="YEAR"/> Ang Mga May-akda ng Ecosia. Nakalaan ang lahat ng karapatan.</translation>
+<translation id="1851101453239911251"><ph name="BEGIN_BOLD"/>Paano namin ginagamit ang data na ito:<ph name="END_BOLD"/> Puwedeng mag-store ang mga site sa Ecosia tungkol sa iyong mga interes. Halimbawa, kung bibisita ka sa isang site para bumili ng mga sapatos para sa isang marathon, posibleng tukuyin ng site ang iyong interes bilang pagtakbo sa mga marathon. Sa ibang pagkakataon, kung bibisita ka sa ibang site para magparehistro para sa isang karera, puwedeng magpakita sa iyo ang site na iyon ng ad para sa running shoes batay sa mga interes mo.</translation>
+<translation id="8109744984354428711">Inilulunsad ang Ecosia...</translation>
+<translation id="2402290209407843024">Nabigo ang pag-install dahil sa hindi natukoy na error. Mangyaring i-download muli ang Ecosia.</translation>
 <translation id="8648201657708811153">Hindi puwedeng gawing default na browser mo ang Google Chrome na Pang-test.</translation>
-<translation id="8697124171261953979">Kinokontrol din nito kung anong pahina ang ipinapakita kapag sinimulan mo ang Chromium o naghanap mula sa Omnibox.</translation>
-<translation id="8704119203788522458">Ito ang iyong Chromium</translation>
-<translation id="8719993436687031146">Mag-sign in sa Chromium?</translation>
-<translation id="878572486461146056">Error sa pag-install: Nag-apply ang administrator ng network mo ng Group Policy na pumipigil sa pag-install: <ph name="INSTALL_ERROR" /></translation>
-<translation id="8796602469536043152">Kailangan ng Chromium ng pahintulot na i-access ang iyong camera at mikropono para sa site na ito</translation>
-<translation id="8818550178040858407">Mag-sign In sa Chromium?</translation>
+<translation id="6665128960039431910">Kinokontrol din nito kung anong pahina ang ipinapakita kapag sinimulan mo ang Ecosia o naghanap mula sa Omnibox.</translation>
+<translation id="2000339487270823788">Ito ang iyong Ecosia</translation>
+<translation id="7045045549868370797">Mag-sign in sa Ecosia?</translation>
+<translation id="878572486461146056">Error sa pag-install: Nag-apply ang administrator ng network mo ng Group Policy na pumipigil sa pag-install: <ph name="INSTALL_ERROR"/></translation>
+<translation id="7273750863406285983">Kailangan ng Ecosia ng pahintulot na i-access ang iyong camera at mikropono para sa site na ito</translation>
+<translation id="1485302026917450654">Mag-sign In sa Ecosia?</translation>
 <translation id="8826492472752484139">I-click ang “Password Manager”</translation>
-<translation id="8833697763442816810">ChromiumOS System</translation>
-<translation id="8846118132221683440"><ph name="BEGIN_BOLD" />Anong data ang ginagamit:<ph name="END_BOLD" /> Iyong history ng pag-browse, record ng mga site na binisita mo gamit ang Chromium sa device na ito.</translation>
+<translation id="5267683457871579197">EcosiaOS System</translation>
+<translation id="4565616259974605182"><ph name="BEGIN_BOLD"/>Anong data ang ginagamit:<ph name="END_BOLD"/> Iyong history ng pag-browse, record ng mga site na binisita mo gamit ang Ecosia sa device na ito.</translation>
 <translation id="8862326446509486874">Wala kang naaangkop na mga karapatan para sa pag-install sa antas ng system. Subukan muling patakbuhin ang installer bilang Administrator.</translation>
 <translation id="8880203542552872219">Kung nagawa mo na ito, paki-edit ang iyong naka-save na password sa Chromium para tumugma ito sa bago mong password.</translation>
-<translation id="8907580949721785412">Sinusubukan ng Chromium na ipakita ang mga password. I-type ang password sa Windows upang payagan ito.</translation>
+<translation id="3966234175958887595">Sinusubukan ng Ecosia na ipakita ang mga password. I-type ang password sa Windows upang payagan ito.</translation>
 <translation id="8931379085695076764">Puwedeng tantyahin ng Chromium ang iyong mga interes batay sa history ng pag-browse mo mula sa mga nakalipas na ilang linggo. Mananatili ang impormasyong ito sa iyong device.</translation>
-<translation id="8941642502866065432">Hindi ma-update ang Chromium</translation>
-<translation id="897581876605952338">Logo ng Chromium Enterprise</translation>
+<translation id="6346154190168496057">Hindi ma-update ang Ecosia</translation>
+<translation id="93440396576488794">Logo ng Ecosia Enterprise</translation>
 <translation id="8986207147630327271">Nagdaragdag ka ng profile sa trabaho sa browser na ito at binibigyan mo ang iyong administrator ng kontrol sa profile sa trabaho lang.</translation>
-<translation id="8988036198400390003">Pamahalaan ang mga profile sa Chromium</translation>
-<translation id="9019929317751753759">Upang mas gawing ligtas ang Chromium, na-disable namin ang sumusunod na extension na hindi nakalista sa <ph name="IDS_EXTENSION_WEB_STORE_TITLE" /> na maaaring naidagdag nang hindi mo nalalalaman.</translation>
-<translation id="9022552996538154597">Mag-sign in sa Chromium</translation>
-<translation id="904366664621834601">Na-block ng Chromium ang pag-download na ito dahil naglalaman ang naka-archive na file ng iba pang file na posibleng nagtatago ng malware</translation>
+<translation id="2985399486579137606">Pamahalaan ang mga profile sa Ecosia</translation>
+<translation id="1597547208646178091">Upang mas gawing ligtas ang Ecosia, na-disable namin ang sumusunod na extension na hindi nakalista sa <ph name="IDS_EXTENSION_WEB_STORE_TITLE"/> na maaaring naidagdag nang hindi mo nalalalaman.</translation>
+<translation id="2388751143175762498">Mag-sign in sa Ecosia</translation>
+<translation id="231621248561775155">Na-block ng Ecosia ang pag-download na ito dahil naglalaman ang naka-archive na file ng iba pang file na posibleng nagtatago ng malware</translation>
 <translation id="9062666675513499497">Mag-sign in sa Chromium kapag nag-sign in ka sa iba pang serbisyo ng Google</translation>
-<translation id="907832235989677238">Mag-sign in sa Chromium. Kung isang beses mo lang gustong i-sign in ang isang account, puwede mong <ph name="GUEST_LINK_BEGIN" />gamitin ang device bilang bisita<ph name="GUEST_LINK_END" />.</translation>
-<translation id="9078733879136747090">Awtomatikong isinara ang Chromium</translation>
-<translation id="9089354809943900324">Luma na ang Chromium</translation>
-<translation id="9093206154853821181">{0,plural, =1{Muling ilulunsad ang Chromium sa loob ng isang oras}one{Muling ilulunsad ang Chromium sa loob ng # oras}other{Muling ilulunsad ang Chromium sa loob ng # na oras}}</translation>
-<translation id="9106612006984859720">Para makatanggap ng mga update sa Chromium sa hinaharap, mangangailangan ka ng Windows 10 o mas bago. Ang computer na ito ay gumagamit ng Windows 8.1.</translation>
-<translation id="91086099826398415">Buksan ang Link sa bagong &amp;tab ng Chromium</translation>
+<translation id="5312730628132049495">Mag-sign in sa Ecosia. Kung isang beses mo lang gustong i-sign in ang isang account, puwede mong <ph name="GUEST_LINK_BEGIN"/>gamitin ang device bilang bisita<ph name="GUEST_LINK_END"/>.</translation>
+<translation id="5061261337583604526">Awtomatikong isinara ang Ecosia</translation>
+<translation id="7268098999602465369">Luma na ang Ecosia</translation>
+<translation id="6022879254514691681">{0,plural, =1{Muling ilulunsad ang Ecosia sa loob ng isang oras}one{Muling ilulunsad ang Ecosia sa loob ng # oras}other{Muling ilulunsad ang Ecosia sa loob ng # na oras}}</translation>
+<translation id="8963533629322868062">Para makatanggap ng mga update sa Ecosia sa hinaharap, mangangailangan ka ng Windows 10 o mas bago. Ang computer na ito ay gumagamit ng Windows 8.1.</translation>
+<translation id="7774247008790177839">Buksan ang Link sa bagong &amp;tab ng Ecosia</translation>
 <translation id="911206726377975832">Tatanggalin din ang iyong data sa pag-browse?</translation>
-<translation id="9144490074902256427">Sa panahon ng mga trial, makikita at maaalis mo ang mga paksa ng interes na ginagamit ng mga site para magpakita sa iyo ng mga ad. Tinataya ng Chromium ang iyong mga interes batay sa iyong kamakailang history ng pag-browse.</translation>
-<translation id="9158494823179993217">Na-configure ng iyong system administrator ang Chromium na magbukas ng alternatibong browser para i-access ang <ph name="TARGET_URL_HOSTNAME" />.</translation>
-<translation id="9185526690718004400">Ilunsad ulit para ma-update ang Chromium</translation>
-<translation id="9190841055450128916">Chromium (mDNS-In)</translation>
-<translation id="924957577793602335">Gawing iyo ang Chromium</translation>
-<translation id="93478295209880648">Maaaring hindi gumana nang maayos ang Chromium dahil hindi na ito sinusuportahan sa Windows XP o Windows Vista</translation>
+<translation id="7580831958727159171">Sa panahon ng mga trial, makikita at maaalis mo ang mga paksa ng interes na ginagamit ng mga site para magpakita sa iyo ng mga ad. Tinataya ng Ecosia ang iyong mga interes batay sa iyong kamakailang history ng pag-browse.</translation>
+<translation id="8901409988302458368">Na-configure ng iyong system administrator ang Ecosia na magbukas ng alternatibong browser para i-access ang <ph name="TARGET_URL_HOSTNAME"/>.</translation>
+<translation id="1523806373970723624">Ilunsad ulit para ma-update ang Ecosia</translation>
+<translation id="2470806471563820591">Ecosia (mDNS-In)</translation>
+<translation id="4767994371234572952">Gawing iyo ang Ecosia</translation>
+<translation id="6933283849886243832">Maaaring hindi gumana nang maayos ang Ecosia dahil hindi na ito sinusuportahan sa Windows XP o Windows Vista</translation>
 <translation id="942598560705308788">Mga certificate na pinapamahalaan ng Chromium</translation>
-<translation id="965162752251293939">Sino ang gumagamit ng Chromium?</translation>
-<translation id="967427899662692980">Kunin ang pinakamahusay na seguridad ng Chromium</translation>
+<translation id="8078678931242443254">Sino ang gumagamit ng Ecosia?</translation>
+<translation id="12795904718916112">Kunin ang pinakamahusay na seguridad ng Ecosia</translation>
 <translation id="983803489796659991">Hindi na-install dahil walang anumang data ng hash para sa application ang server ng update.</translation>
-<translation id="985498048907240953">Gamitin ang Chromium nang Walang Account</translation>
-<translation id="985602178874221306">Ang Mga May-akda ng Chromium</translation>
-<translation id="992780518932311116">Para magamit ang iyong lokasyon, bigyan ng access ang Chromium sa <ph name="BEGIN_LINK" />mga setting ng system<ph name="END_LINK" /></translation>
+<translation id="5612740201368556834">Gamitin ang Ecosia nang Walang Account</translation>
+<translation id="6235001546696543832">Ang Mga May-akda ng Ecosia</translation>
+<translation id="992780518932311116">Para magamit ang iyong lokasyon, bigyan ng access ang Chromium sa <ph name="BEGIN_LINK"/>mga setting ng system<ph name="END_LINK"/></translation>
 </translationbundle>

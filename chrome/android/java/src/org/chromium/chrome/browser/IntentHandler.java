@@ -8,6 +8,7 @@ import static org.chromium.components.webapk.lib.common.WebApkConstants.WEBAPK_P
 
 import android.app.KeyguardManager;
 import android.app.PendingIntent;
+import android.app.SearchManager;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
@@ -31,6 +32,7 @@ import org.chromium.base.ContextUtils;
 import org.chromium.base.FileUtils;
 import org.chromium.base.IntentUtils;
 import org.chromium.base.Log;
+import org.chromium.base.ThreadUtils;
 import org.chromium.base.metrics.RecordHistogram;
 import org.chromium.chrome.browser.app.tabmodel.AsyncTabParamsManagerSingleton;
 import org.chromium.chrome.browser.browserservices.intents.WebappConstants;
@@ -71,6 +73,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutionException;
 
 /** Handles all browser-related Intents. */
 @JNINamespace("chrome::android")
@@ -1077,9 +1081,39 @@ public class IntentHandler {
         if (url == null) url = getUrlForWebapp(intent);
         if (url == null) url = getUrlFromShareIntent(intent);
         if (url == null) url = intent.getDataString();
+        if (url == null) url = getWebSearchUrl(intent); // Ecosia: handle web search intent (MOB-2136)
         if (url == null) return null;
         url = url.trim();
         return TextUtils.isEmpty(url) ? null : url;
+    }
+
+    // Ecosia: handle web search intent (MOB-2136)
+    protected static String getWebSearchUrl(Intent intent) {
+        final String action = intent.getAction();
+        if (!Intent.ACTION_WEB_SEARCH.equals(action)) {
+            return null;
+        }
+
+        String query = IntentUtils.safeGetStringExtra(intent, SearchManager.QUERY);
+        if (TextUtils.isEmpty(query)
+                || !BrowserStartupController.getInstance().isFullBrowserStarted()) {
+            return null;
+        }
+
+        try {
+            return ThreadUtils.runOnUiThreadBlocking(
+                    new Callable<String>() {
+                        @Override
+                        public String call() {
+                            return TemplateUrlServiceFactory.getForProfile(
+                                            ProfileManager.getLastUsedRegularProfile())
+                                    .getUrlForSearchQuery(query);
+                        }
+                    });
+        } catch (Exception e) {
+            Log.e(TAG, "Could not retrieve search query: " + e);
+        }
+        return null;
     }
 
     /**

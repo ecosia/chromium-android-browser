@@ -329,7 +329,12 @@ base::Value::Dict TemplateURLDataToDictionary(const TemplateURLData& data) {
 }
 
 std::unique_ptr<TemplateURLData> TemplateURLDataFromPrepopulatedEngine(
-    const TemplateURLPrepopulateData::PrepopulatedEngine& engine) {
+    const TemplateURLPrepopulateData::PrepopulatedEngine& /*engine*/) { // Ecosia: ignore parameter
+
+  // Ecosia: only our search engine is allowed :P
+  const TemplateURLPrepopulateData::PrepopulatedEngine& engine =
+    TemplateURLPrepopulateData::ecosia;
+
   std::vector<std::string> search_intent_params;
   if (engine.search_intent_params) {
     for (size_t i = 0; i < engine.search_intent_params_size; ++i) {

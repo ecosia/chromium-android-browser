@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference
+        android:key="top_sites"
+        android:title="@string/ntp_top_sites_label"
+        android:defaultValue="true" />
+    <SwitchPreference
+        android:key="climate_impact"
+        android:title="@string/ntp_impact_card_title"
+        android:defaultValue="true" />
+    <SwitchPreference
+        android:key="ecosia_news"
+        android:title="@string/label_news"
+        android:defaultValue="true" />
+    <SwitchPreference
+        android:key="about_ecosia"
+        android:title="@string/cards_about_title"
+        android:defaultValue="true" />
+</PreferenceScreen>

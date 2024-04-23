@@ -23,6 +23,7 @@ import androidx.annotation.Nullable;
 import androidx.annotation.Px;
 import androidx.annotation.VisibleForTesting;
 import androidx.appcompat.content.res.AppCompatResources;
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import org.chromium.base.Callback;
@@ -857,7 +858,8 @@ public class FeedSurfaceCoordinator
                             mHybridListRenderer.bind(mContentManager, mViewportView, gutterPadding);
             view.setId(R.id.feed_stream_recycler_view);
             view.setClipToPadding(false);
-
+            
+			/* Ecosia: use the same background color for the empty part of the feed view
             if (ChromeFeatureList.isEnabled(ChromeFeatureList.FEED_CONTAINMENT)) {
                 // Used to draw containment background.
                 view.addItemDecoration(
@@ -871,6 +873,9 @@ public class FeedSurfaceCoordinator
             }
             view.setBackground(
                     AppCompatResources.getDrawable(mActivity, R.drawable.home_surface_background));
+            */
+            int color = ContextCompat.getColor(mActivity, R.color.ecosia_main_background);
+            view.setBackgroundColor(color);
 
             // Work around https://crbug.com/943873 where default focus highlight shows up after
             // toggling dark mode.

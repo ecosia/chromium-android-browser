@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fillViewport="true"
+    android:background="@color/ecosia_background_tertiary"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:id="@+id/scroll_view"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_height_no_shadow"
+            android:background="@color/ecosia_background_quarternary"
+            style="@style/ModernToolbar" />
+
+        <android.support.constraint.ConstraintLayout
+            android:background="@color/ecosia_background_quarternary"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Description Text -->
+            <TextView
+                android:id="@+id/description"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ecosia_referrals_activity_subtitle"
+                android:textSize="17sp"
+                android:textColor="@color/modern_white"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                />
+
+            <!-- Trees Banner -->
+            <ImageView
+                android:id="@+id/trees"
+                app:layout_constraintTop_toBottomOf="@id/description"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="32dp"
+                android:src="@drawable/ecosia_referrals_trees"/>
+
+            <!-- Wave overlay floating above trees banner, attached to it's bottom -->
+            <ImageView
+                android:id="@+id/wave"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/trees"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/wave_bottom"/>
+
+            <View
+                android:background="@color/ecosia_background_tertiary"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/wave"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <LinearLayout
+            android:background="@color/ecosia_background_tertiary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/primary_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- "Your invites" container -->
+                <LinearLayout
+                    android:background="@color/ecosia_background_tertiary"
+                    app:layout_constraintTop_toBottomOf="parent"
+                    android:id="@+id/your_invites_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/section_impact"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="16dp"
+                        android:layout_marginVertical="12dp"
+                        style="@style/ReferralsTitle"
+                        android:background="@color/ecosia_background_tertiary"
+                        android:text="@string/ecosia_referrals_activity_your_invites" />
+
+                    <org.ecosia.ntp.cards.ImpactCardContainer
+                        android:id="@+id/global_impact_card_container"
+                        android:background="@drawable/ecosia_referrals_background"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="16dp"
+                        android:paddingHorizontal="16dp"/>
+                </LinearLayout>
+
+                <!-- "Share your link" container -->
+                <LinearLayout
+                    android:id="@+id/share_your_link_container"
+                    app:layout_constraintTop_toBottomOf="@id/your_invites_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/section_share_your_link"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="16dp"
+                        android:layout_marginVertical="12dp"
+                        style="@style/ReferralsTitle"
+                        android:background="@color/ecosia_background_tertiary"
+                        android:text="@string/ecosia_referrals_activity_share_your_link" />
+
+                    <LinearLayout
+                        android:id="@+id/share_your_link_card_container"
+                        android:background="@drawable/ecosia_referrals_background"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="16dp"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="16dp"
+                        android:paddingVertical="16dp">
+
+                        <android.support.constraint.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:orientation="horizontal"
+                            android:background="@drawable/ecosia_referrals_rounded_box"
+                            android:layout_marginBottom="8dp">
+
+                            <TextView
+                                android:id="@+id/referral_code_text_view"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@id/copy_button"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:paddingHorizontal="4dp"
+                                />
+
+                            <TextView
+                                android:id="@+id/copy_button"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                android:paddingHorizontal="4dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/ecosia_button_primary_default"
+                                android:background="@android:color/transparent"
+                                android:text="@string/ecosia_referrals_activity_share_your_link_copy_button"/>
+
+                        </android.support.constraint.ConstraintLayout>
+
+                        <android.support.constraint.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <View
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/card_separator_height"
+                                android:background="@color/ecosia_disabled"
+                                />
+
+                            <TextView
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/ecosia_referrals_activity_share_your_link_separator_text"
+                                android:layout_marginHorizontal="8dp"
+                                android:background="@color/ecosia_background_primary"/>
+
+                        </android.support.constraint.ConstraintLayout>
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/share_button"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ecosia_referrals_activity_share_your_link_invite_button"
+                            style="@style/EcosiaButtonStyle"
+                            android:background="@drawable/ecosia_button_primary"
+                            android:textColor="@color/ecosia_button_content_primary"
+                            android:textAllCaps="false"
+                            android:layout_marginTop="8dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- "How it works" container -->
+                <LinearLayout
+                    app:layout_constraintTop_toBottomOf="@id/share_your_link_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            android:id="@+id/section_how_it_works"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingHorizontal="16dp"
+                            android:layout_marginVertical="12dp"
+                            style="@style/ReferralsTitle"
+                            android:background="@color/ecosia_background_tertiary"
+                            android:text="@string/ecosia_referrals_activity_share_how_it_works_title" />
+
+                        <TextView
+                            android:id="@+id/learn_more_button"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/ecosia_button_primary_default"
+                            android:background="@android:color/transparent"
+                            android:textAllCaps="false"
+                            android:paddingEnd="16dp"
+                            android:text="@string/ecosia_referrals_activity_share_how_it_works_button"/>
+
+                    </android.support.constraint.ConstraintLayout>
+
+                    <LinearLayout
+                        android:id="@+id/how_it_works_card_container"
+                        android:background="@drawable/ecosia_referrals_background"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="16dp"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="16dp"
+                        android:layout_marginBottom="32dp">
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.constraint.ConstraintLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

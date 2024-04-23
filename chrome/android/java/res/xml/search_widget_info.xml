@@ -10,9 +10,10 @@ found in the LICENSE file.
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:minWidth="240dp"
     android:minHeight="48dp"
-    android:initialLayout="@layout/search_widget_template"
-    android:previewLayout="@layout/search_widget_template"
+    android:initialLayout="@layout/ecosia_search_widget_template"
+    android:previewLayout="@layout/ecosia_search_widget_template"
     android:previewImage="@drawable/widget_preview"
     android:resizeMode="horizontal"
     android:updatePeriodMillis="86400000"
-    android:widgetCategory="home_screen|searchbox" />
+    android:widgetCategory="home_screen"
+    android:minResizeWidth="@dimen/widget_min_resize_width" />

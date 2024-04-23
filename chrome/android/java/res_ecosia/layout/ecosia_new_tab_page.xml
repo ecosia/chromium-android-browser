@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<org.ecosia.ntp.EcosiaNewTabPageView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ntp_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/ecosia_ntp_main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/ecosia_ntp_alignment_view"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+
+        <LinearLayout
+            android:id="@+id/ecosia_ntp_header"
+            android:layout_below="@id/ecosia_ntp_alignment_view"
+            android:layout_alignStart="@id/ecosia_ntp_alignment_view"
+            android:layout_alignEnd="@id/ecosia_ntp_alignment_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/impact_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/layout_padding"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/section_container_margin_top">
+
+                <TextView
+                    android:id="@+id/section_impact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/section_title_margin_bottom"
+                    android:paddingHorizontal="16dp"
+                    style="@style/NewTabPageSectionTitle"
+                    android:text="@string/ntp_impact_card_title" />
+
+                <org.ecosia.ntp.cards.ImpactCardContainer
+                    android:id="@+id/personal_impact_card_container"
+                    android:background="@drawable/ecosia_news_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="16dp"
+                    android:layout_marginBottom="12dp"/>
+
+                <org.ecosia.ntp.cards.ImpactCardContainer
+                    android:id="@+id/global_impact_card_container"
+                    android:background="@drawable/ecosia_news_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="16dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/news_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/section_container_margin_top">
+
+                <LinearLayout
+                    android:id="@+id/section_news"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="16dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/section_title_margin_bottom"
+                        style="@style/NewTabPageSectionTitle"
+                        android:text="@string/label_news" />
+
+                    <TextView
+                        android:id="@+id/label_news_load_more"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:text="@string/cards_load_more"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/inter"
+                        android:textColor="@color/ecosia_button_primary_default"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/news_cards"
+                    android:background="@drawable/ecosia_news_background"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="0dp"
+                    android:layout_marginBottom="0dp">
+
+                    <include
+                        android:id="@+id/news_card_1"
+                        layout="@layout/ecosia_card_news"
+                        android:visibility="visible" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="@dimen/divider_news_padding"
+                        android:layout_marginEnd="@dimen/divider_news_padding"
+                        android:background="@color/ecosia_disabled"/>
+
+                    <include
+                        android:id="@+id/news_card_2"
+                        layout="@layout/ecosia_card_news"
+                        android:visibility="visible" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="@dimen/divider_news_padding"
+                        android:layout_marginEnd="@dimen/divider_news_padding"
+                        android:background="@color/ecosia_disabled"/>
+
+                    <include
+                        android:id="@+id/news_card_3"
+                        layout="@layout/ecosia_card_news"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/about_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/section_container_margin_top">
+
+                <TextView
+                    android:id="@+id/section_about"
+                    android:layout_width = "wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/section_title_margin_bottom"
+                    android:paddingHorizontal="16dp"
+                    style="@style/NewTabPageSectionTitle"
+                    android:text="@string/label_about" />
+
+                <LinearLayout
+                    android:id="@+id/about_cards"
+                    android:background="@drawable/ecosia_news_background"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="0dp">
+
+                    <include
+                        android:id="@+id/about_card_1"
+                        layout="@layout/ecosia_about_card"
+                        android:visibility="visible" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="@dimen/divider_news_padding"
+                        android:layout_marginEnd="@dimen/divider_news_padding"
+                        android:background="@color/ecosia_disabled"/>
+
+                    <include
+                        android:id="@+id/about_card_2"
+                        layout="@layout/ecosia_about_card"
+                        android:visibility="visible" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="@dimen/divider_news_padding"
+                        android:layout_marginEnd="@dimen/divider_news_padding"
+                        android:background="@color/ecosia_disabled"/>
+
+                    <include
+                        android:id="@+id/about_card_3"
+                        layout="@layout/ecosia_about_card"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/customize_homepage_button"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/section_container_margin_top"
+                android:layout_marginBottom="28dp"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="14dp"
+                android:letterSpacing="0.01"
+                android:fontFamily="@font/inter"
+                android:text="@string/prefs_custom_ntp"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:background="@drawable/ecosia_button_secondary"
+                android:textColor="@color/ecosia_button_content_secondary"
+                android:drawableStart="@drawable/ecosia_icon_settings_site"
+                android:drawableTint="@color/ecosia_button_content_secondary"
+                android:drawablePadding="5dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</org.ecosia.ntp.EcosiaNewTabPageView>

@@ -5,6 +5,7 @@
 package org.chromium.components.browser_ui.settings;
 
 import android.content.Context;
+import android.content.res.ColorStateList;
 import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.view.View;
@@ -15,8 +16,12 @@ import android.widget.TextView;
 import androidx.annotation.ColorInt;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
+import androidx.appcompat.widget.SwitchCompat;
+import androidx.core.content.ContextCompat;
 import androidx.preference.PreferenceViewHolder;
 import androidx.preference.SwitchPreferenceCompat;
+
+import org.chromium.ui.util.ColorUtils;
 
 /** A Chrome switch preference that supports managed preferences. */
 public class ChromeSwitchPreference extends SwitchPreferenceCompat {
@@ -106,6 +111,29 @@ public class ChromeSwitchPreference extends SwitchPreferenceCompat {
 
         mView = holder.itemView;
         updateBackground();
+
+        // Ecosia: customize switch colors
+        SwitchCompat switchCompat = (SwitchCompat) holder.findViewById(R.id.switchWidget);
+        if (switchCompat != null) {
+            int switchOffColor = ContextCompat.getColor(getContext(), R.color.ecosia_switchoff);
+            int trackOffColor;
+            int switchOnColor;
+            int trackOnColor;
+            if(ColorUtils.inNightMode(getContext())) {
+                switchOnColor = ContextCompat.getColor(getContext(), R.color.ecosia_brand_primary_dark);
+                trackOnColor = ContextCompat.getColor(getContext(), R.color.ecosia_button_secondary_default_dark);
+                trackOffColor = ContextCompat.getColor(getContext(), R.color.ecosia_track_off_dark);
+            } else {
+                switchOnColor = ContextCompat.getColor(getContext(), R.color.ecosia_brand_primary_light);
+                trackOnColor = ContextCompat.getColor(getContext(), R.color.ecosia_button_secondary_default_light);
+                trackOffColor = ContextCompat.getColor(getContext(), R.color.ecosia_track_off_light);
+            }
+
+            int switchColor = isChecked() && isEnabled() ? switchOnColor: switchOffColor;
+            int trackColor = isChecked() && isEnabled() ? trackOnColor : trackOffColor;
+            switchCompat.setTrackTintList(ColorStateList.valueOf(trackColor));
+            switchCompat.setThumbTintList(ColorStateList.valueOf(switchColor));
+        }
 
         ManagedPreferencesUtils.onBindViewToPreference(mManagedPrefDelegate, this, holder.itemView);
     }

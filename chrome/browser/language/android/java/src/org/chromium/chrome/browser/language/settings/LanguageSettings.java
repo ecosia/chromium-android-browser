@@ -94,6 +94,7 @@ public class LanguageSettings extends ChromeBaseSettingsFragment
                 (ContentLanguagesPreference) findPreference(PREFERRED_LANGUAGES_KEY);
         mLanguageListPref.initialize(this, getProfile(), getPrefService());
 
+        /* Ecosia: remove translation section for basic preferences
         ChromeSwitchPreference translateSwitch =
                 (ChromeSwitchPreference) findPreference(TRANSLATE_SWITCH_KEY);
         boolean isTranslateEnabled = getPrefService().getBoolean(Pref.OFFER_TRANSLATE_ENABLED);
@@ -122,6 +123,7 @@ public class LanguageSettings extends ChromeBaseSettingsFragment
                         return getPrefService().isManagedPreference(Pref.OFFER_TRANSLATE_ENABLED);
                     }
                 });
+	    */
     }
 
     /**
@@ -142,7 +144,8 @@ public class LanguageSettings extends ChromeBaseSettingsFragment
                 (ContentLanguagesPreference) findPreference(CONTENT_LANGUAGES_KEY);
         mLanguageListPref.initialize(this, getProfile(), getPrefService());
 
-        setupTranslateSection(mLanguageListPref);
+        // Ecosia: remove translation section for detailed preferences
+        //setupTranslateSection(mLanguageListPref);
     }
 
     /** Setup the App Language section with a title and preference to choose the app language. */

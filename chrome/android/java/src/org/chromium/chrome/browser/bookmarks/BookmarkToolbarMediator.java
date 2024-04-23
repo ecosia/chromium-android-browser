@@ -239,6 +239,14 @@ class BookmarkToolbarMediator
             }
             mSelectionDelegate.clearSelection();
             return true;
+        } else if (id == R.id.bookmarks_actions) { // Ecosia: Bookmark Import / Export
+            return true;
+        } else if (id == R.id.import_menu_id) { // Ecosia: Bookmark Import / Export
+            mBookmarkDelegate.importBookmarks();
+            return true;
+        } else if (id == R.id.export_menu_id) { // Ecosia: Bookmark Import / Export
+            mBookmarkDelegate.exportBookmarks();
+            return true;
         }
 
         assert false : "Unhandled menu click.";
@@ -469,7 +477,11 @@ class BookmarkToolbarMediator
             mEndSearchRunnable.run();
             return;
         }
-
-        mBookmarkDelegate.openFolder(mBookmarkModel.getBookmarkById(mCurrentFolder).getParentId());
+        // Ecosia: Bookmark Import / Export: MOB-2221 Improve back handling behavior
+        if (!mBookmarkDelegate.goBack()) {
+            // If there is no item on the back stack, then use the bookmarks
+            // "virtual" folder stack to traverse up the folder structure
+        	mBookmarkDelegate.openFolder(mBookmarkModel.getBookmarkById(mCurrentFolder).getParentId());
+        }
     }
 }

@@ -49,7 +49,7 @@ dependencies {
     compile 'androidx.lifecycle:lifecycle-service:{{androidx_dependency_version}}'
     compile 'androidx.lifecycle:lifecycle-viewmodel:{{androidx_dependency_version}}'
     compile 'androidx.lifecycle:lifecycle-viewmodel-savedstate:{{androidx_dependency_version}}'
-
+    
     compile 'androidx.activity:activity:{{androidx_dependency_version}}'
     compile 'androidx.annotation:annotation:{{androidx_dependency_version}}'
     compile 'androidx.annotation:annotation-jvm:{{androidx_dependency_version}}'

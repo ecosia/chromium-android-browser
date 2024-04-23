@@ -468,7 +468,8 @@ class BuildConfigGenerator extends DefaultTask {
                 }
             }
 
-            if (!skipLicenses) {
+            boolean isFlatBuffers = dependency.name.equals("flatbuffers-java")  // Ecosia: fix for flatbuffers license issue
+            if (!skipLicenses && !isFlatBuffers) {                              // Ecosia: fix for flatbuffers license issue
                 validateLicenses(dependency)
                 downloadLicenses(dependency, normalisedRepoPath, downloadExecutor, downloadTasks)
                 mergeLicensesDeps.add(dependency)

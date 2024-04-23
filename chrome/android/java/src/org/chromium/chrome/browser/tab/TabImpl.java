@@ -4,6 +4,7 @@
 
 package org.chromium.chrome.browser.tab;
 
+
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
@@ -23,6 +24,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
+import org.ecosia.cookies.ECCCCookie;
+import org.ecosia.utils.SharedPreferencesHelpers;
 import org.jni_zero.CalledByNative;
 import org.jni_zero.JniType;
 import org.jni_zero.NativeMethods;
@@ -85,6 +88,11 @@ import org.chromium.ui.base.PageTransition;
 import org.chromium.ui.base.ViewAndroidDelegate;
 import org.chromium.ui.base.WindowAndroid;
 import org.chromium.url.GURL;
+import org.ecosia.cookies.EcosiaCookieObserver;
+import org.ecosia.locale.LocaleManager;
+import org.ecosia.tab.TabImplEcosiaExtension;
+import org.ecosia.tracking.TrackingManager;
+import org.ecosia.utils.UrlHelpers;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -646,6 +654,17 @@ class TabImpl implements Tab {
     public LoadUrlResult loadUrl(LoadUrlParams params) {
         try {
             TraceEvent.begin("Tab.loadUrl");
+            // Ecosia: add sp param and custom headers
+            String url = params.getUrl();
+            if (UrlHelpers.isEcosiaSerp(url)) {
+                Context context = getContentView().getContext();
+                ECCCCookie ecccCookie = EcosiaCookieObserver.getInstance().getEcccCookie();
+                boolean isAnalyticsEnabled = TrackingManager.getInstance(context).isTrackingEnabled();
+                boolean isZeroUuid = isIncognito() || !ecccCookie.isAnalyticsAllowed() || !isAnalyticsEnabled;
+                params.setUrl(TrackingManager.getInstance(context).ecosify(url, isZeroUuid));
+                params.setExtraHeaders(LocaleManager.getInstance(context).getLanguageRegionHeader());
+            }
+
             // TODO(tedchoc): When showing the android NTP, delay the call to
             // TabImplJni.get().loadUrl until the android view has entirely rendered.
             if (!mIsNativePageCommitPending) {
@@ -1368,6 +1387,10 @@ class TabImpl implements Tab {
 
         for (TabObserver observer : mObservers) observer.onPageLoadFinished(this, url);
         mIsBeingRestored = false;
+
+        //Ecosia :Cookies
+        EcosiaCookieObserver.getInstance().observeWebContents(getWebContents());
+        TabImplEcosiaExtension.invokeTrackingOnEcosiaDomain(getWebContents().getVisibleUrl());
     }
 
     /**

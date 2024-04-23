@@ -44,4 +44,10 @@ public class FakeCookieControlsBridge implements CookieControlsBridge.Natives {
     public boolean isCookieControlsEnabled(BrowserContextHandle browserContextHandle) {
         return false;
     }
+
+    // Ecosia: cookies
+    @Override
+    public void startObservingEcosiaCookies(long nativeCookieControlsBridge) {
+
+    }
 }

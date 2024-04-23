@@ -9,6 +9,7 @@ import static org.chromium.components.content_settings.PrefNames.IN_CONTEXT_COOK
 import android.view.View;
 import android.view.ViewGroup;
 
+import org.chromium.base.Log;
 import org.chromium.base.metrics.RecordHistogram;
 import org.chromium.components.browser_ui.site_settings.SingleWebsiteSettings;
 import org.chromium.components.browser_ui.site_settings.SiteDataCleaner;
@@ -193,6 +194,11 @@ public class PageInfoCookiesController extends PageInfoPreferenceSubpageControll
             mSubPage.setCookieStatus(
                     mCookieControlsVisible, mThirdPartyCookiesBlocked, mEnforcement, expiration);
         }
+    }
+
+	// Ecosia: cookies, empty override
+    @Override
+    public void onEcosiaCookiesChanged(String name, String value) {
     }
 
     @Override

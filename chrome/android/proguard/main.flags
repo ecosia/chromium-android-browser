@@ -42,3 +42,21 @@
     public <init>(android.content.Context, android.util.AttributeSet);
     public <init>();
 }
+# Ecosia requires preference fragments to be public
+-keep public class org.ecosia.preferences.EcosiaAboutPreferences {}
+-keep public class org.ecosia.preferences.EcosiaHomepagePreferences {}
+-keep public class org.ecosia.preferences.EcosiaLegalInformationPreferences {}
+
+# Ecosia: keep the SwitchPreference class (required by EcosiaHomepagePreferences)
+-keep class androidx.preference.SwitchPreference {
+    public <init>(android.content.Context, android.util.AttributeSet);
+}
+
+# Ecosia: don't warn on OKIO
+-dontwarn okio.**
+
+# Ecosia: Reflection for the appSetId
+-keep class com.google.android.gms.appset.AppSet { *; }
+-keep class com.google.android.gms.appset.AppSetIdInfo { *; }
+-keep class com.google.android.gms.internal.appset.zzr { *; }
+-keep class com.google.android.gms.tasks.Tasks { *; }

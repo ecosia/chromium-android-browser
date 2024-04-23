@@ -30,6 +30,7 @@ import androidx.test.filters.SmallTest;
 
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -187,6 +188,7 @@ public class ReturnToChromeUtilUnitTest {
                         intent, null, mInactivityTracker));
     }
 
+    @Ignore("Ecosia : Disable start surface")
     @Test
     @SmallTest
     public void testShowNtpAsHomeSurfaceAtResumeOnTabletWithExistingNtp() {
@@ -261,6 +263,7 @@ public class ReturnToChromeUtilUnitTest {
         histogram.assertExpected();
     }
 
+    @Ignore("Ecosia : Disable start surface")
     @Test
     @SmallTest
     public void testShowNtpAsHomeSurfaceAtResumeOnTabletWithoutAnyExistingNtp() {

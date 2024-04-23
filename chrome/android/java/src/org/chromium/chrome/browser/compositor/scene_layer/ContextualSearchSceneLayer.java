@@ -162,7 +162,7 @@ public class ContextualSearchSceneLayer extends SceneOverlayLayer {
                         searchTermViewId,
                         searchCaptionViewId,
                         R.drawable.modern_toolbar_shadow,
-                        R.drawable.ic_logo_googleg_24dp,
+                        R.drawable.ic_ecosia, // Ecosia: Branding icon
                         quickActionIconResId,
                         dragHandlebarId,
                         openNewTabIconId,

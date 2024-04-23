@@ -18,6 +18,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
@@ -42,6 +43,8 @@ import org.chromium.chrome.browser.multiwindow.MultiWindowUtils;
 import org.chromium.chrome.browser.ntp.NewTabPage.OnSearchBoxScrollListener;
 import org.chromium.chrome.browser.ntp.search.SearchBoxCoordinator;
 import org.chromium.chrome.browser.profiles.Profile;
+import org.chromium.chrome.browser.settings.SettingsLauncherFactory;
+import org.chromium.chrome.browser.settings.SettingsLauncherImpl;
 import org.chromium.chrome.browser.suggestions.tile.MostVisitedTilesCoordinator;
 import org.chromium.chrome.browser.suggestions.tile.TileGroup;
 import org.chromium.chrome.browser.suggestions.tile.TileGroup.Delegate;
@@ -49,6 +52,7 @@ import org.chromium.chrome.browser.tab_ui.InvalidationAwareThumbnailProvider;
 import org.chromium.chrome.browser.ui.native_page.TouchEnabledDelegate;
 import org.chromium.chrome.browser.util.BrowserUiUtils;
 import org.chromium.chrome.browser.util.BrowserUiUtils.ModuleTypeOnStartAndNtp;
+import org.chromium.components.browser_ui.settings.SettingsLauncher;
 import org.chromium.components.browser_ui.widget.displaystyle.DisplayStyleObserver;
 import org.chromium.components.browser_ui.widget.displaystyle.HorizontalDisplayStyle;
 import org.chromium.components.browser_ui.widget.displaystyle.UiConfig;
@@ -57,6 +61,8 @@ import org.chromium.content_public.browser.LoadUrlParams;
 import org.chromium.ui.base.MimeTypeUtils;
 import org.chromium.ui.base.WindowAndroid;
 import org.chromium.ui.text.EmptyTextWatcher;
+import org.ecosia.preferences.EcosiaHomepagePreferences;
+import org.ecosia.tracking.TrackingManager;
 
 /**
  * Layout for the new tab page. This positions the page elements in the correct vertical positions.
@@ -267,6 +273,17 @@ public class NewTabPageLayout extends LinearLayout {
         mInitialized = true;
 
         TraceEvent.end(TAG + ".initialize()");
+
+		// Ecosia: Add customisation button
+        TextView customHomepageSettingsButton = findViewById(R.id.customize_homepage_button);
+        customHomepageSettingsButton.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                TrackingManager.getInstance(mContext).sendCustomizeNewTabPageButtonClickEvent();
+                SettingsLauncher settingsLauncher = SettingsLauncherFactory.createSettingsLauncher();
+                settingsLauncher.launchSettingsActivity(getContext(), EcosiaHomepagePreferences.class);
+            }
+        });
     }
 
     public void reload() {
@@ -505,6 +522,26 @@ public class NewTabPageLayout extends LinearLayout {
         // page before the tiles are available and then jump upwards to make space once the
         // tiles are available.
         if (getVisibility() != View.VISIBLE) setVisibility(View.VISIBLE);
+    }
+
+    // Ecosia: make the tiles container visible for NTP customization
+    public ViewGroup getMvTilesContainerLayout() {
+        return mMvTilesContainerLayout;
+    }
+
+    // Ecosia: get reference to the impact container for NTP customization
+    public ViewGroup getEcosiaImpactContainer() {
+        return findViewById(R.id.impact_container);
+    }
+
+    // Ecosia: get reference to the impact container for NTP customization
+    public ViewGroup getEcosiaNewsContainer() {
+        return findViewById(R.id.news_container);
+    }
+
+    // Ecosia: get reference to the about Ecosia container for NTP customization
+    public ViewGroup getEcosiaAboutContainer() {
+        return findViewById(R.id.about_container);
     }
 
     /**

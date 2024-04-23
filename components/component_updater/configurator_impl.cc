@@ -40,7 +40,7 @@ ConfiguratorImpl::ConfiguratorImpl(
     : background_downloads_enabled_(config_policy.BackgroundDownloadsEnabled()),
       deltas_enabled_(config_policy.DeltaUpdatesEnabled()),
       fast_update_(config_policy.FastUpdate()),
-      pings_enabled_(config_policy.PingsEnabled()),
+       pings_enabled_(config_policy.PingsEnabled()),
       require_encryption_(require_encryption),
       url_source_override_(config_policy.UrlSourceOverride()),
       initial_delay_(config_policy.InitialDelay()) {

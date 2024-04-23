@@ -1,0 +1,13 @@
+import("//build/config/android/rules.gni")
+
+java_prebuilt("constraintlayout_solver_java") {
+    jar_path = "lib/constraint-layout-solver-1.0.2.jar"
+    supports_android = true
+}
+
+android_aar_prebuilt("constraintlayout_java") {
+    aar_path = "lib/constraint-layout-1.0.2.aar"
+    deps = [
+        ":constraintlayout_solver_java",
+    ]
+}

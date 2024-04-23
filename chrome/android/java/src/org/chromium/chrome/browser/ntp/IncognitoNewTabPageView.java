@@ -74,8 +74,12 @@ public class IncognitoNewTabPageView extends FrameLayout {
 
     private void inflateConditionalLayouts() {
         ViewStub viewStub = findViewById(R.id.incognito_description_layout_stub);
+        /* Ecosia: incognito changes
         viewStub.setLayoutResource(R.layout.incognito_description_layout);
+        */
+        viewStub.setLayoutResource(R.layout.ecosia_revamped_incognito_description_layout);
         mDescriptionView = (IncognitoDescriptionView) viewStub.inflate();
+        /* Ecosia: incognito changes
         mDescriptionView.setLearnMoreOnclickListener(
                 new OnClickListener() {
                     @Override
@@ -94,6 +98,7 @@ public class IncognitoNewTabPageView extends FrameLayout {
         }
         cardStub.inflate();
         mDescriptionView.formatTrackingProtectionText(getContext(), this);
+        */
     }
 
     @Override

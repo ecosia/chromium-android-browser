@@ -18,6 +18,7 @@ import org.hamcrest.Matchers;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -195,6 +196,7 @@ public class HomepageSettingsUnitTest {
                 HomepageManager.getInstance().getHomepageLocationType());
     }
 
+    @Ignore("Ecosia : This test evaluates chromium NTP")
     @Test
     @SmallTest
     @Feature({"Homepage"})
@@ -318,6 +320,7 @@ public class HomepageSettingsUnitTest {
                 HomepageManager.getInstance().getHomepageLocationType());
     }
 
+    @Ignore("Ecosia : This test evaluates chromium NTP")
     @Test
     @SmallTest
     @Feature({"Homepage"})
@@ -348,6 +351,7 @@ public class HomepageSettingsUnitTest {
                 HomepageManager.getInstance().getHomepageLocationType());
     }
 
+    @Ignore("Ecosia : This test evaluates chromium NTP")
     @Test
     @SmallTest
     @Feature({"Homepage"})
@@ -533,6 +537,7 @@ public class HomepageSettingsUnitTest {
     }
 
     /** Test if changing uris in EditText will change homepage accordingly. */
+    @Ignore("Ecosia : This test evaluates chromium NTP")
     @Test
     @SmallTest
     @Feature({"Homepage"})

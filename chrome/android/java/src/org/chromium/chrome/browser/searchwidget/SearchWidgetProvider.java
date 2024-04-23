@@ -25,6 +25,9 @@ import org.chromium.base.IntentUtils;
 import org.chromium.base.Log;
 import org.chromium.base.shared_preferences.SharedPreferencesManager;
 import org.chromium.chrome.R;
+import org.chromium.chrome.browser.IntentHandler;
+import org.chromium.chrome.browser.night_mode.SystemNightModeMonitor;
+import org.ecosia.searchwidget.EcosiaWidgetProvider;
 import org.chromium.chrome.browser.firstrun.FirstRunFlowSequencer;
 import org.chromium.chrome.browser.locale.LocaleManager;
 import org.chromium.chrome.browser.preferences.ChromePreferenceKeys;
@@ -34,6 +37,7 @@ import org.chromium.chrome.browser.ui.searchactivityutils.SearchActivityExtras.I
 import org.chromium.chrome.browser.ui.searchactivityutils.SearchActivityExtras.SearchType;
 import org.chromium.chrome.browser.ui.searchactivityutils.SearchActivityPreferencesManager;
 import org.chromium.chrome.browser.ui.searchactivityutils.SearchActivityPreferencesManager.SearchActivityPreferences;
+import org.ecosia.tracking.TrackingManager;
 
 import java.util.function.Consumer;
 
@@ -51,7 +55,7 @@ import java.util.function.Consumer;
  * to get a crash stack. This is done to prevent Android from labeling the whole process as "bad"
  * and blocking taps on the widget. See http://crbug.com/712061.
  */
-public class SearchWidgetProvider extends AppWidgetProvider {
+public class SearchWidgetProvider extends AppWidgetProvider implements SystemNightModeMonitor.Observer {
     /** Wraps up all things that a {@link SearchWidgetProvider} can request things from. */
     static class SearchWidgetProviderDelegate implements Consumer<SearchActivityPreferences> {
         private final Context mContext;
@@ -76,7 +80,7 @@ public class SearchWidgetProvider extends AppWidgetProvider {
         protected int[] getAllSearchWidgetIds() {
             if (mManager == null) return new int[0];
             return mManager.getAppWidgetIds(
-                    new ComponentName(getContext(), SearchWidgetProvider.class.getName()));
+                    new ComponentName(getContext(), EcosiaWidgetProvider.class.getName()));
         }
 
         /** See {@link AppWidgetManager#updateAppWidget}. */
@@ -101,6 +105,11 @@ public class SearchWidgetProvider extends AppWidgetProvider {
 
     @SuppressLint("StaticFieldLeak")
     private static SearchWidgetProviderDelegate sDelegate;
+
+    // Ecosia
+    public SearchWidgetProvider() {
+        SystemNightModeMonitor.getInstance().addObserver(this);
+    }
 
     public static void initialize() {
         SearchActivityPreferencesManager.addObserver(getDelegate());
@@ -129,6 +138,7 @@ public class SearchWidgetProvider extends AppWidgetProvider {
                         startVoiceSearch ? SearchType.VOICE : SearchType.TEXT);
 
         searchIntent.putExtra(EXTRA_FROM_SEARCH_WIDGET, true);
+        searchIntent.putExtra(TrackingManager.OPEN_ORIGIN, TrackingManager.WIDGET_ORIGIN); // Ecosia: add info for open origin
 
         Bundle optionsBundle =
                 ActivityOptionsCompat.makeCustomAnimation(context, R.anim.activity_open_enter, 0)
@@ -162,20 +172,18 @@ public class SearchWidgetProvider extends AppWidgetProvider {
     private static RemoteViews createWidgetViews(
             Context context, int id, String engineName, boolean isVoiceSearchAvailable) {
         RemoteViews views =
-                new RemoteViews(context.getPackageName(), R.layout.search_widget_template);
+                new RemoteViews(context.getPackageName(), R.layout.ecosia_search_widget_template);
 
         views.setOnClickPendingIntent(R.id.text_container, createIntent(context, false));
         views.setOnClickPendingIntent(R.id.microphone_icon, createIntent(context, true));
         views.setViewVisibility(
                 R.id.microphone_icon, isVoiceSearchAvailable ? View.VISIBLE : View.GONE);
-
         // Update what string is displayed by the widget.
         String text =
                 TextUtils.isEmpty(engineName) || !shouldShowFullString()
                         ? context.getString(R.string.search_widget_default)
                         : context.getString(R.string.search_with_product, engineName);
         views.setCharSequence(R.id.title, "setHint", text);
-
         return views;
     }
 
@@ -237,5 +245,11 @@ public class SearchWidgetProvider extends AppWidgetProvider {
     static void setActivityDelegateForTest(SearchWidgetProviderDelegate delegate) {
         assert sDelegate == null;
         sDelegate = delegate;
+    }
+
+    // Ecosia
+    @Override
+    public void onSystemNightModeChanged() {
+        performUpdate(null, null);
     }
 }

@@ -88,6 +88,12 @@ public class BookmarkMoveSnackbarManager implements ActivityStateListener {
 
                 @Override
                 public void bookmarkModelChanged() {}
+
+                // Ecosia: Bookmark Import / Export
+                @Override
+                public void bookmarkModelNeedsReloadAfterBookmarksImport() {
+
+                }
             };
 
     private final Context mContext;

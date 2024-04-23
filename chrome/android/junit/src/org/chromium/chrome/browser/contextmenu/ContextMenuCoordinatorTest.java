@@ -21,6 +21,7 @@ import androidx.test.ext.junit.rules.ActivityScenarioRule;
 
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -157,6 +158,7 @@ public class ContextMenuCoordinatorTest {
         ShadowProfile.sProfileFromWebContents = mProfile;
     }
 
+    @Ignore("Ecosia: Menu icons customized")
     @Test
     public void testGetItemListWithImageLink() {
         final ContextMenuParams params =
@@ -207,6 +209,7 @@ public class ContextMenuCoordinatorTest {
         assertThat(itemList.get(9).type, equalTo(ListItemType.CONTEXT_MENU_ITEM_WITH_ICON_BUTTON));
     }
 
+    @Ignore("Ecosia: Menu icons customized")
     @Test
     public void testGetItemListWithLink() {
         // We're testing it for a link, but the mediaType in params is image. That's because if it
@@ -252,6 +255,7 @@ public class ContextMenuCoordinatorTest {
         assertThat(itemList.get(5).type, equalTo(ListItemType.CONTEXT_MENU_ITEM_WITH_ICON_BUTTON));
     }
 
+    @Ignore("Ecosia: Menu icons customized")
     @Test
     public void testGetItemListWithVideo() {
         final ContextMenuParams params =

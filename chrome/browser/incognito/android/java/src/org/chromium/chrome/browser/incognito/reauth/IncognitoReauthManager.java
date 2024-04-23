@@ -90,6 +90,7 @@ public class IncognitoReauthManager {
      *     rolled out to accessibility users.
      */
     public static boolean isIncognitoReauthFeatureAvailable() {
+        /* Ecosia : Disable ReAuth feature incognito 
         if (sIsIncognitoReauthFeatureAvailableForTesting != null) {
             return sIsIncognitoReauthFeatureAvailableForTesting;
         }
@@ -97,6 +98,8 @@ public class IncognitoReauthManager {
         // level 29. Android Q is not supported due to a potential bug in BiometricPrompt.
         return (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R)
                 && ChromeFeatureList.sIncognitoReauthenticationForAndroid.isEnabled();
+        */
+        return false;
     }
 
     /**

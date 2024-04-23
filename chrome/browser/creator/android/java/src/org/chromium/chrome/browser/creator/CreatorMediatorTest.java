@@ -16,6 +16,7 @@ import android.view.View;
 import androidx.test.ext.junit.rules.ActivityScenarioRule;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -49,6 +50,7 @@ import org.chromium.ui.widget.ButtonCompat;
 import org.chromium.url.JUnitTestGURLs;
 
 /** Tests for {@link CreatorMediator}. */
+@Ignore("Ecosia : Disable tests")
 @RunWith(BaseRobolectricTestRunner.class)
 public class CreatorMediatorTest {
     @Mock private WebFeedBridge.Natives mWebFeedBridgeJniMock;

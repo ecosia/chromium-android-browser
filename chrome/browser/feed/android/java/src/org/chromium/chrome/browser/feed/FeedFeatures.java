@@ -34,7 +34,10 @@ public final class FeedFeatures {
      *     enterprise policy, or by flag. The value returned should not be cached as it may change.
      */
     public static boolean isFeedEnabled(Profile profile) {
+        /* Ecosia: disable feed MOB-1894
         return FeedServiceBridge.isEnabled() && isFeedEnabledByDSE(profile);
+        */
+        return false;
     }
 
     /**

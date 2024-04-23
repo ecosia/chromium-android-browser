@@ -11,8 +11,10 @@ import android.app.KeyguardManager;
 import android.app.PictureInPictureUiState;
 import android.app.assist.AssistContent;
 import android.content.ActivityNotFoundException;
+import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.pm.ResolveInfo;
 import android.content.res.Configuration;
 import android.graphics.drawable.ColorDrawable;
@@ -70,6 +72,7 @@ import org.chromium.chrome.browser.DeferredStartupHandler;
 import org.chromium.chrome.browser.IntentHandler;
 import org.chromium.chrome.browser.PlayServicesVersionInfo;
 import org.chromium.chrome.browser.WarmupManager;
+import org.chromium.chrome.browser.profiles.ProfileManager;
 import org.chromium.chrome.browser.app.appmenu.AppMenuPropertiesDelegateImpl;
 import org.chromium.chrome.browser.app.download.DownloadMessageUiDelegate;
 import org.chromium.chrome.browser.app.flags.ChromeCachedFlags;
@@ -193,6 +196,7 @@ import org.chromium.chrome.browser.ui.messages.snackbar.SnackbarManager;
 import org.chromium.chrome.browser.ui.messages.snackbar.SnackbarManager.SnackbarManageable;
 import org.chromium.chrome.browser.ui.messages.snackbar.SnackbarManagerProvider;
 import org.chromium.chrome.browser.ui.system.StatusBarColorController;
+import org.chromium.components.adblock.FilteringConfiguration;
 import org.chromium.components.browser_ui.accessibility.FontSizePrefs;
 import org.chromium.components.browser_ui.bottomsheet.BottomSheetController;
 import org.chromium.components.browser_ui.bottomsheet.BottomSheetControllerProvider;
@@ -249,9 +253,18 @@ import org.chromium.ui.modaldialog.ModalDialogManager;
 import org.chromium.ui.widget.Toast;
 import org.chromium.url.GURL;
 import org.chromium.webapk.lib.client.WebApkNavigationClient;
+import org.ecosia.referrals.ReferralsActivity;
+import org.ecosia.tracking.TrackingManager;
+import org.ecosia.defaultbrowser.DefaultBrowserActionReceiver;
+import org.ecosia.utils.EcosiaHelpUrlParams;
+import org.ecosia.utils.SettingsHelpers;
+import com.microsoft.appcenter.AppCenter;
+import com.microsoft.appcenter.crashes.Crashes;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import static org.chromium.chrome.browser.ui.default_browser_promo.EcosiaDefaultBrowserPromoDialog.DEFAULT_BROWSER_ACTION;
 
 /**
  * A {@link AsyncInitializationActivity} that builds and manages a {@link CompositorViewHolder} and
@@ -413,6 +426,10 @@ public abstract class ChromeActivity<C extends ChromeActivityComponent>
     // Handling the dismissal of tab modal dialog.
     private TabModalLifetimeHandler mTabModalLifetimeHandler;
     private ViewGroup mBaseChromeLayout;
+    
+	// Ecosia: default browser action broadcast, adblock filter
+    private BroadcastReceiver mDefaultBrowserActionReceiver;
+    private FilteringConfiguration mFilteringConfiguration;
 
     protected ChromeActivity() {
         mManualFillingComponentSupplier.set(ManualFillingComponentFactory.createComponent());
@@ -1226,6 +1243,27 @@ public abstract class ChromeActivity<C extends ChromeActivityComponent>
             mFullscreenVideoPictureInPictureController.onFrameworkExitedPictureInPicture();
         }
 
+        // Ecosia BEGIN
+
+        // Add ecosia.org to allow-list
+        final String ecosiaDomain = "ecosia.org";
+        mFilteringConfiguration =
+                FilteringConfiguration.createConfiguration("adblock", ProfileManager.getLastUsedRegularProfile());
+        if (!mFilteringConfiguration.getAllowedDomains().contains(ecosiaDomain)) {
+            mFilteringConfiguration.addAllowedDomain(ecosiaDomain);
+        }
+
+        // We've experienced a crash here, originating in the AppCenter Crashes SDK.
+        // `Profile.getLastUsedRegularProfile` is called when collecting a crash.
+        // If this happens before `ProfileManager` has been initialized, an exception is thrown.
+        // To mitigate this we've decided to implement this check.
+        if (!AppCenter.isConfigured() && ProfileManager.isInitialized()){
+            String appSecret = SettingsHelpers.getAppCenterSecret(this);
+            if (appSecret != null && !appSecret.isEmpty()) {
+                AppCenter.start(getApplication(), appSecret, Crashes.class);
+            }
+        }
+        // Ecosia END
         getManualFillingComponent().onResume();
         checkForDeviceLockOnAutomotive();
     }
@@ -1348,6 +1386,10 @@ public abstract class ChromeActivity<C extends ChromeActivityComponent>
             getTabContentManager().cacheTabThumbnail(tab);
         }
         getManualFillingComponent().onPause();
+        
+		// Ecosia
+        TrackingManager.getInstance(this).onPause();
+
         super.onPauseWithNative();
         endUmaSession();
     }
@@ -1547,6 +1589,7 @@ public abstract class ChromeActivity<C extends ChromeActivityComponent>
         }
         super.onStart();
 
+
         if (!useWindowFocusForVisibility()) {
             onActivityShown();
         }
@@ -1565,6 +1608,16 @@ public abstract class ChromeActivity<C extends ChromeActivityComponent>
         if (mCompositorViewHolderSupplier.hasValue()) mCompositorViewHolderSupplier.get().onStart();
 
         mStarted = true;
+
+        // Ecosia: register default browser broadcast
+        mDefaultBrowserActionReceiver = new DefaultBrowserActionReceiver();
+        IntentFilter filter = new IntentFilter(DEFAULT_BROWSER_ACTION);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            getApplicationContext().registerReceiver(mDefaultBrowserActionReceiver, filter, RECEIVER_NOT_EXPORTED);
+        }
+        else {
+            getApplicationContext().registerReceiver(mDefaultBrowserActionReceiver, filter);
+        }
     }
 
     @Override
@@ -1612,6 +1665,9 @@ public abstract class ChromeActivity<C extends ChromeActivityComponent>
         // and has not yet completed), it no longer needs to do the belated onStart code since we
         // were stopped in the mean time.
         mStarted = false;
+
+         // Ecosia: unregister default browser broadcast
+         getApplicationContext().unregisterReceiver(mDefaultBrowserActionReceiver);
     }
 
     @Override
@@ -2574,7 +2630,7 @@ public abstract class ChromeActivity<C extends ChromeActivityComponent>
         }
 
         final Tab currentTab = getActivityTab();
-
+        /* Ecosia: remove chromium help
         if (id == R.id.help_id) {
             String url = currentTab != null ? currentTab.getUrl().getSpec() : "";
             startHelpAndFeedback(
@@ -2583,7 +2639,19 @@ public abstract class ChromeActivity<C extends ChromeActivityComponent>
                     getTabModelSelector().getCurrentModel().getProfile());
             return true;
         }
-
+		*/
+        // Ecosia: add Ecosia help
+        if (id == R.id.ecosia_help_id) {
+            currentTab.loadUrl(new EcosiaHelpUrlParams());
+            return true;
+        }
+        // Ecosia: Referrals
+        if (id == R.id.ecosia_referrals_invite_friends_id) {
+            TrackingManager.getInstance(this).invitationsEvent(TrackingManager.ACTION_CLICK, TrackingManager.LABEL_MENU);
+            Intent intent = new Intent(this, ReferralsActivity.class);
+            startActivity(intent);
+            return true;
+        }
         if (id == R.id.open_history_menu_id) {
             if (currentTab != null && UrlUtilities.isNtpUrl(currentTab.getUrl())) {
                 NewTabPageUma.recordAction(NewTabPageUma.ACTION_OPENED_HISTORY_MANAGER);
@@ -2704,7 +2772,7 @@ public abstract class ChromeActivity<C extends ChromeActivityComponent>
             return doAddToHomescreenOrInstallWebApp(
                     currentTab, AppMenuVerbiage.APP_MENU_OPTION_ADD_TO_HOMESCREEN);
         }
-
+        /* Ecosia : Disable install app option
         if (id == R.id.install_webapp_id) {
             RecordUserAction.record("InstallWebAppFromMenu");
             return doAddToHomescreenOrInstallWebApp(
@@ -2721,7 +2789,7 @@ public abstract class ChromeActivity<C extends ChromeActivityComponent>
             RecordUserAction.record("MobileMenuOpenWebApk");
             return doOpenWebApk(currentTab);
         }
-
+        */
         if (id == R.id.request_desktop_site_id || id == R.id.request_desktop_site_check_id) {
             boolean usingDesktopUserAgent =
                     currentTab.getWebContents().getNavigationController().getUseDesktopUserAgent();

@@ -119,7 +119,8 @@ public class BookmarkPromoHeader
      */
     @SyncPromoState
     int getPromoState() {
-        return mPromoState;
+        // return mPromoState; Ecosia: MOB-1237 (deactivate sync feature)
+        return SyncPromoState.NO_PROMO;
     }
 
     /** Returns personalized signin promo header {@link View}. */

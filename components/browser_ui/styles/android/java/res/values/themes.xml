@@ -32,6 +32,12 @@ found in the LICENSE file.
         <!-- android:textColorHint applied by Material3 is too faint, so we override it with our own
              color state list. -->
         <item name="android:textColorHint">@color/default_text_color_hint_list</item>
+
+        <!-- Ecosia theme and colors https://m3.material.io/styles/color/roles  -->
+        <item name="android:fontFamily">@font/inter</item>
+        <item name="colorPrimary">@color/ecosia_brand_primary</item>
+        <item name="colorPrimaryContainer">@color/ecosia_button_secondary_default</item>
+        <item name="colorSurface">@color/ecosia_surface_color</item>
     </style>
 
     <!-- Add a persistent back button toolbar to automotive -->

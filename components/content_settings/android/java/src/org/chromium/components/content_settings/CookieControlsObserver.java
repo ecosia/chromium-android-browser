@@ -10,6 +10,8 @@ import java.util.List;
 
 /** Interface for a class that wants to receive cookie updates from CookieControlsBridge. */
 public interface CookieControlsObserver {
+    // Ecosia: cookies
+    default void onEcosiaCookiesChanged(String name, String value) {}
     /**
      * Called when the cookie blocking status for the current site changes.
      *

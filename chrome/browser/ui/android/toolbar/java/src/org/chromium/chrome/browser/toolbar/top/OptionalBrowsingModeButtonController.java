@@ -129,6 +129,7 @@ public class OptionalBrowsingModeButtonController {
      * showing the button or updating it in place.
      */
     private void setCurrentOptionalButton(ButtonDataProvider provider, ButtonData buttonData) {
+        /* Ecosia: disable optional toolbar button MOB-1875
         mCurrentProvider = provider;
         mToolbarLayout.updateOptionalButton(buttonData);
         // ToolbarPhone's optional button has animated transitions and it takes care of showing IPH
@@ -138,6 +139,7 @@ public class OptionalBrowsingModeButtonController {
             mUserEducationHelper.requestShowIPH(
                     buttonData.getButtonSpec().getIPHCommandBuilder().build());
         }
+        */
     }
 
     private void hideCurrentOptionalButton() {

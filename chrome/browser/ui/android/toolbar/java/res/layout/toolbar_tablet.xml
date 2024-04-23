@@ -8,7 +8,7 @@ found in the LICENSE file.
 <!-- The toolbar containing the URL bar, back button, and NTP button.
 -->
 
-<org.chromium.chrome.browser.toolbar.top.ToolbarTablet
+<org.ecosia.toolbar.EcosiaToolbarTablet
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -75,6 +75,14 @@ found in the LICENSE file.
             android:paddingStart="8dp"
             android:visibility="gone" />
 
+        <!-- Ecosia: adblock button -->
+        <org.ecosia.adblock.AdblockButton
+            android:id="@+id/adblock_button"
+            style="@style/ToolbarButton"
+            android:paddingStart="8dp"
+            android:layout_gravity="top"
+            android:contentDescription="@string/adblock_settings_title" />
+
         <org.chromium.chrome.browser.toolbar.top.ToggleTabStackButton
             android:id="@+id/tab_switcher_button"
             style="@style/ToolbarHoverableButton"
@@ -87,4 +95,4 @@ found in the LICENSE file.
 
         <include layout="@layout/menu_button"/>
     </LinearLayout>
-</org.chromium.chrome.browser.toolbar.top.ToolbarTablet>
+</org.ecosia.toolbar.EcosiaToolbarTablet>

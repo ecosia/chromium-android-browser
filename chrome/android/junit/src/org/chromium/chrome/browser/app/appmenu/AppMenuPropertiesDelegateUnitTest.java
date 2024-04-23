@@ -38,6 +38,7 @@ import org.hamcrest.Matchers;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -330,6 +331,7 @@ public class AppMenuPropertiesDelegateUnitTest {
         assertTrue(mAppMenuPropertiesDelegate.shouldShowIconRow());
     }
 
+    @Ignore("Ecosia : Fails due to StartSurfaceHomepage being disabled")
     @Test
     @Config(qualifiers = "sw320dp")
     public void testPageMenuItems_Phone_Ntp() {
@@ -359,11 +361,13 @@ public class AppMenuPropertiesDelegateUnitTest {
             R.id.recent_tabs_menu_id,
             R.id.divider_line_id,
             R.id.preferences_id,
-            R.id.help_id
+          //R.id.help_id
+            R.id.ecosia_help_id  // Ecosia: add help id
         };
         assertMenuItemsAreEqual(menu, expectedItems);
     }
 
+    @Ignore("Ecosia : Fails due to StartSurfaceHomepage being disabled")
     @Test
     @Config(qualifiers = "sw320dp")
     public void testPageMenuItems_Phone_Pdf() {
@@ -394,8 +398,8 @@ public class AppMenuPropertiesDelegateUnitTest {
             R.id.divider_line_id,
             R.id.find_in_page_id,
             R.id.divider_line_id,
-            R.id.preferences_id,
-            R.id.help_id
+            R.id.preferences_id/* Ecosia : Remove help,
+            R.id.help_id */
         };
         assertMenuItemsAreEqual(menu, expectedItems);
     }
@@ -434,7 +438,7 @@ public class AppMenuPropertiesDelegateUnitTest {
             R.id.auto_dark_web_contents_row_menu_id,
             R.id.divider_line_id,
             R.id.preferences_id,
-            R.id.help_id
+            R.id.ecosia_help_id  // Ecosia: add help id
         };
         Integer[] expectedTitles = {
             0,
@@ -470,6 +474,7 @@ public class AppMenuPropertiesDelegateUnitTest {
         assertActionBarItemsAreEqual(menu, expectedActionBarItems);
     }
 
+    @Ignore("Ecosia : Fails due to StartSurfaceHomepage being disabled")
     @Test
     @Config(qualifiers = "sw320dp")
     public void testPageMenuItems_Phone_RegularPage_WithPwa() {
@@ -504,12 +509,12 @@ public class AppMenuPropertiesDelegateUnitTest {
             R.id.translate_id,
             R.id.share_row_menu_id,
             R.id.find_in_page_id,
-            R.id.install_webapp_id,
+       //   R.id.install_webapp_id, //Ecosia : Disabled install_webapp_id
             R.id.request_desktop_site_row_menu_id,
             R.id.auto_dark_web_contents_row_menu_id,
             R.id.divider_line_id,
             R.id.preferences_id,
-            R.id.help_id
+            R.id.ecosia_help_id  // Ecosia: add help id
         };
         Integer[] expectedTitles = {
             0,
@@ -545,6 +550,7 @@ public class AppMenuPropertiesDelegateUnitTest {
         assertActionBarItemsAreEqual(menu, expectedActionBarItems);
     }
 
+    @Ignore("Ecosia : Disabled Help option")
     @Test
     @Config(qualifiers = "sw320dp")
     public void testPageMenuItems_Phone_RegularPage_enterprise_user() {
@@ -580,7 +586,7 @@ public class AppMenuPropertiesDelegateUnitTest {
             R.id.auto_dark_web_contents_row_menu_id,
             R.id.divider_line_id,
             R.id.preferences_id,
-            R.id.help_id,
+            R.id.ecosia_help_id, // Ecosia: Add help Id
             R.id.managed_by_divider_line_id,
             R.id.managed_by_menu_id
         };
@@ -621,8 +627,8 @@ public class AppMenuPropertiesDelegateUnitTest {
             // Request desktop site is hidden.
             R.id.auto_dark_web_contents_row_menu_id,
             R.id.divider_line_id,
-            R.id.preferences_id,
-            R.id.help_id
+            R.id.preferences_id/* Ecosia : Remove help,
+            R.id.help_id */
         };
         assertMenuItemsAreEqual(menu, expectedItems);
     }
@@ -671,7 +677,7 @@ public class AppMenuPropertiesDelegateUnitTest {
             R.id.add_to_homescreen_id,
             R.id.reader_mode_prefs_id,
             R.id.preferences_id,
-            R.id.help_id
+            R.id.ecosia_help_id // Ecosia: add help id
         };
         assertMenuItemsHaveIcons(menu, expectedItems);
     }
@@ -774,7 +780,7 @@ public class AppMenuPropertiesDelegateUnitTest {
             R.id.auto_dark_web_contents_row_menu_id,
             R.id.divider_line_id,
             R.id.preferences_id,
-            R.id.help_id
+            R.id.ecosia_help_id // Ecosia: Add help id
         };
 
         assertMenuItemsAreEqual(menu, expectedItems);
@@ -1135,6 +1141,7 @@ public class AppMenuPropertiesDelegateUnitTest {
         assertFalse(item.isEnabled());
     }
 
+    @Ignore("Ecosia : StartSurface disabled")
     @Test
     public void testShouldShowNewMenu_alreadyMaxWindows_returnsFalse() {
         assertFalse(
@@ -1216,6 +1223,7 @@ public class AppMenuPropertiesDelegateUnitTest {
         verify(mAppMenuPropertiesDelegate, never()).isTabletSizeScreen();
     }
 
+    @Ignore("Ecosia : Multiwindow feature is disabled")
     @Test
     public void testShouldShowNewMenu_isTabletSizedScreen_returnsTrue() {
         assertTrue(
@@ -1232,6 +1240,7 @@ public class AppMenuPropertiesDelegateUnitTest {
         verify(mAppMenuPropertiesDelegate, atLeastOnce()).isTabletSizeScreen();
     }
 
+    @Ignore("Ecosia: Multiwindow feature is disabled")
     @Test
     public void testShouldShowNewMenu_chromeRunningInAdjacentWindow_returnsFalse() {
         assertFalse(
@@ -1248,6 +1257,7 @@ public class AppMenuPropertiesDelegateUnitTest {
         verify(mAppMenuPropertiesDelegate, atLeastOnce()).isTabletSizeScreen();
     }
 
+    @Ignore("Ecosia: Multiwindow feature is disabled")
     @Test
     public void testShouldShowNewMenu_multiWindowMode_returnsTrue() {
         assertTrue(
@@ -1264,6 +1274,7 @@ public class AppMenuPropertiesDelegateUnitTest {
         verify(mAppMenuPropertiesDelegate, atLeastOnce()).isTabletSizeScreen();
     }
 
+    @Ignore("Ecosia: Multiwindow feature is disabled")
     @Test
     public void testShouldShowNewMenu_multiDisplayMode_returnsTrue() {
         assertTrue(
@@ -1297,6 +1308,7 @@ public class AppMenuPropertiesDelegateUnitTest {
         verify(mAppMenuPropertiesDelegate, never()).getInstanceCount();
     }
 
+    @Ignore("Ecosia: Multiwindow feature is disabled")
     @Test
     public void testShouldShowNewMenu_canEnterMultiWindowMode_returnsTrue() {
         assertTrue(
@@ -1314,6 +1326,7 @@ public class AppMenuPropertiesDelegateUnitTest {
         verify(mAppMenuPropertiesDelegate, never()).getInstanceCount();
     }
 
+    @Ignore("Ecosia: Multiwindow feature is disabled")
     @Test
     public void testShouldShowNewMenu_instanceSwitcherDisabled_multiWindowMode_returnsTrue() {
         assertTrue(
@@ -1330,6 +1343,7 @@ public class AppMenuPropertiesDelegateUnitTest {
         verify(mAppMenuPropertiesDelegate, never()).getInstanceCount();
     }
 
+    @Ignore("Ecosia: Multiwindow feature is disabled")
     @Test
     public void testShouldShowNewMenu_instanceSwitcherDisabled_multiDisplayMode_returnsTrue() {
         assertTrue(

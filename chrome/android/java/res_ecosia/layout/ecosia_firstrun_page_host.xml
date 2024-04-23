@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ecosia_firstrun_loading_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@color/ecosia_background_tertiary">
+
+        <ImageView
+            android:layout_width="148dp"
+            android:layout_height="72dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ecosia_loading_logo_no_tree"
+            android:tint="@color/ecosia_brand_primary"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ecosia_firstrun_loading_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@drawable/ecosia_loading_trees_background">
+
+        <ImageView
+            android:layout_width="148dp"
+            android:layout_height="72dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ecosia_loading_logo_no_tree"
+            android:tint="@color/modern_white"/>
+
+    </LinearLayout>
+
+    <!-- Different implementation of the welcome screen for tablet & phone -->
+    <include layout="@layout/ecosia_firstrun_page_host_welcome"/>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/ecosia_firstrun_pager_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/ecosia_firstrun_page_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/ecosia_firstrun_page_tab_layout"/>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/ecosia_firstrun_page_tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toBottomOf="@+id/ecosia_firstrun_page_view_pager"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>

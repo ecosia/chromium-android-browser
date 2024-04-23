@@ -20,6 +20,7 @@
 #include "base/strings/utf_string_conversions.h"
 #include "base/supports_user_data.h"
 #include "chrome/browser/android/bookmarks/partner_bookmarks_shim.h"
+#include "chrome/browser/bookmarks/bookmark_html_writer.h" // Ecosia: Bookmark Import / Export
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/profiles/profile_observer.h"
 #include "chrome/browser/reading_list/android/reading_list_manager.h"
@@ -36,8 +37,14 @@
 #include "components/reading_list/core/reading_list_model_observer.h"
 #include "components/signin/public/identity_manager/identity_manager.h"
 #include "url/android/gurl_android.h"
+#include "components/search_engines/template_url.h" // Ecosia: Bookmark Import / Export
+#include "ui/shell_dialogs/select_file_dialog.h" // Ecosia: Bookmark Import / Export
 
 class BookmarkBridgeTest;
+// Ecosia: Bookmark Import / Export
+namespace ui {
+    struct SelectedFileInfo;
+}
 
 // The delegate to fetch bookmarks information for the Android native
 // bookmark page. This fetches the bookmarks, title, urls, folder
@@ -50,6 +57,7 @@ class BookmarkBridge : public ProfileObserver,
                        public ReadingListManager::Observer,
                        public ReadingListModelObserver,
                        public signin::IdentityManager::Observer,
+                       public ui::SelectFileDialog::Listener, // Ecosia: Bookmark Import / Export
                        public base::SupportsUserData::Data {
  public:
   // All of the injected pointers must be non-null and must outlive `this`.
@@ -80,6 +88,12 @@ class BookmarkBridge : public ProfileObserver,
       const GURL& url);
 
   bool IsDoingExtensiveChanges(JNIEnv* env);
+
+  // Ecosia: Bookmark Import / Export
+  // SelectFileDialog::Listener implementation.
+  void FileSelected(const ui::SelectedFileInfo& file,
+                    int index) override;
+  void FileSelectionCanceled() override;
 
   jboolean IsEditBookmarksEnabled(JNIEnv* env);
 
@@ -154,7 +168,17 @@ class BookmarkBridge : public ProfileObserver,
                              jlong id,
                              jint type);
 
-  void SetBookmarkTitle(JNIEnv* env,
+  // Ecosia: Bookmark Import / Export
+  void ImportBookmarks(JNIEnv* env,
+                       const base::android::JavaParamRef<jobject>& obj,
+                       const base::android::JavaParamRef<jobject>& java_window);
+  // Ecosia: Bookmark Import / Export
+  void ExportBookmarks(JNIEnv* env,
+                       const base::android::JavaParamRef<jobject>& obj,
+                       const base::android::JavaParamRef<jobject>& java_window,
+                       const base::android::JavaParamRef<jstring>& j_export_path);
+
+    void SetBookmarkTitle(JNIEnv* env,
                         jlong id,
                         jint type,
                         const std::u16string& title);
@@ -363,6 +387,9 @@ class BookmarkBridge : public ProfileObserver,
   void CreateOrDestroyAccountReadingListManagerIfNeeded();
 
   const raw_ptr<Profile> profile_;  // weak
+  base::FilePath export_path_; // Ecosia: Bookmark Import / Export
+  raw_ptr<BookmarksExportObserver> observer_; // weak // Ecosia: Bookmark Import / Export
+  raw_ptr<ui::WindowAndroid> window_;  // weak // Ecosia: Bookmark Import / Export
   base::android::ScopedJavaGlobalRef<jobject> java_bookmark_model_;
   const raw_ptr<bookmarks::BookmarkModel> bookmark_model_;  // weak
   const raw_ptr<bookmarks::ManagedBookmarkService>
@@ -377,6 +404,7 @@ class BookmarkBridge : public ProfileObserver,
   std::unique_ptr<bookmarks::ScopedGroupBookmarkActions>
       grouped_bookmark_actions_;
   PrefChangeRegistrar pref_change_registrar_;
+  scoped_refptr<ui::SelectFileDialog> select_file_dialog_; // Ecosia: Bookmark Import / Export
 
   // Information about the Partner bookmarks (must check for IsLoaded()).
   // This is owned by profile.
@@ -407,6 +435,11 @@ class BookmarkBridge : public ProfileObserver,
       identity_manager_observation_{this};
 
   bool suppress_observer_notifications_ = false;
+
+  // Ecosia: Bookmark Import / Export
+  const std::string FileSelectedImpl(const base::FilePath& path);
+  void FileSelectedImplOnUIThread(const base::FilePath& path,
+                                  const std::string& contents);
 
   // Weak pointers for creating callbacks that won't call into a destroyed
   // object.

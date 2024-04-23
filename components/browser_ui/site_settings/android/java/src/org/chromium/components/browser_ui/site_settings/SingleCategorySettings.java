@@ -525,6 +525,7 @@ public class SingleCategorySettings extends BaseSiteSettingsFragment
                     if (queryHasChanged) getInfoForOrigins();
                 });
 
+        /* Ecosia : Remove Help & Feedback option
         if (getSiteSettingsDelegate().isHelpAndFeedbackEnabled()) {
             MenuItem help =
                     menu.add(
@@ -538,6 +539,7 @@ public class SingleCategorySettings extends BaseSiteSettingsFragment
                             R.drawable.ic_help_and_feedback,
                             getContext().getTheme()));
         }
+        */
     }
 
     @Override

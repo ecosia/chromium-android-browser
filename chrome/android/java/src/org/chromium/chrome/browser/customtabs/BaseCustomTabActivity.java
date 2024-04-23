@@ -757,7 +757,7 @@ public abstract class BaseCustomTabActivity extends ChromeActivity<BaseCustomTab
         // Disable creating new tabs, bookmark, print, help, focus_url, etc.
         if (id == R.id.focus_url_bar
                 || id == R.id.all_bookmarks_menu_id
-                || id == R.id.help_id
+                /* || id == R.id.help_id */ // Ecosia: remove help
                 || id == R.id.recent_tabs_menu_id
                 || id == R.id.new_incognito_tab_menu_id
                 || id == R.id.new_tab_menu_id) {

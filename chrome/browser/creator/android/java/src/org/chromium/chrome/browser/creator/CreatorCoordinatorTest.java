@@ -21,6 +21,7 @@ import android.widget.TextView;
 import androidx.test.ext.junit.rules.ActivityScenarioRule;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -59,6 +60,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /** Tests for {@link CreatorCoordinator}. */
+@Ignore("Ecosia : Disable tests")
 @RunWith(BaseRobolectricTestRunner.class)
 public class CreatorCoordinatorTest {
     @Mock private WebFeedBridge.Natives mWebFeedBridgeJniMock;

@@ -15,6 +15,7 @@ import androidx.test.core.app.ApplicationProvider;
 
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.ArgumentCaptor;
@@ -63,6 +64,7 @@ public class PageZoomIPHControllerTest {
                         mAppMenuHandler, mToolbarMenuButton, mUserEducationHelper);
     }
 
+    @Ignore("Ecosia : Disable Zoom")
     @Test
     public void testPageZoomIPHShown() {
         mPageZoomIPHController.showColdStartIPH();

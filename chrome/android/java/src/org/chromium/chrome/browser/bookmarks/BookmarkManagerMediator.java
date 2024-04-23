@@ -59,6 +59,8 @@ import org.chromium.components.power_bookmarks.PowerBookmarkType;
 import org.chromium.ui.accessibility.AccessibilityState;
 import org.chromium.ui.listmenu.ListMenu;
 import org.chromium.ui.listmenu.ListMenuItemProperties;
+import org.chromium.ui.base.ActivityWindowAndroid;
+import org.chromium.ui.modaldialog.ModalDialogManager;
 import org.chromium.ui.modelutil.MVCListAdapter.ListItem;
 import org.chromium.ui.modelutil.MVCListAdapter.ModelList;
 import org.chromium.ui.modelutil.PropertyModel;
@@ -182,6 +184,13 @@ class BookmarkManagerMediator
                     clearHighlight();
                     mPendingRefresh.post();
                 }
+        		
+				// Ecosia: Bookmark Import / Export
+        		@Override
+        		public void bookmarkModelNeedsReloadAfterBookmarksImport() {
+            		// Leads to refresh of the adapter tied to the bookmarks list
+            		mPendingRefresh.post();
+        		}
             };
 
     private final Stack<BookmarkUiState> mStateStack =
@@ -385,7 +394,11 @@ class BookmarkManagerMediator
     // Whether the shopping feature is available and there are price-tracked bookmarks.
     private boolean mShoppingFilterAvailable;
 
-    BookmarkManagerMediator(
+    // Ecosia: Bookmark Import / Export
+    private ModalDialogManager mModalDialogManager;
+    private ActivityWindowAndroid mWindowAndroid;
+    
+	BookmarkManagerMediator(
             Context context,
             BookmarkModel bookmarkModel,
             BookmarkOpener bookmarkOpener,
@@ -729,6 +742,28 @@ class BookmarkManagerMediator
         onSearchTextChangeCallback("");
     }
 
+    // Ecosia: Bookmark Import / Export
+    public void setModalDialogManager(ModalDialogManager modalDialogManager) {
+        mModalDialogManager = modalDialogManager;
+    }
+
+    // Ecosia: Bookmark Import / Export
+    public void setWindow(ActivityWindowAndroid window) {
+        mWindowAndroid = window;
+    }
+
+    // Ecosia: Bookmark Import / Export
+    @Override
+    public void importBookmarks() {
+        mBookmarkModel.importBookmarks(mWindowAndroid);
+    }
+
+    // Ecosia: Bookmark Import / Export
+    @Override
+    public void exportBookmarks() {
+        mBookmarkModel.exportBookmarks(mWindowAndroid, mModalDialogManager);
+    }
+
     @Override
     public void addUiObserver(BookmarkUiObserver observer) {
         mUiObservers.addObserver(observer);
@@ -768,6 +803,12 @@ class BookmarkManagerMediator
         mRecyclerView.scrollToPosition(index);
         mHighlightedBookmark = bookmarkId;
         mModelList.get(index).model.set(BookmarkManagerProperties.IS_HIGHLIGHTED, true);
+    }
+
+    // Ecosia: Bookmarks Import/Exports
+    @Override
+    public boolean goBack() {
+        return onBackPressed();
     }
 
     // SearchDelegate implementation.

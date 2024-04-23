@@ -4,6 +4,7 @@
 
 package org.chromium.chrome.browser.bookmarks;
 
+import org.chromium.ui.base.WindowAndroid;
 import org.mockito.Mockito;
 
 import org.chromium.chrome.browser.profiles.Profile;
@@ -414,6 +415,18 @@ public class FakeBookmarkModel extends BookmarkModel {
                             .collect(Collectors.toList()));
         }
 
+        /*Ecosia : Bookmark Import / Export */
+        @Override
+        public void importBookmarks(long nativeBookmarkBridge, BookmarkBridge caller, WindowAndroid window) {
+
+        }
+
+        /*Ecosia : Bookmark Import / Export */
+        @Override
+        public void exportBookmarks(long nativeBookmarkBridge, BookmarkBridge caller, WindowAndroid window, String export_path) {
+
+        }
+        
         @Override
         public BookmarkId getChildAt(long nativeBookmarkBridge, long id, int type, int index) {
             List<BookmarkId> childIds = new ArrayList<>();

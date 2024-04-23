@@ -15,10 +15,11 @@ found in the LICENSE file.
         app:showAsAction="ifRoom"
         app:iconTint="@macro/default_icon_color" />
 
+    <!-- Ecosia : Removing Help & Feedback setting
     <item
         android:id="@+id/help_menu_id"
         android:icon="@drawable/ic_help_and_feedback"
         android:title="@string/help"
         app:showAsAction="ifRoom" />
-
+    -->
 </menu>

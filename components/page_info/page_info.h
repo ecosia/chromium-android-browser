@@ -315,6 +315,9 @@ class PageInfo : private content_settings::CookieControlsObserver,
                        std::vector<content_settings::TrackingProtectionFeature>
                            features) override;
 
+  // Ecosia: cookies, empty override
+  void OnEcosiaCookiesChanged(std::string name, std::string value) override {}
+
   // Populates this object's UI state with provided security context. This
   // function does not update visible UI-- that's part of Present*().
   void ComputeUIInputs(const GURL& url);

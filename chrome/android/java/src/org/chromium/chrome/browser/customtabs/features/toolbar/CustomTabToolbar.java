@@ -1513,7 +1513,7 @@ public class CustomTabToolbar extends ToolbarLayout implements View.OnLongClickL
                     AppCompatResources.getColorStateList(
                             getContext(), mLocationBarDataProvider.getSecurityIconColorStateList());
             ImageViewCompat.setImageTintList(mSecurityButton, colorStateList);
-            mAnimDelegate.updateSecurityButton(R.drawable.chromelogo16);
+            mAnimDelegate.updateSecurityButton(R.drawable.ic_ecosia); // Ecosia: change logo
 
             mUrlCoordinator.setUrlBarData(
                     UrlBarData.forNonUrlText(

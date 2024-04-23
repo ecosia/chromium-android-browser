@@ -481,6 +481,7 @@ public class ManageSyncSettings extends ChromeBaseSettingsFragment
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         menu.clear();
+        /* Ecosia : Removing Help & Feedback setting
         MenuItem help =
                 menu.add(Menu.NONE, R.id.menu_id_targeted_help, Menu.NONE, R.string.menu_help);
         help.setIcon(R.drawable.ic_help_and_feedback);
@@ -491,15 +492,18 @@ public class ManageSyncSettings extends ChromeBaseSettingsFragment
                     R.string.prefs_manage_sync_settings_content_description);
             RecordUserAction.record("Signin_Signin_ShowAdvancedSyncSettings");
         }
+        */
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        /* Ecosia : Removing Help & Feedback setting
         if (item.getItemId() == R.id.menu_id_targeted_help) {
             getHelpAndFeedbackLauncher()
                     .show(getActivity(), getString(R.string.help_context_sync_and_services), null);
             return true;
         }
+		*/
         if (item.getItemId() == android.R.id.home) {
             return onBackToHome();
         }

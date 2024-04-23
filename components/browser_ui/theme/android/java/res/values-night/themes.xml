@@ -10,7 +10,7 @@ found in the LICENSE file.
          Theme.BrowserUI.AlertDialog.NoActionBar.DayNight. -->
     <style name="Theme.BrowserUI.DayNight" parent="Theme.BrowserUI">
         <!-- Color palettes -->
-        <item name="colorPrimary">@color/baseline_primary_80</item>
+        <item name="colorPrimary">@color/ecosia_brand_primary_dark</item> <!--Ecosia: Fixing Settings and tab switcher selection colors -->
         <item name="colorPrimaryInverse">@color/baseline_primary_40</item>
         <item name="colorOnPrimary">@color/baseline_primary_20</item>
         <item name="colorPrimaryContainer">@color/baseline_primary_30</item>

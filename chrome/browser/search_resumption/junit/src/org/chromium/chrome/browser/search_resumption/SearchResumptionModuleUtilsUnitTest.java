@@ -14,6 +14,7 @@ import androidx.test.filters.SmallTest;
 
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
@@ -72,6 +73,7 @@ public class SearchResumptionModuleUtilsUnitTest {
         SyncServiceFactory.setInstanceForTesting(mSyncServiceMock);
     }
 
+    @Ignore   // Ecosia: custom NTP MOB-1894
     @Test
     @SmallTest
     public void testShouldShowSearchResumptionModule() {

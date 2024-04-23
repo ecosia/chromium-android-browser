@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ecosia_firstrun_loading_3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:gravity="center"
+    android:background="@drawable/ecosia_loading_trees_background">
+
+    <ImageView
+        android:id="@+id/firstrun_logo"
+        android:layout_width="148dp"
+        android:layout_height="72dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ecosia_loading_logo_no_tree"
+        android:tint="@color/modern_white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/firstrun_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:text="@string/onboarding_loading_text"
+        android:textSize="48sp"
+        android:textColor="@color/modern_white"
+        android:fontFamily="@font/FoundersGroteskCondensed"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/firstrun_continue_button"/>
+
+    <TextView
+        android:id="@+id/firstrun_continue_button"
+        android:background="@drawable/firstrun_continue_button"
+        android:gravity="center"
+        android:text="@string/onboarding_loading_start_button"
+        android:textColor="@color/ecosia_text_primary_light"
+        android:fontFamily="@font/inter"
+        android:textSize="14sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="22dp"
+        app:layout_constraintBottom_toTopOf="@+id/firstrun_skip_button"/>
+
+    <TextView
+        android:id="@+id/firstrun_skip_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter"
+        android:gravity="center"
+        android:text="@string/onboarding_loading_skip_button"
+        android:textColor="@color/ecosia_onboarding_loading_gray_30"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

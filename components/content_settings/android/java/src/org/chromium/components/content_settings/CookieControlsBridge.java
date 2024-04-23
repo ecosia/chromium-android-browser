@@ -143,6 +143,20 @@ public class CookieControlsBridge {
         mObserver.onHighlightPwaCookieControl();
     }
 
+    // Ecosia: cookies
+    public void startObservingEcosiaCookies() {
+        if (mNativeCookieControlsBridge != 0) {
+            CookieControlsBridgeJni.get()
+                    .startObservingEcosiaCookies(mNativeCookieControlsBridge);
+        }
+    }
+
+    @CalledByNative
+    private void onEcosiaCookiesChanged(String name, String value) {
+        mObserver.onEcosiaCookiesChanged(name, value);
+    }
+
+
     @NativeMethods
     public interface Natives {
         long init(
@@ -165,5 +179,8 @@ public class CookieControlsBridge {
         void onEntryPointAnimated(long nativeCookieControlsBridge);
 
         boolean isCookieControlsEnabled(BrowserContextHandle browserContextHandle);
+
+        // Ecosia: Cookies
+        void startObservingEcosiaCookies(long nativeCookieControlsBridge);
     }
 }

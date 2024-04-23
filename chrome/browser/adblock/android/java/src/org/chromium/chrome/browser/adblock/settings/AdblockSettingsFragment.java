@@ -142,9 +142,15 @@ public class AdblockSettingsFragment extends PreferenceFragmentCompat
             maybeEnableMoreOptions();
 
             applyAdblockEnabled((Boolean) newValue);
+            // Ecosia: tracking event
+            EcosiaAdblockTrackingManager.getInstance(getContext()).changeAdblockEvent((Boolean) newValue);
+            // Ecosia: set adblock button visibility
+            EcosiaAdblockPreferences.setAdblockButtonVisibility(getContext(), (Boolean) newValue);
         } else if (preference.getKey().equals(SETTINGS_AA_ENABLED_KEY)) {
             AdblockController.getInstance(ProfileManager.getLastUsedRegularProfile())
                     .setAcceptableAdsEnabled((Boolean) newValue);
+            // Ecosia: tracking event
+            EcosiaAdblockTrackingManager.getInstance(getContext()).changeAcceptableAdsEvent((Boolean) newValue);
         } else {
             assert preference.getKey().equals(SETTINGS_AUTO_INSTALL_ENABLED_KEY);
 

@@ -187,7 +187,9 @@ class ChromeContextMenuItem {
         R.string.contextmenu_add_to_contacts, // Item.ADD_TO_CONTACTS:
         R.string.contextmenu_copy, // Item.COPY:
         R.string.contextmenu_save_video, // Item.SAVE_VIDEO:
+        /* Ecosia : Disable chrome menu option
         R.string.menu_open_in_chrome, // Item.OPEN_IN_CHROME:
+		*/
         R.string.contextmenu_share_highlight, // Item.SHARE_HIGHLIGHT
         R.string.contextmenu_remove_highlight, // Item.REMOVE_HIGHLIGHT
         R.string.contextmenu_learn_more, // Item.LEARN_MORE

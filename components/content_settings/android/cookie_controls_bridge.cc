@@ -12,6 +12,14 @@
 #include "content/public/browser/browser_context.h"
 #include "content/public/browser/web_contents.h"
 
+// Ecosia
+#include "base/android/jni_string.h"
+#include "chrome/browser/profiles/profile_manager.h"
+#include "content/public/browser/storage_partition.h"
+#include "components/browsing_data/content/cookie_helper.h"
+#include "url/gurl.h"
+
+
 // Must come after all headers that specialize FromJniType() / ToJniType().
 #include "components/content_settings/android/content_settings_jni_headers/CookieControlsBridge_jni.h"
 
@@ -19,6 +27,8 @@ namespace content_settings {
 
 using base::android::JavaParamRef;
 using base::android::ScopedJavaLocalRef;
+// Ecosia: Cookies
+using base::android::ConvertUTF8ToJavaString;
 
 CookieControlsBridge::CookieControlsBridge(
     JNIEnv* env,
@@ -161,5 +171,68 @@ static jlong JNI_CookieControlsBridge_Init(
   return reinterpret_cast<intptr_t>(new CookieControlsBridge(
       env, obj, jweb_contents_android, joriginal_browser_context_handle));
 }
+
+// Ecosia: cookies begin
+void CookieControlsBridge::StartObservingEcosiaCookies(JNIEnv* env) {
+  
+  // First fetch all the cookies
+  FetchAllCookies();
+
+  // And Observe changes to all cookies on ecosia.org
+  content::StoragePartition* storage_partition =
+    ProfileManager::GetPrimaryUserProfile()->GetDefaultStoragePartition();
+
+  GURL url = GURL("https://www.ecosia.org");
+  storage_partition->GetCookieManagerForBrowserProcess()->AddCookieChangeListener(
+    url, std::nullopt,
+    cookie_listener_receiver_.BindNewPipeAndPassRemote());
+}
+
+void CookieControlsBridge::FetchAllCookies() {
+  content::StoragePartition* storage_partition =
+    ProfileManager::GetPrimaryUserProfile()->GetDefaultStoragePartition();
+  
+  // Use cookie helper to fetch all cookies 
+  auto cookie_helper = base::MakeRefCounted<browsing_data::CookieHelper>(storage_partition,
+                                        base::NullCallback());
+  cookie_helper->StartFetching(
+        base::BindOnce(&CookieControlsBridge::OnEcosiaCookiesLoaded,
+                       weak_ptr_factory_.GetWeakPtr()));
+}
+
+void CookieControlsBridge::OnCookieChange(
+    const net::CookieChangeInfo& change) {
+  
+  // NOTE: cookie.Value() cannot be trusted in this callback. The cookie may
+  // have expired or been removed and the Value() does not get updated. It's
+  // cleanest to just re-fetch it.
+
+  if (change.cookie.IsDomainMatch(".ecosia.org")) {
+    FetchAllCookies();
+  }
+
+}
+
+void CookieControlsBridge::OnEcosiaCookiesLoaded(const net::CookieList& cookies) {
+  for (net::CanonicalCookie elem : cookies) {  
+    if (elem.Domain() == ".ecosia.org" 
+      && !elem.Name().empty() 
+      && !elem.Value().empty()) {
+      
+      OnEcosiaCookiesChanged(elem.Name(), elem.Value());
+    }
+  }
+}
+
+void CookieControlsBridge::OnEcosiaCookiesChanged(std::string name, std::string value) {
+  JNIEnv* env = base::android::AttachCurrentThread();
+
+  ScopedJavaLocalRef<jstring> jname = base::android::ConvertUTF8ToJavaString(env, name);
+  ScopedJavaLocalRef<jstring> jvalue = base::android::ConvertUTF8ToJavaString(env, value);
+
+  // Call to Java interface
+  Java_CookieControlsBridge_onEcosiaCookiesChanged(env, jobject_, jname, jvalue);
+}
+// Ecosia: cookies end
 
 }  // namespace content_settings

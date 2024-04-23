@@ -20,6 +20,7 @@ import androidx.test.filters.SmallTest;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -325,6 +326,7 @@ public class BasicSuggestionProcessorUnitTest {
         Assert.assertNull(mModel.get(BaseSuggestionViewProperties.ACTION_BUTTONS));
     }
 
+    @Ignore("Ecosia : Changed it to Ecosia icon")
     @Test
     @SmallTest
     public void refineIconShownForRefineSuggestions() {

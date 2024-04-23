@@ -1,0 +1,15 @@
+Name: okhttp
+Short Name: okhttp
+URL: https://square.github.io/okhttp/
+Version: 4.12.0
+License: Apache Version 2.0
+License File: LICENSE
+CPEPrefix: unknown
+Security Critical: yes
+Shipped: yes
+
+Description:
+Square’s meticulous HTTP client for Java and Kotlin.
+
+Local Modifications:
+No modifications.

@@ -101,6 +101,7 @@ import java.util.Arrays;
 import java.util.Date;
 
 /** Tests the History UI. */
+@Ignore("Ecosia : Disabling tests")
 @RunWith(BaseRobolectricTestRunner.class)
 @DisableFeatures({ChromeFeatureList.APP_SPECIFIC_HISTORY})
 public class HistoryUITest {

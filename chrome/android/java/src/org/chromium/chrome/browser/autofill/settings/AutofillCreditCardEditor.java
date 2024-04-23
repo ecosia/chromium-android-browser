@@ -116,6 +116,7 @@ public abstract class AutofillCreditCardEditor extends AutofillEditorBase
             showDeletePaymentMethodConfirmationDialog();
             return true;
         }
+        /* Ecosia : Remove help
         if (item.getItemId() == R.id.help_menu_id) {
             HelpAndFeedbackLauncherFactory.getForProfile(mProfile)
                     .show(
@@ -124,7 +125,7 @@ public abstract class AutofillCreditCardEditor extends AutofillEditorBase
                             null);
             return true;
         }
-
+        */
         return super.onOptionsItemSelected(item);
     }
 

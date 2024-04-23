@@ -498,7 +498,9 @@ public class StatusMediator
         } else if (mSecurityIconRes != 0) {
             mIsSecurityViewShown = true;
             icon = mSecurityIconRes;
-            tint = mSecurityIconTintRes;
+            /* Ecosia: set brand color for security icon MOB-2401
+            tint = mSecurityIconTintRes;*/
+            tint = R.color.ecosia_brand_primary;
             toast = R.string.menu_page_info;
         }
 

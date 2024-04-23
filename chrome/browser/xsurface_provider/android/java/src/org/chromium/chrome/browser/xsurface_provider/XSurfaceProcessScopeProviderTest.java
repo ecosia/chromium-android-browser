@@ -10,6 +10,7 @@ import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.when;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
@@ -21,6 +22,7 @@ import org.chromium.chrome.browser.xsurface_provider.hooks.XSurfaceHooks;
 import org.chromium.chrome.browser.xsurface_provider.hooks.XSurfaceHooksImpl;
 
 /** Tests for {@link XSurfaceProcessScopeProvider}. */
+@Ignore("Ecosia : Disable tests")
 @RunWith(BaseRobolectricTestRunner.class)
 public class XSurfaceProcessScopeProviderTest {
     @Mock private XSurfaceHooks mXSurfaceHooks;

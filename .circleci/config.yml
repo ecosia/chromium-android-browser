@@ -1,0 +1,424 @@
+version: 2.1
+
+orbs:
+  macos: circleci/macos@2
+
+docker-setup: &docker-setup
+  docker:
+    - image: ecosiadev/chromium:129.0.6668.112-abp-${DOCKER_ARCH}
+      auth:
+        username: $DOCKER_USER
+        password: $DOCKER_PASS
+  working_directory: ~/project/src
+  resource_class: 2xlarge+
+
+commands:
+  decode-keystore:
+    steps:
+      - run:
+          name: Decode KeyStore file
+          command: echo "$ANDROID_KEYSTORE" | base64 --decode > ecosia.keystore
+
+  fix-symlink:
+    steps:
+      - run:
+          name: Fix depot_tools symlink
+          command: ln -sf ~/depot_tools ~/project/src/third_party/depot_tools
+
+  base-steps-for-tag:
+    steps:
+      - run:
+          name: Set Remote via HTTPS
+          command: git remote set-url origin https://$ECOSIA_USER:$ECOSIA_TOKEN@github.com/ecosia/chromium-android.git
+      - run:
+          name: Fetch tag from origin
+          command: git fetch origin refs/tags/$CIRCLE_TAG:refs/tags/$CIRCLE_TAG --depth 1
+      - run:
+          name: Checkout tag
+          command: git stash && git checkout $CIRCLE_TAG
+
+  base-steps-for-branch:
+    steps:
+      - run:
+          name: Set Remote via HTTPS
+          command: git remote set-url origin https://$ECOSIA_USER:$ECOSIA_TOKEN@github.com/ecosia/chromium-android.git
+      - run:
+            name: Fetch branch from origin
+            command: git fetch origin $CIRCLE_BRANCH:remotes/origin/$CIRCLE_BRANCH --depth 1
+      - run:
+          name: Checkout remote branch
+          command: git stash && git checkout origin/$CIRCLE_BRANCH
+
+  build-steps-arm64:
+    steps:
+      - run:
+          name: Build Chromium APK
+          command: autoninja -C out/release_arm64 monochrome_64_32_public_bundle
+      - run:
+          name: Bundle .aab to .apk
+          command: scripts/bundle_arm64_aab_to_apk.sh
+
+  upload-to-firebase:
+    parameters:
+      apk:
+        description: The APK we want to upload to Firebase
+        type: string
+      testers:
+        description: The Firebase testers group
+        type: string
+        default: "ecosia-internal-testers"
+      release-notes:
+        description: The Firebase release notes
+        type: string
+    steps:
+      - run:
+          name: Install Firebase CLI
+          command: sudo npm install -g firebase-tools@"<14.0.0"
+      - run: 
+          name: Upload to Firebase App Distribution
+          command: firebase appdistribution:distribute <<parameters.apk>> --app $FIREBASE_APP_ID --release-notes <<parameters.release-notes>> --groups <<parameters.testers>>   
+  
+jobs:
+  build-deploy-firebase:
+    environment:
+      DOCKER_ARCH: "arm64"
+    <<: *docker-setup
+    steps:
+      - decode-keystore
+      - base-steps-for-branch
+      - fix-symlink
+      - run:
+          name: prepare build flags for monochrome
+          command: gn gen out/release_arm64 --args="target_cpu=\"arm64\" target_os=\"android\" android_channel=\"stable\" is_debug=false is_official_build=true proprietary_codecs=true symbol_level=1 ffmpeg_branding=\"Chrome\" disable_android_lint=true android_override_version_name=\"12.0.0\" android_override_version_code=\"$CIRCLE_BUILD_NUM\" appcenter_secret=\"$ANDROID_APPCENTER_ID_BETA\" cloudflare_client_id=\"$CLOUDFLARE_CLIENT_ID\" cloudflare_client_secret=\"$CLOUDFLARE_CLIENT_SECRET\" facebook_app_id=\"$FACEBOOK_APP_ID\" android_keystore_name=\"ecosia\" android_keystore_password=\"$ANDROID_KEYSTORE_PASSWORD\" eyeo_telemetry_client_id =\"ecosia\" eyeo_telemetry_activeping_auth_token =\"$ABP_TELEMETRY_TOKEN\" android_keystore_path=\"ecosia.keystore\" treat_warnings_as_errors=false use_login_database_as_backend=true"
+      - build-steps-arm64
+      - upload-to-firebase:
+          apk: out/release_arm64/apks/MonochromePublic6432.apk
+          release-notes: $CIRCLE_BRANCH:monochrome
+ 
+  build-deploy-vanilla-firebase:
+    environment:
+      DOCKER_ARCH: "arm64"
+    <<: *docker-setup
+    steps:
+      - run:
+          name: Install Deps
+          command: sudo apt-get update && sudo apt-get install -y build-essential openjdk-8-jre openjdk-8-jdk python python3-pip wget ruby-dev
+      - run:
+          name: Install httplib
+          command: |
+            pip3 install httplib2 --upgrade
+      - run:
+          name: Set Google Remote via HTTPS
+          command: git remote set-url origin https://chromium.googlesource.com/chromium/src
+      - run:
+          name: Extract tag expecting vanilla_{version} and checkout code
+          command: |
+            IFS='_' read -ra my_array \<<< "$CIRCLE_TAG"
+            VANILLA_TAG="${my_array[1]}"
+            git fetch origin $VANILLA_TAG:remotes/origin/$VANILLA_TAG --depth 1
+            git stash && git checkout origin/$VANILLA_TAG
+      - run:
+          name: Sync deps
+          command: gclient sync --verbose --no-history
+      - run:
+          name: prepare build flags for monochrome
+          command: gn gen out/release_arm64 --args="target_cpu=\"arm64\" target_os=\"android\" android_channel=\"stable\" is_debug=false is_official_build=true proprietary_codecs=true symbol_level=1 ffmpeg_branding=\"Chrome\" disable_android_lint=true"   
+      - run: 
+          name: Build Chromium APK
+          command: autoninja -C out/release_arm64 monochrome_64_32_public_bundle
+      - run: 
+          name: Bundle .aab to .apk
+          command: |
+            mkdir out/release_arm64/apks/monochrome6432
+            out/release_arm64/bin/monochrome_64_32_public_bundle build-bundle-apks --output-apks=out/release_arm64/apks/monochrome6432/MonochromePublic6432.apks --build-mode=universal
+            unzip -o out/release_arm64/apks/monochrome6432/MonochromePublic6432.apks -d out/release_arm64/apks/monochrome6432/
+            mv -f out/release_arm64/apks/monochrome6432/universal.apk out/release_arm64/apks/monochrome6432/MonochromePublic6432.apk
+      - upload-to-firebase:
+          apk: out/release_arm64/apks/monochrome6432/MonochromePublic6432.apk
+          release-notes: $CIRCLE_TAG
+
+  build-playstore-arm64:
+    environment:
+      DOCKER_ARCH: "arm64"
+    <<: *docker-setup
+    steps:
+      - decode-keystore
+      - base-steps-for-tag
+      - fix-symlink
+      - run:
+          name: prepare build flags
+          command: scripts/prepare_release_folders_from_tag.sh $CIRCLE_TAG
+      - build-steps-arm64
+      - run:
+          name: Bundle arm64 .aab artefacts
+          command: scripts/bundle_arm64_artefacts_for_tag.sh $CIRCLE_TAG
+      - store_artifacts:
+          path: out/upload
+      - persist_to_workspace:
+          root: /home/circleci/project/src
+          paths:
+            - out/upload
+            - fastlane
+            - Gemfile
+
+
+  build-playstore-arm:
+    environment:
+      DOCKER_ARCH: "arm"
+    <<: *docker-setup
+    steps:
+      - decode-keystore
+      - base-steps-for-tag
+      - fix-symlink
+      - run:
+          name: prepare build flags
+          command: scripts/prepare_release_folders_from_tag.sh $CIRCLE_TAG
+      - run: 
+          name: Build arm monochrome
+          command: autoninja -C out/release_arm monochrome_public_bundle
+      - run: 
+          name: sign artefact
+          command: scripts/sign_artefact_for_tag_and_arch.sh $CIRCLE_TAG arm
+      - store_artifacts:
+          path: out/upload
+      - persist_to_workspace:
+          root: /home/circleci/project/src
+          paths:
+            - out/upload
+
+  build-playstore-x86:
+    environment:
+      DOCKER_ARCH: "x86"
+    <<: *docker-setup
+    steps:
+      - decode-keystore
+      - base-steps-for-tag
+      - fix-symlink
+      - run:
+          name: prepare build flags
+          command: scripts/prepare_release_folders_from_tag.sh $CIRCLE_TAG
+      - run: 
+          name: Build x86 monochrome
+          command: autoninja -C out/release_x86 monochrome_public_bundle
+      - run: 
+          name: sign artefact
+          command: scripts/sign_artefact_for_tag_and_arch.sh $CIRCLE_TAG x86
+      - store_artifacts:
+          path: out/upload
+      - persist_to_workspace:
+          root: /home/circleci/project/src
+          paths:
+            - out/upload
+
+  build-playstore-x64:
+    environment:
+      DOCKER_ARCH: "x64"
+    <<: *docker-setup
+    steps:
+      - decode-keystore
+      - base-steps-for-tag
+      - fix-symlink
+      - run:
+          name: prepare build flags
+          command: scripts/prepare_release_folders_from_tag.sh $CIRCLE_TAG
+      - run: 
+          name: Build x64 monochrome
+          command: autoninja -C out/release_x64 monochrome_public_bundle
+      - run: 
+          name: sign artefact
+          command: scripts/sign_artefact_for_tag_and_arch.sh $CIRCLE_TAG x64
+      - store_artifacts:
+          path: out/upload
+      - persist_to_workspace:
+          root: /home/circleci/project/src
+          paths:
+            - out/upload
+
+  upload-to-playstore:
+    macos:
+      xcode: "15.3.0"
+    resource_class: macos.m1.medium.gen1
+    working_directory: /tmp/workspace
+    steps:
+      - attach_workspace:
+          at: /tmp/workspace
+      - macos/switch-ruby:
+          version: "3.2"
+      - run:
+          name: Install bundler
+          command: bundle install    
+      - run:
+          name: Decode Playstore json key
+          command: echo "$PLAYSTORE_TOKEN" | base64 --decode > playstore_token.json
+      - run:
+          name: Upload to playstore 
+          command: |
+            IFS='_' read -ra my_array \<<< "$CIRCLE_TAG"
+            VNAME="${my_array[1]}"
+            VCODE_ARM="${my_array[2]}"
+            VCODE_X86="$((${my_array[2]} + 1))"
+            VCODE_ARM64="$((${my_array[2]} + 2))"
+            VCODE_X64="$((${my_array[2]} + 3))"
+            UPLOAD_FOLDER="/tmp/workspace/out/upload"
+            ARM_AAB="${UPLOAD_FOLDER}/arm_${VNAME}_${VCODE_ARM}_MonochromePublic.aab"
+            X86_AAB="${UPLOAD_FOLDER}/x86_${VNAME}_${VCODE_X86}_MonochromePublic.aab"
+            ARM64_AAB="${UPLOAD_FOLDER}/arm64_${VNAME}_${VCODE_ARM64}_MonochromePublic6432.aab"
+            X64_AAB="${UPLOAD_FOLDER}/x64_${VNAME}_${VCODE_X64}_MonochromePublic.aab"
+            bundle exec fastlane run supply aab_paths:"$ARM_AAB,$X86_AAB,$ARM64_AAB,$X64_AAB" package_name:"com.ecosia.android" json_key:"playstore_token.json" mapping_paths:"${ARM_AAB}.mapping.txt,${X86_AAB}.mapping.txt,${ARM64_AAB}.mapping.txt,${X64_AAB}.mapping.txt" track:"internal" release_status:"draft" 
+
+  upload-to-huawei:
+    macos:
+      xcode: "15.3.0"
+    resource_class: macos.m1.medium.gen1
+    working_directory: /tmp/workspace
+    steps:
+      - attach_workspace:
+          at: /tmp/workspace
+      - macos/switch-ruby:
+          version: "3.2"
+      - run:
+          name: Install bundler
+          command: bundle install    
+      - run:
+          name: Upload to app gallery 
+          command: |
+            IFS='_' read -ra my_array \<<< "$CIRCLE_TAG"
+            VNAME="${my_array[1]}"
+            VCODE_ARM64="$((${my_array[2]} + 2))"
+            UPLOAD_FOLDER="/tmp/workspace/out/upload"
+            export ARM64_APK="${UPLOAD_FOLDER}/arm64_${VNAME}_${VCODE_ARM64}_MonochromePublic6432.apk"
+            bundle exec fastlane ios huawei            
+
+  build-test:
+    environment:
+      DOCKER_ARCH: "arm64-debug"
+    <<: *docker-setup
+    steps:
+      - base-steps-for-branch
+      - fix-symlink
+      - run:
+          name: prepare build flags
+          command: gn gen out/debug_arm64 --args='target_cpu="arm64" target_os="android" android_channel="stable" is_debug=true is_official_build=false symbol_level=1 ffmpeg_branding="Chrome" disable_android_lint=true icu_use_data_file=false is_component_build=true rtc_build_examples=false enable_nacl=false blink_symbol_level=0 use_errorprone_java_compiler=false treat_warnings_as_errors=false'
+      - run: 
+          name: Build Ecosia Unit Tests
+          command: autoninja -C out/debug_arm64 ecosia_junit_tests
+      - run:
+          name: Run unit tests
+          command: out/debug_arm64/bin/run_ecosia_junit_tests
+          no_output_timeout: 1h
+
+  build-to-cache:
+    environment:
+      DOCKER_ARCH: "arm64-debug"
+    <<: *docker-setup
+    steps:
+      - base-steps-for-tag
+      - fix-symlink
+      - run:
+          name: prepare build flags
+          command: gn gen out/debug_arm64 --args='target_cpu="arm64" target_os="android" android_channel="stable" is_debug=true is_official_build=false symbol_level=1 ffmpeg_branding="Chrome" disable_android_lint=true icu_use_data_file=false is_component_build=true rtc_build_examples=false enable_nacl=false blink_symbol_level=0  use_errorprone_java_compiler=false'
+      - run: 
+          name: Build
+          command: autoninja -C out/debug_arm64 chrome_public_apk
+      - run:
+          name: Zip project folder
+          command: |
+            mkdir /home/circleci/src/out
+            zip -s 2g -r -y /home/circleci/src/out/chromium.zip /home/circleci/project/src
+      - store_artifacts:
+          path: /home/circleci/src/out
+
+
+workflows:
+
+  build-and-upload-to-firebase:
+    jobs:
+      - build-deploy-firebase:
+          filters:
+            branches:
+              only: 
+                - /^.*ecosia-129.0.6668.112.*/
+
+
+  build-playstore:
+    jobs:
+      - build-playstore-arm64:
+          filters:
+            branches:
+              ignore: 
+                - /.*/
+            tags:
+              only: 
+                - /^v_.*/
+                - /^.*huawei.*/
+      - build-playstore-arm:
+          filters:
+            branches:
+              ignore: 
+                - /.*/
+            tags:
+              only: /^v_.*/
+      - build-playstore-x86:
+          filters:
+            branches:
+              ignore: 
+                - /.*/
+            tags:
+              only: /^v_.*/
+      - build-playstore-x64:
+          filters:
+            branches:
+              ignore: 
+                - /.*/
+            tags:
+              only: /^v_.*/
+      - upload-to-playstore:
+          filters:
+            branches:
+              ignore: 
+                - /.*/
+            tags:
+              only: /^v_.*/
+          requires:
+            - build-playstore-arm64
+            - build-playstore-arm
+            - build-playstore-x64
+            - build-playstore-x86
+      - upload-to-huawei:
+          filters:
+            branches:
+              ignore: 
+                - /.*/
+            tags:
+              only: /^.*huawei.*/
+          requires:
+            - build-playstore-arm64
+          
+  
+  build-and-test:
+    jobs:
+      - build-test:
+          filters:
+            branches:
+              ignore: 
+                - /^.*ecosia-129.0.6668.112.*/
+
+  build-cache:
+    jobs:
+      - build-to-cache:
+          filters:
+            branches:
+              ignore: 
+                - /.*/
+            tags:
+              only: /^.*cached.*/
+
+  build-vanilla:
+    jobs:
+      - build-deploy-vanilla-firebase:
+          filters:
+            branches:
+              ignore: 
+                - /.*/
+            tags:
+              only: /^vanilla.*/

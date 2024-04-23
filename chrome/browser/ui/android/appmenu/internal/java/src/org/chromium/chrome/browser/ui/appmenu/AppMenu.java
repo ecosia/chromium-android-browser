@@ -332,7 +332,6 @@ class AppMenu implements OnItemClickListener, OnKeyListener, AppMenuClickHandler
             // https://crbug.com/1105831.
             return;
         }
-
         mSelectedItemBeforeDismiss = false;
         mMenuShownTimeMs = SystemClock.elapsedRealtime();
 

@@ -277,7 +277,7 @@ public class DisplayAgent {
             builder.setSmallIcon(smallIcon);
         } else {
             // Use resource Id as small icon, if invalid, use default Chrome icon instead.
-            int resourceId = R.drawable.ic_chrome;
+            int resourceId = R.drawable.ic_ecosia;
             if (hasSmallIcon && notificationData.icons.get(IconType.SMALL_ICON).resourceId != 0) {
                 resourceId = notificationData.icons.get(IconType.SMALL_ICON).resourceId;
             }

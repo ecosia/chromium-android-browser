@@ -11,12 +11,15 @@
 #include "base/scoped_observation.h"
 #include "components/content_settings/browser/ui/cookie_controls_controller.h"
 #include "components/content_settings/browser/ui/cookie_controls_view.h"
+//Ecosia :Cookies Headers
+#include "mojo/public/cpp/bindings/receiver.h"
+#include "services/network/public/mojom/cookie_manager.mojom.h"
 
 namespace content_settings {
 
 // Communicates between CookieControlsController (C++ backend) and PageInfoView
 // (Java UI).
-class CookieControlsBridge : public CookieControlsObserver {
+class CookieControlsBridge : public CookieControlsObserver, public network::mojom::CookieChangeListener { // Ecosia: add cookie listener interface
  public:
   // Creates a CookeControlsBridge for interaction with a
   // CookieControlsController.
@@ -56,6 +59,10 @@ class CookieControlsBridge : public CookieControlsObserver {
       JNIEnv* env,
       base::android::ScopedJavaLocalRef<jobject> jfeatures,
       TrackingProtectionFeature feature);
+      
+  // Ecosia: cookies, public methods
+  void StartObservingEcosiaCookies(JNIEnv* env);
+  void OnEcosiaCookiesChanged(std::string name, std::string value) override;  
 
   // CookieControlsObserver:
   void OnStatusChanged(
@@ -84,6 +91,17 @@ class CookieControlsBridge : public CookieControlsObserver {
   std::unique_ptr<CookieControlsController> controller_;
   base::ScopedObservation<CookieControlsController, CookieControlsObserver>
       observation_{this};
+      
+  // Ecosia: Cookies start, private methods
+  void OnEcosiaCookiesLoaded(const net::CookieList& cookie_list);
+  void FetchAllCookies();
+  // network::mojom::CookieChangeListener:
+  void OnCookieChange(const net::CookieChangeInfo& change) override;
+
+  mojo::Receiver<network::mojom::CookieChangeListener>
+      cookie_listener_receiver_{this};
+  base::WeakPtrFactory<CookieControlsBridge> weak_ptr_factory_{this};
+  // Ecosia: Cookies end
 };
 
 }  // namespace content_settings

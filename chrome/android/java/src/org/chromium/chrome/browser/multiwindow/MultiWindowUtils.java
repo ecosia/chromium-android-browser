@@ -145,8 +145,12 @@ public class MultiWindowUtils implements ActivityStateListener {
     public static boolean instanceSwitcherEnabled() {
         // Instance switcher is supported on S, and on some R platforms where the new
         // launch mode is backported.
+
+        /* Ecosia: MOB-2162 - Disable multi window support
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.R) return false;
         return true;
+		*/
+        return false;
     }
 
     /**
@@ -429,7 +433,9 @@ public class MultiWindowUtils implements ActivityStateListener {
      * @return Whether the app menu 'Manage windows' should be shown.
      */
     public static boolean shouldShowManageWindowsMenu() {
-        return getInstanceCount() > 1;
+        // Ecosia: MOB-2162 - Disable multi window support
+        //return getInstanceCount() > 1;
+        return false;
     }
 
     static boolean isRestorableInstance(int index) {

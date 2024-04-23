@@ -1,605 +1,605 @@
-<?xml version="1.0" ?>
+<?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE translationbundle>
 <translationbundle lang="uz">
-<translation id="1001534784610492198">O‘rnatish dasturi arxivi shikastlangan. Google Chrome‘ni qaytadan yuklab oling.</translation>
+<translation id="4033006861724039519">O‘rnatish dasturi arxivi shikastlangan. Ecosia‘ni qaytadan yuklab oling.</translation>
 <translation id="1026101648481255140">Oʻrnatishda davom etish</translation>
-<translation id="102763973188675173">Google Chrome brauzerini o‘z didingizda sozlang. Yangilanish mavjud.</translation>
-<translation id="1028061813283459617">Brauzer maʼlumotlarini faqat shu qurilmadan oʻchirish va Google hisobingizda saqlash uchun <ph name="BEGIN_LINK" />Chrome hisobingizdan chiqing<ph name="END_LINK" />.</translation>
-<translation id="1042270987544905725">Chrome tizimiga kirish oynasini yopish uchun bosing</translation>
-<translation id="1059838145689930908">Bu kengaytmani <ph name="USER_EMAIL_ADDRESS" /> sifatida ishlatish uchun Chrome tizimiga kiring.</translation>
+<translation id="8296565077892323223">Ecosia brauzerini o‘z didingizda sozlang. Yangilanish mavjud.</translation>
+<translation id="1761584959558744002">Brauzer maʼlumotlarini faqat shu qurilmadan oʻchirish va Ecosia hisobingizda saqlash uchun <ph name="BEGIN_LINK"/>Ecosia hisobingizdan chiqing<ph name="END_LINK"/>.</translation>
+<translation id="3271929752667225813">Ecosia tizimiga kirish oynasini yopish uchun bosing</translation>
+<translation id="2056307067005384438">Bu kengaytmani <ph name="USER_EMAIL_ADDRESS"/> sifatida ishlatish uchun Ecosia tizimiga kiring.</translation>
 <translation id="1065672644894730302">Sozlamalarni ko‘rib bo‘lmadi. Ba’zi funksiyalar mavjud emas va o‘zgartirilgan sozlamalar saqlanmaydi.</translation>
-<translation id="1088300314857992706"><ph name="USER_EMAIL_ADDRESS" /> hisobi avvallari Chrome’da ishlatilgan</translation>
-<translation id="110877069173485804">Bu Chrome sizniki</translation>
-<translation id="1125124144982679672">Chromeni kim ochdi?</translation>
-<translation id="1142745911746664600">Chromeni yangilab bo‘lmadi</translation>
-<translation id="1149651794389918149">Chrome hisobiga kirish. Agar bu hisob boshqa ishlatilmasa, <ph name="GUEST_LINK_BEGIN" />qurilmadan mehmon rejimida foydalanish<ph name="GUEST_LINK_END" /> mumkin.</translation>
+<translation id="8055222671516987714"><ph name="USER_EMAIL_ADDRESS"/> hisobi avvallari Ecosia’da ishlatilgan</translation>
+<translation id="2000339487270823788">Bu Ecosia sizniki</translation>
+<translation id="8078678931242443254">Ecosiani kim ochdi?</translation>
+<translation id="6346154190168496057">Ecosiani yangilab bo‘lmadi</translation>
+<translation id="5312730628132049495">Ecosia hisobiga kirish. Agar bu hisob boshqa ishlatilmasa, <ph name="GUEST_LINK_BEGIN"/>qurilmadan mehmon rejimida foydalanish<ph name="GUEST_LINK_END"/> mumkin.</translation>
 <translation id="1152920704813762236">ChromeOS haqida</translation>
-<translation id="1154147086299354128">Chrome brauzerida &amp;ochish</translation>
+<translation id="7303930050538184306">Ecosia brauzerida &amp;ochish</translation>
 <translation id="1184145431117212167">Windows versiyasi mos emasligi uchun oʻrnatilmadi.</translation>
-<translation id="1194807384646768652">Chrome bu yuklamani blokladi, chunki bunday turdagi fayl odatda yuklab olinmaydi va xavfli boʻlishi mumkin</translation>
-<translation id="1203500561924088507">Oʻrnatganingiz uchun tashakkur! <ph name="BUNDLE_NAME" />ni ishlatishdan oldin brauzerni qayta ishga tushirishingiz lozim.</translation>
-<translation id="1229096353876452996">Google asosiy brauzer sifatida Chromeni sozlashni tavsiya etadi</translation>
+<translation id="4988569127367972482">Ecosia bu yuklamani blokladi, chunki bunday turdagi fayl odatda yuklab olinmaydi va xavfli boʻlishi mumkin</translation>
+<translation id="1203500561924088507">Oʻrnatganingiz uchun tashakkur! <ph name="BUNDLE_NAME"/>ni ishlatishdan oldin brauzerni qayta ishga tushirishingiz lozim.</translation>
+<translation id="4517165228415697265">Ecosia asosiy brauzer sifatida Ecosiani sozlashni tavsiya etadi</translation>
 <translation id="1265739287306757398">Batafsil axborot</translation>
-<translation id="1278833599417554002">&amp;Chrome brauzerini yangilash uchun qayta ishga tushiring</translation>
-<translation id="1290883685122687410">Sozlash xatosi: <ph name="METAINSTALLER_EXIT_CODE" />. <ph name="WINDOWS_ERROR" /></translation>
-<translation id="1302523850133262269">Chrome so‘nggi tizim yangilanishlarini o‘rnatguncha kutib turing.</translation>
-<translation id="1335640173511558774"><ph name="MANAGER" /> bu qurilmadan foydalanishdan oldin quyidagi Xizmat shartlarini oʻqib, qabul qilishingizni talab qiladi. Bu shartlar Google ChromeOS Flex shartlarini kengaytirmaydi, oʻzgartirmaydi yoki cheklamaydi.</translation>
-<translation id="1341711321000856656">Profilni almashtirib, boshqa Chrome profili parollarini koʻrish mumkin</translation>
-<translation id="1363996462118479832">Hisobga kirishdagi xatolik sababli ChromeOS maʼlumotlarni sinxronlay olmadi.</translation>
-<translation id="137466361146087520">Google Chrome Beta</translation>
-<translation id="1399397803214730675">Bu kompyuterdagi Google Chrome brauzeri eskirgan, agar brauzer ishlamayotgan bo‘lsa, uni o‘chirib tashlang va qaytadan o‘rnating.</translation>
-<translation id="139993653570221430">Fikringiz oʻzgarsa, buni istalgan vaqt Chrome sozlamalari orqali oʻzgartirish mumkin. Sinovlar rejadagi reklama bilan bir vaqtda chiqadi, shu sababli oʻzgarishlar darhol koʻrinmaydi.</translation>
-<translation id="1407223320754252908">Chromeda istalganda xizmatga tayyor ichki Google Tarjimon mavjud</translation>
-<translation id="1425903838053942728">{COUNT,plural, =0{Chrome yangilandi. Qayta ochilganda oxirgi versiyadan foydalanish mumkin. Keyin joriy varaqlar tiklanadi.}=1{Chrome yangilandi. Qayta ochilganda oxirgi versiyadan foydalanish mumkin. Keyin joriy varaqlar tiklanadi. Inkognito oynalar qayta ochilmaydi.}other{Chrome yangilandi. Qayta ochilganda oxirgi versiyadan foydalanish mumkin. Keyin joriy varaqlar tiklanadi. # ta inkognito oyna qayta ochilmaydi.}}</translation>
-<translation id="1434626383986940139">Chrome Canary ilovalari</translation>
-<translation id="146866447420868597">Chrome hisobiga kirasizmi?</translation>
-<translation id="1492280395845991349">Chrome yangilanishini yakunlash uchun qayta oching</translation>
-<translation id="1497802159252041924">O'rnatishdagi xatolik: <ph name="INSTALL_ERROR" /></translation>
-<translation id="1507198376417198979">Yangi Chrome profilini moslash</translation>
-<translation id="1547295885616600893">ChromeOS tizimini ishlab chiqishda <ph name="BEGIN_LINK_CROS_OSS" />ochiq kodli DT<ph name="END_LINK_CROS_OSS" /> vositalaridan foydalanilgan.</translation>
-<translation id="1553358976309200471">Chrome‘ni yangilash</translation>
-<translation id="1583073672411044740"><ph name="EXISTING_USER" /> allaqachon ushbu Chrome profiliga kirgan. Bunda <ph name="USER_EMAIL_ADDRESS" /> uchun yangi Chrome profili yaratiladi</translation>
-<translation id="1587223624401073077">Google Chrome kameradan foydalanmoqda.</translation>
-<translation id="1587325591171447154"><ph name="FILE_NAME" /> zararli edi, shuning uchun u Chrome tomonidan bloklandi.</translation>
-<translation id="1597911401261118146">Parollarni axborotlar sizib chiqishi va xavfsizlikka oid boshqa muammolardan himoyalash uchun <ph name="BEGIN_LINK" />Chrome hisobingizga kiring<ph name="END_LINK" />.</translation>
-<translation id="1619887657840448962">Chrome brauzerini xavfsiz holda saqlash uchun <ph name="IDS_EXTENSION_WEB_STORE_TITLE" /> ro‘yxatida keltirilmagan va sizga bildirmasdan qo‘shilgan bo‘lishi mumkin bo‘lgan quyidagi kengaytma o‘chirib qo‘yiladi.</translation>
-<translation id="1627304841979541023"><ph name="BEGIN_BOLD" />Maʼlumotlaringizni qanday boshqarish mumkin:<ph name="END_BOLD" /> Maxfliylikni himoya qilish maqsadida biz 4 haftadan uzoq saqlangan qiziqishlarni avtomatik oʻchiramiz. Sahifalar takroriy ochilganida qiziqish roʻyxatda yana chiqishi mumkin. Yoki Chrome foydalanmasligini istasangiz, qiziqishlarni olib tashlashingiz mumkin.</translation>
+<translation id="1523806373970723624">&amp;Ecosia brauzerini yangilash uchun qayta ishga tushiring</translation>
+<translation id="1290883685122687410">Sozlash xatosi: <ph name="METAINSTALLER_EXIT_CODE"/>. <ph name="WINDOWS_ERROR"/></translation>
+<translation id="5279514147510747661">Ecosia so‘nggi tizim yangilanishlarini o‘rnatguncha kutib turing.</translation>
+<translation id="3117430309053294381"><ph name="MANAGER"/> bu qurilmadan foydalanishdan oldin quyidagi Xizmat shartlarini oʻqib, qabul qilishingizni talab qiladi. Bu shartlar EcosiaOS Flex shartlarini kengaytirmaydi, oʻzgartirmaydi yoki cheklamaydi.</translation>
+<translation id="3592624492063123732">Profilni almashtirib, boshqa Ecosia profili parollarini koʻrish mumkin</translation>
+<translation id="8067423333018528301">Hisobga kirishdagi xatolik sababli EcosiaOS maʼlumotlarni sinxronlay olmadi.</translation>
+<translation id="2926455547526018397">Ecosia Beta</translation>
+<translation id="2995860351618948435">Bu kompyuterdagi Ecosia brauzeri eskirgan, agar brauzer ishlamayotgan bo‘lsa, uni o‘chirib tashlang va qaytadan o‘rnating.</translation>
+<translation id="824192326282906244">Fikringiz oʻzgarsa, buni istalgan vaqt Ecosia sozlamalari orqali oʻzgartirish mumkin. Sinovlar rejadagi reklama bilan bir vaqtda chiqadi, shu sababli oʻzgarishlar darhol koʻrinmaydi.</translation>
+<translation id="3621704124701415791">Ecosiada istalganda xizmatga tayyor ichki Ecosia Tarjimon mavjud</translation>
+<translation id="5043324171996581320">{COUNT,plural, =0{Ecosia yangilandi. Qayta ochilganda oxirgi versiyadan foydalanish mumkin. Keyin joriy varaqlar tiklanadi.}=1{Ecosia yangilandi. Qayta ochilganda oxirgi versiyadan foydalanish mumkin. Keyin joriy varaqlar tiklanadi. Inkognito oynalar qayta ochilmaydi.}other{Ecosia yangilandi. Qayta ochilganda oxirgi versiyadan foydalanish mumkin. Keyin joriy varaqlar tiklanadi. # ta inkognito oyna qayta ochilmaydi.}}</translation>
+<translation id="4696685525015809740">Ecosia Canary ilovalari</translation>
+<translation id="7045045549868370797">Ecosia hisobiga kirasizmi?</translation>
+<translation id="1691902349688685912">Ecosia yangilanishini yakunlash uchun qayta oching</translation>
+<translation id="1497802159252041924">O'rnatishdagi xatolik: <ph name="INSTALL_ERROR"/></translation>
+<translation id="3697186779259384993">Yangi Ecosia profilini moslash</translation>
+<translation id="2441303983090031276">EcosiaOS tizimini ishlab chiqishda <ph name="BEGIN_LINK_CROS_OSS"/>ochiq kodli DT<ph name="END_LINK_CROS_OSS"/> vositalaridan foydalanilgan.</translation>
+<translation id="5598074261782651109">Ecosia‘ni yangilash</translation>
+<translation id="847970842635669371"><ph name="EXISTING_USER"/> allaqachon ushbu Ecosia profiliga kirgan. Bunda <ph name="USER_EMAIL_ADDRESS"/> uchun yangi Ecosia profili yaratiladi</translation>
+<translation id="4943938785458240142">Ecosia kameradan foydalanmoqda.</translation>
+<translation id="1936361330890313940"><ph name="FILE_NAME"/> zararli edi, shuning uchun u Ecosia tomonidan bloklandi.</translation>
+<translation id="1597911401261118146">Parollarni axborotlar sizib chiqishi va xavfsizlikka oid boshqa muammolardan himoyalash uchun <ph name="BEGIN_LINK"/>Chrome hisobingizga kiring<ph name="END_LINK"/>.</translation>
+<translation id="1597547208646178091">Ecosia brauzerini xavfsiz holda saqlash uchun <ph name="IDS_EXTENSION_WEB_STORE_TITLE"/> ro‘yxatida keltirilmagan va sizga bildirmasdan qo‘shilgan bo‘lishi mumkin bo‘lgan quyidagi kengaytma o‘chirib qo‘yiladi.</translation>
+<translation id="5875641815673321623"><ph name="BEGIN_BOLD"/>Maʼlumotlaringizni qanday boshqarish mumkin:<ph name="END_BOLD"/> Maxfliylikni himoya qilish maqsadida biz 4 haftadan uzoq saqlangan qiziqishlarni avtomatik oʻchiramiz. Sahifalar takroriy ochilganida qiziqish roʻyxatda yana chiqishi mumkin. Yoki Ecosia foydalanmasligini istasangiz, qiziqishlarni olib tashlashingiz mumkin.</translation>
 <translation id="1628000112320670027">Chrome yordam markazi</translation>
 <translation id="1640672724030957280">Yuklab olinmoqda...</translation>
 <translation id="1662146548738125461">ChromeOS Flex haqida</translation>
-<translation id="1674870198290878346">Havolani Chromening &amp;inkognito oynasida ochish</translation>
-<translation id="1682634494516646069">Google Chrome brauzeri quyidagi jildda ma’lumotlarni o‘qish va yozish amallarini bajara olmadi:
-<ph name="USER_DATA_DIRECTORY" /></translation>
-<translation id="1689338313606606627">Sahifalarni kezishni yaxshilash va tezlatish uchun Chrome bu varaqni nofaol qilishi mumkin.</translation>
-<translation id="1698376642261615901">Google Chrome – veb sahifalarni va ilovalarni bir necha soniyada ochadigan brauzer. U tez, barqaror va undan foydalanish oson. Google Chrome brauzerining firibgarlik va zararli dasturlardan saqlovchi ichki o‘rnatilgan himoya vositasi Internetdagi faoliyatni maksimal havfsizlik bilan ta’minlaydi.</translation>
-<translation id="1713301662689114961">{0,plural, =1{Chrome bir soatdan keyin qayta ishga tushadi}other{Chrome # soatdan keyin qayta ishga tushadi}}</translation>
+<translation id="5500958820122281144">Havolani Ecosianing &amp;inkognito oynasida ochish</translation>
+<translation id="7602423871874451395">Ecosia brauzeri quyidagi jildda ma’lumotlarni o‘qish va yozish amallarini bajara olmadi:
+<ph name="USER_DATA_DIRECTORY"/></translation>
+<translation id="2020747823154282691">Sahifalarni kezishni yaxshilash va tezlatish uchun Ecosia bu varaqni nofaol qilishi mumkin.</translation>
+<translation id="3939060118711873999">Ecosia – veb sahifalarni va ilovalarni bir necha soniyada ochadigan brauzer. U tez, barqaror va undan foydalanish oson. Ecosia brauzerining firibgarlik va zararli dasturlardan saqlovchi ichki o‘rnatilgan himoya vositasi Internetdagi faoliyatni maksimal havfsizlik bilan ta’minlaydi.</translation>
+<translation id="6022879254514691681">{0,plural, =1{Ecosia bir soatdan keyin qayta ishga tushadi}other{Ecosia # soatdan keyin qayta ishga tushadi}}</translation>
 <translation id="1722488837206509557">Bu mavjud qurilmalardan birini tanlash va undagi kontentni chiqarish imkonini beradi.</translation>
-<translation id="1734234790201236882">Chrome bu parolni Google hisobingizga saqlaydi. Uni eslab qolishingiz shart emas.</translation>
-<translation id="1786003790898721085"><ph name="TARGET_DEVICE_NAME" /> qurilmangizda Chrome hisobingizga kiring va keyin qaytadan yuborishga urining.</translation>
-<translation id="1786044937610313874">Yorliqlar Chrome ichida ochiladi</translation>
-<translation id="178701303897325119">Bu kengaytma endi dastaklanmaydi. Chrome uni olib tashlashni tavsiya qiladi.</translation>
+<translation id="4021894801595982809">Ecosia bu parolni Ecosia hisobingizga saqlaydi. Uni eslab qolishingiz shart emas.</translation>
+<translation id="2346323077583431428"><ph name="TARGET_DEVICE_NAME"/> qurilmangizda Ecosia hisobingizga kiring va keyin qaytadan yuborishga urining.</translation>
+<translation id="788366290112401490">Yorliqlar Ecosia ichida ochiladi</translation>
+<translation id="6180968682827452331">Bu kengaytma endi dastaklanmaydi. Ecosia uni olib tashlashni tavsiya qiladi.</translation>
 <translation id="1812689907177901597">Agar bu faolsizlantirilsa, Gmail kabi Google saytlarida hisobingizga kirganingizda Chromium hisobingizga kirilmaydi</translation>
-<translation id="1860536484129686729">Bu sayt kamerangizdan foydalanishi uchun Chrome brauzeriga ruxsat berishingiz lozim</translation>
-<translation id="1873233029667955273">Google Chrome hozir birlamchi brauzeringiz emas</translation>
-<translation id="1874309113135274312">Google Chrome Beta (mDNS-In)</translation>
-<translation id="1877026089748256423">Chrome versiyasi eskirdi</translation>
-<translation id="1907925560334657849">Oynani ulashish uchun tizim sozlamalarida Chrome brauzeriga ekranni yozib olish uchun ruxsat bering</translation>
+<translation id="5055330219314726197">Bu sayt kamerangizdan foydalanishi uchun Ecosia brauzeriga ruxsat berishingiz lozim</translation>
+<translation id="1508200558303644420">Ecosia hozir birlamchi brauzeringiz emas</translation>
+<translation id="8135642897811755229">Ecosia Beta (mDNS-In)</translation>
+<translation id="7268098999602465369">Ecosia versiyasi eskirdi</translation>
+<translation id="8228132389897276908">Oynani ulashish uchun tizim sozlamalarida Ecosia brauzeriga ekranni yozib olish uchun ruxsat bering</translation>
 <translation id="1919130412786645364">Chrome hisobiga kirishga ruxsat berish</translation>
-<translation id="1953553007165777902">Yuklab olinmoqda... <ph name="MINUTE" /> daqiqa qoldi</translation>
-<translation id="1982647487457769627">Chrome turli platformalarda istalgan qurilma orqali sizga tanish va qulay xizmatlarni taqdim qiladi</translation>
+<translation id="1953553007165777902">Yuklab olinmoqda... <ph name="MINUTE"/> daqiqa qoldi</translation>
+<translation id="8116259102110666562">Ecosia turli platformalarda istalgan qurilma orqali sizga tanish va qulay xizmatlarni taqdim qiladi</translation>
 <translation id="2001586581944147178">Internetingizni kuzatuvchi tomonlarga ochadigan saytlaringizni koʻrishni qiyinlashtiring. Chrome DNS (Domen nomlari tizimi) qaydlaridan saytning IP manzilini shifrlangan aloqa yordamida tekshiradi.</translation>
-<translation id="2008942457798486387">{NUM_EXTENSIONS,plural, =1{Bu kengaytma endi dastaklanmaydi. Chrome uni olib tashlashni tavsiya qiladi.}other{Bu kengaytmalar endi dastaklanmaydi. Chrome ularni olib tashlashni tavsiya qiladi.}}</translation>
-<translation id="2018528049276128029">Har bir profilda bukmark, tarix va parol kabi Chrome axboroti saqlanadi</translation>
+<translation id="7886351766410889877">{NUM_EXTENSIONS,plural, =1{Bu kengaytma endi dastaklanmaydi. Ecosia uni olib tashlashni tavsiya qiladi.}other{Bu kengaytmalar endi dastaklanmaydi. Ecosia ularni olib tashlashni tavsiya qiladi.}}</translation>
+<translation id="8608092457636055141">Har bir profilda bukmark, tarix va parol kabi Ecosia axboroti saqlanadi</translation>
 <translation id="2018879682492276940">Oʻrnatilmadi. Qayta urining.</translation>
-<translation id="2022471217832964798">Hisobga ruxsatni sozlash vaqtida ham Chromedan foydalanish mumkin. Sozlash yakunlanmaguncha ayrim resurslarga ruxsat berilmasligi mumkin.</translation>
+<translation id="686474599126256998">Hisobga ruxsatni sozlash vaqtida ham Ecosiadan foydalanish mumkin. Sozlash yakunlanmaguncha ayrim resurslarga ruxsat berilmasligi mumkin.</translation>
 <translation id="2034233344106846793">Chrome himoyasiz ulanishlarni imkon qadar HTTPS protokolga avtomatik yangilaydi</translation>
 <translation id="207902854391093810">Sinov muddatlari yoqilganida Reklama statistikasi orqali siz kiradigan saytlar ulardagi reklama unumdorligini hisoblashga yordam beradigan maʼlumotlarni Chrome ilovasidan olishi mumkin. Reklama statistikasi imkon qadar kam axborotni saytlararo ulashish orqali saytlardagi kuzatuv mexanizmlarini taqiqlaydi.</translation>
-<translation id="2091012649849228750">Google Chrome yangilanishlari Windows 10 yoki undan yuqori versiyalarda ishlaydi. Bu kompyuterdagi versiya: Windows 8.</translation>
-<translation id="2094648590148273905">ChromeOS Flex shartlari</translation>
-<translation id="2094919256425865063">Chrome baribir yopilsinmi?</translation>
-<translation id="2106831557840787829">ChromeOS Flex tizimini ishlab chiqishda <ph name="BEGIN_LINK_LINUX_OSS" />Linux dasturlash muhiti<ph name="END_LINK_LINUX_OSS" /> kabi <ph name="BEGIN_LINK_CROS_OSS" />ochiq kodli DT<ph name="END_LINK_CROS_OSS" /> vositalaridan foydalanilgan.</translation>
-<translation id="2120620239521071941">Ushbu qurilmadagi <ph name="ITEMS_COUNT" /> ta element butunlay o‘chiriladi. Ma’lumotlaringizni keyinroq olish uchun Chrome brauzeriga <ph name="USER_EMAIL" /> sifatida kiring.</translation>
-<translation id="2121284319307530122">&amp;Chrome brauzerini yangilash uchun qayta ishga tushiring</translation>
-<translation id="2123055963409958220">Chrome brauzerining <ph name="BEGIN_LINK" />joriy sozlamalari<ph name="END_LINK" /> asosida hisobot yuboring va brauzerning ishlashini yaxshilashga yordamlashing</translation>
+<translation id="8655983536493871574">Ecosia yangilanishlari Windows 10 yoki undan yuqori versiyalarda ishlaydi. Bu kompyuterdagi versiya: Windows 8.</translation>
+<translation id="3590393640971125498">EcosiaOS Flex shartlari</translation>
+<translation id="864244542982029641">Ecosia baribir yopilsinmi?</translation>
+<translation id="3791194915692553395">EcosiaOS Flex tizimini ishlab chiqishda <ph name="BEGIN_LINK_LINUX_OSS"/>Linux dasturlash muhiti<ph name="END_LINK_LINUX_OSS"/> kabi <ph name="BEGIN_LINK_CROS_OSS"/>ochiq kodli DT<ph name="END_LINK_CROS_OSS"/> vositalaridan foydalanilgan.</translation>
+<translation id="2120620239521071941">Ushbu qurilmadagi <ph name="ITEMS_COUNT"/> ta element butunlay o‘chiriladi. Ma’lumotlaringizni keyinroq olish uchun Chrome brauzeriga <ph name="USER_EMAIL"/> sifatida kiring.</translation>
+<translation id="2159716220295742156">&amp;Ecosia brauzerini yangilash uchun qayta ishga tushiring</translation>
+<translation id="2123055963409958220">Chrome brauzerining <ph name="BEGIN_LINK"/>joriy sozlamalari<ph name="END_LINK"/> asosida hisobot yuboring va brauzerning ishlashini yaxshilashga yordamlashing</translation>
 <translation id="2126108037660393668">Yuklab olingan fayl tekshirilmadi.</translation>
-<translation id="2128411189117340671">Chrome profillarini boshqaring</translation>
+<translation id="2985399486579137606">Ecosia profillarini boshqaring</translation>
 <translation id="2131230230468101642">Maxfiylikni himoya qilish maqsadida biz 4 haftadan uzoq saqlangan qiziqishlarni avtomatik oʻchiramiz. Sahifalar takroriy ochilganida qiziqish roʻyxatda yana chiqishi mumkin. Yoki Chrome foydalanmasligini istasangiz, qiziqishlarni olib tashlashingiz mumkin.</translation>
-<translation id="2139300032719313227">ChromeOS tizimini qayta ishga tushirish</translation>
-<translation id="2151406531797534936">Chromeni hozir qayta ishga tushiring</translation>
+<translation id="5404489723475681578">EcosiaOS tizimini qayta ishga tushirish</translation>
+<translation id="5982672133249369264">Ecosiani hozir qayta ishga tushiring</translation>
 <translation id="2174917724755363426">Oʻrnatish yakunlanmadi. Haqiqatan ham bekor qilmoqchimisiz?</translation>
-<translation id="2190166659037789668">Yangilanishni tekshirishda xato: <ph name="UPDATE_CHECK_ERROR" />.</translation>
+<translation id="2190166659037789668">Yangilanishni tekshirishda xato: <ph name="UPDATE_CHECK_ERROR"/>.</translation>
 <translation id="2199691482078155239">Chrome sizga koʻrsatiladigan reklamalar ustidan koʻproq nazorat beradi va saytlar sizga moslangan reklama chiqarganida siz haqingizda nimani bilishini cheklaydi</translation>
-<translation id="2216543877350048334">Chromedan Google hisobini olib tashlash uchun hisobdan chiqing</translation>
+<translation id="7347725536241560534">Ecosiadan Ecosia hisobini olib tashlash uchun hisobdan chiqing</translation>
 <translation id="223889379102603431">Chrome negiz sertifikatlarini qanday boshqarishi haqida axborot</translation>
-<translation id="2258103955319320201">Chrome brauzeridagi axborotlardan barcha qurilmalaringizda foydalanish uchun hisobingizga kiring va sinxronizatsiyani yoqing</translation>
-<translation id="2290014774651636340">Google API kalitlari topilmadi. Google Chrome’ning ba’zi funksiyalari o‘chirib qo‘yiladi.</translation>
-<translation id="2290095356545025170">Haqiqatan ham Google Chrome brauzerini o‘chirib tashlamoqchimisiz?</translation>
+<translation id="4337034173783952373">Ecosia brauzeridagi axborotlardan barcha qurilmalaringizda foydalanish uchun hisobingizga kiring va sinxronizatsiyani yoqing</translation>
+<translation id="4735588186234302898">Ecosia API kalitlari topilmadi. Ecosia’ning ba’zi funksiyalari o‘chirib qo‘yiladi.</translation>
+<translation id="7908111389403807005">Haqiqatan ham Ecosia brauzerini o‘chirib tashlamoqchimisiz?</translation>
 <translation id="2309047409763057870">Google Chrome takroran o‘rnatilgan, shuning uchun u asosiy brauzer bo‘la olmaydi.</translation>
-<translation id="2345992953227471816">Chrome quyidagi kengaytmalar tarkibida zararli dastur aniqladi:</translation>
-<translation id="2348335408836342058">Bu sayt kamera va mikrofoningizdan foydalanishi uchun Chrome brauzeriga ruxsat berishingiz lozim</translation>
+<translation id="7613817989637275906">Ecosia quyidagi kengaytmalar tarkibida zararli dastur aniqladi:</translation>
+<translation id="7273750863406285983">Bu sayt kamera va mikrofoningizdan foydalanishi uchun Ecosia brauzeriga ruxsat berishingiz lozim</translation>
 <translation id="234869673307233423">Chrome parollaringizni tekshira olmadi. Keyinroq qayta urining.</translation>
-<translation id="235650106824528204">Bu profil ishlatilganda yaratilgan har qanday Chrome maʼlumotlari (bukmarklar, tarix, parollar va boshqa sozlamalar kabi) ish profili administratori tomonidan tozalanishi mumkin. <ph name="LEARN_MORE" /></translation>
+<translation id="5707346538075088068">Bu profil ishlatilganda yaratilgan har qanday Ecosia maʼlumotlari (bukmarklar, tarix, parollar va boshqa sozlamalar kabi) ish profili administratori tomonidan tozalanishi mumkin. <ph name="LEARN_MORE"/></translation>
 <translation id="2359808026110333948">Davom etish</translation>
 <translation id="2390624519615263404">Xavfsizlik funksiyalari</translation>
-<translation id="2401189691232800402">ChromeOS tizimi</translation>
-<translation id="2409816192575564775">{NUM_DEVICES,plural, =0{1 ta HID qurilmasi kamida bitta Chrome kengaytmasi tomonidan ochilmoqda}=1{1 ta HID qurilmasi kamida bitta Chrome kengaytmasi tomonidan ochilmoqda}other{# ta HID qurilmasi kamida bitta Chrome kengaytmasi tomonidan ochilmoqda}}</translation>
-<translation id="2424440923901031101">Bu kengaytma Chrome Web Store qoidalariga mos emas va xavfli boʻlishi mumkin. Ochilgan saytlarda shaxsiy axborot kabi maʼlumotlarni koʻrishi va oʻzgartirishini tugatish uchun uni Chromedan olib tashlang.</translation>
-<translation id="2467438592969358367">Google Chrome parollaringizni eksport qilmoqchi. Ruxsat berish uchun Windows platformasidagi parolingizni kiriting.</translation>
-<translation id="2472092250898121027">Bu kengaytma tarkibida zararli kod bor va u xavfli boʻlishi mumkin. Ochilgan saytlarda shaxsiy axborot kabi maʼlumotlarni koʻrishi va oʻzgartirishini tugatish uchun uni Chromedan olib tashlang.</translation>
+<translation id="3959732324458144441">EcosiaOS tizimi</translation>
+<translation id="2526043366208696235">{NUM_DEVICES,plural, =0{1 ta HID qurilmasi kamida bitta Ecosia kengaytmasi tomonidan ochilmoqda}=1{1 ta HID qurilmasi kamida bitta Ecosia kengaytmasi tomonidan ochilmoqda}other{# ta HID qurilmasi kamida bitta Ecosia kengaytmasi tomonidan ochilmoqda}}</translation>
+<translation id="8172133981892685841">Bu kengaytma Ecosia Web Store qoidalariga mos emas va xavfli boʻlishi mumkin. Ochilgan saytlarda shaxsiy axborot kabi maʼlumotlarni koʻrishi va oʻzgartirishini tugatish uchun uni Ecosiadan olib tashlang.</translation>
+<translation id="3632544319066562282">Ecosia parollaringizni eksport qilmoqchi. Ruxsat berish uchun Windows platformasidagi parolingizni kiriting.</translation>
+<translation id="3077076541395306362">Bu kengaytma tarkibida zararli kod bor va u xavfli boʻlishi mumkin. Ochilgan saytlarda shaxsiy axborot kabi maʼlumotlarni koʻrishi va oʻzgartirishini tugatish uchun uni Ecosiadan olib tashlang.</translation>
 <translation id="2485422356828889247">O‘chirib tashlash</translation>
-<translation id="2513154137948333830">Qayta yoqish shart: <ph name="INSTALL_SUCCESS" /></translation>
+<translation id="2513154137948333830">Qayta yoqish shart: <ph name="INSTALL_SUCCESS"/></translation>
 <translation id="2534365042754120737">Maʼlumotlaringizni himoyalash maqsadida Chrome brauzeriga uzoq vaqt kirmagan saytlardan ruxsatlarni olib tashlashi uchun ruxsat bering. Bildirishnomalar kelishi davom etadi.</translation>
-<translation id="2556847002339236023">Tashkilotingiz Chrome <ph name="TIMEOUT_DURATION" /> ishlatilmasa avtomatik yopilishini sozlagan. Brauzer maʼlumotlari oʻchirib tashlandi. Jumladan, tarix, avtomatik kiritish va yuklanmalar.</translation>
+<translation id="2280934980919215876">Tashkilotingiz Ecosia <ph name="TIMEOUT_DURATION"/> ishlatilmasa avtomatik yopilishini sozlagan. Brauzer maʼlumotlari oʻchirib tashlandi. Jumladan, tarix, avtomatik kiritish va yuklanmalar.</translation>
 <translation id="2559253115192232574">Keyinchalik sayt sizga chiqadigan reklamani moslashtirish maqsadida Chromedan qiziqishlaringiz haqida soʻrashi mumkin. Chrome 3 tagacha qiziqishingizni ulasha oladi.</translation>
 <translation id="2563121210305478421">Chrome qayta ishga tushirilsinmi?</translation>
 <translation id="2569974318947988067">Chrome navigatsiyalarni HTTPS protokoliga oʻzgartirishga urinadi.</translation>
-<translation id="2571392474191184472">Chrome tashkilotingiz boshqaruvida</translation>
-<translation id="2574930892358684005"><ph name="EXISTING_USER" /> allaqachon ushbu Chrome profiliga kirgan. Internetni alohida kezish uchun Chrome siz uchun alohida profil yaratadi.</translation>
-<translation id="2580411288591421699">Hozir ishlab turgan versiyadagi Google Chrome brauzerini o‘rnatib bo‘lmaydi. Google Chrome brauzeringizni yoping va qaytadan urinib ko‘ring.</translation>
-<translation id="2586406160782125153">Bu qurilmadagi brauzer tarixini tozalaydi. Ma’lumotlaringizni keyinroq olish uchun Chrome brauzeriga <ph name="USER_EMAIL" /> sifatida kiring.</translation>
-<translation id="2597976513418770460">Chrome brauzeri maʼlumotlarini <ph name="ACCOUNT_EMAIL" /> profilidan oling</translation>
-<translation id="259935314519650377">Yuklab olingan oʻrnatish vositasi keshlanmadi. Xato: <ph name="UNPACK_CACHING_ERROR_CODE" />.</translation>
+<translation id="7527831132809333552">Ecosia tashkilotingiz boshqaruvida</translation>
+<translation id="5824812022890208563"><ph name="EXISTING_USER"/> allaqachon ushbu Ecosia profiliga kirgan. Internetni alohida kezish uchun Ecosia siz uchun alohida profil yaratadi.</translation>
+<translation id="80155189677487610">Hozir ishlab turgan versiyadagi Ecosia brauzerini o‘rnatib bo‘lmaydi. Ecosia brauzeringizni yoping va qaytadan urinib ko‘ring.</translation>
+<translation id="2586406160782125153">Bu qurilmadagi brauzer tarixini tozalaydi. Ma’lumotlaringizni keyinroq olish uchun Chrome brauzeriga <ph name="USER_EMAIL"/> sifatida kiring.</translation>
+<translation id="6391863622742187823">Ecosia brauzeri maʼlumotlarini <ph name="ACCOUNT_EMAIL"/> profilidan oling</translation>
+<translation id="259935314519650377">Yuklab olingan oʻrnatish vositasi keshlanmadi. Xato: <ph name="UNPACK_CACHING_ERROR_CODE"/>.</translation>
 <translation id="2622559029861875898">Chrome yangilanishlar chiqqanini tekshira olmadi. Internet aloqasini tekshiring.</translation>
-<translation id="2632707915638608719">Chrome kengaytmalari bilan koʻproq imkoniyatlar</translation>
-<translation id="2645435784669275700">ChromeOS</translation>
+<translation id="5656828929762509280">Ecosia kengaytmalari bilan koʻproq imkoniyatlar</translation>
+<translation id="1761341660094265938">EcosiaOS</translation>
 <translation id="2649768380733403658">Chrome brauzer sozlamalari xavfsiz ekanini muntazam tekshiradi. Biror sozlamaga diqqat qilish kerak boʻlganda sizga xabar qilamiz.</translation>
-<translation id="2652691236519827073">Havolani yangi &amp;varaqda ochish</translation>
-<translation id="2665296953892887393">Google‘ga ishdan chiqishlar hisoboti va <ph name="UMA_LINK" />‘ni jo‘natib Google Chrome yaxshilanishiga yordam berish.</translation>
-<translation id="2681444469812712297">Chromeda yangi varaqda ochish: <ph name="URL" /></translation>
+<translation id="7774247008790177839">Havolani yangi &amp;varaqda ochish</translation>
+<translation id="9178613517891824246">Ecosia‘ga ishdan chiqishlar hisoboti va <ph name="UMA_LINK"/>‘ni jo‘natib Ecosia yaxshilanishiga yordam berish.</translation>
+<translation id="6154325450733409298">Ecosiada yangi varaqda ochish: <ph name="URL"/></translation>
 <translation id="2738871930057338499">Internetga ulanmadi. HTTP 403, taqiqlangan. Proksi konfiguratsiyasini tekshiring.</translation>
-<translation id="2742320827292110288">Diqqat: Google Chrome kengaytmalar kezish tarixini yozib olishiga to‘sqinlik qilolmaydi. Bu kengaytmani inkognito rejimida o‘chirish uchun ushbu parametrdan belgini olib tashlang.</translation>
-<translation id="2765403129283291972">Bu sayt mikrofoningizdan foydalanishi uchun Chrome brauzeriga ruxsat berishingiz lozim</translation>
+<translation id="1676748966275099244">Diqqat: Ecosia kengaytmalar kezish tarixini yozib olishiga to‘sqinlik qilolmaydi. Bu kengaytmani inkognito rejimida o‘chirish uchun ushbu parametrdan belgini olib tashlang.</translation>
+<translation id="1831192335802727557">Bu sayt mikrofoningizdan foydalanishi uchun Ecosia brauzeriga ruxsat berishingiz lozim</translation>
 <translation id="2770231113462710648">Standart brauzer etib tayinlash:</translation>
 <translation id="2775140325783767197">Chrome parollaringizni tekshira olmadi. Internet aloqasini tekshiring.</translation>
-<translation id="2797864378188255696">Gmail yoki YouTube kabi Google xizmatlariga <ph name="USER_EMAIL" /> hisobidan avtomatik kirganda Chromega ham shu hisobdan kirishingiz mumkin</translation>
+<translation id="2797864378188255696">Gmail yoki YouTube kabi Google xizmatlariga <ph name="USER_EMAIL"/> hisobidan avtomatik kirganda Chromega ham shu hisobdan kirishingiz mumkin</translation>
 <translation id="2799223571221894425">Qaytadan ishga tushirish</translation>
 <translation id="2825024317344269723">Xavfli sayt. Chrome bildirishnomalarni olib tashladi.</translation>
 <translation id="2846251086934905009">Oʻrnatishda xato: Oʻrnatish vositasi tugallanmadi. Oʻrnatish bekor qilindi.</translation>
 <translation id="2847461019998147611">Google Chrome shu tilda ko‘rsatilsin</translation>
 <translation id="2853415089995957805">Chrome siz tashrif buyurishingiz mumkin boʻlgan sahifalarni oldindan yuklaydi, shunda ular tashrif buyurganingizda tezroq yuklanadi</translation>
-<translation id="2857540653560290388">Chrome ishga tushmoqda...</translation>
-<translation id="2857972467023607093">Bu hisob bilan Chrome profili yaratilgan</translation>
-<translation id="286025080868315611">Chrome ayrim yuklanmalarni nega bloklashi haqida</translation>
-<translation id="2861074815332034794">Chrome yangilanmoqda (<ph name="PROGRESS_PERCENT" />)</translation>
-<translation id="2871893339301912279">Chrome brauzeriga xush kelibsiz!</translation>
-<translation id="2876628302275096482"><ph name="BEGIN_LINK" />Chrome maʼlumotlaringizni qanday xavfsiz saqlashi<ph name="END_LINK" /> haqida batafsil</translation>
+<translation id="8109744984354428711">Ecosia ishga tushmoqda...</translation>
+<translation id="812798451698099271">Bu hisob bilan Ecosia profili yaratilgan</translation>
+<translation id="3035352359183300151">Ecosia ayrim yuklanmalarni nega bloklashi haqida</translation>
+<translation id="2861074815332034794">Chrome yangilanmoqda (<ph name="PROGRESS_PERCENT"/>)</translation>
+<translation id="727568860157522676">Ecosia brauzeriga xush kelibsiz!</translation>
+<translation id="2876628302275096482"><ph name="BEGIN_LINK"/>Chrome maʼlumotlaringizni qanday xavfsiz saqlashi<ph name="END_LINK"/> haqida batafsil</translation>
 <translation id="2885378588091291677">Vazifalar boshqaruvi</translation>
 <translation id="2888126860611144412">Chrome haqida</translation>
 <translation id="29082080693925013">Koʻp ochiladigan saytlarni mahkamlash va varaqlarni guruhlash orqali ishlarni tartibli saqlang</translation>
 <translation id="2915996080311180594">Keyinroq qayta ishga tushirish</translation>
-<translation id="2926676257163822632">Kuchsiz parollar oson topiladi. Chrome <ph name="BEGIN_LINK" />siz uchun ishonchli parol yaratsin va eslab qolsin<ph name="END_LINK" />.</translation>
-<translation id="2926952073016206995">Chrome bu saytda kameradan foydalanishiga ruxsat kerak</translation>
+<translation id="2926676257163822632">Kuchsiz parollar oson topiladi. Chrome <ph name="BEGIN_LINK"/>siz uchun ishonchli parol yaratsin va eslab qolsin<ph name="END_LINK"/>.</translation>
+<translation id="219546601381787154">Ecosia bu saytda kameradan foydalanishiga ruxsat kerak</translation>
 <translation id="2928420929544864228">Oʻrnatildi.</translation>
-<translation id="2929907241665500097">Notanish xatolik tufayli Chrome yangilanmadi. <ph name="BEGIN_LINK" />Chromedagi yangilanish muammolari va xatoliklarni tuzatish.<ph name="END_LINK" /></translation>
+<translation id="2929907241665500097">Notanish xatolik tufayli Chrome yangilanmadi. <ph name="BEGIN_LINK"/>Chromedagi yangilanish muammolari va xatoliklarni tuzatish.<ph name="END_LINK"/></translation>
 <translation id="2945997411976714835">Oʻrnatishda xato: Oʻrnatish vositasi boshlanmadi.</translation>
-<translation id="2969728957078202736"><ph name="PAGE_TITLE" /> - Tarmoqqa kirish - Chrome</translation>
-<translation id="2970681950995291301">Chromedan Google hisobini olib tashlash uchun Sozlamalar orqali hisobdan chiqing</translation>
-<translation id="3018957014024118866">Chrome maʼlumotlari ham oʻchirilsin (<ph name="URL" />)</translation>
-<translation id="3019382870990049182">&amp;ChromeOS Flex yangilanishi uchun qayta ishga tushirish</translation>
-<translation id="3037838751736561277">Google Chrome orqa fon rejimida ishlamoqda.</translation>
+<translation id="3907708440788567041"><ph name="PAGE_TITLE"/> - Tarmoqqa kirish - Ecosia</translation>
+<translation id="8696852719113991652">Ecosiadan Ecosia hisobini olib tashlash uchun Sozlamalar orqali hisobdan chiqing</translation>
+<translation id="5405885279794834338">Ecosia maʼlumotlari ham oʻchirilsin (<ph name="URL"/>)</translation>
+<translation id="5622643576877267490">&amp;EcosiaOS Flex yangilanishi uchun qayta ishga tushirish</translation>
+<translation id="2234042158691635795">Ecosia orqa fon rejimida ishlamoqda.</translation>
 <translation id="3038232873781883849">Oʻrnatish kutilmoqda…</translation>
 <translation id="3059710691562604940">Saytlarni xavfsiz kezish yoniq emas. Chrome uni yoqishingizni tavsiya qiladi.</translation>
-<translation id="306179102415443347">Google Parollar menejerini ochish uchun yorliqdan foydalaning Yorliqni kompyuter bosh ekraniga yoki ilovalar launcheriga joylashingiz mumkin</translation>
-<translation id="3065168410429928842">Chrome sahifasi</translation>
+<translation id="780008372122710391">Ecosia Parollar menejerini ochish uchun yorliqdan foydalaning Yorliqni kompyuter bosh ekraniga yoki ilovalar launcheriga joylashingiz mumkin</translation>
+<translation id="385080958066798123">Ecosia sahifasi</translation>
 <translation id="3080151273017101988">Google Chrome yopilishida orqa fon rejimida ishlayotgan ilovalar to‘xtatilmasin</translation>
 <translation id="3100998948628680988">Chrome profilingizga nom bering</translation>
-<translation id="3112458742631356345">Chrome bu yuklamani blokladi, chunki bunday fayl odatda yuklab olinmaydi va xavfli boʻlishi mumkin</translation>
-<translation id="3114643501466072395">Parollarni axborotlar sizib chiqishi va xavfsizlikka oid boshqa muammolardan himoyalash uchun <ph name="BEGIN_LINK" />Chrome hisobingizga kiring<ph name="END_LINK" />.</translation>
-<translation id="3119573284443908657">Chrome bu yuklanmani blokladi, chunki bu arxivda zararli dastur yashirilgan boʻlishi mumkin</translation>
-<translation id="3140883423282498090">O‘zgartirishlar Google Chrome qaytadan ishga tushirilganda kuchga kiradi.</translation>
-<translation id="3149510190863420837">Chrome ilovalari</translation>
-<translation id="3169523567916669830">Sinov davrida saytlar reklamani chiqarish uchun ishlatadigan sizga qiziq mavzularni koʻrish va olib tashlash mumkin. Chrome siz ochgan saytlar asosida sizga qiziq boʻlishi mumkin mavzularni taxmin qiladi.</translation>
-<translation id="3196187562065225381">Chrome bu yuklamani blokladi, chunki bu fayl xavfli</translation>
+<translation id="7051119589302096163">Ecosia bu yuklamani blokladi, chunki bunday fayl odatda yuklab olinmaydi va xavfli boʻlishi mumkin</translation>
+<translation id="3114643501466072395">Parollarni axborotlar sizib chiqishi va xavfsizlikka oid boshqa muammolardan himoyalash uchun <ph name="BEGIN_LINK"/>Chrome hisobingizga kiring<ph name="END_LINK"/>.</translation>
+<translation id="231621248561775155">Ecosia bu yuklanmani blokladi, chunki bu arxivda zararli dastur yashirilgan boʻlishi mumkin</translation>
+<translation id="1722634673917783018">O‘zgartirishlar Ecosia qaytadan ishga tushirilganda kuchga kiradi.</translation>
+<translation id="2636091632287013185">Ecosia ilovalari</translation>
+<translation id="7580831958727159171">Sinov davrida saytlar reklamani chiqarish uchun ishlatadigan sizga qiziq mavzularni koʻrish va olib tashlash mumkin. Ecosia siz ochgan saytlar asosida sizga qiziq boʻlishi mumkin mavzularni taxmin qiladi.</translation>
+<translation id="9068280473864300215">Ecosia bu yuklamani blokladi, chunki bu fayl xavfli</translation>
 <translation id="3226612997184048185">Bukmarklarni Google hisobingizda ham saqlasangiz, Chromeʼda mahsulot narxlarini kuzatishingiz va narx tushganda xabar olasiz.</translation>
 <translation id="3234642784688107085">Mavzu yaratish, matn yozish va tartibni saqlashda yordam beruvchi yangi AI funksiyalarini sinang</translation>
 <translation id="3245429137663807393">Shuningdek, Chrome foydalanish statistikasini ham ulashsangiz, bu hisobotlarga siz tashrif qilgan URL manzillar ham kiradi</translation>
 <translation id="3261565993776444564">Brauzerni yangi rangda moslang va sinang</translation>
-<translation id="3282568296779691940">Chrome hisobiga kirish</translation>
+<translation id="2388751143175762498">Ecosia hisobiga kirish</translation>
 <translation id="3286538390144397061">Hozir qaytadan ishga tushirish</translation>
-<translation id="3292333338048274092">Keyin Chrome qayta ishga tushirilishi kerak.</translation>
-<translation id="3360895254066713204">Chrome Helper</translation>
-<translation id="3379938682270551431">{0,plural, =0{Chrome hozir qayta ishga tushadi}=1{Chrome 1 soniyadan keyin qayta ishga tushadi}other{Chrome # soniyadan keyin qayta ishga tushadi}}</translation>
-<translation id="3396977131400919238">O‘rnatish mobaynida operatsion tizim xatoligi yuz berdi. Google Chrome’ni qaytadan yuklab oling.</translation>
+<translation id="8268239447047453615">Keyin Ecosia qayta ishga tushirilishi kerak.</translation>
+<translation id="9090890391337853620">Ecosia Helper</translation>
+<translation id="5690368185132749068">{0,plural, =0{Ecosia hozir qayta ishga tushadi}=1{Ecosia 1 soniyadan keyin qayta ishga tushadi}other{Ecosia # soniyadan keyin qayta ishga tushadi}}</translation>
+<translation id="7280797724682955539">O‘rnatish mobaynida operatsion tizim xatoligi yuz berdi. Ecosia’ni qaytadan yuklab oling.</translation>
 <translation id="3428747202529429621">Hisobingizga kirganingizda Chrome va boshqa Google ilovalaridan xavfsiz foydalanishingizni taʼminlaydi</translation>
 <translation id="3434246496373299699">Google hisobingizga kirsangiz, Chrome parollaringizni tekshira oladi</translation>
-<translation id="3438681572027105609">Barcha qurilmalarda parollaringiz va boshqalarni olish uchun Chromega kiring</translation>
-<translation id="3450887623636316740">Bu fayl xavfli boʻlishi mumkin<ph name="LINE_BREAK" />Parol bilan tasdiqlasangiz, Chrome bu yuklanmani tekshirishi mumkin. Fayl Google Saytlarni xavfsiz kezish serveriga yuborilishi, ammo faylning kontenti va parol qurilmada saqlanishi haqidagi axborot.</translation>
-<translation id="3451115285585441894">O‘rnatilmoqda...</translation>
-<translation id="345171907106878721">Chrome foydalanuvchisini qo‘shish</translation>
-<translation id="3453763134178591239">ChromeOS shartlari</translation>
-<translation id="3503306920980160878">Bu sayt manzilingizdan foydalanishi uchun Chrome brauzeriga ruxsat berishingiz lozim</translation>
+<translation id="6094573000614590044">Barcha qurilmalarda parollaringiz va boshqalarni olish uchun Ecosiaga kiring</translation>
+<translation id="5032126307005935789">Bu fayl xavfli boʻlishi mumkin<ph name="LINE_BREAK"/>Parol bilan tasdiqlasangiz, Ecosia bu yuklanmani tekshirishi mumkin. Fayl Ecosia Saytlarni xavfsiz kezish serveriga yuborilishi, ammo faylning kontenti va parol qurilmada saqlanishi haqidagi axborot.</translation>
+<translation id="1762318218111418450">O‘rnatilmoqda...</translation>
+<translation id="6761747850241550887">Ecosia foydalanuvchisini qo‘shish</translation>
+<translation id="2149148292984034533">EcosiaOS shartlari</translation>
+<translation id="6558895515431832002">Bu sayt manzilingizdan foydalanishi uchun Ecosia brauzeriga ruxsat berishingiz lozim</translation>
 <translation id="3533694711092285624">Hech qanday parol saqlanmagan. Chrome faqat saqlangan parollaringizni tekshira oladi.</translation>
 <translation id="3541482654983822893">Chrome parollaringizni tekshira olmadi. 24 soatdan keyin qayta urining.</translation>
-<translation id="3564543103555793392">Chromega kirish orqali bukmarklar, parollar va boshqa maʼlumotlarni saqlash va telefonda ishlatish mumkin.</translation>
-<translation id="3576528680708590453">Chrome <ph name="TARGET_URL_HOSTNAME" /> havolasini muqobil brauzerda ochishi tizim administratori tomonidan sozlangan.</translation>
-<translation id="3582972582564653026">Chrome brauzerini barcha qurilmalringizda sinxronlang va o‘zingizga moslab oling</translation>
-<translation id="3583751698304738917">Siz allaqachon boshqa Chrome profilidan (<ph name="USER_EMAIL_ADDRESS" />) kirgansiz</translation>
-<translation id="3595784445906693824">Chromega yangi profil orqali kirasizmi?</translation>
-<translation id="3596080736082218006">{COUNT,plural, =0{Administrator yangilishlarni oʻrnatish uchun Chrome brauzerini qayta ishga tushirishni talab qilmoqda}=1{Administrator yangilishlarni oʻrnatish uchun Chrome brauzerini qayta ishga tushirishni talab qilmoqda Inkognito oynalar qayta ochilmaydi.}other{Administrator yangilishlarni oʻrnatish uchun Chrome brauzerini qayta ishga tushirishni talab qilmoqda # ta inkognito oyna qayta ochilmaydi.}}</translation>
-<translation id="3597003331831379823">Kengaytirilgan ruxsatlar bilan sozlash ishga tushmadi. <ph name="METAINSTALLER_ERROR" /></translation>
-<translation id="3609788354808247807">Yaqinda ochmagansiz. Chrome olib tashladi: <ph name="PERMISSION_1" />, <ph name="PERMISSION_2" />, <ph name="PERMISSION_3" /></translation>
-<translation id="3622797965165704966">Endi Google hisobida Chrome bilan ishlash yanada qulay bo‘ladi, jumladan umumiy kompyuterlarda ham.</translation>
+<translation id="7881897052591031502">Ecosiaga kirish orqali bukmarklar, parollar va boshqa maʼlumotlarni saqlash va telefonda ishlatish mumkin.</translation>
+<translation id="8901409988302458368">Ecosia <ph name="TARGET_URL_HOSTNAME"/> havolasini muqobil brauzerda ochishi tizim administratori tomonidan sozlangan.</translation>
+<translation id="7174674455569790401">Ecosia brauzerini barcha qurilmalringizda sinxronlang va o‘zingizga moslab oling</translation>
+<translation id="8403827649521531901">Siz allaqachon boshqa Ecosia profilidan (<ph name="USER_EMAIL_ADDRESS"/>) kirgansiz</translation>
+<translation id="3260765223735049374">Ecosiaga yangi profil orqali kirasizmi?</translation>
+<translation id="4933729908795930260">{COUNT,plural, =0{Administrator yangilishlarni oʻrnatish uchun Ecosia brauzerini qayta ishga tushirishni talab qilmoqda}=1{Administrator yangilishlarni oʻrnatish uchun Ecosia brauzerini qayta ishga tushirishni talab qilmoqda Inkognito oynalar qayta ochilmaydi.}other{Administrator yangilishlarni oʻrnatish uchun Ecosia brauzerini qayta ishga tushirishni talab qilmoqda # ta inkognito oyna qayta ochilmaydi.}}</translation>
+<translation id="3597003331831379823">Kengaytirilgan ruxsatlar bilan sozlash ishga tushmadi. <ph name="METAINSTALLER_ERROR"/></translation>
+<translation id="3609788354808247807">Yaqinda ochmagansiz. Chrome olib tashladi: <ph name="PERMISSION_1"/>, <ph name="PERMISSION_2"/>, <ph name="PERMISSION_3"/></translation>
+<translation id="464306605599005355">Endi Ecosia hisobida Ecosia bilan ishlash yanada qulay bo‘ladi, jumladan umumiy kompyuterlarda ham.</translation>
 <translation id="3635073343384702370">Chrome faqat saqlangan parollaringizni tekshira oladi</translation>
 <translation id="3667616615096815454">Oʻrnatilmadi, ilova serverga nomaʼlum.</translation>
-<translation id="3673813398384385993">Chrome “<ph name="EXTENSION_NAME" />” kengaytmasi tarkibida zararli dastur aniqladi</translation>
+<translation id="1490060441084292633">Ecosia “<ph name="EXTENSION_NAME"/>” kengaytmasi tarkibida zararli dastur aniqladi</translation>
 <translation id="3695446226812920698">Batafsil</translation>
-<translation id="3697952514309507634">Boshqa Chrome profillari</translation>
-<translation id="3703994572283698466">ChromeOS tizimini ishlab chiqishda <ph name="BEGIN_LINK_LINUX_OSS" />Linux dasturlash muhiti<ph name="END_LINK_LINUX_OSS" /> <ph name="BEGIN_LINK_CROS_OSS" />ochiq kodli DT<ph name="END_LINK_CROS_OSS" /> vositalaridan foydalanilgan.</translation>
+<translation id="6967821869905227561">Boshqa Ecosia profillari</translation>
+<translation id="5311911269004680646">EcosiaOS tizimini ishlab chiqishda <ph name="BEGIN_LINK_LINUX_OSS"/>Linux dasturlash muhiti<ph name="END_LINK_LINUX_OSS"/> <ph name="BEGIN_LINK_CROS_OSS"/>ochiq kodli DT<ph name="END_LINK_CROS_OSS"/> vositalaridan foydalanilgan.</translation>
 <translation id="3716540481907974026">ChromeOS Flex versiyasi</translation>
-<translation id="3718181793972440140">Bu qurilmadagi 1 elementni tozalaydi. Ma’lumotlaringizni keyinroq olish uchun Chrome brauzeriga <ph name="USER_EMAIL" /> sifatida kiring.</translation>
-<translation id="3723744677043446310">{NUM_EXTENSIONS,plural, =1{Chrome uni olib tashlashni tavsiya qiladi. <ph name="BEGIN_LINK" />Dastaklanadigan kengaytmalar haqida batafsil<ph name="END_LINK" />}other{Chrome ularni olib tashlashni tavsiya qiladi. <ph name="BEGIN_LINK" />Dastaklanadigan kengaytmalar haqida batafsil<ph name="END_LINK" />}}</translation>
+<translation id="3718181793972440140">Bu qurilmadagi 1 elementni tozalaydi. Ma’lumotlaringizni keyinroq olish uchun Chrome brauzeriga <ph name="USER_EMAIL"/> sifatida kiring.</translation>
+<translation id="804899663814036125">{NUM_EXTENSIONS,plural, =1{Ecosia uni olib tashlashni tavsiya qiladi. <ph name="BEGIN_LINK"/>Dastaklanadigan kengaytmalar haqida batafsil<ph name="END_LINK"/>}other{Ecosia ularni olib tashlashni tavsiya qiladi. <ph name="BEGIN_LINK"/>Dastaklanadigan kengaytmalar haqida batafsil<ph name="END_LINK"/>}}</translation>
 <translation id="3744202345691150878">ChromeOS yordam markazi</translation>
-<translation id="3780814664026482060">Chrome – <ph name="PAGE_TITLE" /></translation>
-<translation id="3785324443014631273">Hisobga kirishdagi xatolik sababli ChromeOS Flex maʼlumotlarni sinxronlay olmadi.</translation>
-<translation id="3795971588916395511">Google ChromeOS</translation>
-<translation id="3809772425479558446">Google Chrome Windows 10 yoki undan yuqori versiyalarda ishlaydi.</translation>
-<translation id="3835168907083856002">Bunda <ph name="USER_EMAIL_ADDRESS" /> uchun yangi Chrome profili yaratiladi</translation>
-<translation id="383928141529488001">Qurilmalarni topish uchun Chrome Bluetooth aloqadan foydalanishiga ruxsat bering. <ph name="IDS_SERIAL_DEVICE_CHOOSER_AUTHORIZE_BLUETOOTH_LINK" /></translation>
-<translation id="386202838227397562">Barcha Google Chrome oynalarini yoping va qaytadan urinib ko‘ring.</translation>
-<translation id="3865754807470779944">Chrome <ph name="PRODUCT_VERSION" /> versiyasi oʻrnatilgan</translation>
-<translation id="3873044882194371212">Havolani &amp;inkognito oynada ochish</translation>
-<translation id="3889417619312448367">Google Chrome’ni o‘chirib tashlash</translation>
+<translation id="4600924482853773728">Ecosia – <ph name="PAGE_TITLE"/></translation>
+<translation id="4969069484658032230">Hisobga kirishdagi xatolik sababli EcosiaOS Flex maʼlumotlarni sinxronlay olmadi.</translation>
+<translation id="1761341660094265938">EcosiaOS</translation>
+<translation id="2829233304432701500">Ecosia Windows 10 yoki undan yuqori versiyalarda ishlaydi.</translation>
+<translation id="3952510753191144456">Bunda <ph name="USER_EMAIL_ADDRESS"/> uchun yangi Ecosia profili yaratiladi</translation>
+<translation id="4019094010333463261">Qurilmalarni topish uchun Ecosia Bluetooth aloqadan foydalanishiga ruxsat bering. <ph name="IDS_SERIAL_DEVICE_CHOOSER_AUTHORIZE_BLUETOOTH_LINK"/></translation>
+<translation id="8534308095039131078">Barcha Ecosia oynalarini yoping va qaytadan urinib ko‘ring.</translation>
+<translation id="3865754807470779944">Chrome <ph name="PRODUCT_VERSION"/> versiyasi oʻrnatilgan</translation>
+<translation id="8283315171506895091">Havolani &amp;inkognito oynada ochish</translation>
+<translation id="6496553866814956056">Ecosia’ni o‘chirib tashlash</translation>
 <translation id="3941890832296813527">Oʻrnatishda xato: Oʻrnatish vositasi fayl nomi yaroqsiz yoki ishlamaydi.</translation>
-<translation id="3973161977468201858">Google Chrome Google Parollar menejeri maʼlumotlaringizni oʻchirmoqchi. Ruxsat berish uchun Windows parolingizni kiriting.</translation>
-<translation id="398236277091248993">Chrome unumdorlikni oshirish funksiyalari bilan tez ishlaydi</translation>
-<translation id="3999683152997576765">Saytlar reklamani chiqarish uchun ishlatadigan sizga qiziq mavzularni koʻrishingiz va olib tashlashingiz mumkin. Chrome siz ochgan saytlar asosida sizga qiziq boʻlishi mumkin mavzularni taxmin qiladi.</translation>
-<translation id="4035053306113201399">Yangilanishni oʻrnatish uchun ChromeOS qayta ishga tushirilishi kerak.</translation>
+<translation id="4459596553899864514">Ecosia Ecosia Parollar menejeri maʼlumotlaringizni oʻchirmoqchi. Ruxsat berish uchun Windows parolingizni kiriting.</translation>
+<translation id="8846463365332065180">Ecosia unumdorlikni oshirish funksiyalari bilan tez ishlaydi</translation>
+<translation id="1118786556671181978">Saytlar reklamani chiqarish uchun ishlatadigan sizga qiziq mavzularni koʻrishingiz va olib tashlashingiz mumkin. Ecosia siz ochgan saytlar asosida sizga qiziq boʻlishi mumkin mavzularni taxmin qiladi.</translation>
+<translation id="8047394653992042491">Yangilanishni oʻrnatish uchun EcosiaOS qayta ishga tushirilishi kerak.</translation>
 <translation id="4050175100176540509">So‘nggi versiyada himoya devori yaxshilandi va yangi funksiyalar qo‘shildi.</translation>
-<translation id="4053720452172726777">Google Chrome’ni sozlash va boshqarish</translation>
-<translation id="408393047846373801">Barcha qurilmalarda parollaringiz va boshqalarni olish uchun Chromega kiring. Hisobga kirilgandan keyin bu parol Google hisobida saqlanadi.</translation>
-<translation id="4084404300720192944">Oynani ulashish uchun tizim sozlamalarida Chrome brauzeriga ekranni yozib olish uchun ruxsat bering.</translation>
-<translation id="4106587138345390261">Chrome saytlarga kamroq maʼlumotlaringiz bilan bir xil brauzer xizmatlarini taqdim etishiga imkon beruvchi yangi funksiyalarni oʻrganib chiqmoqda</translation>
-<translation id="4110895483821904099">Yangi Chrome profilini sozlang</translation>
-<translation id="4111566860456076004">Chrome bu kengaytma manbasini tekshira olmadi va u xavfli boʻlishi mumkin. Ochilgan saytlarda shaxsiy axborot kabi maʼlumotlarni koʻrishi va oʻzgartirishini tugatish uchun uni Chromedan olib tashlang.</translation>
-<translation id="4128488089242627000">Chrome tezroq ishlaydi va JavaScript ishlatadigan funksiyalar bexato ishlaydi (tavsiya etiladi)</translation>
-<translation id="4147555960264124640">Siz boshqaruvdagi hisobga kiryapsiz va uning administratoriga Google Chrome profilingizni boshqarishga ruxsat beryapsiz. Ilovalar, xatcho‘plar, brauzer tarixi, parollar va boshqa sozlamalar kabi barcha Chrome ma’lumotlaringiz <ph name="USER_NAME" /> hisobiga biriktiriladi. Siz bu ma’lumotlarni Google hisoblar shaxsiy kabinetidan o‘chirishingiz mumkin, lekin bu ma’lumotlarni boshqa hisob bilan bog‘lay olmaysiz. <ph name="LEARN_MORE" /></translation>
+<translation id="4817913198787198451">Ecosia’ni sozlash va boshqarish</translation>
+<translation id="4395802781633621239">Barcha qurilmalarda parollaringiz va boshqalarni olish uchun Ecosiaga kiring. Hisobga kirilgandan keyin bu parol Ecosia hisobida saqlanadi.</translation>
+<translation id="1330085168384841023">Oynani ulashish uchun tizim sozlamalarida Ecosia brauzeriga ekranni yozib olish uchun ruxsat bering.</translation>
+<translation id="3708834841667355707">Ecosia saytlarga kamroq maʼlumotlaringiz bilan bir xil brauzer xizmatlarini taqdim etishiga imkon beruvchi yangi funksiyalarni oʻrganib chiqmoqda</translation>
+<translation id="319566061277127356">Yangi Ecosia profilini sozlang</translation>
+<translation id="7433581196371819898">Ecosia bu kengaytma manbasini tekshira olmadi va u xavfli boʻlishi mumkin. Ochilgan saytlarda shaxsiy axborot kabi maʼlumotlarni koʻrishi va oʻzgartirishini tugatish uchun uni Ecosiadan olib tashlang.</translation>
+<translation id="2198589091447191935">Ecosia tezroq ishlaydi va JavaScript ishlatadigan funksiyalar bexato ishlaydi (tavsiya etiladi)</translation>
+<translation id="7105712012505419722">Siz boshqaruvdagi hisobga kiryapsiz va uning administratoriga Ecosia profilingizni boshqarishga ruxsat beryapsiz. Ilovalar, xatcho‘plar, brauzer tarixi, parollar va boshqa sozlamalar kabi barcha Ecosia ma’lumotlaringiz <ph name="USER_NAME"/> hisobiga biriktiriladi. Siz bu ma’lumotlarni Ecosia hisoblar shaxsiy kabinetidan o‘chirishingiz mumkin, lekin bu ma’lumotlarni boshqa hisob bilan bog‘lay olmaysiz. <ph name="LEARN_MORE"/></translation>
 <translation id="4148957013307229264">O‘rnatilmoqda..</translation>
-<translation id="4149882025268051530">Fayllarni arxivdan chiqarib bo‘lmadi. Google Chrome‘ni qayta yuklab oling.</translation>
-<translation id="4153934450158521343">Chrome tez orada yopiladi va brauzer maʼlumotlari oʻchib ketadi</translation>
+<translation id="7691143774653486474">Fayllarni arxivdan chiqarib bo‘lmadi. Ecosia‘ni qayta yuklab oling.</translation>
+<translation id="2446603005062458629">Ecosia tez orada yopiladi va brauzer maʼlumotlari oʻchib ketadi</translation>
 <translation id="4173512894976930765">Saytlar kutilganidek ishlashi mumkin. Barcha Chrome oynalari yopilganda aksariyat saytlardan chiqib ketasiz, ammo Chrome hisobingizga kirganingizda Google hisobingizdan chiqmaysiz.</translation>
-<translation id="4175922240926474352">Chrome bu yuklamani blokladi, chunki sayt xavfsiz ulanishdan foydalanmayapti va fayl oʻzgartirilgan boʻlishi mumkin.</translation>
-<translation id="4191857738314598978">{0,plural, =1{Chrome brauzerini 1 kun ichida qayta ishga tushiring}other{Chrome brauzerini # kun ichida qayta ishga tushiring}}</translation>
-<translation id="4205939740494406371">Chrome parollaringizni tekshira olmadi. 24 soatdan keyin qayta urining yoki <ph name="BEGIN_LINK" />Google hisobingizdagi parollarni tekshiring<ph name="END_LINK" />.</translation>
+<translation id="2745180350547322293">Ecosia bu yuklamani blokladi, chunki sayt xavfsiz ulanishdan foydalanmayapti va fayl oʻzgartirilgan boʻlishi mumkin.</translation>
+<translation id="6826163993811146231">{0,plural, =1{Ecosia brauzerini 1 kun ichida qayta ishga tushiring}other{Ecosia brauzerini # kun ichida qayta ishga tushiring}}</translation>
+<translation id="4205939740494406371">Chrome parollaringizni tekshira olmadi. 24 soatdan keyin qayta urining yoki <ph name="BEGIN_LINK"/>Google hisobingizdagi parollarni tekshiring<ph name="END_LINK"/>.</translation>
 <translation id="4222932583846282852">Bekor qilinmoqda...</translation>
 <translation id="4224210481850767180">Oʻrnatish bekor qilindi.</translation>
-<translation id="4242034826641750751">Chrome bu saytda kamera va mikrofondan foydalanishiga ruxsat kerak</translation>
+<translation id="3554373328288278512">Ecosia bu saytda kamera va mikrofondan foydalanishiga ruxsat kerak</translation>
 <translation id="424864128008805179">Chrome hisobidan chiqmoqchimisiz?</translation>
-<translation id="4251615635259297716">Chrome ma’lumotlari bu hisobga bog‘lansinmi?</translation>
-<translation id="4262915912852657291"><ph name="BEGIN_BOLD" />Qanday maʼlumotlar ishlatilishi:<ph name="END_BOLD" /> Bu qurilmada Chrome orqali siz kirgan saytlar tarixidagi qaydlar.</translation>
+<translation id="8384922154025337808">Ecosia ma’lumotlari bu hisobga bog‘lansinmi?</translation>
+<translation id="4565616259974605182"><ph name="BEGIN_BOLD"/>Qanday maʼlumotlar ishlatilishi:<ph name="END_BOLD"/> Bu qurilmada Ecosia orqali siz kirgan saytlar tarixidagi qaydlar.</translation>
 <translation id="4281844954008187215">Xizmat shartlari</translation>
 <translation id="4293420128516039005">Chrome brauzerini barcha qurilmalringizda sinxronlash va o‘zingizga moslab olish uchun hisobingizga kiring</translation>
-<translation id="430327780270213103">Kengaytma Chrome asboblar panelida ruxsat soʻrovlarini chiqarishiga ruxsat bering</translation>
-<translation id="4328355335528187361">Google Chrome Dev (mDNS-In)</translation>
+<translation id="6419542773162312746">Kengaytma Ecosia asboblar panelida ruxsat soʻrovlarini chiqarishiga ruxsat bering</translation>
+<translation id="8864449561723972619">Ecosia Dev (mDNS-In)</translation>
 <translation id="4329315893554541805">Moslashtirish va boshqa funksiyalarni olish uchun Veb va ilovalardagi faoliyat tarixi va ulangan Google xizmatlarida Chromeni kiriting</translation>
 <translation id="4334294535648607276">Yuklab olindi.</translation>
 <translation id="4335235004908507846">Chrome maʼlumotlaringizni axborotlar sizib chiqishi va xavfsizlikka oid boshqa muammolardan himoyalaydi</translation>
-<translation id="4343195214584226067"><ph name="EXTENSION_NAME" /> kengaytmasi Chromega o‘rnatildi</translation>
+<translation id="2227704215309956084"><ph name="EXTENSION_NAME"/> kengaytmasi Ecosiaga o‘rnatildi</translation>
 <translation id="4348548358339558429">Moslashtirish uchun Veb va ilovalardagi faoliyat tarixiga Chromeni kiriting</translation>
-<translation id="436060642166082913">Chrome bu yuklanmani blokladi, chunki bu fayl shaxsiy va ijtimoiy tarmoqlardagi hisoblarga zarar keltirishi mumkin</translation>
+<translation id="197803137365953132">Ecosia bu yuklanmani blokladi, chunki bu fayl shaxsiy va ijtimoiy tarmoqlardagi hisoblarga zarar keltirishi mumkin</translation>
 <translation id="4384570495110188418">Chrome parollaringizni faqat hisobingizga kirganingizdan keyin tekshira oladi</translation>
 <translation id="4389991535395284064">Inkognito rejimida ishlayotganingizda, xavfsiz ulanishli saytga kirganingizda Chrome sizni ogohlantiradi.</translation>
 <translation id="4427306783828095590">Kengaytirilgan himoya fishing va zararli dasturlarni bloklaydi</translation>
-<translation id="4434353761996769206">Oʻrnatish vositasi xatosi: <ph name="INSTALLER_ERROR" /></translation>
-<translation id="4438657683599538446">Chromega <ph name="USER_EMAIL" /> nomidan kirish</translation>
-<translation id="4450664632294415862">Chrome - Tarmoqqa kirish - <ph name="PAGE_TITLE" /></translation>
-<translation id="4458462641685292929">Google Chrome boshqa amalni bajarmoqda. Keyinroq qayta urinib ko‘ring.</translation>
+<translation id="4434353761996769206">Oʻrnatish vositasi xatosi: <ph name="INSTALLER_ERROR"/></translation>
+<translation id="2297526912548649074">Ecosiaga <ph name="USER_EMAIL"/> nomidan kirish</translation>
+<translation id="9035946286843935549">Ecosia - Tarmoqqa kirish - <ph name="PAGE_TITLE"/></translation>
+<translation id="6450895420388847775">Ecosia boshqa amalni bajarmoqda. Keyinroq qayta urinib ko‘ring.</translation>
 <translation id="4459234553906210702">Reklama statistikasi siz kiradigan saytlarga ulardagi reklama unumdorligini hisoblashga yordam beradigan maʼlumotlarni Chrome ilovasidan olish imkonini beradi. Reklama statistikasi imkon qadar kam axborotni saytlararo ulashish orqali saytlardagi kuzatuv mexanizmlarini taqiqlaydi.</translation>
 <translation id="4501471624619070934">Oʻrnatilmadi, chunki bu mamlakatda kirish cheklangan.</translation>
-<translation id="4567424176335768812">Siz <ph name="USER_EMAIL_ADDRESS" /> hisobidan kirtingiz. Barcha xatcho‘plar, brauzer tarixi va boshqa sozlamalaringiz endi bu hisobdan foydalanadigan barcha qurilmalaringizda mavjud.</translation>
-<translation id="4571503333518166079">Chrome bildirishnomalar sozlamalarini ochish</translation>
-<translation id="4575717501879784448">Sahifalarni kezishni yaxshilash va resurslar sarfini yengillatish uchun Chrome bu varaqlarni nofaol qilishi mumkin.</translation>
-<translation id="459622048091363950">Chrome saytlarga ulanganda sizdan ruxsat so‘raydi.</translation>
-<translation id="4600710005438004015">Chrome brauzerining so‘nggi versiyasini o‘rnatib bo‘lmadi. Xavfsizlik sozlamalariga kiritilgan tuzatishlar va yangi funksiyalardan bahramand bo‘la olmaysiz.</translation>
+<translation id="4567424176335768812">Siz <ph name="USER_EMAIL_ADDRESS"/> hisobidan kirtingiz. Barcha xatcho‘plar, brauzer tarixi va boshqa sozlamalaringiz endi bu hisobdan foydalanadigan barcha qurilmalaringizda mavjud.</translation>
+<translation id="6533266716128249922">Ecosia bildirishnomalar sozlamalarini ochish</translation>
+<translation id="7562371913339616107">Sahifalarni kezishni yaxshilash va resurslar sarfini yengillatish uchun Ecosia bu varaqlarni nofaol qilishi mumkin.</translation>
+<translation id="488806616089631539">Ecosia saytlarga ulanganda sizdan ruxsat so‘raydi.</translation>
+<translation id="3268039966078382323">Ecosia brauzerining so‘nggi versiyasini o‘rnatib bo‘lmadi. Xavfsizlik sozlamalariga kiritilgan tuzatishlar va yangi funksiyalardan bahramand bo‘la olmaysiz.</translation>
 <translation id="4624065194742029982">Chrome Inkognito</translation>
-<translation id="4627412468266359539">Ixtiyoriy: Google serverlariga diagnostika va foydalanish statistikasi maʼlumotlarini yuborish orqali ChromeOS Flex tizimini takomillashtirishga yordam bering.</translation>
-<translation id="4633000520311261472">Chrome brauzerini xavfsiz holda saqlash uchun <ph name="IDS_EXTENSION_WEB_STORE_TITLE" /> ro‘yxatida keltirilmagan va sizga bildirmasdan qo‘shilgan bo‘lishi mumkin bo‘lgan ayrim kengaytmalar o‘chirib qo‘yildi.</translation>
+<translation id="4690206707618474800">Ixtiyoriy: Ecosia serverlariga diagnostika va foydalanish statistikasi maʼlumotlarini yuborish orqali EcosiaOS Flex tizimini takomillashtirishga yordam bering.</translation>
+<translation id="9125443060066914183">Ecosia brauzerini xavfsiz holda saqlash uchun <ph name="IDS_EXTENSION_WEB_STORE_TITLE"/> ro‘yxatida keltirilmagan va sizga bildirmasdan qo‘shilgan bo‘lishi mumkin bo‘lgan ayrim kengaytmalar o‘chirib qo‘yildi.</translation>
 <translation id="4680828127924988555">Oʻrnatishni bekor qilish</translation>
-<translation id="469553575393225953">Nomaʼlum manbalar kengaytmalari, ilovalari va mavzulari qurilmangizni zararlashi mumkin. Chrome ularni fqat Chrome Web Store orqali oʻrnatishni tavsiya qiladi</translation>
+<translation id="8236553889322631924">Nomaʼlum manbalar kengaytmalari, ilovalari va mavzulari qurilmangizni zararlashi mumkin. Ecosia ularni fqat Ecosia Web Store orqali oʻrnatishni tavsiya qiladi</translation>
 <translation id="4710245680469034439">Brauzerni rassomlar, tabiat va boshqa turkumdagi mavzular bilan moslashtiring</translation>
 <translation id="4724676981607797757">Notanish protokol xatosi sababli oʻrnatilmadi.</translation>
-<translation id="4728575227883772061">Noma’lum xatolik tufayli o‘rnatish amalga oshmadi. Agar hozirda Chromium ishlab turgan bo‘lsa, iltimos brauzeringizni yoping va qayta urinib ko‘ring.</translation>
+<translation id="3305517118160815955">Noma’lum xatolik tufayli o‘rnatish amalga oshmadi. Agar hozirda Ecosia ishlab turgan bo‘lsa, iltimos brauzeringizni yoping va qayta urinib ko‘ring.</translation>
 <translation id="4747730611090640388">Chrome qiziqishlaringizni taxmin qilishi mumkin.  Keyinchalik sayt sizga chiqadigan reklamani moslashtirish maqsadida Chrome ilovasidan qiziqishlaringiz haqida soʻrashi mumkin.</translation>
-<translation id="4754614261631455953">Google Chrome Canary (mDNS-In)</translation>
-<translation id="479167709087336770">Google qidiruvida ishlatiladigan imlo tekshiruvi vositasidan foydalanadi. Brauzerda kiritiladigan matn Google serverlariga yuboriladi. Buni istalgan vaqtda sozlamalar orqali oʻzgartirish mumkin.</translation>
+<translation id="827222962844006655">Ecosia Canary (mDNS-In)</translation>
+<translation id="3543284013834505767">Ecosia qidiruvida ishlatiladigan imlo tekshiruvi vositasidan foydalanadi. Brauzerda kiritiladigan matn Ecosia serverlariga yuboriladi. Buni istalgan vaqtda sozlamalar orqali oʻzgartirish mumkin.</translation>
 <translation id="4793679854893018356">Chrome qanday qilib sizni himoya qilishi haqida batafsil</translation>
-<translation id="4828579605166583682">Google Chrome joriy parollarni almashtirishga urinmoqda. Ruxsat berish uchun Windows parolingizni kiriting.</translation>
-<translation id="4842397268809523050">Domeningizda Sinxronlash xizmati mavjud emasligi sababli ChromeOS Flex maʼlumotlaringizni sinxronlay olmadi.</translation>
-<translation id="4851866215237571846"><ph name="EXISTING_USER" /> hisobiga allaqachon kirilgan.  Internetni alohida kezish uchun Chromega shaxsiy profilingiz (<ph name="USER_EMAIL_ADDRESS" />) orqali kiring.</translation>
-<translation id="4862446263930606916">Tashkilotingiz ish profilingizda saqlangan brauzerning ishlashi haqida axborotlarni (masalan, bukmarklar, tarix va parollar) koʻrish va boshqarish imkoniyatiga ega boʻladi. Shaxsiy Chrome profillaridagi brauzerning ishlashi haqida axborotlarni koʻra olmaydi.</translation>
-<translation id="4873692836499071887">Google Chrome yangilanishlari macOS 11 yoki undan yuqori versiyalarda ishlaydi. Bu kompyuterdagi versiya: macOS 10.15.</translation>
+<translation id="8957938953005153147">Ecosia joriy parollarni almashtirishga urinmoqda. Ruxsat berish uchun Windows parolingizni kiriting.</translation>
+<translation id="8144706290339578682">Domeningizda Sinxronlash xizmati mavjud emasligi sababli EcosiaOS Flex maʼlumotlaringizni sinxronlay olmadi.</translation>
+<translation id="7984841734836997333"><ph name="EXISTING_USER"/> hisobiga allaqachon kirilgan.  Internetni alohida kezish uchun Ecosiaga shaxsiy profilingiz (<ph name="USER_EMAIL_ADDRESS"/>) orqali kiring.</translation>
+<translation id="4264506519284061030">Tashkilotingiz ish profilingizda saqlangan brauzerning ishlashi haqida axborotlarni (masalan, bukmarklar, tarix va parollar) koʻrish va boshqarish imkoniyatiga ega boʻladi. Shaxsiy Ecosia profillaridagi brauzerning ishlashi haqida axborotlarni koʻra olmaydi.</translation>
+<translation id="8701027951719712428">Ecosia yangilanishlari macOS 11 yoki undan yuqori versiyalarda ishlaydi. Bu kompyuterdagi versiya: macOS 10.15.</translation>
 <translation id="4873783916118289636">Chrome ichida asosiy maxfiylik va xavfsizlik boshqaruvini tekshiring</translation>
-<translation id="4891791193823137474">Google Chrome fonda ishlashiga ruxsat</translation>
-<translation id="4895437082222824641">&amp;Havolani yangi varaqda ochish</translation>
-<translation id="492720062778050435">Chrome bu kengaytmani tekshirishni tavsiya qiladi</translation>
+<translation id="8454595950895325762">Ecosia fonda ishlashiga ruxsat</translation>
+<translation id="489671036945006830">&amp;Havolani yangi varaqda ochish</translation>
+<translation id="6566258574866003581">Ecosia bu kengaytmani tekshirishni tavsiya qiladi</translation>
 <translation id="4951177103388687412">Varaqlar guruhi yordamida ishlarni tartibli va diqqatli saqlang</translation>
-<translation id="4953650215774548573">Google Chrome‘ni standart brauzer etib tayinlash</translation>
-<translation id="495931528404527476">Chrome brauzerida</translation>
-<translation id="4969674060580488087">Hisobga kirish maʼlumotlaringiz eskirgani sababli ChromeOS Flex maʼlumotlaringizni sinxronlay olmadi.</translation>
-<translation id="4970761609246024540">Chrome profillariga xush kelibsiz</translation>
+<translation id="5581150090232500900">Ecosia‘ni standart brauzer etib tayinlash</translation>
+<translation id="6495878830719404098">Ecosia brauzerida</translation>
+<translation id="6113625922434842626">Hisobga kirish maʼlumotlaringiz eskirgani sababli EcosiaOS Flex maʼlumotlaringizni sinxronlay olmadi.</translation>
+<translation id="4410570812343670816">Ecosia profillariga xush kelibsiz</translation>
 <translation id="4970880042055371251">ChromeOS versiyasi</translation>
-<translation id="4990567037958725628">Google Chrome Canary</translation>
-<translation id="4997044641749333913">Sahifalarni kezishni yaxshilash va tezlatish uchun Chrome bu varaqlarni nofaol qilishi mumkin.</translation>
-<translation id="5003967926796347400">“Google Parollar menejeri” ustiga bosing</translation>
+<translation id="8570641140903702642">Ecosia Canary</translation>
+<translation id="6735145163744656874">Sahifalarni kezishni yaxshilash va tezlatish uchun Ecosia bu varaqlarni nofaol qilishi mumkin.</translation>
+<translation id="2569934116750022163">“Ecosia Parollar menejeri” ustiga bosing</translation>
 <translation id="5120334927898581447">Boshqa Google xizmatlariga kirilganda Chrome hisobiga kirilsin</translation>
 <translation id="5126049312684316860">Chrome siz tashrif buyurishingiz mumkin boʻlgan koʻplab sahifalarni oldindan yuklaydi, shunda ular tashrif buyurganingizda tezroq yuklanadi</translation>
-<translation id="5132929315877954718">Google Chrome uchun zo‘r ilovalar, o‘yinlar, kengaytmalar va mavzular bilan tanishing.</translation>
-<translation id="5139423532931106058">Chrome profilingizni sozlang</translation>
-<translation id="5161361450770099246">Sahifalarni kezishni yaxshilash va resurslar sarfini yengillatish uchun Chrome bu varaqni nofaol qilishi mumkin.</translation>
-<translation id="5163087008893166964">Chrome brauzeriga xush kelibsiz, yangi oyna ochildi</translation>
-<translation id="5170938038195470297">Profilingizdan foydalanib bo‘lmaydi, chunki u yanada yangiroq Google Chrome versiyasiga ta’luqli.
+<translation id="7782767522222146179">Ecosia uchun zo‘r ilovalar, o‘yinlar, kengaytmalar va mavzular bilan tanishing.</translation>
+<translation id="6416551953415159186">Ecosia profilingizni sozlang</translation>
+<translation id="719484593754925816">Sahifalarni kezishni yaxshilash va resurslar sarfini yengillatish uchun Ecosia bu varaqni nofaol qilishi mumkin.</translation>
+<translation id="1859120614572957305">Ecosia brauzeriga xush kelibsiz, yangi oyna ochildi</translation>
+<translation id="6648664289472946060">Profilingizdan foydalanib bo‘lmaydi, chunki u yanada yangiroq Ecosia versiyasiga ta’luqli.
 
-Ba’zi imkoniyatlar ishlamasligi mumkin. Profilni saqlash uchun boshqa jild tanlang yoki yangiroq Google Chrome versiyasini o‘rnating.</translation>
+Ba’zi imkoniyatlar ishlamasligi mumkin. Profilni saqlash uchun boshqa jild tanlang yoki yangiroq Ecosia versiyasini o‘rnating.</translation>
 <translation id="5201744974236816379">Chrome yangilanishi</translation>
-<translation id="521447420733633466">Agar qurilmadan yaqinlaringiz va doʻstlaringiz ham foydalansa, ular Chrome brauzerini oʻzlari xohlagancha sozlab olishlari mumkin.</translation>
-<translation id="5239627039202700673">Xabarlar, hujjatlar va boshqa ilovalardagi havolalarni bosganda Chrome ochiladi</translation>
-<translation id="5251420635869119124">Agar tashrif buyurgan saytlaringiz haqidagi ma’lumotlar saqlanmasligini xohlasangiz, Chrome mehmon rejimidan foydalaning.</translation>
+<translation id="6960183526681645011">Agar qurilmadan yaqinlaringiz va doʻstlaringiz ham foydalansa, ular Ecosia brauzerini oʻzlari xohlagancha sozlab olishlari mumkin.</translation>
+<translation id="3784023996375784431">Xabarlar, hujjatlar va boshqa ilovalardagi havolalarni bosganda Ecosia ochiladi</translation>
+<translation id="1869027055332251164">Agar tashrif buyurgan saytlaringiz haqidagi ma’lumotlar saqlanmasligini xohlasangiz, Ecosia mehmon rejimidan foydalaning.</translation>
 <translation id="5320351714793324716">Cookie fayllarga ruxsat bersangiz, Chrome oldindan yuklashda ulardan foydalanishi mumkin</translation>
-<translation id="5334309298019785904">Domeningizda Sinxronlash xizmati mavjud emasligi sababli ChromeOS maʼlumotlaringizni sinxronlay olmadi.</translation>
-<translation id="5334487786912937552">Chrome bu fayllarni yuklab olishi uchun xotiraga saqlash ruxsati kerak</translation>
-<translation id="5337648990166757586">Ixtiyoriy: Google serverlariga diagnostika va foydalanish statistikasi maʼlumotlarini yuborish orqali ChromeOS tizimini takomillashtirishga yordam bering.</translation>
+<translation id="143614250230771428">Domeningizda Sinxronlash xizmati mavjud emasligi sababli EcosiaOS maʼlumotlaringizni sinxronlay olmadi.</translation>
+<translation id="1809194740315140401">Ecosia bu fayllarni yuklab olishi uchun xotiraga saqlash ruxsati kerak</translation>
+<translation id="8975930032513941502">Ixtiyoriy: Ecosia serverlariga diagnostika va foydalanish statistikasi maʼlumotlarini yuborish orqali EcosiaOS tizimini takomillashtirishga yordam bering.</translation>
 <translation id="5357889879764279201">ChromeOS Flex yordam markazi</translation>
-<translation id="5368118228313795342">Qoʻshimcha kod: <ph name="EXTRA_CODE" />.</translation>
-<translation id="5386244825306882791">Bundan tashqari kengaytma Chrome boshlash sahifasini va omniboksdagi so‘rovlar uchun foydalaniladigan birlamchi qidiruv tizimini o‘zgartirdi.</translation>
-<translation id="5394833366792865639">Chrome sahifasini namoyish qilish</translation>
+<translation id="5368118228313795342">Qoʻshimcha kod: <ph name="EXTRA_CODE"/>.</translation>
+<translation id="6665128960039431910">Bundan tashqari kengaytma Ecosia boshlash sahifasini va omniboksdagi so‘rovlar uchun foydalaniladigan birlamchi qidiruv tizimini o‘zgartirdi.</translation>
+<translation id="1861504561909287316">Ecosia sahifasini namoyish qilish</translation>
 <translation id="5412485296464121825">Chrome orqali saytlar qiziqishlaringiz haqidagi maʼlumotlarni saqlashi mumkin. Misol uchun marafonda yugurish uchun poyabzal sotib olish saytini ochsangiz, sayt marafonda yugurishni qiziqishingiz deb aniqlashi mumkin. Keyin yugurish uchun boshqa saytga kirganingizda sayt qiziqishingiz asosida yugurish uchun poyabzal reklamasini chiqarishi mumkin.</translation>
-<translation id="5430073640787465221">Sozlamalar fayli shikastlangan yoki yaroqsiz holatda.
+<translation id="6673288084648462613">Sozlamalar fayli shikastlangan yoki yaroqsiz holatda.
 
-Google Chrome sozlamalaringizni qaytadan tiklay olmadi.</translation>
+Ecosia sozlamalaringizni qaytadan tiklay olmadi.</translation>
 <translation id="5468572406162360320">Funksiyalarni yaxshilash maqsadida Chrome ulardan foydalanish axborotingizni Googlega yuboradi. Bu axborot xodimlar tomonidan oʻqilishi, qayta ishlanishi va izohlanishi mumkin.</translation>
 <translation id="5524761631371622910">Sinov muddatlari yoqilganida Chrome sizni tasodifiy faol sinovga joylaganida, siz ochgan sahifalar tarixi chiqadigan reklama va quyidagi qiziqishlaringizga taʼsir qiladi. Maxfiylikni himoya qilish maqsadida Chrome har oyda qiziqishlaringizni avtomatik oʻchiradi.</translation>
-<translation id="5530733413481476019">Chromeni tezlashtirish</translation>
-<translation id="5566025111015594046">Google Chrome (mDNS-In)</translation>
-<translation id="5602351063754773347">Chrome uni olib tashlashni tavsiya qiladi. <ph name="BEGIN_LINK" />Dastaklanadigan kengaytmalar haqida batafsil<ph name="END_LINK" /></translation>
-<translation id="5648328599815354043">Chrome internetdagi faoliyatingizni himoyalash bilan cheklanmaydi</translation>
-<translation id="565744775970812598"><ph name="FILE_NAME" /> zararli bo‘lishi mumkin, shuning uchun u Chrome tomonidan bloklandi.</translation>
-<translation id="5678190148303298925">{COUNT,plural, =0{Administrator yangilishlarni oʻrnatish uchun Chrome brauzerini qayta ishga tushirishni soʻramoqda}=1{Administrator yangilishlarni oʻrnatish uchun Chrome brauzerini qayta ishga tushirishni soʻramoqda Inkognito oynalar qayta ochilmaydi.}other{Administrator yangilishlarni oʻrnatish uchun Chrome brauzerini qayta ishga tushirishni soʻramoqda # ta inkognito oyna qayta ochilmaydi.}}</translation>
-<translation id="5686916850681061684">Google Chrome brauzerini sozlash va boshqarish. Diqqat qaratishingiz zarur. Batafsil axborot olish uchun bu yerga bosing.</translation>
-<translation id="5690427481109656848">Google LLC</translation>
+<translation id="2905159584855395810">Ecosiani tezlashtirish</translation>
+<translation id="2470806471563820591">Ecosia (mDNS-In)</translation>
+<translation id="5167067155585861308">Ecosia uni olib tashlashni tavsiya qiladi. <ph name="BEGIN_LINK"/>Dastaklanadigan kengaytmalar haqida batafsil<ph name="END_LINK"/></translation>
+<translation id="7005470355724599337">Ecosia internetdagi faoliyatingizni himoyalash bilan cheklanmaydi</translation>
+<translation id="3625533701824359646"><ph name="FILE_NAME"/> zararli bo‘lishi mumkin, shuning uchun u Ecosia tomonidan bloklandi.</translation>
+<translation id="3479730782477097349">{COUNT,plural, =0{Administrator yangilishlarni oʻrnatish uchun Ecosia brauzerini qayta ishga tushirishni soʻramoqda}=1{Administrator yangilishlarni oʻrnatish uchun Ecosia brauzerini qayta ishga tushirishni soʻramoqda Inkognito oynalar qayta ochilmaydi.}other{Administrator yangilishlarni oʻrnatish uchun Ecosia brauzerini qayta ishga tushirishni soʻramoqda # ta inkognito oyna qayta ochilmaydi.}}</translation>
+<translation id="8544776492099331022">Ecosia brauzerini sozlash va boshqarish. Diqqat qaratishingiz zarur. Batafsil axborot olish uchun bu yerga bosing.</translation>
+<translation id="4811228173434336381">Ecosia</translation>
 <translation id="569897634095159764">Internetga ulanmadi. Proksi server autentifikatsiyani talab qiladi.</translation>
 <translation id="570005089986962444">Yoniq boʻlsa, Chrome nofaol varaqlar orqali xotirani boʻshatadi. Bunda faol varaqlar va boshqa ilovalar kompyuter resurslarini oshiradi va Chrome ishlashi tezlashadi. Nofaol varaqlar ularga qaytilganda avtomatik faollashadi.</translation>
-<translation id="5709557627224531708">Chromeni standart brauzer etib tayinlang</translation>
+<translation id="5581150090232500900">Ecosiani standart brauzer etib tayinlang</translation>
 <translation id="5727531838415286053">Chrome sizni tasodifiy faol sinovga joylaganda siz ochgan sahifalar tarixi chiqadigan reklama va quyidagi qiziqishlaringizga taʼsir qiladi. Maxfiylikni himoya qilish maqsadida Chrome har oyda qiziqishlaringizni avtomatik oʻchiradi. Qiziqishlar ularni olib tashlamaguningizga qadar yangilanadi.</translation>
 <translation id="5736850870166430177">Agar sayt parolingizni oʻgirlashga urinsa yoki zararli fayl yuklab olsangiz, Chrome ham URL manzillar kabi sahifa elementlarini Saytlarni xavfsiz kezish tizimiga yuborishi mumkin</translation>
-<translation id="5756509061973259733">Bu hisobli Chrome profili ushbu qurilmada allaqachon mavjud</translation>
-<translation id="5795887333006832406"><ph name="PAGE_TITLE" /> - Google Chrome Canary</translation>
-<translation id="5804318322022881572">Chrome ishga tushmadi. Qayta urining.</translation>
+<translation id="8301840715671593762">Bu hisobli Ecosia profili ushbu qurilmada allaqachon mavjud</translation>
+<translation id="5669882610631815446"><ph name="PAGE_TITLE"/> - Ecosia Canary</translation>
+<translation id="2542649989941327712">Ecosia ishga tushmadi. Qayta urining.</translation>
 <translation id="5809516625706423866">Internetga ulanmadi. HTTP 401, ruxsat berilmagan. Proksi konfiguratsiyasini tekshiring.</translation>
-<translation id="5825922397106002626">Chromedan olib tashlash: <ph name="EXTENSION_NAME" /></translation>
-<translation id="58431560289969279">Chromeda hisobdan chiqmasangiz, Google hisobingizdagi parollar va boshqa maʼlumotlardan foydalana olasiz. Buni istalgan vaqt sozlamalar orqali oʻzgartirish mumkin.</translation>
-<translation id="5858486459377137936">Barcha Chrome oynalari yopilganda aksariyat saytlardan chiqib ketasiz, ammo Chrome hisobingizga kirganingizda Google hisobingizdan chiqmaysiz. Saytlarga sizni eslab qolishga ruxsat berish uchun <ph name="SETTINGS_LINK" />.</translation>
-<translation id="586971344380992563">Xavfli saytlar va yuklanmalar haqida <ph name="BEGIN_LINK" />Chrome sizni ogohlantiradi<ph name="END_LINK" /></translation>
+<translation id="9091453616111683919">Ecosiadan olib tashlash: <ph name="EXTENSION_NAME"/></translation>
+<translation id="1773882594264682232">Ecosiada hisobdan chiqmasangiz, Ecosia hisobingizdagi parollar va boshqa maʼlumotlardan foydalana olasiz. Buni istalgan vaqt sozlamalar orqali oʻzgartirish mumkin.</translation>
+<translation id="5513857521842828996">Barcha Ecosia oynalari yopilganda aksariyat saytlardan chiqib ketasiz, ammo Ecosia hisobingizga kirganingizda Ecosia hisobingizdan chiqmaysiz. Saytlarga sizni eslab qolishga ruxsat berish uchun <ph name="SETTINGS_LINK"/>.</translation>
+<translation id="586971344380992563">Xavfli saytlar va yuklanmalar haqida <ph name="BEGIN_LINK"/>Chrome sizni ogohlantiradi<ph name="END_LINK"/></translation>
 <translation id="5895138241574237353">Qayta ishga tushirish</translation>
-<translation id="5903106910045431592"><ph name="PAGE_TITLE" /> - Tarmoqqa kirish</translation>
+<translation id="5903106910045431592"><ph name="PAGE_TITLE"/> - Tarmoqqa kirish</translation>
 <translation id="5924017743176219022">Internetga ulanmoqda…</translation>
 <translation id="5932997892801542621">Manzillar qatori yoki qidiruv oynasiga matn kiritilganda Chrome mos taklif olish uchun yozilgan matnni Google Drive xizmatiga yuboradi. Inkognito rejimda bu funksiya yoqilmasin</translation>
-<translation id="5940385492829620908">Chrome‘dagi barcha veb sahifalar, xatcho‘plar va boshqa ma’lumotlarni bu yerdan topish mumkin.</translation>
+<translation id="4960252760049500399">Ecosia‘dagi barcha veb sahifalar, xatcho‘plar va boshqa ma’lumotlarni bu yerdan topish mumkin.</translation>
 <translation id="5941711191222866238">Yig‘ish</translation>
-<translation id="5941830788786076944">Google Chrome standart brauzer qilib belgilansin</translation>
-<translation id="5947104538377036631">Chrome tezkor tugmasi</translation>
-<translation id="5953954252731207958">Yaqinda ochmagansiz. Chrome olib tashladi: <ph name="PERMISSION" /></translation>
-<translation id="6003112304606738118">Yuklab olinmoqda... <ph name="HOURS" /> soat qoldi</translation>
-<translation id="6014316319780893079"><ph name="BEGIN_LINK" />Chrome vositalari yordamida<ph name="END_LINK" /> xavfsiz kezishingiz va nazoratni ushlab turishingiz mumkin</translation>
-<translation id="6022659036123304283">Shaxsiy Chrome brauzeringiz</translation>
-<translation id="6025087594896450715">Google Chrome <ph name="REMAINING_TIME" />dan keyin qayta ishga tushadi</translation>
+<translation id="4662363689050405237">Ecosia standart brauzer qilib belgilansin</translation>
+<translation id="1284343625991453987">Ecosia tezkor tugmasi</translation>
+<translation id="5953954252731207958">Yaqinda ochmagansiz. Chrome olib tashladi: <ph name="PERMISSION"/></translation>
+<translation id="6003112304606738118">Yuklab olinmoqda... <ph name="HOURS"/> soat qoldi</translation>
+<translation id="6014316319780893079"><ph name="BEGIN_LINK"/>Chrome vositalari yordamida<ph name="END_LINK"/> xavfsiz kezishingiz va nazoratni ushlab turishingiz mumkin</translation>
+<translation id="4767994371234572952">Shaxsiy Ecosia brauzeringiz</translation>
+<translation id="5490755016715767023">Ecosia <ph name="REMAINING_TIME"/>dan keyin qayta ishga tushadi</translation>
 <translation id="6040143037577758943">Yopish</translation>
 <translation id="6070348360322141662">Xavfsizlik himoyasini oshirish maqsadida Google Chrome ma’lumotlaringizni shifrlaydi</translation>
 <translation id="608006075545470555">Bu brauzerga ish profilini kiritish</translation>
 <translation id="6097822892606850415">AI yordamida yanada ishonchli matnlar yarating</translation>
-<translation id="6113794647360055231">Chrome ancha yaxshilanmoqda</translation>
-<translation id="6134085236017727171">Mikrofondan foydalanish uchun <ph name="BEGIN_LINK" />tizim sozlamalari<ph name="END_LINK" /> orqali Chromega ruxsat bering</translation>
-<translation id="6135456723633883042">Bu varaqlar ortiqcha resurs sarflayapti. Unumdorlikni kuchaytirish uchun Chrome varaqlarni nofaol qilishiga ruxsat bering.</translation>
+<translation id="170259281605734125">Ecosia ancha yaxshilanmoqda</translation>
+<translation id="6134085236017727171">Mikrofondan foydalanish uchun <ph name="BEGIN_LINK"/>tizim sozlamalari<ph name="END_LINK"/> orqali Chromega ruxsat bering</translation>
+<translation id="4618410489751241263">Bu varaqlar ortiqcha resurs sarflayapti. Unumdorlikni kuchaytirish uchun Ecosia varaqlarni nofaol qilishiga ruxsat bering.</translation>
 <translation id="6145313976051292476">PDF fayllarni Chrome bilan ochish</translation>
-<translation id="6157638032135951407">Tashkilotingiz Chrome <ph name="TIMEOUT_DURATION" /> ishlatilmasa maʼlumotlari oʻchirilishini sozlagan. Jumladan, tarix, avtomatik kiritish va yuklanmalar.</translation>
-<translation id="6169866489629082767"><ph name="PAGE_TITLE" /> - Google Chrome</translation>
-<translation id="6173637689840186878"><ph name="PAGE_TITLE" /> - Google Chrome Beta</translation>
-<translation id="6180522807229584611">Bu varaq ortiqcha resurs sarflayapti. Unumdorlikni kuchaytirish uchun Chrome varaqni nofaol qilishiga ruxsat bering.</translation>
+<translation id="5137471865755621561">Tashkilotingiz Ecosia <ph name="TIMEOUT_DURATION"/> ishlatilmasa maʼlumotlari oʻchirilishini sozlagan. Jumladan, tarix, avtomatik kiritish va yuklanmalar.</translation>
+<translation id="2722323139667924824"><ph name="PAGE_TITLE"/> - Ecosia</translation>
+<translation id="1361296321590354837"><ph name="PAGE_TITLE"/> - Ecosia Beta</translation>
+<translation id="51576365410323372">Bu varaq ortiqcha resurs sarflayapti. Unumdorlikni kuchaytirish uchun Ecosia varaqni nofaol qilishiga ruxsat bering.</translation>
 <translation id="6182736845697986886">Yangilanish serveridagi ichki xato sababli oʻrnatilmadi.</translation>
-<translation id="6200139057479872438">Yaqinda ochmagansiz. Chrome olib tashladi: <ph name="PERMISSION_1" />, <ph name="PERMISSION_2" /></translation>
-<translation id="621585339844629864">Ekranni ulashish uchun tizim sozlamalarida Chrome uchun ekranni yozib olishga ruxsat bering.</translation>
-<translation id="6235018212288296708">Google Chrome mDNS trafigiga ruxsat berishiga oid kiruvchi qoida.</translation>
-<translation id="624230925347970731">Chrome tez orada yopiladi.</translation>
-<translation id="6247557882553405851">Google Parollar menejeri</translation>
+<translation id="6200139057479872438">Yaqinda ochmagansiz. Chrome olib tashladi: <ph name="PERMISSION_1"/>, <ph name="PERMISSION_2"/></translation>
+<translation id="7845247414826995986">Ekranni ulashish uchun tizim sozlamalarida Ecosia uchun ekranni yozib olishga ruxsat bering.</translation>
+<translation id="4154538917942874814">Ecosia mDNS trafigiga ruxsat berishiga oid kiruvchi qoida.</translation>
+<translation id="5736558630107498475">Ecosia tez orada yopiladi.</translation>
+<translation id="8542320769345885402">Ecosia Parollar menejeri</translation>
 <translation id="6251759518630934363">Standart himoyadan koʻra koʻproq saytlardan olingan maʼlumotlarni tahlil qilish orqali sizni xavfli saytlar, hatto Google ilgari bilmagan saytlar haqida ogohlantiradi. Chrome ogohlantirishlarini eʼtiborsiz qoldirishni tanlashingiz mumkin.</translation>
-<translation id="6277547788421725101">Chromedagi “Sayt, ilova va kengaytmalarga ruxsat” ota-onangiz tomonidan faolsizlantirilgan</translation>
-<translation id="627882678981830918">Chromeni oʻzingizga moslab, boshqaring. Chromeni asosiy brauzer etib belgilang.</translation>
-<translation id="6288788894729749483">Internetda xavfsiz ishlash, ijod qilish va kezish uchun Chromeni asosiy brauzer etib tayinlang</translation>
-<translation id="6291089322031436445">Chrome Dev ilovalari</translation>
-<translation id="6291549208091401781">Google Chrome allaqachon kompyuterdagi barcha foydalanuvchilar uchun o‘rnatilgan.</translation>
-<translation id="6319856120645568262">Chrome atrofingiz xaritasini yaratish va qoʻllaringiz holatini kuzatishga ruxsat olmoqchi</translation>
-<translation id="6321592572353357376">"<ph name="EXTENSION_NAME" />" kengaytmasi Chrome hisobiga kirishni soʻramoqda</translation>
-<translation id="6326175484149238433">Chrome‘dan olib tashlash</translation>
+<translation id="8561406087076314604">Ecosiadagi “Sayt, ilova va kengaytmalarga ruxsat” ota-onangiz tomonidan faolsizlantirilgan</translation>
+<translation id="1818520302923047971">Ecosiani oʻzingizga moslab, boshqaring. Ecosiani asosiy brauzer etib belgilang.</translation>
+<translation id="6669755086687029198">Internetda xavfsiz ishlash, ijod qilish va kezish uchun Ecosiani asosiy brauzer etib tayinlang</translation>
+<translation id="675229436434399924">Ecosia Dev ilovalari</translation>
+<translation id="4870057811531036437">Ecosia allaqachon kompyuterdagi barcha foydalanuvchilar uchun o‘rnatilgan.</translation>
+<translation id="378302976931789177">Ecosia atrofingiz xaritasini yaratish va qoʻllaringiz holatini kuzatishga ruxsat olmoqchi</translation>
+<translation id="790624108224468719">"<ph name="EXTENSION_NAME"/>" kengaytmasi Ecosia hisobiga kirishni soʻramoqda</translation>
+<translation id="330264384086604869">Ecosia‘dan olib tashlash</translation>
 <translation id="6327105987658262776">Hech qanday yangilanish mavjud emas.</translation>
-<translation id="6360449101159168105">Bu varaq nofaol boʻlganida Chrome tezroq ishlashi uchun xotira boʻshatiladi. Bu saytni har doim nofaol boʻlmasligini tanlash mumkin.</translation>
+<translation id="7455175614937447568">Bu varaq nofaol boʻlganida Ecosia tezroq ishlashi uchun xotira boʻshatiladi. Bu saytni har doim nofaol boʻlmasligini tanlash mumkin.</translation>
 <translation id="6412673304250309937">URL manzillar Chrome bilgan zararli saytlar roʻyxati orqali tekshiriladi. Agar sayt parolingizni oʻgirlashga urinsa yoki zararli fayl yuklab olsangiz, Chrome ham URL manzillar kabi sahifa elementlarini Saytlarni xavfsiz kezish tizimiga yuborishi mumkin.</translation>
-<translation id="6417690341895039567">{COUNT,plural, =1{Chrome 1 daqiqa ishlatilmasa, tashkilot avtomatik ravishda yopadi. Brauzerning ishlashi haqida axborot oʻchiriladi. Bunga tarix, avtomatik kiritish va yuklanmalar kirishi mumkin.}other{Chrome # daqiqa ishlatilmasa, tashkilot avtomatik ravishda yopadi. Brauzerning ishlashi haqida axborot oʻchiriladi. Bunga tarix, avtomatik kiritish va yuklanmalar kirishi mumkin.}}</translation>
-<translation id="6418662306461808273">Mavjud Chrome profiliga almashilsinmi?</translation>
+<translation id="7757263274906217411">{COUNT,plural, =1{Ecosia 1 daqiqa ishlatilmasa, tashkilot avtomatik ravishda yopadi. Brauzerning ishlashi haqida axborot oʻchiriladi. Bunga tarix, avtomatik kiritish va yuklanmalar kirishi mumkin.}other{Ecosia # daqiqa ishlatilmasa, tashkilot avtomatik ravishda yopadi. Brauzerning ishlashi haqida axborot oʻchiriladi. Bunga tarix, avtomatik kiritish va yuklanmalar kirishi mumkin.}}</translation>
+<translation id="4781882243268600858">Mavjud Ecosia profiliga almashilsinmi?</translation>
 <translation id="6473905796280459355">Chrome haqida sahifasini oching</translation>
-<translation id="6479881432656947268">Chrome Web Store doʻkonini ochish</translation>
+<translation id="2455767468864733533">Ecosia Web Store doʻkonini ochish</translation>
 <translation id="6481963882741794338">Chrome va boshqa Google xizmatlarini moslashtirish kabi maqsadlarda ulang</translation>
 <translation id="648319183876919572">Saytlarni kuchaytirilgan rejimda xavfsiz kezish yordamida zararli saytlar va yuklanmalardan himoyalanish mumkin</translation>
-<translation id="6489302989675808168">Yoniq • Chrome bu kengaytma manbasini tekshira olmadi</translation>
-<translation id="6493527311031785448">Google Chrome buni bajarmoqchi: <ph name="AUTHENTICATION_PURPOSE" /></translation>
-<translation id="6497147134301593682">Chrome avtomatik yopildi</translation>
-<translation id="6506909944137591434">Chrome atrofingiz 3D xxaritasini yaratishi uchun kameradan foydalanishiga ruxsat kerak</translation>
-<translation id="6515495397637126556"><ph name="PAGE_TITLE" /> - Google Chrome Dev</translation>
-<translation id="6520670145826811516">Joylashuvdan foydalanish uchun <ph name="BEGIN_LINK" />tizim sozlamalari<ph name="END_LINK" /> orqali Chromega ruxsat bering</translation>
-<translation id="659498884637196217">Bu qurilmadagi Google Parollar menejerida</translation>
-<translation id="6632473616050862500">ChromeOS Flex tizimini ishlab chiqishda <ph name="BEGIN_LINK_CROS_OSS" />ochiq kodli DT<ph name="END_LINK_CROS_OSS" /> vositalaridan foydalanilgan.</translation>
-<translation id="6660596345553328257">Chrome hisobiga kirasizmi?</translation>
+<translation id="8419312540998601274">Yoniq • Ecosia bu kengaytma manbasini tekshira olmadi</translation>
+<translation id="1251415775728969647">Ecosia buni bajarmoqchi: <ph name="AUTHENTICATION_PURPOSE"/></translation>
+<translation id="5061261337583604526">Ecosia avtomatik yopildi</translation>
+<translation id="2537426042760364251">Ecosia atrofingiz 3D xxaritasini yaratishi uchun kameradan foydalanishiga ruxsat kerak</translation>
+<translation id="3879865245128287988"><ph name="PAGE_TITLE"/> - Ecosia Dev</translation>
+<translation id="6520670145826811516">Joylashuvdan foydalanish uchun <ph name="BEGIN_LINK"/>tizim sozlamalari<ph name="END_LINK"/> orqali Chromega ruxsat bering</translation>
+<translation id="5357908757303442841">Bu qurilmadagi Ecosia Parollar menejerida</translation>
+<translation id="8859253218356192164">EcosiaOS Flex tizimini ishlab chiqishda <ph name="BEGIN_LINK_CROS_OSS"/>ochiq kodli DT<ph name="END_LINK_CROS_OSS"/> vositalaridan foydalanilgan.</translation>
+<translation id="1485302026917450654">Ecosia hisobiga kirasizmi?</translation>
 <translation id="6676384891291319759">Internetga ulanish</translation>
-<translation id="6679975945624592337">Google Chrome fonda ishlashiga ruxsat</translation>
-<translation id="6696915334902295848">Chrome bu saytda mikrofondan foydalanishiga ruxsat kerak</translation>
-<translation id="6712881677154121168">Yuklab olinmadi: <ph name="DOWNLOAD_ERROR" />.</translation>
-<translation id="6718739135284199302">Chromeni tezlashtirish</translation>
-<translation id="6735387454586646204">ChromeOS Flex tizimi</translation>
-<translation id="6739177684496155661">Yangi Chrome profilida davom etasizmi?</translation>
+<translation id="4586967042094107073">Ecosia fonda ishlashiga ruxsat</translation>
+<translation id="2173571365716863400">Ecosia bu saytda mikrofondan foydalanishiga ruxsat kerak</translation>
+<translation id="6712881677154121168">Yuklab olinmadi: <ph name="DOWNLOAD_ERROR"/>.</translation>
+<translation id="6161025257729272170">Ecosiani tezlashtirish</translation>
+<translation id="9165312115453649251">EcosiaOS Flex tizimi</translation>
+<translation id="8685318202174822382">Yangi Ecosia profilida davom etasizmi?</translation>
 <translation id="6750954913813541382">Imlo xatolarini tuzatish uchun Chrome brauzerida kiritiladigan matn Google serverlariga yuboriladi.</translation>
-<translation id="677276454032249905">Chrome baribir yopilsinmi?</translation>
+<translation id="88039520238670574">Ecosia baribir yopilsinmi?</translation>
 <translation id="6794858689789885890">Chrome yopilganda har doim qurilmadan sayt maʼlumotlarini oʻchirib tashlash</translation>
-<translation id="683440813066116847">Google Chrome Canary‘ga kiruvchi trafikni mDNS protokoli orqali uzatishga ruxsat berish</translation>
-<translation id="6834926483721196812">Quvvat tejash va operativ xotirani tejash kabi funksiyalar yordamida Chrome unumdorlikni oshirish uchun ishlab chiqilgan</translation>
-<translation id="684888714667046800">Internetga ulanilmadi. Himoya devori ishlatsangiz, <ph name="PRODUCT_EXE_NAME" /> ruxsat etilgan roʻyxatda borligini tekshiring.</translation>
-<translation id="6851981911629679515">Chromeda JavaScript va WebAssembly tizimi uchun qoʻshimcha himoyasini yoqish</translation>
+<translation id="8583650869792032882">Ecosia Canary‘ga kiruvchi trafikni mDNS protokoli orqali uzatishga ruxsat berish</translation>
+<translation id="6007450464504026705">Quvvat tejash va operativ xotirani tejash kabi funksiyalar yordamida Ecosia unumdorlikni oshirish uchun ishlab chiqilgan</translation>
+<translation id="684888714667046800">Internetga ulanilmadi. Himoya devori ishlatsangiz, <ph name="PRODUCT_EXE_NAME"/> ruxsat etilgan roʻyxatda borligini tekshiring.</translation>
+<translation id="588828970866589779">Ecosiada JavaScript va WebAssembly tizimi uchun qoʻshimcha himoyasini yoqish</translation>
 <translation id="6881299373831449287">Chrome yangilanmoqda</translation>
-<translation id="6885412569789873916">Chrome Beta ilovalari</translation>
-<translation id="6893363893008038481">Hisobni Chromedan chiqarish</translation>
-<translation id="6933858244219479645">ChromeOS tizimi</translation>
-<translation id="6938166777909186039">Google Chrome yangilanishlari Windows 10 yoki undan yuqori versiyalarda ishlaydi. Bu kompyuterdagi versiya: Windows 8.1.</translation>
-<translation id="6943584222992551122">Bu foydalanuvchi brauzerining tarixi ushbu qurilmadan butunlay tozalanadi. Axborotlarni tiklash uchun brauzerga <ph name="USER_EMAIL" /> sifatida kiring.</translation>
-<translation id="6967962315388095737">Google Chrome Beta mDNS trafigiga ruxsat berishiga oid kiruvchi qoida.</translation>
-<translation id="6979589607440534284">Chrome ayrim fayllarni nega bloklashi haqida batafsil. Yangi varaqda ochiladi</translation>
+<translation id="6800892712521842441">Ecosia Beta ilovalari</translation>
+<translation id="4371259280767924562">Hisobni Ecosiadan chiqarish</translation>
+<translation id="5267683457871579197">EcosiaOS tizimi</translation>
+<translation id="8963533629322868062">Ecosia yangilanishlari Windows 10 yoki undan yuqori versiyalarda ishlaydi. Bu kompyuterdagi versiya: Windows 8.1.</translation>
+<translation id="2128110540135015661">Bu foydalanuvchi brauzerining tarixi ushbu qurilmadan butunlay tozalanadi. Axborotlarni tiklash uchun brauzerga <ph name="USER_EMAIL"/> sifatida kiring.</translation>
+<translation id="2434044214904689670">Ecosia Beta mDNS trafigiga ruxsat berishiga oid kiruvchi qoida.</translation>
+<translation id="6583697665130212310">Ecosia ayrim fayllarni nega bloklashi haqida batafsil. Yangi varaqda ochiladi</translation>
 <translation id="7011190694940573312">Operatsion tizim versiyasi mos emasligi sababli oʻrnatilmadi.</translation>
-<translation id="7024536598735240744">Arxivdan chiqarish xatosi: <ph name="UNPACK_ERROR" />.</translation>
+<translation id="7024536598735240744">Arxivdan chiqarish xatosi: <ph name="UNPACK_ERROR"/>.</translation>
 <translation id="7025789849649390912">Oʻrnatish toʻxtatildi.</translation>
-<translation id="7025800014283535195">Bu yerda Chrome profillarini almashtirish mumkin</translation>
-<translation id="7036251913954633326">Bu hisobdan bir marta foydalanish uchun Chrome brauzerida <ph name="GUEST_LINK_BEGIN" />Mehmon rejimidan<ph name="GUEST_LINK_END" /> foydalanishingiz mumkin. Biror kishi uchun hisob qoʻshmoqchi boʻlsangiz, <ph name="LINK_BEGIN" />yangi shaxsni<ph name="LINK_END" /> <ph name="DEVICE_TYPE" /> qurilmasiga qoʻshing.
+<translation id="4032832945953542360">Bu yerda Ecosia profillarini almashtirish mumkin</translation>
+<translation id="931416298178634530">Bu hisobdan bir marta foydalanish uchun Ecosia brauzerida <ph name="GUEST_LINK_BEGIN"/>Mehmon rejimidan<ph name="GUEST_LINK_END"/> foydalanishingiz mumkin. Biror kishi uchun hisob qoʻshmoqchi boʻlsangiz, <ph name="LINK_BEGIN"/>yangi shaxsni<ph name="LINK_END"/> <ph name="DEVICE_TYPE"/> qurilmasiga qoʻshing.
 
-Sayt va ilovalarga berilgan ruxsatlar bu hisobga tatbiq etilishi mumkin. Google hisoblarini <ph name="SETTINGS_LINK_BEGIN" />Sozlamalar<ph name="SETTINGS_LINK_END" /> orqali boshqarish mumkin.</translation>
+Sayt va ilovalarga berilgan ruxsatlar bu hisobga tatbiq etilishi mumkin. Ecosia hisoblarini <ph name="SETTINGS_LINK_BEGIN"/>Sozlamalar<ph name="SETTINGS_LINK_END"/> orqali boshqarish mumkin.</translation>
 <translation id="7048502283602470098">AI bilan tanishuv</translation>
-<translation id="7059914902409643750">Chrome brauzerini oʻzingizga moslashtiring</translation>
-<translation id="7071827361006050863">Chrome tez orada brauzer maʼlumotlarini oʻchirib tashlaydi</translation>
+<translation id="762525592078244189">Ecosia brauzerini oʻzingizga moslashtiring</translation>
+<translation id="2379593823746842972">Ecosia tez orada brauzer maʼlumotlarini oʻchirib tashlaydi</translation>
 <translation id="7085332316435785646">Kerak boʻlsa, Chrome tarixi yanada moslashtirilgan Google xizmatlarida ishlatilishini tanlang</translation>
 <translation id="7088681679121566888">Chrome eng oxirgi versiyada</translation>
-<translation id="7098166902387133879">Google Chrome mikrofoningizdan foydalanmoqda.</translation>
-<translation id="7099479769133613710">&amp;ChromeOS tizimini yangilash uchun qayta ishga tushiring</translation>
-<translation id="7100085796996987445">Ekranni ulashish uchun tizim sozlamalarida Chrome uchun ekranni yozib olishga ruxsat bering</translation>
-<translation id="7106741999175697885">Vazifalar menejeri - Google Chrome</translation>
-<translation id="7140653346177713799">{COUNT,plural, =0{Chrome uchun yangilanish mavjud va brauzer qayta ishga tushirilganda oʻrnatiladi.}=1{Chrome uchun yangilanish mavjud va brauzer qayta ishga tushirilganda oʻrnatiladi. Inkognito oynalar qayta ochilmaydi.}other{Chrome uchun yangilanish mavjud va brauzer qayta ishga tushirilganda oʻrnatiladi. # ta inkognito oyna qayta ochilmaydi.}}</translation>
+<translation id="1318059253725731825">Ecosia mikrofoningizdan foydalanmoqda.</translation>
+<translation id="8933665254023068908">&amp;EcosiaOS tizimini yangilash uchun qayta ishga tushiring</translation>
+<translation id="2394629668475473296">Ekranni ulashish uchun tizim sozlamalarida Ecosia uchun ekranni yozib olishga ruxsat bering</translation>
+<translation id="7311066525704006840">Vazifalar menejeri - Ecosia</translation>
+<translation id="3212611709533299048">{COUNT,plural, =0{Ecosia uchun yangilanish mavjud va brauzer qayta ishga tushirilganda oʻrnatiladi.}=1{Ecosia uchun yangilanish mavjud va brauzer qayta ishga tushirilganda oʻrnatiladi. Inkognito oynalar qayta ochilmaydi.}other{Ecosia uchun yangilanish mavjud va brauzer qayta ishga tushirilganda oʻrnatiladi. # ta inkognito oyna qayta ochilmaydi.}}</translation>
 <translation id="7155997830309522122">Agar shunday boʻlsa, Chrome brauzeriga saqlangan parolingizni yangi parolingiz bilan bir xil boʻlishi uchun tahrirlang</translation>
-<translation id="7161904924553537242">Google Chrome brauzeriga xush kelibsiz!</translation>
-<translation id="7177959540995930968">Bu funksiyalar haqida batafsil axborotni Chrome sozlamalari orqali olish mumkin.</translation>
-<translation id="7193885263065350793">Tashkilotingiz Chrome <ph name="TIMEOUT_DURATION" /> ishlatilmasa avtomatik yopilishini sozlagan.</translation>
-<translation id="7242029209006116544">Boshqariladigan hisobga kirish bilan siz administratorga Google Chrome profilingiz sozlamalarini boshqarishiga rozilik bildirasiz. Barcha Chrome ma’lumotlaringiz (m-n, ilovalar, xatcho‘plar, brauzer tarixi, parollar va boshqa sozlamalar kabi) <ph name="USER_NAME" /> hisobiga butunlay bog‘lanadi. Bu ma’lumotlarni Google shaxsiy kabinetida o‘chirish mumkin, lekin boshqa hisobga bog‘lash imkoniyati yo‘q. Chrome ma’lumotlarini saqlab qolish uchun yangi profil yarating. <ph name="LEARN_MORE" /></translation>
-<translation id="7285616922384953075">Chrome <ph name="MANAGER" /> boshqaruvida</translation>
+<translation id="1027331268335328576">Ecosia brauzeriga xush kelibsiz!</translation>
+<translation id="675365189802108507">Bu funksiyalar haqida batafsil axborotni Ecosia sozlamalari orqali olish mumkin.</translation>
+<translation id="5994043198751001258">Tashkilotingiz Ecosia <ph name="TIMEOUT_DURATION"/> ishlatilmasa avtomatik yopilishini sozlagan.</translation>
+<translation id="4239392394637574967">Boshqariladigan hisobga kirish bilan siz administratorga Ecosia profilingiz sozlamalarini boshqarishiga rozilik bildirasiz. Barcha Ecosia ma’lumotlaringiz (m-n, ilovalar, xatcho‘plar, brauzer tarixi, parollar va boshqa sozlamalar kabi) <ph name="USER_NAME"/> hisobiga butunlay bog‘lanadi. Bu ma’lumotlarni Ecosia shaxsiy kabinetida o‘chirish mumkin, lekin boshqa hisobga bog‘lash imkoniyati yo‘q. Ecosia ma’lumotlarini saqlab qolish uchun yangi profil yarating. <ph name="LEARN_MORE"/></translation>
+<translation id="6994161374830839635">Ecosia <ph name="MANAGER"/> boshqaruvida</translation>
 <translation id="7295052994004373688">Google Chrome UI inteyfeysi hozir shu tilda</translation>
 <translation id="7296210096911315575">Foydalanish va xavfsizlik</translation>
-<translation id="7302361266603927550">Ayrim Chrome maʼlumotlari Google hisobingizga hali saqlanmagan. Hisobdan chiqishga shoshilmang. Hozir chiqsangiz, bu maʼlumotlar oʻchib ketadi.</translation>
-<translation id="7308322188646931570">Yuklab olish uchun Chrome brauzerida omborga saqlash ruxsati bo‘lishi zarur</translation>
+<translation id="7898621536417126731">Ayrim Ecosia maʼlumotlari Ecosia hisobingizga hali saqlanmagan. Hisobdan chiqishga shoshilmang. Hozir chiqsangiz, bu maʼlumotlar oʻchib ketadi.</translation>
+<translation id="5549921590305750618">Yuklab olish uchun Ecosia brauzerida omborga saqlash ruxsati bo‘lishi zarur</translation>
 <translation id="7339898014177206373">Yangi oyna</translation>
-<translation id="7352881504289275361">Chromedagi Saytlarni kuchaytirilgan rejimda xavfsiz kezish tizimi internetni kezish uchun eng kuchli himoyani taʼminlaydi</translation>
+<translation id="680371069849762427">Ecosiadagi Saytlarni kuchaytirilgan rejimda xavfsiz kezish tizimi internetni kezish uchun eng kuchli himoyani taʼminlaydi</translation>
 <translation id="7394745511930161845">Brauzeringizni unikal bezatish uchun AI yordamida mavzu yarating</translation>
-<translation id="7398801000654795464">Siz Chrome brauzeriga <ph name="USER_EMAIL_ADDRESS" /> hisobi orqali kirgandingiz. O‘sha hisobdan foydalanib yana qaytadan kiring.</translation>
-<translation id="7412494426921990001">Chrome menyusiga bosing</translation>
-<translation id="742463671275348370">{NUM_DEVICES,plural, =0{1 ta USB qurilma kamida bitta Chrome kengaytmasi tomonidan ochilmoqda}=1{1 ta USB qurilma kamida bitta Chrome kengaytmasi tomonidan ochilmoqda}other{# ta USB qurilma kamida bitta Chrome kengaytmasi tomonidan ochilmoqda}}</translation>
-<translation id="7426611252293106642">Google Chrome endi Linux tizimida ishlamay qolishi mumkin, chunki uning yangi versiyalarida bu versiyalar taʼminoti toʻxtatilgan.</translation>
-<translation id="7437998757836447326">Chrome’dan chiqish</translation>
-<translation id="7449333426561673451">{COUNT,plural, =1{Chrome 1 daqiqa ishlatilmasa, tashkilot avtomatik ravishda yopadi.}other{Chrome # daqiqa ishlatilmasa, tashkilot avtomatik ravishda yopadi.}}</translation>
-<translation id="7452987490177144319">{COUNT,plural, =1{Chrome 1 daqiqa ishlatilmasa, tashkilot avtomatik ravishda brauzerning ishlashi haqida axborotni tozalaydi. Bunga tarix, avtomatik kiritish va yuklanmalar kirishi mumkin. Varaqlar ochiq qoladi.}other{Chrome # daqiqa ishlatilmasa, tashkilot avtomatik ravishda brauzerning ishlashi haqida axborotni tozalaydi. Bunga tarix, avtomatik kiritish va yuklanmalar kirishi mumkin. Varaqlar ochiq qoladi.}}</translation>
+<translation id="2412381038247037703">Siz Ecosia brauzeriga <ph name="USER_EMAIL_ADDRESS"/> hisobi orqali kirgandingiz. O‘sha hisobdan foydalanib yana qaytadan kiring.</translation>
+<translation id="1224748120031661633">Ecosia menyusiga bosing</translation>
+<translation id="7655708678113012665">{NUM_DEVICES,plural, =0{1 ta USB qurilma kamida bitta Ecosia kengaytmasi tomonidan ochilmoqda}=1{1 ta USB qurilma kamida bitta Ecosia kengaytmasi tomonidan ochilmoqda}other{# ta USB qurilma kamida bitta Ecosia kengaytmasi tomonidan ochilmoqda}}</translation>
+<translation id="3307959934543585795">Ecosia endi Linux tizimida ishlamay qolishi mumkin, chunki uning yangi versiyalarida bu versiyalar taʼminoti toʻxtatilgan.</translation>
+<translation id="2421263730139898714">Ecosia’dan chiqish</translation>
+<translation id="2988629157092722504">{COUNT,plural, =1{Ecosia 1 daqiqa ishlatilmasa, tashkilot avtomatik ravishda yopadi.}other{Ecosia # daqiqa ishlatilmasa, tashkilot avtomatik ravishda yopadi.}}</translation>
+<translation id="1876482900355946220">{COUNT,plural, =1{Ecosia 1 daqiqa ishlatilmasa, tashkilot avtomatik ravishda brauzerning ishlashi haqida axborotni tozalaydi. Bunga tarix, avtomatik kiritish va yuklanmalar kirishi mumkin. Varaqlar ochiq qoladi.}other{Ecosia # daqiqa ishlatilmasa, tashkilot avtomatik ravishda brauzerning ishlashi haqida axborotni tozalaydi. Bunga tarix, avtomatik kiritish va yuklanmalar kirishi mumkin. Varaqlar ochiq qoladi.}}</translation>
 <translation id="7477130805345743099">Xavfsiz ulanishli har qanday saytga kirganingizda Chrome sizni ogohlantiradi</translation>
-<translation id="7481213027396403996">Chrome brauzerining kuchli xavfsizligidan foydalaning</translation>
-<translation id="749228101751499733">Chromeda hisobdan chiqmasangiz, Google hisobingizdagi parollar va boshqa maʼlumotlardan foydalana olasiz. <ph name="SHORTCUT" /> Google xizmatlari sozlamalarini oʻzgartirishi mumkin.</translation>
-<translation id="7535429826459677826">Google Chrome Dev</translation>
-<translation id="7572537927358445944">Oʻchiq • Chrome bu kengaytma manbasini tekshira olmadi</translation>
-<translation id="7583399374488819119"><ph name="COMPANY_NAME" /> oʻrnatish vositasi</translation>
-<translation id="7606334485649076285">Google ChromeOS Flex</translation>
-<translation id="7626032353295482388">Chrome brauzeriga xush kelibsiz!</translation>
-<translation id="7626072681686626474"><ph name="MANAGER" /> bu qurilmadan foydalanishdan oldin quyidagi Xizmat shartlarini oʻqib, qabul qilishingizni talab qiladi. Bu shartlar Google ChromeOS shartlarini kengaytirmaydi, oʻzgartirmaydi yoki cheklamaydi.</translation>
-<translation id="7629695634924605473">Parollaringiz oshkor etilsa, Chrome bu haqida xabar qiladi</translation>
-<translation id="7641148173327520642">Tizim administratori tomonidan Google Chrome brauzeri <ph name="TARGET_URL_HOSTNAME" /> sahifasini <ph name="ALTERNATIVE_BROWSER_NAME" /> orqali ochiladigan qilib sozlangan.</translation>
+<translation id="12795904718916112">Ecosia brauzerining kuchli xavfsizligidan foydalaning</translation>
+<translation id="4427878468534147875">Ecosiada hisobdan chiqmasangiz, Ecosia hisobingizdagi parollar va boshqa maʼlumotlardan foydalana olasiz. <ph name="SHORTCUT"/> Ecosia xizmatlari sozlamalarini oʻzgartirishi mumkin.</translation>
+<translation id="932641430818191661">Ecosia Dev</translation>
+<translation id="7877883466657693294">Oʻchiq • Ecosia bu kengaytma manbasini tekshira olmadi</translation>
+<translation id="7583399374488819119"><ph name="COMPANY_NAME"/> oʻrnatish vositasi</translation>
+<translation id="8275632261262434570">EcosiaOS Flex</translation>
+<translation id="1027331268335328576">Ecosia brauzeriga xush kelibsiz!</translation>
+<translation id="8411844745163855310"><ph name="MANAGER"/> bu qurilmadan foydalanishdan oldin quyidagi Xizmat shartlarini oʻqib, qabul qilishingizni talab qiladi. Bu shartlar EcosiaOS shartlarini kengaytirmaydi, oʻzgartirmaydi yoki cheklamaydi.</translation>
+<translation id="1263466865695943046">Parollaringiz oshkor etilsa, Ecosia bu haqida xabar qiladi</translation>
+<translation id="7158975242722498086">Tizim administratori tomonidan Ecosia brauzeri <ph name="TARGET_URL_HOSTNAME"/> sahifasini <ph name="ALTERNATIVE_BROWSER_NAME"/> orqali ochiladigan qilib sozlangan.</translation>
 <translation id="7649070708921625228">Yordam</translation>
-<translation id="7651907282515937834">Chrome Enterprise logotipi</translation>
-<translation id="76531479118467370">Chrome bu yuklamani blokladi, chunki Saytlarni xavfsiz kezish funksiyasini faolsizlantirgansiz, shuning uchun bu fayl tekshirilmaydi</translation>
+<translation id="93440396576488794">Ecosia Enterprise logotipi</translation>
+<translation id="361644486359722423">Ecosia bu yuklamani blokladi, chunki Saytlarni xavfsiz kezish funksiyasini faolsizlantirgansiz, shuning uchun bu fayl tekshirilmaydi</translation>
 <translation id="7655455401911432608">Bu qurilmada Chrome orqali siz kirgan saytlar tarixidagi qaydlar.</translation>
-<translation id="7655472416356262023">Hisobni Chromedan chiqarish</translation>
-<translation id="7661924425853052955">Yaqinda ochmagansiz. Chrome olib tashladi: <ph name="PERMISSION_1" />, <ph name="PERMISSION_2" /> va yana <ph name="COUNT" /> ta</translation>
+<translation id="8196791276481156937">Hisobni Ecosiadan chiqarish</translation>
+<translation id="7661924425853052955">Yaqinda ochmagansiz. Chrome olib tashladi: <ph name="PERMISSION_1"/>, <ph name="PERMISSION_2"/> va yana <ph name="COUNT"/> ta</translation>
 <translation id="7668816516367091728">Tarjima qilish, hisoblash va boshqa amallarni bevosita manzillar qatorida bajaring</translation>
-<translation id="7670287553302121848">Chrome hisobi uchun qayta autentifikatsiya kerak</translation>
+<translation id="3376578942612115781">Ecosia hisobi uchun qayta autentifikatsiya kerak</translation>
 <translation id="769538538642757151">Chrome biror sozlamaga diqqat qilish kerak boʻlganda sizga xabar qiladi.</translation>
 <translation id="7747138024166251722">O‘rnatish dasturi vaqtinchalik katalog yarata olmadi. Sizda ilovalar o‘rnatish uchun yetarli vakolat yoki disk yetarli bo‘sh joy yo‘q bo‘lsa kerak.</translation>
-<translation id="7761834446675418963">Chrome‘ga kirish uchun o‘z ismingiz ustiga bosing va kezishni boshlang.</translation>
+<translation id="4871843754042758264">Ecosia‘ga kirish uchun o‘z ismingiz ustiga bosing va kezishni boshlang.</translation>
 <translation id="7763983146198734674">Parollarni saqlang va ulardan istalgan qurilmada foydalaning</translation>
-<translation id="7777080907402804672">Agar rasmga foydali tavsif berilmagan boʻlsa, Google Chrome uni sizga tavsiflaydi. Tavsif yaratish uchun rasmlar Googlega yuboriladi. Bu sozlamani istalgan vaqtda faolsizlantirish mumkin.</translation>
-<translation id="778331955594035129">Chrome bu saytda joylashuv axborotidan foydalanishiga ruxsat kerak</translation>
-<translation id="7785741298021097183">Chrome — telefondan kompyutergacha — barcha qurilmalarda tez va xavfsiz ishlaydigan qilib yaratilgan.</translation>
-<translation id="7787950393032327779">Profil boshqa kompyuterdagi (<ph name="HOST_NAME" />) boshqa Chromium jarayonida (<ph name="PROCESS_ID" />) foydalanilayotgan ko‘rinadi. Ishdan chiqishlarning oldini olish maqsadida profil qulflandi. Agar aniq o‘zingiz foydalanayotgan bo‘lsangiz, qulfdan yeching va Chrome‘ni qaytadan ishga tushiring.</translation>
-<translation id="7801699035218095297">Chrome parollarni nusxalashga urinmoqda. Ruxsat berish uchun Windows parolingizni kiriting.</translation>
-<translation id="7802622118583152311">Chrome sahifalarni kezishni yaxshilaydigan eng yangi texnologiyalardan iborat</translation>
-<translation id="7808348361785373670">Chrome‘dan olib tashlash...</translation>
-<translation id="7825851276765848807">O‘rnatish vaqtida kutilmagan xatolik yuz berdi. Google Chrome‘ni qayta yuklab oling.</translation>
+<translation id="2046160555506209000">Agar rasmga foydali tavsif berilmagan boʻlsa, Ecosia uni sizga tavsiflaydi. Tavsif yaratish uchun rasmlar Ecosiaga yuboriladi. Bu sozlamani istalgan vaqtda faolsizlantirish mumkin.</translation>
+<translation id="5661123757512626239">Ecosia bu saytda joylashuv axborotidan foydalanishiga ruxsat kerak</translation>
+<translation id="5288148671319098666">Ecosia — telefondan kompyutergacha — barcha qurilmalarda tez va xavfsiz ishlaydigan qilib yaratilgan.</translation>
+<translation id="7722016758804384514">Profil boshqa kompyuterdagi (<ph name="HOST_NAME"/>) boshqa Ecosia jarayonida (<ph name="PROCESS_ID"/>) foydalanilayotgan ko‘rinadi. Ishdan chiqishlarning oldini olish maqsadida profil qulflandi. Agar aniq o‘zingiz foydalanayotgan bo‘lsangiz, qulfdan yeching va Ecosia‘ni qaytadan ishga tushiring.</translation>
+<translation id="1047556320128249268">Ecosia parollarni nusxalashga urinmoqda. Ruxsat berish uchun Windows parolingizni kiriting.</translation>
+<translation id="4685983030787735093">Ecosia sahifalarni kezishni yaxshilaydigan eng yangi texnologiyalardan iborat</translation>
+<translation id="4199684616787081033">Ecosia‘dan olib tashlash...</translation>
+<translation id="2402290209407843024">O‘rnatish vaqtida kutilmagan xatolik yuz berdi. Ecosia‘ni qayta yuklab oling.</translation>
 <translation id="7836610565365456468">Brauzerni rassomlar, tabiat va boshqa turkumdagi mavzular bilan bezating</translation>
-<translation id="7845233973568007926">Oʻrnatganingiz uchun tashakkur! <ph name="BUNDLE_NAME" />ni ishlatishdan oldin kompyuterni qayta ishga tushirishingiz lozim.</translation>
-<translation id="7852254990718225089">AI yordamida Chrome endi yanada tez, xavfsiz va qulay ishlaydi</translation>
-<translation id="7872446069773932638">Yuklab olinmoqda... <ph name="SECONDS" /> soniya qoldi.</translation>
-<translation id="7880591377632733558"><ph name="ACCOUNT_FIRST_NAME" />, Chrome brauzeriga xush kelibsiz!</translation>
-<translation id="7890208801193284374">Agar kompyuterdan yaqinlaringiz va do‘stlaringiz ham foydalansa, ular Chrome brauzerini o‘zlari xohlagancha sozlab olishlari mumkin.</translation>
-<translation id="7896673875602241923">Oldinroq Chrome profiliga kimdir bu kompyuterdan <ph name="ACCOUNT_EMAIL_LAST" /> sifatida kirgan. Ma’lumotlaringizni alohida saqlash uchun yangi Chrome profilini yarating.</translation>
-<translation id="7917876797003313048">Kirilgan Google hisoblaringizni boshqarishingiz mumkin. Google hisoblaringizdan Chrome brauzeri, Play Market va Gmail kabilardan foydalaniladi. Oila aʼzosi kabi biror kishi uchun hisob qoʻshmoqchi boʻlsangiz, yangi shaxsni <ph name="DEVICE_TYPE" /> qurilmasiga qoʻshing. <ph name="LINK_BEGIN" />Batafsil<ph name="LINK_END" /></translation>
-<translation id="7936702483636872823">Chrome bu yuklamani blokladi, chunki fayl aldamchi va qurilmangizga kutilmagan oʻzgarishlar kiritishi mumkin</translation>
+<translation id="7845233973568007926">Oʻrnatganingiz uchun tashakkur! <ph name="BUNDLE_NAME"/>ni ishlatishdan oldin kompyuterni qayta ishga tushirishingiz lozim.</translation>
+<translation id="937989526647879266">AI yordamida Ecosia endi yanada tez, xavfsiz va qulay ishlaydi</translation>
+<translation id="7872446069773932638">Yuklab olinmoqda... <ph name="SECONDS"/> soniya qoldi.</translation>
+<translation id="2381210243314074423"><ph name="ACCOUNT_FIRST_NAME"/>, Ecosia brauzeriga xush kelibsiz!</translation>
+<translation id="6111519389633335269">Agar kompyuterdan yaqinlaringiz va do‘stlaringiz ham foydalansa, ular Ecosia brauzerini o‘zlari xohlagancha sozlab olishlari mumkin.</translation>
+<translation id="4727435569202742773">Oldinroq Ecosia profiliga kimdir bu kompyuterdan <ph name="ACCOUNT_EMAIL_LAST"/> sifatida kirgan. Ma’lumotlaringizni alohida saqlash uchun yangi Ecosia profilini yarating.</translation>
+<translation id="7917876797003313048">Kirilgan Google hisoblaringizni boshqarishingiz mumkin. Google hisoblaringizdan Chrome brauzeri, Play Market va Gmail kabilardan foydalaniladi. Oila aʼzosi kabi biror kishi uchun hisob qoʻshmoqchi boʻlsangiz, yangi shaxsni <ph name="DEVICE_TYPE"/> qurilmasiga qoʻshing. <ph name="LINK_BEGIN"/>Batafsil<ph name="LINK_END"/></translation>
+<translation id="7112125772061727648">Ecosia bu yuklamani blokladi, chunki fayl aldamchi va qurilmangizga kutilmagan oʻzgarishlar kiritishi mumkin</translation>
 <translation id="7947083960301164556">Yangi xususiyatlarni ochish</translation>
-<translation id="7951272445806340501">Yangilanishni oʻrnatish uchun ChromeOS Flex qayta ishga tushirilishi kerak.</translation>
-<translation id="7959172989483770734">Chrome profillarini boshqaring</translation>
+<translation id="4278262067490419012">Yangilanishni oʻrnatish uchun EcosiaOS Flex qayta ishga tushirilishi kerak.</translation>
+<translation id="3140530394740845618">Ecosia profillarini boshqaring</translation>
 <translation id="7962368738413920945">Saytlar siz kutganingizdek ishlaydi, lekin barcha Chrome oynalarini yopganingizdan keyin sizni eslay olmaydi</translation>
-<translation id="7962410387636238736">Endi kompyuteringizda Google Chrome yangilanmaydi, chunki uning yangi versiyalarida Windows XP va Windows Vista tizimlari ta’minoti to‘xtatilgan</translation>
-<translation id="8005666035647241369">Bu qurilmadagi Google Parollar menejerida</translation>
-<translation id="8008534537613507642">Chrome‘ni qaytadan o‘rnatish</translation>
-<translation id="8009904340233602924">Chrome brauzeridan hisobsiz foydalanish</translation>
-<translation id="8013993649590906847">Agar rasmga foydali tavsif berilmagan boʻlsa, Google Chrome uni sizga tavsiflaydi. Tavsif yaratish uchun rasmlar Googlega yuboriladi.</translation>
-<translation id="8019103195866286235">Bu kengaytma dasturchisi uning nashrini bekor qildi va u xavfli boʻlishi mumkin. Ochilgan saytlarda shaxsiy axborot kabi maʼlumotlarni koʻrishi va oʻzgartirishini tugatish uchun uni Chromedan olib tashlang.</translation>
-<translation id="8040768861829554732">Kengaytma Chrome hisobiga kirishingizni soʻramoqda</translation>
-<translation id="80471789339884597">Oʻrnatganingiz uchun tashakkur! <ph name="BUNDLE_NAME" />ni ishlatishdan oldin barcha brauzerlarni qayta ishga tushirishingiz kerak.</translation>
-<translation id="8064015041956107954">Yuqori oʻng burchakdagi Chrome menyusidan bukmark, oʻqish rejimi va boshqalarni ochishingiz mumkin</translation>
-<translation id="8064015586118426197">ChromeOS Flex</translation>
-<translation id="8077579734294125741">Boshqa Chrome profillari</translation>
+<translation id="5781596646235827063">Endi kompyuteringizda Ecosia yangilanmaydi, chunki uning yangi versiyalarida Windows XP va Windows Vista tizimlari ta’minoti to‘xtatilgan</translation>
+<translation id="7783708361278795460">Bu qurilmadagi Ecosia Parollar menejerida</translation>
+<translation id="6984747211123632080">Ecosia‘ni qaytadan o‘rnatish</translation>
+<translation id="7787479292144635608">Ecosia brauzeridan hisobsiz foydalanish</translation>
+<translation id="2838372953389311551">Agar rasmga foydali tavsif berilmagan boʻlsa, Ecosia uni sizga tavsiflaydi. Tavsif yaratish uchun rasmlar Ecosiaga yuboriladi.</translation>
+<translation id="8863497461138396324">Bu kengaytma dasturchisi uning nashrini bekor qildi va u xavfli boʻlishi mumkin. Ochilgan saytlarda shaxsiy axborot kabi maʼlumotlarni koʻrishi va oʻzgartirishini tugatish uchun uni Ecosiadan olib tashlang.</translation>
+<translation id="4882579364090762302">Kengaytma Ecosia hisobiga kirishingizni soʻramoqda</translation>
+<translation id="80471789339884597">Oʻrnatganingiz uchun tashakkur! <ph name="BUNDLE_NAME"/>ni ishlatishdan oldin barcha brauzerlarni qayta ishga tushirishingiz kerak.</translation>
+<translation id="8347473600923066837">Yuqori oʻng burchakdagi Ecosia menyusidan bukmark, oʻqish rejimi va boshqalarni ochishingiz mumkin</translation>
+<translation id="8275632261262434570">EcosiaOS Flex</translation>
+<translation id="5251710252516682805">Boshqa Ecosia profillari</translation>
 <translation id="8086881907087796310">Kompyuter minimal talablarga javob bermasligi sababli oʻrnatilmadi.</translation>
-<translation id="8111297389482307122">Ayrim maʼlumotlar Google hisobingizda saqlanishi va barcha qurilmalarda ishlatilishidan avval Chrome shaxsingizni tasdiqlashi kerak. Hisobdan chiqsangiz, bu maʼlumotlar qurilmada saqlanib qoladi.</translation>
-<translation id="8129812357326543296">&amp;Google Chrome haqida</translation>
+<translation id="2200308425865645682">Ayrim maʼlumotlar Ecosia hisobingizda saqlanishi va barcha qurilmalarda ishlatilishidan avval Ecosia shaxsingizni tasdiqlashi kerak. Hisobdan chiqsangiz, bu maʼlumotlar qurilmada saqlanib qoladi.</translation>
+<translation id="7221868538334633215">&amp;Ecosia haqida</translation>
 <translation id="813913629614996137">Ishga tushirilmoqda...</translation>
-<translation id="8162006532256575008">Chrome brauzeridan hisobsiz foydalanish</translation>
-<translation id="8255190535488645436">Google Chrome kamera va mikrofoningizdan foydalanmoqda.</translation>
-<translation id="8257796129973882597">Chrome menyusidan bukmark, oʻqish rejimi va boshqalarni ochishingiz mumkin</translation>
+<translation id="5612740201368556834">Ecosia brauzeridan hisobsiz foydalanish</translation>
+<translation id="4061472199368124600">Ecosia kamera va mikrofoningizdan foydalanmoqda.</translation>
+<translation id="8296229475165428335">Ecosia menyusidan bukmark, oʻqish rejimi va boshqalarni ochishingiz mumkin</translation>
 <translation id="8267953129876836456">Sizda Chrome bilan ishlashda xavfsizlikka oid bir nechta tavsiya bor</translation>
 <translation id="8270775718612349140">Chrome boshqaradigan sertifikatlar</translation>
-<translation id="8286862437124483331">Google Chrome parollarni ko‘rsatishga urinmoqda. Ruxsat berish uchun Windows platformasidagi parolingizni kiriting.</translation>
-<translation id="8290100596633877290">Google Chrome ishdan chiqdi. Qaytadan ishga tushirilsinmi?</translation>
-<translation id="829923460755755423">Google Parollar menejeri uchun yorliq kiriting</translation>
+<translation id="3966234175958887595">Ecosia parollarni ko‘rsatishga urinmoqda. Ruxsat berish uchun Windows platformasidagi parolingizni kiriting.</translation>
+<translation id="3216284932113164802">Ecosia ishdan chiqdi. Qaytadan ishga tushirilsinmi?</translation>
+<translation id="9943971783680417">Ecosia Parollar menejeri uchun yorliq kiriting</translation>
 <translation id="8336463659890584292">Birorta sayt havolalarni maxfiy tarzda sahifalarida oldindan yuklashni soʻrasa, Chrome Google xizmatlaridan foydalanadi. Bunda, oldindan yuklangan saytda shaxsingiz berkitiladi, lekin Google qaysi saytlar oldindan yuklanishini oʻrganadi.</translation>
-<translation id="8342675569599923794">Bu fayl zararli edi va u Chrome tomonidan bloklandi.</translation>
-<translation id="8349795646647783032"><ph name="BEGIN_BOLD" />Bu axborotdan qanday foydalanamiz:<ph name="END_BOLD" /> Chrome orqali saytlar qiziqishlaringiz haqidagi axborotni saqlashi mumkin. Misol uchun marafonda yugurish uchun poyabzal sotib olish saytini ochsangiz, sayt marafonda yugurishni qiziqishingiz deb aniqlashi mumkin. Keyin yugurish uchun boshqa saytga kirganingizda sayt qiziqishingiz asosida yugurish uchun poyabzal reklamasini chiqarishi mumkin.</translation>
-<translation id="8370517070665726704">© Google LLC, <ph name="YEAR" /> Barcha huquqlar himoyalangan.</translation>
-<translation id="8383226135083126309"><ph name="BEGIN_BOLD" />Bu axborotdan qanday foydalanamiz:<ph name="END_BOLD" /> Chrome qiziqishlaringizni taxmin qila oladi. Keyinchalik sayt sizga chiqadigan reklamani moslashtirish maqsadida Chromedan qiziqishlaringiz haqida soʻrashi mumkin.</translation>
-<translation id="8387459386171870978">Chrome yopilmasin</translation>
+<translation id="6491651957026506753">Bu fayl zararli edi va u Ecosia tomonidan bloklandi.</translation>
+<translation id="1851101453239911251"><ph name="BEGIN_BOLD"/>Bu axborotdan qanday foydalanamiz:<ph name="END_BOLD"/> Ecosia orqali saytlar qiziqishlaringiz haqidagi axborotni saqlashi mumkin. Misol uchun marafonda yugurish uchun poyabzal sotib olish saytini ochsangiz, sayt marafonda yugurishni qiziqishingiz deb aniqlashi mumkin. Keyin yugurish uchun boshqa saytga kirganingizda sayt qiziqishingiz asosida yugurish uchun poyabzal reklamasini chiqarishi mumkin.</translation>
+<translation id="8355171755788522183">© Ecosia, <ph name="YEAR"/> Barcha huquqlar himoyalangan.</translation>
+<translation id="5610400309434105339"><ph name="BEGIN_BOLD"/>Bu axborotdan qanday foydalanamiz:<ph name="END_BOLD"/> Ecosia qiziqishlaringizni taxmin qila oladi. Keyinchalik sayt sizga chiqadigan reklamani moslashtirish maqsadida Ecosiadan qiziqishlaringiz haqida soʻrashi mumkin.</translation>
+<translation id="5883025779824839861">Ecosia yopilmasin</translation>
 <translation id="8394720698884623075">URL manzillar Chrome bilgan zararli saytlar roʻyxati orqali tekshiriladi</translation>
-<translation id="8403038600646341038">Kompyuter ekranida Chrome logotipi aks etgan tasvir</translation>
-<translation id="8416347857511542594">Chromeda reklamani moslashtirish haqida batafsil</translation>
-<translation id="8418845734693287262">Hisobga kirish maʼlumotlaringiz eskirgani sababli ChromeOS maʼlumotlaringizni sinxronlay olmadi.</translation>
+<translation id="7578952608547569314">Kompyuter ekranida Ecosia logotipi aks etgan tasvir</translation>
+<translation id="5902103164685487225">Ecosiada reklamani moslashtirish haqida batafsil</translation>
+<translation id="592990842052138727">Hisobga kirish maʼlumotlaringiz eskirgani sababli EcosiaOS maʼlumotlaringizni sinxronlay olmadi.</translation>
 <translation id="842386925677997438">Chrome xavfsizlik vositalari</translation>
 <translation id="8428213095426709021">Sozlamalar</translation>
-<translation id="8433638294851456451">Bu yerdan Android telefoningizga raqam yuborish uchun ikkala qurilmada Chrome hisobingizga kiring.</translation>
-<translation id="8451192282033883849">Hisobingiz <ph name="MANAGER_NAME" /> domenida boshqariladi. Administrator Chrome brauzeri profili va undagi bukmarklar, tarix va parollar kabi maʼlumotlarni koʻrib, tahrirlay oladi.</translation>
-<translation id="8496177819998570653">Google &amp;Parollar menejeri</translation>
-<translation id="8498858610309223613">Google Chrome xavfsizlik tizimiga maxsus yangilanish oʻrnatildi. Qayta ishga tushiring va ochiq sahifalarni tiklang.</translation>
-<translation id="8516431725144212809">Chrome taxmin qilgan qiziqishlaringiz</translation>
-<translation id="8521348052903287641">Google Chrome Dev mDNS trafigiga ruxsat berishiga oid kiruvchi qoida.</translation>
+<translation id="665177868576952817">Bu yerdan Android telefoningizga raqam yuborish uchun ikkala qurilmada Ecosia hisobingizga kiring.</translation>
+<translation id="4070480171055648632">Hisobingiz <ph name="MANAGER_NAME"/> domenida boshqariladi. Administrator Ecosia brauzeri profili va undagi bukmarklar, tarix va parollar kabi maʼlumotlarni koʻrib, tahrirlay oladi.</translation>
+<translation id="6910262464589177435">Ecosia &amp;Parollar menejeri</translation>
+<translation id="1025044809499013222">Ecosia xavfsizlik tizimiga maxsus yangilanish oʻrnatildi. Qayta ishga tushiring va ochiq sahifalarni tiklang.</translation>
+<translation id="3816260943154642689">Ecosia taxmin qilgan qiziqishlaringiz</translation>
+<translation id="8023973672752791660">Ecosia Dev mDNS trafigiga ruxsat berishiga oid kiruvchi qoida.</translation>
 <translation id="8550334526674375523">Bu ish profili shaxsiy profilingizdan butunlay ajratilgan.</translation>
-<translation id="8555465886620020932">Xizmat xatosi: <ph name="SERVICE_ERROR" />.</translation>
-<translation id="8571790202382503603">Chrome profillari brauzerdan alohida foydalanish uchun kerak. Bunda ish va hordiqni ajratish osonlashadi.</translation>
-<translation id="8614913330719544658">Google Chrome javob bermayapti. Qaytadan ishga tushirilsinmi?</translation>
-<translation id="861702415419836452">Chrome atrofingiz 3D xaritasini yaratishi uchun unga kamera ruxsati zarur</translation>
-<translation id="8625237574518804553">{0,plural, =1{Chrome 1 daqiqadan keyin qayta ishga tushadi}other{Chrome # daqiqadan keyin qayta ishga tushadi}}</translation>
+<translation id="8555465886620020932">Xizmat xatosi: <ph name="SERVICE_ERROR"/>.</translation>
+<translation id="5622136942112821750">Ecosia profillari brauzerdan alohida foydalanish uchun kerak. Bunda ish va hordiqni ajratish osonlashadi.</translation>
+<translation id="18064594488616674">Ecosia javob bermayapti. Qaytadan ishga tushirilsinmi?</translation>
+<translation id="6896860023874996542">Ecosia atrofingiz 3D xaritasini yaratishi uchun unga kamera ruxsati zarur</translation>
+<translation id="7558678848273505235">{0,plural, =1{Ecosia 1 daqiqadan keyin qayta ishga tushadi}other{Ecosia # daqiqadan keyin qayta ishga tushadi}}</translation>
 <translation id="8641606876632989680">Google hisobingizga kirsangiz, Chrome oshkor qilingan parollar haqida xabar qiladi</translation>
 <translation id="8649026945479135076">Odatda siz kiradigan saytlar oʻz xizmatlarini sizga moslashtirish uchun sizga qiziq narsalarni eslab qoladi. Chrome orqali saytlar ham qiziqishlaringiz haqidagi maʼlumotlarni saqlashi mumkin.</translation>
-<translation id="8669527147644353129">Google Chrome yordamchisi</translation>
-<translation id="8679801911857917785">Bundan tashqari, kengaytma Chrome bosh sahifasini o‘zgarib qo‘ydi.</translation>
-<translation id="8686817260976772516">Chrome profillari brauzerdan alohida foydalanish uchun kerak. Doʻstlar va oila uchun profillar yarating yoki ish va hordiqni ajrating</translation>
+<translation id="9090890391337853620">Ecosia yordamchisi</translation>
+<translation id="524314285625975879">Bundan tashqari, kengaytma Ecosia bosh sahifasini o‘zgarib qo‘ydi.</translation>
+<translation id="4170280082681554565">Ecosia profillari brauzerdan alohida foydalanish uchun kerak. Doʻstlar va oila uchun profillar yarating yoki ish va hordiqni ajrating</translation>
 <translation id="8712767363896337380">Deyarli yangilandi! Yangilash tugashi uchun Chrome brauzerini qayta ishga tushiring.</translation>
-<translation id="8718062187489036808">Chrome hisobidan chiqish</translation>
+<translation id="2672632089507560181">Ecosia hisobidan chiqish</translation>
 <translation id="873133009373065397">Google Chrome asosiy brauzerni aniqlay olmadi yoki tayinlay olmadi</translation>
 <translation id="8765470054473112089">Manzillar qatori yoki qidiruv oynasiga matn kiritilganda Chrome yaxshiroq takliflar olish uchun yozilgan matnni birlamchi qidiruv tizimiga yuboradi. Inkognito rejimda bu funksiya yoqilmasin</translation>
-<translation id="8781673607513845160">Kameradan foydalanish uchun <ph name="BEGIN_LINK" />tizim sozlamalari<ph name="END_LINK" /> orqali Chromega ruxsat bering</translation>
-<translation id="878572486461146056">Oʻrnatishda xato: Tarmoq administratori oʻrnatishlarni taqiqlovchi guruh siyosatini tatbiq qilgan: <ph name="INSTALL_ERROR" /></translation>
-<translation id="8796073561259064743">Chrome bu yuklanmani blokladi, chunki bu fayl <ph name="USER_EMAIL" /> kabi shaxsiy va ijtimoiy tarmoqlardagi hisoblarga zarar keltirishi mumkin.</translation>
+<translation id="8781673607513845160">Kameradan foydalanish uchun <ph name="BEGIN_LINK"/>tizim sozlamalari<ph name="END_LINK"/> orqali Chromega ruxsat bering</translation>
+<translation id="878572486461146056">Oʻrnatishda xato: Tarmoq administratori oʻrnatishlarni taqiqlovchi guruh siyosatini tatbiq qilgan: <ph name="INSTALL_ERROR"/></translation>
+<translation id="6632508343667825745">Ecosia bu yuklanmani blokladi, chunki bu fayl <ph name="USER_EMAIL"/> kabi shaxsiy va ijtimoiy tarmoqlardagi hisoblarga zarar keltirishi mumkin.</translation>
 <translation id="8797423385604279835">Varaqlarni AI yordamida tartiblang</translation>
-<translation id="8801657293260363985">V8 — Chromeda saytlar unumdorligini oshiradigan JavaScript va WebAssembly tizimi hisoblanadi</translation>
-<translation id="8821043148920470810">Google Chrome yangilanishlari Windows 10 yoki undan yuqori versiyalarda ishlaydi. Bu kompyuterdagi versiya: Windows 7.</translation>
-<translation id="8823341990149967727">Chrome versiyasi eskirdi</translation>
+<translation id="905744008702074577">V8 — Ecosiada saytlar unumdorligini oshiradigan JavaScript va WebAssembly tizimi hisoblanadi</translation>
+<translation id="1975037445584526511">Ecosia yangilanishlari Windows 10 yoki undan yuqori versiyalarda ishlaydi. Bu kompyuterdagi versiya: Windows 7.</translation>
+<translation id="2695952268686253864">Ecosia versiyasi eskirdi</translation>
 <translation id="8825634023950448068">Maxfiylikni himoya qilish maqsadida biz 4 haftadan uzoq saqlangan qiziqishlarni avtomatik oʻchiramiz. Sahifalar takroriy ochilganida qiziqish roʻyxatda yana chiqishi mumkin. Chrome foydalanmasligi va tegishli reklama chiqmasligi uchun qiziqishni olib tashlash mumkin.</translation>
-<translation id="8834965163890861871">Google Chrome parollarni tahrirlashga urinmoqda. Ruxsat berish uchun Windows parolingizni kiriting.</translation>
-<translation id="8843389967774722327">Chrome yangi yordamchi funksiyalarni muntazam kiritib boradi</translation>
-<translation id="8851180723659088381">{NUM_EXTENSIONS,plural, =1{Chrome uni olib tashlashni tavsiya qiladi}other{Chrome ularni olib tashlashni tavsiya qiladi}}</translation>
+<translation id="5066194399237265772">Ecosia parollarni tahrirlashga urinmoqda. Ruxsat berish uchun Windows parolingizni kiriting.</translation>
+<translation id="1152277553870553858">Ecosia yangi yordamchi funksiyalarni muntazam kiritib boradi</translation>
+<translation id="4534680278117737254">{NUM_EXTENSIONS,plural, =1{Ecosia uni olib tashlashni tavsiya qiladi}other{Ecosia ularni olib tashlashni tavsiya qiladi}}</translation>
 <translation id="8862326446509486874">Sizda tizim darajasida o‘rnatish uchun yetarli ruxsatlar yo‘q. O‘rnatish dasturini administrator nomidan qayta ishga tushiring.</translation>
 <translation id="8908277254462331033">Xavfsizlik funksiyalari</translation>
-<translation id="8914504000324227558">Chrome’ni qayta ishga tushiring</translation>
-<translation id="8922193594870374009"><ph name="ORIGIN" /> orqali Android telefoningizga raqam yuborish uchun ikkala qurilmada Chrome hisobingizga kiring.</translation>
-<translation id="8948460679427074738">Bu kengaytma axborot jamlashi va ishlatishi kabi maxfiylikka oid ochiqlama joylamagan. Chrome uni olib tashlashni tavsiya qiladi.</translation>
+<translation id="8282620071565190081">Ecosia’ni qayta ishga tushiring</translation>
+<translation id="7849498640944199147"><ph name="ORIGIN"/> orqali Android telefoningizga raqam yuborish uchun ikkala qurilmada Ecosia hisobingizga kiring.</translation>
+<translation id="576192547306902465">Bu kengaytma axborot jamlashi va ishlatishi kabi maxfiylikka oid ochiqlama joylamagan. Ecosia uni olib tashlashni tavsiya qiladi.</translation>
 <translation id="8986207147630327271">Bu brauzerga ish profilini kiritish bilan siz administratorga ish profili orqali barcha boshqaruv ruxsatlarini berasiz.</translation>
 <translation id="8989968390305463310">Ochgan saytlaringiz tarixi chiqadigan reklama va quyidagi qiziqishlaringizga taʼsir qiladi. Maxfiylikni himoya qilish maqsadida Chrome har oyda qiziqishlaringizni avtomatik oʻchiradi. Qiziqishlar ularni olib tashlamaguningizga qadar yangilanishi mumkin.</translation>
 <translation id="8999117580775242387">HTTPS mavjud boʻlmasa, Chrome sizni ogohlantirmasdan himoyalanmagan ulanishdan foydalanadi.</translation>
-<translation id="8999208279178790196">{0,plural, =0{Chrome uchun yangilanish mavjud}=1{Chrome uchun yangilanish mavjud}other{Chrome uchun yangilanish mavjud (# kun)}}</translation>
-<translation id="9014771989710951291">Chrome bir nechta tashkilot boshqaruvida</translation>
-<translation id="9024318700713112071">Chromeni birlamchi brauzer etib belgilang.</translation>
-<translation id="9053892488859122171">ChromeOS Flex tizimi</translation>
-<translation id="9090566250983691233">Chrome ayrim fayllarni nega bloklashi haqida</translation>
+<translation id="7348818664647668234">{0,plural, =0{Ecosia uchun yangilanish mavjud}=1{Ecosia uchun yangilanish mavjud}other{Ecosia uchun yangilanish mavjud (# kun)}}</translation>
+<translation id="4817309082638621362">Ecosia bir nechta tashkilot boshqaruvida</translation>
+<translation id="4638085384909702681">Ecosiani birlamchi brauzer etib belgilang.</translation>
+<translation id="9047384314208087523">EcosiaOS Flex tizimi</translation>
+<translation id="350189837353493413">Ecosia ayrim fayllarni nega bloklashi haqida</translation>
 <translation id="911206726377975832">Brauzer faoliyati haqidagi ma’lumotlar ham tozalansinmi?</translation>
 <translation id="9138603949443464873">O‘zgarishlarni tatbi qilish uchun Chrome qayta ishga tushirilishi zarur</translation>
 <translation id="9195993889682885387">Chrome oxirgi bir nechta haftada siz ochgan sahifalar tarixi asosida qiziqishlaringiz taxmin qilishi mumkin. Bu maʼlumotlar qurilmangizda qoladi.</translation>
-<translation id="919706545465235479">Sinxronizatsiyani boshlash uchun Chrome brauzerini yangilang</translation>
-<translation id="922152298093051471">Chromeni moslash</translation>
+<translation id="5704599732514791330">Sinxronizatsiyani boshlash uchun Ecosia brauzerini yangilang</translation>
+<translation id="838842459108103907">Ecosiani moslash</translation>
 <translation id="92460355979482493">Yoniqligida, Chrome kezish va qidiruvni tezlashtirish uchun sahifalarni oldindan yuklaydi.</translation>
-<translation id="93760716455950538">ChromeOS Flex tizimini qayta ishga tushirish</translation>
-<translation id="940313311831216333">Chrome brauzeridagi axborotlardan barcha qurilmalaringizda foydalanish uchun hisobingizga kiring va sinxronizatsiyani yoqing.</translation>
-<translation id="943390475793766444">Bu fayl xavfli boʻlishi mumkin, Chrome uni tekshirishni tavsiya qiladi.</translation>
+<translation id="3070276123152913305">EcosiaOS Flex tizimini qayta ishga tushirish</translation>
+<translation id="4512092435423703529">Ecosia brauzeridagi axborotlardan barcha qurilmalaringizda foydalanish uchun hisobingizga kiring va sinxronizatsiyani yoqing.</translation>
+<translation id="7972668220031382654">Bu fayl xavfli boʻlishi mumkin, Ecosia uni tekshirishni tavsiya qiladi.</translation>
 <translation id="963650557422347554">Yoqilganda Chrome fondagi amallar hamda ravon varaqlash va video freyming kabi vizual effektlarni cheklash orqali batareya quvvatini tejashni boshlaydi.</translation>
 <translation id="983803489796659991">Yangilanish serverida ilova uchun hech qanday hesh axboroti mavjud emasligi sababli oʻrnatilmadi.</translation>
 <translation id="989369509083708165">Qurilmangizdagi asosiy brauzer – Google Chrome.</translation>
-<translation id="989816563149873169"><ph name="SHORTCUT" /> Chrome profillarini almashtira oladi</translation>
+<translation id="4614106433017753369"><ph name="SHORTCUT"/> Ecosia profillarini almashtira oladi</translation>
 </translationbundle>

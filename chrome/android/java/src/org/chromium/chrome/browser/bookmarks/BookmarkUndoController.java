@@ -104,6 +104,12 @@ public class BookmarkUndoController extends BookmarkModelObserver
         mSnackbarManager.dismissSnackbars(this);
     }
 
+    // Ecosia: Bookmark Import / Export
+    @Override
+    public void bookmarkModelNeedsReloadAfterBookmarksImport() {
+        // only required after successful bookmark import
+    }
+
     @Override
     public void bookmarkNodeChanged(BookmarkItem node) {
         // Title/url change of a bookmark should not affect undo.

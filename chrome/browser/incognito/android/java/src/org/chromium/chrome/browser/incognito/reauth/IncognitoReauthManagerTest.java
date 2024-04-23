@@ -13,6 +13,7 @@ import static org.mockito.Mockito.when;
 import androidx.test.filters.MediumTest;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
@@ -65,6 +66,7 @@ public class IncognitoReauthManagerTest {
         verifyNoMoreInteractions(mIncognitoReauthCallbackMock);
     }
 
+    @Ignore("Ecosia :Disable Incognito Reauthentication")
     @Test
     @MediumTest
     public void
@@ -86,6 +88,7 @@ public class IncognitoReauthManagerTest {
         verifyNoMoreInteractions(mIncognitoReauthCallbackMock);
     }
 
+    @Ignore("Ecosia :Disable Incognito Reauthentication")
     @Test
     @MediumTest
     public void testIncognitoReauthManager_WhenReauthenticationFailed_FiresCallbackWithFailed() {

@@ -53,6 +53,7 @@ import org.chromium.chrome.browser.webapps.WebappLauncherActivity;
 import org.chromium.components.embedder_support.util.UrlConstants;
 import org.chromium.ui.widget.Toast;
 import org.chromium.webapk.lib.common.WebApkConstants;
+import org.ecosia.firstrun.EcosiaFirstRunActivity;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -173,6 +174,12 @@ public class LaunchIntentDispatcher {
         // Settings "App Notifications" view will open us with a specific category.
         if (mIntent.hasCategory(Notification.INTENT_CATEGORY_NOTIFICATION_PREFERENCES)) {
             NotificationPlatformBridge.launchNotificationPreferences(mIntent);
+            return Action.FINISH_ACTIVITY;
+        }
+
+        // Ecosia: launch our own first run, inside there we will set onboarding prefs to 'done'
+        // so that the chromium FirstRunFlowSequencer is disabled and the block following this wont run
+        if (EcosiaFirstRunActivity.launch(mActivity, mIntent)) {
             return Action.FINISH_ACTIVITY;
         }
 

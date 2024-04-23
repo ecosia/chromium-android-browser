@@ -26,9 +26,10 @@ public class AboutChromeSettings extends PreferenceFragmentCompat
         implements Preference.OnPreferenceClickListener {
     private static final int TAPS_FOR_DEVELOPER_SETTINGS = 7;
 
-    private static final String PREF_APPLICATION_VERSION = "application_version";
-    private static final String PREF_OS_VERSION = "os_version";
-    private static final String PREF_LEGAL_INFORMATION = "legal_information";
+    // Ecosia: change PREF strings access
+    protected static final String PREF_APPLICATION_VERSION = "application_version";
+    protected static final String PREF_OS_VERSION = "os_version";
+    protected static final String PREF_LEGAL_INFORMATION = "legal_information";
 
     // Non-translated strings:
     private static final String MSG_DEVELOPER_ENABLE_COUNTDOWN =
@@ -83,6 +84,7 @@ public class AboutChromeSettings extends PreferenceFragmentCompat
 
     @Override
     public boolean onPreferenceClick(Preference preference) {
+        /* Ecosia : Disable Developer settings option
         if (mDeveloperHitCountdown > 0) {
             mDeveloperHitCountdown--;
 
@@ -119,6 +121,7 @@ public class AboutChromeSettings extends PreferenceFragmentCompat
                     Toast.makeText(getActivity(), MSG_DEVELOPER_ALREADY_ENABLED, Toast.LENGTH_LONG);
             mToast.show();
         }
+      */
         return true;
     }
 }
