@@ -530,7 +530,7 @@ vars = {
   # Three lines of non-changing comments so that
   # the commit queue can handle CLs rolling feed
   # and whatever else without interference from each other.
-  'eyeo_snippets_revision': 'v0.8.1',
+  'eyeo_snippets_revision': 'v1.1.0',
 
   # If you change this, also update the libc++ revision in
   # //buildtools/deps_revisions.gni.
