@@ -1,6 +1,10 @@
 // Copyright 2013 The Chromium Authors
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
+//
+// This source code is a part of eyeo Chromium SDK.
+// Use of this source code is governed by the GPLv3 that can be found in the
+// components/adblock/LICENSE file.
 
 #include "android_webview/browser/aw_settings.h"
 
@@ -151,6 +155,10 @@ bool AwSettings::IsPrerender2Allowed() {
 
 bool AwSettings::IsBackForwardCacheEnabled() {
   return bfcache_enabled_in_java_settings_;
+}
+
+bool AwSettings::IsContentFilteringEnabled() {
+  return content_filtering_enabled_;
 }
 
 void AwSettings::Destroy(JNIEnv* env, const JavaParamRef<jobject>& obj) {
@@ -537,6 +545,17 @@ void AwSettings::UpdateGeolocationEnabledLocked(
   }
 
   geolocation_enabled_ = Java_AwSettings_getGeolocationEnabled(env, obj);
+}
+
+void AwSettings::UpdateContentFilteringEnabledLocked(
+    JNIEnv* env,
+    const JavaParamRef<jobject>& obj) {
+  if (!web_contents()) {
+    return;
+  }
+
+  content_filtering_enabled_ =
+      Java_AwSettings_getContentFilteringEnabled(env, obj);
 }
 
 void AwSettings::RenderViewHostChanged(content::RenderViewHost* old_host,

@@ -1,6 +1,10 @@
 // Copyright 2012 The Chromium Authors
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
+//
+// This source code is a part of eyeo Chromium SDK.
+// Use of this source code is governed by the GPLv3 that can be found in the
+// components/adblock/LICENSE file.
 
 #include "android_webview/browser/aw_contents.h"
 
@@ -10,6 +14,7 @@
 #include <string_view>
 #include <utility>
 
+#include "android_webview/browser/adblock/adblock_aw_webcontents_observer.h"
 #include "android_webview/browser/aw_app_defined_websites.h"
 #include "android_webview/browser/aw_browser_context.h"
 #include "android_webview/browser/aw_browser_main_parts.h"
@@ -67,6 +72,7 @@
 #include "base/threading/thread_restrictions.h"
 #include "base/trace_event/trace_event.h"
 #include "base/trace_event/typed_macros.h"
+#include "components/adblock/content/browser/factories/embedding_utils.h"
 #include "components/android_autofill/browser/android_autofill_client.h"
 #include "components/android_autofill/browser/android_autofill_manager.h"
 #include "components/android_autofill/browser/android_autofill_provider.h"
@@ -313,6 +319,12 @@ AwContents::AwContents(std::unique_ptr<WebContents> web_contents)
       network::SharedURLLoaderFactory::Create(
           std::make_unique<network::WrapperPendingSharedURLLoaderFactory>(
               browser_context->CreateURLLoaderFactory())));
+
+  auto* default_browser_context =
+      android_webview::AwBrowserContext::GetDefault();
+  adblock::EnsureBackgroundServicesStarted(default_browser_context);
+  adblock::RegisterAdblockWebContentObserver<AdblockAwWebContentObserver>(
+      web_contents_.get(), default_browser_context);
 
   content::SynchronousCompositor::SetClientForWebContents(
       web_contents_.get(), &browser_view_renderer_);
@@ -909,6 +921,12 @@ bool AwContents::AllowThirdPartyCookies() {
   DCHECK_CURRENTLY_ON(BrowserThread::UI);
   AwSettings* aw_settings = AwSettings::FromWebContents(web_contents_.get());
   return aw_settings->GetAllowThirdPartyCookies();
+}
+
+bool AwContents::IsContentFilteringEnabled() const {
+  DCHECK_CURRENTLY_ON(BrowserThread::UI);
+  AwSettings* aw_settings = AwSettings::FromWebContents(web_contents_.get());
+  return aw_settings->IsContentFilteringEnabled();
 }
 
 void AwContents::OnFindResultReceived(int active_ordinal,

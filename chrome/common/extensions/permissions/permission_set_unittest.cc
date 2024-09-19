@@ -1,6 +1,10 @@
 // Copyright 2012 The Chromium Authors
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
+//
+// This source code is a part of eyeo Chromium SDK.
+// Use of this source code is governed by the GPLv3 that can be found in the
+// components/adblock/LICENSE file.
 
 #ifdef UNSAFE_BUFFERS_BUILD
 // TODO(crbug.com/40285824): Remove this and convert code to safer constructs.
@@ -868,6 +872,10 @@ TEST(PermissionsTest, PermissionMessages) {
   skip.insert(APIPermissionID::kWmDesksPrivate);
   skip.insert(APIPermissionID::kSystemLog);
   skip.insert(APIPermissionID::kOdfsConfigPrivate);
+
+  // Adblock API is also private (in separate block to minimize conflicts).
+  skip.insert(APIPermissionID::kAdblockPrivate);
+  skip.insert(APIPermissionID::kEyeoFilteringPrivate);
 
   // Warned as part of host permissions.
   skip.insert(APIPermissionID::kDevtools);

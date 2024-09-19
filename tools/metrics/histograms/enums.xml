@@ -17,6 +17,9 @@ https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histogra
 Please pretty-print and validate your edits by running the pretty_print.py
 and validate_format.py scripts in the same directory as this file before
 uploading your change for review.  These are checked by presubmit scripts.
+
+This source code is a part of eyeo Chromium SDK.
+Use of this source code is governed by the GPLv3 that can be found in the components/adblock/LICENSE file.
 -->
 
 <histogram-configuration>

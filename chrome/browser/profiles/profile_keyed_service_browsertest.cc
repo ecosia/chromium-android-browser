@@ -2,6 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
+// This source code is a part of eyeo Chromium SDK.
+// Use of this source code is governed by the GPLv3 that can be found in the
+// components/adblock/LICENSE file.
+
 #include <sstream>
 
 #include "base/containers/to_vector.h"
@@ -313,7 +317,7 @@ IN_PROC_BROWSER_TEST_F(ProfileKeyedServiceBrowserTest,
 #endif  // BUILDFLAG(IS_WIN)
     "UsbDeviceManager",
     "UsbDeviceResourceManager",
-    "sct_reporting::Factory"
+    "sct_reporting::Factory",
   };
   // clang-format on
 
@@ -592,6 +596,13 @@ IN_PROC_BROWSER_TEST_F(ProfileKeyedServiceBrowserTest,
     "feedback::FeedbackUploaderChrome",
     "sct_reporting::Factory",
     "ZeroSuggestCacheServiceFactory",
+
+    // eyeo Chromium SDK services:
+    "AdblockPrivateAPI",
+    "EyeoFilteringPrivateAPI",
+    "ResourceClassificationRunner",
+    "SessionStats",
+    "SitekeyStorage",
   };
   // clang-format on
 
@@ -641,6 +652,16 @@ IN_PROC_BROWSER_TEST_F(ProfileKeyedServiceBrowserTest,
     "PermissionsUpdaterShutdownFactory",
     "PluginInfoHostImpl",
     "TurnSyncOnHelperShutdownNotifier",
+
+    // Eyeo services
+    "AdblockSubscriptionPersistentMetadata",
+    "AdblockSubscriptionService",
+    "AdblockTelemetryService",
+    "ContentSecurityPolicyInjector",
+    "ElementHider",
+    "ResourceClassificationRunner",
+    "SessionStats",
+    "SitekeyStorage",
   };
   // clang-format on
 
