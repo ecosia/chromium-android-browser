@@ -1,6 +1,9 @@
 # Copyright 2019 The Chromium Authors
 # Use of this source code is governed by a BSD-style license that can be
 # found in the LICENSE file.
+#
+# This source code is a part of eyeo Chromium SDK.
+# Use of this source code is governed by the GPLv3 that can be found in the components/adblock/LICENSE file.
 
 import("//build/config/android/rules.gni")
 import("//components/spellcheck/spellcheck_build_features.gni")
@@ -22,6 +25,10 @@ java_cpp_enum("browser_enums") {
 
 source_set("browser") {
   sources = [
+    "adblock/adblock_aw_content_browser_client.cc",
+    "adblock/adblock_aw_content_browser_client.h",
+    "adblock/adblock_aw_webcontents_observer.cc",
+    "adblock/adblock_aw_webcontents_observer.h",
     "android_protocol_handler.cc",
     "android_protocol_handler.h",
     "aw_apk_type.h",
@@ -245,6 +252,9 @@ source_set("browser") {
     "//android_webview/common:mojom",
     "//android_webview/proto:aw_variations_seed_proto",
     "//base",
+    "//components/adblock/android:java_bindings",
+    "//components/adblock/android:jni_headers",
+    "//components/adblock/content:browser",
     "//components/android_autofill/browser:android",
     "//components/autofill/content/browser",
     "//components/cdm/browser",

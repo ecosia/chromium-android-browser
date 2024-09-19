@@ -1,6 +1,10 @@
 // Copyright 2012 The Chromium Authors
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
+//
+// This source code is a part of eyeo Chromium SDK.
+// Use of this source code is governed by the GPLv3 that can be found in the
+// components/adblock/LICENSE file.
 
 #ifndef ANDROID_WEBVIEW_BROWSER_AW_CONTENTS_H_
 #define ANDROID_WEBVIEW_BROWSER_AW_CONTENTS_H_
@@ -245,6 +249,9 @@ class AwContents : public FindHelper::Listener,
 
   // Per WebView Cookie Policy
   bool AllowThirdPartyCookies();
+
+  // Per WebView eyeo methods
+  bool IsContentFilteringEnabled() const;
 
   // FindHelper::Listener implementation.
   void OnFindResultReceived(int active_ordinal,

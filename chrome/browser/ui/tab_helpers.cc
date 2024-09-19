@@ -1,6 +1,10 @@
 // Copyright 2014 The Chromium Authors
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
+//
+// This source code is a part of eyeo Chromium SDK.
+// Use of this source code is governed by the GPLv3 that can be found in the
+// components/adblock/LICENSE file.
 
 #include "chrome/browser/ui/tab_helpers.h"
 
@@ -115,6 +119,8 @@
 #include "chrome/common/chrome_features.h"
 #include "chrome/common/chrome_isolated_world_ids.h"
 #include "chrome/common/chrome_switches.h"
+#include "components/adblock/content/browser/adblock_webcontents_observer.h"
+#include "components/adblock/content/browser/factories/embedding_utils.h"
 #include "components/autofill/content/browser/content_autofill_client.h"
 #include "components/autofill/content/browser/content_autofill_driver_factory.h"
 #include "components/autofill/core/browser/browser_autofill_manager.h"
@@ -367,9 +373,16 @@ void TabHelpers::AttachTabHelpers(WebContents* web_contents) {
                                                    optimization_guide_decider);
     }
   }
+
+  auto* original_profile = profile->GetOriginalProfile();
+  adblock::EnsureBackgroundServicesStarted(original_profile);
+  adblock::RegisterAdblockWebContentObserver<
+      adblock::AdblockWebContentObserver>(web_contents, original_profile);
+
   autofill::AutofillClientProvider& autofill_client_provider =
       autofill::AutofillClientProviderFactory::GetForProfile(profile);
   autofill_client_provider.CreateClientForWebContents(web_contents);
+
   if (breadcrumbs::IsEnabled(g_browser_process->local_state())) {
     BreadcrumbManagerTabHelper::CreateForWebContents(web_contents);
   }

@@ -1,6 +1,9 @@
 # Copyright 2014 The Chromium Authors
 # Use of this source code is governed by a BSD-style license that can be
 # found in the LICENSE file.
+#
+# This source code is a part of eyeo Chromium SDK.
+# Use of this source code is governed by the GPLv3 that can be found in the components/adblock/LICENSE file.
 
 import("//build/android/resource_sizes.gni")
 import("//build/config/android/config.gni")
@@ -281,6 +284,11 @@ if (current_toolchain == default_toolchain) {
     } else {
       deps += [ "//components/plus_addresses/android:java_resources" ]
     }
+
+    ### Android UI module start
+    deps += [ "//chrome/browser/adblock/android:java_ui_resources" ]
+
+    ### Android UI module end
   }
 
   android_resources("java_overlay_resources") {
@@ -545,6 +553,7 @@ if (current_toolchain == default_toolchain) {
       "//chrome/browser/xsurface:java",
       "//chrome/browser/xsurface_provider:dependency_provider_impl_java",
       "//chrome/browser/xsurface_provider:java",
+      "//components/adblock/android:adblock_controller_java",
       "//components/android_autofill/browser:java",
       "//components/autofill/android:autofill_features_java",
       "//components/autofill/android:autofill_java",
@@ -761,6 +770,11 @@ if (current_toolchain == default_toolchain) {
       "//url:gurl_java",
       "//url/mojom:url_mojom_gurl_java",
     ]
+
+    ### Android UI module start
+    deps += [ "//chrome/browser/adblock/android:adblock_ui_java" ]
+
+    ### Android UI module end
 
     deps += feed_deps
 
@@ -1695,6 +1709,7 @@ if (current_toolchain == default_toolchain) {
       "//chrome/android/webapk/libs/client:client_java",
       "//chrome/android/webapk/libs/common:common_java",
       "//chrome/android/webapk/libs/runtime_library:webapk_service_aidl_java",
+      "//chrome/browser/adblock/android:adblock_java_tests",
       "//chrome/browser/android/browserservices/intents:java",
       "//chrome/browser/android/browserservices/verification:java",
       "//chrome/browser/android/browserservices/verification:javatests",
@@ -2083,6 +2098,7 @@ if (current_toolchain == default_toolchain) {
       "//chrome/test/data/translate/",
       "//chrome/test/data/webauthn/",
       "//chrome/test/media_router/resources/",
+      "//components/test/data/adblock/",
       "//components/test/data/autofill/",
       "//components/test/data/payments/",
       "//content/test/data/browsing_data/",
@@ -3859,6 +3875,12 @@ generate_jni("chrome_jni_headers") {
     "java/src/org/chromium/chrome/browser/webapps/WebappRegistry.java",
   ]
 
+  ### Android API module start
+  sources +=
+      [ "java/src/org/chromium/chrome/browser/adblock/TabIdTranslator.java" ]
+
+  ### Android API module end
+
   # Used for testing only, should not be shipped to end users.
   if (enable_offline_pages_harness) {
     sources += [ "java/src/org/chromium/chrome/browser/offlinepages/evaluation/OfflinePageEvaluationBridge.java" ]
@@ -3939,6 +3961,7 @@ group("jni_headers") {
     "//chrome/browser/ui/messages/android:jni_headers",
     "//chrome/browser/util:jni_headers",
     "//chrome/browser/webauthn/android:jni_headers",
+    "//components/adblock/android:jni_headers",
     "//components/browser_ui/device_lock/android:device_lock_bridge_jni_headers",
     "//components/content_relationship_verification/android:jni_headers",
     "//components/image_fetcher:jni_headers",

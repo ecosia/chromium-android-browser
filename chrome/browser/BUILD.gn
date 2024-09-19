@@ -1,6 +1,9 @@
 # Copyright 2014 The Chromium Authors
 # Use of this source code is governed by a BSD-style license that can be
 # found in the LICENSE file.
+#
+# This source code is a part of eyeo Chromium SDK.
+# Use of this source code is governed by the GPLv3 that can be found in the components/adblock/LICENSE file.
 
 import("//base/allocator/allocator.gni")
 import("//build/buildflag_header.gni")
@@ -150,6 +153,8 @@ static_library("browser") {
     "accessibility/page_colors_factory.h",
     "accessibility/prefers_default_scrollbar_styles_prefs.cc",
     "accessibility/prefers_default_scrollbar_styles_prefs.h",
+    "adblock/adblock_chrome_content_browser_client.cc",
+    "adblock/adblock_chrome_content_browser_client.h",
     "affiliations/affiliation_service_factory.cc",
     "affiliations/affiliation_service_factory.h",
     "after_startup_task_utils.cc",
@@ -1991,6 +1996,7 @@ static_library("browser") {
     "//chrome/installer/util:with_no_strings",
     "//chrome/services/on_device_translation:on_device_translation_service",
     "//chrome/services/speech/buildflags",
+    "//components/adblock/content:browser",
     "//components/assist_ranker",
     "//components/autofill/content/browser",
     "//components/autofill/content/common:features",
@@ -3222,6 +3228,12 @@ static_library("browser") {
       "webauthn/android/webauthn_request_delegate_android.cc",
       "webauthn/android/webauthn_request_delegate_android.h",
     ]
+
+    ### Android API module start
+    sources += [ "android/adblock/tab_id_translator_jni.cc" ]
+
+    ### Android API module end
+
     deps += [
       ":delta_file_proto",
       ":fast_checkout_funnels_proto",
@@ -8298,6 +8310,7 @@ static_library("browser_public_dependencies") {
     "//chrome/common:constants",
     "//chrome/services/file_util/public/mojom",
     "//components/account_id",
+    "//components/adblock/content:browser",
     "//components/autofill/core/browser",
     "//components/commerce/core/product_specifications:product_specifications",
     "//components/compose/core/browser:mojo_bindings",

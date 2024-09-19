@@ -1,6 +1,10 @@
 // Copyright 2018 The Chromium Authors
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
+//
+// This source code is a part of eyeo Chromium SDK.
+// Use of this source code is governed by the GPLv3 that can be found in the
+// components/adblock/LICENSE file.
 
 #ifdef UNSAFE_BUFFERS_BUILD
 // TODO(crbug.com/40285824): Remove this and convert code to safer constructs.
@@ -18,6 +22,7 @@
 #include "chrome/browser/renderer_preferences_util.h"
 #include "chrome/browser/ui/prefs/prefs_tab_helper.h"
 #include "chrome/common/pref_names.h"
+#include "components/adblock/core/common/adblock_prefs.h"
 #include "components/language/core/browser/pref_names.h"
 #include "components/live_caption/pref_names.h"
 #include "components/privacy_sandbox/tracking_protection_settings.h"
@@ -75,6 +80,14 @@ const char* const kWebPrefsToObserve[] = {
     prefs::kAccessibilityFocusHighlightEnabled,
 #endif
     prefs::kPageColorsBlockList,
+
+    adblock::common::prefs::kAdblockAllowedDomainsLegacy,
+    adblock::common::prefs::kAdblockCustomFiltersLegacy,
+    adblock::common::prefs::kAdblockCustomSubscriptionsLegacy,
+    adblock::common::prefs::kAdblockSubscriptionsLegacy,
+    adblock::common::prefs::kEnableAcceptableAdsLegacy,
+    adblock::common::prefs::kEnableAdblockLegacy,
+
 };
 
 const int kWebPrefsToObserveLength = std::size(kWebPrefsToObserve);
