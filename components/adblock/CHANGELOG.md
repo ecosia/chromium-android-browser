@@ -2,8 +2,9 @@
 
 ## eyeo Browser Ad Filtering Solution 129.0
 * Updated to Chromium 129.0.6668.54
-* Fixed parsing incorrect domain options (DPD-2789)
 * Introduced Safe Filter lists in BAS (DPD-2795)
+* Updated snippets library to version 1.7.0 (DPD-2944)
+* Fixed parsing incorrect domain options (DPD-2789)
 * Fixed crash on opening preview frame (DPD-2884)
 * Fixed crash on loading pages from local files (DPD-2893)
 * Fixed crash on null response headers (DPD-2910)
