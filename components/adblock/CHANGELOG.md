@@ -2,7 +2,6 @@
 
 ## eyeo Browser Ad Filtering Solution 129.0
 * Updated to Chromium 129.0.6668.54
-* Added per-WebView content filtering setting (DPD-2645)
 * Fixed parsing incorrect domain options (DPD-2789)
 * Introduced Safe Filter lists in BAS (DPD-2795)
 * Fixed crash on opening preview frame (DPD-2884)
